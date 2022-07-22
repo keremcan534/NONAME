@@ -1,0 +1,339 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_startup = {
+		effect = {
+			every_country = {
+				limit={ 
+					the_axis=yes
+				}
+				add_ideas = {
+					trade_blocked
+				}
+			}
+			every_country = {
+				limit={NOT={OR={original_tag=SOV
+					playable_countries=yes}}
+				}
+				add_ideas = {
+					trade_blocked
+				}
+			}
+			every_country = {
+				limit = {
+					playable_countries = yes
+				}
+				add_ideas = {
+					peace_training
+				}
+				add_timed_idea={idea= fix_production_idea
+			days = 15
+		}
+			}
+			every_country = {
+				limit = {
+					not = {OR={
+						playable_countries = yes
+						original_tag = EMP
+					}
+					}
+					is_ai = yes
+				}
+				add_ideas = {
+					ai_limiter
+				}
+			}
+		}
+	}
+	on_weekly = {
+	}
+	on_capitulation = {
+		effect = {
+
+
+			if = {
+				#HOL
+				limit = {
+					original_tag = HOL
+				}
+				HOL = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					transfer_state = 35
+					transfer_state = 36
+					transfer_state = 7
+				}
+				GER = {
+					36 = {
+						set_compliance = 45
+					}
+					7 = {
+						set_compliance = 45
+					}
+					35 = {
+						set_compliance = 45
+					}
+				}
+				ENG = {
+					remove_from_faction = HOL
+					annex_country = {
+						target = HOL
+						transfer_troops = no
+					}
+				}
+				every_country = {
+					limit = {
+						the_axis = yes
+					}
+					white_peace = HOL
+					set_truce = {
+						target = HOL
+						days = 9999
+					}
+				}
+			}
+			if = {
+				#FRA
+				limit = {
+					original_tag = FRA
+				}
+				FRA = {
+					set_equipment_fraction = 0
+					
+				}
+				hidden_effect = {
+					fall_of_france = yes
+				}
+			}
+			if = {
+				#JAP
+				limit = {
+					original_tag = JAP
+				}
+				every_state = {
+					limit = {
+						is_owned_by = JAP
+					}
+					set_compliance = 0
+				}
+				every_state = {
+					limit = {
+						is_core_of = JAP
+					}
+				}
+				JAP = {
+					set_equipment_fraction = 0
+				}
+				USA = {
+					annex_country = {
+						target = JAP
+						transfer_troops = no
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SIA
+					}
+					USA = {
+						annex_country = {
+							target = SIA
+							transfer_troops = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MAN
+					}
+					USA = {
+						annex_country = {
+							target = MAN
+							transfer_troops = no
+						}
+					}
+				}
+			}
+			if = {
+				#SOV
+				limit = {
+					original_tag = SOV
+				}
+				if = {
+					limit = {
+						country_exists = ROM
+					}
+					ROM = {
+						transfer_state = 766
+						transfer_state = 78
+						transfer_state = 192
+						transfer_state = 80
+						transfer_state = 198
+					}
+				}
+				FIN = {
+					transfer_state = 147
+					transfer_state = 146
+					transfer_state = 213
+					transfer_state = 215
+					transfer_state = 216
+				}
+				if = {
+					limit = {
+						country_exists = JAP
+					}
+					JAP = {
+						transfer_state = 655
+						transfer_state = 408
+						transfer_state = 560
+						transfer_state = 409
+						transfer_state = 657
+						transfer_state = 561
+						transfer_state = 562
+						transfer_state = 637
+					}
+				}
+				GER = {
+					annex_country = {
+						target = SOV
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				#FIN
+				limit = {
+					original_tag = FIN
+				}
+				SOV = {
+					transfer_state = 147
+					add_state_core = 147
+					transfer_state = 146
+					add_state_core = 146
+					white_peace = FIN
+				}
+			}
+			if = {
+				#BEL
+				limit = {
+					original_tag = BEL
+				}
+				GER = {
+					transfer_state = 6
+					transfer_state = 34
+					transfer_state = 8
+					every_state = {
+						limit = {
+							is_core_of = BEL
+						}
+						set_compliance = 40
+					}
+				}
+				FRA = {
+					annex_country = {
+						target = BEL
+					}
+					every_state = {
+						limit = {
+							is_core_of = BEL
+						}
+						set_compliance = 40
+					}
+				}
+			}
+			if = {
+				#GER
+				limit = {
+					original_tag = GER
+				}
+				ENG = {
+					annex_country = {
+						target = GER
+						transfer_troop = no
+					}
+				}
+			}
+			if = {
+				#POL
+				limit = {
+					original_tag = POL
+				}
+				POL = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					transfer_state = 85
+					transfer_state = 86
+					transfer_state = 87
+					transfer_state = 98
+					transfer_state = 10
+					transfer_state = 90
+					transfer_state = 88
+					transfer_state = 762
+					transfer_state = 72
+					transfer_state = 92
+					transfer_state = 807
+					86 = {
+						set_compliance = 60
+					}
+					762 = {
+						set_compliance = 60
+					}
+					807 = {
+						set_compliance = 60
+					}
+				}
+				#Larp
+				set_province_name = {
+					id = 6558
+					name = "Posen"
+				}
+				86 = {
+					set_state_name = "Posen"
+				}
+				set_province_name = {
+					id = 6464
+					name = "Kattowitz"
+				}
+				762 = {
+					set_state_name = "Kattowitz"
+				}
+				set_province_name = {
+					id = 279
+					name = "Bromberg"
+				}
+				set_province_name = {
+					id = 3295
+					name = "Thorn"
+				}
+			}
+			if = {
+				#DEN
+				limit = {
+					original_tag = DEN
+				}
+				GER = {
+					transfer_state = 99
+					transfer_state = 37
+					99 = {
+						set_compliance = 60
+					}
+					37 = {
+						set_compliance = 60
+					}
+				}
+			}
+			if = {
+				#NOR
+				limit = {
+					original_tag = NOR
+				}
+				GER = {
+					annex_country = {
+						target = NOR
+						transfer_troops = no
+					}
+				}
+			}
+		}
+	}
+}

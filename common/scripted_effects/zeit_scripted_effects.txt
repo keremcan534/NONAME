@@ -1,0 +1,286 @@
+Declare_on_allies = {
+	Root = {
+		declare_war_on = {
+			target = POL
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = ENG
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = FRA
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = RAJ
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = CAN
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = BRA
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = AUS
+			type = annex_everything
+		}
+	}
+}
+
+##france
+tp_france_divs = {
+	every_country = {
+		limit = {
+			original_tag = FRA
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = FRA
+					is_core_of = GER
+					is_core_of = ITA
+				}
+			}
+			teleport_armies = {
+				to_state = 5139
+			}
+		}
+	}
+}
+
+fall_of_france = {
+	if={
+		limit={original_tag=GER date<1940.1.1}
+	GER={add_ideas=GER_triumph_in_france}
+}
+	set_global_flag= fall_of_france
+	FRA = {
+		set_cosmetic_tag = FRA_FREE
+		add_state_core = 539
+		set_capital = {
+			state = 539
+		}
+		remove_ideas = FRA_protected_by_the_maginot_line
+		remove_ideas = FRA_victors_of_wwi
+		remove_ideas = FRA_disjointed_government
+
+	}
+	GER = {
+		transfer_state = 28
+		transfer_state = 17
+		transfer_state = 27
+		transfer_state = 18
+		transfer_state = 29
+		transfer_state = 785
+		transfer_state = 15
+		transfer_state = 16
+		transfer_state = 24
+		transfer_state = 30
+		transfer_state = 14
+		transfer_state = 23
+		transfer_state = 19
+		transfer_state = 806
+	}
+	ITA = {
+		transfer_state = 735
+		transfer_state = 1
+		transfer_state = 458
+		transfer_state = 665
+	}
+	JAP = {
+		transfer_state = 671
+		transfer_state = 670
+		transfer_state = 286
+		transfer_state = 741
+	}
+	RAJ = {
+		transfer_state = 320
+	}
+	EFR = {
+		EFR = { 
+			add_ideas = ai_limiter
+			diplomatic_relation = { country = ENG relation = non_aggression_pact }
+			diplomatic_relation = { country = USA relation = non_aggression_pact }
+			diplomatic_relation = { country = ITA relation = non_aggression_pact }
+			diplomatic_relation = { country = FRA relation = non_aggression_pact }
+			diplomatic_relation = { country = SAF relation = non_aggression_pact }
+			diplomatic_relation = { country = CAN relation = non_aggression_pact }
+			diplomatic_relation = { country = RAJ relation = non_aggression_pact }
+			diplomatic_relation = { country = AST relation = non_aggression_pact }
+			diplomatic_relation = { country = BRA relation = non_aggression_pact }
+			diplomatic_relation = { country = GER relation = non_aggression_pact }
+		}
+		set_capital = {
+			state = 24
+		}
+		hidden_effect = {
+			#SYRIA
+			transfer_state = 553
+			transfer_state = 677
+			transfer_state = 680
+			transfer_state = 554
+
+			transfer_state = 26
+			transfer_state = 22
+			transfer_state = 25
+			transfer_state = 20
+			transfer_state = 33
+			transfer_state = 31
+			transfer_state = 32
+			transfer_state = 21
+			add_state_core = 26
+			add_state_core = 22
+			add_state_core = 25
+			add_state_core = 20
+			add_state_core = 33
+			add_state_core = 31
+			add_state_core = 32
+			add_state_core = 21
+
+
+			553 = {
+				set_demilitarized_zone = yes
+			}
+			677 = {
+				set_demilitarized_zone = yes
+			}
+			680 = {
+				set_demilitarized_zone = yes
+			}
+			554 = {
+				set_demilitarized_zone = yes
+			}
+
+
+			22 = {
+				set_demilitarized_zone = yes
+			}
+			25 = {
+				set_demilitarized_zone = yes
+			}
+			20 = {
+				set_demilitarized_zone = yes
+			}
+			33 = {
+				set_demilitarized_zone = yes
+			}
+			31 = {
+				set_demilitarized_zone = yes
+			}
+			32 = {
+				set_demilitarized_zone = yes
+			}
+			21 = {
+				set_demilitarized_zone = yes
+			}
+			#tunis
+			transfer_state = 460
+			transfer_state = 513
+			transfer_state = 459
+			transfer_state = 461
+			transfer_state = 462
+			460 = {
+				set_demilitarized_zone = yes
+			}
+			513 = {
+				set_demilitarized_zone = yes
+			}
+			459 = {
+				set_demilitarized_zone = yes
+			}
+			461 = {
+				set_demilitarized_zone = yes
+			}
+			462 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+}
+
+declare_war_on_enemy_faction = {
+	if = {
+		limit = {
+			NOT = {
+				ROOT = {
+					has_war_with = THIS.faction_leader
+				}
+			}
+		}
+		set_variable = {
+			GER.test1 = 15
+		}
+		ROOT = {
+			declare_war_on = {
+				target = PREV.faction_leader
+				type = annex_everything
+			}
+		}
+		ROOT_call_all_allies_against_THIS = yes
+		THIS_call_all_allies_against_ROOT = yes
+	}
+}
+
+ROOT_call_allies_both_sides = {
+	ROOT_call_all_allies_against_THIS = yes
+	THIS_call_all_allies_against_ROOT = yes
+}
+
+ROOT_call_all_allies_against_THIS = {
+	set_variable = {
+		GER.test2 = THIS
+	}
+	set_variable = {
+		GER.test3 = PREV
+	}
+	set_variable = {
+		GER.test4 = ROOT
+	}
+	for_each_scope_loop = {
+		array = ROOT.faction_members
+		if = {
+			limit = {
+				NOT = {
+					original_tag = ROOT
+				}
+			}
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = PREV
+			}
+		}
+	}
+}
+
+THIS_call_all_allies_against_ROOT = {
+	for_each_scope_loop = {
+		array = THIS.faction_members
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						AND = {
+							original_tag = USA
+							has_war = no
+						}
+						AND = {
+							original_tag = FRA
+							NOT = {
+								has_global_flag = fall_of_france
+							}
+						}
+						original_tag = PREV
+					}
+				}
+			}
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = ROOT
+			}
+		}
+	}
+}

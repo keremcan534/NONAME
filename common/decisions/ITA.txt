@@ -1,0 +1,39 @@
+foreign_politics = {
+
+ITA_annex_bul = {
+	icon = generic_operation
+
+	
+			available = {
+			BUL = { is_ai = yes }
+			}
+			allowed = {
+				tag = ITA
+			}
+			cost = 0
+			visible = {
+			BUL = { is_ai = yes }
+				}
+			fire_only_once = yes
+			complete_effect = {
+				BUL = {
+					every_owned_state={
+						limit={is_core_of=PREV}
+						add_core_of = ITA
+					}
+				}
+				ITA = { 
+					annex_country = {
+						target = BUL
+						transfer_troops = yes 
+					}
+			}
+		}
+	}
+}	
+
+	
+	
+	
+	
+	

@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				anti_cross_faction_trade_all = yes
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+		}
+	}
+}

@@ -1,0 +1,577 @@
+characters={
+	HUN_miklos_horthy={
+		name="Miklós Horthy"
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/Portrait_Hungary_Miklos_Horthy.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=5000
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=500
+		}
+	}
+
+	HUN_albert_aulich={
+		name="Albert Aulich"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_8"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ reluctant_interventionist hawk }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+
+	HUN_ferenc_szombathelyi={
+		name=HUN_ferenc_szombathelyi
+		portraits={
+			army={
+				small="GFX_idea_HUN_ferenc_szombathelyi"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = HUN_ferenc_szombathelyi
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				army_commando_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+		HUN_bela_rakosi={
+		name=HUN_bela_rakosi
+		portraits={
+			army={
+				small="GFX_idea_HUN_bela_rakosi"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = HUN_bela_rakosi
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	
+	HUN_gusztav_jany={
+		name=HUN_gusztav_jany
+		portraits={
+			army={
+				small="GFX_idea_HUN_gusztav_jany"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = HUN_gusztav_jany
+			ledger = army
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 150.000
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	HUN_henrik_werth={
+		name=HUN_henrik_werth
+		portraits={
+			army={
+				small="GFX_idea_HUN_henrik_werth"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = HUN_henrik_werth
+			ledger = army
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### POLITICAL ADVISORS ###
+	
+	HUN_kalman_kanya={
+		name=HUN_kalman_kanya
+		portraits={
+			army={
+				small="GFX_idea_HUN_kalman_kanya"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = HUN_kalman_kanya
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				compassionate_gentleman 
+			}
+		}
+	}
+
+	HUN_lajos_remenyi_schneller={
+		name=HUN_lajos_remenyi_schneller
+		portraits={
+			army={
+				small="GFX_idea_HUN_lajos_remenyi_schneller"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = HUN_lajos_remenyi_schneller
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				captain_of_industry 
+			}
+		}
+	}
+	
+	
+	HUN_kalman_daranyi={
+		name=HUN_kalman_daranyi
+		portraits={
+			army={
+				small="GFX_idea_HUN_kalman_daranyi"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = HUN_kalman_daranyi
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				smooth_talking_charmer 
+			}
+		}
+	}
+
+	HUN_zoltan_tildy={
+		name=HUN_zoltan_tildy
+		portraits={
+			army={
+				small="GFX_idea_HUN_zoltan_tildy"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = HUN_zoltan_tildy
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+	}
+
+
+
+
+
+	HUN_vilmos_roder={
+		name="Vilmos Roder"
+		portraits={
+			army={
+				small="GFX_idea_HUN_vilmos_roder"
+			}
+			army={
+				large="gfx/leaders/HUN/Portrait_HUN_Vilmos_Roder.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = HUN_vilmos_roder
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				war_industrialist 
+			}
+		}
+		corps_commander={
+			traits={ old_guard career_officer trait_cautious infantry_officer politically_connected skilled_staffer commando }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	HUN_hugo_sonyi={
+		name="Hugo Sonyi"
+		portraits={
+			army={
+				small="GFX_idea_HUN_hugo_sonyi"
+			}
+			army={
+				large="gfx/leaders/HUN/Portrait_HUN_Hugo_Sonyi.tga"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = HUN_hugo_sonyi
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_reckless infantry_officer infantry_leader trait_engineer naval_invader }
+			skill=3
+			attack_skill=6
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	HUN_dezso_laszlo={
+		name="Dezso Laszlo"
+		portraits={
+			army={
+				small="GFX_idea_HUN_dezso_laszlo"
+			}
+			army={
+				large="gfx/leaders/HUN/Portrait_HUN_Dezso_Laszlo.tga"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = HUN_dezso_laszlo
+			ledger = army
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist trait_reckless harsh_leader armor_officer war_hero trait_engineer ranger }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	HUN_matyas_rakosi={
+		name="Mátyás Rákosi"
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/Portrait_Hungary_Matyas_Rakoski.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MATYAS_RAKOSKI_DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HUN_arpad_szakasits={
+		name="Árpád Szakasits"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ARPAD_SZAKASITS_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HUN_geza_lakatos={
+		name="Géza Lakatos"
+		portraits={
+			army={
+				small="GFX_Portrait_hungary_geza_lakatos_small"
+			}
+			army={
+				large="GFX_Portrait_hungary_geza_lakatos"
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_reckless harsh_leader substance_abuser cavalry_leader trickster panzer_leader desert_fox }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	HUN_ivan_hindy={
+		name="Iván Hindy"
+		portraits={
+			army={
+				small="GFX_Portrait_hungary_ivan_hindy_small"
+			}
+			army={
+				large="GFX_Portrait_hungary_ivan_hindy"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist career_officer media_personality harsh_leader infantry_officer infantry_leader swamp_fox infantry_expert paratrooper camouflage_expert }
+			skill=4
+			attack_skill=8
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	HUN_karoly_beregfy={
+		name="Károly Beregfy"
+		portraits={
+			army={
+				small="GFX_Portrait_hungary_karoly_beregfy_small"
+			}
+			army={
+				large="GFX_Portrait_hungary_karoly_beregfy"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless harsh_leader infantry_officer politically_connected infantry_leader trait_mountaineer }
+			skill=4
+			attack_skill=5
+			defense_skill=6
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	HUN_lajos_veress={
+		name="Lajos Veress"
+		portraits={
+			army={
+				small="GFX_Portrait_hungary_lajos_veress_small"
+			}
+			army={
+				large="GFX_Portrait_hungary_lajos_veress"
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_reckless harsh_leader substance_abuser cavalry_leader trickster panzer_leader ranger }
+			skill=5
+			attack_skill=7
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	HUN_bela_miklos={
+		name="Bela Miklos"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_HUN_Bela_Miklos.tga"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_cautious infantry_officer politically_connected war_hero skilled_staffer trait_engineer }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	HUN_gusztav_denk={
+		name="Gusztav Denk"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_HUN_Gusztav_Denk.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_reckless harsh_leader substance_abuser cavalry_leader trickster panzer_leader desert_fox }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	HUN_janky_kocsard={
+		name="Janky Kocsard"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_HUN_Janky_Kocsard.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_cautious media_personality cavalry_officer politically_connected cavalry_leader trickster commando }
+			skill=4
+			attack_skill=2
+			defense_skill=6
+			planning_skill=1
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	HUN_jany_gusztav={
+		name="Jany Gusztav"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_HUN_Jany_Gusztav.tga"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader infantry_officer infantry_leader skilled_staffer commando urban_assault_specialist }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	HUN_hugo_miklos={
+		name="Hugo Miklos"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_Romania_Constantin_Pantazi.tga"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist career_officer trait_reckless media_personality harsh_leader infantry_officer infantry_leader swamp_fox infantry_expert paratrooper camouflage_expert }
+			skill=4
+			attack_skill=9
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	HUN_ferenc_feketehalmyczeydner={
+		name="Ferenc Feketehalmy-Czeydner"
+		portraits={
+			army={
+				small="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner_small"
+			}
+			army={
+				large="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = ferenc_feketehalmyczeydner
+			ledger  = army 
+				allowed  = {
+					original_tag  = HUN
+				}
+				research_bonus  = {
+					land_doctrine  = 0.150
+				}
+				traits  = {
+					military_theorist 
+				}
+				cost = 150.000
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer politically_connected organizer skilled_staffer ranger logistics_wizard thorough_planner inspirational_leader }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	HUN_szilard_bakay={
+		name="Szilard Bakay"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_HUN_Szilard_Bakay.tga"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer politically_connected war_hero substance_abuser cavalry_leader trickster ranger }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	HUN_vilmos_nagy_de_nagybaczon={
+		name="Vilmos Nagy de Nagybaczon"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_HUN_Vilmos_Nagy_de_Nagybaczon.tga"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist career_officer harsh_leader infantry_leader trickster offensive_doctrine }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+}

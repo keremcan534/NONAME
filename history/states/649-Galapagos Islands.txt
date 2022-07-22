@@ -1,0 +1,21 @@
+state=
+{
+	id=649
+	name="STATE_649"
+	state_category = tiny_island
+	manpower=11532
+	state_category = wasteland
+	impassable = yes
+
+	history= {
+		owner = EMP
+		controller = EMP
+		buildings = {
+				infrastructure = 1
+
+			}
+		}
+	provinces= { 5023 }
+
+	local_supplies=0.0 
+}

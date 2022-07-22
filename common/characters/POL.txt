@@ -1,0 +1,46 @@
+characters={
+	POL_władysław_sikorski={
+		name="Władysław Sikorski"
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/Portrait_Poland_Wladyslaw_Sikorski.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	POL_ignacy_moscicki = {
+		name=POL_ignacy_moscicki
+		portraits = {
+			army={
+				small=GFX_portrait_POL_ignacy_moscicki_small
+			}
+			civilian = {
+				large="GFX_portrait_POL_ignacy_moscicki"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POL_ignacy_moscicki
+			traits = {
+				the_king_of_the_castle 
+			}
+		}
+		
+		country_leader = {
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+	
+	
+	
+	
+}

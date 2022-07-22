@@ -1,0 +1,22 @@
+﻿capital = 6
+set_research_slots = 0
+set_stability = 0
+set_war_support = 0
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 100
+	fascism = 0
+	communism = 0
+}
+set_convoys = 0
+set_stability = 0
+
+recruit_character = BEL_hubert_pierlot
+recruit_character = BEL_joseph_jacquemotte
+recruit_character = BEL_mcl_keyaerts
+recruit_character = BEL_georges_timmermans

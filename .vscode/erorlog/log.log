@@ -1,0 +1,581 @@
+[15:06:31][trigger.cpp:494]: Error: "Expected 'default', a continent name or a country tag: PRC, near line: 4367
+Expected 'default', a continent name or a country tag: YUN, near line: 4407
+Expected 'default', a continent name or a country tag: XSM, near line: 4457
+Expected 'default', a continent name or a country tag: SIK, near line: 4507
+Expected 'default', a continent name or a country tag: GXC, near line: 4557
+Expected 'default', a continent name or a country tag: SHX, near line: 4607" in file: "gfx/interface/equipmentdesigner/tanks/designer/00_tank_icons.txt" near line: 4664
+[15:06:31][trigger.cpp:494]: Error: "Expected 'default', a continent name or a country tag: MEX, near line: 4699
+Expected 'default', a continent name or a country tag: POR, near line: 4741" in file: "gfx/interface/equipmentdesigner/tanks/designer/00_tank_icons.txt" near line: 4786
+[15:06:35][icon_entry.cpp:37]: Icon definition "" does neither look like a file path nor a GFX entry as it does not start with "GFX_"
+[15:06:35][effect.cpp:402]: Invalid effect 'SOV_paranoia_modifier_update_gui_tooltip' in common/characters/SOV.txt line : 1814
+[15:06:35][effect.cpp:297]: Error: "Unknown effect-type: SOV_paranoia_modifier_update_gui_tooltip, near line: 1814" in file: "common/characters/SOV.txt" near line: 1814
+[15:06:35][effect.cpp:402]: Invalid effect 'SOV_paranoia_modifier_update_gui_tooltip' in common/characters/SOV.txt line : 1818
+[15:06:35][effect.cpp:297]: Error: "Unknown effect-type: SOV_paranoia_modifier_update_gui_tooltip, near line: 1818" in file: "common/characters/SOV.txt" near line: 1818
+[15:06:35][effect.cpp:402]: Invalid effect 'SOV_paranoia_modifier_update_gui_tooltip' in common/characters/SOV.txt line : 1848
+[15:06:35][effect.cpp:297]: Error: "Unknown effect-type: SOV_paranoia_modifier_update_gui_tooltip, near line: 1848" in file: "common/characters/SOV.txt" near line: 1849
+[15:06:35][effect.cpp:402]: Invalid effect 'SOV_paranoia_modifier_update_gui_tooltip' in common/characters/SOV.txt line : 1852
+[15:06:35][effect.cpp:297]: Error: "Unknown effect-type: SOV_paranoia_modifier_update_gui_tooltip, near line: 1852" in file: "common/characters/SOV.txt" near line: 1853
+[15:06:35][effect.cpp:402]: Invalid effect 'SOV_paranoia_modifier_update_gui_tooltip' in common/characters/SOV.txt line : 1902
+[15:06:35][effect.cpp:297]: Error: "Unknown effect-type: SOV_paranoia_modifier_update_gui_tooltip, near line: 1902" in file: "common/characters/SOV.txt" near line: 1903
+[15:06:35][effect.cpp:402]: Invalid effect 'SOV_paranoia_modifier_update_gui_tooltip' in common/characters/SOV.txt line : 1906
+[15:06:35][effect.cpp:297]: Error: "Unknown effect-type: SOV_paranoia_modifier_update_gui_tooltip, near line: 1906" in file: "common/characters/SOV.txt" near line: 1907
+[15:06:35][effect.cpp:402]: Invalid effect 'SOV_paranoia_modifier_update_gui_tooltip' in common/characters/SOV.txt line : 1952
+[15:06:35][effect.cpp:297]: Error: "Unknown effect-type: SOV_paranoia_modifier_update_gui_tooltip, near line: 1952" in file: "common/characters/SOV.txt" near line: 1953
+[15:06:35][effect.cpp:402]: Invalid effect 'SOV_paranoia_modifier_update_gui_tooltip' in common/characters/SOV.txt line : 1956
+[15:06:35][effect.cpp:297]: Error: "Unknown effect-type: SOV_paranoia_modifier_update_gui_tooltip, near line: 1956" in file: "common/characters/SOV.txt" near line: 1957
+[15:06:35][trigger.cpp:641]: Invalid trigger 'DDR' in common/decisions/political_decisions.txt line : 35
+[15:06:35][trigger.cpp:494]: Error: "Unknown trigger-type: DDR, near line: 35" in file: "common/decisions/political_decisions.txt" near line: 36
+[15:06:35][nationalfocus.cpp:529]: Error in focus: GER_anti_comitern_pact (common/national_focus/germany.txt:35 )
+relative_focus_id: barbarossa does not exist. Relative focus must be scripted before this.
+[15:06:35][effect.cpp:402]: Invalid effect 'give_SOV_armor_research_bonuses' in common/national_focus/germany.txt line : 741
+[15:06:35][effect.cpp:297]: Error: "Unknown effect-type: give_SOV_armor_research_bonuses, near line: 741" in file: "common/national_focus/germany.txt" near line: 742
+[15:06:35][nationalfocus.cpp:529]: Error in focus: GER_demand_memel (common/national_focus/germany.txt:932 )
+relative_focus_id: GER_end_of_czechoslovakia does not exist. Relative focus must be scripted before this.
+[15:06:35][nationalfocus.cpp:529]: Error in focus: GER_mol_rib_pact (common/national_focus/germany.txt:975 )
+relative_focus_id: GER_end_of_czechoslovakia does not exist. Relative focus must be scripted before this.
+[15:06:35][persistent.cpp:48]: Error: "Unexpected token: desc, near line: 1101" in file: "common/national_focus/germany.txt" near line: 1101
+[15:06:35][nationalfocus.cpp:529]: Error in focus: USA_scientist_haven (common/national_focus/usa.txt:259 )
+relative_focus_id: USA_arsenal_of_democracy does not exist. Relative focus must be scripted before this.
+[15:06:35][nationalfocus.cpp:529]: Error in focus: USA_CAS (common/national_focus/usa.txt:1688 )
+relative_focus_id: USA_escort_fighters does not exist. Relative focus must be scripted before this.
+[15:06:35][nationalfocus.cpp:529]: Error in focus: USA_us_army_airforce (common/national_focus/usa.txt:1765 )
+relative_focus_id: USA_us_air_force does not exist. Relative focus must be scripted before this.
+[15:06:35][effect.cpp:402]: Invalid effect 'create_leader' in history/countries/EMP - Empty.txt line : 7
+[15:06:35][countryhistory.cpp:167]: Unknown History Command ==>'create_leader'<==  for Countryhistory/countries/EMP - Empty.txt
+[15:06:35][persistent.cpp:48]: Error: "Unknown effect-type: create_leader, near line: 7" in file: "history/countries/EMP - Empty.txt" near line: 22
+[15:06:35][texturehandler.cpp:155]: Texture Handler encountered missing texture file: gfx/interface/technologies/gwtank_chassis.dds
+[15:06:35][texturehandler.cpp:209]: Couldn't find texture file: 'gfx/interface/technologies/gwtank_chassis.dds'
+[15:06:35][texturehandler.cpp:155]: Texture Handler encountered missing texture file: gfx/interface/technologies/SOV_basic_light_tank_chassis.dds
+[15:06:35][texturehandler.cpp:209]: Couldn't find texture file: 'gfx/interface/technologies/SOV_basic_light_tank_chassis.dds'
+[15:06:35][history.cpp:265]: LIT - is missing a history file.
+[15:06:35][history.cpp:265]: SLO - is missing a history file.
+[15:06:35][history.cpp:265]: CRO - is missing a history file.
+[15:06:35][history.cpp:265]: FRF - is missing a history file.
+[15:06:36][effect.cpp:402]: Invalid effect 'limit' in common/scripted_effects/zeit_scripted_effects.txt line : 39
+[15:06:36][effect.cpp:402]: Invalid effect 'tp_divs_out_france' in common/scripted_effects/zeit_scripted_effects.txt line : 40
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: limit, near line: 39
+Unknown effect-type: tp_divs_out_france, near line: 40" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 42
+[15:06:36][effect.cpp:402]: Invalid effect 'original_tag' in common/scripted_effects/zeit_scripted_effects.txt line : 44
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: original_tag, near line: 44" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 44
+[15:06:36][effect.cpp:402]: Invalid effect 'tp_divs_out_france' in common/scripted_effects/zeit_scripted_effects.txt line : 52
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: tp_divs_out_france, near line: 52" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 53
+[15:06:36][effect.cpp:297]: Error: "Malformed token: SPA, near line: 832" in file: "events/France.txt" near line: 834
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_mefo_bills_level_down' in events/Germany.txt line : 57
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_mefo_bills_level_down' in events/Germany.txt line : 58
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: GER_mefo_bills_level_down, near line: 57
+Unknown effect-type: GER_mefo_bills_level_down, near line: 58" in file: "events/Germany.txt" near line: 59
+[15:06:36][trigger.cpp:641]: Invalid trigger 'is_literally_china' in events/Germany.txt line : 120
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: is_literally_china, near line: 120" in file: "events/Germany.txt" near line: 121
+[15:06:36][trigger.cpp:641]: Invalid trigger 'SOU' in events/Germany.txt line : 475
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: SOU, near line: 475" in file: "events/Germany.txt" near line: 476
+[15:06:36][effect.cpp:402]: Invalid effect 'MR_pact_transfer_state_effect' in events/Germany.txt line : 713
+[15:06:36][effect.cpp:402]: Invalid effect 'SOU' in events/Germany.txt line : 714
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: MR_pact_transfer_state_effect, near line: 713
+Unknown effect-type: SOU, near line: 714" in file: "events/Germany.txt" near line: 715
+[15:06:36][effect.cpp:402]: Invalid effect 'SOU' in events/Germany.txt line : 735
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: SOU, near line: 735" in file: "events/Germany.txt" near line: 735
+[15:06:36][effect.cpp:402]: Invalid effect 'SOU' in events/Germany.txt line : 742
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: SOU, near line: 742" in file: "events/Germany.txt" near line: 917
+[15:06:36][effect.cpp:402]: Invalid effect 'MR_pact_transfer_state_effect' in events/Germany.txt line : 948
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: MR_pact_transfer_state_effect, near line: 948" in file: "events/Germany.txt" near line: 949
+[15:06:36][effect.cpp:402]: Invalid effect 'MR_pact_transfer_faction_state_effect' in events/Germany.txt line : 996
+[15:06:36][effect.cpp:402]: Invalid effect 'SOU' in events/Germany.txt line : 997
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: MR_pact_transfer_faction_state_effect, near line: 996
+Unknown effect-type: SOU, near line: 997" in file: "events/Germany.txt" near line: 998
+[15:06:36][effect.cpp:402]: Invalid effect 'SOU' in events/Germany.txt line : 1013
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: SOU, near line: 1013" in file: "events/Germany.txt" near line: 1013
+[15:06:36][effect.cpp:402]: Invalid effect 'SOU' in events/Germany.txt line : 1022
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: SOU, near line: 1022" in file: "events/Germany.txt" near line: 1197
+[15:06:36][effect.cpp:402]: Invalid effect 'SOU' in events/Germany.txt line : 1223
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: SOU, near line: 1223" in file: "events/Germany.txt" near line: 1399
+[15:06:36][trigger.cpp:641]: Invalid trigger 'SOU' in events/Germany.txt line : 1416
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: SOU, near line: 1416" in file: "events/Germany.txt" near line: 1420
+[15:06:36][trigger.cpp:641]: Invalid trigger 'ENG_is_on_historical_plan_trigger' in events/Germany.txt line : 1991
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: ENG_is_on_historical_plan_trigger, near line: 1991" in file: "events/Germany.txt" near line: 1996
+[15:06:36][effect.cpp:402]: Invalid effect 'play_peace_in_our_time_effect' in events/Germany.txt line : 2756
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: play_peace_in_our_time_effect, near line: 2756" in file: "events/Germany.txt" near line: 2756
+[15:06:36][trigger.cpp:641]: Invalid trigger 'is_friend_or_potential_friend_of_GER' in events/Germany.txt line : 3070
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: is_friend_or_potential_friend_of_GER, near line: 3070" in file: "events/Germany.txt" near line: 3071
+[15:06:36][trigger.cpp:641]: Invalid trigger 'is_friend_or_potential_friend_of_GER' in events/Germany.txt line : 3088
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: is_friend_or_potential_friend_of_GER, near line: 3088" in file: "events/Germany.txt" near line: 3088
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_mefo_bills_level_down' in events/Germany.txt line : 3156
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_mefo_bills_level_down, near line: 3156" in file: "events/Germany.txt" near line: 3156
+[15:06:36][trigger.cpp:641]: Invalid trigger 'is_friend_or_potential_friend_of_GER' in events/Germany.txt line : 3185
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: is_friend_or_potential_friend_of_GER, near line: 3185" in file: "events/Germany.txt" near line: 3186
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_mefo_bills_level_down' in events/Germany.txt line : 3205
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_mefo_bills_level_down, near line: 3205" in file: "events/Germany.txt" near line: 3205
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_mefo_bills_level_down' in events/Germany.txt line : 3231
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_mefo_bills_level_down, near line: 3231" in file: "events/Germany.txt" near line: 3231
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_mefo_bills_level_down' in events/Germany.txt line : 3250
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_mefo_bills_level_down, near line: 3250" in file: "events/Germany.txt" near line: 3250
+[15:06:36][effect.cpp:402]: Invalid effect 'give_SOV_armor_research_bonuses' in events/Germany.txt line : 4241
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: give_SOV_armor_research_bonuses, near line: 4241" in file: "events/Germany.txt" near line: 4241
+[15:06:36][trigger.cpp:641]: Invalid trigger 'TUR' in events/Germany.txt line : 4423
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: TUR, near line: 4423" in file: "events/Germany.txt" near line: 4428
+[15:06:36][effect.cpp:402]: Invalid effect 'TUR' in events/Germany.txt line : 4440
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: TUR, near line: 4440" in file: "events/Germany.txt" near line: 4446
+[15:06:36][effect.cpp:297]: Error: "Malformed token: anti_soviet_pact_call_refused, near line: 4811" in file: "events/Germany.txt" near line: 4811
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_mefo_bills_level_down' in events/Germany.txt line : 5178
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_mefo_bills_level_down, near line: 5178" in file: "events/Germany.txt" near line: 5178
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_mefo_bills_level_down' in events/Germany.txt line : 5219
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_mefo_bills_level_down, near line: 5219" in file: "events/Germany.txt" near line: 5219
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_mefo_bills_level_down' in events/Germany.txt line : 5257
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_mefo_bills_level_down, near line: 5257" in file: "events/Germany.txt" near line: 5257
+[15:06:36][effect.cpp:297]: Error: "Malformed token: anti_soviet_pact_call_refused, near line: 5771" in file: "events/Germany.txt" near line: 5771
+[15:06:36][effect.cpp:402]: Invalid effect 'WGR' in events/Germany.txt line : 5998
+[15:06:36][effect.cpp:402]: Invalid effect 'DDR' in events/Germany.txt line : 6011
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: WGR, near line: 5998
+Unknown effect-type: DDR, near line: 6011" in file: "events/Germany.txt" near line: 6026
+[15:06:36][effect.cpp:402]: Invalid effect 'WGR' in events/Germany.txt line : 6055
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: WGR, near line: 6055" in file: "events/Germany.txt" near line: 6067
+[15:06:36][effect.cpp:402]: Invalid effect 'DDR' in events/Germany.txt line : 6068
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: DDR, near line: 6068" in file: "events/Germany.txt" near line: 6076
+[15:06:36][effect.cpp:402]: Invalid effect 'WGR' in events/Germany.txt line : 6199
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: WGR, near line: 6199" in file: "events/Germany.txt" near line: 6202
+[15:06:36][effect.cpp:402]: Invalid effect 'DDR' in events/Germany.txt line : 6214
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: DDR, near line: 6214" in file: "events/Germany.txt" near line: 6217
+[15:06:36][trigger.cpp:641]: Invalid trigger 'DDR' in events/Germany.txt line : 6364
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: DDR, near line: 6364" in file: "events/Germany.txt" near line: 6369
+[15:06:36][effect.cpp:402]: Invalid effect 'DDR' in events/Germany.txt line : 6382
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: DDR, near line: 6382" in file: "events/Germany.txt" near line: 6385
+[15:06:36][trigger.cpp:641]: Invalid trigger 'WGR' in events/Germany.txt line : 6389
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: WGR, near line: 6389" in file: "events/Germany.txt" near line: 6394
+[15:06:36][effect.cpp:402]: Invalid effect 'WGR' in events/Germany.txt line : 6407
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: WGR, near line: 6407" in file: "events/Germany.txt" near line: 6410
+[15:06:36][effect.cpp:402]: Invalid effect 'WGR' in events/Germany.txt line : 6435
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: WGR, near line: 6435" in file: "events/Germany.txt" near line: 6438
+[15:06:36][trigger.cpp:641]: Invalid trigger 'GER_has_mefo_bills' in events/Germany.txt line : 6863
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: GER_has_mefo_bills, near line: 6863" in file: "events/Germany.txt" near line: 6866
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_remove_mefo_bills' in events/Germany.txt line : 6878
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: GER_remove_mefo_bills, near line: 6878" in file: "events/Germany.txt" near line: 6880
+[15:06:36][effect.cpp:402]: Invalid effect 'SOV_kill_trotsky_effect' in events/NewsEvents.txt line : 1318
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: SOV_kill_trotsky_effect, near line: 1318" in file: "events/NewsEvents.txt" near line: 1319
+[15:06:36][effect.cpp:297]: Error: "Malformed token: EST, near line: 2580" in file: "events/NewsEvents.txt" near line: 2581
+[15:06:36][effect.cpp:297]: Error: "Malformed token: LAT, near line: 2589" in file: "events/NewsEvents.txt" near line: 2590
+[15:06:36][trigger.cpp:641]: Invalid trigger 'SOV_is_opposition' in events/NewsEvents.txt line : 2820
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: SOV_is_opposition, near line: 2820" in file: "events/NewsEvents.txt" near line: 2820
+[15:06:36][trigger.cpp:641]: Invalid trigger 'SOV_is_opposition' in events/NewsEvents.txt line : 2824
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: SOV_is_opposition, near line: 2824" in file: "events/NewsEvents.txt" near line: 2824
+[15:06:36][effect.cpp:402]: Invalid effect 'play_victory_parade_effect' in events/NewsEvents.txt line : 4401
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: play_victory_parade_effect, near line: 4401" in file: "events/NewsEvents.txt" near line: 4401
+[15:06:36][trigger.cpp:641]: Invalid trigger 'is_independent_china_or_warlord' in events/NewsEvents.txt line : 9346
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: is_independent_china_or_warlord, near line: 9346" in file: "events/NewsEvents.txt" near line: 9347
+[15:06:36][trigger.cpp:641]: Invalid trigger 'is_independent_china_or_warlord' in events/NewsEvents.txt line : 9353
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: is_independent_china_or_warlord, near line: 9353" in file: "events/NewsEvents.txt" near line: 9354
+[15:06:36][trigger.cpp:641]: Invalid trigger 'MEX' in events/NewsEvents.txt line : 13110
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: MEX, near line: 13110" in file: "events/NewsEvents.txt" near line: 13111
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_august_von_mackensen' in events/WTT_Germany.txt line : 68
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_august_von_mackensen, near line: 68" in file: "events/WTT_Germany.txt" near line: 79
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_wilhelm_ii' in events/WTT_Germany.txt line : 238
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_wilhelm_ii, near line: 238" in file: "events/WTT_Germany.txt" near line: 249
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_wilhelm_iii' in events/WTT_Germany.txt line : 286
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_wilhelm_iii, near line: 286" in file: "events/WTT_Germany.txt" near line: 297
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_wilhelm_iii' in events/WTT_Germany.txt line : 316
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_wilhelm_iii, near line: 316" in file: "events/WTT_Germany.txt" near line: 327
+[15:06:36][effect.cpp:402]: Invalid effect 'ITA_victor_emmanuel_iii' in events/WTT_Germany.txt line : 454
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: ITA_victor_emmanuel_iii, near line: 454" in file: "events/WTT_Germany.txt" near line: 456
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_wilhelm_iii' in events/WTT_Germany.txt line : 994
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_wilhelm_iii, near line: 994" in file: "events/WTT_Germany.txt" near line: 1005
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_wilhelm_iii' in events/WTT_Germany.txt line : 1034
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_wilhelm_iii, near line: 1034" in file: "events/WTT_Germany.txt" near line: 1045
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_wilhelm_iii' in events/WTT_Germany.txt line : 1577
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: GER_wilhelm_iii, near line: 1577" in file: "events/WTT_Germany.txt" near line: 1587
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_wilhelm_iii' in events/WTT_Germany.txt line : 1664
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: GER_wilhelm_iii, near line: 1664" in file: "events/WTT_Germany.txt" near line: 1674
+[15:06:36][trigger.cpp:641]: Invalid trigger 'ARG' in events/WTT_Germany.txt line : 2212
+[15:06:36][trigger.cpp:494]: Error: "Unknown trigger-type: ARG, near line: 2212" in file: "events/WTT_Germany.txt" near line: 2215
+[15:06:36][effect.cpp:402]: Invalid effect 'ARG' in events/WTT_Germany.txt line : 2216
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: ARG, near line: 2216" in file: "events/WTT_Germany.txt" near line: 2220
+[15:06:36][effect.cpp:402]: Invalid effect 'ROOT_inherit_current_scope_wars_effect' in events/WTT_Germany.txt line : 3094
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: ROOT_inherit_current_scope_wars_effect, near line: 3094" in file: "events/WTT_Germany.txt" near line: 3094
+[15:06:36][effect.cpp:402]: Invalid effect 'ROOT_inherit_current_scope_wars_effect' in events/WTT_Germany.txt line : 3095
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: ROOT_inherit_current_scope_wars_effect, near line: 3095" in file: "events/WTT_Germany.txt" near line: 3095
+[15:06:36][effect.cpp:402]: Invalid effect 'ROOT_inherit_current_scope_wars_effect' in events/WTT_Germany.txt line : 3116
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: ROOT_inherit_current_scope_wars_effect, near line: 3116" in file: "events/WTT_Germany.txt" near line: 3116
+[15:06:36][effect.cpp:402]: Invalid effect 'ROOT_inherit_current_scope_wars_effect' in events/WTT_Germany.txt line : 3117
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: ROOT_inherit_current_scope_wars_effect, near line: 3117" in file: "events/WTT_Germany.txt" near line: 3117
+[15:06:36][effect.cpp:402]: Invalid effect 'ROOT_inherit_current_scope_wars_effect' in events/WTT_Germany.txt line : 3138
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: ROOT_inherit_current_scope_wars_effect, near line: 3138" in file: "events/WTT_Germany.txt" near line: 3138
+[15:06:36][effect.cpp:402]: Invalid effect 'ROOT_inherit_current_scope_wars_effect' in events/WTT_Germany.txt line : 3139
+[15:06:36][effect.cpp:297]: Error: "Unknown effect-type: ROOT_inherit_current_scope_wars_effect, near line: 3139" in file: "events/WTT_Germany.txt" near line: 3139
+[15:06:36][effect.cpp:402]: Invalid effect 'GER_victoria' in events/WTT_Germany.txt line : 3498
+[15:06:36][persistent.cpp:48]: Error: "Unknown effect-type: GER_victoria, near line: 3498" in file: "events/WTT_Germany.txt" near line: 3510
+[15:06:36][effect.cpp:297]: Error: "Malformed token: operative_natural_orator, near line: 3587" in file: "events/WTT_Germany.txt" near line: 3590
+[15:06:36][effect.cpp:297]: Error: "Malformed token: operative_seducer, near line: 3596
+Malformed token: operative_natural_orator, near line: 3596" in file: "events/WTT_Germany.txt" near line: 3600
+[15:06:36][persistent.cpp:48]: Error: "Unexpected token: on_declare_war, near line: 8" in file: "common/on_actions/00_on_actions.txt" near line: 10
+[15:06:36][persistent.cpp:48]: Error: "Unexpected token: every_country, near line: 22" in file: "common/on_actions/zeit_on_actions.txt" near line: 25
+[15:06:36][persistent.cpp:48]: Error: "Unexpected token: every_country, near line: 26" in file: "common/on_actions/zeit_on_actions.txt" near line: 29
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: coastal_defense_ships. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: tech_flamethrower. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: jaegers. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: shocktroops. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: panzerschiffe. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: pre_dreadnoughts. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: coastal_defense_ships. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: pre_dreadnoughts. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: coastal_defense_ships. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: coastal_defense_ships. use var:var_name to explicitly use variables in effects/triggers
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = AST_support_the_policy_of_appeasement (common/characters/AST.txt:558: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/AST.txt:558: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = CAN_compromise_with_quebec (common/characters/CAN.txt:670: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/CAN.txt:670: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = CAN_crown_corporations (common/characters/CAN.txt:694: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/CAN.txt:694: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SAF_support_the_policy_of_appeasement (common/characters/SAF.txt:388: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SAF.txt:388: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_stalingrad (common/characters/SOV.txt:70: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:70: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:123: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:123: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:185: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:185: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_great_purge (common/characters/SOV.txt:229: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:229: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_great_purge (common/characters/SOV.txt:231: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:231: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:421: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:421: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:503: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:503: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:524: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:524: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:545: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:545: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:581: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:581: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:612: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:612: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:631: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:631: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:652: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:652: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_stalingrad (common/characters/SOV.txt:673: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:673: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_stalingrad (common/characters/SOV.txt:712: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:712: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:1273: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:1273: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_defense_of_moscow (common/characters/SOV.txt:1311: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:1311: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_finish_the_five_year_plan (common/characters/SOV.txt:1778: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/SOV.txt:1778: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = USA_reach_out_to_the_ware_group (common/characters/USA.txt:1061: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/USA.txt:1061: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = USA_reach_out_to_the_ware_group (common/characters/USA.txt:1202: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/USA.txt:1202: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = USA_reach_out_to_the_ware_group (common/characters/USA.txt:1407: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/characters/USA.txt:1407: has_completed_focus
+[15:06:36][triggerimplementation.cpp:9556]: common/unit_leader/00_traits.txt:615: has_game_rule: game rule HORST_ALLOW_ADAPTABLE does not exist
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/unit_leader/00_traits.txt:615: has_game_rule
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = USA_limited_intervention (common/national_focus/usa.txt:365: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: common/national_focus/usa.txt:365: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SPA_a_great_spain (music/lar_songs.txt:38: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: music/lar_songs.txt:38: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SPR_the_popular_front (music/lar_songs.txt:39: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: music/lar_songs.txt:39: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = USA_suspend_the_presecution (music/mtg_songs.txt:33: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: music/mtg_songs.txt:33: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = USA_democratic_socialism (music/mtg_songs.txt:44: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: music/mtg_songs.txt:44: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = USA_america_first (music/mtg_songs.txt:61: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: music/mtg_songs.txt:61: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = USA_honor_the_confederacy (music/mtg_songs.txt:71: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: music/mtg_songs.txt:71: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_raskovas_aviation_group (music/sabatonsoundtrack.txt:74: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: music/sabatonsoundtrack.txt:74: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = SOV_raskovas_aviation_group (music/sabatonsoundtrack.txt:80: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: music/sabatonsoundtrack.txt:80: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ITA_yugoslavia_friend (events/France.txt:443: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/France.txt:443: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ITA_yugoslavia_friend (events/France.txt:457: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/France.txt:457: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = FRA_strengthen_the_little_entente (events/France.txt:557: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/France.txt:557: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = JAP_the_unthinkable_option (events/Germany.txt:116: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:116: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = JAP_purge_the_kodoha_faction (events/Germany.txt:121: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:121: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = JAP_purge_the_kodoha_faction (events/Germany.txt:126: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:126: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = HUN_protect_austria (events/Germany.txt:1783: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:1783: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = HUN_protect_austria (events/Germany.txt:1797: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:1797: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ENG_no_further_appeasement (events/Germany.txt:1918: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:1918: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ENG_no_further_appeasement (events/Germany.txt:2042: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:2042: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = FRA_strengthen_the_little_entente (events/Germany.txt:2232: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:2232: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = FRA_strengthen_the_little_entente (events/Germany.txt:2239: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:2239: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = CZE_an_entente_of_our_own (events/Germany.txt:2333: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:2333: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = FRA_strengthen_the_little_entente (events/Germany.txt:2346: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:2346: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = FRA_strengthen_the_little_entente (events/Germany.txt:2397: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:2397: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ENG_a_change_in_course (events/Germany.txt:3556: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:3556: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ENG_a_change_in_course (events/Germany.txt:3624: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:3624: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ENG_a_change_in_course (events/Germany.txt:3638: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:3638: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = GER_danzig_for_guarantees (events/Germany.txt:4742: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:4742: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = GER_danzig_for_guarantees (events/Germany.txt:4751: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:4751: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = GER_danzig_for_guarantees (events/Germany.txt:4760: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:4760: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = GER_danzig_for_guarantees (events/Germany.txt:4769: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:4769: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = GER_danzig_for_guarantees (events/Germany.txt:4805: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:4805: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = FRA_strengthen_the_little_entente (events/Germany.txt:6524: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:6524: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = POL_protect_czechozlovakia (events/Germany.txt:6530: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:6530: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = POL_coerce_czechoslovakia (events/Germany.txt:6531: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/Germany.txt:6531: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = GER_poland_friend (events/NewsEvents.txt:1906: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/NewsEvents.txt:1906: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ENG_a_change_in_course (events/WTT_Germany.txt:1260: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/WTT_Germany.txt:1260: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ENG_a_change_in_course (events/WTT_Germany.txt:1315: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/WTT_Germany.txt:1315: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ENG_a_change_in_course (events/WTT_Germany.txt:1379: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/WTT_Germany.txt:1379: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = ENG_a_change_in_course (events/WTT_Germany.txt:1388: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/WTT_Germany.txt:1388: has_completed_focus
+[15:06:36][triggerimplementation.cpp:3132]: Invalid focus scripted in trigger. has_completed_focus = CHI_give_falkenhausen_citizenship (events/WTT_Germany.txt:1751: has_completed_focus)
+[15:06:36][trigger.cpp:114]: Trigger failed to validate: events/WTT_Germany.txt:1751: has_completed_focus
+[15:06:36][effectimplementation.cpp:14561]: Invalid Decision ID for activate_mission GER_mefo_bills_mission
+[15:06:36][effectimplementation.cpp:2746]: history/countries/JAP - Japan.txt:22: add_timed_idea: Invalid idea: No_Prewar_TradeBuff. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:36][effectimplementation.cpp:2746]: events/Germany.txt:4813: add_timed_idea: Invalid idea: anti_soviet_pact_refused_call. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:36][effectimplementation.cpp:2134]: events/NewsEvents.txt:1355: swap_ideas: Invalid idea: trotskyite_plot_nsb. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:36][effectimplementation.cpp:14561]: Invalid Decision ID for activate_mission GER_mefo_bills_mission
+[15:06:37][flagtextureatlas.cpp:524]: Error loading flag for country FRF : Ideology democratic : Path gfx/flags/medium/ : File not found
+[15:06:37][gameapplication.cpp:713]: The game has loc key collisions. Check logs/text.log for more details
+[15:06:38][effect.cpp:402]: Invalid effect 'create_leader' in history/countries/EMP - Empty.txt line : 7
+[15:06:38][countryhistory.cpp:167]: Unknown History Command ==>'create_leader'<==  for Countryhistory/countries/EMP - Empty.txt
+[15:06:38][persistent.cpp:48]: Error: "Unknown effect-type: create_leader, near line: 7" in file: "history/countries/EMP - Empty.txt" near line: 22
+[15:06:38][history.cpp:265]: LIT - is missing a history file.
+[15:06:38][history.cpp:265]: SLO - is missing a history file.
+[15:06:38][history.cpp:265]: CRO - is missing a history file.
+[15:06:38][history.cpp:265]: FRF - is missing a history file.
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: coastal_defense_ships. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: tech_flamethrower. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: jaegers. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: shocktroops. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: panzerschiffe. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: pre_dreadnoughts. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: coastal_defense_ships. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: pre_dreadnoughts. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: coastal_defense_ships. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: cruiser_submarines. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: desertinfantry_at. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][database_scoped_variables.cpp:323]: invalid database object for effect/trigger: coastal_defense_ships. use var:var_name to explicitly use variables in effects/triggers
+[15:06:38][effectimplementation.cpp:14561]: Invalid Decision ID for activate_mission GER_mefo_bills_mission
+[15:06:38][effectimplementation.cpp:2746]: history/countries/JAP - Japan.txt:22: add_timed_idea: Invalid idea: No_Prewar_TradeBuff. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/GER - Germany.txt:41: set_technology: Invalid tech
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/GER - Germany.txt:41: set_technology: Invalid tech
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/GER - Germany.txt:41: set_technology: Invalid tech
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/GER - Germany.txt:134: set_technology: Invalid tech
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/GER - Germany.txt:134: set_technology: Invalid tech
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/ENG - Britain.txt:31: set_technology: Invalid tech
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/ENG - Britain.txt:108: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_1_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_2_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_3_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_4_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_2_custom_slot" on equipment type "ship_hull_carrier_conversion_bb"; removing from effect.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/BEL - Belgium.txt:9: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/HOL - Holland.txt:29: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/CZE - Czechoslovakia.txt:7: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/CZE - Czechoslovakia.txt:7: add_ideas: Invalid idea: neutral_ai_nation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/POL - Poland.txt:12: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/AUS - Austria.txt:33: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/AUS - Austria.txt:33: add_ideas: Invalid idea: neutral_ai_nation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/SPR - Nationalist Spain.txt:15: add_ideas: Invalid idea: SPR_no_navy. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/SPR - Nationalist Spain.txt:69: add_ideas: Invalid idea: weak_ai. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/ITA - Italy.txt:8: add_ideas: Invalid idea: ITA_libya_stands. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/ITA - Italy.txt:58: set_technology: Invalid tech
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/ITA - Italy.txt:58: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:1849]: history/countries/ROM - Romania.txt:142: add_ideas: Invalid idea: neutrality_idea. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/YUG - Yugoslavia.txt:13: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/YUG - Yugoslavia.txt:13: add_ideas: Invalid idea: neutral_ai_nation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/GRE - Greece.txt:14: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/GRE - Greece.txt:14: add_ideas: Invalid idea: neutral_ai_nation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/GRE - Greece.txt:41: set_technology: Invalid tech
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/GRE - Greece.txt:41: set_technology: Invalid tech
+[15:06:38][country.cpp:7507]: Attempting to set captial state #1 for Republic of Albania, they dont own it!
+[15:06:38][effectimplementation.cpp:1849]: history/countries/NOR - Norway.txt:15: add_ideas: Invalid idea: nor_bad_debuffs. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/NOR - Norway.txt:15: add_ideas: Invalid idea: nor_bad_debuffs2. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/NOR - Norway.txt:15: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/NOR - Norway.txt:45: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:1849]: history/countries/DEN - Denmark.txt:13: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/FIN - Finland.txt:15: add_ideas: Invalid idea: neutral_ai_nation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/FIN - Finland.txt:38: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:1849]: history/countries/FIN - Finland.txt:121: add_ideas: Invalid idea: fin_sisu. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][country.cpp:7507]: Attempting to set captial state #760 for Australia, they dont own it!
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/AST - Australia.txt:94: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:1849]: history/countries/AST - Australia.txt:123: add_ideas: Invalid idea: SAF_the_commonwealth. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][production.cpp:4987]: Skipped adding equipment "SS2" to AST as it's conflicting with existing equipment "1936 Submarine Hull" (ship_hull_submarine_2, version 0, creator AST)
+[15:06:38][production.cpp:4987]: Skipped adding equipment "SS3" to AST as it's conflicting with existing equipment "Early Submarine Hull" (ship_hull_submarine_1, version 0, creator AST)
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/CAN - Canada.txt:28: set_technology: Invalid tech
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/CAN - Canada.txt:120: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:1849]: history/countries/CAN - Canada.txt:150: add_ideas: Invalid idea: SAF_the_commonwealth. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/CHI - China.txt:26: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:21064]: history/countries/JAP - Japan.txt:28: add_intel: target country CRO does not exist anymore
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/JAP - Japan.txt:122: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_1_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_2_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_3_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_4_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/NZL - New Zealand.txt:77: add_ideas: Invalid idea: SAF_the_commonwealth. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/PER - Persia.txt:11: add_ideas: Invalid idea: no_training. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/SAF - South Africa.txt:20: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:1849]: history/countries/SAF - South Africa.txt:126: add_ideas: Invalid idea: SAF_ossewabrandwag. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/SAF - South Africa.txt:127: add_ideas: Invalid idea: SAF_history_of_segregation. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/SAF - South Africa.txt:128: add_ideas: Invalid idea: SAF_the_commonwealth. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:21064]: history/countries/SIA - Siam.txt:22: add_intel: target country CRO does not exist anymore
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/SIA - Siam.txt:48: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:1849]: history/countries/SIA - Siam.txt:59: add_ideas: Invalid idea: MAN_rubbertrade_siam. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][texturehandler.cpp:155]: Texture Handler encountered missing texture file: plaekphibunsongkhram.tga
+[15:06:38][texturehandler.cpp:209]: Couldn't find texture file: 'plaekphibunsongkhram.tga'
+[15:06:38][character_manager.cpp:213]: Large portrait path gfx/leaders/SIA/plaekphibunsongkhram.tga has unexpected format, can't compute small portrait path
+[15:06:38][character_manager.cpp:213]: Large portrait path gfx/leaders/SIA/Seriroengrit.dds has unexpected format, can't compute small portrait path
+[15:06:38][character_manager.cpp:213]: Large portrait path gfx/leaders/SIA/Choonhavan.dds has unexpected format, can't compute small portrait path
+[15:06:38][effectbase.cpp:718]: *Tried to trigger non-existant event: usa.50
+[15:06:38][effectbase.cpp:718]: *Tried to trigger non-existant event: usa.51
+[15:06:38][effectimplementation.cpp:1849]: history/countries/USA - USA.txt:161: add_ideas: Invalid idea: USA_anti_spy. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_1_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_2_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_3_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:4234]: Module "ship_deck_space" attached to invalid slot "mid_4_custom_slot" on equipment type "ship_hull_carrier_1"; removing from effect.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/RAJ - British Raj.txt:39: add_ideas: Invalid idea: SAF_the_commonwealth. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][technology_effect_implementation.cpp:909]: history/countries/RAJ - British Raj.txt:52: set_technology: Invalid tech
+[15:06:38][effectimplementation.cpp:5267]: history/countries/MAN - Manchukou.txt:24: recruit_character: Unknown character 
+[15:06:38][effectimplementation.cpp:1849]: history/countries/MAN - Manchukou.txt:74: add_ideas: Invalid idea: MAN_south_manchuria_railway_company. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/MAN - Manchukou.txt:74: add_ideas: Invalid idea: MAN_banditry. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/MAN - Manchukou.txt:74: add_ideas: Invalid idea: MAN_low_legitimacy_5. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:38][effectimplementation.cpp:1849]: history/countries/EFR - Vichy France.txt:74: add_ideas: Invalid idea: no_production. If you wanted to reference a variable, you need to explicitly prefix it with var: or temp_var:.
+[15:06:41][mapbuildings.cpp:508]: map/buildings.txt error at line 15219: map building location is not over the land - ignoring instance.
+[15:06:41][mapbuildings.cpp:508]: map/buildings.txt error at line 15239: map building location is not over the land - ignoring instance.
+[15:06:41][mapbuildings.cpp:543]: map/buildings.txt error at line 29159: map building(Naval Base) location is not within specified state. Supposed to be '169 - Sevilla' but was '118 - Gibraltar'for province 13228. BUILDING IGNORED!
+[15:06:41][mapbuildings.cpp:543]: map/buildings.txt error at line 29161: map building(Land Fort) location is not within specified state. Supposed to be '169 - Sevilla' but was '118 - Gibraltar'for province 13228. BUILDING IGNORED!
+[15:06:41][mapbuildings.cpp:543]: map/buildings.txt error at line 29162: map building(Coastal Fort) location is not within specified state. Supposed to be '169 - Sevilla' but was '118 - Gibraltar'for province 13228. BUILDING IGNORED!
+[15:06:41][mapbuildings.cpp:543]: map/buildings.txt error at line 31986: map building(Supply Hub) location is not within specified state. Supposed to be '169 - Sevilla' but was '118 - Gibraltar'for province 13228. BUILDING IGNORED!
+[15:06:41][mapbuildings.cpp:508]: map/buildings.txt error at line 36277: map building location is not over the land - ignoring instance.
+[15:06:43][flagtextureatlas.cpp:524]: Error loading flag for country FRF : Ideology democratic : Path gfx/flags/medium/ : File not found
+[15:12:17][persistent.cpp:48]: Error: "Invalid subunit.: flamethrower, near line: 132" in file: "history/units/GER_1936.txt" near line: 134
+[15:12:17][persistent.cpp:48]: Error: "Invalid subunit.: flamethrower, near line: 241" in file: "history/units/GER_1936.txt" near line: 242
+[15:12:17][persistent.cpp:48]: Error: "Invalid subunit.: flamethrower, near line: 280" in file: "history/units/GER_1936.txt" near line: 281
+[15:12:17][persistent.cpp:48]: Error: "State has no air base 55: {, near line: 397" in file: "history/units/GER_1936.txt" near line: 399
+[15:12:17][persistent.cpp:48]: Error: "Unexpected token: =, near line: 399" in file: "history/units/GER_1936.txt" near line: 403
+[15:12:17][persistent.cpp:48]: Error: "Unexpected token: tac_bomber_equipment_0, near line: 405" in file: "history/units/GER_1936.txt" near line: 409
+[15:12:17][persistent.cpp:48]: Error: "Unexpected token: transport_plane_equipment_1, near line: 411" in file: "history/units/GER_1936.txt" near line: 414
+[15:12:17][persistent.cpp:48]: Error: "Unexpected token: CAS_equipment_1, near line: 416" in file: "history/units/GER_1936.txt" near line: 419
+[15:12:17][persistent.cpp:48]: Error: "Unexpected token: nav_bomber_equipment_1, near line: 421" in file: "history/units/GER_1936.txt" near line: 424
+[15:12:17][persistent.cpp:48]: Error: "Invalid subunit.: desertinfantry, near line: 98
+Invalid subunit.: desertinfantry, near line: 99
+Invalid subunit.: desertinfantry, near line: 100
+Invalid subunit.: desertinfantry, near line: 101
+Invalid subunit.: desertinfantry, near line: 102
+Invalid subunit.: desertinfantry, near line: 103
+Invalid subunit.: desertinfantry, near line: 104
+Invalid subunit.: desertinfantry, near line: 105
+Invalid subunit.: desertinfantry, near line: 106
+Invalid subunit.: desertinfantry, near line: 107
+Invalid subunit.: desertinfantry, near line: 108
+Invalid subunit.: desertinfantry, near line: 109" in file: "history/units/ENG_1936.txt" near line: 117
+[15:12:17][equipmentvariant.cpp:911]: Country "ENG" does not have any equipment variant for type "light_tank_equipment_2" version 0 created by "ENG".
+[15:12:17][equipmentpool.cpp:1292]: Country "ENG" does not have any equipment variant for type "ship_hull_carrier_1" version 0 created by "ENG".
+[15:12:17][equipmentvariant.cpp:911]: Country "SOV" does not have any equipment variant for type "motorized_rocket_equipment" version 0 created by "SOV".
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Severnyy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Severnyy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Severnyy Podvodniy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Severnyy Podvodniy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Baltiyskiy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Baltiyskiy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Baltiyskiy Podvodniy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Baltiyskiy Podvodniy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Tikhookeanskiy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Tikhookeanskiy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Tihookyeanskiy Podvodniy Flot)
+[15:12:17][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Tihookyeanskiy Podvodniy Flot)
+[15:12:17][country.cpp:7524]: LIT has NO capital defined.
+[15:12:17][persistent.cpp:48]: Error: "Invalid subunit.: desertinfantry, near line: 139
+Invalid subunit.: desertinfantry, near line: 140
+Invalid subunit.: desertinfantry, near line: 141
+Invalid subunit.: desertinfantry, near line: 142
+Invalid subunit.: desertinfantry, near line: 143
+Invalid subunit.: desertinfantry, near line: 144
+Invalid subunit.: desertinfantry, near line: 145
+Invalid subunit.: desertinfantry, near line: 146
+Invalid subunit.: desertinfantry, near line: 147
+Invalid subunit.: desertinfantry, near line: 148
+Invalid subunit.: desertinfantry, near line: 149
+Invalid subunit.: desertinfantry, near line: 150" in file: "history/units/ITA_1936.txt" near line: 160
+[15:12:17][equipmentpool.cpp:1292]: Country "AST" does not have any equipment variant for type "ship_hull_light_2" version 0 created by "AST".
+[15:12:17][equipmentpool.cpp:1420]: Trying to fill variant where none exist from type: artillery_equipment belonging to Second Brazilian Republic
+[15:12:17][equipmentpool.cpp:1420]: Trying to fill variant where none exist from type: support_equipment belonging to Second Brazilian Republic
+[15:12:17][unit.cpp:3524]: 1a Divisão de Infanteria ( BRA ) unit in 10980 has locked equipment requirements: artillery_equipment, support_equipment, , needed by subunit(s) in template "Divisão de Infanteria".
+[15:12:17][equipmentvariant.cpp:911]: Country "BRA" does not have any equipment variant for type "support_equipment_1" version 0 created by "BRA".
+[15:12:17][equipmentpool.cpp:1292]: Country "PER" does not have any equipment variant for type "fighter_equipment_0" version 0 created by "PER".
+[15:12:17][strategicair.cpp:3983]: Error scripting OOB history/units/PER_1936.txt. Could not set pool equipment amount in Tehran
+[15:12:17][equipmentpool.cpp:1292]: Country "PER" does not have any equipment variant for type "CAS_equipment_1" version 0 created by "PER".
+[15:12:17][strategicair.cpp:3983]: Error scripting OOB history/units/PER_1936.txt. Could not set pool equipment amount in Tehran
+[15:12:17][equipmentvariant.cpp:911]: Country "PER" does not have any equipment variant for type "infantry_equipment_1" version 0 created by "PER".
+[15:12:17][equipmentpool.cpp:1420]: Trying to fill variant where none exist from type: armored_car_equipment belonging to South Africa
+[15:12:17][equipmentpool.cpp:1420]: Trying to fill variant where none exist from type: armored_car_equipment belonging to South Africa
+[15:12:17][equipmentpool.cpp:1420]: Trying to fill variant where none exist from type: armored_car_equipment belonging to South Africa
+[15:12:51][pdx_audio.cpp:1037]: Missing sound effect: alert_officer_corps_sound
+[15:12:52][pdx_audio.cpp:1037]: Missing sound effect: alert_doctrine_unlock_sound
+[15:12:53][effectbase.cpp:718]: *Tried to trigger non-existant event: baltic.4
+[15:13:02][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Severnyy Flot)
+[15:13:02][province.cpp:573]: Trying to move navy to land province with no port: 10737 ()
+[15:13:02][province.cpp:573]: Trying to move navy to land province with no port: 10737 ()
+[15:13:02][province.cpp:573]: Trying to move navy to land province with no port: 10737 (Severnyy Podvodniy Flot)
+[15:13:03][triggerimplementation.cpp:2558]: events/Germany.txt:1636: has_idea: german_advisors is not A valid Idea
+[15:13:03][triggerimplementation.cpp:2558]: events/Germany.txt:1667: has_idea: german_advisors is not A valid Idea
+[15:13:05][effectimplementation.cpp:9399]: GER tried to declare war on AUS which does not exist
+[15:13:05][effectimplementation.cpp:9400]: ^^^ common/scripted_effects/zeit_scripted_effects.txt:27: declare_war_on
+[15:17:27][effect.cpp:402]: Invalid effect 'limit' in common/scripted_effects/zeit_scripted_effects.txt line : 39
+[15:17:27][effect.cpp:297]: Error: "Unknown effect-type: limit, near line: 39" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 42
+[15:17:27][effect.cpp:402]: Invalid effect 'original_tag' in common/scripted_effects/zeit_scripted_effects.txt line : 44
+[15:17:27][effect.cpp:297]: Error: "Unknown effect-type: original_tag, near line: 44" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 44
+[15:18:43][effect.cpp:402]: Invalid effect 'limit' in common/scripted_effects/zeit_scripted_effects.txt line : 39
+[15:18:43][effect.cpp:297]: Error: "Unknown effect-type: limit, near line: 39" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 42
+[15:18:43][effect.cpp:402]: Invalid effect 'original_tag' in common/scripted_effects/zeit_scripted_effects.txt line : 44
+[15:18:43][effect.cpp:297]: Error: "Unknown effect-type: original_tag, near line: 44" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 44
+[15:19:06][effect.cpp:402]: Invalid effect 'limit' in common/scripted_effects/zeit_scripted_effects.txt line : 39
+[15:19:06][effect.cpp:297]: Error: "Unknown effect-type: limit, near line: 39" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 42
+[15:19:06][effect.cpp:402]: Invalid effect 'original_tag' in common/scripted_effects/zeit_scripted_effects.txt line : 44
+[15:19:06][effect.cpp:297]: Error: "Unknown effect-type: original_tag, near line: 44" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 44
+[15:19:22][effect.cpp:402]: Invalid effect 'limit' in common/scripted_effects/zeit_scripted_effects.txt line : 39
+[15:19:22][effect.cpp:297]: Error: "Unknown effect-type: limit, near line: 39" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 42
+[15:19:22][effect.cpp:402]: Invalid effect 'original_tag' in common/scripted_effects/zeit_scripted_effects.txt line : 44
+[15:19:22][effect.cpp:297]: Error: "Unknown effect-type: original_tag, near line: 44" in file: "common/scripted_effects/zeit_scripted_effects.txt" near line: 44

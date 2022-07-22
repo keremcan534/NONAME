@@ -1,0 +1,21 @@
+state={
+	id=787
+	name="STATE_787" # Northern Kashmir
+	manpower = 1415800
+	
+state_category = rural
+	history= {
+		owner = RAJ
+		controller = RAJ
+		buildings = {
+				infrastructure = 1
+
+			}
+		}
+
+	provinces={
+		1910 2041 2084 10821 
+	}
+
+	local_supplies=0.0 
+}

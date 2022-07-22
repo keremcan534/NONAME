@@ -1,0 +1,23 @@
+
+state={
+	id=442
+	name="STATE_442"
+	manpower = 4684400
+	
+	state_category = rural
+
+	history= {
+		owner = RAJ
+		controller = RAJ
+		buildings = {
+				infrastructure = 1
+
+			}
+		}
+
+	provinces={
+		1978 4558 4998 12717 12763 
+	}
+
+	local_supplies=5.0 
+}

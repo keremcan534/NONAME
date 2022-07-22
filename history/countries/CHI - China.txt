@@ -1,0 +1,22 @@
+﻿capital = 613 # Nanjing
+set_stability = 0
+set_war_support = 0
+set_research_slots = 0
+set_convoys = 0
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+recruit_character = CHI_chiang_kaishek
+recruit_character = CHI_mao_zedong
+recruit_character = CHI_zhang_jiang
+recruit_character = CHI_kwong_shen
+
+
+

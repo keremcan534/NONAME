@@ -1,0 +1,24 @@
+
+state={
+	id=277
+	name="STATE_277"
+	manpower = 3424403
+	
+	state_category = wasteland
+	impassable = yes
+
+	history= {
+		owner = EMP
+		controller = EMP
+		buildings = {
+				infrastructure = 1
+
+			}
+		}
+	provinces={
+		1965 2008 2011 7913 12755 
+	}
+	
+
+	local_supplies=0.0 
+}
