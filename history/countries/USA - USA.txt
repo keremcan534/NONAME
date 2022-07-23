@@ -120,14 +120,6 @@ add_intel = {
 }
 
 add_intel = {
-	target = BRA
-	civilian_intel = 200
-	army_intel = 200
-	navy_intel = 200
-	airforce_intel = 200
-}
-
-add_intel = {
 	target = SAF
 	civilian_intel = 200
 	army_intel = 200

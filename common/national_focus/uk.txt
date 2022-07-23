@@ -97,7 +97,7 @@
 		x = -4
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -123,7 +123,7 @@
 		x = 0
 		y = 1
 		relative_position_id = ENG_motorized_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -142,16 +142,14 @@
 	}
 	focus = {
 		id = air_defense_focus
-		prerequisite = {
-			focus = limited_rearmament_focus
-		}
+	
 		available = {
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		icon = GFX_goal_generic_construct_military
 		x = -6
-		y = 1
+		y = 0
 		relative_position_id = limited_rearmament_focus
 		cost = 10
 		completion_reward = {
@@ -189,12 +187,13 @@
 	focus = {
 		id = radar_focus
 		prerequisite = {
+			focus = limited_rearmament_focus
 			focus = air_defense_focus
 		}
 		icon = GFX_goal_generic_radar
-		x = 0
+		x = -6
 		y = 1
-		relative_position_id = air_defense_focus
+		relative_position_id = limited_rearmament_focus
 		cost = 5
 	
 		available_if_capitulated = yes
@@ -216,7 +215,7 @@
 			focus = limited_rearmament_focus
 		}
 		available = {
-			date > 1936.9.1
+			date > 1936.6.1
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -224,7 +223,7 @@
 		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = "UK gets 4 military factories when war started"
 			add_ideas = wartime_industry_focus
@@ -264,7 +263,7 @@
 		x = 1
 		y = 1
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 	
 		completion_reward = {
@@ -416,7 +415,7 @@
 		x = 2
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = air_focus_bypass_tt
@@ -527,7 +526,7 @@
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -555,7 +554,7 @@
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -583,7 +582,7 @@
 		x = 1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -616,7 +615,7 @@
 		x = 1
 		y = 1
 		relative_position_id = fighter_command_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -757,7 +756,7 @@
 			focus = ENG_secure_the_imperial_shipping_routes
 		}
 		icon = GFX_focus_generic_destroyer
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ENG_secure_the_imperial_shipping_routes
 		cost = 10
@@ -781,10 +780,11 @@
 		id = ENG_a_s_warfare
 		prerequisite = {
 			focus = uk_destroyer_focus
+			focus = uk_convoy_focus
 		}
 		icon = GFX_goal_generic_navy_anti_submarine
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = uk_destroyer_focus
 		cost = 10
 		ai_will_do = {
@@ -807,12 +807,12 @@
 	focus = {
 		id = uk_convoy_focus
 		prerequisite = {
-			focus = uk_destroyer_focus
+			focus = ENG_secure_the_imperial_shipping_routes
 		}
 		icon = GFX_goal_generic_navy_cruiser
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = uk_destroyer_focus
+		relative_position_id = ENG_secure_the_imperial_shipping_routes
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -971,7 +971,7 @@
 		x = 1
 		y = 1
 		relative_position_id = uk_carrier_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1072,7 +1072,7 @@
 	focus = {
 		id = uk_empire_focus
 		icon = GFX_goal_generic_national_unity
-		x = 22
+		x = 23
 		y = 0
 		cost = 5
 		available_if_capitulated = yes
@@ -1094,7 +1094,7 @@
 		x = 0
 		y = 1
 		relative_position_id = uk_empire_focus
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 50
@@ -1322,7 +1322,7 @@
 		x = -2
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 5 
+		cost = 4
 		available_if_capitulated = yes
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1354,7 +1354,7 @@
 		x = 0
 		y = 3
 		relative_position_id = uk_colonial_focus
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		bypass = {
 			RAJ = {
@@ -1516,7 +1516,7 @@
 		x = 0
 		y = 1
 		relative_position_id = uk_colonial_focus
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		complete_tooltip = {
 			random_country = {
@@ -1693,7 +1693,7 @@
 		x = -1
 		y = 2
 		relative_position_id = uk_colonial_focus
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		complete_tooltip = {
 			random_country = {
@@ -1870,7 +1870,7 @@
 		x = 1
 		y = 2
 		relative_position_id = uk_colonial_focus
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		complete_tooltip = {
 			random_country = {
@@ -2012,7 +2012,7 @@
 		x = 0
 		y = 1
 		relative_position_id = uk_india_focus
-		cost = 15
+		cost = 10
 		completion_reward = {
 			
 			ENG = {
