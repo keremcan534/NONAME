@@ -138,12 +138,12 @@ NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of eq
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 20.0 -- (10.0) Increased speed to make 3 speed changes more tolerable
 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.015 	--air global damage modifier
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.005 	--global damage modifier 
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.01 	--global damage modifier 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.35                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.3 	--effect on defense due to enemy air superiority
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.15 	--effect on defense due to enemy air superiority
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.2	--more AA attack will approach this amount of help (diminishing returns)
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 400 	--how quickly defense approaches the max impact diminishing returns curve
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT =	-0.15 	--effect on speed due to enemy air superiority
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT =	-0.05 	--effect on speed due to enemy air superiority
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE =	0.02 	-- (0.07) Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT =	0.0001 	-- WAS 0.005 | Lowered because vanilla CAS shootdown rates are too high | Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1 -- (1.0) Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA. 
@@ -159,7 +159,7 @@ NDefines.NNavy.FUEL_COST_MULT = 0.06 -- (0.10) fuel multiplier for all naval mis
 NDefines.NAir.FUEL_COST_MULT = 0.25 -- (0.35) fuel multiplier for all air missions 
 
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0375                    -- basic speed control
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0125                     -- basic speed control
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.020	-- speed penalty per infrastucture below maximum.
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35            -- vanilla is 0.2, for a long time GDU was 0.4. percentage of (max) org loss on takign enemy province
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.4		   -- vanilla is -0.2. how much org is lost every hour while moving an army.
@@ -226,7 +226,7 @@ NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0014 -- (0.005)
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 11		-- (5) chance to get a hit to damage on forts. (out of 100)
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.047
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.045
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.07
 
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0.44
