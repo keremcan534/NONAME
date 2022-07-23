@@ -114,13 +114,6 @@ air_wings = {
 	### ITALY ###
 	# 1a Squadra Aerea - SQA1 (Milan)
 	158 = { 
-		# 2a Divisione Aerea 'Borea'
-		fighter_equipment_0 = { 
-			amount = 400	
-			owner = "ITA" 
-		} 
-		# 4a Divisione Aerea 'Drago'
-		# 6a Divisione Aerea 'Falco'
 		tac_bomber_equipment_0 = { 
 			amount = 200
 			owner = "ITA" 
@@ -128,15 +121,13 @@ air_wings = {
 	
 		# 9a Divisione Aerea 'Leone'
 		nav_bomber_equipment_1 = { 
-			amount = 100
+			amount = 200
 			owner = "ITA" 
 		} 
-	 
-
 		CAS_equipment_1 = { 
-			amount = 200 
+			amount = 400 
 			owner = "ITA" 
-		} 
+		}
 	}
 } 
 

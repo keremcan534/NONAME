@@ -113,7 +113,7 @@ air_wings = {
 		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 800
+			amount = 1000
 		}
 	}
 
@@ -138,7 +138,7 @@ air_wings = {
 		### No. 16 CoENGal Command -- Vickers Vildebeests
 		nav_bomber_equipment_1 = {
 			owner = "ENG" 
-			amount = 100
+			amount = 200
 		}
 	}
 }

@@ -24,7 +24,7 @@ equipments = {
 		naval_strike_targetting = 0.6
 		#Space taken in convoy
 		lend_lease_cost = 6
-		build_cost_ic = 300
+		build_cost_ic = 600
 		resources = {
 			aluminium = 2
 			rubber = 2
@@ -59,7 +59,7 @@ equipments = {
 		air_attack = 50
 		air_defence = 20
 		air_bombing = 250
-		build_cost_ic = 350
+		build_cost_ic = 700
 
 	}
 	# Advanced strat_bomber
@@ -75,7 +75,7 @@ equipments = {
 		air_attack = 50
 		air_defence = 22
 		air_bombing = 310
-		build_cost_ic = 400
+		build_cost_ic = 800
 
 	}
 	# Transport plane ##########################
@@ -96,7 +96,7 @@ equipments = {
 		# Air vs Navy - high damage / low hit chance / hard to hurt
 		naval_strike_attack = 0
 		naval_strike_targetting = 0
-		build_cost_ic = 180
+		build_cost_ic = 360
 		resources = {
 			aluminium = 2
 			rubber = 2

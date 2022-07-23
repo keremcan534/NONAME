@@ -111,12 +111,6 @@ units = {
 air_wings = {
 	### II. Luftkreiskommando -- Berlin ###
 	64 = { 
-		# Jagdgeschwader 132 'Richtofen'		
-		fighter_equipment_1 =  {		# Ar 68
-			owner = "GER" 
-			amount = 800
-			version_name = "Bf 109 E"
-		}
 		# Kampfgeschwader 153		
 		tac_bomber_equipment_0 = {		# Do 23
 			owner = "GER" 
@@ -131,7 +125,7 @@ air_wings = {
 		# Sturzkampfgeschwader 162		
 		CAS_equipment_1 =  {			# Hs 123
 			owner = "GER" 
-			amount = 200
+			amount = 400
 		}
 		# Küstenfliegergruppe 106		
 		nav_bomber_equipment_1 =  {		# He 59, Do 18
