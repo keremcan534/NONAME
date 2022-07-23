@@ -137,8 +137,8 @@ NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.7 -- (0.7)
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of equipment to training is not fun
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 20.0 -- (10.0) Increased speed to make 3 speed changes more tolerable
 
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.015 	--air global damage modifier
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.01 	--global damage modifier 
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.06 	--air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.02 	--global damage modifier 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.35                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.15 	--effect on defense due to enemy air superiority
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.2	--more AA attack will approach this amount of help (diminishing returns)
@@ -226,7 +226,7 @@ NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0014 -- (0.005)
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 11		-- (5) chance to get a hit to damage on forts. (out of 100)
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.045
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.0275
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.07
 
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0.44
@@ -245,7 +245,7 @@ NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.045 -- original 0.05 air suppl
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.01
 
 
-NDefines.NAir.AIR_WING_MAX_SIZE = 1600                               -- this can be halved 6 times into 100 stacks (very convenient)
+NDefines.NAir.AIR_WING_MAX_SIZE = 6400                               -- this can be halved 6 times into 100 stacks (very convenient)
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500  -- WAS 1500, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.
 NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.001			-- WAS 0.0005 | How much the experinence gained by CAS is scaled
 NDefines.NAir.BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0004        	   -- WAS 0.0002 | How much the experinence gained by bombing is scaled
