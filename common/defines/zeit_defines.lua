@@ -11,7 +11,7 @@ NDefines.NAir.SECONDARY_DAMAGE_LOGISTICS = 0.25 -- how much damage gets translat
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 300
-NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.25, 0.2, 0.04, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.25, 0.2, 0.03, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 
 --above defines are for logistic strikes; logistics strike nerfed
