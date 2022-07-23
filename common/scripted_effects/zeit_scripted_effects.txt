@@ -53,21 +53,85 @@ tp_france_divs = {
 }
 
 fall_of_france = {
-	if={
-		limit={original_tag=GER date<1940.1.1}
-	GER={add_ideas=GER_triumph_in_france}
-}
-	set_global_flag= fall_of_france
-	FRA = {
-		set_cosmetic_tag = FRA_FREE
-		add_state_core = 539
-		set_capital = {
-			state = 539
-		}
-		remove_ideas = FRA_protected_by_the_maginot_line
-		remove_ideas = FRA_victors_of_wwi
-		remove_ideas = FRA_disjointed_government
+	FRA={
+		news_event = { id = news.34 days = 0 }
+		set_country_flag = france_de_gaulle
+			create_country_leader = {
+				name = "Charles de Gaulle"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					
+				}
+			}
 
+			remove_ideas={	
+				FRA_victors_of_wwi
+				FRA_protected_by_the_maginot_line
+			}
+			add_state_core = 539
+				set_capital = {
+					state = 539
+				}
+			set_global_flag= fall_of_france
+
+	}
+	ENG = {
+		retire_country_leader = yes					
+		create_country_leader = {
+			name = "Winston Churchill"
+			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "Portrait_Britain_Winston_Churchill.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {	british_bulldog	}
+		}
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+	
+	EFR={
+						#syria
+						transfer_state = 553 set_demilitarized_zone=553
+						transfer_state = 677 set_demilitarized_zone=667
+						transfer_state = 680 set_demilitarized_zone=680
+						transfer_state = 554 set_demilitarized_zone=554
+						#france
+						transfer_state = 26 
+						transfer_state = 22 set_demilitarized_zone=22
+						transfer_state = 25 set_demilitarized_zone=25
+						transfer_state = 20 set_demilitarized_zone=20
+						transfer_state = 33 set_demilitarized_zone=33
+						transfer_state = 31 set_demilitarized_zone=31
+						transfer_state = 32 set_demilitarized_zone=32
+						transfer_state = 21 set_demilitarized_zone=21
+						#africa
+						transfer_state = 777 set_demilitarized_zone=777
+						transfer_state = 776 set_demilitarized_zone=776
+						transfer_state = 781 set_demilitarized_zone=781
+						transfer_state = 778 set_demilitarized_zone=778
+						transfer_state = 556 set_demilitarized_zone=556
+						transfer_state = 779 set_demilitarized_zone=779
+						transfer_state = 780 set_demilitarized_zone=780
+						transfer_state = 272 set_demilitarized_zone=272
+						transfer_state = 557 set_demilitarized_zone=557
+						#madagascar
+						transfer_state = 543 set_demilitarized_zone=543
+						transfer_state = 708 set_demilitarized_zone=708
+						transfer_state = 706 set_demilitarized_zone=706
+						transfer_state = 713 set_demilitarized_zone=713
+						#tunis
+						transfer_state = 460 set_demilitarized_zone=460
+						transfer_state = 513 set_demilitarized_zone=513
+						transfer_state = 459 set_demilitarized_zone=459
+						transfer_state = 461 set_demilitarized_zone=461
+						transfer_state = 462 set_demilitarized_zone=462
+						every_owned_state={
+							set_demilitarized_zone = yes
+						}
+						26={set_demilitarized_zone = no}
 	}
 	GER = {
 		transfer_state = 28
@@ -84,12 +148,16 @@ fall_of_france = {
 		transfer_state = 23
 		transfer_state = 19
 		transfer_state = 806
+		country_event = { id = france.14 }
+		add_to_war=ITA
+		
 	}
 	ITA = {
 		transfer_state = 735
 		transfer_state = 1
 		transfer_state = 458
 		transfer_state = 665
+
 	}
 	JAP = {
 		transfer_state = 671
@@ -100,106 +168,7 @@ fall_of_france = {
 	RAJ = {
 		transfer_state = 320
 	}
-	EFR = {
-		EFR = { 
-			add_ideas = ai_limiter
-			diplomatic_relation = { country = ENG relation = non_aggression_pact }
-			diplomatic_relation = { country = USA relation = non_aggression_pact }
-			diplomatic_relation = { country = ITA relation = non_aggression_pact }
-			diplomatic_relation = { country = FRA relation = non_aggression_pact }
-			diplomatic_relation = { country = SAF relation = non_aggression_pact }
-			diplomatic_relation = { country = CAN relation = non_aggression_pact }
-			diplomatic_relation = { country = RAJ relation = non_aggression_pact }
-			diplomatic_relation = { country = AST relation = non_aggression_pact }
-			diplomatic_relation = { country = BRA relation = non_aggression_pact }
-			diplomatic_relation = { country = GER relation = non_aggression_pact }
-		}
-		set_capital = {
-			state = 24
-		}
-		hidden_effect = {
-			#SYRIA
-			transfer_state = 553
-			transfer_state = 677
-			transfer_state = 680
-			transfer_state = 554
-
-			transfer_state = 26
-			transfer_state = 22
-			transfer_state = 25
-			transfer_state = 20
-			transfer_state = 33
-			transfer_state = 31
-			transfer_state = 32
-			transfer_state = 21
-			add_state_core = 26
-			add_state_core = 22
-			add_state_core = 25
-			add_state_core = 20
-			add_state_core = 33
-			add_state_core = 31
-			add_state_core = 32
-			add_state_core = 21
-
-
-			553 = {
-				set_demilitarized_zone = yes
-			}
-			677 = {
-				set_demilitarized_zone = yes
-			}
-			680 = {
-				set_demilitarized_zone = yes
-			}
-			554 = {
-				set_demilitarized_zone = yes
-			}
-
-
-			22 = {
-				set_demilitarized_zone = yes
-			}
-			25 = {
-				set_demilitarized_zone = yes
-			}
-			20 = {
-				set_demilitarized_zone = yes
-			}
-			33 = {
-				set_demilitarized_zone = yes
-			}
-			31 = {
-				set_demilitarized_zone = yes
-			}
-			32 = {
-				set_demilitarized_zone = yes
-			}
-			21 = {
-				set_demilitarized_zone = yes
-			}
-			#tunis
-			transfer_state = 460
-			transfer_state = 513
-			transfer_state = 459
-			transfer_state = 461
-			transfer_state = 462
-			460 = {
-				set_demilitarized_zone = yes
-			}
-			513 = {
-				set_demilitarized_zone = yes
-			}
-			459 = {
-				set_demilitarized_zone = yes
-			}
-			461 = {
-				set_demilitarized_zone = yes
-			}
-			462 = {
-				set_demilitarized_zone = yes
-			}
-		}
-	}
+	
 }
 
 declare_war_on_enemy_faction = {

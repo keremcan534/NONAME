@@ -101,9 +101,8 @@ on_actions = {
 					set_equipment_fraction = 0
 					
 				}
-				hidden_effect = {
-					fall_of_france = yes
-				}
+				fall_of_france=yes
+			
 			}
 			if = {
 				#JAP
@@ -335,5 +334,8 @@ on_actions = {
 				}
 			}
 		}
+	}
+	on_state_control_changed={
+	
 	}
 }

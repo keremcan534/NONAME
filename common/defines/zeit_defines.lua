@@ -130,15 +130,15 @@ NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2   -- extra damage
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5 
 
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.04 -- (0.05)
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.12 -- (0.05)
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.04 	-- (0.05) global damage modifier
 
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.7 -- (0.7)
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of equipment to training is not fun
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 20.0 -- (10.0) Increased speed to make 3 speed changes more tolerable
 
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.01 	--air global damage modifier
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.02 	--global damage modifier 
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.015 	--air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.005 	--global damage modifier 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.35                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.3 	--effect on defense due to enemy air superiority
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.2	--more AA attack will approach this amount of help (diminishing returns)
@@ -161,7 +161,7 @@ NDefines.NAir.FUEL_COST_MULT = 0.25 -- (0.35) fuel multiplier for all air missio
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0375                    -- basic speed control
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.020	-- speed penalty per infrastucture below maximum.
-NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.2            -- vanilla is 0.2, for a long time GDU was 0.4. percentage of (max) org loss on takign enemy province
+NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35            -- vanilla is 0.2, for a long time GDU was 0.4. percentage of (max) org loss on takign enemy province
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.4		   -- vanilla is -0.2. how much org is lost every hour while moving an army.
 
 --HFU FRONTLINE AI DEFINES---------------------------------------------------------------------------------
@@ -221,12 +221,12 @@ NDefines.NMilitary.PLANNING_DECAY = 0.015
 NDefines.NMilitary.PLANNING_MAX = 0.25                          	-- can get more from techs
 NDefines.NMilitary.REINFORCE_CHANCE = 0.04 -- To make larger divisions more attractive
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4 -- Number of support companies allowed per division
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.75 -- (4.5)
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
 
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0014 -- (0.005)
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 11		-- (5) chance to get a hit to damage on forts. (out of 100)
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.05 -- (0.1)
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.047
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.07
 
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0.44

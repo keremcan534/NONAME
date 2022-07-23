@@ -10,11 +10,10 @@ state={
 	history={
 		owner = FRA
 		victory_points = {
-			9737 20 
+			9737 15
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			dockyard = 1
 			air_base = 3
 			9737 = {
@@ -24,7 +23,6 @@ state={
 			}
 
 		}
-		add_core_of = OCC
 		add_core_of = FRA
 
 	}

@@ -1121,7 +1121,7 @@ ideas = {
 				conscription = -0.003
 				war_support_factor = -0.05
 				land_doctrine_cost_factor = 0.5
-				surrender_limit = -0.2
+				surrender_limit = -0.25
 			}
 		}
 
@@ -1141,9 +1141,8 @@ ideas = {
 			picture = generic_disjointed_gov
 			
 			modifier = {
-				political_power_cost = 0.8
+				political_power_cost = 0.30
 				stability_factor = -0.10
-				surrender_limit = -0.5
 			}
 		}
 

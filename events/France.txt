@@ -34,54 +34,29 @@ country_event = {
 	fire_only_once = yes
 	option = { # Agree
 		name = france.14.a
-		limit={original_tag=GER}		
-		
-	if={limit={date<1940.1.1}
-		GER={add_timed_idea={idea=GER_triumph_in_france days=730}}
-	}
-		FRA = {
-			add_ideas = FRA_defeatism
-			country_event = france.20
-		}
-		FRA = {
-		set_equipment_fraction = 0
-		}
-
+		limit={original_tag=GER}
 		EFR = {
-			transfer_state = 26
-			every_state = {
-				limit = { is_core_of = FRA }
-				add_core_of = EFR
-			}
-			set_capital = 26
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no 
-			}
-			set_popularities = {
-				democratic = 18
-				fascism = 70
-				communism = 2
-				neutrality = 10
-			}
-		}
-		
-		EFR = { 
+			add_ideas = ai_limiter
+			add_ideas = trade_blocked
 			diplomatic_relation = { country = ENG relation = non_aggression_pact }
 			diplomatic_relation = { country = USA relation = non_aggression_pact }
-			diplomatic_relation = { country = PHI relation = non_aggression_pact }
+			diplomatic_relation = { country = ITA relation = non_aggression_pact }
 			diplomatic_relation = { country = FRA relation = non_aggression_pact }
 			diplomatic_relation = { country = SAF relation = non_aggression_pact }
 			diplomatic_relation = { country = CAN relation = non_aggression_pact }
 			diplomatic_relation = { country = RAJ relation = non_aggression_pact }
 			diplomatic_relation = { country = AST relation = non_aggression_pact }
-			diplomatic_relation = { country = NZL relation = non_aggression_pact }
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
-		}	
-	
-		JAP = {
-			EFR = { country_event = { id = france.1 } }
+			add_state_core = 24
+			set_capital = {
+				state = 24
+			}
+		every_state = {
+			limit = { is_core_of = FRA }
+			add_core_of = EFR
 		}
+		
+}
 	}
 }
 
@@ -121,19 +96,6 @@ country_event = {
 	option = {
 		custom_effect_tooltip = france.20.a_tt
 		set_country_flag = france_de_gaulle
-		hidden_effect =  {
-			create_country_leader = {
-				name = "Charles de Gaulle"
-				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-				picture = "Portrait_France_Charles_De_Gaulle.dds"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					
-				}
-			}
-		}
-		
 		name = france.20.a
 	}
 }

@@ -1,12 +1,8 @@
 ﻿capital = 16
 oob = "FRA_1936"
 set_naval_oob = "FRA_1936_naval_mtg"
-set_rule = {
-	can_be_spymaster = no
-}
-
 set_research_slots = 3
-set_stability = 0.42
+set_stability = 0.40
 set_war_support = 0.2
 add_intel = {
 	target = SOV
@@ -133,37 +129,37 @@ set_technology = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 5500
+	amount = 2500
 	producer = FRA
 }
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 3000
+	amount = 1540
 	producer = FRA
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 66000
+	amount = 40000
 	producer = FRA
 }
 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 8000
+	amount = 1453
 	producer = FRA
 }
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 3200
+	amount = 1200
 	producer = FRA
 }
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 4000
+	amount = 2000
 	producer = FRA
 }
 

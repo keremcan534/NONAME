@@ -124,7 +124,6 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				production_lack_of_resource_penalty_factor = -1
-				min_export = -1
 			}
 		}
 	}

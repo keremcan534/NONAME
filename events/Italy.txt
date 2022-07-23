@@ -295,7 +295,7 @@ ITA = { country_event = { id = italy.151 days = 1 } }
    }
    }
    
-    country_event = {
+    country_event = {#cosmetic tag RSI
    id = italy.151
    title = italy.151.t
    desc = italy.151.d
@@ -317,7 +317,7 @@ ITA = { country_event = { id = italy.151 days = 1 } }
   
    
    
-    country_event = {
+    country_event = { #annex greek
    id = italy.153
    title = italy.153.t
    desc = italy.153.d
@@ -362,7 +362,7 @@ ITA = {
 
 
 
-  country_event = {
+  country_event = { #annex yugo
    id = italy.155
    title = italy.155.t
    desc = italy.155.d
