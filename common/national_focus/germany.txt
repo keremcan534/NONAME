@@ -2008,6 +2008,12 @@
 				}
 				GER = {
 					add_ideas = GER_logistical_incompetence
+					add_timed_idea = {
+						idea = ger_infantry_expert
+						days = 400
+					}
+
+
 				}
 				BUL = {
 					add_ideas = GER_logistical_incompetence
