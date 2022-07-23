@@ -496,7 +496,6 @@ focus_tree = {
 		cost = 8
 		
 		completion_reward = {
-			add_ideas = SOV_red_army
 			
 			add_trait = {
 			character = SOV_ivan_konev

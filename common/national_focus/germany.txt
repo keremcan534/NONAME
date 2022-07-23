@@ -1988,7 +1988,7 @@
 				type = annex_everything
 				target = SOV
 			}
-			hidden_effect = {
+
 				ENG = {
 					remove_ideas = stiff_upper_lip
 					add_timed_idea = {
@@ -2003,7 +2003,7 @@
 					}
 					add_timed_idea = {
 						idea = SOV_debuff_1
-						days = 20
+						days = 60
 					}
 				}
 				GER = {
@@ -2038,7 +2038,7 @@
 						instant_build = yes
 					}
 				}
-			}
+			
 		}
 	}
 	focus = {
