@@ -1326,6 +1326,10 @@ focus_tree = {
 		
 		hidden_effect={
 		every_owned_state = {
+			limit= {AND = {infrastructure > 3 is_core_of = SOV}  }
+			add_extra_state_shared_building_slots = 5
+			}
+		every_owned_state = {
 			limit= {AND = {infrastructure > 4 is_core_of = SOV}  }
 			add_extra_state_shared_building_slots = 5
 			}
@@ -1356,9 +1360,6 @@ focus_tree = {
 				bonus = 1
 				uses = 2
 				category =cat_anti_air
-
-
-
 			}
 		}
 	}

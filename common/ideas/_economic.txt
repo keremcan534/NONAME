@@ -105,8 +105,7 @@ ideas = {
 		}
 		partial_economic_mobilisation = {
 			available = {
-				GER={has_completed_focus=GER_anschluss
-			}
+			threat>15
 				NOT = {
 					tag = USA
 				}
@@ -139,6 +138,8 @@ ideas = {
 		}
 		war_economy = {
 			available = {
+			GER={has_completed_focus=GER_anschluss
+			}
 				NOT = {
 					tag = USA
 				}

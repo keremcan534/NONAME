@@ -117,18 +117,18 @@ focus_tree = {
  			add_threat = 10
  			hidden_effect = {
  				JAP = {
- 					army_experience = 800
- 					air_experience = 600}
- 				SOV = { army_experience = 300
- 					air_experience = 200}
+ 					army_experience = 600
+ 					air_experience = 400}
+ 				SOV = { army_experience = 100
+ 					air_experience = 250}
  				USA = { add_war_support = 0.1
  					army_experience = 100
  					air_experience = 200}
  				ENG = { add_war_support = 0.1
- 					army_experience = 100
- 					air_experience = 200}
+ 					army_experience = 200
+ 					air_experience = 300}
  				AST = { add_war_support = 0.1
- 					army_experience = 100
+ 					army_experience = 150
  					air_experience = 200}
  				SAF = { add_war_support = 0.1
  					army_experience = 100
@@ -210,48 +210,48 @@ focus_tree = {
  					}
  					is_on_continent = asia
  				}
- 				add_compliance = 20
+ 				add_compliance = 60
  			}
  			hidden_effect = {
- 				SOV = { army_experience = 200}
+ 				SOV = { army_experience = 50}
  				USA = {
  					army_experience = 100
- 					air_experience = 200}
+ 					air_experience = 300}
  				ENG = {
  					army_experience = 100
- 					air_experience = 200}
+ 					air_experience = 250}
  				AST = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				SAF = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				CAN = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				RAJ = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				FRA = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				GER = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				ITA = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				HUN = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				SPR = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				BUL = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  				ROM = {
- 					army_experience = 100
+ 					army_experience = 150
  				}
  			}
  		}

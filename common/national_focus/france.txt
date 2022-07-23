@@ -756,7 +756,7 @@ focus = {
 	focus = {
 		id = FRA_refus_absurde
 		icon = GFX_goal_generic_demand_territory
-		x = 2
+		x = -2
 		y = 1
 		prerequisite = {focus=FRA_appeal_to_the_french_nation
 		}
@@ -782,13 +782,12 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
 			available = {
 				has_capitulated = yes
 				has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
 			}
 
-		}
+		
 		bypass = {
 		}
 		cancel_if_invalid = yes
@@ -886,30 +885,25 @@ focus = {
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			690 = {
-				is_controlled_by = EFR
-			}
-		}
-		bypass = {
-			NOT = {
-				690 = {
-					is_controlled_by = EFR
-				}
-			}
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			country_event = lar_appeal_to_overseas_territories.9
-			hidden_effect = {
-				transfer_state = 260
+		FRA={
+			transfer_state = 777 
+			transfer_state = 776 
+			transfer_state = 781 
+			transfer_state = 778 
+			transfer_state = 556 
+			transfer_state = 779 
+			transfer_state = 780 
+			transfer_state = 272 
+			transfer_state = 557 
+			every_owned_state={
+				set_demilitarized_zone=no
 			}
+		}
 		}
 	}
 	focus = {
@@ -930,23 +924,24 @@ focus = {
 			factor = 1
 		}
 		available = {
-			478 = {
-				is_controlled_by = EFR
-			}
+		
 		}
-		bypass = {
-			NOT = {
-				478 = {
-					is_controlled_by = EFR
-				}
-			}
-		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			country_event = lar_appeal_to_overseas_territories.5
+			FRA={
+				transfer_state = 553 
+						transfer_state = 677 
+						transfer_state = 680 
+						transfer_state = 554 
+						every_owned_state={
+							set_demilitarized_zone=no
+						}
+			}
+
 		}
 	}
 	focus = {
@@ -963,31 +958,25 @@ focus = {
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			469 = {
-				is_controlled_by = EFR
-			}
-		}
-		bypass = {
-			NOT = {
-				469 = {
-					is_controlled_by = EFR
-				}
-			}
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			country_event = lar_appeal_to_overseas_territories.11
+			FRA={
+				transfer_state = 543 
+				transfer_state = 708 
+				transfer_state = 706 
+				transfer_state = 713 
+			}
 			add_resource = {
 				type = rubber
 				amount = 300
 				state = 469
+			}
+			every_owned_state={
+				set_demilitarized_zone=no
 			}
 		}
 	}

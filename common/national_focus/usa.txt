@@ -288,7 +288,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_office_of_scientific_research_and_development
-		cost = 10
+		cost = 5
 		completion_reward = {
 			modify_building_resources = {
 				building = synthetic_refinery
@@ -976,8 +976,9 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_intervention_in_europe
 		}
-		mutually_exclusive = {
-		}
+		available={date>1942.1.1}
+
+	
 		relative_position_id = USA_intervention_in_europe
 		cost = 1
 		cancel_if_invalid = yes
@@ -2015,7 +2016,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_battleship_primacy
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2041,7 +2042,7 @@ focus_tree = {
 			focus = USA_advanced_mahanian_doctrine
 		}
 		relative_position_id = USA_battleship_primacy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2139,7 +2140,7 @@ focus_tree = {
 			focus = USA_bureau_of_aeronautics
 		}
 		relative_position_id = USA_bureau_of_aeronautics
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2189,7 +2190,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_escort_effort
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2216,7 +2217,7 @@ focus_tree = {
 			focus = USA_bureau_of_ships
 		}
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2256,7 +2257,7 @@ focus_tree = {
 			focus = USA_fleet_submarines
 		}
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

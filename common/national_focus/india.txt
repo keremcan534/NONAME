@@ -506,7 +506,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -581,7 +581,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -983,18 +983,12 @@ focus_tree = {
 	focus = {
 		id = RAJ_indian_institute_of_science
 		icon = GFX_focus_research
-		prerequisite = { focus = RAJ_tata_steel }
-		prerequisite = { focus = RAJ_assam_oil }
+		prerequisite = { focus = RAJ_tata_steel  focus = RAJ_assam_oil}
 		x = 0
 		y = 2
 		relative_position_id = RAJ_industrial_expansion
 
 		cost = 5
-
-		ai_will_do = {
-			factor = 50
-		}
-
 		available = {
 
 		}
@@ -1425,7 +1419,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_great_indian_peninsula_railway
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 25
@@ -1485,7 +1479,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1540,7 +1534,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = RAJ_east_india_railways
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1564,7 +1558,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = RAJ_ishapore_arsenal
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
