@@ -111,7 +111,7 @@
 		x = 0
 		y = 2
 		relative_position_id = CAN_rowell_sirois_commission
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -140,7 +140,7 @@
 		x = 0
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
-		cost = 10
+		cost = 5
 		available = {
 			controls_state = 464
 			controls_state = 465
@@ -342,7 +342,8 @@
 		y = 0
 		cost = 10
 		available = {
-			threat > 0.2
+			GER={has_completed_focus=GER_anschluss
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -592,7 +593,7 @@
 		x = 1
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 			modifier = {
@@ -679,28 +680,7 @@
 		x = -2
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
-		cost = 10
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 2
-				has_completed_focus = CAN_john_inglis_and_company
-			}
-		}
-		available = {
-		}
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -987,10 +967,8 @@
 		x = -1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
-		cost = 10
-		ai_will_do = {
-			factor = 50
-		}
+		cost = 5
+		
 		available = {
 		}
 		bypass = {
@@ -1151,7 +1129,7 @@
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 			modifier = {
@@ -1277,7 +1255,7 @@
 		x = -2
 		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 			modifier = {
@@ -1712,7 +1690,7 @@
 		x = -1
 		y = 3
 		relative_position_id = CAN_army_modernization
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -1744,7 +1722,7 @@
 		x = 1
 		y = 3
 		relative_position_id = CAN_army_modernization
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -1778,7 +1756,7 @@
 		x = -2
 		y = 4
 		relative_position_id = CAN_army_modernization
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -1920,7 +1898,7 @@
 		x = -1
 		y = 1
 		relative_position_id = CAN_cmp_truck
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -2013,7 +1991,7 @@
 		x = 1
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
-		cost = 10
+		cost = 5
 		available = {
 			is_in_faction_with = ENG
 			is_in_tech_sharing_group = commonwealth_research
@@ -2040,7 +2018,7 @@
 		x = -1
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 			modifier = {
@@ -2113,19 +2091,19 @@
 			682 = {
 				add_resource = {
 					type = aluminium
-					amount = 42
+					amount = 22
 				}
 			}
 			466 = {
 				add_resource = {
 					type = aluminium
-					amount = 56
+					amount = 116
 				}
 			}
 			468 = {
 				add_resource = {
 					type = aluminium
-					amount = 34
+					amount = 24
 				}
 			}
 		}
@@ -2171,7 +2149,7 @@
 		icon = GFX_goal_generic_build_airforce
 		x = 24
 		y = 0
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -2236,7 +2214,7 @@
 		x = 1
 		y = 1
 		relative_position_id = CAN_rcaf_station_borden
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -2442,7 +2420,7 @@
 		x = 0
 		y = 2
 		relative_position_id = CAN_rcaf_station_borden
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -2587,7 +2565,7 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 28
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 9
 		}
@@ -2642,7 +2620,7 @@
 		x = 0
 		y = 1
 		relative_position_id = CAN_halifax_shipyards
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -2675,7 +2653,7 @@
 		x = -1
 		y = 2
 		relative_position_id = CAN_halifax_shipyards
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -2708,7 +2686,7 @@
 		x = 1
 		y = 2
 		relative_position_id = CAN_halifax_shipyards
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -2744,7 +2722,7 @@
 		x = -1
 		y = 3
 		relative_position_id = CAN_halifax_shipyards
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 			modifier = {
@@ -2784,7 +2762,7 @@
 		x = 1
 		y = 3
 		relative_position_id = CAN_halifax_shipyards
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -2818,7 +2796,7 @@
 		x = -1
 		y = 4
 		relative_position_id = CAN_halifax_shipyards
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -2867,7 +2845,7 @@
 		x = 1
 		y = 4
 		relative_position_id = CAN_halifax_shipyards
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -2895,7 +2873,7 @@
 		x = 0
 		y = 5
 		relative_position_id = CAN_halifax_shipyards
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes

@@ -1486,7 +1486,7 @@
 		x = 2
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1590,7 +1590,7 @@
 		x = 2
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -1673,7 +1673,7 @@
 		prerequisite = {
 			focus = AST_army_inventions_directorate
 		}
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1716,7 +1716,7 @@
 		x = 2
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1804,13 +1804,10 @@
 		prerequisite = {
 			focus = AST_CSIR
 		}
-		mutually_exclusive = {
-			focus = AST_commonwealth_aircraft_corporation
-		}
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = AST_CSIR
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1822,29 +1819,5 @@
 			}
 		}
 	}
-	focus = {
-		id = AST_commonwealth_aircraft_corporation
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = {
-			focus = AST_CSIR
-		}
-		mutually_exclusive = {
-			focus = AST_empire_air_training_scheme
-		}
-		x = 1
-		y = 1
-		relative_position_id = AST_CSIR
-		cost = 10
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		completion_reward = {
-			ENG = {
-				add_ideas = AST_commonwealth_aircraft_corporation
-			}
-		}
-	}
+
 }
