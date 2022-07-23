@@ -22,6 +22,8 @@ set_popularities = {
 	fascism = 45
 	neutrality = 30
 }
+add_ideas={		general_staff
+GER_autarky_idea_minor}
 set_technology = { basic_train = 1
 	interwar_antiair = 1
 	infantry_weapons = 1

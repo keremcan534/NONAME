@@ -266,13 +266,30 @@ ideas = {
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.1
 				min_export = -0.35
+				local_resources_factor=0.1
 				global_building_slots_factor = 0.35
 				production_speed_arms_factory_factor = 0.1
 				production_speed_industrial_complex_factor = 0.2
 				production_factory_efficiency_gain_factor = 0.05
-				civilian_intel_to_others = -15
-				army_intel_to_others = -10
-				navy_intel_to_others = -10
+			}
+		}
+		
+		GER_autarky_idea_minor = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GER_Volksgemeinschaft
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+				global_building_slots_factor = 0.30
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		GER_grosraumwirtschaft = {
@@ -301,6 +318,8 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.2
 				fascism_acceptance = 85
+				stability_weekly = 0.009
+
 			}
 		}
 		GER_align_bulgaria = {
@@ -315,6 +334,8 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.2
 				fascism_acceptance = 85
+				stability_weekly = 0.009
+
 			}
 		}
 		GER_align_romania = {
@@ -329,6 +350,7 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.2
 				fascism_acceptance = 85
+				stability_weekly = 0.009
 			}
 		}
 		GER_barbarossa = {

@@ -9,6 +9,8 @@ add_ideas = {
 	vittoria_mutilata
 	limited_conscription
 	partial_economic_mobilisation
+	general_staff
+	GER_autarky_idea_minor
 }
 set_convoys = 450
 set_politics = {

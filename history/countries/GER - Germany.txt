@@ -126,9 +126,10 @@ add_equipment_to_stockpile = {
 	producer = GER
 }
 add_ideas = {
-	GER_mefo_bills_1
 	sour_loser
 	general_staff
+	GER_mefo_bills_1
+	GER_autarky_idea_minor
 	limited_conscription
 	partial_economic_mobilisation
 }

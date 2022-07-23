@@ -9,6 +9,8 @@ diplomatic_relation = {   country = ITA relation = military_access  active = yes
 add_intel = { target = JAP civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 set_convoys = 100
 add_ideas = {
+	general_staff
+	GER_autarky_idea_minor
 disarmed_nation
 HUN_treaty_of_triannon
 }

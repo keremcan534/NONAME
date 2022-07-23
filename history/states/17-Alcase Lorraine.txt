@@ -13,15 +13,43 @@ state={
 	history={
 		owner = FRA
 		victory_points = {
-			9642 5 
+			9642 1
 		}
 		victory_points = {
-			11516 5 
+			11516 1
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
-			air_base = 5
+			industrial_complex = 2
+			678 =
+			{
+				bunker = 10
+			}
+			6529 =
+			{
+				bunker = 10
+			}
+			9503 =
+			{
+				bunker = 10
+			}
+			549 =
+			{
+				bunker = 10
+			}
+			3629 =
+			{
+				bunker = 10
+			}
+			11502 =
+			{
+				bunker = 10
+			}
+			9559 =
+			{
+				bunker = 10
+			}
+
 		}
 		add_core_of = FRA
 	}

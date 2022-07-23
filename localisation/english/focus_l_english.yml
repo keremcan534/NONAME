@@ -2734,4 +2734,13 @@
  JAP_ussr_war_goal:0 "Honor the Tripartite Pact"
  ENG_together_for_victory:0 "Together For Victory"
  USA_manhattan_project2:0 "Manhattan Project Completion"
+GER_plan_z:0 "Plan Z"
+ GER_plan_z_desc:0 "Admiral Raeder believes that the British can best be defeated through a policy of surface raiding. Constructing enough battleships and carriers to accomplish this will be a massive task, and will take time; perhaps too much time... On the other hand, our current surface navy is pathetically inadequate."
+ GER_u_boat_effort:0 "U-Boat Effort"
+ GER_u_boat_effort_desc:0 "Commodore Dönitz advocates a strategy of unrestricted submarine warfare as the best way of bringing Britain to its knees. With enough U-boats, we might be able to starve the British home industries of all the required resources from its far-flung empire."
+ GER_trade_interdiction:0 "Trade Interdiction"
+ GER_trade_interdiction_desc:0 "Our dockyards are committed to churning out U-boats, but we need to develop better ways of utilizing these 'wolf packs'. Give the admirals everything they need to conduct their simulations and war games..."
+ GER_modular_construction:0 "Modular Construction"
+ GER_modular_construction_desc:0 "By having parts of our submarines built at various construction facilities, assembly and construction speed are greatly improved."
+
  

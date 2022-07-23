@@ -88,12 +88,13 @@ country_event = {
 	
 	# Ok
 	option = {
-		name = mtg_britain.82.a
+		effect_tooltip = { add_timed_idea = {
+			idea = ENG_imperial_conference_economy_all
+			days = 180
+		}}
 		trigger = {
 			tag = ENG
 		}
-		activate_mission = ENG_imperial_conference_decision
-		set_country_flag = { flag = ENG_imperial_conference_timer_flag value = 1 days = 90 }
 		every_country = {
 			limit = {
 				OR = {
@@ -113,14 +114,10 @@ country_event = {
 						is_subject_of = ENG
 						tag = AST
 					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
-					}
+
 				}
 			}
-			add_opinion_modifier = { target = ROOT modifier = ENG_imperial_conference_opinion }
-			custom_effect_tooltip = mtg_britain.82_tt
+
 		}
 	}
 
@@ -130,8 +127,9 @@ country_event = {
 		trigger = {
 			NOT = { tag = ENG }
 		}
-		effect_tooltip = { add_opinion_modifier = { target = FROM modifier = ENG_imperial_conference_opinion } }
+		
 	}
+	
 }
 
 # Event for ENG beginning discussions on Imperial Defense

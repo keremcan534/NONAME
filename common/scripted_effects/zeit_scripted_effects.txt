@@ -66,7 +66,9 @@ fall_of_france = {
 					
 				}
 			}
-
+			set_cosmetic_tag = FRA_FREE
+			add_ideas = FRA_defeatism
+			country_event = france.20
 			remove_ideas={	
 				FRA_victors_of_wwi
 				FRA_protected_by_the_maginot_line
@@ -149,7 +151,6 @@ fall_of_france = {
 		transfer_state = 19
 		transfer_state = 806
 		country_event = { id = france.14 }
-		add_to_war=ITA
 		
 	}
 	ITA = {

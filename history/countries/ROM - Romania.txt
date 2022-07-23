@@ -82,6 +82,8 @@ add_ideas = {
 
  #Ideas
 	add_ideas = {
+		general_staff
+		GER_autarky_idea_minor
 		ROM_king_carol_ii_hedonist
  	}	
 set_convoys = 100

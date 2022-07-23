@@ -805,9 +805,10 @@ focus = {
 			factor = 1
 		}
 		available = {
-			hidden_trigger={
-			custom_trigger_tooltip="France has goverment in exile"}
-			has_global_flag=Fall_of_france
+			available = {
+				has_capitulated = yes
+				has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
+			}
 
 		}
 		bypass = {
@@ -887,108 +888,7 @@ focus = {
 				type = industrial_complex
 				level = 4
 			}
-			add_timed_idea = {
-				idea = FRA_snakemodding
-				days = 60
-			}
-			if = {
-				limit = {has_tech = basic_medium_tank_chassis }
-				division_template = {
-					name = "French"
-					regiments = {
-						medium_armor = { x = 0 y = 0 }
-						medium_armor = { x = 0 y = 1 }
-						medium_armor = { x = 0 y = 2 }
-						medium_armor = { x = 0 y = 3 }
-						medium_armor = { x = 1 y = 0 }
-						medium_armor = { x = 1 y = 1 }
-						medium_armor = { x = 1 y = 2 }
-						medium_armor = { x = 1 y = 3 }
-						medium_armor = { x = 2 y = 0 }
-						medium_armor = { x = 2 y = 1 }
-						medium_armor = { x = 2 y = 2 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-						motorized = { x = 4 y = 2 }
-						motorized = { x = 4 y = 3 }
-						mot_anti_air_brigade= { x = 3 y = 4 }
-						mot_anti_air_brigade = { x = 4 y = 4 }
-					}
-					support = {
-						mot_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						logistics_company = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }
-					}
-				}
-				476 = {
-					for_loop_effect = {
-						end = 4
-						create_unit = {
-							division = "name = \"French\" division_template = \"French\" start_experience_factor = 0.3 start_equipment_factor = 0.01"
-							owner = FRA
-						}
-						}}
-			}
-			if = {
-				limit = {has_tech = basic_heavy_tank_chassis }
-				division_template = {
-					name = "French2"
-					regiments = {
-						heavy_armor = { x = 0 y = 0 }
-						heavy_armor = { x = 0 y = 1 }
-						heavy_armor = { x = 0 y = 2 }
-						heavy_armor = { x = 0 y = 3 }
-						heavy_armor = { x = 1 y = 0 }
-						heavy_armor = { x = 1 y = 1 }
-						heavy_armor = { x = 1 y = 2 }
-						heavy_armor = { x = 1 y = 3 }
-						heavy_armor = { x = 2 y = 0 }
-						heavy_armor = { x = 2 y = 1 }
-						heavy_armor = { x = 2 y = 2 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-						motorized = { x = 4 y = 2 }
-						motorized = { x = 4 y = 3 }
-						mot_anti_air_brigade= { x = 3 y = 4 }
-						mot_anti_air_brigade = { x = 4 y = 4 }
-					}
-					support = {
-						mot_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						logistics_company = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }
-					}
-				}
-				476 = {
-					for_loop_effect = {
-						end = 4
-						create_unit = {
-							division = "name = \"French2\" division_template = \"French2\" start_experience_factor = 0.3 start_equipment_factor = 0.01"
-							owner = FRA
-						}
-						}}
-			}
-			hidden_effect = {
-				if = {
-					limit={OR = { has_global_flag=Fall_of_france_dec has_global_flag=Fall_of_france_nov}}
-					country_event = lar_appeal_to_overseas_territories.9
-				}
-				if = {
-					limit={has_global_flag=Fall_of_france_dec}
-					country_event = lar_appeal_to_overseas_territories.5
-				}		
-			}
+		
 		}
 	}
 	focus = {
