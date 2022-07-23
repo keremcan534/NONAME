@@ -31,7 +31,7 @@
 		y = 1
 		prerequisite = { focus = FRA_devalue_the_franc }
 		relative_position_id = FRA_devalue_the_franc
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -41,21 +41,14 @@
 			773 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			774 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			660 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 
@@ -71,7 +64,7 @@
 			539 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -148,7 +141,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_general_work_council
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
 			add_research_slot = 1
@@ -164,7 +157,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_form_the_state_arsenals
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
 			add_research_slot = 1
@@ -213,7 +206,7 @@ focus = {
 		icon = GFX_goal_generic_defence
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = FRA_begin_rearmament }
 		available_if_capitulated = yes
 		relative_position_id = FRA_begin_rearmament
@@ -234,7 +227,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = FRA_defensive_focus }
 		relative_position_id = FRA_defensive_focus
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -250,7 +243,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_firepower_kills
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -267,7 +260,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_infantry_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -327,7 +320,7 @@ focus = {
 		icon = GFX_goal_generic_major_war
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_begin_rearmament
 		available_if_capitulated = yes
 		prerequisite = { focus = FRA_begin_rearmament }
@@ -355,7 +348,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = FRA_aggressive_focus }
 		relative_position_id = FRA_aggressive_focus
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -377,7 +370,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_battle_of_maneuver
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -393,7 +386,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_motorized_focus
-		cost = 10
+		cost = 5
 		completion_reward = {
 			army_experience = 50
 			add_tech_bonus = {
@@ -440,7 +433,7 @@ focus = {
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 10
+			army_experience = 100
 			add_doctrine_cost_reduction = {
 				name = FRA_army_reform
 				cost_reduction = 0.5
@@ -458,7 +451,7 @@ focus = {
 		x = 16
 		y = 0
 		prerequisite = {}
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -486,8 +479,7 @@ focus = {
 		icon = GFX_focus_generic_industry_3
 		x = -1
 		y = 1
-		prerequisite = {focus = FRA_extra_research_slot}
-		prerequisite = {focus = FRA_extra_research_slot_2}
+		prerequisite = {focus = FRA_extra_research_slot focus = FRA_extra_research_slot_2}
 		relative_position_id = FRA_extra_research_slot
 		cost = 10
 		cancel_if_invalid = yes
@@ -506,7 +498,7 @@ focus = {
 		y = 1
 		prerequisite = {focus = FRA_form_the_popular_front}
 		relative_position_id = FRA_form_the_popular_front
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -545,7 +537,7 @@ focus = {
 			focus = FRA_the_blum_viollette_proposal
 		}
 		relative_position_id = FRA_the_blum_viollette_proposal
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -563,7 +555,7 @@ focus = {
 			focus = FRA_expand_the_citizenship
 		}
 		relative_position_id = FRA_expand_the_citizenship
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -629,7 +621,7 @@ focus = {
 			focus = FRA_form_the_popular_front
 		}
 		relative_position_id = FRA_form_the_popular_front
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -711,7 +703,7 @@ focus = {
 			focus = FRA_economic_devolution
 		}
 		relative_position_id = FRA_economic_devolution
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -745,7 +737,7 @@ focus = {
 		y = 1
 		prerequisite = {focus = FRA_form_the_popular_front}
 		relative_position_id = FRA_form_the_popular_front
-		cost = 10
+		cost = 5
 		available = {
 			has_idea = FRA_political_violence
 		}
@@ -764,23 +756,12 @@ focus = {
 	focus = {
 		id = FRA_refus_absurde
 		icon = GFX_goal_generic_demand_territory
-		x = 11
-		y = 7
-		offset = {
-			x = 0
-			y = 0
+		x = 2
+		y = 1
+		prerequisite = {focus=FRA_appeal_to_the_french_nation
 		}
-		prerequisite = {
-		}
+		relative_position_id=FRA_appeal_to_the_french_nation
 		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
-		}
-		bypass = {
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -791,15 +772,12 @@ focus = {
 	focus = {
 		id = FRA_appeal_to_the_french_nation
 		icon = GFX_goal_generic_propaganda
-		x = 6
-		y = 0
-		offset = {
-			x = 0
-			y = 0
-		}
+		x = 7
+		y = 7
+		
 		prerequisite = {}
 		mutually_exclusive = { }
-		relative_position_id = FRA_refus_absurde
+		relative_position_id = FRA_devalue_the_franc
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -888,7 +866,10 @@ focus = {
 				type = industrial_complex
 				level = 4
 			}
-		
+			add_timed_idea={
+				idea=FRA_postcap
+				days=75
+			}
 		}
 	}
 	focus = {
@@ -1275,240 +1256,6 @@ focus = {
 					producer = SOV
 				}
 			}
-		}
-	}
-	focus = {
-		id = FRA_the_maquis
-		icon = GFX_focus_focus_fra_maquis
-		x = -2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_refus_absurde
-		}
-		relative_position_id = FRA_refus_absurde
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_ideas = { FRA_maquis }
-			every_state = {
-				limit = {
-					is_core_of = ROOT
-					not = { is_controlled_by = ROOT }
-					infrastructure < 7
-				}
-				add_resistance_target = {
-					amount = 10
-					tooltip = FRA_the_maquis
-				}
-			}
-		}
-	}
-	focus = {
-		id = FRA_reach_out_to_trade_unions
-		icon = GFX_goal_generic_major_alliance
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_refus_absurde
-		}
-		relative_position_id = FRA_refus_absurde
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_ideas = FRA_connections_to_trade_unions
-		}
-	}
-	focus = {
-		id = FRA_cooperation_with_the_communists
-		icon = GFX_focus_generic_soviet_politics
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_reach_out_to_trade_unions
-		}
-		relative_position_id = FRA_reach_out_to_trade_unions
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			if = {
-				limit = {
-					communism < 0.14
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.05
-				}
-			}
-			add_ideas = FRA_communist_cooperation_2
-		}
-	}
-	focus = {
-		id = FRA_connections_to_industrialists
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_refus_absurde
-		}
-		relative_position_id = FRA_refus_absurde
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_ideas = FRA_industrialist_connections
-		}
-	}
-	focus = {
-		id = FRA_the_civil_and_military_organization
-		icon = GFX_goal_generic_military_deal
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_connections_to_industrialists
-		}
-		relative_position_id = FRA_connections_to_industrialists
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = FRA_industrialist_connections
-				add_idea = FRA_civil_and_military_organization
-			}
-		}
-	}
-	focus = {
-		id = FRA_national_council_of_the_resistance
-		icon = GFX_focus_focus_fra_national_resistance_council
-		x = 1
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_the_civil_and_military_organization
-		}
-		prerequisite = {
-			focus = FRA_cooperation_with_the_communists
-		}
-		prerequisite = {
-			focus = FRA_form_the_national_committee
-		}
-		relative_position_id = FRA_the_civil_and_military_organization
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = FRA_civil_and_military_organization
-				add_idea = FRA_national_council_of_the_resistance
-			}
-		}
-	}
-	focus = {
-		id = FRA_national_uprising
-		icon = GFX_goal_generic_dangerous_deal
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_national_council_of_the_resistance
-		}
-		relative_position_id = FRA_national_council_of_the_resistance
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			add_timed_idea = { idea = FRA_national_uprising days = 90 }
 		}
 	}
 

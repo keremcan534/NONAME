@@ -96,40 +96,40 @@ fall_of_france = {
 	
 	EFR={
 						#syria
-						transfer_state = 553 set_demilitarized_zone=553
-						transfer_state = 677 set_demilitarized_zone=667
-						transfer_state = 680 set_demilitarized_zone=680
-						transfer_state = 554 set_demilitarized_zone=554
+						transfer_state = 553 
+						transfer_state = 677 
+						transfer_state = 680 
+						transfer_state = 554 
 						#france
 						transfer_state = 26 
-						transfer_state = 22 set_demilitarized_zone=22
-						transfer_state = 25 set_demilitarized_zone=25
-						transfer_state = 20 set_demilitarized_zone=20
-						transfer_state = 33 set_demilitarized_zone=33
-						transfer_state = 31 set_demilitarized_zone=31
-						transfer_state = 32 set_demilitarized_zone=32
-						transfer_state = 21 set_demilitarized_zone=21
+						transfer_state = 22 
+						transfer_state = 25 
+						transfer_state = 20 
+						transfer_state = 33 
+						transfer_state = 31 
+						transfer_state = 32 
+						transfer_state = 21 
 						#africa
-						transfer_state = 777 set_demilitarized_zone=777
-						transfer_state = 776 set_demilitarized_zone=776
-						transfer_state = 781 set_demilitarized_zone=781
-						transfer_state = 778 set_demilitarized_zone=778
-						transfer_state = 556 set_demilitarized_zone=556
-						transfer_state = 779 set_demilitarized_zone=779
-						transfer_state = 780 set_demilitarized_zone=780
-						transfer_state = 272 set_demilitarized_zone=272
-						transfer_state = 557 set_demilitarized_zone=557
+						transfer_state = 777 
+						transfer_state = 776 
+						transfer_state = 781 
+						transfer_state = 778 
+						transfer_state = 556 
+						transfer_state = 779 
+						transfer_state = 780 
+						transfer_state = 272 
+						transfer_state = 557 
 						#madagascar
-						transfer_state = 543 set_demilitarized_zone=543
-						transfer_state = 708 set_demilitarized_zone=708
-						transfer_state = 706 set_demilitarized_zone=706
-						transfer_state = 713 set_demilitarized_zone=713
+						transfer_state = 543 
+						transfer_state = 708 
+						transfer_state = 706 
+						transfer_state = 713 
 						#tunis
-						transfer_state = 460 set_demilitarized_zone=460
-						transfer_state = 513 set_demilitarized_zone=513
-						transfer_state = 459 set_demilitarized_zone=459
-						transfer_state = 461 set_demilitarized_zone=461
-						transfer_state = 462 set_demilitarized_zone=462
+						transfer_state = 460 
+						transfer_state = 513 
+						transfer_state = 459 
+						transfer_state = 461 
+						transfer_state = 462 
 						every_owned_state={
 							set_demilitarized_zone = yes
 						}

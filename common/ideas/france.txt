@@ -1,6 +1,23 @@
 ideas = {
 
 	country = {
+		FRA_postcap = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+			removal_cost = -1
+			modifier = {
+				production_lack_of_resource_penalty_factor = -1
+				industrial_capacity_factory = 7
+				production_factory_efficiency_gain_factor = 10
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
 
 		FRA_full_employment = {
 			picture = generic_production_bonus
