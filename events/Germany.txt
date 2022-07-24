@@ -2811,6 +2811,9 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		ENG={
+			add_to_faction = POL
+		}
 		GER = { country_event = { id = germany.88 hours=3 } 			
 		}		
 		hidden_effect = {
@@ -2843,16 +2846,10 @@ country_event = {
 	option = {
 		name = germany.88.a
 		GER = {
-			declare_war_on = {
-				target = POL
-				type = take_state
-				generator = { 85 }
-			}
-			declare_war_on = {
-				target = ENG
-				type = annex_everything
-			}
-
+			Declare_on_allies=yes
+		}
+		ITA={
+			Declare_on_allies=yes
 		}
 		hidden_effect={
 			news_event={id=news.204

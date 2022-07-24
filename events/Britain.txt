@@ -298,7 +298,7 @@ country_event = {
 		name = britain.1114.a
 	}
 }
-country_event = {
+country_event = {#torch
 	id = britain.1115
 	title = britain.1115.t
 	desc = britain.1115.d

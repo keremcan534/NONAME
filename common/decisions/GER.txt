@@ -33,7 +33,7 @@ foreing_politics = {
 }
 
 operations = {
-	GER_Anton = {
+	case_anton = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = {
@@ -53,7 +53,7 @@ operations = {
 			}
 			Date > 1941.6.1
 		}
-		days_remove = 30
+		days_remove = 10
 		remove_effect = {
 			annex_country = {
 				target = EFR

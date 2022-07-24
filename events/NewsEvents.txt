@@ -4906,12 +4906,7 @@ news_event = {
 		trigger = {
 			original_tag = ENG
 		}
-		ENG={
-			add_to_faction = POL
-		}
-		GER={
-			declare_war_on_enemy_faction=yes
-		}
+	
 	}
 
 	#

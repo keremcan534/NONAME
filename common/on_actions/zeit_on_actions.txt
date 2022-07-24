@@ -13,8 +13,9 @@ on_actions = {
 				limit={ 
 					the_axis=yes
 				}
-				add_ideas = {
-					trade_blocked
+				add_timed_idea = {
+					idea=trade_blocked
+					days=730
 				}
 			}
 			every_country = {
@@ -31,9 +32,10 @@ on_actions = {
 				}
 				add_ideas = {
 					peace_training
+					anti_strat_eff
 				}
 				add_timed_idea={idea= fix_production_idea
-			days = 15
+			days = 5
 		}
 			}
 			every_country = {

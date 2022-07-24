@@ -2420,7 +2420,11 @@
 		y = 2
 		cost = 5
 		available = {
-			NOR_axis = yes
+			AND={	
+				NOR={has_capitulated=yes}
+								has_full_control_of_state=110
+				
+			}
 		}
 		completion_reward = {
 			ENG = {

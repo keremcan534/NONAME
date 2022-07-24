@@ -5,10 +5,11 @@ state={
 	manpower = 1685989
 	resources={
 		aluminium = 2
+		steel= 32
 	}
 	
 	
-	state_category = city
+	state_category = large_city
 
 	history={
 		owner = BUL
@@ -21,7 +22,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 6
-			air_base = 3
+			air_base = 10
 		}
 		add_core_of = BUL
 	}

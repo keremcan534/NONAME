@@ -1,5 +1,5 @@
 Declare_on_allies = {
-	Root = {
+	
 		declare_war_on = {
 			target = POL
 			type = annex_everything
@@ -21,14 +21,14 @@ Declare_on_allies = {
 			type = annex_everything
 		}
 		declare_war_on = {
-			target = BRA
+			target = AST
 			type = annex_everything
 		}
 		declare_war_on = {
-			target = AUS
+			target = SAF
 			type = annex_everything
 		}
-	}
+	
 }
 
 ##france
