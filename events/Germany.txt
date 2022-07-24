@@ -2268,7 +2268,12 @@ country_event = {
 		GER = {
 			country_event = { days = 1 id = germany.76 }
 		}
-	
+		add_tech_bonus = {
+			name = GER_soviet_treaty
+			bonus = 1
+			uses = 1
+			technology = basic_medium_tank_chassis
+		}
 		add_tech_bonus = {
 			name = GER_soviet_treaty
 			bonus = 1
@@ -2293,10 +2298,15 @@ country_event = {
 	option = {
 		name = germany.76.a	#bah
 		# REVISIT Balance research bonus
-
 		add_tech_bonus = {
 			name = GER_soviet_treaty
-			bonus = 1.2
+			bonus = 1
+			uses = 1
+			technology = basic_medium_tank_chassis
+		}
+		add_tech_bonus = {
+			name = GER_soviet_treaty
+			bonus = 1
 			uses = 2
 			category = cat_medium_armor
 			category = cat_heavy_armor

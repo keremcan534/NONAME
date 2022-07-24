@@ -91,11 +91,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = communism
-					AND = {
-						has_war = yes
-						enemies_strength_ratio > 0.5
-					}					
+					has_government = communism					
 				}
 				has_war_support > 0.2
 				if = {
@@ -125,15 +121,10 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					AND = {
-						has_war = yes
-						enemies_strength_ratio > 0.6
-			
-					}
+					
 				}
 				OR = {
-					has_war_support > 0.6
-					surrender_progress > 0
+					has_war_support > 0.3
 				}
 				if = {
 					limit = {
@@ -165,10 +156,8 @@ ideas = {
 			available = {
 				has_war = yes
 				OR = {
-					has_war_support > 0.7
-					surrender_progress > 0
+					has_war_support > 0.45
 				}
-				enemies_strength_ratio > 0.75
 
 				if = {
 					limit = {
@@ -199,10 +188,8 @@ ideas = {
 			available = {
 				has_war = yes
 				OR = {
-					has_war_support > 0.80
-					surrender_progress > 0.25
+					has_war_support > 0.65
 				}
-				enemies_strength_ratio > 1
 				
 				if = {
 					limit = {

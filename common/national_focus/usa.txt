@@ -56,6 +56,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = 150
+			add_offsite_building = {
+				type = industrial_complex
+				level = 4
+			}
 		}
 	}
 	focus = {
@@ -90,6 +94,10 @@ focus_tree = {
 			FOCUS_FILTER_USA_CONGRESS
 		}
 		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 15
+			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
 				flag = USA_great_depression_cooldown
@@ -142,6 +150,10 @@ focus_tree = {
 			FOCUS_FILTER_USA_CONGRESS
 		}
 		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 15
+			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
 				flag = USA_great_depression_cooldown
@@ -183,6 +195,10 @@ focus_tree = {
 			FOCUS_FILTER_USA_CONGRESS
 		}
 		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 15
+			}
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = federal_housing_tt
