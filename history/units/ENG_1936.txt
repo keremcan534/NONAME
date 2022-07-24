@@ -107,41 +107,7 @@ units = {
 	
 }
 
-air_wings = {
-	### RAF Fighter Command ###
-	129 = { 
-		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
-		fighter_equipment_0 = {
-			owner = "ENG" 
-			amount = 1000
-		}
-	}
 
-	### RAF Bomber Command ###
-	129 = { 
-		### No. 1 Bomber Command, EENG Anglia area -- Fairey Gordons, Battles
-		CAS_equipment_1 = {
-			owner = "ENG" 
-			amount = 400
-		}
-	}
-	129 = { 
-		### No. 2 Bomber Command, EENG Anglia area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_0 = {
-			owner = "ENG" 
-			amount = 400
-		}
-	}
-
-	### RAF CoENGal Command
-	129 = { 
-		### No. 16 CoENGal Command -- Vickers Vildebeests
-		nav_bomber_equipment_1 = {
-			owner = "ENG" 
-			amount = 200
-		}
-	}
-}
 	#########################
 	## STARTING PRODUCTION ##
 	#########################

@@ -83,37 +83,30 @@ set_technology = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 3200
+	amount = 2200
 	producer = ROM
 }
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 872
+	amount = 1000
 	producer = ROM
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 5600
+	amount = 6000
 	producer = ROM
 }
-
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 8000
-	producer = ROM
-}
-
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 330
+	amount = 400
 	producer = ROM
 }
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 1833
+	amount = 2000
 	producer = ROM
 }
 

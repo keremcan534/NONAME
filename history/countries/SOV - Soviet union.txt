@@ -63,13 +63,12 @@ set_technology = {
 	basic_depth_charges = 1
 	basic_secondary_battery = 1
 }
-add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 20260 producer = SOV }  
-add_equipment_to_stockpile = { type = support_equipment amount = 7651 producer = SOV } 
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 150000 producer = SOV } 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 162000 producer = SOV } 
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 7900 producer = SOV } 
-add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 12400 producer = SOV } 
-add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 19160 producer = SOV }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 4500 producer = SOV }  
+add_equipment_to_stockpile = { type = support_equipment amount = 4000 producer = SOV } 
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 producer = SOV } 
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 3900 producer = SOV } 
+add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 4000 producer = SOV } 
+add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 4000 producer = SOV }
 set_convoys =100
 set_politics = {
 	ruling_party = communism

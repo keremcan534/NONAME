@@ -157,20 +157,14 @@ recruit_character = JAP_hideki_tojo
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 2500
+	amount = 4000
 	producer = JAP
 }  
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 1800
+	amount = 2000
 	producer = JAP
-} 
-
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 80000
-	producer = JAP
-} 
+}
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 20000
@@ -182,13 +176,8 @@ add_equipment_to_stockpile = {
 	producer = JAP
 } 
 add_equipment_to_stockpile = {
-	type = light_tank_equipment_1
-	amount = 1000
-	producer = JAP
-} 
-add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 2400
+	amount = 2000
 	producer = JAP
 } 
 

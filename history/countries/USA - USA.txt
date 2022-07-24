@@ -211,19 +211,19 @@ set_technology = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1900
+	amount = 2000
 	producer = USA
 }
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 1591
+	amount = 2000
 	producer = USA
 }
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 946
+	amount = 1000
 	producer = USA
 }
 
@@ -232,16 +232,9 @@ add_equipment_to_stockpile = {
 	amount = 20000
 	producer = USA
 }
-
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 25000
-	producer = USA
-}
-
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 1118
+	amount = 1500
 	producer = USA
 }
 

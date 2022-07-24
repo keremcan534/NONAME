@@ -109,26 +109,10 @@ units = {
 air_wings = {
 	# LVO Aviatsya Komandovaniya -- Leningrad
 	219 = { 
-		fighter_equipment_0 = {
-			version_name = "I16-R"
-			owner = "SOV" 
-			amount = 400
-		}
 		tac_bomber_equipment_0 =  {
 			owner = "SOV" 
 			amount = 200
 		}
-		
-		fighter_equipment_1 = {
-			owner = "SOV" 
-			amount = 100
-		}
-       
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 100
-		}
-
 		cas_equipment_1 = {
 			owner = "SOV"
 			amount = 400

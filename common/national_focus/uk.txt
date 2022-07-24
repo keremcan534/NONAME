@@ -439,7 +439,7 @@
 			}
 			add_tech_bonus = {
 				name = fighter_command_focus
-				bonus = 1.25
+				bonus = 1
 				uses = 1
 				category = light_fighter
 				category = cat_heavy_fighter
@@ -592,9 +592,6 @@
 		}
 		completion_reward = {
 			air_experience = 25
-			add_ideas = {
-				ENG_air_research_bonus
-			}
 			add_tech_bonus = {
 				name = coastal_command_focus
 				bonus = 1
@@ -638,20 +635,6 @@
 			factor = 1
 		}
 		available_if_capitulated = yes
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = naval_effort_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
 		completion_reward = {
 			navy_experience = 50
 			random_owned_controlled_state = {

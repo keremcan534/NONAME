@@ -59,17 +59,17 @@ set_technology = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 2336
+	amount = 336
 	producer = SAF
 } 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 1000
+	amount = 500
 	producer = SAF
 } 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 1340
+	amount = 340
 	producer = SAF
 } 
 
@@ -77,21 +77,16 @@ add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 5700
 	producer = SAF
-} 
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 7000
-	producer = SAF
-} 
+}  
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 1000
+	amount = 500
 	producer = SAF
 } 
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 621
+	amount = 221
 	producer = SAF
 }
 add_equipment_to_stockpile = {

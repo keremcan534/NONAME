@@ -105,8 +105,12 @@ ideas = {
 		}
 		partial_economic_mobilisation = {
 			available = {
+			
+			OR={	GER={has_completed_focus=GER_anschluss
+			}
 			threat>0.15
-				NOT = {
+		}
+		NOT = {
 					tag = USA
 				}
 				if = {
@@ -138,10 +142,12 @@ ideas = {
 		}
 		war_economy = {
 			available = {
-			GER={has_completed_focus=GER_anschluss
-			}
+			
 				NOT = {
 					tag = USA
+				}
+				NOT = {
+					original_tag = SOV
 				}
 				if = {
 					limit = {
@@ -153,11 +159,7 @@ ideas = {
 				}
 				OR = {
 					has_government = fascism
-					has_government = communism
 					has_war = yes
-					NOT = {
-						original_tag = SOV
-					}
 				}
 			}
 			cost = 150

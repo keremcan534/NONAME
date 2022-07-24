@@ -46,7 +46,7 @@ propaganda_efforts = {
 
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
-			threat > 0.5
+			threat > 0.15
 			has_war_support < 0.5
 			has_offensive_war = no
 		}
@@ -55,9 +55,9 @@ propaganda_efforts = {
 		fire_only_once = no
 		days_remove = 90
 		days_re_enable = 180
-		cost = 150
+		cost = 50
 		modifier = {
-			war_support_weekly = 0.01
+			war_support_weekly = 0.02
 		}
 		complete_effect = {
 			set_country_flag = war_propaganda_campaign_running

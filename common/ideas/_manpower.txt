@@ -13,7 +13,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.01
+				conscription = 0.015
 			}
 			
 			cancel_if_invalid = no
@@ -38,7 +38,7 @@ ideas = {
 				NOT = { has_idea = isolation }
 			}
 			modifier = {
-				conscription = 0.015
+				conscription = 0.02
 			}
 			
 			default = yes
@@ -66,7 +66,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.025
+				conscription = 0.03
 			}
 
 			ai_will_do = {
@@ -107,7 +107,7 @@ ideas = {
 			level = 4
 			
 			modifier = {
-				conscription = 0.05
+				conscription = 0.06
 				training_time_factor = 0.1
 			}
 			

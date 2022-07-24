@@ -102,25 +102,25 @@ set_technology = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 10500
+	amount = 1000
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 3500
+	amount = 1000
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 2500
+	amount = 500
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 75000
+	amount = 15000
 	producer = ENG
 }
 
@@ -132,22 +132,9 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 3500
+	amount = 500
 	producer = ENG
 }
-
-add_equipment_to_stockpile = {
-	type = cv_nav_bomber_equipment_1
-	amount = 250
-	producer = ENG
-}
-
-add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	amount = 1000
-	producer = ENG
-}
-
 add_equipment_to_stockpile = {
 	type = CAS_equipment_1
 	amount = 400

@@ -95,13 +95,6 @@ add_equipment_to_stockpile = {
 	amount = 6000
 	producer = CAN
 }
-
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 7000
-	producer = CAN
-}
-
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
 	amount = 230

@@ -109,7 +109,7 @@ set_technology = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 7200
+	amount = 7000
 	producer = GER
 }
 
@@ -133,13 +133,13 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 4000
+	amount = 4500
 	producer = GER
 }
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 4500
+	amount = 4000
 	producer = GER
 }
 add_ideas = {

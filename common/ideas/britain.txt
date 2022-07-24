@@ -224,7 +224,7 @@ ideas = {
 			
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}
@@ -550,7 +550,6 @@ ideas = {
 			modifier = {
 				global_building_slots_factor = 0.35
 				production_speed_arms_factory_factor = 0.1
-				industrial_capacity_factory = 0.05
 			}
 
 			picture = generic_production_bonus
@@ -1562,10 +1561,10 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.20
-				industrial_capacity_dockyard = 0.20
-				production_speed_arms_factory_factor = 0.25
-				production_speed_dockyard_factor = 0.25
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.2
 			}
 
 			picture = generic_exploit_mines

@@ -221,7 +221,7 @@ NDefines.NMilitary.PLANNING_DECAY = 0.015
 NDefines.NMilitary.PLANNING_MAX = 0.25                          	-- can get more from techs
 NDefines.NMilitary.REINFORCE_CHANCE = 0.04 -- To make larger divisions more attractive
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4 -- Number of support companies allowed per division
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.7 -- (4.5)
 
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0014 -- (0.005)
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 11		-- (5) chance to get a hit to damage on forts. (out of 100)

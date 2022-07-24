@@ -70,19 +70,14 @@ add_equipment_to_stockpile = {
 }  
 add_equipment_to_stockpile = {
          type = support_equipment
-         amount = 90
+         amount = 400
          producer = BUL
 } 
 
 add_equipment_to_stockpile = {
          type = infantry_equipment_1
-         amount = 8000
+         amount = 6000
          producer = BUL
-} 
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 4000
-	producer = BUL
 } 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
