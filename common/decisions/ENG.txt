@@ -1,0 +1,255 @@
+foreign_politics = {
+	ENG_annex_saf = {
+		icon = generic_operation
+		available = {
+			SAF = { is_ai = yes }
+ 		}
+		allowed = {
+			original_tag = ENG
+		}
+		cost = 0
+	
+		fire_only_once = yes
+		complete_effect = {
+			SAF = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	ENG_annex_saf_into_canada = {
+		icon = generic_operation
+		available = {
+			SAF = { is_ai = yes }
+ 		}
+		allowed = {
+			original_tag = ENG
+		}
+		cost = 0
+		
+		fire_only_once = yes
+		complete_effect = {
+			SAF = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = CAN
+				}
+			}
+			CAN = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	ENG_annex_ast = {
+		icon = generic_operation
+		available = {
+			AST = { is_ai = yes }
+ 		}
+		allowed = {
+			original_tag = ENG
+		}
+		cost = 0
+	
+		fire_only_once = yes
+		complete_effect = {
+			AST = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = AST
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	ENG_annex_can = {
+		icon = generic_operation
+		available = {
+			CAN = { is_ai = yes }
+ 		}
+		allowed = {
+			original_tag = ENG
+		}
+		cost = 0
+	
+		fire_only_once = yes
+		complete_effect = {
+			CAN = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+
+			}
+			ENG = {
+				annex_country = {
+					target = CAN
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	ENG_pressure_sweden= {
+		icon = generic_operation
+		fire_only_once = no
+		allowed = {
+			original_tag = ENG
+		}
+		visible = {
+			date > 1940.1.1
+		}
+		available = {
+			GER={has_completed_focus=GER_pressure_sweden}
+			110={is_controlled_by_ROOT_or_ally=yes}
+		}
+		cost=5
+		days_remove=30
+		remove_effect = {
+			EMP = {
+				remove_resource_rights = 666
+				give_resource_rights = { receiver = ENG state = 585 }
+			}
+			clr_global_flag=GER_resource_rights_swe
+		}
+	}
+}
+political_actions = {
+	hold_blood_toil_tears_sweat_speech = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			has_war_with = GER
+		}
+		cost = 50
+		days_remove=15
+		fire_only_once = yes
+		visible = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = blood_toil_tears_sweat_speech }
+			}
+		}
+		remove_effect = {
+			set_country_flag = blood_toil_tears_sweat_speech
+
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	hold_fight_on_the_beaches_speech = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			has_war_with = GER
+			is_in_faction_with = FRA
+		}
+		cost=50
+		days_remove=15
+		fire_only_once = yes
+		visible = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			has_country_flag = blood_toil_tears_sweat_speech
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = fight_on_the_beaches_speech }
+			}
+		}
+		remove_effect = {
+			set_country_flag = fight_on_the_beaches_speech
+
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	hold_this_was_their_finest_hour_speech = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			has_war_with = GER
+			is_in_faction_with = FRA
+		}
+		cost = 50
+		days_remove=15
+
+		fire_only_once = yes
+		visible = {
+			original_tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			has_country_flag = fight_on_the_beaches_speech
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = this_was_their_finest_hour_speech }
+			}
+		}
+		remove_effect = {
+			set_country_flag = this_was_their_finest_hour_speech
+
+
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

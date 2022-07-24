@@ -13,7 +13,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_manpower_bonus
 			modifier = {
-				conscription = 0.02
+				conscription = 0.04
 			}
 		}
 		ITA_roman = {

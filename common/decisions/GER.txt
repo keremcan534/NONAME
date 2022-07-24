@@ -106,6 +106,7 @@ operations = {
 			}
 		}
 	}
+	
 	GER_barbarossa_mission = {
 		icon = generic_operation
 		allowed = {
