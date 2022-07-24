@@ -312,6 +312,8 @@ ideas = {
 			}
 			equipment_bonus = {
 			}
+			cost=50
+
 			traits = {
 				pacific_fleet_naval_manufacturer
 			}
@@ -327,6 +329,8 @@ ideas = {
 			equipment_bonus = {
 				# destroyers
 			}
+			cost=50
+
 			traits = {
 				convoy_escort_naval_manufacturer
 			}

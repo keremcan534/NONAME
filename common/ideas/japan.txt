@@ -601,7 +601,7 @@ ideas = {
 	# MILITARY
 	
 	# TECHNOLOGY
-	naval_manufacturer =  { 
+	naval_manufacturer = { 
 		use_list_view = yes
 		designer = yes
 		kure_naval_arsenal = {
@@ -609,7 +609,7 @@ ideas = {
 				original_tag = JAP
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
-			cost = 100
+			cost = 50
 			available = {
 				has_completed_focus = JAP_supremacy_of_the_battlefleet
 			}
@@ -623,7 +623,7 @@ ideas = {
 				original_tag = JAP
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
-			cost = 100
+			cost = 50
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -637,7 +637,7 @@ ideas = {
 				original_tag = JAP
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
-			cost = 100
+			cost = 50
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -651,7 +651,7 @@ ideas = {
 				original_tag = JAP
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
-			cost = 100
+			cost = 50
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -665,7 +665,7 @@ ideas = {
 				original_tag = JAP
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
-			cost = 100
+			cost = 50
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -674,7 +674,7 @@ ideas = {
 			}
 		}
 	}
-	aircraft_manufacturer =  { 
+	aircraft_manufacturer = { 
 		use_list_view = yes
 		designer = yes
 		mitsubishi = {
@@ -768,7 +768,7 @@ ideas = {
 			traits = { refinery_concern }
 		}
 	}
-	materiel_manufacturer =  { 
+	materiel_manufacturer = { 
 		use_list_view = yes
 		designer = yes
 		tokyo_arsenal = {
@@ -798,11 +798,11 @@ ideas = {
 			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
 		}
 	}
-	tank_manufacturer =  { 
+	tank_manufacturer = { 
 		use_list_view = yes
 		designer = yes
 		osaka_army_arsenal = {
-			cost =100
+			cost =150
 			allowed = {
 				OR = {
 					original_tag = JAP

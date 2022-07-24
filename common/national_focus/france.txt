@@ -810,27 +810,22 @@ focus = {
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
-				amount = 2500
+				amount = 500
 				producer = FRA
 			}
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment
-				amount = 1000
+				amount = 500
 				producer = FRA
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 25000
-				producer = FRA
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = 1000
+				amount = 10000
 				producer = FRA
 			}
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment
-				amount = 800
+				amount = 500
 				producer = FRA
 			}
 	
@@ -869,7 +864,7 @@ focus = {
 			}
 			add_timed_idea={
 				idea=FRA_postcap
-				days=75
+				days=35
 			}
 		}
 	}

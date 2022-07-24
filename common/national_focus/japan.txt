@@ -178,12 +178,6 @@ focus_tree = {
  		y = 1
  		relative_position_id = JAP_intervene_in_china
  		cost = 5
- 		ai_will_do = {
- 			factor = 10
- 			modifier = {
- 				date > 1939.1.1
- 			}
- 		}
  		available = {
  			date > 1939.1.1
  		}
@@ -210,7 +204,7 @@ focus_tree = {
  					}
  					is_on_continent = asia
  				}
- 				add_compliance = 60
+ 				set_compliance = 50
  			}
  			hidden_effect = {
  				SOV = { army_experience = 50}
@@ -297,8 +291,7 @@ focus_tree = {
  					amount = 20
  				}
  			}
-
- 			add_timed_idea = { idea = JAP_comet_sighted days = 365 }
+ 			add_timed_idea = { idea = JAP_comet_sighted days = 90 }
 		}
 	}
  	
@@ -311,7 +304,6 @@ focus_tree = {
  		mutually_exclusive = {focus = JAP_challenge_the_zaibatsus}
  		relative_position_id = JAP_purge_the_kodoha_faction
  		cost = 10
-
  		cancel_if_invalid = yes
  		continue_if_invalid = no
  		available_if_capitulated = no
@@ -662,6 +654,7 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
+			add_research_slot=1
  			532 = {
  				add_extra_state_shared_building_slots = 2
  				add_building_construction = {

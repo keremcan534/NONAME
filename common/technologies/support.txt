@@ -146,8 +146,6 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			dozer_blade
-			flamethrower
 		}
 
 		enable_subunits = {
@@ -716,7 +714,7 @@ technologies = {
 			equipment_capture_factor = 0.05
 		}
 		enable_equipment_modules = {
-			easy_maintenance
+			
 		}
 		
 		

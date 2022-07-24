@@ -52,7 +52,6 @@ technologies = {
 		}
 		
 		enable_equipment_modules = { 
-			tank_radio_1
 		}
 
 		folder = {
@@ -103,7 +102,6 @@ technologies = {
 		start_year = 1938
 		enable_equipment_modules = { 
 			ship_radar_1
-			tank_radio_2
 		}
 		folder = {
 			name = electronics_folder
@@ -166,7 +164,6 @@ technologies = {
 		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_3
-			tank_radio_3
 		}
 
 		static_anti_air_hit_chance_factor = 0.2
@@ -329,7 +326,6 @@ technologies = {
 		# small boost to research speed
 		research_speed_factor = 0.08
 		enable_equipment_modules = {
-			stabilizer
 		}
 		path = {
 			leads_to_tech = advanced_computing_machine 

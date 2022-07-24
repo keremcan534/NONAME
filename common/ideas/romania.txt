@@ -441,7 +441,7 @@ ideas = {
 		designer = yes
 		pzinz_rom = {
 			picture = generic_tank_manufacturer_3
-			cost = 75
+			cost = 150
 			allowed = {
 				original_tag = ROM
 			}
@@ -458,7 +458,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				# heavily armored light tanks 7TP, weak vs air ,diesel powered
+				tank_manufacturer_cost_factor = -1
 			}
 		}
 		ROM_leonidas_works = {
@@ -491,7 +491,8 @@ ideas = {
 				}
 			}
 			modifier = {
-				equipment_conversion_speed = 0.1
+				tank_manufacturer_cost_factor = -1
+
 			}
 		}
 	}

@@ -150,7 +150,8 @@ technologies = {
 	}
 
 	advanced_ship_hull_light = {
-
+		allow = {date > 1941.9.1
+	}
 		enable_equipments = {
 			ship_hull_light_4
 		}
@@ -627,7 +628,8 @@ technologies = {
 	}
 
 	advanced_ship_hull_cruiser = {
-
+		allow = {date > 1941.9.1
+	}
 		enable_equipments = {
 			ship_hull_cruiser_4
 		}
@@ -1035,7 +1037,8 @@ technologies = {
 	}
 
 	advanced_ship_hull_heavy = {
-
+		allow = {date > 1941.9.1
+	}
 		enable_equipments = {
 			ship_hull_heavy_4
 		}
@@ -1304,7 +1307,8 @@ early_ship_hull_carrier = {
 	}
 
 	advanced_ship_hull_carrier = {
-
+		allow = {date > 1941.9.1
+	}
 		enable_equipments = {
 			ship_hull_carrier_3
 		}
@@ -1628,7 +1632,7 @@ early_ship_hull_carrier = {
 		}
 	}
 	modern_ship_torpedo_launcher = {
-
+		allow={always=no}
 		research_cost = 1.5
 
 		start_year = 1944
@@ -1801,7 +1805,8 @@ early_ship_hull_carrier = {
 	}
 
 	advanced_ship_hull_submarine = {
-
+		allow = {always=no
+	}
 		allow_branch = {
 			are_subs4_enabled = yes
 		}	
@@ -1893,7 +1898,8 @@ early_ship_hull_carrier = {
 	}
 
 	improved_submarine_snorkel = {
-
+		allow = {always=no
+	}
 		allow_branch = {
 			are_subs4_enabled = yes
 		}	
@@ -3026,7 +3032,7 @@ early_ship_hull_carrier = {
 	mtg_transport = { #WHEN BALANCING - ALSO FIX REGULAR NAVAL TREE
 
 		transport_capacity = -0.5
-		naval_invasion_capacity = 10
+		naval_invasion_capacity = 20
 
 		path = {
 			leads_to_tech = mtg_landing_craft
@@ -3078,8 +3084,8 @@ early_ship_hull_carrier = {
 	mtg_landing_craft = {
 
 		invasion_preparation = -0.5
-		amphibious_invasion_defence = 0.15
-		naval_invasion_capacity = 40
+		amphibious_invasion_defence = 0.1
+		naval_invasion_capacity = 50
 
 		path = {
 			leads_to_tech = mtg_tank_landing_craft
@@ -3156,7 +3162,7 @@ early_ship_hull_carrier = {
 	mtg_tank_landing_craft = {
 
 		amphibious_invasion = 0.25
-		amphibious_invasion_defence = 0.5
+		amphibious_invasion_defence = 0.1
 		naval_invasion_capacity = 100
 
 		research_cost = 2

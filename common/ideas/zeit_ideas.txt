@@ -249,10 +249,12 @@ ideas = {
 	#allies
 	tank_manufacturer = {
 		designer = yes
+		
 		marmon_herrington = {
 			allowed = {
 				the_allies = yes
 			}
+			cost=150
 			research_bonus = {
 				armor = 0.15
 			}
@@ -264,6 +266,7 @@ ideas = {
 			}
 		}
 		chrysler = {
+			cost=150
 			allowed = {
 				the_allies = yes
 			}
@@ -278,6 +281,7 @@ ideas = {
 			}
 		}
 		army_ordnance_department = {
+			cost=150
 			allowed = {
 				the_allies = yes
 			}
@@ -292,6 +296,7 @@ ideas = {
 			}
 		}
 		iscor = {
+			cost=150
 			picture = generic_tank_manufacturer_3
 			allowed = {
 				the_allies = yes
@@ -307,6 +312,7 @@ ideas = {
 			}
 		}
 		vickers_armstrong_eng = {
+			cost=150
 			allowed = {
 				the_allies = yes
 			}
@@ -321,6 +327,7 @@ ideas = {
 			}
 		}
 		new_south_wales_rc = {
+			cost=150
 			allowed = {
 				the_allies = yes
 			}
@@ -336,6 +343,7 @@ ideas = {
 		}
 		#USA SPECIAL
 		detroit_arsenal = {
+			cost=150
 			picture = generic_industrial_concern_1
 			allowed = {
 				original_tag = USA
@@ -366,6 +374,7 @@ ideas = {
 			}
 		}
 		tank_destroyer_board = {
+			cost=150
 			picture = usa_tank_destroyer_board
 			allowed = {
 				original_tag = USA
@@ -498,6 +507,7 @@ ideas = {
 	aircraft_manufacturer = {
 		designer =yes
 		supermarine = {
+			cost=100
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -513,6 +523,8 @@ ideas = {
 
 		}
 		hawker = {
+			cost=100
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -530,6 +542,8 @@ ideas = {
 			}
 		}
 		de_havilland = {
+			cost=100
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -548,7 +562,7 @@ ideas = {
 		}
 		CAN_fairchild_aircraft_ltd = {
 			picture = generic_air_manufacturer_2
-			cost = 150
+			cost=100
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -572,6 +586,8 @@ ideas = {
 			}
 		}
 		boeing = {
+			cost=100
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -594,6 +610,8 @@ ideas = {
 	tank_manufacturer = {
 		designer = yes
 		porsche = {
+			cost=150
+
 			allowed = {
 				original_tag=GER
 			}
@@ -604,16 +622,12 @@ ideas = {
 			}
 			equipment_bonus={
 				armor = {
-					soft_attack=0.15
-					hard_attack=0.15
-					air_attack=0.1
+					soft_attack=0.175
+					hard_attack=0.175
+					air_attack=0.15
 					hardness=0.05
 					armor_value = 0.05
-					speed=0.1
-					reliability=-0.1
-					build_cost_ic = 0.1
-					
-
+					speed=0.15
 				}
 				
 				
@@ -623,6 +637,8 @@ ideas = {
 			}
 		}
 		henschel = {
+			cost=150
+
 			allowed = {
 				the_axis = yes
 			}
@@ -637,6 +653,8 @@ ideas = {
 			}
 		}
 		GER_MAN = {
+			cost=150
+
 			picture = GER_MAN
 			allowed = {
 				the_axis = yes
@@ -652,6 +670,8 @@ ideas = {
 			}
 		}
 		fiat = {
+			cost=150
+
 			allowed = {
 				the_axis = yes
 			}
@@ -666,6 +686,8 @@ ideas = {
 			}
 		}
 		CZE_ckd = {
+			cost=150
+
 			allowed = {
 				the_axis = yes
 			}
@@ -683,6 +705,8 @@ ideas = {
 			}
 		}
 		CZE_tatra = {
+			cost=150
+
 			picture = generic_tank_manufacturer_2
 			allowed = {
 				the_axis = yes
@@ -700,6 +724,8 @@ ideas = {
 			}
 		}
 		CZE_skoda_armor = {
+			cost=150
+
 			picture = generic_tank_manufacturer_3
 			allowed = {
 				the_axis = yes

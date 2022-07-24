@@ -324,7 +324,9 @@ technologies = {
 	}
 	
 	artillery4 = {
-	
+		allow={
+			date>1941.9.1
+		}
 		enable_equipments = {
 			artillery_equipment_3
 		}
@@ -332,11 +334,6 @@ technologies = {
 		enable_equipment_modules = {
 			# tank_heavy_howitzer
 		}
-
-		allow = {date > 1941.6.1
-			
-		}
-
 		#artillery = { 
 		#	soft_attack = 0.1
 		#}
@@ -595,7 +592,9 @@ technologies = {
 	}
 	
 	rocket_artillery3 = {
-
+		allow = {
+			always = no
+		}
 		rocket_artillery = {
 			soft_attack = 0.15
 			breakthrough = 0.15
@@ -654,11 +653,6 @@ technologies = {
 		enable_equipment_modules = {
 			# tank_rocket_launcher_2
 		}
-
-		allow = {date > 1941.6.1
-			
-		}
-
 		#rocket_artillery = {
 		#	soft_attack = 0.15
 		#}
@@ -937,16 +931,11 @@ technologies = {
 	}
 	
 	antiair5 = {
-
+		allow={
+			date>1941.9.1
+		}
 		enable_equipments = {
 			anti_air_equipment_3
-		}
-
-		allow = {
-			
-				date > 1941.6.1
-				
-			
 		}
 
 		static_anti_air_damage_factor = 0.1
@@ -1283,7 +1272,6 @@ technologies = {
 	}
 	
 	antitank5 = {
-			
 		enable_equipments = {
 			anti_tank_equipment_3
 		}	
@@ -1292,10 +1280,6 @@ technologies = {
 			# tank_heavy_cannon_3
 			# auto_loader
 		}
-
-		allow = {date > 1941.6.1
-		}
-			
 		#anti_tank = {
 		#	hard_attack = 0.1
 		#	ap_attack = 0.05
