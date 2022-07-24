@@ -3,7 +3,8 @@ state={
 	id=266
 	name="STATE_266" # Tehran
 	manpower = 3446250
-	
+	impassable = yes
+
 	state_category = town
 
 	history={
