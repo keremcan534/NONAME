@@ -350,8 +350,8 @@ focus_tree = {
 		y = 2
 		cost = 1
 		available = {
-			has_war_with = GER
-			date>1941.6.22
+			OR={has_war_with = GER
+			date>1941.6.22}
 		}
 		completion_reward = {
 				custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural."
