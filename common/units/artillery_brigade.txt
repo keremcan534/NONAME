@@ -66,12 +66,12 @@ sub_units = {
 		}
 
 		river = {
-			attack = -0.2
+			attack = -0.1
 			movement = -0.2
 		}
 
 		amphibious = {
-			attack = -0.4
+			attack = -0.2
 		}
 	}
 
@@ -214,12 +214,12 @@ sub_units = {
 		}
 
 		river = {
-			attack = -0.2
+			attack = -0.1
 			movement = -0.2
 		}
 
 		amphibious = {
-			attack = -0.4
+			attack = -0.2
 		}
 	}
 

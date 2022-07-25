@@ -37,10 +37,10 @@ ideas = {
 			picture = generic_acquire_tanks
 			equipment_bonus = {
 				motorized_equipment = {
-					max_strength = 16 instant = yes
+					max_strength = 14 instant = yes
 				}
 				mechanized_equipment = {
-					max_strength = 12 instant = yes
+					max_strength = 10 instant = yes
 				}
 			}
 		}
@@ -133,7 +133,7 @@ ideas = {
 		}
 		trade_blocked = {
 			cancel = {
-				date > 1939.1.1
+				has_war=yes
 			}
 			allowed = {
 				always = no				#added on on_actions 
@@ -142,6 +142,17 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				production_lack_of_resource_penalty_factor = -1
+			}
+		}
+		trade_blocked_ai={
+			allowed = {
+				always = no				#added on on_actions 
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				production_lack_of_resource_penalty_factor = -1
+			min_export=-1
 			}
 		}
 	}

@@ -440,7 +440,6 @@ technologies = {
 		# industrial_capacity_factory = 0.1
 		# industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
 		equipment_conversion_speed = 0.20
 		# industry_air_damage_factor = -0.15
 		# global_building_slots_factor = 0.2
@@ -515,7 +514,6 @@ technologies = {
 		# industrial_capacity_factory = 0.1
 		# industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
 		# industry_air_damage_factor = -0.10
 		# global_building_slots_factor = 0.2
 		
@@ -556,7 +554,6 @@ technologies = {
 		# industrial_capacity_factory = 0.1
 		# industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
 		# industry_air_damage_factor = -0.10
 		# global_building_slots_factor = 0.2
 		
@@ -597,7 +594,6 @@ technologies = {
 		# industrial_capacity_factory = 0.1
 		# industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.08
-		production_factory_start_efficiency_factor = 0.05
 		# industry_air_damage_factor = -0.10
 		# global_building_slots_factor = 0.2
 		

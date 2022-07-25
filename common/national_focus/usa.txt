@@ -56,10 +56,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = 150
-			add_offsite_building = {
-				type = industrial_complex
-				level = 4
-			}
 		}
 	}
 	focus = {
@@ -96,7 +92,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 15
+				level = 12
 			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
@@ -152,7 +148,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 15
+				level = 12
 			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
@@ -197,7 +193,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 15
+				level = 12
 			}
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
@@ -1497,8 +1493,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
-				uses = 1
-				bonus = 2
+				uses = 2
+				bonus = 1
 				category = armor
 			}
 		}

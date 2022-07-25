@@ -1207,6 +1207,10 @@ technologies = {
 		category_army = {
 			hard_attack = 0.1
 		}
+		category_all_infantry = {
+			default_morale = 0.1
+			max_organisation = 10
+		}
 		path = {
 			leads_to_tech = combined_arms
 			research_cost_coeff = 1
@@ -1399,10 +1403,10 @@ technologies = {
 			concentrated_fire_plans
 		}
 		category_all_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		category_artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.15
 		}
 		path = {
 			leads_to_tech = forward_observers
@@ -1621,7 +1625,7 @@ technologies = {
 			superior_firepower
 			mass_assault
 		}
-		max_dig_in = 10
+		max_planning = 0.1
 		dig_in_speed_factor = 0.25		#25% bonus
 		path = {
 			leads_to_tech = grand_battle_plan
@@ -2663,7 +2667,9 @@ technologies = {
 		motorized = {
 			max_strength = 8
 		}
-
+		category_all_infantry = {
+			max_organisation = 15
+		}
 		category_all_armor = {
 			default_morale = 0.1
 		}

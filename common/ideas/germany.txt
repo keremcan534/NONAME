@@ -1,5 +1,23 @@
 ideas = {
 	country = {
+		GER_blitz={
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			equipment_bonus = {
+				motorized_equipment = {
+					max_strength = 16 instant = yes
+				}
+				mechanized_equipment = {
+					max_strength = 12 instant = yes
+				}
+			}
+			modifier={
+				org_loss_when_moving=-0.05
+			}
+		}
 		GER_france_wall_buff = {
 			allowed = {
 				always = no
