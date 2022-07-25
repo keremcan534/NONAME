@@ -152,7 +152,7 @@ on_actions = {
 				
                 SOV  = { 
 
-                add_timed_idea = { idea = GSOV_Heartland_Falling days = 730 } 
+                add_timed_idea = { idea = SOV_Heartland_Falling days = 730 } 
                 add_timed_idea = { idea = overextended2  days = 180 } 
 
               }

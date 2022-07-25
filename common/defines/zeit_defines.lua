@@ -139,7 +139,7 @@ NDefines.NMilitary.STRATEGIC_SPEED_BASE = 20.0 -- (10.0) Increased speed to make
 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.06 	--air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.02 	--global damage modifier 
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.35                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.175                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.15 	--effect on defense due to enemy air superiority
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.2	--more AA attack will approach this amount of help (diminishing returns)
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 400 	--how quickly defense approaches the max impact diminishing returns curve
