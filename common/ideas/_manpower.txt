@@ -89,11 +89,7 @@ ideas = {
 		extensive_conscription = {
 			
 			available = {
-				OR = {
-					has_government = fascism
-					has_government = communism					
-				}
-				has_war_support > 0.2
+
 				if = {
 					limit = {
 						original_tag = HUN
@@ -118,14 +114,7 @@ ideas = {
 			
 			
 			available = {
-				OR = {
-					has_government = fascism
-					has_government = communism
-					
-				}
-				OR = {
-					has_war_support > 0.3
-				}
+
 				if = {
 					limit = {
 						original_tag = HUN
@@ -155,10 +144,6 @@ ideas = {
 			
 			available = {
 				has_war = yes
-				OR = {
-					has_war_support > 0.45
-				}
-
 				if = {
 					limit = {
 						original_tag = HUN
@@ -187,10 +172,6 @@ ideas = {
 			
 			available = {
 				has_war = yes
-				OR = {
-					has_war_support > 0.65
-				}
-				
 				if = {
 					limit = {
 						original_tag = HUN
