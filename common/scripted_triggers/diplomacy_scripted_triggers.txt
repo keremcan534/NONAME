@@ -1,0 +1,26 @@
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {	if = { limit = {FROM = { tag = FRA   } }  FRA = { has_country_flag = fall_of_france }  } 
+}
+DIPLOMACY_WAR_ENABLE_TRIGGER = {always = no }
+DIPLOMACY_GIVESTATECONTROL_ENABLE_TRIGGER = { NOT = { FROM = { tag = FIN } } }
+DIPLOMACY_ASKSTATECONTROL_ENABLE_TRIGGER = { always = no }
+DIPLOMACY_SEND_ATTACHE_ENABLE_TRIGGER = { 
+	if = { limit = { ROOT = { OR = { the_allies = yes tag = SOV }}} NOT = { FROM = { OR = { the_axis = yes tag = JAP tag = MAN }}}  }
+	if = { limit = { ROOT = { OR = { the_axis = yes tag = JAP tag = MAN }}} NOT = { FROM = { OR = { the_allies = yes tag = SOV }}}  }
+}
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { always = no }
+DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {}
+DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = { always = no }
+DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER  = { always = no }
+DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = { always = no } 
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = { always = no } 
+DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
+	NOT = {ROOT = { original_tag = SOV } }
+}
+DIPLOMACY_MANAGE_LICENSED_PRODUCTION_EXISTING_ENABLE_TRIGGER = { 
+	NOT = {ROOT = { original_tag = SOV } }
+}
+DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = { 
+	NOT = {ROOT = { original_tag = SOV } }
+}
+DIPLOMACY_RETURN_EXP_FORCE_ENABLE_TRIGGER = {}
+DIPLOMACY_REQUEST_EXP_FORCE_ENABLE_TRIGGER = {}	

@@ -1,7 +1,3 @@
-is_border_conflict_defender_vs_FROM = {
-	has_variable = ROOT.defender_state_vs_@FROM
-}
-
 is_controlled_by_ROOT_or_ally = {
 	custom_trigger_tooltip = {
 		tooltip = is_controlled_by_ROOT_or_ally
