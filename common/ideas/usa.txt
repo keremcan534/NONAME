@@ -87,6 +87,21 @@ ideas = {
 				defense_bonus_against = 0.1
 			}
 		}
+		USA_war_plans_3 = {
+			picture = generic_war_preparation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+army_morale_factor = -0.25
+			}
+
+		}
+
 		USA_war_plans_2 = {
 			picture = generic_war_preparation
 			allowed = {

@@ -997,7 +997,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			ITA = {
+				add_ideas = USA_war_plans_3				
+			}			
 			unlock_decision_tooltip = {
 				decision = USA_execute_war_plan_silver
 				show_effect_tooltip = yes
