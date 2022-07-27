@@ -1,7 +1,5 @@
 equipments = {
-	
-	### Artillery soft attack and breakthrough has been buffed. The 'brigade' bonus no longer applies; artillery soft attack has been given a flat 25% buff for ease of understanding. - TW ###
-	
+
 	artillery_equipment = {
 		year = 1934
 
@@ -18,22 +16,23 @@ equipments = {
 
 		#Misc Abilities
 		reliability = 0.8
+		maximum_speed = 4
 
 		#Defensive Abilities
-		defense = 14
-		breakthrough = 11.61
+		defense = 16.5
+		breakthrough = 12.5
 		hardness = 0
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 27
+		soft_attack = 29.5
 		ap_attack = 5
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 0.875
 		
-		build_cost_ic = 2.275
+		build_cost_ic = 3
 		resources = {
 			tungsten = 1
 			steel = 2
@@ -57,10 +56,10 @@ equipments = {
 		visual_level = 1
 
 		defense = 18.98
-		breakthrough = 16.5
-		soft_attack = 36
+		breakthrough = 14.5
+		soft_attack = 39.6
 		
-		build_cost_ic = 2.625
+		build_cost_ic = 3.2
 		resources = {
 			tungsten = 1
 			steel = 2
@@ -75,11 +74,11 @@ equipments = {
 		priority = 50
 		visual_level = 2
 		
-		defense = 22.71
-		breakthrough = 19.35
-		soft_attack = 40.8
+		defense = 24.58
+		breakthrough = 18
+		soft_attack = 47.5
 		
-		build_cost_ic = 3
+		build_cost_ic = 3.5
 		resources = {
 			tungsten = 1
 			steel = 3
@@ -103,22 +102,21 @@ equipments = {
 		
 		#Misc Abilities
 		reliability = 0.8
+		maximum_speed = 4.5
 
 		#Defensive Abilities
-		defense = 16.28
-		breakthrough = 19
+		defense = 5
+		breakthrough = 26
 		hardness = 0
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 44.1
+		soft_attack = 48.4
 		ap_attack = 2
 		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 0.875
 		
-		build_cost_ic = 2.625
+		build_cost_ic = 5.0
+		lend_lease_cost = 0.875
 		resources = {
 			tungsten = 2
 			steel = 1
@@ -141,11 +139,11 @@ equipments = {
 		priority = 60
 		visual_level = 1
 		
-		defense = 23.01
-		breakthrough = 19.8
-		soft_attack = 48.9
+		defense = 6.5
+		breakthrough = 29
+		soft_attack = 56.1
 		
-		build_cost_ic = 3.5
+		build_cost_ic = 6.0
 		resources = {
 			tungsten = 2
 			steel = 1
@@ -173,21 +171,20 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 20.48
-		breakthrough = 13 
-		hardness = 0.2
+		breakthrough = 19
+		hardness = 0.3
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 49
+		soft_attack = 54.9
 		ap_attack = 2
 		air_attack = 0
-
+		
 		#Space taken in convoy
 		lend_lease_cost = 4
-		
 		build_cost_ic = 12
 		resources = {
-			chromium = 1
+			tungsten = 2
 			steel = 1
 		}
 	}
@@ -199,13 +196,5 @@ equipments = {
 		priority = 70
 		visual_level = 0
 	}
-	
-	forgotmotorized_rocket_equipment_1 = {
-		year = 1939
-
-		archetype = motorized_rocket_equipment
-		priority = 70
-		visual_level = 0
-	}	
 	
 }

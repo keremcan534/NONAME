@@ -1,7 +1,5 @@
 equipments = {
 
-	motorized_rocket_equipment_equipment = {}
-
 	motorized_equipment = {
 		year = 1936
 
@@ -18,12 +16,13 @@ equipments = {
 		
 		maximum_speed = 10
 		reliability = 0.8
-		hardness = 0.2
+		hardness = 0.25
+		# breakthrough = 10
 
 		#Space taken in convoy
-		lend_lease_cost = 1
+		lend_lease_cost = 1 #5
 
-		build_cost_ic = 3
+		build_cost_ic = 2.5
 		resources = {
 			#oil = 1
 			rubber = 1
