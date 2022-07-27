@@ -1,0 +1,14 @@
+﻿capital = 11
+set_research_slots = 0
+recruit_character = LIT_antanas_smetona
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1926.5.8"
+	election_frequency = 120
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
