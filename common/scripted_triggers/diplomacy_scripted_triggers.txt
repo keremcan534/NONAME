@@ -1,4 +1,5 @@
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {	if = { limit = {FROM = { tag = FRA   } }  FRA = { has_country_flag = fall_of_france }  } 
+NOT={original_tag=JAP}
 }
 DIPLOMACY_WAR_ENABLE_TRIGGER = {always = no }
 DIPLOMACY_GIVESTATECONTROL_ENABLE_TRIGGER = { NOT = { FROM = { tag = FIN } } }
@@ -14,13 +15,13 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER  = { always = no }
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = { always = no } 
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = { always = no } 
 DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
-	NOT = {ROOT = { original_tag = SOV } }
+	NOT = {FROM = { original_tag = SOV } }
 }
 DIPLOMACY_MANAGE_LICENSED_PRODUCTION_EXISTING_ENABLE_TRIGGER = { 
-	NOT = {ROOT = { original_tag = SOV } }
+	NOT = {FROM = { original_tag = SOV } }
 }
 DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = { 
-	NOT = {ROOT = { original_tag = SOV } }
+	NOT = {FROM = { original_tag = SOV } }
 }
 DIPLOMACY_RETURN_EXP_FORCE_ENABLE_TRIGGER = {}
 DIPLOMACY_REQUEST_EXP_FORCE_ENABLE_TRIGGER = {}	
