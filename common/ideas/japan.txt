@@ -89,7 +89,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				industry_air_damage_factor = -0.1
-				global_building_slots_factor=0.3
+				global_building_slots_factor=0.35
 				army_morale_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
@@ -733,8 +733,14 @@ ideas = {
 				CAS_equipment = {
 					air_ground_attack = 0.1 reliability = 0.1 air_range = 0.1
 				}
+				nav_bomber_equipment = {
+				    naval_strike_attack_factor = 0.1 air_range = 0.1 reliability = 0.1
+				}
+				cv_nav_bomber_equipment = {
+					naval_attack = 0.1 air_range = 0.1 reliability = 0.1
+				}
 			}
-			traits = { }
+			traits = {}
 		}
 	}
 	industrial_concern = {
