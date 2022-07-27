@@ -1492,12 +1492,14 @@ focus_tree = {
  				if={limit={USA={has_war=no}}
  					ENG={add_to_faction=USA}
  					GER={declare_war_on = { target = USA type = annex_everything }}
+					
  				}
  				USA={declare_war_on_enemy_faction =yes}
  				USA= {add_to_war = {
  						targeted_alliance = ENG
  						enemy = ROOT
- 						}}	
+ 						}}
+				USA={declare_on_axis=yes}	
  				hidden_effect = {
  					594 = {
  						add_compliance = 100
