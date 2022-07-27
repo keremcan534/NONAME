@@ -32,8 +32,8 @@ NDefines.NNavy.FUEL_COST_MULT = 0.05 -- fuel multiplier for all naval missions
 NDefines.NNavy.ENEMY_AIR_SUPERIORITY_IMPACT = -0.85           		-- effect on ship efficiency due to enemy air superiorty
 NDefines.NNavy.SPOTTING_ENEMY_SPOTTING_MULTIPLIER_FOR_RUNNING_AWAY = 0.10		-- enemy spotting is multiplied by this value to simulate running away
 
-NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 14.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
-NDefines.NNavy.CARRIER_STACK_PENALTY = 6  							-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
+NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 16.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NNavy.CARRIER_STACK_PENALTY = 4  							-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.09 					-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0 	-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CARRIERS = 1.0
@@ -276,9 +276,25 @@ NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1						-- WAS -100 | This is added
 
 NDefines.NTechnology.MAX_SUBTECHS = 4                                 -- Added to stop weird things from happening with the amphibious tank variants 
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3.0 -- Vanilla is 2.0, means 300% increase in research time per year ahead
-NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 10.0 -- Vanilla is 30.0, increased because ahead of time penalty also increased
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 40.0 -- Vanilla is 30.0, increased because ahead of time penalty also increased
 
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.03 -- 0.01
+------------COMBAT------
+NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.30               -- defender penalty if attacked from multiple directions
+NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2 -- (4) Changed to make micro more responsive
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.015
+NDefines.NMilitary.PLANNING_DECAY = 0.015
+NDefines.NMilitary.PLANNING_MAX = 0.25                          	-- can get more from techs
+NDefines.NMilitary.REINFORCE_CHANCE = 0.04 -- To make larger divisions more attractive
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4 -- Number of support companies allowed per division
+
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.75 -- (4.5)
+
+NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0125                     -- basic speed control
+NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.020	-- speed penalty per infrastucture below maximum.
+NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35            -- vanilla is 0.2, for a long time GDU was 0.4. percentage of (max) org loss on takign enemy province
+NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.4		   -- vanilla is -0.2. how much org is lost every hour while moving an army.
 
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35
 NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 22 -- (30)
@@ -299,6 +315,9 @@ NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.000 -- 0.0 is vanilla, reduc
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.45    -- vanilla -0.7 | defend combat penalty for attacker if out of supply
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.20 |  attack combat penalty for attacker if out of supply
 
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.45                   -- speed bonus when retreating
+NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.30                -- speed bonus when withdrawing
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.0		-- speed impact at 0 org.
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0002 -- (0.0001)
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.000001 -- (1.00)
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 --Division experience drop if unit has different battalion when switching templates(vanilla 0.5 but can be circumvented with template editing)
@@ -318,7 +337,7 @@ NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.12 -- (0.05)
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.04 	-- (0.05) global damage modifier
-
+------------------------------------------------------
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.7 -- (0.7)
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of equipment to training is not fun
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 20.0 -- (10.0) Increased speed to make 3 speed changes more tolerable
@@ -343,11 +362,7 @@ NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
  NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.55 -- (0.50) fuel cost multiplier for all army related stuff
 NDefines.NAir.FUEL_COST_MULT = 0.25 -- (0.35) fuel multiplier for all air missions 
 
-NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0125                     -- basic speed control
-NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.020	-- speed penalty per infrastucture below maximum.
-NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35            -- vanilla is 0.2, for a long time GDU was 0.4. percentage of (max) org loss on takign enemy province
-NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.4		   -- vanilla is -0.2. how much org is lost every hour while moving an army.
+
 
 --HFU FRONTLINE AI DEFINES---------------------------------------------------------------------------------
 NDefines.NMilitary.PLAN_NEIGHBORING_ENEMY_PROVINCE_FACTOR = 0.7	-- When calculating the importance of provinces, it takes number of enemy provinces into account, factored by this
@@ -399,14 +414,7 @@ NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
 NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0 -- if there are multiple leaders in same combat, each one gets thisratio + (1-thisratio)/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
 
-NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.30               -- defender penalty if attacked from multiple directions
-NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2 -- (4) Changed to make micro more responsive
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.015
-NDefines.NMilitary.PLANNING_DECAY = 0.015
-NDefines.NMilitary.PLANNING_MAX = 0.25                          	-- can get more from techs
-NDefines.NMilitary.REINFORCE_CHANCE = 0.04 -- To make larger divisions more attractive
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4 -- Number of support companies allowed per division
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.7 -- (4.5)
+
 
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0014 -- (0.005)
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 11		-- (5) chance to get a hit to damage on forts. (out of 100)
