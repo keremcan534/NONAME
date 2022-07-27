@@ -10,7 +10,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	general_staff
-	GER_autarky_idea_minor
+	ITA_autarky_idea
 }
 set_convoys = 450
 set_politics = {
