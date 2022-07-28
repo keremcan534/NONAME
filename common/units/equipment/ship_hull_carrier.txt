@@ -72,19 +72,6 @@ equipments = {
 					ship_carrier_armor
 				}
 			}
-			mid_3_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_secondaries
-					ship_deck_space
-				}
-			}
-			mid_4_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_deck_space
-				}
-			}
 		}
 		module_count_limit = {
 			category = ship_radar
