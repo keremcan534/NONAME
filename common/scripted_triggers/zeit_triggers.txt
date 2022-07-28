@@ -3,7 +3,7 @@ playable_countries = {
 		original_tag = USA
 		original_tag = CAN
 		original_tag = ENG
-		original_tag = SPR 
+		original_tag = SPR
 		original_tag = FRA
 		original_tag = GER
 		original_tag = ITA
@@ -15,36 +15,37 @@ playable_countries = {
 		original_tag = RAJ
 		original_tag = AST
 		original_tag = JAP
-
 	}
 }
 
 the_axis = {
-OR = { 
-original_tag = GER
-original_tag = ITA
-original_tag = SPR
-original_tag = ROM
-original_tag = HUN
-original_tag = BUL
-}
+	OR = {
+		original_tag = GER
+		original_tag = ITA
+		original_tag = SPR
+		original_tag = ROM
+		original_tag = HUN
+		original_tag = BUL
+	}
 }
 
-the_japan = { 
-OR = { 
-original_tag = JAP
-original_tag = MAN
-original_tag = SIA
+the_japan = {
+	OR = {
+		original_tag = JAP
+		original_tag = MAN
+		original_tag = SIA
+	}
 }
- }
 
 the_allies = {
-OR = { 
-original_tag = ENG
-original_tag = USA
-original_tag = FRA
-original_tag = CAN
-original_tag = SAF
-original_tag = AST
-original_tag = RAJ}
+	OR = {
+		original_tag = ENG
+		original_tag = USA
+		original_tag = FRA
+		original_tag = CAN
+		original_tag = SAF
+		original_tag = AST
+		original_tag = RAJ
+	}
 }
+

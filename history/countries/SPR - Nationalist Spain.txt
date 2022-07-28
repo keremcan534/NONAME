@@ -18,10 +18,15 @@ set_popularities = {
 set_politics = {
 	ruling_party = neutrality
 }
+
 add_ideas={
 	general_staff
 	GER_autarky_idea_minor
 	SPR_no_armada
+}
+add_timed_idea={
+	idea=SPA_recovering_from_civil_war
+	days=120
 }
 set_technology = {
 	basic_train = 1

@@ -150,12 +150,6 @@
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_modern_at_guns
-				bonus = 2
-				uses = 1
-				category = cat_anti_tank
-			}
 			add_timed_idea = {
 				idea = ENG_goods
 				days = 75
@@ -1612,7 +1606,7 @@
 		relative_position_id = GER_strategic_air_effort
 		cost = 5
 		available={
-			date>1941.9.1
+			date>1941.6.1
 		}
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1656,11 +1650,10 @@
 				popularity = 0.1
 			}
 			# Balance research bonus to 2 techs in land_doctrine
-			army_experience = 100
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.75
-				uses = 3
+				cost_reduction = 0.5
+				uses = 2
 				category = land_doctrine
 			}
 			add_tech_bonus = {
@@ -2054,7 +2047,7 @@
 			focus = GER_ussr_war_goal
 		}
 		available = {
-			Date > 1943.7.1
+			Date > 1943.5.1
 		}
 		x = -1
 		y = 1
@@ -2075,7 +2068,7 @@
 			focus = GER_ussr_war_goal
 		}
 		available = {
-			Date > 1942.1.1
+			Date > 1944.1.1
 		}
 		relative_position_id = GER_ussr_war_goal
 		x = 1
@@ -2084,68 +2077,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = GER_totaler_krieg
-			hidden_effect = {
-				division_template = {
-					name = "Volkssturm"					#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
-					#division_names_group = JAP_MAR_01
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 0
-							y = 3
-						}
-						infantry = {
-							x = 0
-							y = 4
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-
-						artillery_brigade = {
-							x = 3
-							y = 0
-						}
-						artillery_brigade = {
-							x = 3
-							y = 1
-						}
-
-					}
-					support = {
-						anti_air = {
-							x = 0
-							y = 0
-						}
-					}
-					priority = 1
-				}
-			}
-			64 = {
-				for_loop_effect = {
-					end = 30
-					create_unit = {
-						division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.17"
-						owner = GER
-					}
-				}
-			}
+			add_ideas= tot_economic_mobilisation
 		}
 	}
 	focus = {
@@ -2675,12 +2607,12 @@
 			add_state_core = 9
 			add_state_core = 75
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_2
+				type = infantry_equipment_1
 				amount = 40000
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
-				type = artillery_equipment_2
+				type = artillery_equipment_1
 				amount = 5000
 				producer = GER
 			}
@@ -2690,12 +2622,12 @@
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
-				type = anti_tank_equipment_2
+				type = anti_tank_equipment_1
 				amount = 5000
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
-				type = anti_air_equipment_2
+				type = anti_air_equipment_1
 				amount = 2000
 				producer = GER
 			}

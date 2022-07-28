@@ -1,37 +1,35 @@
 Declare_on_allies = {
-	
-		declare_war_on = {
-			target = POL
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = ENG
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = FRA
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = RAJ
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = CAN
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = AST
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = SAF
-			type = annex_everything
-		}
-	
+	declare_war_on = {
+		target = POL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ENG
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = RAJ
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = CAN
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = AST
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = SAF
+		type = annex_everything
+	}
 }
 
-declare_on_axis={
+declare_on_axis = {
 	declare_war_on = {
 		target = GER
 		type = annex_everything
@@ -56,7 +54,6 @@ declare_on_axis={
 		target = HUN
 		type = annex_everything
 	}
-
 }
 
 ##france
@@ -81,87 +78,91 @@ tp_france_divs = {
 }
 
 fall_of_france = {
-	FRA={
-		news_event = { id = news.34 days = 0 }
+	FRA = {
+		news_event = {
+			id = news.34
+			days = 0
+		}
 		set_country_flag = france_de_gaulle
-			create_country_leader = {
-				name = "Charles de Gaulle"
-				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-				picture = "Portrait_France_Charles_De_Gaulle.dds"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					
-				}
+		create_country_leader = {
+			name = "Charles de Gaulle"
+			desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+			picture = "Portrait_France_Charles_De_Gaulle.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
 			}
-			set_cosmetic_tag = FRA_FREE
-			add_ideas = FRA_defeatism
-			country_event = france.20
-			remove_ideas={	
-				FRA_victors_of_wwi
-				FRA_protected_by_the_maginot_line
-			}
-			add_state_core = 539
-				set_capital = {
-					state = 539
-				}
-			set_global_flag= fall_of_france
-
+		}
+		set_cosmetic_tag = FRA_FREE
+		add_ideas = FRA_defeatism
+		country_event = france.20
+		remove_ideas = {
+			FRA_victors_of_wwi
+			FRA_protected_by_the_maginot_line
+		}
+		add_state_core = 539
+		set_capital = {
+			state = 539
+		}
+		set_global_flag = fall_of_france
 	}
 	ENG = {
-		retire_country_leader = yes					
+		retire_country_leader = yes
 		create_country_leader = {
 			name = "Winston Churchill"
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
 			ideology = conservatism
-			traits = {	british_bulldog	}
+			traits = {
+				british_bulldog
+			}
 		}
 		add_stability = 0.1
 		add_war_support = 0.1
 	}
-	
-	EFR={
-						#syria
-						transfer_state = 553 
-						transfer_state = 677 
-						transfer_state = 680 
-						transfer_state = 554 
-						#france
-						transfer_state = 26 
-						transfer_state = 22 
-						transfer_state = 25 
-						transfer_state = 20 
-						transfer_state = 33 
-						transfer_state = 31 
-						transfer_state = 32 
-						transfer_state = 21 
-						#africa
-						transfer_state = 777 
-						transfer_state = 776 
-						transfer_state = 781 
-						transfer_state = 778 
-						transfer_state = 556 
-						transfer_state = 779 
-						transfer_state = 780 
-						transfer_state = 272 
-						transfer_state = 557 
-						#madagascar
-						transfer_state = 543 
-						transfer_state = 708 
-						transfer_state = 706 
-						transfer_state = 713 
-						#tunis
-						transfer_state = 460 
-						transfer_state = 513 
-						transfer_state = 459 
-						transfer_state = 461 
-						transfer_state = 462 
-						every_owned_state={
-							set_demilitarized_zone = yes
-						}
-						26={set_demilitarized_zone = no}
+	EFR = {
+		#syria
+		transfer_state = 553
+		transfer_state = 677
+		transfer_state = 680
+		transfer_state = 554
+		#france
+		transfer_state = 26
+		transfer_state = 22
+		transfer_state = 25
+		transfer_state = 20
+		transfer_state = 33
+		transfer_state = 31
+		transfer_state = 32
+		transfer_state = 21
+		#africa
+		transfer_state = 777
+		transfer_state = 776
+		transfer_state = 781
+		transfer_state = 778
+		transfer_state = 556
+		transfer_state = 779
+		transfer_state = 780
+		transfer_state = 272
+		transfer_state = 557
+		#madagascar
+		transfer_state = 543
+		transfer_state = 708
+		transfer_state = 706
+		transfer_state = 713
+		#tunis
+		transfer_state = 460
+		transfer_state = 513
+		transfer_state = 459
+		transfer_state = 461
+		transfer_state = 462
+		every_owned_state = {
+			set_demilitarized_zone = yes
+		}
+		26 = {
+			set_demilitarized_zone = no
+		}
 	}
 	GER = {
 		transfer_state = 28
@@ -178,15 +179,15 @@ fall_of_france = {
 		transfer_state = 23
 		transfer_state = 19
 		transfer_state = 806
-		country_event = { id = france.14 }
-		
+		country_event = {
+			id = france.14
+		}
 	}
 	ITA = {
 		transfer_state = 735
 		transfer_state = 1
 		transfer_state = 458
 		transfer_state = 665
-
 	}
 	JAP = {
 		transfer_state = 671
@@ -197,7 +198,6 @@ fall_of_france = {
 	RAJ = {
 		transfer_state = 320
 	}
-	
 }
 
 declare_war_on_enemy_faction = {
@@ -278,6 +278,248 @@ THIS_call_all_allies_against_ROOT = {
 			add_to_war = {
 				targeted_alliance = ENG
 				enemy = ROOT
+			}
+		}
+	}
+}
+
+SOV_relocate_civ = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = SOV
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					is_core_of = SOV
+					NOT = {
+						is_controlled_by = SOV
+					}
+				}
+				industrial_complex>0
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					is_core_of = SOV
+					NOT = {
+						is_controlled_by = SOV
+					}
+				}
+				industrial_complex>0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			SOV = {
+				add_to_variable = {
+					relocatedciv = 1
+				}
+			}
+			SOV = {
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							state = 583
+							state = 571
+							state = 653
+							state = 402
+							state = 404
+							state = 582
+							state = 588
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	else = {
+		random_owned_controlled_state = {
+			limit = {
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					any_neighbor_state = {
+						is_core_of = SOV
+						NOT = {
+							is_controlled_by = SOV
+						}
+					}
+				}
+				industrial_complex>0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			SOV = {
+				add_to_variable = {
+					relocatedciv = 1
+				}
+			}
+			SOV = {
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							state = 583
+							state = 571
+							state = 653
+							state = 402
+							state = 404
+							state = 582
+							state = 588
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+SOV_relocate_mil = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = SOV
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					is_core_of = SOV
+					NOT = {
+						is_controlled_by = SOV
+					}
+				}
+				arms_factory>0
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					is_core_of = SOV
+					NOT = {
+						is_controlled_by = SOV
+					}
+				}
+				arms_factory>0
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+			SOV = {
+				add_to_variable = {
+					relocatedmil = 1
+				}
+			}
+			SOV = {
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							state = 583
+							state = 571
+							state = 653
+							state = 402
+							state = 404
+							state = 582
+							state = 588
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	else = {
+		random_owned_controlled_state = {
+			limit = {
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					any_neighbor_state = {
+						is_core_of = SOV
+						NOT = {
+							is_controlled_by = SOV
+						}
+					}
+				}
+				arms_factory>0
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+			SOV = {
+				add_to_variable = {
+					relocatedmil = 1
+				}
+			}
+			SOV = {
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							state = 583
+							state = 571
+							state = 653
+							state = 402
+							state = 404
+							state = 582
+							state = 588
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
 	}

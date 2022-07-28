@@ -12,7 +12,7 @@
 	focus = {
 		id = tizard_mission_focus
 		available = {
-			date>1941.9.1
+			date>1941.6.1
 		}
 		prerequisite = {
 			focus = radar_focus

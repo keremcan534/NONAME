@@ -1710,7 +1710,7 @@
 			factor = 1
 		}
 		available = {
-			date>1941.9.1
+			date>1941.6.1
 		}
 		available_if_capitulated = yes
 		search_filters = {

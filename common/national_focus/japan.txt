@@ -122,11 +122,11 @@ focus_tree = {
  				SOV = { army_experience = 100
  					air_experience = 250}
  				USA = { add_war_support = 0.1
- 					army_experience = 100
+ 					army_experience = 200
  					air_experience = 200}
  				ENG = { add_war_support = 0.1
  					army_experience = 200
- 					air_experience = 300}
+ 					air_experience = 400}
  				AST = { add_war_support = 0.1
  					army_experience = 150
  					air_experience = 200}
@@ -143,7 +143,7 @@ focus_tree = {
  					army_experience = 100
  					air_experience = 200}
  				GER = {
- 					army_experience = 150
+ 					army_experience = 100
  					air_experience = 450}
  				ITA = {
  					army_experience = 150
@@ -943,6 +943,7 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
+			remove_ideas = JAP_duplicate_research_efforts
  			custom_effect_tooltip = JAP_the_zero_tt
  			hidden_effect = { set_technology = { fighter2 = 1 } }
  			
@@ -996,13 +997,17 @@ focus_tree = {
  		y = 2
  		relative_position_id = JAP_fighter_modernization
  		cost = 5
+		 available={
+			date>1941.6.1
+		}
  		cancel_if_invalid = yes
  		continue_if_invalid = no
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			remove_ideas = JAP_duplicate_research_efforts
+			set_technology={fighter3=1}
  			air_experience = 150
+			
  		}
  	}
  	focus = {

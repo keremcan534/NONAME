@@ -593,7 +593,7 @@ ideas = {
 			picture = generic_morale_bonus
 			equipment_bonus = {
 				medium_tank_chassis = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 					instant = yes
 				}
 			}
