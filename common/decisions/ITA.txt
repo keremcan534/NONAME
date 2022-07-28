@@ -7,13 +7,11 @@ foreign_politics = {
 			}
 		}
 		allowed = {
-			tag = ITA
+			original_tag = ITA
 		}
 		cost = 0
 		visible = {
-			BUL = {
-				is_ai = yes
-			}
+			original_tag=ITA
 		}
 		fire_only_once = yes
 		complete_effect = {
@@ -33,28 +31,39 @@ foreign_politics = {
 			}
 		}
 	}
-}
-
-operations = {
-	declare_war_on_allies = {
+	ITA_annex_ROM = {
 		icon = generic_operation
-		cost = 0
-		fire_only_once = yes
-		allowed = {
-			tag = ITA
-		}
-		visible = {
-			has_country_flag = fall_of_france
-		}
 		available = {
-			tag = ITA
-			has_country_flag = fall_of_france
-			Date > 1940.1.1
+			ROM = {
+				is_ai = yes
+			}
 		}
+		allowed = {
+			original_tag = ITA
+		}
+		cost = 0
+		visible = {
+			original_tag=ITA
+		}
+		fire_only_once = yes
 		complete_effect = {
-			GER = {add_to_war=ITA
-
+			ROM = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = ITA
+				}
+			}
+			ITA = {
+				annex_country = {
+					target = ROM
+					transfer_troops = yes
+				}
 			}
 		}
 	}
+}
+
+operations = {
 }

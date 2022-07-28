@@ -95,7 +95,7 @@ ideas = {
 			picture = HUN_treaty_of_triannon
 			modifier = {
 				stability_factor = 0.1
-				consumer_goods_factor = -0.06
+				consumer_goods_factor = -0.03
 				army_speed_factor = 0.025
 			}
 		}

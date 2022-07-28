@@ -2063,8 +2063,9 @@
 		available_if_capitulated = no
 		completion_reward = {
 			
-			add_ideas = GER_zid
-
+			add_timed_idea = {idea=GER_zid
+		days=30
+		}
 		}
 	}
 	focus = {
@@ -2083,7 +2084,6 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = GER_totaler_krieg
-			add_ideas = tot_economic_mobilisation
 			hidden_effect = {
 				division_template = {
 					name = "Volkssturm"					#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers

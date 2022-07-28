@@ -2132,19 +2132,20 @@
 				limit = {
 					exists = yes
 					is_ai = no
-					transfer_state = 835
-					transfer_state = 45
 				}
+				transfer_state = 764
+				transfer_state = 835
+					transfer_state = 45
 			}
 			BUL = {
 				limit = {
 					exists = yes
 					is_ai = no
-					transfer_state = 184
+				}
+				transfer_state = 184
 					transfer_state = 803
 					transfer_state = 106
 					transfer_state = 731
-				}
 			}
 			ITA = {
 				annex_country = {

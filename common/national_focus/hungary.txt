@@ -210,7 +210,10 @@
 		completion_reward = {
 			HUN = {
 				transfer_state = 76
+				transfer_state = 83
+				transfer_state = 82
 			}
+
 		}
 	}
 	focus = {
@@ -245,6 +248,13 @@
 			set_cosmetic_tag = HUN_GREATER
 			add_stability = 0.1
 			hidden_effect = {
+				add_state_core=664
+				add_state_core=73
+				add_state_core=76
+				add_state_core=84
+				add_state_core=83
+				add_state_core=82
+				add_state_core=45
 				news_event = {
 					id = news.299
 				}
@@ -906,27 +916,6 @@
 			custom_effect_tooltip = HUN_secret_rearmament_tt
 		}
 	}
-	focus = {
-		id = HUN_war_games
-		icon = GFX_goal_poland_goal
-		prerequisite = {
-			focus = HUN_secret_rearmament
-		}
-		x = 0
-		y = 1
-		relative_position_id = HUN_secret_rearmament
-		cost = 5
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			army_experience = 100
-		}
-	}
 	############################
 	######## AIR STUFFS ########
 	############################
@@ -937,16 +926,9 @@
 			focus = HUN_army_maneuvers
 		}
 		x = 0
-		y = 3
-		relative_position_id = HUN_secret_rearmament
+		y = 1
+		relative_position_id = HUN_army_maneuvers
 		cost = 10
-		ai_will_do = {
-			factor = 50
-		}
-		available = {
-		}
-		bypass = {
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -954,11 +936,11 @@
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
-			air_experience = 500
+			air_experience = 50
 			add_doctrine_cost_reduction = {
 				name = HUN_establish_the_air_force
-				cost_reduction = 0.99
-				uses = 1
+				cost_reduction = 0.5
+				uses = 2
 				category = air_doctrine
 			}
 		}
@@ -970,19 +952,12 @@
 		id = HUN_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = {
-			focus = HUN_war_games
+			focus = HUN_secret_rearmament
 		}
 		x = 0
 		y = 1
-		relative_position_id = HUN_war_games
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		available = {
-		}
-		bypass = {
-		}
+		relative_position_id = HUN_secret_rearmament
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -1011,7 +986,7 @@
 		x = -1
 		y = 2
 		relative_position_id = HUN_army_maneuvers
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 40
 		}
@@ -1111,27 +1086,28 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			army_experience = 100
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = HUN_develop_tanks
 				ahead_reduction = 0.25
 				bonus = 1
 				uses = 1
-				technology = improved_medium_tank
-				technology = improved_light_tank
+				technology = improved_medium_tank_chassis
+				technology = improved_light_tank_chassis
 
 			}
 			add_tech_bonus = {
 				name = HUN_develop_tanks
 				bonus = 1
 				uses = 2
-				technology = advanced_medium_tank
-				technology = advanced_light_tank
+				technology = advanced_medium_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 		}
 	}
@@ -1147,7 +1123,7 @@
 		x = 1
 		y = 2
 		relative_position_id = HUN_army_maneuvers
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes

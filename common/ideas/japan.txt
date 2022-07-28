@@ -1,5 +1,19 @@
 ideas = {
 	hidden_ideas = {
+		JAP_defense_of_homeland = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
 		JAP_everybody_serves = {
 			picture = generic_infantry_bonus
 			allowed = {
@@ -734,7 +748,7 @@ ideas = {
 					air_ground_attack = 0.1 reliability = 0.1 air_range = 0.1
 				}
 				nav_bomber_equipment = {
-				    naval_strike_attack_factor = 0.1 air_range = 0.1 reliability = 0.1
+				    naval_strike_attack_factor = 0.1 air_range = 0.1 reliability = 0.1 
 				}
 				
 			}
