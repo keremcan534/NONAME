@@ -50,10 +50,10 @@ settings = {
     temperature_change_neighbor_smoothing = 0.5  # [0-1] make temperature change be like province neighbors
 
     # Temperature range when should apply static modifiers
-    weather_extreme_cold = { -100.0 -25.0 }
-    weather_very_cold = { -25.0 -15.0 }
-    weather_very_hot = { 27.0 32.0 }
-    weather_extreme_hot = { 32.0 100.0 }
+    weather_extreme_cold = { -100.0 -20.0 }
+    weather_very_cold = { -20.0 -10.0 }
+    weather_very_hot = { 30.0 30.0 }
+    weather_extreme_hot = { 38.0 100.0 }
   }
   mud = {
     # Amount of water collected by rain increases probability of mud
@@ -95,7 +95,7 @@ settings = {
     snow_melt_multiplier = { 0.001 0.9 }
 
     # Max temperature allowed for snowing / min temperature for highest chance of snowing.
-    temperature = { 1.0 -4.0 }
+    temperature = { 0.0 -7.0 }
 
     weather_ground_snow_medium = { 20.0 40.0 }
     weather_ground_snow_high = { 40.0 1000.0 }
@@ -113,12 +113,12 @@ settings = {
 
   # How many days this weather will go on once started. Random interval [min, max], weighted towards lower numbers (by picking smallest of two random numbers).
   duration = {
-    no_phenomenon = { 5 12 }
-    rain_light = { 5 20 }
-    rain_heavy = { 2 15 }
-    snow = { 5 20 }
-    blizzard = { 2 15 }
-    sandstorm = { 2 10 }
+    no_phenomenon = { 4 10 }
+    rain_light = { 5 10 }
+    rain_heavy = { 2 5 }
+    snow = { 7 20 }
+    blizzard = { 4 12 }
+    sandstorm = { 4 7 }
   }
 
   # Performance tweaking
@@ -139,7 +139,7 @@ weather_effects = {
   	weather_effect = { entity = lightning_storm_entity fading_entity = lightning_storm_clouds_entity }
   	weather_effect = { entity = lightning_storm_small_entity fading_entity = lightning_storm_small_clouds_entity small = yes }
   }
-  snow = {
+  snowing = {
   	weather_effect = { entity = snow_entity fading_entity = snow_clouds_entity }
   	weather_effect = { entity = snow_small_entity fading_entity = snow_small_clouds_entity small = yes }
   }
