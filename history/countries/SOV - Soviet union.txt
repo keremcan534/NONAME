@@ -69,7 +69,7 @@ add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 produ
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 3900 producer = SOV } 
 add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 4000 producer = SOV } 
 add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 4000 producer = SOV }
-set_convoys =100
+set_convoys =750
 set_politics = {
 	ruling_party = communism
 	last_election = "1933.7.1"

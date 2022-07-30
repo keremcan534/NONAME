@@ -1088,32 +1088,6 @@ characters={
 			}
 		}
 	}
-	SOV_konstantin_vershinin={
-		advisor={
-			slot = air_chief
-			idea_token = konstantin_vershinin
-			allowed  = {
-					original_tag  = SOV 
-				}
-				available  = {
-					not  = {
-						has_country_flag  = purge_2_group_b 
-					}
-				}
-				traits  = {
-					air_chief_all_weather_3 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="konstantin_vershinin"
-		portraits={
-			army={
-				small="GFX_idea_konstantin_vershinin"
-			}
-		}
-	}
 	SOV_mikhail_kalinin={
 		advisor={
 			slot = political_advisor

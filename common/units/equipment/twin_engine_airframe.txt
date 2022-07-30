@@ -79,6 +79,7 @@ equipments = {
 		is_convertable = yes
 		picture = archetype_strat_bomber_equipment
 		is_buildable = no
+		lend_lease_cost = 5
 		type = {
 			fighter
 			interceptor

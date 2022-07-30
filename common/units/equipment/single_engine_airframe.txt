@@ -53,7 +53,7 @@ equipments = {
 		sprite = light_plane
 		air_map_icon_frame = 2
 		carrier_capable = yes
-
+		lend_lease_cost = 4
 		interface_category = interface_category_air
 		
 		# CAS
@@ -323,7 +323,7 @@ equipments = {
 		air_agility = 35
 		air_attack = 2
 		air_defence = 12
-		air_ground_attack = 12
+		air_ground_attack = 15
 
 		naval_strike_attack = 3
 		naval_strike_targetting = 10		
@@ -342,7 +342,7 @@ equipments = {
 		air_agility = 39
 		air_attack = 3
 		air_defence = 14
-		air_ground_attack = 14
+		air_ground_attack = 18
 		
 		build_cost_ic = 68
 		resources = {
@@ -368,7 +368,7 @@ equipments = {
 		air_agility = 44
 		air_attack = 4
 		air_defence = 16
-		air_ground_attack = 18
+		air_ground_attack = 22
 		
 		build_cost_ic = 78
 		resources = {

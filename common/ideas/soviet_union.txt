@@ -24,6 +24,11 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
 			}
+			equipment_bonus={
+			convoy = {
+				instant = yes
+				build_cost_ic = 10
+			}}
 			allowed_to_remove = {
 				always = no
 			}
@@ -677,10 +682,6 @@ ideas = {
 				has_government = communism
 			}
 			equipment_bonus = {
-				convoy = {
-					instant = yes
-					build_cost_ic = 0.25
-				}
 				category_army = {
 					breakthrough = 0.1
 				}

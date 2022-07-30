@@ -75,9 +75,9 @@ upgrades = {
 		
 		cost = air
 		
-		air_ground_attack = 0.06
+		air_ground_attack = 0.04
 		#reliability = -0.1
-		air_agility = -0.05
+		air_agility = -0.02
 	}
 	plane_armor_upgrade = {
 		max_level = 5
