@@ -52,8 +52,8 @@ settings = {
     # Temperature range when should apply static modifiers
     weather_extreme_cold = { -100.0 -20.0 }
     weather_very_cold = { -20.0 -10.0 }
-    weather_very_hot = { 30.0 30.0 }
-    weather_extreme_hot = { 38.0 100.0 }
+    weather_very_hot = { 30.0 40.0 }
+    weather_extreme_hot = { 40.0 100.0 }
   }
   mud = {
     # Amount of water collected by rain increases probability of mud

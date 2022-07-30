@@ -136,7 +136,7 @@ NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.05 
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00									-- Chances one ship get damage each hour while on training
 
-NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.37								-- amphibious landing penalty
+NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.38								-- amphibious landing penalty
 
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0                      -- making admirals not level up in battles, similarly to generals
 
@@ -324,7 +324,7 @@ NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 --Division experience dr
 
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all the factories in a territory when you annex it
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.19 -- how to weight in highest armor & pen vs the division average
-NDefines.NMilitary.PEN_VS_AVERAGE = 0.45		--vanilla 0.4
+NDefines.NMilitary.PEN_VS_AVERAGE = 0.85		--vanilla 0.4
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.35 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.85 -- damage reduction if armor outclassing enemy
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.08       -- WAS 0.25 
