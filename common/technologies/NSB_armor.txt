@@ -290,9 +290,9 @@ technologies = {
 		}
 	}
 	amphibious_tank_chassis = { #SchwimmPanzer II
-allow={
-	always=no
-}
+		allow={
+		always=no
+		}
 		enable_equipments = {
 			amphibious_tank_chassis_1
 			light_tank_amphibious_chassis_0
@@ -385,9 +385,9 @@ allow={
 	}
 
 	advanced_light_tank_chassis = { #Leopard
-	allow={
-		date>1941.9.1
-	}
+		allow={
+			date>1941.6.1
+		}
 		enable_equipments = {
 			light_tank_chassis_3
 			light_tank_destroyer_chassis_3
@@ -527,9 +527,9 @@ allow={
 	}
 
 	advanced_medium_tank_chassis = { #Panther
-	allow={
-		date>1941.9.1
-	}
+		allow={
+			date>1941.6.1
+		}
 		enable_equipments = {
 			medium_tank_chassis_3
 			medium_tank_destroyer_chassis_3
@@ -573,7 +573,9 @@ allow={
 	}
 
 	main_battle_tank_chassis = { #E-50
-
+		allow={
+			always=no
+		}
 		enable_equipments = {
 			modern_tank_chassis_1
 			modern_tank_destroyer_chassis_1
@@ -761,9 +763,9 @@ allow={
 
 
 	advanced_heavy_tank_chassis = { #King Tiger
-	allow={
-		date>1941.9.1
-	}
+		allow={
+			date>1941.6.1
+		}
 		enable_equipments = {
 			heavy_tank_chassis_3
 			heavy_tank_destroyer_chassis_3
@@ -801,8 +803,9 @@ allow={
 	}
 
 	super_heavy_tank_chassis = { #Maus
-	allow = {date > 1941.9.1
-	}
+		allow={
+			date>1941.6.1
+		}
 		enable_equipments = {
 			super_heavy_tank_chassis_1
 			super_heavy_tank_destroyer_chassis_1
@@ -849,7 +852,7 @@ allow={
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1934
 		folder = {
 			name = nsb_armour_folder
@@ -900,7 +903,7 @@ allow={
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1936
 		folder = {
 			name = nsb_armour_folder
@@ -953,7 +956,7 @@ allow={
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1941
 		folder = {
 			name = nsb_armour_folder
@@ -995,7 +998,7 @@ allow={
 
 	armor_tech_4 = {
 
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1944
 		folder = {
 			name = nsb_armour_folder
@@ -1051,7 +1054,7 @@ allow={
 			custom_effect_tooltip = engine_tech_1_tt
 		}
 		show_effect_as_desc = yes
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1934
 		folder = {
 			name = nsb_armour_folder
@@ -1104,7 +1107,7 @@ allow={
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1936
 		folder = {
 			name = nsb_armour_folder
@@ -1155,7 +1158,7 @@ allow={
 			custom_effect_tooltip = engine_tech_3_tt
 		}
 		show_effect_as_desc = yes
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1941
 		folder = {
 			name = nsb_armour_folder
@@ -1197,7 +1200,7 @@ allow={
 
 	engine_tech_4 = {
 
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1944
 		folder = {
 			name = nsb_armour_folder

@@ -325,7 +325,7 @@ technologies = {
 	
 	artillery4 = {
 		allow={
-			date>1941.9.1
+			date>1941.6.1
 		}
 		enable_equipments = {
 			artillery_equipment_3
@@ -592,9 +592,6 @@ technologies = {
 	}
 	
 	rocket_artillery3 = {
-		allow = {
-			always = no
-		}
 		rocket_artillery = {
 			soft_attack = 0.15
 			breakthrough = 0.15
@@ -641,7 +638,9 @@ technologies = {
 	}
 	
 	rocket_artillery4 = {
-	
+		allow={
+			date>1941.6.1
+		}
 		enable_equipments = {
 			rocket_artillery_equipment_2
 		}
@@ -932,7 +931,7 @@ technologies = {
 	
 	antiair5 = {
 		allow={
-			date>1941.9.1
+			date>1941.6.1
 		}
 		enable_equipments = {
 			anti_air_equipment_3
@@ -1002,14 +1001,17 @@ technologies = {
 
 		anti_tank = {
 			hard_attack = 0.08 
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		light_tank_destroyer_brigade = {
@@ -1065,11 +1067,6 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_2
 		}
-		enable_equipment_modules = {
-			# tank_high_velocity_cannon_2
-			# tank_heavy_cannon_2
-		}
-		
 		#anti_tank = {
 		#	hard_attack = 0.1
 		#	ap_attack = 0.05
@@ -1110,14 +1107,17 @@ technologies = {
 
 		anti_tank = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		light_tank_destroyer_brigade = {
@@ -1165,14 +1165,17 @@ technologies = {
 
 		anti_tank = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		light_tank_destroyer_brigade = {
@@ -1220,14 +1223,17 @@ technologies = {
 
 		anti_tank = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.08
+			ap_attack = 0.08
 			breakthrough = 0.08
 		}
 		light_tank_destroyer_brigade = {
@@ -1275,19 +1281,14 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_3
 		}	
-		enable_equipment_modules = {
-			# tank_high_velocity_cannon_3
-			# tank_heavy_cannon_3
-			# auto_loader
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.15
 		}
-		#anti_tank = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.05
-		#}
-		#anti_tank_brigade = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.05
-		#}
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.15
+		}
 		
 		research_cost = 1.7
 
