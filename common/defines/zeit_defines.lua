@@ -335,14 +335,14 @@ NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2   -- extra damage
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5 
 
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.12 -- (0.05)
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.07 -- (0.05)
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.04 	-- (0.05) global damage modifier
 ------------------------------------------------------
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.7 -- (0.7)
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of equipment to training is not fun
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 20.0 -- (10.0) Increased speed to make 3 speed changes more tolerable
 
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.06 	--air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.03 	--air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.02 	--global damage modifier 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.175                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.15 	--effect on defense due to enemy air superiority

@@ -1281,6 +1281,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			army_experience = 50
 			add_ideas = USA_war_department
 		}
 	}
@@ -1310,6 +1311,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		completion_reward = {
+			army_experience = 100
 			if = {
 				limit = {
 					OR = {
@@ -1375,11 +1377,11 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
-			army_experience = 20
+			army_experience = 100
 			add_doctrine_cost_reduction = {
 				name = USA_louisiana_maneuvers
 				cost_reduction = 0.5
-				uses = 3
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1417,6 +1419,12 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = USA_army_of_the_united_states
+			add_doctrine_cost_reduction = {
+				name = USA_louisiana_maneuvers
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1825,8 +1833,12 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
-			add_ideas = USA_us_air_force
-		}
+			add_doctrine_cost_reduction = {
+				name = USA_us_army_airforce
+				uses = 2
+				cost_reduction = 0.5
+				category = air_doctrine
+			}		}
 	}
 	focus = {
 		id = USA_us_army_airforce
@@ -1836,8 +1848,11 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_us_air_force
 		}
+		available={
+			date>1941.6.1
+		}
 		relative_position_id = USA_us_air_force
-		cost = 10
+		cost = 0
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1845,6 +1860,7 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
+			set_technology={fighter3=1}
 			add_doctrine_cost_reduction = {
 				name = USA_us_army_airforce
 				uses = 2
