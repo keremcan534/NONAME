@@ -131,7 +131,7 @@ air_wings = {
 			amount = 100
 		}
 		# 13 Kokutai -- Mitsubishi B2M2
-		cv_nav_bomber_equipment_1 = {
+		nav_bomber_equipment_1 = {
 			owner = "JAP" 
 			amount = 100
 		}
@@ -214,7 +214,7 @@ add_equipment_production = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = cv_nav_bomber_equipment_1
+			type = nav_bomber_equipment_1
 			creator = "JAP" 
 		}
 		requested_factories = 1
