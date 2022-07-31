@@ -29,7 +29,6 @@
 			name = "Kraljevska Mornarica"			
 			location = 12406 # Split
 			ship = { name = "KB Dalmacija" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CL1" } } }
-			ship = { name = "KB Dubrovnik" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "CA1" } } }
 			# Podmornica Divizija
 			ship = { name = "KB Hrabri" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }				
 			ship = { name = "KB Nebojsa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }				

@@ -4,7 +4,7 @@ state={
 	name="STATE_464"
 	manpower = 490912
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = CAN
