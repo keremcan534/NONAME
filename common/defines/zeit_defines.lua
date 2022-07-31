@@ -335,7 +335,7 @@ NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2   -- extra damage
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5 
 
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.07 -- (0.05)
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.08 -- (0.05)
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.04 	-- (0.05) global damage modifier
 ------------------------------------------------------
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.7 -- (0.7)
