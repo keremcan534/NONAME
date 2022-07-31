@@ -7,7 +7,7 @@ ideas = {
 			}
 			picture = GFX_goal_generic_construct_civ_factory
 			modifier = {
-				production_speed_industrial_complex_factor = 0.2
+				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = -0.1
 			}
 		}

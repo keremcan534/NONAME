@@ -286,7 +286,6 @@
 		relative_position_id = uk_industrial_focus
 		cost = 10
 		completion_reward = {
-			add_ideas = british_austerity_idea
 			add_ideas=partial_economic_mobilisation
 		}
 	}
