@@ -10,7 +10,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = delay
-			research_cost_coeff = 1
+
 		}
 		category_all_armor = {
 			breakthrough = 0.2
@@ -20,7 +20,7 @@ technologies = {
 		enable_tactic = tactic_unexpected_thrust
 		org_loss_when_moving = -0.1
 		doctrine = yes
-		research_cost = 2.25
+		
 		folder = {
 			name = land_doctrine_folder
 			position = {
@@ -42,11 +42,10 @@ technologies = {
 		enable_tactic = tactic_delay
 		path = {
 			leads_to_tech = elastic_defence
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -74,15 +73,14 @@ technologies = {
 		enable_tactic = tactic_elastic_defense
 		path = {
 			leads_to_tech = mobile_infantry
-			research_cost_coeff = 1
+
 		}
 		path = {
 			leads_to_tech = armored_spearhead
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -132,11 +130,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = mass_motorization
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -157,11 +154,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = mechanised_offensive
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -195,11 +191,10 @@ technologies = {
 		enable_tactic = tactic_blitz
 		path = {
 			leads_to_tech = kampfgruppe
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -226,11 +221,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = schwerpunk
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -254,11 +248,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = blitzkrieg
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -292,11 +285,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = kampfgruppe
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -324,15 +316,14 @@ technologies = {
 		enable_tactic = tactic_overwhelming_fire
 		path = {
 			leads_to_tech = firebrigades
-			research_cost_coeff = 1
+
 		}
 		path = {
 			leads_to_tech = volkssturm
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -363,11 +354,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = backhand_blow
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -386,11 +376,10 @@ technologies = {
 		enable_tactic = tactic_backhand_blow
 		path = {
 			leads_to_tech = modern_blitzkrieg
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -419,8 +408,7 @@ technologies = {
 			breakthrough = 0.2
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -442,11 +430,10 @@ technologies = {
 		conscription = 0.02
 		path = {
 			leads_to_tech = nd_conscription
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -465,11 +452,10 @@ technologies = {
 		conscription = 0.03
 		path = {
 			leads_to_tech = werwolf_guerillas
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -489,8 +475,7 @@ technologies = {
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1
 		enable_tactic = tactic_guerrilla_tactics
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -518,14 +503,14 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = sup_delay
-			research_cost_coeff = 1
+
 		}
 		category_front_line = {
 			soft_attack = 0.1
 		}
 		enable_tactic = tactic_barrage
 		doctrine = yes
-		research_cost = 2.25
+		
 		categories = {
 			land_doctrine
 			cat_superior_firepower
@@ -548,11 +533,10 @@ technologies = {
 		enable_tactic = tactic_delay
 		path = {
 			leads_to_tech = mobile_defence
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -574,15 +558,14 @@ technologies = {
 		enable_tactic = tactic_elastic_defense
 		path = {
 			leads_to_tech = intergrated_support
-			research_cost_coeff = 1
+
 		}
 		path = {
 			leads_to_tech = dispersed_support
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -608,11 +591,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = regimental_combat_teams
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -635,11 +617,10 @@ technologies = {
 		enable_tactic = tactic_overwhelming_fire
 		path = {
 			leads_to_tech = sup_mechanized_offensive
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -664,11 +645,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = overwhelming_firepower
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -691,11 +671,10 @@ technologies = {
 		enable_tactic = tactic_overwhelming_fire
 		path = {
 			leads_to_tech = sup_mechanized_offensive
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -717,15 +696,14 @@ technologies = {
 		enable_tactic = tactic_blitz
 		path = {
 			leads_to_tech = concentrated_fire_plans
-			research_cost_coeff = 1
+
 		}
 		path = {
 			leads_to_tech = centralized_fire_control
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -753,11 +731,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = combined_arms
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -780,11 +757,10 @@ technologies = {
 		enable_tactic = tactic_breakthrough
 		path = {
 			leads_to_tech = tactical_control
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -804,11 +780,10 @@ technologies = {
 		enable_tactic = tactic_tactical_withdrawal
 		path = {
 			leads_to_tech = air_land_battle
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -830,8 +805,7 @@ technologies = {
 		#combat advantage when air superior
 		army_bonus_air_superiority_factor = 0.2
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -858,11 +832,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = forward_observers
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -884,11 +857,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = advanced_firebases
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -921,11 +893,10 @@ technologies = {
 		enable_tactic = tactic_tactical_withdrawal
 		path = {
 			leads_to_tech = shock_and_awe
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -954,8 +925,7 @@ technologies = {
 		}
 		enable_tactic = tactic_breakthrough
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -985,10 +955,10 @@ technologies = {
 		dig_in_speed_factor = 0.25		#25% bonus
 		path = {
 			leads_to_tech = grand_battle_plan
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 2.25
+		
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
@@ -1007,14 +977,13 @@ technologies = {
 		xp_unlock_cost = 100
 		path = {
 			leads_to_tech = prepared_defense
-			research_cost_coeff = 1
+
 		}
 		#planning max bonus increase
 		max_planning = 0.1
 		command_power_gain = 0.25
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1036,11 +1005,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = grand_assault
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1063,15 +1031,14 @@ technologies = {
 		enable_tactic = tactic_planned_attack
 		path = {
 			leads_to_tech = grand_mechanized_offensive
-			research_cost_coeff = 1
+
 		}
 		path = {
 			leads_to_tech = infantry_offensive
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1106,11 +1073,10 @@ technologies = {
 		enable_tactic = tactic_elastic_defense
 		path = {
 			leads_to_tech = assault_concentration
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1130,11 +1096,10 @@ technologies = {
 		enable_tactic = tactic_overwhelming_fire
 		path = {
 			leads_to_tech = branch_interoperation
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1162,11 +1127,10 @@ technologies = {
 		coordination_bonus = 0.1
 		path = {
 			leads_to_tech = assault_breakthrough
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1188,11 +1152,10 @@ technologies = {
 		enable_tactic = tactic_breakthrough
 		path = {
 			leads_to_tech = central_planning
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1212,11 +1175,10 @@ technologies = {
 		max_command_power = 30
 		path = {
 			leads_to_tech = c3i_theory
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1242,8 +1204,7 @@ technologies = {
 			max_organisation = 2
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1269,11 +1230,10 @@ technologies = {
 		enable_tactic = tactic_infantry_charge
 		path = {
 			leads_to_tech = armored_operations
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1303,11 +1263,10 @@ technologies = {
 		enable_tactic = tactic_elastic_defense
 		path = {
 			leads_to_tech = infiltration_assault
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1327,11 +1286,10 @@ technologies = {
 		command_power_gain_mult = 0.15
 		path = {
 			leads_to_tech = night_assault_tactics
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1351,11 +1309,10 @@ technologies = {
 		land_night_attack = 0.25		# negates half of base penalty
 		path = {
 			leads_to_tech = attritional_containment
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1382,11 +1339,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = infiltration_in_depth
-			research_cost_coeff = 1
+
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1407,8 +1363,7 @@ technologies = {
 			recon = 1
 		}
 		doctrine = yes
-		research_cost = 4.5
-		categories = {
+				categories = {
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -1435,14 +1390,14 @@ technologies = {
 
 		path = {
 			leads_to_tech = pocket_defence
-			research_cost_coeff = 1
+
 		}
 
 		army_speed_factor = 0.1
 		minimum_training_level = -0.1
 
 		doctrine = yes
-		research_cost = 0.01
+		
 
 		categories = {
 			land_doctrine
@@ -1472,7 +1427,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = defence_in_depth
-			research_cost_coeff = 1
+
 		}
 
 		category_support_battalions = {
@@ -1511,11 +1466,11 @@ technologies = {
 
 		path = {
 			leads_to_tech = large_front_operations
-			research_cost_coeff = 1
+
 		}
 		path = {
 			leads_to_tech = peoples_army
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1571,22 +1526,14 @@ technologies = {
 			max_strength = 4.5
 			max_organisation = 2.5
 		}
-
-		support_heavy_armor = {
-			max_strength = 8
-		}
-		category_assault_guns = {
-			max_strength = 8
-		}
-
-
+		
 		enable_tactic = tactic_relentless_assault
 		enable_tactic = tactic_default_relentless_assault
 		enable_tactic = tactic_human_wave_tactics
 		enable_tactic = tactic_default_human_wave_tactics
 		path = {
 			leads_to_tech = deep_operations
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1628,7 +1575,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = operational_concentration
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1674,7 +1621,7 @@ technologies = {
 		enable_tactic = tactic_default_elastic_defense
 		path = {
 			leads_to_tech = vast_offensives
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1724,7 +1671,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = breakthrough_priority
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1766,7 +1713,7 @@ technologies = {
 		enable_tactic = tactic_default_breakthrough
 		path = {
 			leads_to_tech = mechanized_wave
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1810,7 +1757,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = continuous_offensive
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1836,7 +1783,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = naval_invasion_tactics_MA
-			research_cost_coeff = 1
+
 		}
 
 		category_army = {
@@ -1890,7 +1837,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = human_infantry_offensive
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1926,7 +1873,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = large_front_offensive
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1963,7 +1910,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = human_wave_offensive
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -1997,7 +1944,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = guerilla_warfare
-			research_cost_coeff = 1
+
 		}
 
 		doctrine = yes
@@ -2024,7 +1971,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = naval_invasion_tactics_MA
-			research_cost_coeff = 1
+
 		}
 
 		out_of_supply_factor = -0.1
@@ -2057,7 +2004,6 @@ technologies = {
 	masterful_blitz = {
 		enable_tactic = tactic_masterful_blitz
 		doctrine = yes
-		research_cost = 1
 		#set at gamestart
 		allow = {
 			always = no

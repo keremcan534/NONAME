@@ -533,12 +533,9 @@ ideas = {
 
 	}
 	naval_manufacturer = {
-
 		designer = yes
-		cost=50
-
 		Cockatoo_doe = {
-
+			cost=50
 			picture = generic_naval_manufacturer_2
 
 			allowed = {

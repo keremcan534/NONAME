@@ -107,7 +107,6 @@ ideas = {
 			modifier = {
 				army_infantry_attack_factor = 0.05
 				army_artillery_attack_factor = 0.05
-				army_special_forces_attack_factor = 0.05
 			}
 			cost = 50.0
 			ai_will_do = {
