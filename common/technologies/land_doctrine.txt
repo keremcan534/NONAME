@@ -32,18 +32,6 @@ technologies = {
 			land_doctrine
 			cat_mobile_warfare
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-		}
-		ai_research_weights = {
-			armor = 4
-		}
 	}
 	delay = {
 		xp_research_type = army
@@ -68,18 +56,6 @@ technologies = {
 				x = 0
 				y = 2
 			}
-		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-		}
-		ai_research_weights = {
-			armor = 3
 		}
 	}
 	elastic_defence = {
@@ -117,18 +93,7 @@ technologies = {
 				y = 4
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-		}
-		ai_research_weights = {
-			armor = 2
-		}
+
 	}
 	mobile_infantry = {
 		#Branch focuses on infantry, included Motorised and Mechanised.
@@ -182,37 +147,7 @@ technologies = {
 				y = 6
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-			modifier = {
-				tag = GER
-				factor = 2
-			}
-		}
-		ai_research_weights = {
-			armor = 1
-			defensive = -2
-			motorized_equipment = 3
-			cat_mechanized_equipment = 5
-		}
+
 	}
 	mass_motorization = {
 		xp_research_type = army
@@ -237,31 +172,7 @@ technologies = {
 				y = 8
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-		}
-		ai_research_weights = {
-			armor = 2
-			defensive = -12
-		}
+
 	}
 	mechanised_offensive = {
 		xp_research_type = army
@@ -299,32 +210,7 @@ technologies = {
 				y = 10
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-		}
-		ai_research_weights = {
-			armor = 2
-			motorized_equipment = 2
-			cat_mechanized_equipment = 2
-		}
+
 	}
 	armored_spearhead = {
 		#Branch focused on Tanks 
@@ -355,32 +241,7 @@ technologies = {
 				y = 6
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-		}
-		ai_research_weights = {
-			armor = 16
-			offensive = -1
-			cat_mechanized_equipment = 2
-		}
+	
 	}
 	schwerpunk = {
 		xp_research_type = army
@@ -408,32 +269,7 @@ technologies = {
 				y = 8
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-		}
-		ai_research_weights = {
-			armor = 2.5
-			offensive = -2
-			cat_mechanized_equipment = 1.5
-		}
+	
 	}
 	blitzkrieg = {
 		xp_research_type = army
@@ -507,30 +343,7 @@ technologies = {
 				y = 12
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			armor = 3
-		}
+
 	}
 	firebrigades = {
 		#Branch focused on mobile warfares
@@ -565,30 +378,7 @@ technologies = {
 				y = 14
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			armor = 2
-		}
+	
 	}
 	backhand_blow = {
 		xp_research_type = army
@@ -611,24 +401,7 @@ technologies = {
 				y = 16
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			armor = 2
-		}
+
 	}
 	modern_blitzkrieg = {
 		xp_research_type = army
@@ -658,30 +431,7 @@ technologies = {
 				y = 18
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			armor = 2
-		}
+	
 	}
 	volkssturm = {
 		xp_research_type = army
@@ -707,34 +457,7 @@ technologies = {
 				y = 14
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				tag = GER
-				factor = 3
-			}
-		}
-		ai_research_weights = {
-			armor = 2
-		}
+	
 	}
 	nd_conscription = {
 		xp_research_type = army
@@ -757,24 +480,7 @@ technologies = {
 				y = 16
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			armor = 2
-		}
+
 	}
 	werwolf_guerillas = {
 		xp_research_type = army
@@ -794,24 +500,6 @@ technologies = {
 				x = -2
 				y = 18
 			}
-		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			armor = 2
 		}
 	}
 
@@ -849,18 +537,7 @@ technologies = {
 				y = 0
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-		}
-		ai_research_weights = {
-			artillery = 4
-		}
+	
 	}
 	sup_delay = {
 		xp_research_type = army
@@ -886,18 +563,7 @@ technologies = {
 				y = 2
 			}
 		}
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			factor = 20
-		}
-		ai_research_weights = {
-			artillery = 3
-		}
+	
 	}
 	mobile_defence = {
 		xp_research_type = army
@@ -927,18 +593,7 @@ technologies = {
 				y = 4
 			}
 		}
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			factor = 20
-		}
-		ai_research_weights = {
-			artillery = 2
-		}
+	
 	}
 	intergrated_support = {
 		#This Branch is focused on boosting stuff in the support column 
@@ -968,30 +623,7 @@ technologies = {
 				y = 6
 			}
 		}
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-			factor = 20
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+	
 	}
 	regimental_combat_teams = {
 		xp_research_type = army
@@ -1018,30 +650,7 @@ technologies = {
 				y = 8
 			}
 		}
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			factor = 20
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+	
 	}
 	dispersed_support = {
 		# Branch is focused on support units as part of the regular brigades
@@ -1070,30 +679,7 @@ technologies = {
 				y = 6
 			}
 		}
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			factor = 20
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	overwhelming_firepower = {
 		xp_research_type = army
@@ -1120,30 +706,7 @@ technologies = {
 				y = 8
 			}
 		}
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			factor = 20
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	sup_mechanized_offensive = {
 		xp_research_type = army
@@ -1173,30 +736,7 @@ technologies = {
 				y = 10
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.25
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	concentrated_fire_plans = {
 		xp_research_type = army
@@ -1228,30 +768,7 @@ technologies = {
 				y = 12
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.25
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	combined_arms = {
 		xp_research_type = army
@@ -1278,30 +795,7 @@ technologies = {
 				y = 14
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	tactical_control = {
 		xp_research_type = army
@@ -1325,30 +819,7 @@ technologies = {
 				y = 16
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	air_land_battle = {
 		xp_research_type = army
@@ -1371,30 +842,7 @@ technologies = {
 				y = 18
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	centralized_fire_control = {
 		xp_research_type = army
@@ -1425,30 +873,7 @@ technologies = {
 				y = 12
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.25
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	forward_observers = {
 		land_reinforce_rate = 0.02
@@ -1474,30 +899,7 @@ technologies = {
 				y = 14
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	advanced_firebases = {
 		xp_research_type = army
@@ -1534,30 +936,7 @@ technologies = {
 				y = 16
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 	shock_and_awe = {
 		xp_research_type = army
@@ -1587,30 +966,7 @@ technologies = {
 				y = 18
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			artillery = 1
-		}
+		
 	}
 
 
@@ -1644,19 +1000,7 @@ technologies = {
 				y = 0
 			}
 		}
-		ai_will_do = {
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			factor = 20
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	grand_battle_plan = {
 		xp_research_type = army
@@ -1681,23 +1025,7 @@ technologies = {
 				y = 2
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				factor = 0.25
-				has_idea = FRA_victors_of_wwi
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 2.5
-			motorized_equipment = 2
-		}
+		
 	}
 	prepared_defense = {
 		xp_research_type = army
@@ -1723,19 +1051,7 @@ technologies = {
 				y = 4
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	grand_assault = {
 		xp_research_type = army
@@ -1766,31 +1082,7 @@ technologies = {
 				y = 6
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.5
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.75
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	grand_mechanized_offensive = {
 		xp_research_type = army
@@ -1829,32 +1121,7 @@ technologies = {
 				y = 8
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.35
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.65
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-			cat_mechanized_equipment = 1
-		}
+		
 	}
 	assault_concentration = {
 		xp_research_type = army
@@ -1878,32 +1145,7 @@ technologies = {
 				y = 10
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.3
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.6
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-			cat_mechanized_equipment = 1
-		}
+		
 	}
 	branch_interoperation = {
 		xp_research_type = army
@@ -1935,31 +1177,7 @@ technologies = {
 				y = 12
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.25
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.55
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	assault_breakthrough = {
 		xp_research_type = army
@@ -1985,32 +1203,7 @@ technologies = {
 				y = 14
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.2
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-			cat_mechanized_equipment = 1
-		}
+		
 	}
 	central_planning = {
 		xp_research_type = army
@@ -2033,31 +1226,6 @@ technologies = {
 				x = -2
 				y = 16
 			}
-		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.45
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
 		}
 	}
 	c3i_theory = {
@@ -2086,31 +1254,7 @@ technologies = {
 				y = 18
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.1
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.4
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	infantry_offensive = {
 		xp_research_type = army
@@ -2140,31 +1284,7 @@ technologies = {
 				y = 8
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.35
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.65
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	armored_operations = {
 		xp_research_type = army
@@ -2198,31 +1318,7 @@ technologies = {
 				y = 10
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.3
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.6
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	infiltration_assault = {
 		xp_research_type = army
@@ -2246,31 +1342,7 @@ technologies = {
 				y = 12
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.25
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.55
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	night_assault_tactics = {
 		xp_research_type = army
@@ -2294,31 +1366,7 @@ technologies = {
 				y = 14
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.2
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.5
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	attritional_containment = {
 		xp_research_type = army
@@ -2349,31 +1397,7 @@ technologies = {
 				y = 16
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.15
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.45
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 	infiltration_in_depth = {
 		xp_research_type = army
@@ -2395,31 +1419,7 @@ technologies = {
 				y = 18
 			}
 		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_1_trigger = yes
-				}
-				factor = 0.1
-			}
-			modifier = {
-				not = {
-					ai_air_doctrine_tier_2_trigger = yes
-				}
-				factor = 0.4
-			}
-		}
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1
-		}
+		
 	}
 
 
@@ -2455,13 +1455,7 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
+		
 	}
 
 	pocket_defence = {
@@ -2497,21 +1491,6 @@ technologies = {
 		folder = {
 			name = land_doctrine_folder
 			position = { x = 0 y = 2 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
 		}
 	}
 
@@ -2551,21 +1530,6 @@ technologies = {
 		folder = {
 			name = land_doctrine_folder
 			position = { x = 0 y = 4 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
 		}
 	}
 
@@ -2638,21 +1602,6 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = -2 y = 6 }
 		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
-		}
 	}
 
 	deep_operations = {
@@ -2694,21 +1643,6 @@ technologies = {
 		folder = {
 			name = land_doctrine_folder
 			position = { x = -2 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
 		}
 	}
 
@@ -2755,21 +1689,6 @@ technologies = {
 		folder = {
 			name = land_doctrine_folder
 			position = { x = -2 y = 10 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
 		}
 	}
 
@@ -2821,21 +1740,6 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = -2 y = 12 }
 		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
-		}
 	}
 
 	breakthrough_priority = {
@@ -2877,21 +1781,6 @@ technologies = {
 		folder = {
 			name = land_doctrine_folder
 			position = { x = -2 y = 14 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
 		}
 	}
 
@@ -2937,22 +1826,6 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = -2 y = 16 }
 		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-			cat_mechanized_equipment = 3.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
-		}
 	}
 
 	continuous_offensive = {
@@ -2990,20 +1863,6 @@ technologies = {
 			position = { x = -2 y = 18 }
 		}
 
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
-		}
 	}
 
 	peoples_army = {
@@ -3048,20 +1907,6 @@ technologies = {
 			position = { x = 2 y = 6 }
 		}
 
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
-		}
 	}
 
 	human_infantry_offensive = {
@@ -3098,20 +1943,7 @@ technologies = {
 			position = { x = 2 y = 9 }
 		}
 
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
-		}
+	
 	}
 
 	large_front_offensive = {
@@ -3148,20 +1980,6 @@ technologies = {
 			position = { x = 2 y = 12 }
 		}
 
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
-		}
 	}
 
 	human_wave_offensive = {
@@ -3196,23 +2014,6 @@ technologies = {
 			position = { x = 2 y = 15 }
 		}
 
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			infantry_weapons = 1.0
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
-
-			country_event = gduevents.45
-		}
 	}
 
 	guerilla_warfare = {
@@ -3251,20 +2052,7 @@ technologies = {
 			position = { x = 2 y = 18 }
 		}
 
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			industry = 2.0
-		}
-
-		on_research_complete = {
-			if = {
-				limit = { original_tag = SOV }
-				army_experience = 200
-			}
-		}
+	
 	}
 	masterful_blitz = {
 		enable_tactic = tactic_masterful_blitz

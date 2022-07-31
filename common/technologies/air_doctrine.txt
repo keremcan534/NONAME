@@ -43,15 +43,6 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 9 y = 0 }
 		}
-				
-		ai_will_do = {
-			factor = 10
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -2.0
-		}
 	}
 	
 	forward_interception = {
@@ -80,14 +71,7 @@ technologies = {
 			position = { x = 9 y = 2 }
 		}
 		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -2.0
-		}
+	
 	}
 	
 	fighter_ace_initiative = {
@@ -125,14 +109,7 @@ technologies = {
 			position = { x = 9 y = 4 }
 		}
 		
-		ai_will_do = {
-			factor = 5
-		}
 		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -2.0
-		}
 	}
 	
 	fighter_sweeps = {
@@ -162,14 +139,6 @@ technologies = {
 			position = { x = 7 y = 6 }
 		}
 		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -2.0
-		}
 	}	
 	
 		
@@ -200,14 +169,7 @@ technologies = {
 			position = { x = 11 y = 6 }
 		}
 		
-		ai_will_do = {
-			factor = 5
-		}
 		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -2.0
-		}
 	}
 	
 	multialtitude_flying = {
@@ -243,15 +205,6 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 9 y = 8 }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -2.0
-		}
 	}
 	
 	
@@ -282,16 +235,7 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 18 y = 2 }
 		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -1.0
-			medium_air = -1.0
-		}
+
 	}
 	
 	
@@ -321,15 +265,7 @@ technologies = {
 			position = { x = 18 y = 4 }
 		}
 		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -1.0
-			medium_air = -1.0
-		}
+
 	}
 	
 	hunt_and_destroy = {
@@ -357,16 +293,7 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 18 y = 6 }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -1.0
-			medium_air = -1.0
-		}
+	
 	}
 
 	combat_unit_destruction = {
@@ -403,15 +330,7 @@ technologies = {
 			position = { x = 18 y = 8 }
 		}
 		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -1.0
-			medium_air = -1.0
-		}
+	
 	}
 	
 
@@ -436,15 +355,7 @@ technologies = {
 			position = { x = 16 y = 10 }
 		}
 		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			medium_air = -0.5
-			heavy_air = -1.5
-		}
+	
 	}	
 
 	ground_support_integration = {
@@ -467,16 +378,7 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 20 y = 10 }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			medium_air = -0.5
-			heavy_air = -1.5
-		}
+	
 	}
 	
 	### This tech is its own thing. Not enough naval modifiers in the game... ### 
@@ -503,14 +405,7 @@ technologies = {
 			position = { x = 9 y = 10 }
 		}
 		
-		ai_will_do = {
-			factor = 5
-		}
 		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -2.0
-		}
 	}
 	
 	### Strat Destruction tree 
@@ -549,16 +444,7 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 0 y = 2 }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			medium_air = -0.5
-			heavy_air = -1.5
-		}
+	
 	}
 	
 		
@@ -591,16 +477,7 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = -2 y = 4 }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			medium_air = -0.5
-			heavy_air = -1.5
-		}
+	
 	}
 
 	day_bombing = {
@@ -631,16 +508,6 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 2 y = 4 }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			medium_air = -0.5
-			heavy_air = -1.5
-		}
 	}	
 
 	massed_bomber_formations = {
@@ -669,16 +536,7 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = -2 y = 6 }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			medium_air = -0.5
-			heavy_air = -1.5
-		}
+
 	}
 
 	air_offense = {
@@ -713,16 +571,7 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 2 y = 6 }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			light_air = -1.5
-			medium_air = -0.5
-		}
+
 	}
 	
 	high_level_bombing = {
@@ -750,16 +599,7 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 0 y = 8 }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			medium_air = -0.5
-			heavy_air = -1.5
-		}
+
 	}
 	
 	
@@ -781,16 +621,6 @@ technologies = {
 		folder = {
 			name = air_doctrine_folder
 			position = { x = 0 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			air_doctrine = -1.0
-			medium_air = -0.5
-			heavy_air = -1.5
 		}
 	}
 	

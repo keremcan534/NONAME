@@ -538,6 +538,7 @@ technologies = {
 		}
 		
 		categories = {
+			infantry_tech
 			marine_tech
 			special_forces
 		}
@@ -567,6 +568,7 @@ technologies = {
 		}
 		
 		categories = {
+			infantry_tech
 			marine_tech
 			special_forces
 		}
@@ -590,6 +592,7 @@ technologies = {
 		}
 		
 		categories = {
+			infantry_tech
 			marine_tech
 			special_forces
 		}
@@ -962,9 +965,7 @@ technologies = {
 		}
 		
 		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
+			special_forces
 		}
 		
 		ai_will_do = {
@@ -999,9 +1000,7 @@ technologies = {
 		}
 		
 		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
+			special_forces
 		}
 		
 		ai_will_do = {
@@ -1033,9 +1032,7 @@ technologies = {
 		}
 		
 		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
+			special_forces
 		}
 		
 		ai_will_do = {
@@ -1067,9 +1064,7 @@ technologies = {
 		}
 		
 		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
+			special_forces
 		}
 		
 		ai_will_do = {
@@ -1100,9 +1095,7 @@ technologies = {
 		}
 		
 		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
+			special_forces
 		}
 		
 		ai_will_do = {
@@ -1129,9 +1122,7 @@ technologies = {
 		}
 		
 		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
+			special_forces
 		}
 		
 		ai_will_do = {
@@ -1225,14 +1216,6 @@ technologies = {
 				movement = 0.1
 			}
 		}
-
-		paratrooper = {
-			mountain = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-
 	}
 
 	night_vision = {
@@ -1328,11 +1311,6 @@ technologies = {
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
-
-		special_forces = {
-			defense = 0.03
-			breakthrough = 0.03
 		}
 		motorized = {
 			defense = 0.05
@@ -1413,10 +1391,7 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
-		special_forces = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+
 		motorized = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1502,10 +1477,7 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
-		special_forces = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+
 		motorized = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1578,10 +1550,7 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
-		special_forces = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+
 		motorized = {
 			defense = 0.05
 			breakthrough = 0.05

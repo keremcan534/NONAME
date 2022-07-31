@@ -207,14 +207,6 @@ equipments = {
 		archetype = light_tank_chassis
 		priority = 5
 		visual_level = 0
-		
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_gun_upgrade
-		}
-
 		#Misc Abilities
 		maximum_speed = 6
 		reliability = 0.8
@@ -342,12 +334,7 @@ equipments = {
 			light_tank_equipment_1 
 		}
 
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_art_upgrade
-		}
+		
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -450,12 +437,7 @@ equipments = {
 		can_convert_from = { 
 			light_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_at_upgrade
-		}
+		
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -560,12 +542,7 @@ equipments = {
 		can_convert_from = { 
 			light_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_aa_upgrade
-		}
+		
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -665,12 +642,7 @@ equipments = {
 		priority = 50
 		visual_level = 0
 		is_convertable = yes
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_gun_upgrade
-		}
+		
 		#Misc Abilities
 		maximum_speed = 8
 		reliability = 0.8
@@ -774,12 +746,7 @@ equipments = {
 		can_convert_from = { 
 			medium_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_art_upgrade
-		}
+		
 		#Misc Abilities
 		maximum_speed = 8
 		reliability = 0.8
@@ -884,12 +851,7 @@ equipments = {
 		can_convert_from = { 
 			medium_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_at_upgrade
-		}
+		
 		#Misc Abilities
 		maximum_speed = 8
 		reliability = 0.8
@@ -998,12 +960,7 @@ equipments = {
 		can_convert_from = { 
 			medium_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_aa_upgrade
-		}
+		
 		#Misc Abilities
 		maximum_speed = 8
 		reliability = 0.8
@@ -1139,12 +1096,7 @@ equipments = {
 		
 		fuel_consumption = 4.4
 
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_gun_upgrade
-		}
+		
 	}
 
 	# 1941
@@ -1223,12 +1175,7 @@ equipments = {
 		#Misc Abilities
 		maximum_speed = 5
 		reliability = 0.8
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_art_upgrade
-		}
+		
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 2
@@ -1325,12 +1272,7 @@ equipments = {
 		}
 		priority = 120
 		visual_level = 0
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_at_upgrade
-		}
+	
 		#Misc Abilities
 		maximum_speed = 5
 		reliability = 0.8
@@ -1436,12 +1378,7 @@ equipments = {
 		}
 		priority = 110
 		visual_level = 0
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_aa_upgrade
-		}
+		
 		#Misc Abilities
 		maximum_speed = 5
 		reliability = 0.8
@@ -1566,12 +1503,7 @@ equipments = {
 
 		#Space taken in convoy
 		lend_lease_cost = 14
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_gun_upgrade
-		}
+		
 		build_cost_ic = 28
 		resources = {
 			#oil = 1
@@ -1591,12 +1523,7 @@ equipments = {
 		can_convert_from = { 
 			modern_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_art_upgrade
-		}
+		
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -1632,12 +1559,7 @@ equipments = {
 		can_convert_from = { 
 			modern_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_at_upgrade
-		}
+	
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -1674,12 +1596,7 @@ equipments = {
 		can_convert_from = { 
 			modern_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_aa_upgrade
-		}
+		
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -1732,12 +1649,7 @@ equipments = {
 
 		#Space taken in convoy
 		lend_lease_cost = 15
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_gun_upgrade
-		}
+		
 		build_cost_ic = 100
 		resources = {
 			#oil = 2
@@ -1757,12 +1669,7 @@ equipments = {
 		can_convert_from = { 
 			super_heavy_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_art_upgrade
-		}
+	
 		#Misc Abilities
 		maximum_speed = 4
 		reliability = 0.8
@@ -1797,12 +1704,7 @@ equipments = {
 		can_convert_from = { 
 			super_heavy_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_at_upgrade
-		}
+	
 		#Misc Abilities
 		maximum_speed = 4
 		reliability = 0.8
@@ -1837,12 +1739,7 @@ equipments = {
 		can_convert_from = { 
 			super_heavy_tank_equipment_1 
 		}
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_aa_upgrade
-		}
+	
 		#Misc Abilities
 		maximum_speed = 4
 		reliability = 0.8
@@ -1879,12 +1776,7 @@ equipments = {
 			light_tank_equipment_2
 		}
 
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_gun_upgrade
-		}
+	
 
 		#Misc Abilities
 		maximum_speed = 7

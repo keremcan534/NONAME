@@ -468,11 +468,7 @@ sub_units = {
 			defence = 0.1
 			movement = 0.35
 		}
-		deep_desert = {
-			attack = 0.15
-			defence = 0.1
-			movement = 0.35
-		}
+	
 		amphibious = {
 			attack = 0.20
 		}
@@ -552,10 +548,7 @@ sub_units = {
 		amphibious = {
 			attack = -0.2
 		}
-		deep_desert = {
-			attack = -0.05
-			movement = -0.05
-		}
+
 	}
 
 	mechanized = {
@@ -642,10 +635,7 @@ sub_units = {
 		amphibious = {
 			attack = -0.4
 		}
-		deep_desert = {
-			attack = -0.05
-			movement = -0.05
-		}
+
 
 		hardness = 0.2 #moving these buffs to unit stats
 	}

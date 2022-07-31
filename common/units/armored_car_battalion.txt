@@ -1,5 +1,4 @@
 sub_units = {
-
 	armored_car = {
 		abbreviation = "CAR"
 		#sprite = light_armor
@@ -19,8 +18,6 @@ sub_units = {
 			category_front_line
 			category_army
 		}
-
-
 		combat_width = 2
 
 		need = {
@@ -41,7 +38,7 @@ sub_units = {
 		    attack = -0.2
 			movement = -0.4
 		}
-		mountain = 	{
+			mountain = 	{
 		    attack = -0.1
 		    movement = -0.1
 		}

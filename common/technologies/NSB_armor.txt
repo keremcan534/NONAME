@@ -174,14 +174,15 @@ technologies = {
 		enable_subunits = {
 			light_armor
 		}
-		enable_equipments_modules={
+
+		enable_equipment_modules={
 			flamethrower
 			tank_auto_cannon
 			tank_anti_air_cannon
 			tank_small_cannon
 			tank_close_support_gun
-
 		}
+
 		on_research_complete_limit = {
 			NOT = {	has_template_containing_unit = light_armor }
 			NOT = {	has_template_containing_unit = heavy_armor }
