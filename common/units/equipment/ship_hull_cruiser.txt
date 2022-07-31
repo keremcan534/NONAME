@@ -677,7 +677,12 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1850
 		visual_level = 0
-		
+		upgrades = {
+			ship_torpedo_upgrade
+			ship_engine_upgrade
+			ship_gun_upgrade
+			ship_reliability_upgrade
+		}
 		interface_category = interface_category_screen_ships
 		module_slots = {
 			fixed_ship_battery_slot = {

@@ -97,7 +97,7 @@ set_technology = {
 
 
 	#air
-	fighter_equipment_1=1
+	
 	#support
 	tech_signal_company = 1
 	tech_logistics_company = 1

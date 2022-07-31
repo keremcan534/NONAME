@@ -288,7 +288,7 @@ NDefines.NMilitary.PLANNING_MAX = 0.25                          	-- can get more
 NDefines.NMilitary.REINFORCE_CHANCE = 0.04 -- To make larger divisions more attractive
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4 -- Number of support companies allowed per division
 
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.75 -- (4.5)
 
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0125                     -- basic speed control

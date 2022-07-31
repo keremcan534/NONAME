@@ -793,7 +793,67 @@ country_event = {
 	}
 }
 
+# German - Chinese Relations Poor, Mission Recalled
+country_event = {
+	id = germany.25
+	title = germany.25.t
+	desc = germany.25.d
+	picture = GFX_report_event_chinese_army_training
 
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		CHI = { has_idea = german_advisors }
+		has_opinion = { target = CHI value < -20 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		CHI = { remove_ideas = german_advisors }
+	}
+	
+	option = {
+		name = germany.25.a
+		CHI = {
+			country_event = { id = china.3 }
+		}
+	}
+}
+
+# Germany at war with China, Advisors Detained
+country_event = {
+	id = germany.26
+	title = germany.26.t
+	desc = germany.26.d
+	picture = GFX_report_event_german_detained_china
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		CHI = { has_idea = german_advisors }
+		has_war_with = CHI
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		CHI = { remove_ideas = german_advisors }
+	}
+	
+	option = {
+		name = germany.26.a
+		CHI = {
+			country_event = { id = china.4 }
+		}
+	}
+}
 
 # Fortifying the Westwall
 country_event = {

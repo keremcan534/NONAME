@@ -162,6 +162,18 @@ instant_effect = {
 			progress = 0.4
 			efficiency = 50
 		}
+
+		add_equipment_production = { 
+			equipment = { 
+				type = light_tank_chassis_2 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.4 
+			efficiency = 50 
+		} 
+
 		add_equipment_production = { 
 			equipment = { 
 				type = motorized_equipment_1 
