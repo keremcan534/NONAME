@@ -12,8 +12,6 @@ set_popularities = {
 	fascism = 100
 	neutrality = 0
 }
-<<<<<<< Updated upstream
-=======
 set_technology = {
 	#freetechforall
 	basic_train = 1
@@ -41,7 +39,6 @@ set_technology = {
 
 
 }
->>>>>>> Stashed changes
 set_war_support = 0
 oob = "MAN_1936"
 recruit_character = MAN_hesehn_tiemei

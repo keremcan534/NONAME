@@ -12,8 +12,6 @@ set_popularities = {
 	fascism = 20
 	neutrality = 80
 }
-<<<<<<< Updated upstream
-=======
 set_technology = {
 	#freetechforall
 	basic_train = 1
@@ -41,7 +39,6 @@ set_technology = {
 
 
 }
->>>>>>> Stashed changes
 recruit_character = SIA_phraya_phahon
 recruit_character = SIA_nangklao_chichalerm
 recruit_character = SIA_chao_phonphayuhasena

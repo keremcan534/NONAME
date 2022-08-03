@@ -97,11 +97,6 @@ set_technology = {
 
 
 	#air
-<<<<<<< Updated upstream
-	
-=======
-
->>>>>>> Stashed changes
 	#support
 	tech_signal_company = 1
 	tech_logistics_company = 1
