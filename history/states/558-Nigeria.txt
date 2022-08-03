@@ -4,13 +4,12 @@ state={
 	name="STATE_558"
 	manpower = 19757000
 	
-	state_category = rural
+	state_category = town
 	resources={
 		rubber=2 # was: 3
 	}
 	history={
 		owner = ENG
-		add_core_of = NGA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 0
