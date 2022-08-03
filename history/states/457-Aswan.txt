@@ -9,9 +9,14 @@ state=
 	history = {
 		owner = ENG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			air_base = 5
-
+			12002 = {
+				naval_base = 10
+			}
+			5069 = {
+				naval_base = 3
+			}
 		}
 
 		victory_points = {
