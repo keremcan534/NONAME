@@ -428,7 +428,7 @@
 			ship = { name = "Paris" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "BB1" } } }		
 			ship = { name = "Béarn" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = ENG version_name = "CV1" } } 
 				air_wings = {
-					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 20 }
+					nav_bomber_equipment_1 =  { owner = "ENG" amount = 20 }
 				}
 			}
 		}
@@ -436,18 +436,6 @@
 }
 instant_effect = {
 	### Ongoing Ship Production Jan 1 1936 ###
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_carrier_1
-			creator = "ENG" 
-			version_name = "CV2"
-		}
-		name = "HMS Ark Royal"
-		requested_factories = 3
-		progress = 0.10
-		amount = 1
-	}
-
 	# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
 	add_equipment_production = {
 		equipment = {
