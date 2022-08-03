@@ -18,7 +18,7 @@ add_intel = {
 }
 
 load_oob = "ENG_Motorized"
-set_research_slots = 4
+set_research_slots = 5
 set_stability = 0.65
 set_war_support = 0.11
 add_ideas = {
@@ -27,7 +27,7 @@ add_ideas = {
 	george_v
 }
 
-set_convoys = 700
+set_convoys = 1000
 # Starting tech
 set_technology = {
 	#freetechforall

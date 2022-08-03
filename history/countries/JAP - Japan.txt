@@ -32,7 +32,6 @@ add_intel = { target = ITA civilian_intel = 200 army_intel = 200 navy_intel = 20
 add_intel = { target = BUL civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 add_intel = { target = HUN civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 add_intel = { target = ROM civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
-add_intel = { target = CRO civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 add_intel = { target = SPR civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 set_autonomy = {	target = MAN	autonomous_state = autonomy_wtt_imperial_associate }
 set_autonomy = {	target = SIA	autonomous_state = autonomy_wtt_imperial_associate }
@@ -52,7 +51,6 @@ set_technology = {
 	infantry_weapons1 = 1
 	early_fighter = 1
 	early_bomber = 1
-	formation_flying = 1
 	scout_plane1 = 1
 	#air
 	fighter1 = 1

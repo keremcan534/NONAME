@@ -139,7 +139,7 @@ weather_effects = {
   	weather_effect = { entity = lightning_storm_entity fading_entity = lightning_storm_clouds_entity }
   	weather_effect = { entity = lightning_storm_small_entity fading_entity = lightning_storm_small_clouds_entity small = yes }
   }
-  snowing = {
+  snow = {
   	weather_effect = { entity = snow_entity fading_entity = snow_clouds_entity }
   	weather_effect = { entity = snow_small_entity fading_entity = snow_small_clouds_entity small = yes }
   }

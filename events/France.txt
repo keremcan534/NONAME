@@ -34,7 +34,9 @@ country_event = {
 	fire_only_once = yes
 	option = { # Agree
 		name = france.14.a
-		limit={original_tag=GER}
+		trigger={
+			original_tag=GER
+	}
 		EFR = {
 			add_ideas = ai_limiter
 			add_ideas = trade_blocked
@@ -81,7 +83,9 @@ country_event = {
 			if = {
 			limit = { 461 = { is_owned_by = FRA }
 			}
-			set_capital = 461 
+			set_capital = {
+				state = 461
+			}
 		}
 	}
 }

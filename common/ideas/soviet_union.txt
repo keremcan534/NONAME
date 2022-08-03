@@ -347,16 +347,6 @@ ideas = {
 				}
 			}
 		}
-		SOV_molotov_ribbentrop_pact = {
-			removal_cost = -1
-			picture = soviet_german_friendship
-			allowed = {
-				always = no				# Added via event
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-		}
 		SOV_railway = {
 			removal_cost = -1
 			picture = generic_build_infrastructure

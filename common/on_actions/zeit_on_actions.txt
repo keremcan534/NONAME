@@ -267,12 +267,13 @@ on_actions = {
 				ENG = {
 					annex_country = {
 						target = GER
-						transfer_troop = no
+						transfer_troops = no
 					}
 				}
 			}
 			if = {
 				#POL
+				set_global_flag=fall_of_poland
 				limit = {
 					original_tag = POL
 				}
@@ -351,7 +352,11 @@ on_actions = {
 						target = NOR
 						transfer_troops = no
 					}
+					hidden_effect={
+						set_global_flag = fall_of_norway
+					}
 				}
+				
 			}
 		}
 	}

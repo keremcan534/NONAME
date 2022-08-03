@@ -57,10 +57,8 @@ set_technology = {
 	infantry_weapons1 = 1
 	early_fighter = 1
 	early_bomber = 1
-	formation_flying = 1
 	scout_plane1 = 1
 	#fuel refine
-	fuel_refining = 1
 	#air
 	fighter1 = 1
 	CAS1 = 1 
@@ -121,7 +119,7 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 145000
+	amount = 155000
 	producer = GER
 }
 

@@ -2717,11 +2717,6 @@
 					id = wtt_germany.63
 				}
 			}
-			LUX = {
-				country_event = {
-					id = wtt_germany.64
-				}
-			}
 			custom_effect_tooltip = "Every axis controlled state in europe will gain 30% compliance"
 			every_country = {
 				limit = {
@@ -3770,10 +3765,38 @@
 				set_building_level = {
 					type = coastal_bunker
 					level = 2
-					province = {
-						province = 332 province = 399 province = 3206
-						province = 394 province = 6235
-					}
+					province =3206
+					
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province =399
+					
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province =332
+					
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province =316
+					
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province =394
+					
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province =6235
+					
 				}
 			}
 			58 = {

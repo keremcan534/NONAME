@@ -1802,7 +1802,7 @@ leader_traits = {
 	dive_bomber = { 
 		type = navy
 		sub_unit_modifiers = {
-			cv_cas = {
+			cas = {
 				air_mission_efficiency = 0.2
 			}
 		}	
@@ -1825,7 +1825,7 @@ leader_traits = {
 	torpedo_bomber = { 
 		type = navy
 		sub_unit_modifiers = {
-			cv_nav_bomber = {
+			nav_bomber = {
 				air_mission_efficiency = 0.05
 			}
 		}		

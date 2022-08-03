@@ -426,11 +426,6 @@
 			ship = { name = "Bretagne" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "BB1" } } }	
 			ship = { name = "Courbet" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "BB1" } } }        
 			ship = { name = "Paris" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "BB1" } } }		
-			ship = { name = "Béarn" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = ENG version_name = "CV1" } } 
-				air_wings = {
-					nav_bomber_equipment_1 =  { owner = "ENG" amount = 20 }
-				}
-			}
 		}
 	}
 }

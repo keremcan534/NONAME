@@ -8,7 +8,6 @@ add_intel = { target = CAN civilian_intel = 200 army_intel = 200 navy_intel = 20
 add_intel = { target = FRA civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 add_intel = { target = SAF civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 add_intel = { target = AST civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
-add_intel = { target = BRA civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 
 set_research_slots = 3
 set_stability = 0.5
@@ -30,7 +29,7 @@ set_technology = {
 	infantry_weapons1 = 1
 	early_fighter = 1
 	early_bomber = 1
-	formation_flying = 1
+
 	scout_plane1 = 1
 	fighter1 = 1
 	CAS1 = 1 
@@ -93,28 +92,7 @@ add_ideas = {
 }
 recruit_character = SOV_iosif_stalin
 recruit_character = SOV_mikhail_kalinin
-recruit_character = SOV_nikita_khrushchyov
-recruit_character = SOV_nikolay_voznesensky
-recruit_character = SOV_lazar_kaganovich
-recruit_character = SOV_genrikh_yagoda
-recruit_character = SOV_nikolay_yezhov
-recruit_character = SOV_lavrenty_beriya
-recruit_character = SOV_vsevolod_merkulov
-recruit_character = SOV_vyacheslav_molotov
-recruit_character = SOV_maksim_litvinov
-recruit_character = SOV_hazi_aslanov
-recruit_character = SOV_ivan_smirnov
-recruit_character = SOV_ivar_smilga
-recruit_character = SOV_yevgeny_preobrazhensky
-recruit_character = SOV_aleksey_rykov
-recruit_character = SOV_grigory_sokolnikov
-recruit_character = SOV_grigory_zinovyev
-recruit_character = SOV_aleksandr_kerensky
-recruit_character = SOV_konstantin_rodzayevsky
 recruit_character = SOV_aleksandr_vasilevsky
-recruit_character = SOV_aleksandr_golovanov
-recruit_character = SOV_aleksandr_novikov
-recruit_character = SOV_aleksandr_yegorov
 recruit_character = SOV_andrey_vlasov
 recruit_character = SOV_andrey_yeryomenko
 recruit_character = SOV_boris_shaposhnikov
@@ -133,7 +111,6 @@ recruit_character = SOV_kirill_meretskov
 recruit_character = SOV_kirill_moskalenko
 recruit_character = SOV_kliment_voroshilov
 recruit_character = SOV_konstantin_rokossovsky
-recruit_character = SOV_konstantin_vershinin
 recruit_character = SOV_kuzma_galitsky
 recruit_character = SOV_leonid_govorov
 recruit_character = SOV_maksim_purkayev
@@ -141,25 +118,14 @@ recruit_character = SOV_markian_popov
 recruit_character = SOV_mikhail_frinovsky
 recruit_character = SOV_nikandr_chibisov
 recruit_character = SOV_nikolay_kuznetsov
-recruit_character = SOV_pavel_rychagov
 recruit_character = SOV_pavel_zhigarev
 recruit_character = SOV_pyotr_smirnov
 recruit_character = SOV_rodion_malinovsky
 recruit_character = SOV_semyon_budyonny
 recruit_character = SOV_semyon_timoshenko
-recruit_character = SOV_sergey_khudyakov
-recruit_character = SOV_sergey_korolyov
-recruit_character = SOV_sergey_rudenko
-recruit_character = SOV_stepan_krasovsky
-recruit_character = SOV_vasily_blyukher
 recruit_character = SOV_vasily_kuznetsov
 recruit_character = SOV_vladimir_tributs
 recruit_character = SOV_yakov_cherevichenko
-recruit_character = SOV_yakov_smushkevich
-recruit_character = SOV_vitaly_primakov
-recruit_character = SOV_vasily_korzh
-recruit_character = SOV_sidor_kovpak
-recruit_character = SOV_pavel_rybalko
 recruit_character = SOV_mikhail_tukhachevsky
 recruit_character = SOV_nikolai_berzarin
 recruit_character = SOV_alexander_gorbatov

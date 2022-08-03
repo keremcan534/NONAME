@@ -12,8 +12,6 @@
         is_in_faction_with = ENG
 		OR = { 
         compare_autonomy_state > autonomy_puppet
-		AND = { tag = USA GER = { has_completed_focus = danzig_or_war }
-		}
 		}
     }
 

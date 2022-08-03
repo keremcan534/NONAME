@@ -63,7 +63,7 @@
 		}
 		completion_reward = {
 			114 = {
-				add_extra_state_shared_building_slots =6
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
@@ -97,7 +97,7 @@
 		}
 		completion_reward = {
 			158 = {
-				add_extra_state_shared_building_slots =6
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
 					level = 3
@@ -727,12 +727,12 @@
 				state = 449
 			}
 			add_resource = {
-			    type = rubber
+				type = rubber
 				amount = 28
 				state = 449
+			}
 		}
 	}
-}
 	focus = {
 		id = ITA_libyan_infrastructure
 		icon = GFX_ITA_Italian_Libya
@@ -947,7 +947,7 @@
 				state = 449
 			}
 			add_resource = {
-			    type = rubber
+				type = rubber
 				amount = 28
 				state = 159
 			}
@@ -1415,7 +1415,6 @@
 							state = 114
 						}
 					}
-					
 				}
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
@@ -1994,42 +1993,6 @@
 		}
 	}
 	focus = {
-		id = ITA_german_millitary_cooperation
-		icon = GFX_goal_generic_military_deal
-		prerequisite = {
-			focus = ITA_german_rd_treaty
-		}
-		available = {
-		}
-		x = 1
-		y = 1
-		relative_position_id = ITA_german_rd_treaty
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		completion_reward = {
-			add_ideas = ITA_german_millitary_cooperation_focus
-		}
-	}
-	focus = {
-		id = ITA_romania_friend
-		icon = GFX_ITA_Regio_Esercito
-		prerequisite = {
-			focus = ITA_german_rd_treaty
-		}
-		x = -1
-		y = 1
-		relative_position_id = ITA_german_rd_treaty
-		cost = 5
-		completion_reward = {
-			add_ideas = military_youth_focus
-		}
-	}
-	focus = {
 		id = ITA_german_rd_treaty
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = {
@@ -2076,6 +2039,42 @@
 					category = armor
 				}
 			}
+		}
+	}
+	focus = {
+		id = ITA_german_millitary_cooperation
+		icon = GFX_goal_generic_military_deal
+		prerequisite = {
+			focus = ITA_german_rd_treaty
+		}
+		available = {
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_german_rd_treaty
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		completion_reward = {
+			add_ideas = ITA_german_millitary_cooperation_focus
+		}
+	}
+	focus = {
+		id = ITA_romania_friend
+		icon = GFX_ITA_Regio_Esercito
+		prerequisite = {
+			focus = ITA_german_rd_treaty
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_german_rd_treaty
+		cost = 5
+		completion_reward = {
+			add_ideas = military_youth_focus
 		}
 	}
 	focus = {
@@ -2135,7 +2134,7 @@
 				}
 				transfer_state = 764
 				transfer_state = 835
-					transfer_state = 45
+				transfer_state = 45
 			}
 			BUL = {
 				limit = {
@@ -2143,9 +2142,9 @@
 					is_ai = no
 				}
 				transfer_state = 184
-					transfer_state = 803
-					transfer_state = 106
-					transfer_state = 731
+				transfer_state = 803
+				transfer_state = 106
+				transfer_state = 731
 			}
 			ITA = {
 				annex_country = {
@@ -2156,9 +2155,21 @@
 				}
 			}
 			hidden_effect = {
-				every_state = { limit = { is_core_of = YUG } set_compliance = 100 }
-				102 = { set_compliance = 100 }
-				every_state = { limit = { is_core_of = GRE } set_compliance = 100 }
+				every_state = {
+					limit = {
+						is_core_of = YUG
+					}
+					set_compliance = 100
+				}
+				102 = {
+					set_compliance = 100
+				}
+				every_state = {
+					limit = {
+						is_core_of = GRE
+					}
+					set_compliance = 100
+				}
 				news_event = {
 					hours = 6
 					id = news.186

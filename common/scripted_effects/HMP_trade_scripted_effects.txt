@@ -66,10 +66,7 @@ add_opinion_modifier = {
     target = AST
     modifier = anti_cross_faction_trade
 }
-add_opinion_modifier = {
-    target = BRA
-    modifier = anti_cross_faction_trade
-}	
+	
 }
 
 
@@ -81,9 +78,6 @@ FRA = {
 anti_cross_faction_trade_axis = yes
 }
 USA = { 
-anti_cross_faction_trade_axis = yes
-}
-BRA = { 
 anti_cross_faction_trade_axis = yes
 }
 CAN = { 

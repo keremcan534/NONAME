@@ -1,5 +1,5 @@
 #Category only allowed for GER
-foreing_politics = {
+foreign_politics = {
 	GER_annex_hungary = {
 		icon = generic_operation
 		allowed = {

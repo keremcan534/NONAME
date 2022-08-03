@@ -141,9 +141,7 @@ characters={
 				allowed  = {
 					original_tag  = SOV 
 				}
-				research_bonus  = {
-					land_doctrine  = 0.100
-				}
+				
 				traits  = {
 					military_theorist 
 				}
@@ -993,19 +991,6 @@ characters={
 			ideology=liberalism
 			traits={ economist war_industrialist }
 			expire="1945.1.1.12"
-			id=-1
-		}
-	}
-	SOV_georgy_gusev={
-		name="Georgy Gusev"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
-		country_leader={
-			ideology=gen_nazism
-			expire="1943.1.1.12"
 			id=-1
 		}
 	}

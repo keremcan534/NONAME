@@ -39,4 +39,3 @@ set_popularities = {
 }
 recruit_character = EFR_phillipe_pétain
 recruit_character = EFR_jonas_smith
-recruit_character = EFR_marcus_smith

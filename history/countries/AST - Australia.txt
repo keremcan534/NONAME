@@ -1,4 +1,4 @@
-﻿capital = 760
+﻿capital = 285
 oob = "AST_1936"
 set_naval_oob = "AST_1936_naval"
 set_stability = 0.65

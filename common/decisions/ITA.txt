@@ -31,6 +31,38 @@ foreign_politics = {
 			}
 		}
 	}
+	ITA_annex_bul_into_rom = {
+		icon = generic_operation
+		available = {
+			BUL = {
+				is_ai = yes
+			}
+		}
+		allowed = {
+			original_tag = ITA
+		}
+		cost = 0
+		visible = {
+			original_tag=ITA
+		}
+		fire_only_once = yes
+		complete_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = ROM
+				}
+			}
+			ROM = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
+		}
+	}
 	ITA_annex_ROM = {
 		icon = generic_operation
 		available = {

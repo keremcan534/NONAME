@@ -10,6 +10,74 @@
 	default = no
 	########################################################################################
 	focus = {
+		id = air_defense_focus
+	
+		available = {
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		icon = GFX_goal_generic_construct_military
+		x = -6
+		y = 0
+		relative_position_id = limited_rearmament_focus
+		cost = 10
+		completion_reward = {
+			air_experience = 25
+			123 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+			}
+			125 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+			}
+			127 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+			}
+			129 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = radar_focus
+		prerequisite = {
+			focus = limited_rearmament_focus
+			focus = air_defense_focus
+		}
+		icon = GFX_goal_generic_radar
+		x = -6
+		y = 1
+		relative_position_id = limited_rearmament_focus
+		cost = 5
+	
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1
+				uses = 3
+				category = radar_tech
+			}
+		}
+	}
+	focus = {
 		id = tizard_mission_focus
 		available = {
 			date>1941.6.1
@@ -143,74 +211,6 @@
 		}
 	}
 	focus = {
-		id = air_defense_focus
-	
-		available = {
-		}
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-		icon = GFX_goal_generic_construct_military
-		x = -6
-		y = 0
-		relative_position_id = limited_rearmament_focus
-		cost = 10
-		completion_reward = {
-			air_experience = 25
-			123 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
-				}
-			}
-			125 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
-				}
-			}
-			127 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
-				}
-			}
-			129 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = radar_focus
-		prerequisite = {
-			focus = limited_rearmament_focus
-			focus = air_defense_focus
-		}
-		icon = GFX_goal_generic_radar
-		x = -6
-		y = 1
-		relative_position_id = limited_rearmament_focus
-		cost = 5
-	
-		available_if_capitulated = yes
-	
-		completion_reward = {
-			air_experience = 50
-			add_tech_bonus = {
-				name = radar_focus
-				bonus = 1
-				uses = 3
-				category = radar_tech
-			}
-		}
-	}
-	focus = {
 		id = shadow_scheme_focus
 		text = "Shadow Scheme"
 		prerequisite = {
@@ -287,21 +287,6 @@
 		cost = 10
 		completion_reward = {
 			add_ideas=partial_economic_mobilisation
-		}
-	}
-	focus = {
-		id = ENG_special_air_service
-		prerequisite = {
-			focus = air_rearmament_focus
-		}
-		continue_if_invalid = yes
-		icon = GFX_focus_eng_special_air_service
-		x = -2
-		y = 1
-		relative_position_id = air_rearmament_focus
-		cost = 5
-		completion_reward = {
-			add_ideas = ENG_special_air_service_idea
 		}
 	}
 	focus = {
@@ -493,6 +478,21 @@
 				}
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
+		}
+	}
+	focus = {
+		id = ENG_special_air_service
+		prerequisite = {
+			focus = air_rearmament_focus
+		}
+		continue_if_invalid = yes
+		icon = GFX_focus_eng_special_air_service
+		x = -2
+		y = 1
+		relative_position_id = air_rearmament_focus
+		cost = 5
+		completion_reward = {
+			add_ideas = ENG_special_air_service_idea
 		}
 	}
 	focus = {
@@ -795,6 +795,32 @@
 		}
 	}
 	focus = {
+		id = uk_waves_focus
+		prerequisite = {
+			focus = naval_rearmament_focus
+		}
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = -2
+		y = 1
+		relative_position_id = naval_rearmament_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = uk_waves_focus
+				cost_reduction = 0.5
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
 		id = ENG_anti_submarine_training_school
 		prerequisite = {
 			focus = uk_waves_focus
@@ -819,32 +845,6 @@
 				category = naval_doctrine
 			}
 			add_ideas = ENG_anti_submarine_training_school
-		}
-	}
-	focus = {
-		id = uk_waves_focus
-		prerequisite = {
-			focus = naval_rearmament_focus
-		}
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = -2
-		y = 1
-		relative_position_id = naval_rearmament_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = uk_waves_focus
-				cost_reduction = 0.5
-				uses = 3
-				category = naval_doctrine
-			}
 		}
 	}
 	focus = {
@@ -1986,7 +1986,7 @@
 		relative_position_id = uk_india_focus
 		cost = 10
 		completion_reward = {
-			
+			#mtg_britain.82 event for imp conf
 			ENG = {
 				add_timed_idea = {
 					idea = ENG_imperial_conference_economy_all
