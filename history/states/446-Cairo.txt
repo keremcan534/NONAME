@@ -12,12 +12,12 @@ state=
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
-			air_base = 5
+			air_base = 2
 			12049 = {
 				naval_base = 2
 			}
 			4073 = {
-				naval_base = 20
+				naval_base = 15
 			}
 		}
 		
@@ -36,9 +36,6 @@ state=
 		victory_points = {
 			1068 3
 		}
-
-		add_core_of = EGY
-
 	}
 
 	provinces={
