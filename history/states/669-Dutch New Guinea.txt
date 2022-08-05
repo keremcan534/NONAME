@@ -4,7 +4,10 @@ state={
 	manpower = 314300
 
 	state_category = pastoral
-
+	resources={
+		rubber=140 # was: 242
+		oil=10 # was: 16
+	}
 	history= {
 		owner = HOL
 		add_core_of = HOL

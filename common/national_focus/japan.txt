@@ -204,7 +204,7 @@ focus_tree = {
  					}
  					is_on_continent = asia
  				}
- 				set_compliance = 100
+ 				add_compliance = 100
  			}
  			hidden_effect = {
  				SOV = { army_experience = 50}

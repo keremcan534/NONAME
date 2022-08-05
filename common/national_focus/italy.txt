@@ -2129,7 +2129,6 @@
 			}
 			HUN = {
 				limit = {
-					exists = yes
 					is_ai = no
 				}
 				transfer_state = 764
@@ -2138,7 +2137,6 @@
 			}
 			BUL = {
 				limit = {
-					exists = yes
 					is_ai = no
 				}
 				transfer_state = 184

@@ -52,7 +52,18 @@ USA = {
 		days = 2
 	}
 }
-
+USA = {
+	give_military_access = AST
+}
+AST = {
+	give_military_access = USA
+}
+ENG = {
+	give_military_access = USA
+}
+USA = {
+	give_military_access = ENG
+}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1932.11.8"

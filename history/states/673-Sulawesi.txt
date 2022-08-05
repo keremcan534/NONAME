@@ -2,13 +2,7 @@ state={
 	id=673
 	name="STATE_673"
 	manpower = 4232000
-	resources={
-		rubber=30 # was: 52
-	}
-
 	state_category = town
-
-
 	history= {
 		owner = HOL
 		add_core_of = HOL

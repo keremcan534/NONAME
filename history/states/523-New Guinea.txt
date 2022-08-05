@@ -1,7 +1,11 @@
 state={
 	id=523
 	name="STATE_523"
-
+	resources={
+		rubber=150 # was: 268
+		oil=12 # was: 24
+		aluminium=28 # was: 50
+	}
 	history={
 		add_core_of = PNG
 		owner = AST
