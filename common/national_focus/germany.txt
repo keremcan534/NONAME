@@ -1727,6 +1727,38 @@
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
+
+		completion_reward = {
+
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 20000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 1000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 1000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+				amount = 2000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 1000
+				producer = GER
+			}
+
+		}
+
+
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
@@ -1734,21 +1766,9 @@
 			}
 			army_experience = 120
 			add_political_power = 75
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 12000
-				producer = AUS
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
-				amount = 600
-				producer = AUS
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = 800
-				producer = AUS
-			}
+	
+
+
 			add_war_support = 0.1
 			add_stability = 0.05
 			add_named_threat = {
