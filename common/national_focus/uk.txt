@@ -1052,6 +1052,7 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
+			add_political_power=150
 			add_stability = 0.1
 		}
 	}
@@ -2148,6 +2149,9 @@
 			FOCUS_FILTER_STABILITY
 		}
 		completion_reward = {
+			add_ideas={
+				extensive_conscription
+			}
 			add_war_support = 0.05
 			add_stability = 0.1
 		}

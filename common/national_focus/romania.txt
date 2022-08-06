@@ -105,7 +105,6 @@ focus_tree = {
 
 
 		completion_reward = {
-		country_event = DOD_romania.120
 			add_relation_modifier = {
 				target = GER
 				modifier = ROM_license_german_equipment

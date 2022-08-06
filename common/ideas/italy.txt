@@ -17,7 +17,6 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_synthetic_refinery_factor=-0.2
 				stability_factor = 0.05
 			}
 		}
@@ -28,10 +27,6 @@ ideas = {
 			removal_cost = -1
 			research_bonus = {
 				naval_equipment = 0.1
-			}
-			modifier = {
-				operative_slot = 1
-				agency_upgrade_time = -0.30
 			}
 		}
 		ITA_autarky_idea = {

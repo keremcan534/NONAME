@@ -717,6 +717,7 @@
 			factor = 9
 		}
 		completion_reward = {
+			add_research_slot = 1
 			add_tech_bonus = {
 				name = GER_autarky
 				bonus = 1
@@ -1731,7 +1732,6 @@
 				ideology = fascism
 				popularity = 0.2
 			}
-			add_research_slot = 1
 			army_experience = 120
 			add_political_power = 75
 			add_equipment_to_stockpile = {
@@ -1983,13 +1983,6 @@
 			}
 			hidden_effect={
 			SOV={declare_on_axis=yes}}
-				ENG = {
-					remove_ideas = stiff_upper_lip
-					add_timed_idea = {
-						idea = stiff_upper_lip
-						days = 150
-					}
-				}
 				SOV = {
 					add_timed_idea = {
 						idea = SOV_airports_devastated

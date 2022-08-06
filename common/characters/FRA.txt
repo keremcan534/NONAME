@@ -202,9 +202,9 @@ characters={
 			traits={ old_guard defensive_doctrine }
 			skill=2
 			attack_skill=1
-			defense_skill=2
+			defense_skill=7
 			planning_skill=2
-			logistics_skill=2
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -243,7 +243,7 @@ characters={
 		corps_commander={
 			traits={ trait_reckless media_personality harsh_leader armor_officer organizer panzer_leader }
 			skill=4
-			attack_skill=4
+			attack_skill=6
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=5

@@ -5,7 +5,7 @@ set_research_slots = 5
 set_stability = 0.75
 set_war_support = 0
 set_convoys = 1000
-
+add_to_tech_sharing_group = commonwealth_research
 set_variable = {
 	var = senators_support
 	value = 48
@@ -42,6 +42,7 @@ set_variable = {
 }
 
 USA_recalc_congress_icon_frames = yes
+set_major = yes
 USA = {
 	country_event = {
 		id = usa.50
@@ -51,18 +52,6 @@ USA = {
 		id = usa.51
 		days = 2
 	}
-}
-USA = {
-	give_military_access = AST
-}
-AST = {
-	give_military_access = USA
-}
-ENG = {
-	give_military_access = USA
-}
-USA = {
-	give_military_access = ENG
 }
 set_politics = {
 	ruling_party = democratic

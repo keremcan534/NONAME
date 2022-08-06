@@ -2,6 +2,7 @@ on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_startup = {
 		effect = {
+			
 			every_country={
 				limit={original_tag=JAP}
 				add_timed_idea={
@@ -11,11 +12,20 @@ on_actions = {
 			}
 			every_country = {
 				limit={
+					original_tag=FRA
+				}
+				add_timed_idea = {
+					idea=trade_blocked
+					days=1122
+				}
+			}
+			every_country = {
+				limit={
 					the_axis=yes
 				}
 				add_timed_idea = {
 					idea=trade_blocked
-					days=1095
+					days=1122
 				}
 			}
 			every_country = {

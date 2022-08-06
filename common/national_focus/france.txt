@@ -309,7 +309,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_artillery_focus
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 50
@@ -363,9 +363,9 @@
 			}
 			add_tech_bonus = {
 				name = FRA_medium_armor
-				bonus = 1
+				bonus = 1.5
 				uses = 1
-				category = cat_medium_armor
+				technology = improved_medium_tank_chassis
 			}
 			army_experience = 50
 		}
@@ -444,7 +444,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_mechanized_focus
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 5

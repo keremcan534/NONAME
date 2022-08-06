@@ -39,9 +39,9 @@ sub_units = {
 		supply_consumption = 0.1
 		
 		#support unit nerf
-		ap_attack=-0.25
+		ap_attack=-1
 		armor_value = -1.0
-		soft_attack = -0.5
+		soft_attack = -0.8
 		hard_attack = -0.1
 		breakthrough = -0.5
 		defense = -0.5
@@ -84,9 +84,9 @@ sub_units = {
 		supply_consumption = 0.11
 		
 		#support unit nerf
-		ap_attack=-0.25
+		ap_attack=-1
 		armor_value = -1.0
-		soft_attack = -0.5
+		soft_attack = -0.8
 		hard_attack = -0.1
 		breakthrough = -0.5
 		defense = -0.5
@@ -128,9 +128,9 @@ sub_units = {
 		supply_consumption = 0.15
 		
 		#support unit nerf
-		ap_attack=-0.3
+		ap_attack=-1
 		armor_value = -1.0
-		soft_attack = -0.5
+		soft_attack = -0.8
 		hard_attack = -0.1
 		breakthrough = -0.5
 		defense = -0.5
