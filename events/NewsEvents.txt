@@ -4,6 +4,23 @@
 
 add_namespace = news
 
+news_event = {
+	id = news.131
+	title = "Eqiupment 3 unlocked"
+	desc = "Eqiupment 3 unlocked"
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+trigger={
+	date>1941.6.1
+}	
+mean_time_to_happen={days=1}
+	option = {
+		name ="All eqiupment 3 unlocked. "
+	}
+}
+
 # Marco Polo Bridge I
 news_event = {
 	id = news.1

@@ -51,33 +51,33 @@ sub_units = {
 		transport = amphibious_mechanized_equipment
 
 		need = {
-			amphibious_mechanized_equipment = 40
+			amphibious_mechanized_equipment = 50
 			infantry_equipment = 100
 		}
 
 		forest = {
-			attack = -0.2
+			attack = -0.30
 			movement = -0.35
 		}
 		mountain = {
-			attack = -0.1
-			defence = -0.1 
+			attack = -0.125
+			defence = -0.125
 			movement = -0.2
 		}
 		hills = {
-			attack = -0.05
-			defence = -0.05
+			attack = -0.075
+			defence = -0.075
 			movement = -0.1 
 		}
 		jungle = {
-			attack = -0.3
+			attack = -0.35
 		}
 		marsh = {
-			attack = 0.2
+			attack = 0.05
 		}
 		urban = {
-			attack = -0.2
-			defence = -0.05
+			attack = -0.3
+			defence = -0.125
 		}
 		river = {
 			attack = 0.3
@@ -85,6 +85,5 @@ sub_units = {
 		amphibious = {
 			attack = 0.5
 		}
-		hardness = 0.2
 	}
 }

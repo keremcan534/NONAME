@@ -106,8 +106,7 @@ equipments = {
 		offensive_weapons = no
 		build_cost_ic = 2450
 		resources = {
-			steel = 5
-			chromium = 1
+			steel = 4
 		}
 		manpower = 4500
 	}
@@ -122,6 +121,10 @@ equipments = {
 		naval_speed = 31.13
 		default_modules = {
 			fixed_ship_engine_slot = carrier_ship_engine_2
+		}
+		resources = {
+			steel = 5
+			chromium = 1
 		}
 	}
 	ship_hull_carrier_2 = {
@@ -181,12 +184,6 @@ equipments = {
 					ship_deck_space
 				}
 			}
-			mid_6_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_deck_space
-				}
-			}
 		}
 		default_modules = {
 			front_1_custom_slot = empty
@@ -199,7 +196,7 @@ equipments = {
 		max_strength = 650
 		build_cost_ic = 2600
 		resources = {
-			steel = 5
+			steel = 6
 			chromium = 1
 		}
 		manpower = 5000
@@ -268,18 +265,6 @@ equipments = {
 					ship_deck_space
 				}
 			}
-			mid_7_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_deck_space
-				}
-			}
-			mid_8_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_deck_space
-				}
-			}
 		}
 		default_modules = {
 			front_1_custom_slot = empty
@@ -292,7 +277,7 @@ equipments = {
 		max_strength = 700
 		build_cost_ic = 3250
 		resources = {
-			steel = 5
+			steel = 7
 			chromium = 2
 		}
 		manpower = 5500
@@ -357,7 +342,7 @@ equipments = {
 		naval_speed = 23
 		build_cost_ic = 2700
 		resources = {
-			steel = 3
+			steel = 4
 			chromium = 1
 		}
 		manpower = 5000
@@ -403,7 +388,7 @@ equipments = {
 		naval_speed = 26
 		build_cost_ic = 2000
 		resources = {
-			steel = 3
+			steel = 4
 		}
 		manpower = 1000
 	}
@@ -491,7 +476,7 @@ equipments = {
 		build_cost_ic = 3750
 		resources = {
 			#oil = 1
-			steel = 3
+			steel = 4
 			chromium = 1
 		}
 		manpower = 4500
@@ -577,7 +562,7 @@ equipments = {
 		build_cost_ic = 4500
 		resources = {
 			#oil = 1
-			steel = 4
+			steel = 5
 			chromium = 1
 		}
 		manpower = 5000
@@ -614,7 +599,7 @@ equipments = {
 		build_cost_ic = 5250
 		resources = {
 			#oil = 2
-			steel = 4
+			steel = 6
 			chromium = 2
 		}
 		manpower = 5500
@@ -651,7 +636,7 @@ equipments = {
 		build_cost_ic = 6000
 		resources = {
 			#oil = 2
-			steel = 5
+			steel = 7
 			chromium = 2
 		}
 		manpower = 6000

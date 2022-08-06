@@ -16,6 +16,12 @@ country_event = {
 	option = {
 		name = italy.1.a
 		annex_country = { target = ALB }
+		every_state = {
+			limit = {
+				is_core_of = ALB
+			}
+			set_compliance = 100
+		}
 		add_named_threat = { threat = 2 name = ITA_albania_war_goal }
 		USA = {
 			set_country_flag = { flag = USA_albania_window days = 60 value = 1 }
@@ -39,28 +45,7 @@ country_event = {
 	option = { # Yield
 		name = italy.3.a
 		ai_chance = {
-			base = 40
-			modifier = {
-				factor = 0				
-				any_other_country = {
-					OR = {
-						is_major = yes
-						tag = YUG
-					}
-					NOT = { tag = ITA }
-					OR = {
-						has_guaranteed = ALB
-						is_in_faction_with = ALB
-					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				OR = {
-					has_government = communism
-					has_government = fascism #glorious Albania will never yield!
-				}
-			}
+			base = 100
 		}
 		ITA = {
 			country_event = { days = 1 id = italy.1 }

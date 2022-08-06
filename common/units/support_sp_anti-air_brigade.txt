@@ -39,6 +39,8 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#support unit nerf
+		air_attack=-0.25
+
 		armor_value = -1.0
 		soft_attack = -0.5
 		hard_attack = -0.5
@@ -81,6 +83,8 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#support unit nerf
+		air_attack=-0.25
+
 		armor_value = -1.0
 		soft_attack = -0.5
 		hard_attack = -0.5
@@ -123,6 +127,8 @@ sub_units = {
 		supply_consumption = 0.1
 
 		#support unit nerf
+		air_attack=-0.25
+
 		armor_value = -1.0
 		soft_attack = -0.5
 		hard_attack = -0.5
