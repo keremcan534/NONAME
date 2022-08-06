@@ -152,7 +152,6 @@
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
 			}
-			add_ideas = british_austerity_idea
 
 		}
 	}
@@ -244,6 +243,8 @@
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
+add_ideas = british_austerity_idea
+
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1
@@ -622,7 +623,6 @@
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			add_ideas = british_fighter_discount
 		}
 	}
 	focus = {
