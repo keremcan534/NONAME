@@ -3,9 +3,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas
 10141;1419;sea;5267;-1;-1;-1;-1;;Moluccas
 480;9431;sea;8621;-1;-1;-1;-1;;Netherlands outlier
+
 8857;2284;sea;7617;1560;1009;1556;1016;PANAMA_CANAL;Panama
 2729;2408;sea;6257;2949;1598;2962;1612;KIEL_CANAL;Kiel
 5388;803;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
+
 299;211;sea;2282;-1;-1;-1;-1;;Småland-Öland
 6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
 3260;3325;;2408;-1;-1;-1;-1;;Sjaelland-Fyn
@@ -125,10 +127,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6062;6205;sea;3590;-1;-1;-1;-1;;West Scottish-Strait
 8435;6550;sea;7452;-1;-1;-1;-1;;Aegan Isle-Strait
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
+
+
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
+
+2800;2776;;-1;-1;-1;-1;-1;ADEN_STRAIT;Aden
+
+
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
