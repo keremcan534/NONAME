@@ -34,7 +34,7 @@ characters={
 		}
 		country_leader={
 			ideology=socialism
-			traits={ }
+			traits={ captain_of_industry }
 			expire="1943.1.1.12"
 			id=-1
 		}
@@ -48,7 +48,7 @@ characters={
 		}
 		country_leader={
 			ideology=fascism_ideology
-			traits={ }
+			traits={ silent_workhorse fortification_engineer }
 			expire="1944.1.1.12"
 			id=-1
 		}

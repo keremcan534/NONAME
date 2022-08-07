@@ -128,7 +128,7 @@ on_actions = {
 					}
 				}
 				add_timed_idea={idea=africa_hp
-			days=486
+			days=490
 			}
 					}
 					GER={

@@ -108,7 +108,6 @@ leader_logistics_skills = {
 		}
 	}
 	
-	
 	3 = {
 		cost = 400
 		type = corps_commander
@@ -189,30 +188,9 @@ leader_logistics_skills = {
 		}
 	}
 
-	13 = {
-		cost = 51200
-		type = corps_commander
-		modifier = {
-			supply_consumption_factor = -0.3
-		}
-	}
 
-	14 = {
-		cost = 51200
-		type = corps_commander
-		modifier = {
-			supply_consumption_factor = -0.325
-		}
-	}
 
-	15 = {
-		cost = 51200
-		type = corps_commander
-		modifier = {
-			supply_consumption_factor = -0.35
-		}
-	}
-	
+
 	### Field Marshal ###
 	1 = {
 		cost = 100
@@ -222,7 +200,6 @@ leader_logistics_skills = {
 		}
 	}
 	
-	
 	2 = {
 		cost = 200
 		type = field_marshal
@@ -230,7 +207,6 @@ leader_logistics_skills = {
 			supply_consumption_factor = -0.025
 		}
 	}
-	
 	
 	3 = {
 		cost = 400
@@ -309,30 +285,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.275
-		}
-	}
-
-	13 = {
-		cost = 51200
-		type = field_marshal
-		modifier = {
-			supply_consumption_factor = -0.3
-		}
-	}
-
-	14 = {
-		cost = 51200
-		type = field_marshal
-		modifier = {
-			supply_consumption_factor = -0.325
-		}
-	}
-
-	15 = {
-		cost = 51200
-		type = field_marshal
-		modifier = {
-			supply_consumption_factor = -0.35
 		}
 	}
 }

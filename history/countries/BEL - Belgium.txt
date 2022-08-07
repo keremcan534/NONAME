@@ -15,8 +15,12 @@ set_popularities = {
 }
 set_convoys = 0
 set_stability = 0
-
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 60000
+	producer = GER
+}
 recruit_character = BEL_hubert_pierlot
-recruit_character = BEL_joseph_jacquemotte
-recruit_character = BEL_mcl_keyaerts
-recruit_character = BEL_georges_timmermans
+recruit_character = BEL_peter_smith
+recruit_character = BEL_lucas_jones
+recruit_character = BEL_alexander_taylor

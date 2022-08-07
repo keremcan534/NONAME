@@ -1,9 +1,134 @@
 characters={
+	ALB_rashid_ali_algaylani={
+		name="Rashid Ali al-Gaylani"
+		portraits={
+			civilian={
+				large="GFX_portrait_iraq_rashid_al_gaylani"
+				small="gfx/interface/ideas/idea_IRQ_rashid_al_gaylani.dds"
+			}
+		}
+		advisor = {
+			idea_token = rashid_ali_algaylani
+			cost = 0 
+			slot = political_advisor
+			
+			allowed = {original_tag = ALB }
+			traits = { national_integralist }
+		}
+		country_leader={
+			ideology=fascism_ideology
+						traits={ anti_british_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ALB_Sami_Shawkat={
+		name="Sami Shawkat"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_generic_political_advisor_arab_1.dds"
+			}
+		}
+		advisor = {
+			idea_token = sami_shawkat
+			slot = political_advisor
+			
+			cost = 0 
+			allowed = {original_tag = ALB }
+			traits = { education_reformer }
+		}
+	}
+	
+		ALB_Nadi_al_Muthanna={
+		name="Nadi al-Muthanna"
+		portraits={
+			civilian={
+				 small="gfx/interface/ideas/idea_generic_political_advisor_arab_2.dds"
+			}
+		}
+		advisor = {
+			idea_token = Nadi_al_Muthanna
+			slot = political_advisor 
+			cost = 0
+			
+			allowed = {original_tag = ALB }
+			traits = { propaganda_expert }
+		}
+	}
+	
+
+	ALB_Mahmud_Salman={
+		name="Mahmud Salman"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_air_arab_1.dds"
+			}
+			army={
+				large="gfx/leaders/ALB/Portrait_Mahmud_Salman.dds"
+			}
+		}
+			advisor = {
+			idea_token = Mahmud_Salman
+			slot = air_chief
+			cost = 75
+						
+
+			allowed = {
+				original_tag = ALB
+			}
+			traits = {
+				air_chief_ground_support_3 
+			}
+		}
+		corps_commander={ #17/17
+			traits={ infantry_leader infantry_expert  paratrooper camouflage_expert guerilla_fighter    trickster trait_engineer commando   }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=9
+			legacy_id=-1
+		}
+	}
+	ALB_Fahmi_Said={
+		name="Fahmi Said"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_arab_3.dds"
+			}
+			army={
+				large="gfx/leaders/ALB/Portrait_Fahmi_Said.dds"
+			}
+		}
+		advisor = {
+			idea_token = Fahmi_Said
+			slot = high_command
+			cost = 75
+						
+
+			allowed = {
+				original_tag = ALB
+			}
+			traits = {
+				army_armored_2 
+			}
+		}
+		corps_commander={ #17/17
+			traits={  panzer_leader panzer_expert  ambusher desert_fox trait_mountaineer   }
+			skill=6
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=7
+			legacy_id=-1
+		}
+	} 
 	ALB_king_zog={
 		name="King Zog"
 		portraits={
 			civilian={
-				large=GFX_portrait_King_Zog
+				large="gfx/leaders/ALB/Portrait_Albania_King_Zog.dds"
 			}
 		}
 		country_leader={
@@ -16,488 +141,90 @@ characters={
 		name="Enver Hoxha"
 		portraits={
 			civilian={
-				large=GFX_portrait_Enver_Hoxha
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 			}
 		}
 		country_leader={
 			ideology=stalinism
-			traits={ staunch_stalinist }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	ALB_eqrem_belishi={
-		name="Eqrem Belishi"
+
+	ALB_johannes_walker={
+		name="Johannes Walker"
 		portraits={
 			civilian={
-				large=GFX_portrait_Eqrem_Belishi
+				large="GFX_portrait_europe_generic_4"
 			}
 		}
 		country_leader={
-			ideology=socialism
-			expire="1941.1.1.12"
+			ideology=liberalism
+			expire="1944.1.1.12"
 			id=-1
 		}
 	}
-	ALB_gjon_burbank={
-		name="Gjon Burbank"
-		portraits={
-			civilian={
-				large=GFX_portrait_Gjon_Burbank
-			}
-		}
-		country_leader={
-			ideology=rexism
-			traits={ economist }
-			expire="1952.1.1.12"
-			id=-1
-		}
-	}
-	ALB_xhemal_aranitasi={
-		name="Xhemal Aranitasi"
+	ALB_kamil_shabib={
+		name="Kamil Shabib"
 		portraits={
 			army={
-				large=GFX_portrait_Xhemal_Aranitasi
-				small=GFX_portrait_Xhemal_Aranitasi_small
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/ALB/Portrait_IRQ_Kamil_Shabib.tga"
 			}
 		}
-		field_marshal={
-			skill=2
-			attack_skill=1
-			defense_skill=3
+		advisor = {
+			idea_token =kamil_shabib
+			slot = theorist
+			ledger = army
+						
+
+			allowed = {
+				original_tag = ALB
+			}
+			cost = 100
+			traits = {
+				military_theorist 
+			}
+		}
+		field_marshal={ #13/13
+			traits={  infantry_leader infantry_expert panzer_expert panzer_leader logistics_wizard defensive_doctrine  }
+			skill=6
+			attack_skill=4
+			defense_skill=4
 			planning_skill=2
-			logistics_skill=1
+			logistics_skill=8
 			legacy_id=-1
 		}
 	}
-	ALB_halil_nergutti={
-		advisor={
-			
-			
+	
+	ALB_salah_aldin_alsabbagh={ 
+		name="Salah al-Din al-Sabbagh"
+		advisor = { 
+			idea_token = Salah_ad_Din_al_Sabbagh
+			cost = 75
 			slot = high_command
-			idea_token = ALB_halil_nergutti
-			ledger = navy
-				allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					navy_capital_ship_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
+			traits = { army_infantry_2 }
+						
+
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Halil Nergutti"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_1"
+				small="gfx/interface/ideas/idea_generic_army_arab_2.dds"
 			}
-		}
-	}
-	ALB_ismael_ghaxa={
-		advisor={
-			
-			
-			slot = navy_chief
-			idea_token = ALB_ismael_ghaxa
-			allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					navy_chief_maneuver_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Ismael Ghaxa"
-		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_3"
+				large="gfx/leaders/ALB/Portrait_Salah_al_Din_al_Sabbagh.dds"
 			}
 		}
-	}
-	ALB_hajre_fetahu={
-		advisor={
-			cost = 100
-			
-			slot = theorist
-			idea_token = ALB_hajre_fetahu
-			ledger = navy
-				allowed = {
-					original_tag = ALB
-				}
-				
-				traits = {
-					naval_theorist
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Hajrë Fetahu"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_1"
-			}
-		}
-	}
-	ALB_xhelal_mitrovica={
-		advisor={
-			cost = 100
-			
-			slot = theorist
-			idea_token = ALB_xhelal_mitrovica
-			ledger = air
-				allowed = {
-					original_tag = ALB
-				}
-				
-				traits = {
-					air_warfare_theorist
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Xhelal Mitrovica"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_1"
-			}
-		}
-	}
-	ALB_selim_moishiou={
-		advisor={
-			
-			
-			slot = high_command
-			idea_token = ALB_selim_moishiou
-			ledger = army
-				allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					army_artillery_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Selim Moishiou"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
-			}
-		}
-	}
-	ALB_kol_bibe_mirakaj={
-		advisor={
-			
-			
-			slot = army_chief
-			idea_token = ALB_kol_bibe_mirakaj
-			allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					army_chief_defensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Kol Bibë Mirakaj"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_2"
-			}
-		}
-	}
-	ALB_qemal_komani={
-		advisor={
-			cost = 100
-			
-			slot = theorist
-			idea_token = ALB_qemal_komani
-			ledger = army
-				allowed = {
-					original_tag = ALB
-				}
-				
-				traits = {
-					military_theorist
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Qemal Komani"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
-			}
-		}
-	}
-	ALB_prenk_pervizi={
-		advisor={
-			
-			
-			slot = army_chief
-			idea_token = ALB_prenk_pervizi
-			allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Prenk Pervizi"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
-			}
-		}
-	}
-	ALB_alexander_mori={
-		advisor={
-			
-			
-			slot = high_command
-			idea_token = ALB_alexander_mori
-			ledger = army
-				allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					army_regrouping_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Alexander Mori"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_2"
-			}
-		}
-	}
-	ALB_aziz_sulejmani={
-		advisor={
-			
-			
-			slot = air_chief
-			idea_token = ALB_aziz_sulejmani
-			allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					air_chief_reform_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Aziz Sulejmani"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_2"
-			}
-		}
-	}
-	ALB_kristo_cajupi={
-		advisor={
-			
-			
-			slot = high_command
-			idea_token = ALB_kristo_cajupi
-			ledger = army
-				allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					army_concealment_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Kristo Cajupi"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_3"
-			}
-		}
-	}
-	ALB_eqrem_libohova={
-		advisor={
-			
-			
-			slot = air_chief
-			idea_token = ALB_eqrem_libohova
-			allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					air_chief_ground_support_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Eqrem Libohova"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_1"
-			}
-		}
-	}
-	ALB_zuhdi_shabani={
-		advisor={
-			
-			
-			slot = air_chief
-			idea_token = ALB_zuhdi_shabani
-			allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					air_chief_safety_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Zuhdi Shabani"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_3"
-			}
-		}
-	}
-	ALB_rexhep_mitrovica={
-		advisor={
-			
-			
-			slot = navy_chief
-			idea_token = ALB_rexhep_mitrovica
-			allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					navy_chief_naval_aviation_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Rexhep Mitrovica"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_2"
-			}
-		}
-	}
-	ALB_hasan_begolli={
-		advisor={
-			
-			
-			slot = navy_chief
-			idea_token = ALB_hasan_begolli
-			allowed = {
-					original_tag = ALB
-				}
-				traits = {
-					navy_chief_commerce_raiding_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Hasan Begolli"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_1"
-			}
-		}
-	}
-	ALB_fiqri_dine={
-		advisor={
-			slot = political_advisor
-			idea_token = ALB_fiqri_dine
-			allowed  = {
-					original_tag  = ALB
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Fiqri Dine"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
-			}
-		}
-	}
-	ALB_midhat_frasheri={
-		advisor={
-			slot = political_advisor
-			idea_token = ALB_midhat_frasheri
-			allowed  = {
-					original_tag  = ALB
-				}
-				traits  = {
-					popular_figurehead 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Midhat Frashëri"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_1"
-			}
-		}
-	}
-	ALB_jocelyn_percy={
-		advisor={
-			slot = political_advisor
-			idea_token = ALB_jocelyn_percy
-			allowed  = {
-					original_tag  = ALB
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Jocelyn Percy"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
-			}
+		corps_commander={ #17/17
+			traits={ organizer infantry_leader infantry_expert trait_engineer commando desert_fox trait_mountaineer  }
+			skill=6
+			attack_skill=5
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
 		}
 	}
 }

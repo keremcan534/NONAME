@@ -1,34 +1,65 @@
 characters={
-	BUL_nikola_totev_markov={
-		name="Nikola Totev Markov"
+	BUL_konstantin_lukash={
+		name="Konstantin Lukash"
 		advisor={
-			slot = navy_chief
-			idea_token = BUL_nikola_totev_markov
-			allowed  = {
-					original_tag  = BUL
+			slot = high_command
+			idea_token = BUL_konstantin_lukash
+			ledger  = army 
+				allowed  = {
+					original_tag  = BUL 
 				}
+				cost = 75
 				traits  = {
-					navy_chief_decisive_battle_1 
-				}
-				ai_will_do  = {
-					factor  = 1.000
+					army_commando_2 
 				}
 		}
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_europe_1"
+				small="GFX_idea_konstantin_lukash"
 			}
 			army={
-				large="gfx/leaders/BUL/Nikola_Totev_Markov.tga"
+				large="GFX_Portrait_Europe_Generic_land_4"
 			}
 		}
-		corps_commander={
-			traits={ brilliant_strategist career_officer media_personality infantry_officer skilled_staffer trickster trait_engineer panzer_leader ranger }
-			skill=5
-			attack_skill=5
-			defense_skill=4
+		field_marshal={ #13/13
+			traits={  infantry_leader infantry_expert organizer brilliant_strategist thorough_planner aggressive_assaulter   }
+			skill=6
+			attack_skill=4
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	BUL_georgi_popov={
+		name="Georgi Popov"
+		advisor={
+			slot = theorist
+			idea_token = BUL_georgi_popov
+			ledger  = army 
+				allowed  = {
+					original_tag  = BUL 
+				}
+	            cost = 100
+				traits  = {
+					military_theorist 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_georgi_popov"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_8"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ organizer infantry_leader infantry_expert  desert_fox trait_mountaineer hill_fighter  camouflage_expert }
+			skill=6
+			attack_skill=6
+			defense_skill=3
 			planning_skill=4
-			logistics_skill=4
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
@@ -40,7 +71,6 @@ characters={
 			}
 		}
 		country_leader={
-			desc="POLITICS_BORIS_III_DESC"
 			ideology=despotism
 			expire="1965.1.1.1"
 			id=-1
@@ -54,297 +84,593 @@ characters={
 			}
 		}
 		country_leader={
-			desc="POLITICS_GEORGI_DIMITROV_DESC"
 			ideology=leninism
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	BUL_nikola_petkov={
-		name="Nikola Petkov"
+	BUL_aleksandar_boyadzhiev={
+		name="Aleksandar Boyadzhiev"
 		portraits={
 			civilian={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+				large="GFX_Portrait_europe_generic_7"
 			}
 		}
 		country_leader={
-			desc="POLITICS_NIKOLA_PETKOV_DESC"
-			ideology=socialism
-			expire="1965.1.1.1"
+			ideology=liberalism
+			traits={ reluctant_interventionist }
+			expire="1945.1.1.12"
 			id=-1
 		}
 	}
-	BUL_hristo_lukov={
-		name="Hristo Lukov"
+	BUL_kalin_tenev={
+		name="Kalin Tenev"
 		portraits={
 			civilian={
-				large="GFX_Portrait_bulgaria_hristo_lukov"
+				large="GFX_Portrait_europe_generic_7"
 			}
 		}
-		corps_commander={
-			traits={ trait_reckless infantry_officer trait_engineer commando naval_invader desert_fox }
-			skill=4
-			attack_skill=5
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
 		country_leader={
-			desc="POLITICS_HRISTO_LUKOV_DESC"
 			ideology=fascism_ideology
-			expire="1965.1.1.1"
+			traits={ financial_expert smooth_talking_charmer }
+			expire="1946.1.1.12"
 			id=-1
 		}
 	}
-	BUL_vladimir_stoychev={
-		name="Vladimir Stoychev"
+	BUL_atanas_shalapatov={
+		name="Atanas Shalapatov"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_19.dds"
+				small="GFX_portrait_europe_generic_navy_6_small"
 			}
 			army={
-				large="gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+				large="GFX_portrait_europe_generic_navy_6"
 			}
 		}
-		corps_commander={
-			traits={ trait_reckless cavalry_officer cavalry_leader skilled_staffer trickster trait_engineer panzer_leader desert_fox }
+		navy_leader={
+			traits={ fleet_protector superior_tactician spotter fly_swatter ironside air_controller green_water_expert concealment_expert big_guns_expert ground_pounder }
 			skill=5
-			attack_skill=6
+			attack_skill=4
+			defense_skill=6
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	BUL_lajos_veress={
+		name="Lajos Veress"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_lajos_veress.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={   panzer_leader panzer_expert thorough_planner logistics_wizard  }
+			skill=6
+			attack_skill=7
 			defense_skill=2
-			planning_skill=4
-			logistics_skill=4
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
-	BUL_konstantin_ivanov_bekyarov={
-		name="Konstantin Ivanov Bekyarov"
+	BUL_jure_francetic={
+		name="Jure Francetic"
 		portraits={
 			army={
-				large="gfx/leaders/BUL/Konstantin_Ivanov_Bekyarov.tga"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/Portrait_Jure_Francetic.dds"
 			}
 		}
-		field_marshal={
-			traits={ brilliant_strategist career_officer media_personality infantry_officer skilled_staffer trait_engineer panzer_leader }
-			skill=5
+		field_marshal={ #13/13
+			traits={ trait_cautious panzer_leader panzer_expert organisational_leader desert_fox trait_mountaineer hill_fighter thorough_planner }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	BUL_nikola_stoychev={
+		name="Nikola Stoychev"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_14_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_14"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ trait_cautious panzer_leader panzer_expert logistics_wizard defensive_doctrine  }
+			skill=6
+			attack_skill=4
+			defense_skill=7
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	BUL_georgi_markov={
+		name="Georgi Markov"
+		portraits={
+			army={
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+			army={
+				large="GFX_Portrait_Europe_Generic_land_4"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ adaptable old_guard cavalry_leader combined_arms_expert cavalry_expert offensive_doctrine fast_planner inspirational_leader  expert_improviser }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	BUL_ivan_markov={
+		name="Ivan Markov"
+		portraits={
+			army={
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+			army={
+				large="GFX_Portrait_Europe_Generic_land_4"
+			}
+		}
+		corps_commander={ #17/17
+			traits={cavalry_leader cavalry_expert combined_arms_expert adaptable trait_reckless  trait_engineer   scavenger ranger }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	BUL_ivan_babic={
+		name="Ivan Babic"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/Portrait_Ivan_Babic.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ bearer_of_artillery old_guard cavalry_leader combined_arms_expert cavalry_expert desert_fox swamp_fox hill_fighter urban_assault_specialist defensive_doctrine  guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=9
+			legacy_id=-1
+		}
+	}
+	BUL_franjo_simic={
+		name="Franjo Simic"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/r56_portrait_CRO_Franjo_Simic.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ infantry_leader ambusher ranger trickster urban_assault_specialist defensive_doctrine scavenger  }
+			skill=6
+			attack_skill=4
+			defense_skill=8
+			planning_skill=1
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	BUL_nikola_mihailov_mihov={
+		name="Nikola Mihailov Mihov"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_17_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_17"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ harsh_leader organizer infantry_expert infantry_leader  ranger offensive_doctrine thorough_planner organizer  }
+			skill=6
 			attack_skill=6
-			defense_skill=4
+			defense_skill=5
 			planning_skill=4
 			logistics_skill=4
 			legacy_id=-1
 		}
 	}
-	BUL_georgi_nikolov_popov={
-		name="Georgi Nikolov Popov"
+	BUL_asen_nikolov={
+		name="Asen Nikolov"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				small="GFX_Portrait_Europe_Generic_land_1_small"
 			}
 			army={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+				large="GFX_Portrait_Europe_Generic_land_1"
 			}
 		}
-		field_marshal={
-			traits={ old_guard inflexible_strategist politically_connected organizer ranger defensive_doctrine }
-			skill=5
+		field_marshal={ #13/13
+			traits={ bearer_of_artillery infantry_leader ambusher ranger urban_assault_specialist defensive_doctrine  camouflage_expert guerilla_fighter }
+			skill=6
 			attack_skill=3
 			defense_skill=6
-			planning_skill=2
-			logistics_skill=7
+			planning_skill=4
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
-	BUL_teodosi_daskalov={
-		name="Teodosi Daskalov"
+	BUL_károly_beregfy={
+		name="Károly Beregfy"
 		portraits={
 			army={
-				large="gfx/leaders/BUL/Portrait_BUL_Teodosi_Daskalov.tga"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_karoly_beregfy.dds"
 			}
 		}
-		corps_commander={
-			traits={ old_guard career_officer harsh_leader infantry_officer politically_connected organizer skilled_staffer trait_engineer }
-			skill=4
+		field_marshal={ #13/13
+			traits={  infantry_leader infantry_expert  ranger urban_assault_specialist logistics_wizard inspirational_leader organisational_leader  }
+			skill=6
+			attack_skill=4
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	BUL_ferenc_feketehalmyczeydner={
+		name="Ferenc Feketehalmy-Czeydner"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_ferenc_feketehalmy_czeydner.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ inflexible_strategist infantry_leader infantry_expert logistics_wizard unyielding_defender inspirational_leader organizer  guerilla_fighter }
+			skill=6
+			attack_skill=2
+			defense_skill=7
+			planning_skill=1
+			logistics_skill=9
+			legacy_id=-1
+		}
+	}
+	BUL_slavko_stancer={
+		name="Slavko Stancer"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/r56_portrait_CRO_slavko_stancer.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ brilliant_strategist panzer_leader panzer_expert desert_fox hill_fighter urban_assault_specialist trait_engineer }
+			skill=6
+			attack_skill=7
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	BUL_damian_velchev={
+		name="Damian Velchev"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_7_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_7"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ bearer_of_artillery panzer_leader ranger panzer_expert trait_reckless harsh_leader expert_improviser  camouflage_expert  }
+			skill=6
 			attack_skill=3
 			defense_skill=3
+			planning_skill=7
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	BUL_augustin_malar={
+		name="Augustin Malar"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/Portrait_Slovakia_Augustin_Malar.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={  panzer_expert ambusher panzer_leader trait_cautious ranger winter_specialist  guerilla_fighter }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	BUL_rafael_boban={
+		name="Rafael Boban"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/r56_portrait_CRO_Rafael_Boban.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ adaptable trait_engineer panzer_leader winter_specialist panzer_expert guerilla_fighter }
+			skill=6
+			attack_skill=6
+			defense_skill=6
 			planning_skill=2
 			logistics_skill=5
 			legacy_id=-1
 		}
 	}
-	BUL_ivan_valkov={
-		name="Ivan Valkov"
+	BUL_stefan_jurech={
+		name="Stefan Jurech"
 		portraits={
 			army={
-				large="gfx/leaders/BUL/Portrait_BUL_Ivan_Valkov.tga"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/Portrait_Stefan_Jurech.dds"
 			}
 		}
-		corps_commander={
-			traits={ brilliant_strategist media_personality infantry_officer war_hero infantry_leader desert_fox }
-			skill=5
-			attack_skill=5
-			defense_skill=3
+		corps_commander={ #17/17
+			traits={ bearer_of_artillery organizer trait_mountaineer hill_fighter cavalry_leader combined_arms_expert cavalry_expert ambusher guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=5
 			planning_skill=5
-			logistics_skill=3
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
-	BUL_kiril_stanchev={
-		advisor={
-			slot = theorist
-			idea_token = BUL_kiril_stanchev
-			ledger  = army 
-				allowed  = {
-					original_tag  = BUL
-				}
-				research_bonus  = {
-					land_doctrine  = 0.100
-				}
-				traits  = {
-					military_theorist 
-				}
-		}
-		name="BUL_kiril_stanchev"
+	BUL_anton_pulanish={
+		name="Anton Pulanish"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/Anton_Pulanish_Portrait.dds"
 			}
 		}
-	}
-	BUL_asen_dobrev_nikolov={
-		advisor={
-			slot = high_command
-			idea_token = BUL_asen_dobrev_nikolov
-			ledger  = army 
-				allowed  = {
-					original_tag  = BUL
-				}
-				traits  = {
-					army_logistics_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+		corps_commander={ #17/17
+			traits={ adaptable harsh_leader infantry_leader skilled_staffer infantry_expert expert_improviser }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
 		}
-		name="BUL_asen_dobrev_nikolov"
+	}
+	BUL_géza_lakatos={
+		name="Géza Lakatos"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_2"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_geza_lakatos.dds"
 			}
 		}
-	}
-	BUL_blagoi_ivanov={
-		advisor={
-			slot = high_command
-			idea_token = BUL_blagoi_ivanov
-			ledger  = army 
-				allowed  = {
-					original_tag  = BUL
-				}
-				traits  = {
-					army_regrouping_3 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+		corps_commander={ #17/17
+			traits={ infantry_leader commando ranger ambusher camouflage_expert expert_improviser }
+			skill=6
+			attack_skill=7
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
 		}
-		name="BUL_blagoi_ivanov"
+	}
+	BUL_iván_hindy={
+		name="Iván Hindy"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_4"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_ivan_hindy.dds"
 			}
 		}
+		corps_commander={ #17/17
+			traits={  panzer_leader swamp_fox ranger urban_assault_specialist panzer_expert expert_improviser }
+			skill=6
+			attack_skill=6
+			defense_skill=6
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=-1
+		}
 	}
-	BUL_georgi_ivanov_kyoseivanov={
+	BUL_stjepan_sarkotic={
+		name="Stjepan Sarkotic"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/Portrait_Stjepan_Sarkotic.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ infantry_leader ambusher commando desert_fox hill_fighter  skirmisher paratrooper guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	BUL_angel_dotsev={
+		name="Angel Dotsev"
+		portraits={
+			army={
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+			army={
+				large="GFX_Portrait_Europe_Generic_land_4"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ bearer_of_artillery old_guard organizer infantry_leader infantry_expert trait_engineer ranger urban_assault_specialist  }
+			skill=6
+			attack_skill=3
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	BUL_junuz_ajanovic={
+		name="Junuz Ajanovic"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/r56_portrait_CRO_junuz_ajanovic.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ adaptable infantry_leader infantry_expert commando jungle_rat  }
+			skill=6
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	BUL_franza_karmasin={
+		name="Franza Karmasin"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/portrait_SLO_Franza_Karmasin.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ infantry_leader infantry_expert trait_engineer fortress_buster naval_invader invader_ii  hill_fighter   }
+			skill=6
+			attack_skill=4
+			defense_skill=7
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	BUL_jozef_turanec={
+		name="Jozef Turanec"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/Portrait_SLO_jozef_turanec.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ fake_skilled_staffer old_guard infantry_leader ambusher winter_specialist ranger urban_assault_specialist guerilla_fighter }
+			skill=6
+			attack_skill=2
+			defense_skill=7
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	BUL_asen_krasnovski={
 		advisor={
 			slot = political_advisor
-			idea_token = BUL_georgi_ivanov_kyoseivanov
+			idea_token = BUL_asen_krasnovski
 			allowed  = {
-					original_tag  = BUL
+					original_tag  = BUL 
 				}
 				traits  = {
-					backroom_backstabber 
+					fortification_engineer 
 				}
 		}
-		name="BUL_georgi_ivanov_kyoseivanov"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-	}
-	BUL_dobri_bozhilov={
-		advisor={
-			slot = political_advisor
-			idea_token = BUL_dobri_bozhilov
-			allowed  = {
-					original_tag  = BUL
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="BUL_dobri_bozhilov"
+		name="BUL_asen_krasnovski"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_2"
 			}
 		}
 	}
-	BUL_stoyan_stoyanov={
+	BUL_asen_daskalov={
 		advisor={
-			slot = high_command
-			idea_token = BUL_stoyan_stoyanov
-			ledger  = army 
+			slot = army_chief
+			idea_token = BUL_asen_daskalov
+			allowed  = {
+					original_tag  = BUL 
+				}
+				cost = 75
+				traits  = {
+					army_chief_defensive_3 
+				}
+		}
+		name="BUL_asen_daskalov"
+		portraits={
+			army={
+				small="GFX_idea_asen_daskalov"
+			}
+		}
+	}
+	BUL_sava_ivanov={
+		advisor={
+			slot = navy_chief
+			idea_token = BUL_sava_ivanov
+			ledger  = navy 
 				allowed  = {
-					original_tag  = BUL
+					original_tag  = BUL 
 				}
+				cost = 50
 				traits  = {
-					army_commando_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
+					navy_chief_commerce_raiding_2 
 				}
 		}
-		name="BUL_stoyan_stoyanov"
+		name="BUL_sava_ivanov"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_2"
-			}
-		}
-	}
-	BUL_konstantin_muraviev={
-		advisor={
-			slot = political_advisor
-			idea_token = BUL_konstantin_muraviev
-			allowed  = {
-					original_tag  = BUL
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="BUL_konstantin_muraviev"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
-	BUL_mahmud_bughra_khan={
-		advisor={
-			slot = political_advisor
-			idea_token = BUL_mahmud_bughra_khan
-			allowed  = {
-					original_tag  = BUL
-				}
-				traits  = {
-					fascist_demagogue 
-				}
-		}
-		name="BUL_mahmud_bughra_khan"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
+				small="GFX_idea_generic_navy_europe_1"
 			}
 		}
 	}
@@ -353,13 +679,11 @@ characters={
 			slot = navy_chief
 			idea_token = BUL_bonyu_stoev_pironkov
 			allowed  = {
-					original_tag  = BUL
+					original_tag  = BUL 
 				}
+				cost = 50
 				traits  = {
 					navy_naval_air_defense_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
 				}
 		}
 		name="BUL_bonyu_stoev_pironkov"
@@ -369,25 +693,239 @@ characters={
 			}
 		}
 	}
-	BUL_kiril_dimitrov_yanchule={
+	BUL_kiril_dimitrov_yanchulev={
+		advisor={
+			slot = army_chief
+			idea_token = BUL_kiril_dimitrov_yanchulev
+			allowed  = {
+					original_tag  = BUL 
+					has_dlc = "Battle for the Bosporus"
+				}
+				visible  = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				cost = 75
+				traits  = {
+					army_chief_organizational_2 
+				}
+		}
+		name="BUL_kiril_dimitrov_yanchulev"
+		portraits={
+			army={
+				small="GFX_idea_bul_kiril_yanchulev"
+			}
+		}
+	}
+	BUL_nikola_mikhov={
 		advisor={
 			slot = high_command
-			idea_token = BUL_kiril_dimitrov_yanchule
+			idea_token = BUL_nikola_mikhov
 			ledger  = army 
 				allowed  = {
+					original_tag  = BUL 
+				}
+				cost = 75
+				traits  = {
+					army_armored_2 
+				}
+		}
+		name="BUL_nikola_mikhov"
+		portraits={
+			army={
+				small="GFX_idea_nikola_mikhov"
+			}
+		}
+	}
+	BUL_nikola_zekhov={
+		advisor={
+			slot = high_command
+			idea_token = BUL_nikola_zekhov
+			ledger  = navy 
+				allowed  = {
+					original_tag  = BUL 
+				}
+				cost = 50
+				traits  = {
+					navy_chief_maneuver_3 
+				}
+		}
+		name="BUL_nikola_zekhov"
+		portraits={
+			army={
+				small="GFX_idea_nikola_zekhov"
+			}
+		}
+	}
+	BUL_aleksandur_tsankov={
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_aleksandur_tsankov
+			allowed  = {
+					original_tag  = BUL 
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="BUL_aleksandur_tsankov"
+		portraits={
+			army={
+				small="GFX_idea_aleksandur_tsankov"
+			}
+		}
+	}
+	BUL_stefan_nedev={
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_stefan_nedev
+			allowed  = {
+					original_tag  = BUL 
+					has_dlc = "La Resistance"
+				}
+				available  = {
+					has_intelligence_agency  = yes 
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="BUL_stefan_nedev"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	BUL_radoslav_zuikov={
+		advisor={
+			slot = political_advisor
+			idea_token = smooth_bul
+			allowed  = {
 					original_tag  = BUL
 				}
 				traits  = {
-					army_infantry_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
+					smooth_talking_charmer 
 				}
 		}
-		name="BUL_kiril_dimitrov_yanchule"
+		name="Radoslav Zuikov"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_2"
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	BUL_bul_air_tacticalbombing={
+		advisor={
+			slot = high_command
+			idea_token = bul_air_tacticalbombing
+			ledger  = air 
+				allowed  = {
+					original_tag  = BUL 
+				}
+				cost = 75
+				traits  = {
+					air_tactical_bombing_1 
+				}
+		}
+		name="Kosyo Ivov Borisov"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_warfare_theorist_african_2d"
+			}
+		}
+	}
+	BUL_dobri_bozhilov={
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_dobri_bozhilov
+			allowed  = {
+					original_tag  = BUL 
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="BUL_dobri_bozhilov"
+		portraits={
+			army={
+				small="GFX_idea_dobri_bozhilov"
+			}
+		}
+	}
+	BUL_pencho_zlatev={
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_pencho_zlatev
+			allowed  = {
+					original_tag  = BUL 
+				}
+				traits  = {
+					staunch_monarchist 
+				}
+		}
+		name="BUL_pencho_zlatev"
+		portraits={
+			army={
+				small="GFX_idea_pencho_zlatev"
+			}
+		}
+	}
+
+	BUL_ivan_variklechkov={
+		advisor={
+			slot = navy_chief
+			idea_token = BUL_ivan_variklechkov
+			ledger  = navy 
+				allowed  = {
+					original_tag  = BUL 
+				}
+				cost = 50
+				traits  = {
+					navy_submarine_3 
+				}
+		}
+		name="BUL_ivan_variklechkov"
+		portraits={
+			army={
+				small="GFX_idea_ivan_variklechkov"
+			}
+		}
+	}
+	BUL_gerasim_kirilov={
+		advisor={
+			slot = political_advisor
+			idea_token = armaments_bul
+			allowed  = {
+					original_tag  = BUL
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="Gerasim Kirilov"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	BUL_gancho_manchev={
+		advisor={
+			slot = high_command
+			idea_token = BUL_gancho_manchev
+			ledger  = army 
+				allowed  = {
+					original_tag  = BUL 
+				}
+				cost = 75
+				traits  = {
+					army_infantry_2 
+				}
+		}
+		name="BUL_gancho_manchev"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
 			}
 		}
 	}
@@ -395,63 +933,100 @@ characters={
 		advisor={
 			slot = air_chief
 			idea_token = BUL_vasil_boydev
-			allowed  = {
-					original_tag  = BUL
+			ledger  = air 
+				allowed  = {
+					original_tag  = BUL 
 				}
+				cost = 50
 				traits  = {
-					air_chief_ground_support_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
+					air_chief_ground_support_3 
 				}
 		}
 		name="BUL_vasil_boydev"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_3"
+				small="GFX_idea_vasil_boydev"
 			}
 		}
 	}
-	BUL_nikola_hadzipetkov={
+	BUL_nikola_petkov={
 		advisor={
-			slot = army_chief
-			idea_token = BUL_nikola_hadzipetkov
+			slot = political_advisor
+			idea_token = BUL_nikola_petkov
 			allowed  = {
-					original_tag  = BUL
+					original_tag  = BUL 
 				}
 				traits  = {
-					army_chief_offensive_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
+					captain_of_industry 
 				}
 		}
-		name="BUL_nikola_hadzipetkov"
+		name="BUL_nikola_petkov"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_3"
+				small="GFX_idea_nikola_petkov"
 			}
 		}
 	}
-	BUL_atanas_pavlov_zhilkov={
+	BUL_dimitar_stanchev={
 		advisor={
 			slot = high_command
-			idea_token = BUL_atanas_pavlov_zhilkov
+			idea_token = BUL_dimitar_stanchev
 			ledger  = army 
 				allowed  = {
-					original_tag  = BUL
+					original_tag  = BUL 
 				}
+				cost = 75
 				traits  = {
-					army_armored_3 
-				}
-				ai_will_do  = {
-					factor  = 1.000
+					army_chief_morale_3 
 				}
 		}
-		name="BUL_atanas_pavlov_zhilkov"
+		name="BUL_dimitar_stanchev"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_5"
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	BUL_vasil_boydev_bftb={
+		advisor={
+			slot = army_chief
+			idea_token = BUL_vasil_boydev_bftb
+			name  = BUL_vasil_boydev 
+				allowed  = {
+					original_tag  = BUL 
+					has_dlc = "Battle for the Bosporus"
+				}
+				visible  = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				cost = 75
+				traits  = {
+					army_chief_maneuver_2 
+				}
+		}
+		name="BUL_vasil_boydev_bftb"
+		portraits={
+			army={
+				small="GFX_idea_bul_vasil_boydev"
+			}
+		}
+	}
+	BUL_nikola_totev_markov={
+		advisor={
+			slot = navy_chief
+			idea_token = BUL_nikola_totev_markov
+			allowed  = {
+					original_tag  = BUL 
+				}
+				cost = 50
+				traits  = {
+					navy_chief_decisive_battle_1 
+				}
+		}
+		name="BUL_nikola_totev_markov"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
 			}
 		}
 	}
