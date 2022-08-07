@@ -250,18 +250,21 @@ on_actions = {
 				limit = {
 					original_tag = BEL
 				}
-				GER = {
-					transfer_state = 6
-					transfer_state = 34
-					transfer_state = 8
+				BEL = {
+					set_equipment_fraction = 1
+				}
+				FRA = {
+					transfer_state = 538
+					transfer_state = 718
+					transfer_state = 295
 					every_state = {
 						limit = {
 							is_core_of = BEL
 						}
-						set_compliance = 40
+						set_compliance = 100
 					}
 				}
-				FRA = {
+				GER = {
 					annex_country = {
 						target = BEL
 					}
@@ -269,9 +272,10 @@ on_actions = {
 						limit = {
 							is_core_of = BEL
 						}
-						set_compliance = 40
+						set_compliance = 100
 					}
 				}
+				
 			}
 			if = {
 				#GER

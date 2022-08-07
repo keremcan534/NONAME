@@ -45,6 +45,7 @@ foreign_politics = {
 				}
 			}
 			CAN = {
+			set_cosmetic_tag=CAN_FREE
 				annex_country = {
 					target = SAF
 					transfer_troops = yes

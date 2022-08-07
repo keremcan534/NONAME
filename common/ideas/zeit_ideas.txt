@@ -29,6 +29,10 @@ ideas = {
 		}
 	}
 	country = {
+		trade_deals={
+
+			
+		}
 		africa_hp = {
 			allowed = {
 				always = no

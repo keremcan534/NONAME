@@ -207,6 +207,9 @@ ideas = {
 			removal_cost = -1
 			available = {
 				always = yes
+				NOT = {
+					tag = USA
+				}
 			}
 			modifier = {
 				min_export = 0.8
@@ -235,16 +238,13 @@ ideas = {
 		}
 		limited_exports = {
 			available = {
+				NOT = {
+					tag = USA
+				}
 				OR = {
 					AND = {
 						has_government = democratic
 						has_war = yes
-						any_enemy_country = {
-							ic_ratio = {
-								tag = ROOT
-								ratio > 0.2
-							}
-						}
 					}
 					AND = {
 						NOT = {
@@ -271,6 +271,9 @@ ideas = {
 		}
 		closed_economy = {
 			available = {
+				NOT = {
+					tag = USA
+				}
 				has_war = yes
 				OR = {
 					has_government = fascism

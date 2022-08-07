@@ -126,3 +126,7 @@ MAN = {
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
 }
+SIA = {
+	color = rgb { 91 127 0 }
+	color_ui = rgb { 91 127 0 }
+}

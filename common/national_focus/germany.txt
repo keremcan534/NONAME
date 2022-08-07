@@ -712,7 +712,7 @@
 		x = 4
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 9
 		}
@@ -927,7 +927,7 @@
 		x = -1
 		y = 1
 		relative_position_id = GER_synthetic_rubber
-		cost = 5
+		cost = 10
 		available = {
 			or = {
 				has_war_with = SOV
@@ -1223,6 +1223,7 @@
 					instant_build = yes
 				}
 			}
+		
 		}
 		
 		SPR = {
@@ -1337,6 +1338,13 @@
 					autonomy_state = autonomy_satellite
 				}
 			}
+			hidden_effect={
+			ROM = {
+				give_resource_rights = {
+					receiver = GER
+					state = 46
+				}
+			}}
 		}
 	}
 	focus = {
@@ -1516,7 +1524,7 @@
 		icon = GFX_GER_Wehrmacht
 		x = 15
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2854,7 +2862,7 @@
 		icon = GFX_GER_Kriegsmarine
 		x = 28
 		y = 0
-		cost = 3
+		cost = 1
 		available_if_capitulated = yes
 		available = {
 		}
@@ -2983,7 +2991,7 @@
 		icon = GFX_GENERIC_Naval_School
 		x = 26
 		y = 1
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -3036,7 +3044,7 @@
 		icon = GFX_GENERIC_Marines
 		x = 30
 		y = 1
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -3148,7 +3156,7 @@
 		}
 		x = 28
 		y = 1
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 0.25
 		}

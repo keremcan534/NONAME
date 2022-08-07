@@ -11,6 +11,9 @@ set_popularities = {
 	neutrality = 100
 }
 recruit_character = PER_reza_shah_pahlavi
+recruit_character = PER_johannes_smith
+recruit_character = PER_johannes_wilson
+recruit_character = PER_lucas_wilson
 
 
 
