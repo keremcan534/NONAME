@@ -1254,6 +1254,9 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				mechanized_equipment={
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 		FRA_support_the_left_focus = {

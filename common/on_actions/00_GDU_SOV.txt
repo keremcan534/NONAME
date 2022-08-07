@@ -67,12 +67,12 @@ on_actions = {
 				
                 SOV  = { 
 
-                add_timed_idea = { idea = SOV_Danger_To_Heartland days = 730 } 
-               add_timed_idea = { idea = overextended1  days = 180 } 
+                add_timed_idea = { idea = SOV_Danger_To_Heartland days = 730 popup=yes } 
+               add_timed_idea = { idea = overextended1  days = 180 popup=yes} 
               }
             GER  = { 
 
-                add_timed_idea = { idea = overextended1  days = 180 } 
+                add_timed_idea = { idea = overextended1  days = 180 popup=yes} 
 
               }
 
@@ -106,7 +106,6 @@ on_actions = {
 						original_tag = HUN
 						original_tag = ROM
 						original_tag = BUL
-						original_tag = FIN
 						original_tag = SPR
 					}
 					FROM = { original_tag = SOV }
@@ -152,13 +151,13 @@ on_actions = {
 				
                 SOV  = { 
 
-                add_timed_idea = { idea = SOV_Heartland_Falling days = 730 } 
-                add_timed_idea = { idea = overextended2  days = 180 } 
+                add_timed_idea = { idea = SOV_Heartland_Falling days = 730 popup=yes } 
+                add_timed_idea = { idea = overextended2  days = 180 popup=yes} 
 
               }
 	            GER  = { 
 
-                add_timed_idea = { idea = overextended2  days = 180 } 
+                add_timed_idea = { idea = overextended2  days = 180 popup=yes } 
 
               }
 

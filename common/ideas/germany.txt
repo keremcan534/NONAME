@@ -1,5 +1,36 @@
 ideas = {
 	country = {
+		GER_free_repair={
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			modifier = {
+				industry_repair_factor = 0.1
+				industry_free_repair_factor = 0.25
+			}
+		}
+		GER_barb_railways={
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			modifier = {
+				production_speed_rail_way_factor=0.4
+			}
+		}
+		GER_barb_line={
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			modifier = {
+				army_speed_factor = 0.4
+			}
+		}
 		GER_blitz={
 			allowed = {
 				always = no
@@ -54,13 +85,14 @@ ideas = {
 			}
 		}
 		ger_infantry_expert = {
+			removal_cost = -1
+			picture = german_advisors
 			targeted_modifier = {
 				tag = SOV
-				army_infantry_defence_factor = 0.15
+				army_infantry_defence_factor = 0.1
 			}
 			modifier = {
 				army_speed_factor = 0.1
-				army_armor_speed_factor = -0.1
 			}
 		}
 		GER_triumph_in_france = {
@@ -386,6 +418,11 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = generic_acquire_tanks
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+			}
 			modifier = {
 				production_speed_air_base_factor = 0.35
 				production_speed_infrastructure_factor = 0.5

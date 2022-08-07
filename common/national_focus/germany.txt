@@ -2019,17 +2019,42 @@
 						idea = ger_infantry_expert
 						days = 400
 					}
+					add_timed_idea = {
+						idea = GER_barb_line
+						days = 10
+					}
+					add_timed_idea = {
+						idea = GER_barb_railways
+						days = 40
+					}
+					
 				}
 				BUL = {
+					add_timed_idea = {
+						idea = GER_barb_line
+						days = 10
+					}
 					add_ideas = GER_logistical_incompetence
 				}
 				ROM = {
+					add_timed_idea = {
+						idea = GER_barb_line
+						days = 10
+					}
 					add_ideas = GER_logistical_incompetence
 				}
 				HUN = {
+					add_timed_idea = {
+						idea = GER_barb_line
+						days = 10
+					}
 					add_ideas = GER_logistical_incompetence
 				}
 				SPR = {
+					add_timed_idea = {
+						idea = GER_barb_line
+						days = 10
+					}
 					add_ideas = GER_logistical_incompetence
 				}
 				add_popularity = {
@@ -2060,7 +2085,7 @@
 			focus = GER_ussr_war_goal
 		}
 		available = {
-			Date > 1943.5.1
+			Date > 1943.3.1
 		}
 		x = -1
 		y = 1
@@ -2069,9 +2094,48 @@
 		available_if_capitulated = no
 		completion_reward = {
 			
-			add_timed_idea = {idea=GER_zid
-		days=30
-		}
+			GER = {
+				add_timed_idea = {
+					idea = GER_zid
+					days = 70
+				}
+			}
+			ROM = {
+				add_timed_idea = {
+					idea = GER_zid
+					days = 70
+				}
+			}
+			HUN = {
+				add_timed_idea = {
+					idea = GER_zid
+					days = 70
+				}
+			}
+			BUL = {
+				add_timed_idea = {
+					idea = GER_zid
+					days = 70
+				}
+			}
+			FIN = {
+				add_timed_idea = {
+					idea = GER_zid
+					days = 70
+				}
+			}
+			ITA = {
+				add_timed_idea = {
+					idea = GER_zid
+					days = 70
+				}
+			}
+			SPR = {
+				add_timed_idea = {
+					idea = GER_zid
+					days = 70
+				}
+			}
 		}
 	}
 	focus = {
@@ -2100,7 +2164,7 @@
 		}
 		icon = GFX_focus_ger_reichskommisariats
 		available = {
-			Date > 1942.5.1
+			date > 1942.3.1
 			NOT = {
 				has_idea = GER_barbarossa
 			}
@@ -2114,13 +2178,12 @@
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			GER = {
-				add_timed_idea = {
-					idea = GER_blau
-					days = 70
+				GER = {
+					add_timed_idea = {
+						idea = GER_blau
+						days = 70
+					}
 				}
-			}
-			hidden_effect = {
 				ROM = {
 					add_timed_idea = {
 						idea = GER_blau
@@ -2157,8 +2220,8 @@
 						days = 70
 					}
 				}
-			}
-			custom_effect_tooltip = GER_barbarossa_others_text
+			
+
 		}
 	}
 	focus = {
@@ -2226,10 +2289,7 @@
 				threat = 5
 				name = GER_danzig_or_war
 			}
-			GER={
-				add_timed_idea={idea=GER_blitz
-			days=490}
-			}
+			
 			FRA = {
 				add_timed_idea = {
 					idea = FRA_phoney_war
@@ -2782,6 +2842,9 @@
 			custom_effect_tooltip = "    "
 			activate_mission = GER_relocate_industry_civ
 			activate_mission = GER_relocate_industry_mil
+			add_timed_idea={idea=GER_free_repair
+		days=25
+	}
 		}
 	}
 

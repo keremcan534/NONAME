@@ -3,7 +3,7 @@ equipments = {
 	fighter_equipment = {
 		year = 1933
 		is_archetype = yes
-		is_convertable = yes
+		
 		picture = archetype_fighter_equipment
 		is_buildable = no
 		type = { fighter interceptor }
@@ -31,7 +31,7 @@ equipments = {
 		naval_strike_targetting = 20
 
 		#Space taken in convoy
-		lend_lease_cost = 4
+		lend_lease_cost = 10
 		
 		build_cost_ic = 110
 		resources = {
@@ -45,7 +45,7 @@ equipments = {
 	CAS_equipment = {
 		year = 1933
 		is_archetype = yes
-		is_convertable = yes
+		
 		picture = archetype_CAS_equipment
 		is_buildable = no
 		type = { cas fighter }
@@ -53,7 +53,7 @@ equipments = {
 		sprite = light_plane
 		air_map_icon_frame = 2
 		carrier_capable = yes
-		lend_lease_cost = 4
+		lend_lease_cost = 7
 		interface_category = interface_category_air
 		
 		# CAS
@@ -91,7 +91,7 @@ equipments = {
 	
 
 		is_archetype = yes
-		is_convertable = yes
+		
 		picture = archetype_heavy_fighter_equipment		
 		is_buildable = no
 		type = naval_bomber
@@ -135,7 +135,7 @@ equipments = {
 	
 
 		is_archetype = yes
-		is_convertable = yes
+		
 		picture = archetype_fighter_equipment
 		is_buildable = no
 		type = fighter
@@ -447,7 +447,7 @@ equipments = {
 	rocket_interceptor_equipment = {
 		year = 1936
 		is_archetype = yes
-		is_convertable = yes
+		
 		can_license = no
 		picture = archetype_fighter_equipment
 		is_buildable = no
@@ -551,7 +551,6 @@ equipments = {
 		year = 1936
 
 		is_archetype = yes
-		is_convertable = no
 		can_license = no
 		picture = archetype_rocket_interceptor_equipment
 		is_buildable = no

@@ -2,6 +2,7 @@ foreign_politics = {
 	ENG_annex_saf = {
 		icon = generic_operation
 		available = {
+			date>1939.1.1
 			SAF = { is_ai = yes }
  		}
 		allowed = {

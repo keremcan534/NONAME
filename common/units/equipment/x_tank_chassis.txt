@@ -233,7 +233,7 @@ equipments = {
 		parent = gw_tank_equipment
 		priority = 10
 		visual_level = 0
-		is_convertable = yes
+		
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -270,7 +270,7 @@ equipments = {
 		parent = light_tank_equipment_1
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+		
 
 		#Misc Abilities
 		maximum_speed = 12
@@ -300,7 +300,7 @@ equipments = {
 		parent = light_tank_equipment_2
 		priority = 10
 		visual_level = 2
-		is_convertable = yes
+		
 
 		#Misc Abilities
 		maximum_speed = 14
@@ -330,9 +330,7 @@ equipments = {
 #		family = light_tank_equipment_1
 		priority = 20
 		visual_level = 0
-		can_convert_from = { 
-			light_tank_equipment_1 
-		}
+	
 
 		
 
@@ -369,10 +367,7 @@ equipments = {
 #		family = light_tank_equipment_2
 		priority = 20
 		visual_level = 1
-		can_convert_from = { 
-			light_tank_equipment_1 
-			light_tank_equipment_2
-		}
+	
 		
 		#Misc Abilities
 		maximum_speed = 12
@@ -402,10 +397,7 @@ equipments = {
 #		family = light_tank_equipment_3
 		priority = 20
 		visual_level = 2
-		can_convert_from = { 
-			light_tank_equipment_2
-			light_tank_equipment_3
-		}
+	
 		
 		#Misc Abilities
 		maximum_speed = 14
@@ -434,9 +426,7 @@ equipments = {
 #		family = light_tank_equipment_1
 		priority = 40
 		visual_level = 0
-		can_convert_from = { 
-			light_tank_equipment_1 
-		}
+		
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -471,10 +461,7 @@ equipments = {
 #		family = light_tank_equipment_2
 		priority = 40
 		visual_level = 1
-		can_convert_from = { 
-			light_tank_equipment_1 
-			light_tank_equipment_2
-		}
+		
 		
 		#Misc Abilities
 		maximum_speed = 12
@@ -506,10 +493,7 @@ equipments = {
 #		family = light_tank_equipment_3
 		priority = 40
 		visual_level = 2
-		can_convert_from = { 
-			light_tank_equipment_2
-			light_tank_equipment_3
-		}
+		
 
 		#Misc Abilities
 		maximum_speed = 14
@@ -539,9 +523,7 @@ equipments = {
 #		family = light_tank_equipment_1
 		priority = 30
 		visual_level = 0
-		can_convert_from = { 
-			light_tank_equipment_1 
-		}
+	
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -575,10 +557,7 @@ equipments = {
 #		family = light_tank_equipment_2
 		priority = 30
 		visual_level = 1
-		can_convert_from = { 
-			light_tank_equipment_1 
-			light_tank_equipment_2
-		}
+	
 		
 		#Misc Abilities
 		maximum_speed = 12
@@ -609,10 +588,6 @@ equipments = {
 #		family = light_tank_equipment_3
 		priority = 30
 		visual_level = 2
-		can_convert_from = { 
-			light_tank_equipment_2
-			light_tank_equipment_3
-		}
 		
 		#Misc Abilities
 		maximum_speed = 14
@@ -641,7 +616,7 @@ equipments = {
 		archetype = medium_tank_chassis
 		priority = 50
 		visual_level = 0
-		is_convertable = yes
+		
 		
 		#Misc Abilities
 		maximum_speed = 8
@@ -680,7 +655,7 @@ equipments = {
 		parent = medium_tank_equipment_1
 		priority = 50
 		visual_level = 1
-		is_convertable = yes
+		
 						
 		#Misc Abilities
 		maximum_speed = 9
@@ -712,7 +687,7 @@ equipments = {
 		parent = medium_tank_equipment_2
 		priority = 50
 		visual_level = 2
-		is_convertable = yes
+		
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -743,9 +718,7 @@ equipments = {
 #		family = medium_tank_equipment_1
 		priority = 60
 		visual_level = 0
-		can_convert_from = { 
-			medium_tank_equipment_1 
-		}
+	
 		
 		#Misc Abilities
 		maximum_speed = 8
@@ -781,10 +754,7 @@ equipments = {
 #		family = medium_tank_equipment_2
 		priority = 60
 		visual_level = 1
-		can_convert_from = { 
-			medium_tank_equipment_1 
-			medium_tank_equipment_2
-		}
+		
 
 		#Misc Abilities
 		maximum_speed = 9
@@ -815,10 +785,7 @@ equipments = {
 #		family = medium_tank_equipment_3
 		priority = 60
 		visual_level = 2
-		can_convert_from = { 
-			medium_tank_equipment_2
-			medium_tank_equipment_3
-		}
+		
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -848,9 +815,7 @@ equipments = {
 #		family = medium_tank_equipment_1
 		priority = 80
 		visual_level = 0
-		can_convert_from = { 
-			medium_tank_equipment_1 
-		}
+	
 		
 		#Misc Abilities
 		maximum_speed = 8
@@ -887,10 +852,7 @@ equipments = {
 #		family = medium_tank_equipment_2
 		priority = 80
 		visual_level = 1
-		can_convert_from = { 
-			medium_tank_equipment_1 
-			medium_tank_equipment_2
-		}
+		
 
 		#Misc Abilities
 		maximum_speed = 9
@@ -923,10 +885,7 @@ equipments = {
 #		family = medium_tank_equipment_3
 		priority = 80
 		visual_level = 2
-		can_convert_from = { 
-			medium_tank_equipment_2
-			medium_tank_equipment_3
-		}
+	
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -957,9 +916,7 @@ equipments = {
 #		family = medium_tank_equipment_1
 		priority = 70
 		visual_level = 0
-		can_convert_from = { 
-			medium_tank_equipment_1 
-		}
+		
 		
 		#Misc Abilities
 		maximum_speed = 8
@@ -995,10 +952,7 @@ equipments = {
 #		family = medium_tank_equipment_2
 		priority = 70
 		visual_level = 1
-		can_convert_from = { 
-			medium_tank_equipment_1 
-			medium_tank_equipment_2
-		}
+		
 
 		#Misc Abilities
 		maximum_speed = 9
@@ -1031,10 +985,7 @@ equipments = {
 #		family = medium_tank_equipment_3
 		priority = 70
 		visual_level = 2
-		can_convert_from = { 
-			medium_tank_equipment_2
-			medium_tank_equipment_3
-		}
+		
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -1066,7 +1017,7 @@ equipments = {
 		archetype = heavy_tank_chassis
 		priority = 90
 		visual_level = 0
-		is_convertable = yes
+		
 
 		#Misc Abilities
 		maximum_speed = 5
@@ -1107,7 +1058,7 @@ equipments = {
 		parent = heavy_tank_equipment_1
 		priority = 90
 		visual_level = 1
-		is_convertable = yes
+		
 		
 		#Misc Abilities
 		maximum_speed = 6
@@ -1138,7 +1089,7 @@ equipments = {
 		parent = heavy_tank_equipment_2
 		priority = 90
 		visual_level = 2
-		is_convertable = yes
+		
 
 		#Misc Abilities
 		maximum_speed = 6
@@ -1166,9 +1117,7 @@ equipments = {
 
 		archetype = heavy_tank_artillery_chassis
 		family = heavy_tank_equipment_1
-		can_convert_from = { 
-			heavy_tank_equipment_1 
-		}
+		
 		priority = 100
 		visual_level = 0
 
@@ -1203,10 +1152,7 @@ equipments = {
 		archetype = heavy_tank_artillery_chassis
 		parent = heavy_tank_artillery_equipment_1
 		family = heavy_tank_equipment_2
-		can_convert_from = { 
-			heavy_tank_equipment_1 
-			heavy_tank_equipment_2
-		}
+		
 		priority = 100
 		visual_level = 1
 
@@ -1236,10 +1182,7 @@ equipments = {
 		archetype = heavy_tank_artillery_chassis
 		parent = heavy_tank_artillery_equipment_2
 		family = heavy_tank_equipment_3
-		can_convert_from = { 
-			heavy_tank_equipment_2
-			heavy_tank_equipment_3
-		}
+		
 		priority = 100
 		visual_level = 2
 
@@ -1267,9 +1210,7 @@ equipments = {
 
 		archetype = heavy_tank_destroyer_chassis
 		family = heavy_tank_equipment_1
-		can_convert_from = { 
-			heavy_tank_equipment_1 
-		}
+		
 		priority = 120
 		visual_level = 0
 	
@@ -1304,10 +1245,7 @@ equipments = {
 		archetype = heavy_tank_destroyer_chassis
 		parent = heavy_tank_destroyer_equipment_1
 		family = heavy_tank_equipment_2
-		can_convert_from = { 
-			heavy_tank_equipment_1
-			heavy_tank_equipment_2
-		}
+		
 		priority = 120
 		visual_level = 1
 
@@ -1339,10 +1277,7 @@ equipments = {
 		archetype = heavy_tank_destroyer_chassis
 		parent = heavy_tank_destroyer_equipment_2
 		family = heavy_tank_equipment_3
-		can_convert_from = { 
-			heavy_tank_equipment_2
-			heavy_tank_equipment_3
-		}
+		
 		priority = 120
 		visual_level = 2
 		
@@ -1373,9 +1308,7 @@ equipments = {
 
 		archetype = heavy_tank_aa_chassis
 		family = heavy_tank_equipment_1
-		can_convert_from = { 
-			heavy_tank_equipment_1
-		}
+		
 		priority = 110
 		visual_level = 0
 		
@@ -1410,10 +1343,7 @@ equipments = {
 		archetype = heavy_tank_aa_chassis
 		parent = heavy_tank_aa_equipment_1
 		family = heavy_tank_equipment_2
-		can_convert_from = { 
-			heavy_tank_equipment_1
-			heavy_tank_equipment_2
-		}
+		
 		priority = 110
 		visual_level = 1
 
@@ -1445,10 +1375,7 @@ equipments = {
 		archetype = heavy_tank_aa_chassis
 		parent = heavy_tank_aa_equipment_2
 		family = heavy_tank_equipment_3
-		can_convert_from = { 
-			heavy_tank_equipment_2
-			heavy_tank_equipment_3
-		}
+		
 		priority = 110
 		visual_level = 2
 		
@@ -1483,7 +1410,7 @@ equipments = {
 		archetype = modern_tank_chassis
 		priority = 170
 		visual_level = 0
-		is_convertable = yes
+		
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -1520,9 +1447,7 @@ equipments = {
 		archetype = modern_tank_artillery_chassis
 		priority = 180
 		visual_level = 0
-		can_convert_from = { 
-			modern_tank_equipment_1 
-		}
+		
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -1556,9 +1481,7 @@ equipments = {
 		archetype = modern_tank_destroyer_chassis
 		priority = 200
 		visual_level = 0
-		can_convert_from = { 
-			modern_tank_equipment_1 
-		}
+	
 	
 		#Misc Abilities
 		maximum_speed = 10
@@ -1593,9 +1516,7 @@ equipments = {
 		archetype = modern_tank_aa_chassis
 		priority = 190
 		visual_level = 0
-		can_convert_from = { 
-			modern_tank_equipment_1 
-		}
+		
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -1629,7 +1550,7 @@ equipments = {
 		archetype = super_heavy_tank_chassis
 		priority = 130
 		visual_level = 0
-		is_convertable = yes
+		
 
 		#Misc Abilities
 		maximum_speed = 4
@@ -1666,9 +1587,7 @@ equipments = {
 		archetype = super_heavy_tank_artillery_chassis
 		priority = 140
 		visual_level = 0
-		can_convert_from = { 
-			super_heavy_tank_equipment_1 
-		}
+	
 	
 		#Misc Abilities
 		maximum_speed = 4
@@ -1701,9 +1620,7 @@ equipments = {
 		archetype = super_heavy_tank_destroyer_chassis
 		priority = 160
 		visual_level = 0
-		can_convert_from = { 
-			super_heavy_tank_equipment_1 
-		}
+		
 	
 		#Misc Abilities
 		maximum_speed = 4
@@ -1736,9 +1653,7 @@ equipments = {
 		archetype = super_heavy_tank_aa_chassis
 		priority = 150
 		visual_level = 0
-		can_convert_from = { 
-			super_heavy_tank_equipment_1 
-		}
+		
 	
 		#Misc Abilities
 		maximum_speed = 4
@@ -1771,10 +1686,8 @@ equipments = {
 		archetype = amphibious_tank_chassis
 		priority = 10
 		visual_level = 0
-		is_convertable = yes
-		can_convert_from = { 
-			light_tank_equipment_2
-		}
+		
+	
 
 	
 
@@ -1812,11 +1725,6 @@ equipments = {
 		parent = amphibious_tank_equipment_1
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
-		can_convert_from = { 
-			medium_tank_equipment_1 
-		}
-
 		#Misc Abilities
 		maximum_speed = 8
 

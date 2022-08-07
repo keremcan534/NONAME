@@ -131,6 +131,10 @@ on_actions = {
 			days=486
 			}
 					}
+					GER={
+						add_timed_idea={idea=GER_blitz
+					days=490}
+					}
 				fall_of_france=yes
 			
 			}
