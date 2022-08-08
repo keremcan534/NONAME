@@ -118,7 +118,7 @@ leader_attack_skills = {
 		cost = 1600
 		type = corps_commander
 		modifier = {
-			offence = 0.8
+			offence = 0.08
 		}
 	}
 

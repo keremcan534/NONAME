@@ -243,7 +243,7 @@
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-add_ideas = british_austerity_idea
+
 
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -288,6 +288,7 @@ add_ideas = british_austerity_idea
 		cost = 10
 		completion_reward = {
 			add_ideas=partial_economic_mobilisation
+			add_ideas = british_austerity_idea
 		}
 	}
 	focus = {
