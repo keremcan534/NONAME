@@ -1,7 +1,7 @@
 ------------GAME----------
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 480
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 20
-NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0 , 0.3, 0.2, 0.04, 0.0 } -- vanilla is 2/0.5/0.2/0.1/0; Speed 1 is functionally a host enforced pause (100 minutes per hour), speed 2 is slightly slower in case of some extreme issues requiring it (you will almost never use this), speed 3 is unchanged as game is balanced around vanilla speed 3, speed 4 is for faster macro without slowdown, speed 5 is vanilla
+NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0 , 0.3, 0.2, 0.035, 0.0 } -- vanilla is 2/0.5/0.2/0.1/0; Speed 1 is functionally a host enforced pause (100 minutes per hour), speed 2 is slightly slower in case of some extreme issues requiring it (you will almost never use this), speed 3 is unchanged as game is balanced around vanilla speed 3, speed 4 is for faster macro without slowdown, speed 5 is vanilla
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	 -- WAS 60 	| less messages lying around at the top of your screen
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3		-- Default days before a mission is removed from the interface after having failed or completed
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12				-- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
@@ -121,10 +121,10 @@ NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 0
 ---------------------------------------------------------------
 
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.05 --vanilla 0.1, controls onmap movement speed of navies, not in battle (?); affects naval invasions
-NDefines.NNavy.CARRIER_STACK_PENALTY = 2							--vanilla 0.2			max carriers is 2	vanilla 4		-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
+NDefines.NNavy.CARRIER_STACK_PENALTY = 2    -- The most efficient is 2 carriers in combat. 3+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- vanilla 0.6 org will clamped to this ratio on manual move 
-NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.8
-NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.3
+NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.9
+NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.35
 NDefines.NNavy.GUN_HIT_PROFILES = { -- 145 torps 80 heavy 45 light in vanilla  hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,	-- big guns
 		103.0,	-- torpedos - because of torpedo reveal chance -20% in doctrine, 92 hit chance should be roughly equal to the -20%; with hitprofile of 1000 it was 96 hit chance with 102 profile, now 118 hit chance with 92 profile
@@ -173,12 +173,12 @@ NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT = 0.15	-- van
 NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS		= 0 --Vanilla 0.05, -- each ship that joins the combat will have this penalty to be added into positioning
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 					= 0 --Vanilla0.5,  -- the accumulated penalty from new ships will be clamped to this value
 NDefines.NNavy.POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS			= 0 --Vanilla0.002,-- the accumulated penalty from new ships will decay hourly by this value
-NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0 --Vanilla 0.5,  -- screening efficiency (screen to capital ratio) at 0% positioning
-NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING					= 0 --Vanilla 0.7,  -- AA penalty at 0% positioning
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.1 --Vanilla 0.5,  -- screening efficiency (screen to capital ratio) at 0% positioning
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING					= 1 --Vanilla 0.7,  -- AA penalty at 0% positioning
 
 NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING 							= 0.70 --Vanilla 0.5,	-- damage penalty at 0% positioning 
-NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.5  --Vanilla 0.25, -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 1 --Vanilla 0.5  -- maximum penalty to get from larger fleets
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.4  --Vanilla 0.25, -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 0.8 --Vanilla 0.5  -- maximum penalty to get from larger fleets
 NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE 								= 0.6 --Vanilla  0.5								-- required naval supremacy to perform invasions on an area
 NDefines.NNavy.BASE_ESCAPE_SPEED = 0.135                                   -- daily base escape speed (gained as percentagE)
 

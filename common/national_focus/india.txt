@@ -1596,6 +1596,9 @@ focus_tree = {
 		prerequisite = { focus = RAJ_strengthen_ties_with_british_investors }
 		x = 0
 		y = 2
+		available = {
+			threat>0.15
+		}
 		relative_position_id = RAJ_strengthen_ties_with_british_investors
 		cost = 10
 		cancel_if_invalid = yes

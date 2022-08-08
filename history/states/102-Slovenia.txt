@@ -2,9 +2,6 @@
 state={
 	id=102
 	name="STATE_102"
-resources={
-		tungsten=20
-	}
 	history={
 		owner = YUG
 		buildings = {

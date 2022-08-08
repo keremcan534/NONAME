@@ -624,6 +624,7 @@
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
+			add_ideas = british_fighter_discount
 		}
 	}
 	focus = {

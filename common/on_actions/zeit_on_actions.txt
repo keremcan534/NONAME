@@ -69,8 +69,6 @@ on_actions = {
 	
 	on_capitulation = {
 		effect = {
-
-
 			if = {
 				#HOL
 				limit = {
@@ -129,12 +127,12 @@ on_actions = {
 					}
 				}
 				add_timed_idea={idea=africa_hp
-			days=490
+			days=200
 			}
 					}
 					GER={
 						add_timed_idea={idea=GER_blitz
-					days=490}
+					days=200}
 					}
 				fall_of_france=yes
 			

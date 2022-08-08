@@ -41,9 +41,9 @@ NDefines.NAir.ACE_EARN_CHANCE_PLANES_MULT = 0				-- The more airplanes the wing 
 
 
 
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 0 -- WAS 500
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 3 -- WAS 500
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1000		   -- WAS 500
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9000 -- WAS 500
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9000 -- WAS 500
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9000		   -- WAS 500
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 500					-- changed as all generals/FMs are pre-done and not meant to be changed - cost of promoting a leader
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 0				-- num stats gained on level up
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4
@@ -265,9 +265,9 @@ NDefines.NCountry.RESOURCE_IMPORTANCE_FACTOR = 0               -- State resource
 NDefines.NCountry.FRONT_PROVINCE_SCORE = 0   					-- Max province score of a front. Used for the hostile troop alert
 ---------------------------------------------------------------
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun    
-NDefines.NNavy.FIELD_EXPERIENCE_SCALE = 0									-- NAVAL EXPERIENCE REMOVED AS THE FUEL SYSTEM MAKES FUEL AND THUS NAVAL EXPERIENCE INFINITELY AVAILABLE -Thrasymachus
-NDefines.NNavy.FIELD_EXPERIENCE_MAX_PER_DAY = 0								-- NAVAL EXPERIENCE REMOVED AS THE FUEL SYSTEM MAKES FUEL AND THUS NAVAL EXPERIENCE INFINITELY AVAILABLE -Thrasymachus
-NDefines.NNavy.TRAINING_MAX_DAILY_COUNTRY_EXP = 0							-- Maximum navy XP daily gain
+NDefines.NNavy.FIELD_EXPERIENCE_SCALE = 0.75									-- NAVAL EXPERIENCE REMOVED AS THE FUEL SYSTEM MAKES FUEL AND THUS NAVAL EXPERIENCE INFINITELY AVAILABLE -Thrasymachus
+NDefines.NNavy.FIELD_EXPERIENCE_MAX_PER_DAY = 50								-- NAVAL EXPERIENCE REMOVED AS THE FUEL SYSTEM MAKES FUEL AND THUS NAVAL EXPERIENCE INFINITELY AVAILABLE -Thrasymachus
+NDefines.NNavy.TRAINING_MAX_DAILY_COUNTRY_EXP = 1							-- Maximum navy XP daily gain
 
 NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3 --swapped prio so imports go first
 NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3
