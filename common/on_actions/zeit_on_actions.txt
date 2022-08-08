@@ -21,11 +21,12 @@ on_actions = {
 			}
 			every_country = {
 				limit={
+
 					the_axis=yes
 				}
 				add_timed_idea = {
 					idea=trade_blocked
-					days=1122
+					days=1340
 				}
 			}
 			every_country = {
