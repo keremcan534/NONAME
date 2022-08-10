@@ -23,6 +23,7 @@ add_ideas={
 	general_staff
 	GER_autarky_idea_minor
 	SPR_no_armada
+	axis_trade_idea
 }
 add_timed_idea={
 	idea=SPA_recovering_from_civil_war

@@ -209,17 +209,23 @@
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 10
 		y = 0
-		cost = 10
+		cost = 0
 		available = {
+			
+			OR={
 			GER = {
 				has_completed_focus = GER_anschluss
 			}
-			date > 1938.1.1
+			date > 1938.1.1}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 4
+			}
 		}
 	}
 	focus = {
@@ -440,6 +446,7 @@
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = {
 			focus = FRA_mechanized_focus
+			focus = FRA_artillery_focus
 		}
 		x = 0
 		y = 1

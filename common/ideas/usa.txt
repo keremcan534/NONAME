@@ -8,7 +8,7 @@ ideas = {
 				has_government = democratic
 			}
 			removal_cost = -1
-			picture = generic_goods_red_bonus
+			picture = GENERIC_Economic_Compromise
 			modifier = {
 				production_speed_industrial_complex_factor = 0.6
 			}
@@ -27,6 +27,7 @@ ideas = {
 			}
 		}
 		USA_dont_invade_free_europe = {
+			picture = GENERIC_Crisis
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = -0.9

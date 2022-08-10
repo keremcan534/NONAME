@@ -1,4 +1,4 @@
-DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {	if = { limit = {FROM = { tag = FRA   } }  FRA = { has_country_flag = fall_of_france }  } 
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {	if = { limit = {FROM = { tag = FRA   } }  FRA = {NOT={ has_country_flag = fall_of_france }  } }
 NOT={original_tag=JAP}
 }
 DIPLOMACY_WAR_ENABLE_TRIGGER = {always = no }

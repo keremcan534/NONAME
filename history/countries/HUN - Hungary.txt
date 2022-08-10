@@ -11,8 +11,9 @@ set_convoys = 100
 add_ideas = {
 	general_staff
 	GER_autarky_idea_minor
-disarmed_nation
-HUN_treaty_of_triannon
+	axis_trade_idea
+	disarmed_nation
+	HUN_treaty_of_triannon
 }
 set_politics = {
 	ruling_party = neutrality

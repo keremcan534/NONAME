@@ -183,14 +183,16 @@ characters = {
 		}
 
 		corps_commander = { #18/17   as CORPS COMMANDER; 9.5 + 9  AS FM
-						
-	traits = { trait_engineer fortress_buster ranger fast_planner organisational_leader thorough_planner panzer_leader panzer_expert brilliant_strategist  aggressive_assaulter   winter_specialist winter_expert   }
+		
+	traits = { offensive_doctrine trait_engineer fortress_buster ranger fast_planner organisational_leader thorough_planner panzer_leader panzer_expert brilliant_strategist  aggressive_assaulter   winter_specialist winter_expert   }
 	skill = 7
-	attack_skill = 4
+	attack_skill = 6
 	defense_skill = 2
 	planning_skill = 8
 	logistics_skill = 8
-			visible = {  }
+			visible = { SOV={
+				has_completed_focus=SOV_hero_of_the_union
+			} }
 		}
 
 		advisor = {
@@ -238,7 +240,7 @@ characters = {
 			}
 			
 			traits = {
-				army_armored_3
+				army_armored_2
 			}
 				cost = 75
 			ai_will_do = {
@@ -1722,23 +1724,12 @@ characters = {
 			traits = {
 				army_chief_defensive_2
 			}
-			available = { always = no }
+			available = {}
 			cost = 75
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
-
-		field_marshal = { #PURGED
-			traits = { career_officer inflexible_strategist trait_reckless }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 2
-			legacy_id = 0
-			visible = {always = no }
-		}	
 	}
 
 	SOV_vasily_blyukher = {
@@ -1759,22 +1750,12 @@ characters = {
 				army_chief_maneuver_2
 			}
 			cost = 75
-			available = {always = no}
+			available = {}
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 
-		field_marshal = { #PURGED
-			traits = { old_guard career_officer infantry_officer organizer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 3
-			logistics_skill = 4
-			legacy_id = 0
-			visible = {always = no }
-		}
 	}
 
 	SOV_aleksandr_novikov = {

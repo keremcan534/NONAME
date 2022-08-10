@@ -260,6 +260,23 @@ characters={
 			}
 		}
 		advisor={
+			slot = high_command
+			idea_token = bernard_montgomery
+			ledger = army
+			allowed = {
+				original_tag = ENG
+			}
+			cost = 200
+			
+			traits = {
+				army_god
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		advisor={
 			cost = 150
 			slot = theorist
 			idea_token = bernard_montgomery
@@ -777,39 +794,7 @@ characters={
 		}
 	}
 
-	ENG_alan_turing={
-		name=ENG_alan_turing
-		portraits={
-			army={
-				small="GFX_idea_eng_alan_turing"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = eng_alan_turing
-			available  = {
-				has_intelligence_agency  = yes 
-				custom_trigger_tooltip  = {
-					tooltip  = cyptology_tooltip_tt
-					has_done_agency_upgrade  = upgrade_form_department 
-				}
-			}
-			ai_will_do  = {
-				factor  = 1.000
-				modifier  = {
-					has_political_power < 200.000
-					factor  = 0.000
-				}
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "La Resistance"
-			}
-			traits  = {
-				mastermind_code_cracker 
-			}
-		}
-	}
+
 	
 	
 	

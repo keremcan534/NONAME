@@ -14,28 +14,49 @@ NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 40.0 -- Vanilla 30, reduced to
 NDefines.NProduction.CONVERSION_SPEED_BONUS = -2.2 -- ADDED TO COUNTER CHEATERS WHO USE THE CONVERSION EXPLOIT W/ GFX MODS	
 	
 -----------------------------IMPORTANT LAND COMBAT DEFINES--------------------------------------
-NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.78    -- vanilla 0.68  | 10% more equipment losses than vanilla  % of equipment lost to strength ratio in combat, so some % is returned if below 1
-NDefines.NMilitary.PLANNING_MAX = 0.10 -- Vanilla is 0.30 ; nerfed along with entrenchment so both build up faster resulting in more dynamic gameplay with opportunities for faster recovery
+NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.8    -- vanilla 0.68  | 10% more equipment losses than vanilla  % of equipment lost to strength ratio in combat, so some % is returned if below 1
+NDefines.NMilitary.PLANNING_MAX = 0.13 -- Vanilla is 0.30 ; nerfed along with entrenchment so both build up faster resulting in more dynamic gameplay with opportunities for faster recovery
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.25                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
-NDefines.NMilitary.UNIT_DIGIN_CAP = 3                           --   vanilla 10 | "how "deep" you can dig you can dig in until hitting max bonus
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.03  -- vanilla 0.04 | 75% of vanilla CAS ORG damage 
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.025 	--air global damage modifier
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT =	-0.1 	--effect on speed due to enemy air superiority
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.3 	--effect on defense due to enemy air superiority
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.3	--more AA attack will approach this amount of help (diminishing returns)
+NDefines.NAir.FUEL_COST_MULT = 0.25 -- (0.35) fuel multiplier for all air missions 
+NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 130
+NDefines.NAir.DISRUPTION_FACTOR = 7  -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
+--antiair
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1 -- (1.0) Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA. 
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.6 -- (.75) Maximum damage reduction factor applied to incoming air attacks against units with AA.
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT =	0.0001 	-- WAS 0.005 | Lowered because vanilla CAS shootdown rates are too high | Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE =	0.02 	-- (0.07) Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
+
+
+NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.55 -- (0.50) fuel cost multiplier for all army related stuff
+NDefines.NMilitary.UNIT_DIGIN_CAP = 5                           --   vanilla 10 | "how "deep" you can dig you can dig in until hitting max bonus
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 0 		-- VANILLA 1 - changed to force tanks into battle first (most of the time) |   Multiplier on TotalOrganisation when determining the combat value of a division
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 		-- VANILLA 1  - changed to force tanks into battle first (most of the time)    |  Multiplier on TotalStrength when determining the combat value of a division
-NDefines.NMilitary.REINFORCE_CHANCE = 0.04 --vanilla 0.02
+NDefines.NMilitary.REINFORCE_CHANCE = 0.05 --vanilla 0.02
 NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -0.5 --vanilla -1	-- Malus in percentage for the planning bonus gain for naval invasions
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.5                 -- percentage of experienced solders who die when manpower is removed
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0005
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.25                 -- vanilla -0.30 | small river crossing
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.30          -- vanilla -0.6 | large river crossing
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5  -- WAS 3, reduced to 0.5 so less CAS is needed in battles
---NDefines.NMilitary.COMBAT_MINIMUM_TIME = 1                    --VANILLA 4; Changed so micro feels more fluid, shouldnt affect gameplay much in practical terms
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1  -- WAS 3, reduced to 0.5 so less CAS is needed in battles
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.08       -- WAS 0.25 
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001 				-- WAS 0.005 | Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.|
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.25            -- vanilla is 0.2, GDU-like change (0.25 in GDU)
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.95	    --vanilla 0.4  | eventually armor will be reworked when paradox finally releases their armor rework
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.75		--vanilla 0.4
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.03  -- vanilla 0.04 | 75% of vanilla CAS ORG damage 
+
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.7 | defend combat penalty for attacker if out of supply
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.20 |  attack combat penalty for attacker if out of supply
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 1 -- damage reduction if armor outclassing enemy
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.45                   -- speed bonus when retreating
+NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.30                -- speed bonus when withdrawing
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.0		-- speed impact at 0 org.
+
 ------------------------end of defines relevant to land combat
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.15       -- vanilla 0.05 -- Each level of navalbase building repairs X strength and can repair as many ships as its level
 NDefines.NBuildings.DESTRUCTION_COOLDOWN_IN_WAR = 9999 --anti-exploit
@@ -63,7 +84,7 @@ NDefines.NProduction.BASE_LICENSE_IC_COST = 0 -- Was 1, reduced to counter early
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0				-- IC cost equipment for every year of equipment after 1936
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0        -- WAS 0.1, removed because there are really only 2 factions in game | MIC speed modifier for licensed equipment for not being in faction
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.25 -- vanilla 2.5
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.9 -- vanilla 4.75
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.85 -- vanilla 4.75
 
 NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.1 --vanilla 0.2	-- Minimum fraction of an equipment type's base industry capacity cost to use when converting a naval equipment, such as through ship refitting.
 

@@ -12,6 +12,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+				training_time_army_factor = -0.8
+				attrition = -1
+				
 				production_lack_of_resource_penalty_factor = -1
 				industrial_capacity_factory = 7
 				production_factory_efficiency_gain_factor = 10

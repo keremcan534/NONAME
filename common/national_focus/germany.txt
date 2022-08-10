@@ -2013,10 +2013,6 @@
 			SOV={declare_on_axis=yes}}
 				SOV = {
 					add_timed_idea = {
-						idea = SOV_airports_devastated
-						days = 30
-					}
-					add_timed_idea = {
 						idea = SOV_debuff_1
 						days = 60
 					}

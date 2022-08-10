@@ -28,7 +28,7 @@ equipments = {
 		naval_strike_attack = 8
 		naval_strike_targetting = 8
 		#Space taken in convoy
-		lend_lease_cost = 5
+		lend_lease_cost = 10
 		build_cost_ic = 154
 		resources = {
 			#oil = 1
@@ -79,7 +79,7 @@ equipments = {
 		
 		picture = archetype_strat_bomber_equipment
 		is_buildable = no
-		lend_lease_cost = 5
+		lend_lease_cost = 10
 		type = {
 			fighter
 			interceptor

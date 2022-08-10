@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-	victor_emmanuel = {
+		victor_emmanuel = {
 			allowed = {
 				original_tag = ITA
 			}
@@ -41,8 +41,8 @@ ideas = {
 			picture = GER_Volksgemeinschaft
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.15
-				global_building_slots_factor = 0.30
-				production_speed_arms_factory_factor = 0.10
+				global_building_slots_factor = 0.3
+				production_speed_arms_factory_factor = 0.1
 				production_speed_industrial_complex_factor = 0.075
 				production_speed_dockyard_factor = 0.15
 			}
@@ -160,7 +160,7 @@ ideas = {
 			modifier = {
 				air_manufacturer_cost_factor = -1
 			}
-			cost=100
+			cost = 100
 		}
 		savoia_marchetti = {
 			allowed = {
@@ -170,7 +170,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = {
-				medium_aircraft_manufacturer
+				CAS_manufacturer
 			}
 			modifier = {
 				air_manufacturer_cost_factor = -1
@@ -184,13 +184,12 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = {
-				naval_aircraft_manufacturer
+				assault_naval_aircraft_manufacturer
 			}
 			modifier = {
 				air_manufacturer_cost_factor = -1
 			}
-			cost=100
-
+			cost = 100
 		}
 		piaggio = {
 			allowed = {
@@ -205,8 +204,7 @@ ideas = {
 			modifier = {
 				air_manufacturer_cost_factor = -1
 			}
-			cost=100
-
+			cost = 100
 		}
 	}
 	industrial_concern = {
@@ -225,26 +223,26 @@ ideas = {
 	naval_manufacturer = {
 		designer = yes
 		crda = {
-			cost=50
+			cost = 50
 			allowed = {
 				original_tag = ITA
 			}
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			equipment_bonus={
-				capital_ship={
-					build_cost_ic=-0.1
-					hg_attack = 0.15
-					armor_value=0.15
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = -0.075
+					hg_attack = 0.125
+					armor_value = 0.1
 				}
-				carrier={
-					build_cost_ic=-0.1
+				carrier = {
+					build_cost_ic = -0.05
 					carrier_size = 0.25
 				}
-				screen_ship={
-					build_cost_ic=-0.1
-					naval_speed=0.05
+				screen_ship = {
+					build_cost_ic = -0.075
+					naval_speed = 0.05
 				}
 			}
 		}

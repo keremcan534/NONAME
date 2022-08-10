@@ -25,6 +25,7 @@ add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
+	allied_trading_idea
 }
 
 set_convoys = 1000
@@ -247,8 +248,7 @@ recruit_character = ENG_nevile_henderson
 recruit_character = ENG_leslie_hore_belisha
 recruit_character = ENG_maxwell_aitken
 recruit_character = ENG_ernest_bevin
-recruit_character = ENG_stewart_menzies
-recruit_character = ENG_alan_turing
+
 ### Variants ###
 # Submarines #
 create_equipment_variant = {

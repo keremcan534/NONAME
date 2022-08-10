@@ -35,6 +35,7 @@ add_ideas = {
 	FRA_full_employment
 	FRA_political_violence
 	FRA_inefficient_economy_2
+	allied_trading_idea
 }
 recruit_character = FRA_pierre_laval
 recruit_character = FRA_edouard_daladier

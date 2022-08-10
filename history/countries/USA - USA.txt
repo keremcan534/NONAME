@@ -73,6 +73,7 @@ add_ideas = {
 	home_of_the_free
 	USA_homeland_defense
 	USA_dont_invade_free_europe
+	allied_trading_idea
 }
 add_timed_idea = {
 	idea=economic_recovery
@@ -277,7 +278,6 @@ recruit_character = USA_usa_air_tacticalbombing
 recruit_character = USA_usa_army_regrouping
 recruit_character = USA_gentlemen_usa
 recruit_character = USA_stabber_usa
-recruit_character = USA_usa_william_donovan
 recruit_character = USA_usa_army_logistics
 recruit_character = USA_armaments_usa
 recruit_character = USA_william_halsey

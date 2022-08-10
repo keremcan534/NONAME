@@ -2,6 +2,7 @@ foreign_politics = {
 	ITA_annex_bul = {
 		icon = generic_operation
 		available = {
+			date>1939.1.1
 			BUL = {
 				is_ai = yes
 			}

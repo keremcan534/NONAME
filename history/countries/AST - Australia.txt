@@ -8,7 +8,11 @@ set_research_slots = 3
 add_intel = { target = SOV civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 set_rule = { can_be_spymaster = no }
 add_to_tech_sharing_group = commonwealth_research
-add_ideas = AST_great_depression_1
+add_ideas = {
+	AST_great_depression_1
+	asia_matters
+	allied_trading_idea
+}
 
 set_politics = {
 ruling_party = democratic

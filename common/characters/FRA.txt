@@ -984,7 +984,7 @@ characters={
 					original_tag  = FRA 
 				}
 				
-				cost  = 0.000
+				cost  = 100.000
 	
 				traits  = {
 					blitzkrieg_theorist mobile_warfare_expert 

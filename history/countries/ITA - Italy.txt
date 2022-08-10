@@ -7,6 +7,7 @@ set_war_support = 0.7
 add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
+	axis_trade_idea
 	limited_conscription
 	partial_economic_mobilisation
 	general_staff

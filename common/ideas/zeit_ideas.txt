@@ -30,8 +30,81 @@ ideas = {
 	}
 	country = {
 		trade_deals={
-
+		}
+		asia_matters = {
+			allowed = {
+				always = no
+			}
+			picture = idea_generic_japanese_conflict
 			
+			modifier = {
+				production_speed_synthetic_refinery_factor = -1
+			}
+		}
+		allied_trading_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = -0.6
+			}
+		}
+		axis_trade_idea = {
+			allowed = {
+				always = no
+			}
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = BUL
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = ROM
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = SPR
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = HUN
+				trade_cost_for_target_factor = -0.6
+			}
 		}
 		africa_hp = {
 			allowed = {
@@ -59,7 +132,7 @@ ideas = {
 				}
 			}
 			removal_cost = -1
-			picture = generic_infantry_bonus
+			picture = TNG_Army_is_the_State
 			modifier = {
 				training_time_army_factor = -0.8
 				experience_gain_navy_unit_factor = 10
@@ -72,7 +145,7 @@ ideas = {
 				is_ai = no
 			}
 			removal_cost = -1
-			picture = generic_goods_red_bonus
+			picture = GENERIC_Naval_Restrictions
 			modifier = {
 				consumer_goods_factor = 10
 				industrial_capacity_factory = -1
@@ -88,7 +161,7 @@ ideas = {
 				is_ai = no
 			}
 			removal_cost = -1
-			picture = generic_goods_red_bonus
+			picture = GENERIC_Naval_Restrictions
 			modifier = {
 				consumer_goods_factor = 10
 				industrial_capacity_factory = -1
@@ -121,6 +194,8 @@ ideas = {
 			}
 		}
 		fix_production_idea = {
+			removal_cost = -1
+			picture = GER_Work_Ethics
 			modifier = {
 				production_factory_start_efficiency_factor = 1
 			}
@@ -143,7 +218,7 @@ ideas = {
 				always = no				#added on on_actions 
 			}
 			removal_cost = -1
-			picture = generic_central_management
+			picture = GER_Christian_Trade_Unions
 			modifier = {
 				production_lack_of_resource_penalty_factor = -1
 			}
@@ -153,7 +228,7 @@ ideas = {
 				always = no				#added on on_actions 
 			}
 			removal_cost = -1
-			picture = generic_central_management
+			picture = GER_Christian_Trade_Unions
 			modifier = {
 				production_lack_of_resource_penalty_factor = -1
 			min_export=-1
@@ -274,7 +349,8 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				fast_tank_manufacturer
+				
+				cruiser_tank_manufacturer
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -289,7 +365,8 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				medium_tank_manufacturer
+				blitzkrieg_tank_manufacturer
+				
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -304,7 +381,8 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				cruiser_tank_manufacturer
+				
+				heavy_tank_manufacturer
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -320,7 +398,8 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				heavy_tank_manufacturer
+				cavalry_tank_manufacturer
+				
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -336,6 +415,7 @@ ideas = {
 			}
 			traits = {
 				brawler_tank_manufacturer
+				
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -350,7 +430,8 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				cavalry_tank_manufacturer
+				
+				mass_tank_manufactuer
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -458,7 +539,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = {
-				coastal_defence_naval_manufacturer
+				raiding_fleet_naval_manufacturer
 			}
 			modifier = {
 				naval_manufacturer_cost_factor = -1
@@ -476,7 +557,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = {
-				raiding_fleet_naval_manufacturer
+				atlantic_fleet_naval_manufacturer
 			}
 			modifier = {
 				naval_manufacturer_cost_factor = -1
@@ -494,7 +575,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = {
-				atlantic_fleet_naval_manufacturer
+				convoy_escort_naval_manufacturer2
 			}
 			modifier = {
 				naval_manufacturer_cost_factor = -1
@@ -590,7 +671,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = {
-				naval_aircraft_manufacturer
+				assault_naval_aircraft_manufacturer
 			}
 			# fighter/interceptors like Hurricane
 			ai_will_do = {
@@ -613,7 +694,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = {
-				heavy_aircraft_manufacturer
+				fuel_efficient_aircraft_manufacturer
 			}
 			on_add = {
 				
@@ -639,8 +720,8 @@ ideas = {
 				armor = {
 					soft_attack=0.125
 					hard_attack=0.125
-					air_attack=0.125
 					armor_value = 0.05
+					breakthrough=0.1
 					speed=0.10
 				}
 				
@@ -660,7 +741,7 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				fast_tank_manufacturer
+				cruiser_tank_manufacturer
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -677,7 +758,7 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				medium_tank_manufacturer
+				blitzkrieg_tank_manufacturer
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -693,7 +774,7 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				cavalry_tank_manufacturer
+				heavy_tank_manufacturer
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -709,7 +790,7 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				heavy_tank_manufacturer
+				cavalry_tank_manufacturer
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -729,7 +810,7 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				cruiser_tank_manufacturer
+				brawler_tank_manufacturer
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -748,7 +829,7 @@ ideas = {
 				armor = 0.15
 			}
 			traits = {
-				brawler_tank_manufacturer
+				mass_tank_manufactuer
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1

@@ -145,6 +145,7 @@ add_ideas = {
 	general_staff
 	GER_mefo_bills_1
 	GER_autarky_idea_minor
+	axis_trade_idea
 	limited_conscription
 	partial_economic_mobilisation
 }
@@ -159,7 +160,6 @@ recruit_character = GER_ferdinand_schorner
 recruit_character = GER_ritter_von_greim
 recruit_character = GER_hermann_goring
 recruit_character = GER_walther_von_brauchitsch
-recruit_character = GER_franz_halder
 recruit_character = GER_wilhelm_keitel
 recruit_character = GER_ludwig_beck
 recruit_character = GER_von_braun
@@ -201,12 +201,10 @@ recruit_character = GER_albert_speer
 recruit_character = GER_hjalmar_schacht
 recruit_character = GER_walther_funk
 recruit_character = GER_joseph_goebbels
-recruit_character = GER_rudolf_hess
 recruit_character = GER_heinrich_himmler
 recruit_character = GER_martin_bormann
 recruit_character = GER_joachim_von_ribbentrop
 recruit_character = GER_konstantin_von_neurath
-recruit_character = GER_wilhelm_canaris
 
 create_equipment_variant = {
 	name = "Deutschland Class"

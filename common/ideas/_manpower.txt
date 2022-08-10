@@ -92,6 +92,13 @@ ideas = {
 
 				if = {
 					limit = {
+						original_tag = FRA
+					}
+					NOT = { has_completed_focus = FRA_france_undividable }
+				}
+
+				if = {
+					limit = {
 						original_tag = HUN
 						has_dlc = "Death or Dishonor"
 					}

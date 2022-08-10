@@ -24,8 +24,11 @@ set_popularities = {
 	fascism = 45
 	neutrality = 30
 }
-add_ideas={		general_staff
-GER_autarky_idea_minor}
+add_ideas={		
+	general_staff
+	GER_autarky_idea_minor
+	axis_trade_idea
+}
 set_technology = {
 	basic_train = 1
 	tech_support = 1
@@ -116,7 +119,6 @@ recruit_character = BUL_angel_dotsev
 recruit_character = BUL_junuz_ajanovic
 recruit_character = BUL_franza_karmasin
 recruit_character = BUL_jozef_turanec
-recruit_character = BUL_asen_krasnovski
 recruit_character = BUL_asen_daskalov
 recruit_character = BUL_sava_ivanov
 recruit_character = BUL_bonyu_stoev_pironkov
@@ -124,11 +126,9 @@ recruit_character = BUL_kiril_dimitrov_yanchulev
 recruit_character = BUL_nikola_mikhov
 recruit_character = BUL_nikola_zekhov
 recruit_character = BUL_aleksandur_tsankov
-recruit_character = BUL_stefan_nedev
 recruit_character = BUL_radoslav_zuikov
 recruit_character = BUL_bul_air_tacticalbombing
 recruit_character = BUL_dobri_bozhilov
-recruit_character = BUL_pencho_zlatev
 recruit_character = BUL_ivan_variklechkov
 recruit_character = BUL_gerasim_kirilov
 recruit_character = BUL_gancho_manchev

@@ -98,7 +98,11 @@ operations = {
 			
 				GER={
 					add_to_faction=EFR
-					add_to_war=EFR
+					add_to_war = {
+						targeted_alliance = EFR 
+						enemy = ENG 
+						hostility_reason = asked_to_join
+					}
 				}
 				every_country = {
 					if = {

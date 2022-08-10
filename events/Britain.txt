@@ -308,3 +308,14 @@ country_event = {#torch
 		name = britain.1115.a
 	}
 }
+country_event = {#countenance
+	id = britain.1116
+	title = "Operation Countenance"
+	desc = "Operation Countenance will start"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "xd"
+	}
+}
