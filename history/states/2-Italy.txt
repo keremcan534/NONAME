@@ -22,7 +22,7 @@ resources={
 				naval_base = 5
 			}
 			9904 = {
-				naval_base = 20
+				naval_base = 15
 			}
 			11846 = {
 				naval_base = 2

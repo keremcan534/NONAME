@@ -1,17 +1,17 @@
 ideas = {
 	hidden_ideas = {
-		JAP_defense_of_homeland = {
+		JAP_special_air_landing_force = {
+			picture = generic_infantry_bonus
 			allowed = {
 				always = no
 			}
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			removal_cost = -1
-			picture = chi_war_of_resistance3
 			modifier = {
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
 			}
 		}
 		JAP_everybody_serves = {
@@ -41,6 +41,36 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 			}
 		}
+		main_focus_set_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+		}
+		
+	}
+	country = {
+		JAP_defense_of_homeland = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+			}
+		}
+		
 		JAP_special_air_landing_force = {
 			picture = generic_infantry_bonus
 			allowed = {
@@ -55,8 +85,6 @@ ideas = {
 				special_forces_defence_factor = 0.05
 			}
 		}
-	}
-	country = {
 		JAP_banzai = {
 			picture = generic_infantry_bonus
 			allowed = {
@@ -70,11 +98,11 @@ ideas = {
 				amphibious_invasion = 0.5
 				invasion_preparation = -0.5
 				land_reinforce_rate = 0.15
-				army_core_attack_factor = 0.5
-				army_core_defence_factor = 0.5
-				special_forces_attack_factor = 0.05
-				army_defence_factor = 0.05
-				army_attack_factor = 0.15
+				army_core_attack_factor = 0.6
+				army_core_defence_factor = 0.6
+				special_forces_attack_factor = 0.075
+				army_defence_factor = 0.075
+				army_attack_factor = 0.175
 			}
 		}
 		JAP_navy_recover = {
@@ -112,18 +140,7 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
-		main_focus_set_idea = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			removal_cost = -1
-			picture = generic_infantry_bonus
-		}
+		
 		JAP_non_aggression_pact_with_sov = {
 			allowed = {
 				always = no

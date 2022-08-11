@@ -1469,15 +1469,35 @@ focus_tree = {
  		cost = 0.1
  		available = {
  			date > 1940.12.31
+			
  		}
  		bypass = {
- 				has_war_with = ENG
+			has_war_with = ENG
  		}   
  		cancel_if_invalid = yes
  		continue_if_invalid = no
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
+			hidden_effect={
+				JAP={
+					transfer_state=672
+					transfer_state=335
+					transfer_state=334
+
+					transfer_state=673
+
+					transfer_state=668
+					transfer_state=667
+					transfer_state=721
+
+					transfer_state=738
+
+					transfer_state=336
+					transfer_state=333
+
+				}
+			}
  		RAJ = {
  			   add_timed_idea = {
                 idea = RAJ_famine
@@ -2185,7 +2205,7 @@ focus_tree = {
  		y = 1
  		available = {OR={
  				date>1944.1.1
- 				AND={date > 1942.1.1
+ 				AND={date > 1942.4.1
  					count_triggers = {
  						amount = 2
  						Or={AST={has_capitulated=yes} AST={exists=no}}
@@ -2200,10 +2220,10 @@ focus_tree = {
  			has_war_with = SOV
  		}
  		completion_reward = {
- 			create_wargoal = {
+ 			declare_war_on = {
  				type = annex_everything
- 				target = SOV
- 			}
+ 				target = SOV}
+ 			
  		}
  	}
  }

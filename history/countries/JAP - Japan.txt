@@ -26,6 +26,7 @@ add_ideas = {
 	JAP_duplicate_research_efforts
 	JAP_militarism
 	JAP_defense_of_homeland
+	JAP_special_air_landing_force #hidden buff
 }
 add_intel = { target = GER civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 add_intel = { target = ITA civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }

@@ -14,13 +14,10 @@ state=
 		owner = SPR
 		buildings = {
 			infrastructure = 3 #was: 6
-			air_base = 1
 		}
 		add_core_of = SPR
 	}
-	provinces=
-	{
-7114 9793 9845 	}
+	provinces={7114 9793 9845 	}
 
 	local_supplies=0.0 
 }

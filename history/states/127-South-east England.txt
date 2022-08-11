@@ -21,7 +21,7 @@ state={
 			radar_station = 1
 			air_base = 6
 			3501 = {
-				naval_base = 20
+				naval_base = 15
 				coastal_bunker = 3
 			}
 			9458 = {
