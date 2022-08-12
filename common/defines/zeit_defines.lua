@@ -76,6 +76,9 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.055				-- Vanilla 0,10
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 3                 -- same as above but used inside naval combat for carrier battles
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 14.0            -- vanilla 5 damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 NDefines.NAir.ESCORT_FACTOR = 4.6 -- VANILLA 2.0 | to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.08
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
+
 ------------------------------------------------------------------------------------------------
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 0.5                                     -- ###NEEDS REVIEW
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0 					--Factor on country Air XP gained from wing training
