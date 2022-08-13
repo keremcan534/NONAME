@@ -863,7 +863,7 @@
 					}
 					set_building_level = {
 						type = air_base
-						level = 20
+						level = 10
 						instant_build = yes
 					}
 				}
