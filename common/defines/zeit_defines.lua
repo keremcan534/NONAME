@@ -15,14 +15,14 @@ NDefines.NProduction.CONVERSION_SPEED_BONUS = -2.2 -- ADDED TO COUNTER CHEATERS 
 	
 -----------------------------IMPORTANT LAND COMBAT DEFINES--------------------------------------
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.8    -- vanilla 0.68  | 10% more equipment losses than vanilla  % of equipment lost to strength ratio in combat, so some % is returned if below 1
-NDefines.NMilitary.PLANNING_MAX = 0.13 -- Vanilla is 0.30 ; nerfed along with entrenchment so both build up faster resulting in more dynamic gameplay with opportunities for faster recovery
+NDefines.NMilitary.PLANNING_MAX = 0.10 -- Vanilla is 0.30 ; nerfed along with entrenchment so both build up faster resulting in more dynamic gameplay with opportunities for faster recovery
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.25                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.03  -- vanilla 0.04 | 75% of vanilla CAS ORG damage 
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.025 	--air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.001  -- vanilla 0.04 | 75% of vanilla CAS ORG damage 
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.03 	--air global damage modifier
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT =	-0.1 	--effect on speed due to enemy air superiority
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.3 	--effect on defense due to enemy air superiority
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.3	--more AA attack will approach this amount of help (diminishing returns)
-NDefines.NAir.FUEL_COST_MULT = 0.25 -- (0.35) fuel multiplier for all air missions 
+NDefines.NAir.FUEL_COST_MULT = 0.1 -- (0.35) fuel multiplier for all air missions 
 NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 130
 NDefines.NAir.DISRUPTION_FACTOR = 7  -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
 --antiair
@@ -45,17 +45,19 @@ NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.30          -- vanilla -0.6
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1  -- WAS 3, reduced to 0.5 so less CAS is needed in battles
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.08       -- WAS 0.25 
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001 				-- WAS 0.005 | Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.|
-NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.25            -- vanilla is 0.2, GDU-like change (0.25 in GDU)
-NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.95	    --vanilla 0.4  | eventually armor will be reworked when paradox finally releases their armor rework
-NDefines.NMilitary.PEN_VS_AVERAGE = 0.75		--vanilla 0.4
+NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35            -- vanilla is 0.2, GDU-like change (0.25 in GDU)
+NDefines.NMilitary.ARMOR_VS_AVERAGE = 0	    --vanilla 0.4  | eventually armor will be reworked when paradox finally releases their armor rework
+NDefines.NMilitary.PEN_VS_AVERAGE = 0.15		--vanilla 0.4
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.08
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
 
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.7 | defend combat penalty for attacker if out of supply
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.20 |  attack combat penalty for attacker if out of supply
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 1 -- damage reduction if armor outclassing enemy
-NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.45                   -- speed bonus when retreating
-NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.30                -- speed bonus when withdrawing
-NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.0		-- speed impact at 0 org.
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.35                   -- speed bonus when retreating
+NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25                -- speed bonus when withdrawing
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = 0		-- speed impact at 0 org.
 
 ------------------------end of defines relevant to land combat
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.15       -- vanilla 0.05 -- Each level of navalbase building repairs X strength and can repair as many ships as its level
@@ -76,8 +78,7 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.055				-- Vanilla 0,10
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 3                 -- same as above but used inside naval combat for carrier battles
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 14.0            -- vanilla 5 damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 NDefines.NAir.ESCORT_FACTOR = 4.6 -- VANILLA 2.0 | to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.08
-NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
+
 
 ------------------------------------------------------------------------------------------------
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 0.5                                     -- ###NEEDS REVIEW

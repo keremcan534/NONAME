@@ -1898,6 +1898,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		completion_reward = {
+			navy_experience = 100
 			if = {
 				limit = {
 					has_war_support < 0.4

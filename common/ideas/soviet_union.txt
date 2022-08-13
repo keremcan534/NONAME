@@ -42,7 +42,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				org_loss_when_moving = 0.1
+				org_loss_when_moving = 0.3
 			}
 		}
 		overextended2 = {
@@ -51,7 +51,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				org_loss_when_moving = 0.35
+				org_loss_when_moving = 0.6
 			}
 		}
 		SOV_Danger_To_Heartland = {
@@ -464,7 +464,6 @@ ideas = {
 			}
 			picture = generic_manpower_bonus
 			modifier = {
-				army_speed_factor = 0.1
 				consumer_goods_factor = -0.1
 				industry_repair_factor = 1
 				political_power_gain = 0.5
@@ -635,7 +634,7 @@ ideas = {
 			}
 			modifier = {
 				surrender_limit = 1
-				air_agility_factor = -0.15
+				air_agility_factor = -0.1
 				air_maximum_speed_factor = -0.1
 			}
 		}
@@ -679,7 +678,7 @@ ideas = {
 			modifier = {
 				#army_defence_factor = -0.05
 				max_dig_in = -3
-				air_attack_factor = -0.15
+				air_attack_factor = -0.1
 			}
 		}
 		officers_purged_2 = {
@@ -1064,7 +1063,7 @@ ideas = {
 			equipment_bonus = {
 				fighter_equipment = {
 					build_cost_ic = -0.125
-					air_agility = 0.125
+					air_agility = 0.15
 					maximum_speed = 0.1
 				}
 			}

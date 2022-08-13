@@ -166,7 +166,7 @@ leader_traits = {
 
 	defensive_doctrine = { 
 		type = field_marshal
-		field_marshal_modifier = {		max_dig_in_factor = 0.30	}
+		field_marshal_modifier = {		max_dig_in_factor = 0.15	}
 	slot = high_command
 		specialist_advisor_trait = army_entrenchment_1
 		expert_advisor_trait = army_entrenchment_1
@@ -207,7 +207,7 @@ leader_traits = {
 	unyielding_defender = { 
 		type = field_marshal
 		prerequisites = {	has_trait = inflexible_strategist	}
-		field_marshal_modifier = {	defence = 0.10	}
+		field_marshal_modifier = {	defence = 0.08	}
 	slot = army_chief
 		specialist_advisor_trait = army_chief_defensive_1
 		expert_advisor_trait = army_chief_defensive_2
@@ -298,7 +298,7 @@ slot = high_command
 	
 	infantry_leader = { 
 		type = corps_commander		
-		modifier = {	army_infantry_defence_factor = 0.13	}
+		modifier = {	army_infantry_defence_factor = 0.11	}
 		slot = high_command
 		specialist_advisor_trait = army_infantry_1
 		expert_advisor_trait = army_infantry_2
@@ -525,8 +525,8 @@ slot = high_command
 	combined_arms_expert = { 
 		type = corps_commander
 		modifier = {
-			motorized_defence_factor = 0.15
-			mechanized_defence_factor = 0.15
+			motorized_defence_factor = 0.12
+			mechanized_defence_factor = 0.12
 		}
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
 	slot = high_command

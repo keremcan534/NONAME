@@ -357,14 +357,15 @@ focus_tree = {
 		relative_position_id = SOV_improve_stalin_line
 		x = 0
 		y = 2
-		cost = 1
+		cost = 0
 		available = {
 			OR={has_war_with = GER
-			date>1941.6.22}
+			date>1941.6.22
 			hidden_trigger={
 			has_global_flag=fall_of_london_ger
-			has_global_flag=fall_of_london_ita}
+			has_global_flag=fall_of_london_ita}}
 		}
+		cancel_if_invalid=no
 		completion_reward = {
 		
 				hidden_effect={activate_mission=SOV_relocation}
@@ -383,16 +384,9 @@ focus_tree = {
 		icon = GFX_Goal_Positive_heroism
 		relative_position_id = SOV_move_industry_to_urals
 		x = 0
-		y = 1.5
+		y = 1
 		prerequisite = { focus = SOV_move_industry_to_urals }
 		cost = 10
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
-		}
 		completion_reward = {
 			add_ideas = order_227
 			hidden_effect={
@@ -403,11 +397,11 @@ focus_tree = {
 	focus = {
 		id = SOV_winter_offensive
 		icon = GFX_focus_attack_germany
-		relative_position_id = SOV_great_figher
+		relative_position_id = SOV_move_industry_to_urals
 		available = {date > 1941.11.01 date < 1942.03.1 }
-		x = 0
+		x = 2
 		y = 1
-		prerequisite = { focus = SOV_great_figher }
+		prerequisite = { focus = SOV_move_industry_to_urals }
 		cost = 1
 		completion_reward = {
 			add_timed_idea= {idea=SOV_winter_offensive days=60}
@@ -416,12 +410,12 @@ focus_tree = {
 	focus = {
 		id = SOV_winter_offensive_2
 		icon = GFX_SOV_lessons_of_the_winter_war
-		relative_position_id = SOV_great_figher
+		relative_position_id = SOV_winter_offensive
 		available = {245 = {is_fully_controlled_by = SOV}}
 		bypass = {not = {245 = {is_fully_controlled_by = SOV}}}
-		x = -2
+		x = 0
 		y = 1
-		prerequisite = { focus = SOV_great_figher }
+		prerequisite = { focus = SOV_winter_offensive }
 		cost = 6
 		completion_reward = {
 			custom_effect_tooltip = "This focus will spawn 20 Elite Divisions in Gorki"
@@ -471,10 +465,10 @@ focus_tree = {
 	focus = {
 		id = SOV_tankograd
 		icon = GFX_focus_chi_army_reform
-		relative_position_id = SOV_great_figher
-		x = 2
+		relative_position_id = SOV_move_industry_to_urals
+		x = -2
 		y = 1
-		prerequisite = { focus = SOV_great_figher }
+		prerequisite = { focus = SOV_move_industry_to_urals }
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -490,18 +484,15 @@ focus_tree = {
 	focus = {
 		id = SOV_great_patriotic_general
 		icon = GFX_anti_communism
-		relative_position_id = SOV_winter_offensive_2
-		prerequisite = { focus = SOV_winter_offensive_2 }
+		relative_position_id = SOV_modifiers
+		prerequisite = { focus = SOV_modifiers }
 		x = 0
-		y = 2
+		y = 1
 		cost = 8
 		
 		completion_reward = {
-			
-			add_trait = {
-			character = SOV_ivan_konev
-			slot = high_command
-			trait =army_commando_2
+			remove_ideas={
+				home_of_revolution
 			}
 		}
 	}
@@ -525,8 +516,8 @@ focus_tree = {
 	focus = {
 		id = SOV_modifiers
 		icon = GFX_Goal_Great_Purge2
-		relative_position_id = SOV_winter_offensive
-		x = 1
+		relative_position_id = SOV_great_figher
+		x = 0
 		y = 1
 		prerequisite = { focus = SOV_great_figher }
 		cost = 6
@@ -548,11 +539,12 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_hero_of_the_union
+		text= "Heroes of Soviet Union"
 		icon = GFX_georgy_zhukov_hero
-		relative_position_id = SOV_winter_offensive
-		x = -1
+		relative_position_id = SOV_modifiers
+		x = -2
 		y = 1
-		prerequisite = { focus = SOV_great_figher }
+		prerequisite = { focus = SOV_modifiers }
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -567,6 +559,11 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = { 
+			add_trait = {
+				character = SOV_ivan_konev
+				slot = high_command
+				trait =army_commando_2
+				}
 			custom_effect_tooltip = SOV_Zhukov
 			show_ideas_tooltip = SOV_georgy_zhukov
 		}
@@ -1638,12 +1635,15 @@ focus_tree = {
 	focus = {
 		id = SOV_diversify_the_programme
 		icon = GFX_focus_SOV_rocket
-		prerequisite = { focus = SOV_move_industry_to_urals }
+		prerequisite = {
+			focus = SOV_nkvd_divisions 
+			 focus = SOV_military_reorganization }
+		
 		available = {
 		}
-		x = 2
+		x = -1
 		y = 1
-		relative_position_id = SOV_move_industry_to_urals
+		relative_position_id = SOV_military_reorganization
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1785,13 +1785,13 @@ focus_tree = {
 	focus = {
 		id = SOV_barb_1
 		icon = GFX_SOV_soviet_women
-		prerequisite = { focus = SOV_move_industry_to_urals }
+		prerequisite = { focus = SOV_tankograd }
 		available = {
 			date>1941.10.1
 		}
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = SOV_move_industry_to_urals
+		relative_position_id = SOV_tankograd
 		cost = 5
 		
 		available_if_capitulated = yes
@@ -1803,12 +1803,12 @@ focus_tree = {
 	focus = {
 		id = SOV_barb_2
 		icon = GFX_SOV_infantry_development
-		prerequisite = { focus = SOV_tankograd}
+		prerequisite = { focus = SOV_modifiers}
 		available = {
 		}
 		x = 2
-		y = 3
-		relative_position_id = SOV_great_figher
+		y = 1
+		relative_position_id = SOV_modifiers
 		cost = 8
 		ai_will_do = {
 			factor = 1
@@ -1831,15 +1831,15 @@ focus_tree = {
 		id = SOV_uranus
 		icon = GFX_SOV_protect_the_east
 		prerequisite = { focus = SOV_great_patriotic_general }
-		prerequisite = { focus = SOV_barb_2 }
 		prerequisite = { focus = SOV_hero_of_the_union}
 		prerequisite = { focus = SOV_modifiers }
+		prerequisite = { focus = SOV_barb_2 }
 		available = {
 			date > 1942.08.15
 			date < 1942.11.23
 		}
 		x = 0
-		y = 5
+		y = 4
 		relative_position_id = SOV_move_industry_to_urals
 		cost = 5
 		ai_will_do = {

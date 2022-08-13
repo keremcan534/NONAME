@@ -42,8 +42,7 @@ sub_units = {
 		ap_attack=-1
 		armor_value = -1.0
 		soft_attack = -0.8
-		hard_attack = -0.1
-		breakthrough = -0.5
+		hard_attack = -0.2
 		defense = -0.5
 	}
 	
@@ -87,7 +86,7 @@ sub_units = {
 		ap_attack=-1
 		armor_value = -1.0
 		soft_attack = -0.8
-		hard_attack = -0.1
+		hard_attack = -0.15
 		breakthrough = -0.5
 		defense = -0.5
 	}

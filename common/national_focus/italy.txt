@@ -1388,7 +1388,7 @@
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
-			navy_experience = 150
+			navy_experience = 100
 			random_owned_controlled_state = {
 				limit = {
 					NOT = {
@@ -1512,7 +1512,7 @@
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
-			navy_experience = 150
+			navy_experience = 100
 			add_tech_bonus = {
 				name = bb_bonus
 				bonus = 1
@@ -1616,7 +1616,6 @@
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
-			navy_experience = 250
 			add_tech_bonus = {
 				name = ITA_atlantic_fleet
 				bonus = 1

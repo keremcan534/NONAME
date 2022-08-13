@@ -56,8 +56,8 @@ weather_mud = {
 weather_extreme_cold = {
 	# on Province
 	winter_attrition = 0.45
-	army_attack_factor = -0.75
-	breakthrough_factor = -0.9
+	army_attack_factor = -0.9
+	breakthrough_factor = -0.99
 	naval_detection = -0.9
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
@@ -70,15 +70,14 @@ weather_extreme_cold = {
 	positioning = -0.2
 	supply_consumption_factor = 0.15
 	supply_factor = -0.125
-	truck_attrition_factor = 2
 	army_attack_speed_factor = -0.25
 }
 
 weather_very_cold = {
 	# on Province
 	winter_attrition = 0.325
-	army_attack_factor = -0.6
-	breakthrough_factor = -0.8
+	army_attack_factor = -0.8
+	breakthrough_factor = -0.85
 	naval_detection = -0.4
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
@@ -90,7 +89,6 @@ weather_very_cold = {
 	positioning = -0.1
 	supply_consumption_factor = 0.1
 	supply_factor = -0.075
-	truck_attrition_factor = 0.75
 	army_attack_speed_factor = -0.15
 }
 
@@ -157,7 +155,7 @@ compliance_effect_base = {
 
 compliance_effect = {
 	local_factories = 0.8
-	local_non_core_manpower = 0.2
+	local_non_core_manpower = 0.02
 	local_resources = 0.8
 }
 

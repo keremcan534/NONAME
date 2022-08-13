@@ -22,31 +22,34 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			light_tank_artillery_chassis = 42
+			light_tank_artillery_chassis = 34
 		}
 		manpower = 500
-		hard_attack = -0.75
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 6
+		max_strength = 2
 		training_time = 180
-		weight = 1
-		supply_consumption = 0.46
-		armor_value = -1
+		weight = 0.25
+		supply_consumption = 0.3
+
+		soft_attack = 0.1
+		hard_attack = -8
+		ap_attack = -8
+		breakthrough = -0.45
+		defense = -0.4
 
 
+		desert = { movement = -0.2 }
 		forest = {
-		    attack = -0.2
+			attack = -0.2
 			movement = -0.4
 		}
-		mountain = 	{
-		    attack = -0.3
-			defence = -0.15
-			movement = -0.5
+		mountain = {
+		    attack = -0.25
+			defence = -0.4
 		}
 		jungle = {
 		    attack = -0.3
-			defence = -0.05 
 			movement = -0.4
 		}
 		marsh = {
@@ -88,47 +91,48 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			medium_tank_artillery_chassis = 36
+			medium_tank_artillery_chassis = 34
 		}
 		manpower = 500
-		hard_attack = -0.75
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 6
+		max_strength = 4
 		training_time = 180
-		weight = 1.25
-		supply_consumption = 0.57
-		armor_value = -1
+		weight = 0.3
+		supply_consumption = 0.33
 
+		
+		soft_attack = 0.2
+		hard_attack = -8
+		ap_attack = -8
+		breakthrough = -0.25
+		defense = -0.4
 
+		desert = { movement = -0.2 }
 		forest = {
-		    attack = -0.2
-			defence = -0.05
-			movement = -0.2
+			attack = -0.3
+			movement = -0.4
 		}
 		hills = {
-		    attack = -0.20
-			defence = -0.325 
-			movement = -0.2
+		    attack = -0.1
 		}
 		mountain = 	{
-		    attack = -0.75
-			defence = -0.85
-			movement = -0.8
+		    attack = -0.35
+			defence = -0.6
 		}
 		jungle = {
-		    attack = -0.3
-			defence = -0.35 
-			movement = -0.3
+		    attack = -0.4
+			defence = -0.15
+			movement = -0.4
 		}
 		marsh = {
 		    attack = -0.1 
-			defence = -0.15 	
-			movement = -0.15
+			defence = -0.05
+			movement = -0.1
 		}
 		urban = {
-			attack = -0.3
-			defence = -0.35
+			attack = -0.4
+			defence = -0.1
 		}
 		river = { 
 			attack = -0.2 
@@ -163,205 +167,56 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			heavy_tank_artillery_chassis = 29
+			heavy_tank_artillery_chassis = 28
 		}
 		manpower = 500
-		hard_attack = -0.75
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 6
-		weight = 1.5
-		supply_consumption = 0.67
-		armor_value = -1
+		weight = 0.35
+		supply_consumption = 0.47
 
+		
+		soft_attack = 0.25
+		hard_attack = -8
+		ap_attack = -8
+		breakthrough = -0.25
+		defense = -0.4
+
+
+		desert = { movement = -0.2 }
 
 		forest = {
 		    attack = -0.40
-			defence = -0.10
 			movement = -0.40
 		}
 		hills = {
-		    attack = -0.25
-			defence = -0.40 
-			movement = -0.2
+		    attack = -0.20
 		}
 		mountain = 	{
-			attack = -0.8
-			defence = -0.85 
-			movement = -0.9
+		    attack = -0.45
+			defence = -0.7
 		}
 		jungle = {
-		    attack = -0.5
-			defence = -0.5 
-			movement = -0.5
+		    attack = -0.6
+			defence = -0.35
+			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.4
-			defence = -0.30
+		    attack = -0.4 
+			defence = -0.3
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.2
-			defence = -0.25
+			attack = -0.5
+			defence = -0.2
 		}
 		river = { 
 			attack = -0.4 
 			movement = -0.4
 		}
 		amphibious = { 
-			attack = -0.85
+			attack = -0.8 
 		}
-		fort = {
-			attack = 0.1
-		}
-
-	}
-	
-	super_heavy_sp_artillery_brigade = {
-		sprite = heavy_armor
-		map_icon_category = armored
-		priority = 1798
-		ai_priority = 100
-		active = yes
-		
-		type = {
-			armor
-			artillery
-		}
-		
-		group = armor
-		
-		categories = {
-			category_all_armor
-			category_army
-		}
-		
-
-		combat_width = 3
-
-		need = {
-			super_heavy_tank_artillery_chassis = 11 #was 12, but IC was halved 
-		}
-		manpower = 500
-		hard_attack = -0.75
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 6
-		training_time = 180
-		weight = 1.75
-		supply_consumption = 0.99
-		armor_value = -1
-
-
-		forest = {
-		    attack = -0.40
-			defence = -0.10
-			movement = -0.40
-		}
-		hills = {
-		    attack = -0.25
-			defence = -0.40 
-			movement = -0.2
-		}
-		mountain = 	{
-			attack = -0.8
-			defence = -0.85 
-			movement = -0.9
-		}
-		jungle = {
-		    attack = -0.5
-			defence = -0.5 
-			movement = -0.5
-		}
-		marsh = {
-		    attack = -0.4
-			defence = -0.30
-			movement = -0.2
-		}
-		urban = {
-			attack = -0.2
-			defence = -0.25
-		}
-		river = { 
-			attack = -0.4 
-			movement = -0.4
-		}
-		amphibious = { 
-			attack = -0.85
-		}
-		fort = {
-			attack = 0.1
-		}
-
-	}
-	
-	modern_sp_artillery_brigade = {
-		sprite = medium_armor
-		map_icon_category = armored
-		priority = 1796
-		ai_priority = 100
-		active = yes
-		
-		type = {
-			armor
-			artillery
-		}
-		
-		group = armor
-		
-		categories = {
-			category_all_armor
-			category_army
-		}
-
-		combat_width = 3
-
-		need = {
-			modern_tank_artillery_chassis = 36
-		}
-		manpower = 500
-		hard_attack = -0.75
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 6
-		training_time = 180
-		weight = 1.5
-		supply_consumption = 0.59
-		armor_value = -1
-
-		forest = {
-		    attack = -0.2
-			movement = -0.2
-		}
-		hills = {
-		    attack = -0.15
-			movement = -0.15
-		}
-		mountain = 	{
-		    attack = -0.3
-			defence = -0.15 
-			movement = -0.45
-		}
-		jungle = {
-		    attack = -0.3
-			defence = -0.15 
-			movement = -0.3
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		river = { 
-			attack = -0.2 
-			movement = -0.2
-		}
-		amphibious = { 
-			attack = -0.7
-		}
-
 	}
 }

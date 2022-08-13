@@ -1048,20 +1048,7 @@ focus_tree = {
  			}
  		}
  		completion_reward = {
- 			if = {
- 				limit = {
- 					not = { has_dlc = "Man the Guns" }
- 				}
- 				add_tech_bonus = {
- 					name = JAP_supremacy_of_the_battlefleet
- 					bonus = 1.0
- 					uses = 1
- 					category = shbb_tech
- 				}
- 			}
- 			else = {
- 				navy_experience = 50
- 			}
+ 			navy_experience = 100
  			random_owned_controlled_state = {
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }

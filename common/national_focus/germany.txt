@@ -2877,6 +2877,7 @@
 			}
 		}
 		complete_tooltip = {
+			navy_experience = 100
 			every_state = {
 				limit = {
 					has_state_flag = GER_naval_rearmament_2dockyards
@@ -2904,6 +2905,7 @@
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
+			navy_experience = 100
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0

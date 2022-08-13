@@ -8,9 +8,7 @@ ideas = {
 				army_attack_factor = 0.03
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		tenacious_defense_spirit = {
 			ledger = army
@@ -19,9 +17,7 @@ ideas = {
 				army_defence_factor = 0.02
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		meticulous_preparation_spirit = {
 			ledger = army
@@ -30,9 +26,7 @@ ideas = {
 				max_planning = 0.03
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		best_of_the_best_spirit = {
 			ledger = army
@@ -44,9 +38,7 @@ ideas = {
 				custom_modifier_tooltip = "Your units gain experience faster (Gain Veterancy more quickly)"
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 
 		}
 		academy_scholarships_spirit = {
@@ -58,9 +50,7 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		political_loyalty_spirit = {
 			ledger = army
@@ -75,9 +65,7 @@ ideas = {
 				party_popularity_stability_factor = 0.125
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		inventive_leadership_spirit = {
 			ledger = army
@@ -85,9 +73,7 @@ ideas = {
 				air_cas_present_factor = 0.05
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		mobile_warfare_academy_spirit = {
 			ledger = army
@@ -97,9 +83,7 @@ ideas = {
 				breakthrough_factor = 0.025
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		superior_firepower_academy_spirit = {
 			ledger = army
@@ -109,9 +93,7 @@ ideas = {
 				army_artillery_attack_factor = 0.05
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		theatre_training_spirit = {
 			ledger = army
@@ -125,9 +107,7 @@ ideas = {
 				land_night_attack = 0.03
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		mass_assault_academy_spirit = {
 			ledger = army
@@ -140,9 +120,7 @@ ideas = {
 				supply_consumption_factor = -0.05
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 	}
 
@@ -155,9 +133,7 @@ ideas = {
 				command_power_gain = 0.2
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		elevated_engineering_corps_spirit = {
@@ -169,9 +145,7 @@ ideas = {
 				railway_gun_bombardment_factor = 0.05
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		proper_heritage_spirit = {
@@ -182,9 +156,7 @@ ideas = {
 				supply_combat_penalties_on_core_factor = -0.2
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		quick_improvisation_spirit = {
@@ -195,9 +167,7 @@ ideas = {
 				planning_speed = 0.2
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 		ideological_loyalty_spirit = {
 			ledger = army
@@ -207,9 +177,7 @@ ideas = {
 				weekly_manpower = 7500
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		state_serves_the_military_spirit = {
@@ -220,9 +188,7 @@ ideas = {
 				mobilization_laws_cost_factor = -0.25
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		mobile_warfare_army_spirit = {
@@ -234,9 +200,7 @@ ideas = {
 				
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		superior_firepower_army_spirit = {
@@ -248,9 +212,7 @@ ideas = {
 				
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		grand_battleplan_army_spirit = {
@@ -262,9 +224,7 @@ ideas = {
 				naval_invasion_planning_bonus_speed = 0.2
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		mass_assault_army_spirit = {
@@ -277,9 +237,7 @@ ideas = {
 				#experience_gain_infantry_combat_factor = 0.1
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 	}
 
@@ -293,9 +251,7 @@ ideas = {
 				dig_in_speed_factor = 0.15
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		flexible_organization_spirit = {
@@ -305,9 +261,7 @@ ideas = {
 				army_speed_factor = 0.05
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		aggressive_reconnaisance_spirit = {
@@ -317,9 +271,7 @@ ideas = {
 				recon_factor = 0.2
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		reserve_officers_spirit = {
@@ -331,9 +283,7 @@ ideas = {
 				planning_speed = 0.075
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		victory_or_death_spirit = {
@@ -344,9 +294,7 @@ ideas = {
 				army_morale_factor = 0.04
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		maneuver_warfare_spirit = {
@@ -357,9 +305,7 @@ ideas = {
 				coordination_bonus = 0.05
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		smoke_and_fire_spirit = {
@@ -370,9 +316,7 @@ ideas = {
 				breakthrough_factor = 0.05
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		logistical_focus_spirit = {
@@ -385,9 +329,7 @@ ideas = {
 				navy_fuel_consumption_factor = -0.05
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 
 		operational_reserve_spirit = {
@@ -399,9 +341,7 @@ ideas = {
 				breakthrough_factor = 0.05
 			}
 			cost = 50.0
-			ai_will_do = {
-				factor = 1
-			}
+			
 		}
 	}
 }
