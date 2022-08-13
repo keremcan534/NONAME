@@ -16,7 +16,6 @@ upgrades = {
 		
 		cost = air
 
-		air_range = 0.03
 		reliability = -0.01
 	}
 

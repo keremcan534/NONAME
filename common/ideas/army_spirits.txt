@@ -62,7 +62,7 @@ ideas = {
 			}
 			modifier = {
 				# military_leader_cost_factor = -0.5
-				party_popularity_stability_factor = 0.125
+				party_popularity_stability_factor = 0.1
 			}
 			cost = 50.0
 			
@@ -128,7 +128,7 @@ ideas = {
 		professional_officer_corps_spirit = {
 			ledger = army
 			modifier = {
-				experience_gain_army_factor = 0.1
+				experience_gain_army_factor = 0.15
 				land_doctrine_cost_factor = -0.05
 				command_power_gain = 0.2
 			}
@@ -139,10 +139,7 @@ ideas = {
 		elevated_engineering_corps_spirit = {
 			ledger = army
 			modifier = {
-				# trait_engineer_xp_gain_factor = 0.25
-				# unit_engineer_design_cost_factor = -1
-				dig_in_speed_factor = 0.1
-				railway_gun_bombardment_factor = 0.05
+				railway_gun_bombardment_factor = 0.075
 			}
 			cost = 50.0
 			
@@ -151,7 +148,6 @@ ideas = {
 		proper_heritage_spirit = {
 			ledger = army
 			modifier = {
-				# unit_cavalry_design_cost_factor = -1
 				cavalry_attack_factor = 0.05
 				supply_combat_penalties_on_core_factor = -0.2
 			}
@@ -162,9 +158,9 @@ ideas = {
 		quick_improvisation_spirit = {
 			ledger = army
 			modifier = {
-				command_abilities_cost_factor = -0.4
+				command_abilities_cost_factor = -0.5
 				command_power_gain = 0.25
-				planning_speed = 0.2
+				planning_speed = 0.1
 			}
 			cost = 50.0
 			
@@ -195,7 +191,7 @@ ideas = {
 			visible = { has_tech = mobile_warfare }
 			ledger = army
 			modifier = {
-				army_armor_attack_factor = 0.07
+				army_armor_attack_factor = 0.03
 				army_armor_defence_factor = 0.01
 				
 			}
@@ -207,8 +203,7 @@ ideas = {
 			visible = { has_tech = superior_firepower  }
 			ledger = army
 			modifier = {
-				recon_factor_while_entrenched = 0.1
-				army_infantry_attack_factor = 0.075
+				army_attack_factor=0.05
 				
 			}
 			cost = 50.0
@@ -233,8 +228,8 @@ ideas = {
 			modifier = {
 				no_supply_grace = 24
 				org_loss_when_moving = -0.05
-				unit_upkeep_attrition_factor = -0.05
-				#experience_gain_infantry_combat_factor = 0.1
+				supply_consumption_factor=-0.1
+				experience_gain_infantry_combat_factor = 0.1
 			}
 			cost = 50.0
 			
@@ -245,10 +240,9 @@ ideas = {
 		static_warfare_spirit = {
 			ledger = army
 			modifier = {
-				tactic_elastic_defense_preferred_weight_factor = 1
-				tactic_overwhelming_fire_preferred_weight_factor = 1
+
 				max_dig_in_factor = 0.05
-				dig_in_speed_factor = 0.15
+				dig_in_speed_factor = 0.1
 			}
 			cost = 50.0
 			
@@ -257,18 +251,7 @@ ideas = {
 		flexible_organization_spirit = {
 			ledger = army
 			modifier = {
-				org_loss_when_moving = -0.15
-				army_speed_factor = 0.05
-			}
-			cost = 50.0
-			
-		}
-
-		aggressive_reconnaisance_spirit = {
-			ledger = army
-			modifier = {
-				tactic_infantry_charge_preferred_weight_factor = 1
-				recon_factor = 0.2
+				org_loss_when_moving = -0.2
 			}
 			cost = 50.0
 			
@@ -277,8 +260,6 @@ ideas = {
 		reserve_officers_spirit = {
 			ledger = army
 			modifier = {
-				tactic_delay_preferred_weight_factor = 1
-				training_time_army_factor = -0.15
 				max_planning = 0.05
 				planning_speed = 0.075
 			}
@@ -289,9 +270,8 @@ ideas = {
 		victory_or_death_spirit = {
 			ledger = army
 			modifier = {
-				tactic_human_wave_tactics_preferred_weight_factor = 1
-				org_loss_at_low_org_factor = -0.15
-				army_morale_factor = 0.04
+
+				army_morale_factor = 0.06
 			}
 			cost = 50.0
 			
@@ -300,9 +280,9 @@ ideas = {
 		maneuver_warfare_spirit = {
 			visible = { has_tech = mobile_warfare }
 			modifier = {
-				tactic_unexpected_thrust_preferred_weight_factor = 1
-				army_speed_factor = 0.075
-				coordination_bonus = 0.05
+				breakthrough_factor = 0.075
+				army_speed_factor = 0.05
+				coordination_bonus = 0.03
 			}
 			cost = 50.0
 			
@@ -312,8 +292,7 @@ ideas = {
 			ledger = army
 			visible = { has_tech = superior_firepower }
 			modifier = {
-				tactic_barrage_preferred_weight_factor = 1
-				breakthrough_factor = 0.05
+				breakthrough_factor = 0.075
 			}
 			cost = 50.0
 			
@@ -323,7 +302,6 @@ ideas = {
 			ledger = army
 			visible = { has_tech = trench_warfare }
 			modifier = {
-				tactic_planned_attack_preferred_weight_factor = 1
 				supply_consumption_factor = -0.05
 				air_fuel_consumption_factor = -0.05
 				navy_fuel_consumption_factor = -0.05
@@ -336,9 +314,7 @@ ideas = {
 			ledger = army
 			visible = { has_tech = mass_assault }
 			modifier = {
-				tactic_relentless_assault_preferred_weight_factor = 1
-				army_strength_factor = 0.05
-				breakthrough_factor = 0.05
+				breakthrough_factor = 0.075
 			}
 			cost = 50.0
 			

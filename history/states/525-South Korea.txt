@@ -15,7 +15,7 @@ state=
 			4056 = {
 				naval_base = 3
 			}
-			air_base = 6
+			air_base = 10
 		}
 		victory_points = {
 			4056 1 

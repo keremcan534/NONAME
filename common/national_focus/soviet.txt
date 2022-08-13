@@ -411,8 +411,8 @@ focus_tree = {
 		id = SOV_winter_offensive_2
 		icon = GFX_SOV_lessons_of_the_winter_war
 		relative_position_id = SOV_winter_offensive
-		available = {245 = {is_fully_controlled_by = SOV}}
-		bypass = {not = {245 = {is_fully_controlled_by = SOV}}}
+		available = {217 = {is_fully_controlled_by = SOV}}
+		bypass = {not = {217 = {is_fully_controlled_by = SOV}}}
 		x = 0
 		y = 1
 		prerequisite = { focus = SOV_winter_offensive }
@@ -426,33 +426,32 @@ focus_tree = {
 					infantry = { x = 0 y = 1 }
 					infantry = { x = 0 y = 2 }
 					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
 					infantry = { x = 1 y = 0 }
 					infantry = { x = 1 y = 1 }
 					infantry = { x = 1 y = 2 }
 					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
 					infantry = { x = 2 y = 0 }
 					infantry = { x = 2 y = 1 }
 					infantry = { x = 2 y = 2 }
 					infantry = { x = 2 y = 3 }
-					anti_tank_brigade = { x = 3 y = 0 }
-					anti_tank_brigade = { x = 3 y = 1 }
-					anti_air_brigade = { x = 3 y = 2 }
-					anti_air_brigade = { x = 3 y = 3 }
-					artillery_brigade = { x = 4 y = 0 }
-					artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 4 y = 2 }
-					artillery_brigade = { x = 4 y = 3 }
-				}
-				support = {
-					recon = { x = 0 y = 0 }
-					engineer = { x = 0 y = 1 }
-					artillery = { x = 0 y = 2 }
-					logistics_company = { x = 0 y = 3 }
-					signal_company = { x = 0 y = 4 }
-					anti_tank = {x = 0 y = 5}
-				}
+					
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+					}
+			support = {
+				recon = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+				logistics_company = { x = 0 y = 3 }
+				signal_company = { x = 1 y = 0 }
+				anti_tank = {x = 1 y = 1}
 			}
-			245 = {
+			}
+			829 = {
 				for_loop_effect = {
 					end = 20
 					create_unit = {
@@ -489,7 +488,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 8
-		
+		available={
+			date>1942.3.1
+		}
 		completion_reward = {
 			remove_ideas={
 				home_of_revolution
@@ -584,78 +585,22 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			195={
-				add_building_construction = {
-					type = bunker
-					level = 7
-					province =6174
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 8
-					province =3151
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 7
-					province =149
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 7
-					province =79
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 7
-					province =11068
-					instant_build = yes
-				}
 				set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
 					}}
 			244={set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
 					}}
 			263 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province =6225
-						instant_build = yes
+				set_building_level = {
+					type = air_base
+					level = 6
+					instant_build = yes
 					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province =9212
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province =6154
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province =71
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province =320
-						instant_build = yes
-					}
-				
 			}
 		}
 	}
@@ -677,99 +622,33 @@ focus_tree = {
 			army_experience = 20
 			829={set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
 					}
 				}
 			401={set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
 					}
 				}
 			407={set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
 					}
 				}
 			238={set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
 					}
 				}
 			217 = {
 					set_building_level = {
 					type = air_base
-					level = 40
+					level = 6
 					instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =9474
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =6527
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =9504
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =3529
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =11474
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =520
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =9530
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province =3555
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province =3503
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province =6503
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province =11484
-						instant_build = yes
 					}
 				
 			}
@@ -792,125 +671,29 @@ focus_tree = {
 			army_experience = 20
 			253={set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
 					}}
 			248={set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
 					}}
 			252={set_building_level = {
 					type = air_base
-					level = 40
+					level = 6
 					instant_build = yes
 					}}
 			247={set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
 					}}
 			219 = {
 					set_building_level = {
 					type = air_base
-					level = 20
+					level = 6
 					instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =9302
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =3327
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =6348
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =3391
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =6414
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =6290
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =9348
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =9282
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =9395
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =11330
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =6380
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =11282
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =301
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =3259
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =3290
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province =9378
-						instant_build = yes
 					}
 				
 			}
@@ -1787,7 +1570,7 @@ focus_tree = {
 		icon = GFX_SOV_soviet_women
 		prerequisite = { focus = SOV_tankograd }
 		available = {
-			date>1941.10.1
+			date>1942.3.1
 		}
 		x = 0
 		y = 1
@@ -1805,6 +1588,8 @@ focus_tree = {
 		icon = GFX_SOV_infantry_development
 		prerequisite = { focus = SOV_modifiers}
 		available = {
+				date>1942.9.1
+			
 		}
 		x = 2
 		y = 1

@@ -4,6 +4,10 @@ debug_decisions = {
 		is_debug = yes
 	}
 }
+division_templates={
+	text="Division Templates"
+	icon = generic_political_actions
+}
 propaganda_efforts = {
 	icon = generic_propaganda
 

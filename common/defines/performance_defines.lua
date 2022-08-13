@@ -144,17 +144,17 @@ NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5  -- WAS 3; l
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100						 -- WAS 200, decreased because plane IC doubled | Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all the factories in a territory when you annex it
 ---------------------------------------------------------------
-NDefines.NAir.AIR_WING_MAX_SIZE = 200                            
+NDefines.NAir.AIR_WING_MAX_SIZE = 400                            
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 100  -- WAS 3000
 NDefines.NAir.DETECT_CHANCE_FROM_RADARS = 0
 NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 1
 NDefines.NAir.DETECT_CHANCE_FROM_RADARS = 0
-NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0		-- WAS 0.0005 | How much the experinence gained by CAS is scaled
+NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.0005		-- WAS 0.0005 | How much the experinence gained by CAS is scaled
 NDefines.NAir.PARADROP_EXPERIENCE_SCALE = 0					-- WAS 0.03 | How much the experinence gained by paradropping is scaled
 NDefines.NAir.BOMBING_DAMAGE_EXPERIENCE_SCALE = 0       	   -- WAS 0.0002 | How much the experinence gained by bombing is scaled
-NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0						-- WAS 0.001 | This affects how much XP you get from various missions (AFAIK this will affect XP gained from bombing and CAS missions as well)
-NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 0					-- Most xp you can gain per day
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.001						-- WAS 0.001 | This affects how much XP you get from various missions (AFAIK this will affect XP gained from bombing and CAS missions as well)
+NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 0.5					-- Most xp you can gain per day
 NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_NO_TRUCK_CONSUMERS = 0 -- How much country experinence gained by attacking consumers who aren't motorized
 NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_NODE_AND_TRAINS = 0    -- How much country experinence gained by attacking node/trains
 NDefines.NAir.EXPERIENCE_SCALE_ATTACK_LOGISTICS_TRUCKS = 0             -- How much country experinence gained by attacking trucks
@@ -223,6 +223,10 @@ NDefines.NPolitics.ARMY_LEADER_COST = 1					-- VANILLA 5 | cost for recruiting n
 ---------------------------------------------------------------
 NDefines.NBuildings.MAX_SHARED_SLOTS = 100 -- WAS 25 | Increased to support soviet industry relocation
 --NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.075
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300               -- WAS 150, changed so you can have 1 fewer line of tanks if you want 
+NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 30
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 300         -- WAS 15, Changed so you can have less lines of naval production
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 300		-- WAS 10, Changed so you can have less lines of naval production
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 0                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 15000000    -- Increased so most nations don't need to queue up multiple lines of infantry or spam 2w infantry and convert 

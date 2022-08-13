@@ -10,6 +10,7 @@ state={
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
+			air_base = 10
 			infrastructure = 2
 			1574 = {
 				naval_base = 1

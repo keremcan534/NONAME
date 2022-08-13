@@ -280,7 +280,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 4 }
+			position = { x = -4 y =@1940 }
 		}
 
 		
@@ -331,59 +331,7 @@ technologies = {
 		}
 	}
 
-	amphibious_drive = { #SchwimmPanzer II
-		enable_equipments = {
-			light_tank_amphibious_chassis_0
-			medium_tank_amphibious_chassis_0
-			heavy_tank_amphibious_chassis_0
-			light_tank_amphibious_chassis_1
-			medium_tank_amphibious_chassis_1
-			heavy_tank_amphibious_chassis_1
-			light_tank_amphibious_chassis_2
-			medium_tank_amphibious_chassis_2
-			heavy_tank_amphibious_chassis_2
-			light_tank_amphibious_chassis_3
-			medium_tank_amphibious_chassis_3
-			heavy_tank_amphibious_chassis_3
-		}
-
-		research_cost = 2
-		start_year = 1941
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = -1 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
-		}
-
-		categories = {
-			armor
-			tp_tech
-		}
-	}
+	
 
 	advanced_light_tank_chassis = { #Leopard
 		allow={
@@ -408,7 +356,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 8 }
+			position = { x = -4 y = @1944 }
 		}
 
 		
@@ -502,8 +450,10 @@ technologies = {
 			tank_small_cannon_2
 			tank_medium_cannon_2
 			tank_medium_howitzer
+			tank_heavy_howitzer
 			tank_rocket_launcher
 			tank_high_velocity_cannon_2
+			
 			tank_radio_2
 			}
 		path = {

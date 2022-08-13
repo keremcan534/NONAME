@@ -301,7 +301,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 9 }
 		}
 		
 		categories = {
@@ -352,7 +352,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = 12 }
 		}
 		
 		categories = {
@@ -423,7 +423,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 15 }
 		}
 		
 		categories = {
