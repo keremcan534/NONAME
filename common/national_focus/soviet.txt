@@ -587,18 +587,18 @@ focus_tree = {
 			195={
 				set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}}
 			244={set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}}
 			263 = {
 				set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}
 			}
@@ -622,32 +622,32 @@ focus_tree = {
 			army_experience = 20
 			829={set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}
 				}
 			401={set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}
 				}
 			407={set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}
 				}
 			238={set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}
 				}
 			217 = {
 					set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}
 				
@@ -671,28 +671,28 @@ focus_tree = {
 			army_experience = 20
 			253={set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}}
 			248={set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}}
 			252={set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}}
 			247={set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}}
 			219 = {
 					set_building_level = {
 					type = air_base
-					level = 10
+					level = 6
 					instant_build = yes
 					}
 				
