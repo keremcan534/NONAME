@@ -24,7 +24,7 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.3 	--effect on defense due 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.3	--more AA attack will approach this amount of help (diminishing returns)
 NDefines.NAir.FUEL_COST_MULT = 0.1 -- (0.35) fuel multiplier for all air missions 
 NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 130
-NDefines.NAir.DISRUPTION_FACTOR = 7  -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
+NDefines.NAir.DISRUPTION_FACTOR = 6  -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
 --antiair
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1 -- (1.0) Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA. 
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.6 -- (.75) Maximum damage reduction factor applied to incoming air attacks against units with AA.
@@ -36,7 +36,7 @@ NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.55 -- (0.50) fuel cost multiplier for
 NDefines.NMilitary.UNIT_DIGIN_CAP = 5                           --   vanilla 10 | "how "deep" you can dig you can dig in until hitting max bonus
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 0 		-- VANILLA 1 - changed to force tanks into battle first (most of the time) |   Multiplier on TotalOrganisation when determining the combat value of a division
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 		-- VANILLA 1  - changed to force tanks into battle first (most of the time)    |  Multiplier on TotalStrength when determining the combat value of a division
-NDefines.NMilitary.REINFORCE_CHANCE = 0.05 --vanilla 0.02
+NDefines.NMilitary.REINFORCE_CHANCE = 0.04 --vanilla 0.02
 NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -0.5 --vanilla -1	-- Malus in percentage for the planning bonus gain for naval invasions
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.5                 -- percentage of experienced solders who die when manpower is removed
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0005

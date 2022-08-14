@@ -1,0 +1,21 @@
+spriteTypes = {	
+
+
+	### GDU alt icons for MW 2nd left light tanks ###
+
+	SpriteType = {
+		name = "GFX_volkssturm_medium"
+		texturefile = "gfx/interface/technologies/firebrigades.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_werwolf_guerillas_medium"
+		texturefile = "gfx/interface/technologies/modern_blitzkrieg.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_nd_conscription_medium"
+		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
+	}
+	
+}

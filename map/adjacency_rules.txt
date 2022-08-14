@@ -98,6 +98,7 @@ adjacency_rule =
 }
 
 
+
 #Suez Canal
 adjacency_rule =
 {
@@ -224,6 +225,44 @@ adjacency_rule =
 	
 	icon = 2455
 	offset = { -26 0 -13 }
+}
+
+adjacency_rule =
+{
+	name = "ADRIATIC_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 11998 11767 6979 3884 }
+	icon = 6979
+	offset = { 1 0 -6 }
 }
 
 adjacency_rule =
