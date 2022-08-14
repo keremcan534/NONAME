@@ -140,7 +140,7 @@ leader_traits = {
 ##################################
 	logistics_wizard = { 
 		type = field_marshal	
-		field_marshal_modifier = {	supply_consumption_factor = -0.075	}
+		field_marshal_modifier = {	supply_consumption_factor = -0.1	}
 		enable_ability = extra_suplies
 		gui_row = 0
 		trait_type = assignable_trait
@@ -166,7 +166,7 @@ leader_traits = {
 
 	defensive_doctrine = { 
 		type = field_marshal
-		field_marshal_modifier = {		max_dig_in_factor = 0.15	}
+		field_marshal_modifier = {		max_dig_in_factor = 0.25	}
 	slot = high_command
 		specialist_advisor_trait = army_entrenchment_1
 		expert_advisor_trait = army_entrenchment_1
@@ -629,8 +629,8 @@ slot = high_command
 	camouflage_expert = { 
 		type = corps_commander
 		modifier = {
-			cas_damage_reduction = 0.5
-			air_superiority_bonus_in_combat = -0.666
+			cas_damage_reduction = 0.3
+			air_superiority_bonus_in_combat = -0.2
 		}		
 	slot = high_command
 		specialist_advisor_trait = army_concealment_1

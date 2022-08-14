@@ -86,7 +86,7 @@ leader_defense_skills = {
 		cost = 100
 		type = corps_commander
 		modifier = {
-			defence = 0.15
+			defence = 0.015
 		}
 	}
 	
@@ -185,7 +185,7 @@ leader_defense_skills = {
 		cost = 100
 		type = field_marshal
 		modifier = {
-			defence = 0.15
+			defence = 0.015
 		}
 	}
 	

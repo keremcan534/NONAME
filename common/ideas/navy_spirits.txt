@@ -17,15 +17,7 @@ ideas = {
 			cost =100.00
 			
 		}
-		naval_reform_spirit = {
-			ledger = navy
-			modifier = {
-				experience_gain_navy_factor = 0.15
-				experience_gain_navy=0.5
-			}
-			cost =5
-			
-		}
+		
 		naval_refit_yards_spirit = {
 			ledger = navy
 			modifier = {
@@ -38,6 +30,15 @@ ideas = {
 	}
 
 	naval_command_spirit = {
+		naval_reform_spirit = {
+			ledger = navy
+			modifier = {
+				experience_gain_navy_factor = 0.5
+				experience_gain_navy=0.1
+			}
+			cost =0
+			
+		}
 		close_combat_navy_spirit = {
 			ledger = navy
 			modifier ={

@@ -992,7 +992,6 @@ ideas = {
 			}
 			equipment_bonus = {
 				armor = {
-					defense = 0.1
 					reliability = 0.1
 					hard_attack = 0.125
 					soft_attack = 0.125

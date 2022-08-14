@@ -2018,7 +2018,7 @@
 					}
 				}
 				GER = {
-					add_ideas = GER_logistical_incompetence
+					
 					add_timed_idea = {
 						idea = ger_infantry_expert
 						days = 400
@@ -2038,28 +2038,28 @@
 						idea = GER_barb_line
 						days = 10
 					}
-					add_ideas = GER_logistical_incompetence
+					
 				}
 				ROM = {
 					add_timed_idea = {
 						idea = GER_barb_line
 						days = 10
 					}
-					add_ideas = GER_logistical_incompetence
+					
 				}
 				HUN = {
 					add_timed_idea = {
 						idea = GER_barb_line
 						days = 10
 					}
-					add_ideas = GER_logistical_incompetence
+					
 				}
 				SPR = {
 					add_timed_idea = {
 						idea = GER_barb_line
 						days = 10
 					}
-					add_ideas = GER_logistical_incompetence
+					
 				}
 				add_popularity = {
 					ideology = fascism

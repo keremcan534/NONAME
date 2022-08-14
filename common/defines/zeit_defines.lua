@@ -124,12 +124,12 @@ NDefines.NSupply.NAVAL_BASE_FLOW = 5 -- max output/input of a naval node is limi
 NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 8 -- max output/input of a naval node is limited by previous base value + this define per its level
 NDefines.NSupply.RAILWAY_BASE_FLOW = 15.0 		-- how much base flow railway gives when a node connected to its capital/a naval node by a railway
 NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 6.0 	-- how much additional flow a railway level gives
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 3 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 1 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 500.0	-- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 1            -- vanilla 0.1
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 100			-- vanilla 10  Maximum chunk size of equipment upgrade distribution per update.
-NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 2   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
-NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 2	   -- How many days must pass until we may give another reinforcement request
+NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 1   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
+NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 1	   -- How many days must pass until we may give another reinforcement request
 ---------------------------------------------------------------
 
 NDefines.NCountry.SUPPLY_CONVOY_FACTOR = 0.07					-- REDUCED To 1/4 BECAUSE CONVOYS ARE 4X THE COST | How many convoys each supply needs

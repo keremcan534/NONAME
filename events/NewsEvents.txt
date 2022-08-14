@@ -1896,7 +1896,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -1982,7 +1982,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2037,7 +2037,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2080,7 +2080,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2123,7 +2123,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2173,7 +2173,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		hours = 1
 	}
 	
 	option = {
@@ -2216,7 +2216,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2259,7 +2259,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2302,7 +2302,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2348,7 +2348,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2391,8 +2391,8 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
-	}
+		hours = 1
+		}
 	
 	option = {
 		name = news.145.a
@@ -2434,7 +2434,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2477,7 +2477,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2520,7 +2520,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2563,7 +2563,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2606,7 +2606,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2681,7 +2681,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2724,7 +2724,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2776,7 +2776,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2839,7 +2839,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -2935,7 +2935,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {
@@ -3053,7 +3053,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		hours = 1
 	}
 	
 	option = {

@@ -66,11 +66,10 @@ weather_extreme_cold = {
 	air_accidents = 0.6
 	air_bombing_targetting = -0.25
 	local_org_regain = -0.5
-	org_loss_when_moving = 0.25
+	org_loss_when_moving = 0.60
 	positioning = -0.2
-	supply_consumption_factor = 0.15
-	supply_factor = -0.125
-	army_attack_speed_factor = -0.25
+	supply_consumption_factor = 0.075
+	army_attack_speed_factor = -0.3
 }
 
 weather_very_cold = {
@@ -85,11 +84,10 @@ weather_very_cold = {
 	air_accidents = 0.3
 	air_bombing_targetting = -0.15
 	local_org_regain = -0.3
-	org_loss_when_moving = 0.15
+	org_loss_when_moving = 0.30
 	positioning = -0.1
-	supply_consumption_factor = 0.1
-	supply_factor = -0.075
-	army_attack_speed_factor = -0.15
+	supply_consumption_factor = 0.05
+	army_attack_speed_factor = -0.2
 }
 
 weather_very_hot = {
