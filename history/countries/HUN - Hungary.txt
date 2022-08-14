@@ -8,6 +8,10 @@ diplomatic_relation = {   country = AUS relation = military_access  active = yes
 diplomatic_relation = {   country = ITA relation = military_access  active = yes  }
 add_intel = { target = JAP civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 set_convoys = 100
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 add_ideas = {
 	general_staff
 	GER_autarky_idea_minor
@@ -26,6 +30,7 @@ set_popularities = {
 	fascism = 31
 	neutrality = 44
 }
+
 set_technology = {
 	#freetechforall
 	basic_train = 1

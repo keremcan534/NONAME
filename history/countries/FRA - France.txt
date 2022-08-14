@@ -26,7 +26,10 @@ set_popularities = {
 	democratic = 70
 	communism = 30
 }
-
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government

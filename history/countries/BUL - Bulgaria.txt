@@ -5,6 +5,10 @@ add_ideas = {
 	general_staff
 	GER_autarky_idea_minor
 }
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 set_stability = 0.65
 set_convoys = 100
 set_war_support = 0.71

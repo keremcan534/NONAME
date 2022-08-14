@@ -27,7 +27,10 @@ add_ideas = {
 	allied_trading_idea
 }
 set_cosmetic_tag = RAJ_UK # British Raj
-
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 # Starting tech
 set_technology = { 
 	basic_train = 1

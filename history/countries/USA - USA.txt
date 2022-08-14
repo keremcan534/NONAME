@@ -7,10 +7,14 @@ set_war_support = 0
 set_convoys = 1000
 add_to_tech_sharing_group = commonwealth_research
 set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
+set_variable = {
 	var = senators_support
 	value = 48
 }
-
 set_variable = {
 	var = senators_total
 	value = 96

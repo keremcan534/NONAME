@@ -22,6 +22,10 @@ set_popularities = {
 	democratic = 75
 	fascism = 25
 }
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 # Starting tech
 set_technology = {
 	#freetechforall

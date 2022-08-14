@@ -12,6 +12,10 @@ set_popularities = {
 	fascism = 100
 	neutrality = 0
 }
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 set_technology = {
 	#freetechforall
 	basic_train = 1

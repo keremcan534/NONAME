@@ -18,7 +18,10 @@ set_popularities = {
 set_politics = {
 	ruling_party = neutrality
 }
-
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 add_ideas={
 	general_staff
 	GER_autarky_idea_minor

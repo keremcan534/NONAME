@@ -28,6 +28,12 @@ add_ideas = {
 	JAP_defense_of_homeland
 	JAP_special_air_landing_force #hidden buff
 }
+set_country_flag=fuel_system_enabled
+set_fuel_ratio = 1.0
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 add_intel = { target = GER civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 add_intel = { target = ITA civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 add_intel = { target = BUL civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }

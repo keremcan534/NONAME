@@ -12,6 +12,12 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+set_country_flag=fuel_system_enabled
+set_fuel_ratio = 0.8
+set_variable = {
+	var = min_fuel
+	value = 0.300
+}
 set_popularities = {
 	democratic = 20
 	fascism = 60

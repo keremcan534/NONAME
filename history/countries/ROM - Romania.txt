@@ -30,14 +30,16 @@ add_intel = {
 	navy_intel = 200
 	airforce_intel = 200
 }
-
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.6
 set_rule = {
 	can_be_spymaster = no
 }
-
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 # Starting tech
 set_technology = {
 	#freetechforall

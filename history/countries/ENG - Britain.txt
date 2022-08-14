@@ -27,7 +27,11 @@ add_ideas = {
 	george_v
 	allied_trading_idea
 }
-
+set_country_flag=fuel_system_enabled
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 set_convoys = 1000
 # Starting tech
 set_technology = {
