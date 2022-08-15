@@ -20,15 +20,7 @@ ideas = {
 			
 		}
 		
-		effective_training_programs_spirit = {
-			ledger = air
-			modifier = {
-				experience_gain_air_factor = 1
-				air_doctrine_cost_factor = -0.1
-			}
-			cost =30
-			
-		}
+		
 		air_crew_surveys_spirit = {
 			ledger = air
 			modifier = {
@@ -41,12 +33,14 @@ ideas = {
 	}
 
 	air_force_command_spirit = {
-		veteran_air_instructors_spirit = {
+		effective_training_programs_spirit = {
 			ledger = air
 			modifier = {
+				experience_gain_air_factor = 1
 				experience_gain_air = 0.5
+				air_doctrine_cost_factor = -0.1
 			}
-			cost =30
+			cost =0
 			
 		}
 		centralized_control_spirit = {
@@ -63,8 +57,9 @@ ideas = {
 			modifier = {
 				air_mission_efficiency = 0.15
 				air_home_defence_factor = 0.15
+				air_cas_efficiency = 0.10
 			}
-			cost =100
+			cost =500
 		}
 		massed_strike_spirit = {
 			ledger = air

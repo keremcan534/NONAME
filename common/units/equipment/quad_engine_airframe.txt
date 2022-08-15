@@ -2,7 +2,7 @@ equipments = {
 	strat_bomber_equipment = {
 		year = 1933
 		is_archetype = yes
-		is_convertable = yes
+		
 		picture = archetype_strat_bomber_equipment
 		is_buildable = no
 		can_license = no
@@ -24,9 +24,9 @@ equipments = {
 		naval_strike_targetting = 0.6
 		#Space taken in convoy
 		lend_lease_cost = 20
-		build_cost_ic = 600
+		build_cost_ic = 800
 		resources = {
-			aluminium = 2
+			aluminium = 4
 			rubber = 2
 		}
 		manpower = 80
@@ -42,9 +42,8 @@ equipments = {
 		maximum_speed = 400
 		air_agility = 5
 		air_attack = 50
-		air_defence = 18
-		air_bombing = 200
-		# build_cost_ic = 36
+		air_defence = 16
+		air_bombing = 260
 	}
 	# Improved strat_bomber
 	strat_bomber_equipment_2 = {
@@ -54,12 +53,12 @@ equipments = {
 		priority = 140
 		can_license = no
 		air_range = 4000
-		maximum_speed = 450
+		maximum_speed = 400
 		air_agility = 5
 		air_attack = 50
-		air_defence = 20
-		air_bombing = 250
-		build_cost_ic = 700
+		air_defence = 22
+		air_bombing = 380
+		build_cost_ic = 1000
 
 	}
 	# Advanced strat_bomber
@@ -82,7 +81,7 @@ equipments = {
 	transport_plane_equipment = {
 		year = 1933
 		is_archetype = yes
-		is_convertable = yes
+		
 		picture = archetype_strat_bomber_equipment
 		type = air_transport
 		group_by = archetype
@@ -99,10 +98,10 @@ equipments = {
 		build_cost_ic = 360
 		resources = {
 			aluminium = 2
-			rubber = 2
+			rubber = 1
 		}
 		manpower = 80
-		fuel_consumption = 1
+		fuel_consumption = 0.51
 	}
 	transport_plane_equipment_1 = {
 		year = 1933
@@ -113,6 +112,6 @@ equipments = {
 		air_range = 1000
 		maximum_speed = 300
 		air_agility = 10
-		air_defence = 20
+		air_defence = 12
 	}
 }

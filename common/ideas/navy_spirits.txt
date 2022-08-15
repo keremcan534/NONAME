@@ -34,7 +34,7 @@ ideas = {
 			ledger = navy
 			modifier = {
 				experience_gain_navy_factor = 0.5
-				experience_gain_navy=0.1
+				experience_gain_navy=0.5
 			}
 			cost =0
 			

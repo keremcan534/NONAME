@@ -252,8 +252,8 @@ NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0					-- Based on number of navies.
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (which is typically a lot).
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
-NDefines.NCountry.BASE_FUEL_CAPACITY = 50000                -- WAS 50k, increased to make the fuel system more smooth with minor AC
-NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.5						-- VANILLA 2    base amount of fuel gained hourly per excess oil
+NDefines.NCountry.BASE_FUEL_CAPACITY = 500000                -- WAS 50k, increased to make the fuel system more smooth with minor AC
+NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 1.5						-- VANILLA 2    base amount of fuel gained hourly per excess oil
 NDefines.NCountry.BASE_FUEL_GAIN = 0							-- VANILLA 2    base amount of fuel gained hourly, independent of excess oil
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0               --Removed for game stability/reducing chance of desync
 NDefines.NCountry.GIE_HOST_CIC_FROM_LEGITIMACY_MAX = 0 					--Host will receive from 0 to this value in CIC.
@@ -269,9 +269,7 @@ NDefines.NCountry.RESOURCE_IMPORTANCE_FACTOR = 0               -- State resource
 NDefines.NCountry.FRONT_PROVINCE_SCORE = 0   					-- Max province score of a front. Used for the hostile troop alert
 ---------------------------------------------------------------
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun    
-NDefines.NNavy.FIELD_EXPERIENCE_SCALE = 0.75									-- NAVAL EXPERIENCE REMOVED AS THE FUEL SYSTEM MAKES FUEL AND THUS NAVAL EXPERIENCE INFINITELY AVAILABLE -Thrasymachus
-NDefines.NNavy.FIELD_EXPERIENCE_MAX_PER_DAY = 50								-- NAVAL EXPERIENCE REMOVED AS THE FUEL SYSTEM MAKES FUEL AND THUS NAVAL EXPERIENCE INFINITELY AVAILABLE -Thrasymachus
-NDefines.NNavy.TRAINING_MAX_DAILY_COUNTRY_EXP = 1							-- Maximum navy XP daily gain
+
 
 NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3 --swapped prio so imports go first
 NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3

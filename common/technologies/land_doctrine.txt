@@ -668,7 +668,7 @@ technologies = {
 		category_front_line = {
 			soft_attack = 0.2
 		}
-		amphibious_invasion_defence = 0.15
+		amphibious_invasion_defence = 0.1
 		land_reinforce_rate = 0.05
 		enable_tactic = tactic_barrage
 		doctrine = yes
@@ -714,10 +714,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			defense = 0.2
+			defense = 0.1
 		}
 		category_line_artillery = {
-			defense = 0.2
+			defense = 0.1
 		}
 		enable_tactic = tactic_elastic_defense
 		path = {
@@ -1139,7 +1139,7 @@ technologies = {
 		}
 		category_special_forces = {
 			max_organisation = 20
-			max_strength = 5
+			max_strength = 3
 		}
 		category_army = {
 			default_morale = 0.05
@@ -1545,7 +1545,7 @@ technologies = {
 		category_non_support = {
 			jungle = {
 				attack = 0.1
-				defence = 0.075
+			
 				movement = 0.05
 			}
 			mountain = {
@@ -1554,16 +1554,16 @@ technologies = {
 			}
 			hills = {
 				attack = 0.05
-				defence = 0.025
+			
 				movement = 0.025
 			}
 			marsh = {
 				attack = 0.05
-				defence = 0.05
+			
 			}
 			river = {
 				attack = 0.075
-				defence = 0.05
+			
 				movement = 0.025
 			}
 		}

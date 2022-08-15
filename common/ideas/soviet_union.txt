@@ -129,7 +129,14 @@ ideas = {
 			}
 			equipment_bonus = {
 				fighter_equipment = {
-					air_agility = 0.-1
+					air_agility = -0.1
+					air_defence = -0.1
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.05
+					air_ground_attack = -0.1
+					instant = yes
 				}
 			}
 		}
@@ -160,6 +167,13 @@ ideas = {
 			equipment_bonus = {
 				fighter_equipment = {
 					air_agility = -0.075
+					air_defence = -0.075
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.05
+					air_ground_attack = -0.1
+					instant = yes
 				}
 			}
 		}
@@ -188,7 +202,13 @@ ideas = {
 			}
 			equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.05
+					air_agility = -0.025
+					air_defence = -0.025
+					instant = yes
+				}
+				CAS_equipment = {
+					air_ground_attack = -0.025
+					instant = yes
 				}
 			}
 		}

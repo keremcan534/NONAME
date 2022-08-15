@@ -276,7 +276,8 @@ equipments = {
 		reliability = 0.8
 		naval_range = 1500
 		max_strength = 25
-		fuel_consumption = 7
+		fuel_consumption = 0
+
 		build_cost_ic = 400
 		resources = {
 			#oil = 1
@@ -313,6 +314,8 @@ equipments = {
 		reliability = 0.85
 		naval_range = 1800
 		max_strength = 40
+		fuel_consumption = 0
+
 		type = {
 			screen_ship
 			anti_air
@@ -353,6 +356,8 @@ equipments = {
 		reliability = 0.9
 		naval_range = 2000
 		max_strength = 50
+		fuel_consumption = 0
+
 		type = {
 			screen_ship
 			anti_air
@@ -393,6 +398,8 @@ equipments = {
 		reliability = 0.92
 		naval_range = 2500
 		max_strength = 60
+		fuel_consumption = 0
+
 		type = {
 			screen_ship
 			anti_air

@@ -25,8 +25,8 @@ upgrades = {
 		maximum_speed = 0.08
 		reliability = -0.02
 		add_stats = {
-			fuel_consumption = 0.02
-			build_cost_ic = 0.2
+			fuel_consumption = 0.04
+			build_cost_ic = 0.15
 		}
 	}
 
@@ -60,14 +60,14 @@ upgrades = {
 				chromium = 2
 			}
 		}
-		maximum_speed = -0.055
+		maximum_speed = -0.05
 		reliability = -0.03
 		armor_value = 0.03
 		add_stats = {
-			armor_value = 0.4
+			armor_value = 0.5
 			breakthrough = 1.0
 			defense = 0.15
-			build_cost_ic = 0.35
+			build_cost_ic = 0.3
 		}
 	}
 }

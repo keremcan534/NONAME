@@ -2125,7 +2125,6 @@ early_ship_hull_carrier = {
 	mtg_landing_craft = {
 
 		invasion_preparation = -0.5
-		amphibious_invasion_defence = 0.05
 		naval_invasion_capacity = 60
 
 		path = {
@@ -2158,7 +2157,6 @@ early_ship_hull_carrier = {
 	mtg_tank_landing_craft = {
 
 		amphibious_invasion = 0.25
-		amphibious_invasion_defence = 0.05
 		naval_invasion_capacity = 100
 
 		research_cost = 1.5
