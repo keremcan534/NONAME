@@ -291,7 +291,7 @@ focus_tree = {
  					amount = 20
  				}
  			}
- 			add_timed_idea = { idea = JAP_comet_sighted days = 90 }
+ 			add_timed_idea = { idea = JAP_comet_sighted days = 180 }
 		}
 	}
  	
@@ -303,7 +303,7 @@ focus_tree = {
  		y = 1
  		mutually_exclusive = {focus = JAP_challenge_the_zaibatsus}
  		relative_position_id = JAP_purge_the_kodoha_faction
- 		cost = 10
+ 		cost = 5
  		cancel_if_invalid = yes
  		continue_if_invalid = no
  		available_if_capitulated = no
@@ -331,7 +331,7 @@ focus_tree = {
  		x = 4
  		y = 1
  		relative_position_id = JAP_purge_the_kodoha_faction
- 		cost = 10
+ 		cost = 5
          mutually_exclusive = {focus = JAP_guide_the_zaibatsus}
 
  		cancel_if_invalid = yes
@@ -1016,7 +1016,7 @@ focus_tree = {
  		x = 9
  		y = 0
  		relative_position_id = JAP_army_expansion_law
- 		cost = 10
+ 		cost = 5
  		cancel_if_invalid = yes
  		continue_if_invalid = no
  		available_if_capitulated = no

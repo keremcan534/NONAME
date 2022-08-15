@@ -1,7 +1,7 @@
 ﻿capital = 361
 oob = "USA_1936"
 set_naval_oob = "USA_1936_naval_mtg"
-set_research_slots = 5
+set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
 set_convoys = 1000
@@ -213,34 +213,7 @@ set_technology = {
 	improved_ship_torpedo_launcher = 1
 }
 
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 2000
-	producer = USA
-}
 
-add_equipment_to_stockpile = {
-	type = support_equipment
-	amount = 2000
-	producer = USA
-}
-
-add_equipment_to_stockpile = {
-	type = anti_air_equipment_1
-	amount = 1000
-	producer = USA
-}
-
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 20000
-	producer = USA
-}
-add_equipment_to_stockpile = {
-	type = motorized_equipment_1
-	amount = 1500
-	producer = USA
-}
 
 recruit_character = USA_franklin_delano_roosevelt
 recruit_character = USA_samuel_sickles

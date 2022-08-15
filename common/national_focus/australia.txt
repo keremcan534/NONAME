@@ -976,25 +976,6 @@
 		}
 	}
 	focus = {
-		id = AST_naval_auxiliary_patrol
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = {
-			focus = AST_cockatoo_island_shipyards
-		}
-		x = 0
-		y = 2
-		relative_position_id = AST_cockatoo_island_shipyards
-		cost = 10
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {
-		}
-		completion_reward = {
-			add_ideas = AST_naval_auxiliary_patrol
-		}
-	}
-	focus = {
 		id = AST_cruisers
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = {
@@ -1467,23 +1448,7 @@
 			}
 		}
 	}
-	focus = {
-		id = AST_volunteer_defence_corps
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = {
-			focus = AST_establish_advisory_war_council
-		}
-		x = 2
-		y = 1
-		relative_position_id = AST_establish_advisory_war_council
-		cost = 5
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_ideas = AST_volunteer_defence_corps
-		}
-	}
+
 	focus = {
 		id = AST_civil_construction_corps
 		icon = GFX_goal_generic_production2
@@ -1575,10 +1540,10 @@
 		id = AST_citizen_military_forces
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = {
-			focus = AST_volunteer_defence_corps
+			focus = AST_establish_advisory_war_council
 		}
 		x = 2
-		y = 2
+		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 		cost = 5
 		cancel_if_invalid = yes
@@ -1704,7 +1669,7 @@
 			focus = AST_citizen_military_forces
 		}
 		x = 2
-		y = 3
+		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 		cost = 5
 		ai_will_do = {
