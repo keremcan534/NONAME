@@ -35,7 +35,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_generic_japanese_conflict
+			picture = JAP_The_Divided_Rising_Sun_Impartial
 			
 			modifier = {
 				production_speed_synthetic_refinery_factor = -1

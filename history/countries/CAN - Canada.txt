@@ -28,6 +28,7 @@ add_ideas={
 	home_of_the_free_can
 	CAN_conscription_crisis
 	CAN_great_depression_1
+	asia_matters
 }
 add_intel = {
 	target = SOV

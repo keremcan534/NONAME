@@ -5,7 +5,7 @@ state={
 	manpower = 11015000
 	state_category = metropolis
 	resources={
-		steel=180 # was: 56
+		steel=20 # was: 56
 	}
 	history={
 		owner = JAP

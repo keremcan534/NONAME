@@ -25,6 +25,7 @@ add_ideas = {
 	RAJ_agrarian_society
 	RAJ_risk_of_famine
 	allied_trading_idea
+	asia_matters
 }
 set_cosmetic_tag = RAJ_UK # British Raj
 set_variable = {

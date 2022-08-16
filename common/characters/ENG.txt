@@ -269,7 +269,7 @@ characters={
 			cost = 200
 			
 			traits = {
-				army_god
+				yorgun_demokrat
 			}
 			cost = 200
 			ai_will_do = {

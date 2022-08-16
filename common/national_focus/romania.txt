@@ -874,6 +874,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = ROM_army_maneuvers
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 			add_tech_bonus = {
 				name = ROM_the_zb_53
 				bonus = 1.0
@@ -939,6 +945,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = ROM_army_maneuvers
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 			add_tech_bonus = {
 				name = ROM_artillery_modernization
 				bonus = 1.0

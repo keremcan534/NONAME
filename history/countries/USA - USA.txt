@@ -78,6 +78,7 @@ add_ideas = {
 	USA_homeland_defense
 	USA_dont_invade_free_europe
 	allied_trading_idea
+	asia_matters
 }
 add_timed_idea = {
 	idea=economic_recovery

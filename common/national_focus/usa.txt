@@ -34,7 +34,7 @@ focus_tree = {
 			}
 			add_offsite_building = {
 				type = industrial_complex
-				level = 8
+				level = 6
 			}
 		}
 	}
@@ -92,7 +92,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 12
+				level = 10
 			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
@@ -148,7 +148,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 12
+				level = 10
 			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
@@ -193,7 +193,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 12
+				level = 10
 			}
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
@@ -1381,7 +1381,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = USA_louisiana_maneuvers
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -1422,7 +1422,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = USA_louisiana_maneuvers
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -1964,9 +1964,8 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea=USA_dockyard
-				days = 210
+				days = 180
 			}
-			add_ideas=USA_maritime_commission
 		}
 	}
 	focus = {

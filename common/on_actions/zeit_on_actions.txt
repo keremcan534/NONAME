@@ -125,8 +125,11 @@ on_actions = {
 				}
 				every_country={
 					limit={playable_countries=yes
-					NOT={
+					NOT={OR={
 						original_tag=GER
+						original_tag=SOV
+						original_tag=USA
+					}
 					}
 				}
 				add_timed_idea={idea=africa_hp

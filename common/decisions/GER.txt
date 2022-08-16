@@ -104,6 +104,12 @@ operations = {
 			677 = {
 				set_demilitarized_zone = no
 			}
+			ITA={
+				transfer_state=553
+				transfer_state=554
+				transfer_state=680
+				transfer_state=677
+			}
 		}
 	}
 	
