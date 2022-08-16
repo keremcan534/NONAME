@@ -30,7 +30,7 @@ focus_tree = {
 			add_political_power = 150
 			add_timed_idea={
 				idea=USA_highway_program_idea
-				days=90
+				days=60
 			}
 			add_offsite_building = {
 				type = industrial_complex
@@ -385,8 +385,12 @@ focus_tree = {
 		relative_position_id = USA_neutrality_act
 		cost = 10
 		available = {
-			democratic > 0.95
-			date > 1937.3.1
+			
+			OR={
+				has_war=yes
+				date > 1937.3.1
+				
+			}
 		}
 		bypass = {
 			AND = {
@@ -419,24 +423,7 @@ focus_tree = {
 			
 			navy_experience = 50
 			army_experience = 50
-			air_experience = 10
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
+			air_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -573,6 +560,9 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_arsenal_of_democracy
 		}
+		bypass={
+			has_global_flag=ENG_capt
+		}
 		available = {
 			OR={
 			date > 1939.12.1 has_war=yes
@@ -654,10 +644,10 @@ focus_tree = {
 						region = 120
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = USA_military_construction_5MF
@@ -845,10 +835,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = USA_USACE_projects_3AF
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1916,7 +1906,7 @@ focus_tree = {
 					}
 				}
 				378 = {
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -1935,7 +1925,7 @@ focus_tree = {
 					}
 				}
 				358 = {
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = dockyard
 						level = 1

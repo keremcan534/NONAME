@@ -1,0 +1,36 @@
+﻿add_namespace = gduevents
+country_event = {
+	id = gduevents.34
+	title = gduevents.34.t
+	desc = gduevents.34.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gduevents.34.a
+
+
+	}
+
+}
+country_event = {
+	id = gduevents.35
+	title = gduevents.35.t
+	desc = gduevents.35.d
+	picture = GFX_report_event_ast_troops_landing
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = {
+		name = gduevents.35.a
+
+
+	}
+
+}
+

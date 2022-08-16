@@ -3,7 +3,20 @@
 @tier3 = 10
 
 leader_traits = {
-
+	
+	total_war_organizer = { 
+		sprite = 10 
+		random = no 
+		consumer_goods_factor = -0.05
+		industry_free_repair_factor = 0.5
+		production_factory_max_efficiency_factor = 0.2445
+		production_factory_efficiency_gain_factor = 0.1945
+		conversion_cost_civ_to_mil_factor = -0.3
+		
+		ai_will_do = { 
+			factor = 5 
+		}
+	}
 
 	################################
 	## SOVIET UNION LEADER TRAITS ##

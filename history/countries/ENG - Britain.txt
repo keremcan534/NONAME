@@ -162,8 +162,8 @@ add_equipment_to_stockpile = {
 # DIPLOMACY
 set_autonomy = {
 	target = RAJ
-	autonomous_state = autonomy_colony
-	freedom_level = 0.35
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.4
 }
 
 set_autonomy = {
@@ -181,7 +181,7 @@ set_autonomy = {
 set_autonomy = {
 	target = AST
 	autonomous_state = autonomy_dominion
-	freedom_level = 0.2
+	freedom_level = 0.4
 }
 
 give_guarantee = POL

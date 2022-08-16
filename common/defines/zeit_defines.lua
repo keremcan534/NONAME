@@ -155,7 +155,7 @@ NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.05 --vanilla 0.1, controls onmap movemen
 NDefines.NNavy.CARRIER_STACK_PENALTY = 2    -- The most efficient is 2 carriers in combat. 3+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- vanilla 0.6 org will clamped to this ratio on manual move 
 NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.9
-NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.35
+NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.25
 NDefines.NNavy.GUN_HIT_PROFILES = { -- 145 torps 80 heavy 45 light in vanilla  hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,	-- big guns
 		103.0,	-- torpedos - because of torpedo reveal chance -20% in doctrine, 92 hit chance should be roughly equal to the -20%; with hitprofile of 1000 it was 96 hit chance with 102 profile, now 118 hit chance with 92 profile

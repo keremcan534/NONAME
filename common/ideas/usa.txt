@@ -98,11 +98,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-army_morale_factor = -0.25
+				army_morale_factor = -0.25
 			}
-
 		}
-
 		USA_war_plans_2 = {
 			picture = generic_war_preparation
 			allowed = {
@@ -488,7 +486,6 @@ army_morale_factor = -0.25
 				always = yes
 			}
 			removal_cost = -1
-			
 			modifier = {
 			}
 		}
@@ -729,8 +726,7 @@ army_morale_factor = -0.25
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		bureau_of_ships_focus = {
