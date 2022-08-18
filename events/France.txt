@@ -51,7 +51,7 @@ country_event = {
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
 			add_state_core = 24
 			set_capital = {
-				state = 24
+				state = 26
 			}
 		every_state = {
 			limit = { is_core_of = FRA }

@@ -2,6 +2,247 @@ on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_startup = {
 		effect = {
+			78 = { #Bessarabia
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			766 = { #Southern Bessarabia
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}			
+			80 = { #Bucovina
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}			
+			89 = { #Stanislawow
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			91 = { #Lvov
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}			
+			93 = { #Wolyn
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			192 = { #Odessa
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}						
+			194 = { #Mozyr
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			197 = { #Mykolaiv
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}			
+			198 = { #Vinnytsia
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			199 = { #Khelnytskyi
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}			
+			201 = { #Zhytomyr
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			202 = { #Kiev
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}			
+			203 = { #Cherkasy
+				add_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+
+			766 = { #Southern Bessarabia
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			78 = { #Bessarabia
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			80 = { #Bucovina
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			199 = { #Khelnytskyi
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			89 = { #Stanislawow
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			91 = { #Lwow
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			93 = { #Wolyn
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			94 = { #Polesie
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}			
+			97 = { #Bialyostok
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			95 = { #Nowogrodek
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			784 = { #Wilno
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			11 = { #Kaunas
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			189 = { #Siauliai
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}			
+			192 = { #Odessa
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
+			198 = { #State just north of Odessa
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}			
+			190 = { #Kurzeme
+				add_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			}
 			#Custom Hungary, Romania, Bulgaria starting state array for later checks. Excludes Bessarabia/Bucovina and also western/central Bulgaria
 			79 = { add_to_array = { global.HUNROMBUL_array = THIS } }
 			46 = { add_to_array = { global.HUNROMBUL_array = THIS } }

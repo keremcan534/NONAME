@@ -29,6 +29,692 @@ ideas = {
 		}
 	}
 	country = {
+		
+		Zhytomyr_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_speed_infrastructure_factor = 0.08
+				industry_free_repair_factor = 0.08
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.02 }
+			
+		}
+
+		Zhytomyr_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.015
+				production_speed_infrastructure_factor = 0.06
+				industry_free_repair_factor = 0.06	
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.015 }
+			
+		}
+
+		Zhytomyr_3 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.01
+				production_speed_infrastructure_factor = 0.04
+				industry_free_repair_factor = 0.04	
+			}
+
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.01 }			
+			
+		}
+
+		Zhytomyr_4 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.005
+				production_speed_infrastructure_factor = 0.02
+				industry_free_repair_factor = 0.02		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.005 }
+			
+		}
+		
+		
+
+		Bobruysk_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_speed_infrastructure_factor = 0.08
+				industry_free_repair_factor = 0.08
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.02 }
+			
+		}
+
+		Bobruysk_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.015
+				production_speed_infrastructure_factor = 0.06
+				industry_free_repair_factor = 0.06	
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.015 }
+			
+		}
+
+		Bobruysk_3 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.01
+				production_speed_infrastructure_factor = 0.04
+				industry_free_repair_factor = 0.04	
+			}
+
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.01 }			
+			
+		}
+
+		Bobruysk_4 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.005
+				production_speed_infrastructure_factor = 0.02
+				industry_free_repair_factor = 0.02		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.005 }
+			
+		}
+
+		Riga_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_speed_infrastructure_factor = 0.08
+				industry_free_repair_factor = 0.08
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.02 }
+			
+		}
+
+		Riga_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.015
+				production_speed_infrastructure_factor = 0.06
+				industry_free_repair_factor = 0.06	
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.015 }
+			
+		}
+
+		Riga_3 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.01
+				production_speed_infrastructure_factor = 0.04
+				industry_free_repair_factor = 0.04	
+			}
+
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.01 }			
+			
+		}
+
+		Riga_4 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.005
+				production_speed_infrastructure_factor = 0.02
+				industry_free_repair_factor = 0.02		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.005 }
+			
+		}
+
+		Minsk_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_speed_infrastructure_factor = 0.08
+				industry_free_repair_factor = 0.08
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.02 }
+			
+		}
+
+		Minsk_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.015
+				production_speed_infrastructure_factor = 0.06
+				industry_free_repair_factor = 0.06	
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.015 }
+			
+		}
+
+		Minsk_3 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.01
+				production_speed_infrastructure_factor = 0.04
+				industry_free_repair_factor = 0.04	
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.01 }
+			
+		}
+
+		Minsk_4 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.005
+				production_speed_infrastructure_factor = 0.02
+				industry_free_repair_factor = 0.02		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.005 }
+			
+		}
+
+		Vitebsk_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_speed_infrastructure_factor = 0.08
+				industry_free_repair_factor = 0.08
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.02 }
+			
+		}
+
+		Vitebsk_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.015
+				production_speed_infrastructure_factor = 0.06
+				industry_free_repair_factor = 0.06	
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.015 }
+			
+		}
+
+		Vitebsk_3 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.01
+				production_speed_infrastructure_factor = 0.04
+				industry_free_repair_factor = 0.04		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.01 }
+			
+		}
+
+		Vitebsk_4 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.005
+				production_speed_infrastructure_factor = 0.02
+				industry_free_repair_factor = 0.02		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.005 }
+			
+		}
+
+		Gomel_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_speed_infrastructure_factor = 0.08
+				industry_free_repair_factor = 0.08
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.02 }
+			
+		}
+
+		Gomel_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.015
+				production_speed_infrastructure_factor = 0.06
+				industry_free_repair_factor = 0.06	
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.015 }
+			
+		}
+
+		Gomel_3 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.01
+				production_speed_infrastructure_factor = 0.04
+				industry_free_repair_factor = 0.04		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.01 }
+			
+		}
+
+		Gomel_4 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.005
+				production_speed_infrastructure_factor = 0.02
+				industry_free_repair_factor = 0.02
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.005 }
+			
+		}
+
+		Kiev_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_speed_infrastructure_factor = 0.08
+				industry_free_repair_factor = 0.08
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.02 }
+			
+		}
+
+		Kiev_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.015
+				production_speed_infrastructure_factor = 0.06
+				industry_free_repair_factor = 0.06		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.015 }
+			
+		}
+
+		Kiev_3 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.01
+				production_speed_infrastructure_factor = 0.04
+				industry_free_repair_factor = 0.04		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.01 }
+			
+		}
+
+		Kiev_4 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.005
+				production_speed_infrastructure_factor = 0.02
+				industry_free_repair_factor = 0.02			
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.005 }
+			
+		}
+
+		Odessa_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_speed_infrastructure_factor = 0.08
+				industry_free_repair_factor = 0.08
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.02 }
+			
+		}
+
+		Odessa_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.015
+				production_speed_infrastructure_factor = 0.06
+				industry_free_repair_factor = 0.06		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.015 }
+			
+		}
+
+		Odessa_3 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.01
+				production_speed_infrastructure_factor = 0.04
+				industry_free_repair_factor = 0.04		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.01 }
+			
+		}
+
+		Odessa_4 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.005
+				production_speed_infrastructure_factor = 0.02
+				industry_free_repair_factor = 0.02			
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.005 }
+			
+		}
+
+		Cherkasy_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_speed_infrastructure_factor = 0.08
+				industry_free_repair_factor = 0.08
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.02 }
+			
+		}
+
+		Cherkasy_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.015
+				production_speed_infrastructure_factor = 0.06
+				industry_free_repair_factor = 0.06		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.015 }
+			
+		}
+
+		Cherkasy_3 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.01
+				production_speed_infrastructure_factor = 0.04
+				industry_free_repair_factor = 0.04		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.01 }
+			
+		}
+
+		Cherkasy_4 = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.005
+				production_speed_infrastructure_factor = 0.02
+				industry_free_repair_factor = 0.02		
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.005 }
+			
+		}
 		ALLIES_AST_capitulated_idea = { 
 		
 			picture = chi_war_of_resistance	
@@ -652,7 +1338,7 @@ ideas = {
 					
 				
 					hard_attack = 0.1
-					soft_attack=0.5
+					soft_attack=0.05
 				}
 			}
 			modifier = {

@@ -1,6 +1,67 @@
 # All global modifiers are here. They are applied from certain game-features.
 # Effects are fully scriptable here.
 # These names can NOT be removed or changes, as the code uses them....
+###GDUBARB###
+
+soviet_hero_city = { # on Province
+	army_defence_factor = 0.35
+	dig_in_speed_factor = 1
+	max_dig_in_factor = 1
+	army_org_factor = 0.5
+	army_org_regain = 0.5
+	attrition_for_controller = -0.9
+	pocket_penalty = -0.99
+	local_supplies_for_controller = 0.25
+	out_of_supply_factor = -0.9
+}
+
+soviet_hero_fortress = { # on Province
+	army_defence_factor = 0.45
+	max_dig_in_factor = 0.5
+	army_org_factor = 4.0
+	pocket_penalty = -0.5
+	local_supplies_for_controller = 0.25
+	out_of_supply_factor = -0.2
+}
+
+southwestern_front = { # on Province
+	army_defence_factor = 0.10
+	army_attack_factor = -0.05
+}
+
+frontline_military_district = { # on Province
+	army_defence_factor = 0.10
+	army_attack_factor = -0.05
+}
+
+fall_blau = { # on Province
+	army_core_attack_factor = -0.10
+	army_core_defence_factor = -0.10
+}
+
+winziger_fall_blau = { # on Province
+	army_core_attack_factor = -0.01
+	army_core_defence_factor = -0.01
+}
+kleiner_fall_blau = { # on Province
+	army_core_attack_factor = -0.03
+	army_core_defence_factor = -0.03
+}
+guter_fall_blau = { # on Province
+	army_core_attack_factor = -0.05
+	army_core_defence_factor = -0.05
+}
+größer_fall_blau = { # on Province
+	army_core_attack_factor = -0.07
+	army_core_defence_factor = -0.07
+}
+fall_blau_des_gröfazes = { # on Province
+	army_core_attack_factor = -0.09
+	army_core_defence_factor = -0.09
+}
+#####GDU BARB END ######
+
+
 weather_rain_light = {
 	# on Region
 	naval_detection = -0.1
@@ -48,44 +109,39 @@ weather_arctic_water = {
 
 weather_mud = {
 	# on Province
-	attrition = 0.2
-	army_speed_factor = -0.55
-	army_attack_factor = -0.30
+	attrition = 0.5
+	army_speed_factor = -0.8
+	army_attack_factor = -0.60
 }
 
 weather_extreme_cold = {
 	# on Province
 	winter_attrition = 0.45
-	army_attack_factor = -0.9
-	breakthrough_factor = -0.99
-	naval_detection = -0.9
+	army_attack_factor = -0.86
+	naval_detection = -0.6
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
 	carrier_traffic = -0.45
 	naval_strike = -0.6
 	air_accidents = 0.6
-	air_bombing_targetting = -0.25
-	local_org_regain = -0.5
+	air_bombing_targetting = -0.9
+	local_org_regain = 0.85
 	org_loss_when_moving = 0.60
-	positioning = -0.2
-	supply_consumption_factor = 0.075
 	army_attack_speed_factor = -0.3
 }
 
 weather_very_cold = {
 	# on Province
 	winter_attrition = 0.325
-	army_attack_factor = -0.8
-	breakthrough_factor = -0.85
-	naval_detection = -0.4
+	army_attack_factor = -0.85
+	naval_detection = -0.2
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
 	naval_strike = -0.3
 	air_accidents = 0.3
-	air_bombing_targetting = -0.15
-	local_org_regain = -0.3
+	air_bombing_targetting = -0.75
+	local_org_regain = 0.7
 	org_loss_when_moving = 0.30
-	positioning = -0.1
 	supply_consumption_factor = 0.05
 	army_attack_speed_factor = -0.2
 }
@@ -94,7 +150,7 @@ weather_very_hot = {
 	# on Province
 	army_attack_factor = -0.1
 	heat_attrition = 0.1
-	local_org_regain = -0.07
+	local_org_regain = 0.07
 	org_loss_when_moving = 0.1
 	supply_consumption_factor = 0.1
 	army_attack_speed_factor = -0.1
@@ -105,7 +161,7 @@ weather_extreme_hot = {
 	army_attack_factor = -0.25
 	heat_attrition = 0.3
 	breakthrough_factor = -0.2
-	local_org_regain = -0.1
+	local_org_regain = 0.1
 	org_loss_when_moving = 0.25
 	truck_attrition_factor = 0.1
 	supply_consumption_factor = 0.15

@@ -1,5 +1,37 @@
 ﻿add_namespace = gduevents
 country_event = {
+	id = gduevents.3
+	title = gduevents.3.t
+	desc = gduevents.3.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+
+	option = {
+		name = gduevents.3.a
+	}
+
+
+}
+country_event = {
+	id = gduevents.4
+	title = gduevents.4.t
+	desc = gduevents.4.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gduevents.4.a
+		custom_effect_tooltip = SOV_barbarossa_tooltip
+	###### undone (add sov xp gain to take doctrn)
+	}
+
+}
+
+country_event = {
 	id = gduevents.34
 	title = gduevents.34.t
 	desc = gduevents.34.d
@@ -34,3 +66,493 @@ country_event = {
 
 }
 
+
+country_event = {
+	id = gduevents.46
+	title = gduevents.46.t
+	desc = gduevents.46.d
+
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	fire_only_once = no		
+
+	option = {
+		name = gduevents.46.a
+			every_state = {
+				limit = { is_core_of = SOV NOT = { is_controlled_by = SOV } }
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+	}
+}
+
+country_event = {
+	id = gduevents.50
+	title = gduevents.50.t
+	desc = gduevents.50.d
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gduevents.50.a
+		ROM = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = SOV				
+				}
+				GER = { set_state_controller = PREV }				
+			}		
+		}
+	}
+}
+country_event = {
+	id = gduevents.57
+	title = gduevents.57.t
+	desc = gduevents.57.d
+	picture = GFX_report_event_fascists_posing
+	is_triggered_only = yes 
+
+    fire_only_once = no
+
+    hidden = yes
+
+	option = {
+
+		name = gduevents.57.a
+		ai_chance = {
+		factor = 100
+		}
+
+			every_owned_state = { 
+				limit = {
+					is_core_of = SOV
+				}
+				remove_province_modifier = {
+					static_modifiers = { southwestern_front }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			} 
+			every_owned_state = { 
+				limit = {
+					is_core_of = SOV
+				}
+				remove_province_modifier = {
+					static_modifiers = { frontline_military_district }
+					province = {
+                        all_provinces = yes
+                    }
+				}			
+			} 			
+			
+
+	}
+}
+# Check for Soviet cities captured within 1 week of Barb
+
+country_event = {
+	id = gduevents.58
+	title = gduevents.58.t
+	desc = gduevents.58.d
+	picture = GFX_report_event_fascists_posing
+	is_triggered_only = yes 
+
+    fire_only_once = no
+
+    hidden = yes
+
+	option = {
+
+		name = gduevents.58.a
+		ai_chance = {
+		factor = 100
+		}
+
+		#Riga
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 12 } }
+			}
+			add_timed_idea = { idea = Riga_1 days = 170 }
+		}
+		#Minsk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 206 } }
+			}
+			add_timed_idea = { idea = Minsk_1 days = 170 }
+		}
+		#Vitebsk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 207 } }
+			}
+			add_timed_idea = { idea = Vitebsk_1 days = 170 }
+		}		
+		#Gomel
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 241 } }
+			}
+			add_timed_idea = { idea = Gomel_1 days = 170 }
+		}
+		#Kiev
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 202 } }
+			}
+			add_timed_idea = { idea = Kiev_1 days = 170 }
+		}
+		#Odessa
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 192 } }
+			}
+			add_timed_idea = { idea = Odessa_1 days = 170 }
+		}
+		#Cherkasy
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 203 } }
+			}
+			add_timed_idea = { idea = Cherkasy_1 days = 170 }
+		}		
+		#Bobruysk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 192 } }			
+			}
+			add_timed_idea = { idea = Bobruysk_1 days = 170 }
+		}
+		#Zhytomyr
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 203 } }			
+			}
+			add_timed_idea = { idea = Zhytomyr_1 days = 170 }
+		}		
+	}
+}
+
+
+# Check for Soviet cities captured within 2 weeks of Barb
+country_event = {
+	id = gduevents.59
+	title = gduevents.59.t
+	desc = gduevents.59.d
+	picture = GFX_report_event_fascists_posing
+	is_triggered_only = yes 
+
+    fire_only_once = no
+
+    hidden = yes
+
+	option = {
+
+		name = gduevents.59.a
+		ai_chance = {
+		factor = 100
+		}
+
+		#Riga
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 12 } }
+				NOT = { has_idea = Riga_1 }
+			}
+			add_timed_idea = { idea = Riga_2 days = 170 }
+		}
+		#Minsk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 206 } }
+				NOT = { has_idea = Minsk_1 }				
+			}
+			add_timed_idea = { idea = Minsk_2 days = 170 }
+		}
+		#Vitebsk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 207 } }
+				NOT = { has_idea = Vitebsk_1 }				
+			}
+			add_timed_idea = { idea = Vitebsk_2 days = 170 }
+		}		
+		#Gomel
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 241 } }
+				NOT = { has_idea = Gomel_1 }				
+			}
+			add_timed_idea = { idea = Gomel_2 days = 170 }
+		}
+		#Kiev
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 202 } }
+				NOT = { has_idea = Kiev_1 }				
+			}
+			add_timed_idea = { idea = Kiev_2 days = 170 }
+		}
+		#Odessa
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 192 } }
+				NOT = { has_idea = Odessa_1 }				
+			}
+			add_timed_idea = { idea = Odessa_2 days = 170 }
+		}
+		#Cherkasy
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 203 } }
+				NOT = { has_idea = Cherkasy_1 }				
+			}
+			add_timed_idea = { idea = Cherkasy_2 days = 170 }
+		}		
+		#Bobruysk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 192 } }
+				NOT = { has_idea = Bobruysk_1 }			
+			}
+			add_timed_idea = { idea = Bobruysk_2 days = 170 }
+		}
+		#Zhytomyr
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 203 } }
+				NOT = { has_idea = Zhytomyr_1 }			
+			}
+			add_timed_idea = { idea = Zhytomyr_2 days = 170 }
+		}		
+	}
+}
+
+
+# Check for Soviet cities captured within 3 weeks of Barb
+country_event = {
+	id = gduevents.60
+	title = gduevents.60.t
+	desc = gduevents.60.d
+	picture = GFX_report_event_fascists_posing
+	is_triggered_only = yes 
+
+    fire_only_once = no
+
+    hidden = yes
+
+	option = {
+
+		name = gduevents.60.a
+		ai_chance = {
+		factor = 100
+		}
+
+		#Riga
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 12 } }
+				NOT = { has_idea = Riga_1 }
+				NOT = { has_idea = Riga_2 }				
+			}
+			add_timed_idea = { idea = Riga_3 days = 170 }
+		}
+		#Minsk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 206 } }
+				NOT = { has_idea = Minsk_1 }
+				NOT = { has_idea = Minsk_2 }								
+			}
+			add_timed_idea = { idea = Minsk_3 days = 170 }
+		}
+		#Vitebsk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 207 } }
+				NOT = { has_idea = Vitebsk_1 }
+				NOT = { has_idea = Vitebsk_2 }				
+			}
+			add_timed_idea = { idea = Vitebsk_3 days = 170 }
+		}		
+		#Gomel
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 241 } }
+				NOT = { has_idea = Gomel_1 }
+				NOT = { has_idea = Gomel_2 }				
+			}
+			add_timed_idea = { idea = Gomel_3 days = 170 }
+		}
+		#Kiev
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 202 } }
+				NOT = { has_idea = Kiev_1 }
+				NOT = { has_idea = Kiev_2 }				
+			}
+			add_timed_idea = { idea = Kiev_3 days = 170 }
+		}
+		#Odessa
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 192 } }
+				NOT = { has_idea = Odessa_1 }
+				NOT = { has_idea = Odessa_2 }				
+			}
+			add_timed_idea = { idea = Odessa_3 days = 170 }
+		}
+		#Cherkasy
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 203 } }
+				NOT = { has_idea = Cherkasy_1 }
+				NOT = { has_idea = Cherkasy_2 }				
+			}
+			add_timed_idea = { idea = Cherkasy_3 days = 170 }
+		}		
+		#Bobruysk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 192 } }
+				NOT = { has_idea = Bobruysk_1 }
+				NOT = { has_idea = Bobruysk_2 }
+			}
+			add_timed_idea = { idea = Bobruysk_3 days = 170 }
+		}
+		#Zhytomyr
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 203 } }
+				NOT = { has_idea = Zhytomyr_1 }
+				NOT = { has_idea = Zhytomyr_2 }
+			}
+			add_timed_idea = { idea = Zhytomyr_3 days = 170 }
+		}
+
+		
+	}
+}
+
+
+# Check for Soviet cities captured within 3 weeks of Barb
+country_event = {
+	id = gduevents.61
+	title = gduevents.61.t
+	desc = gduevents.61.d
+	picture = GFX_report_event_fascists_posing
+	is_triggered_only = yes 
+
+    fire_only_once = no
+
+    hidden = yes
+
+	option = {
+
+		name = gduevents.61.a
+		ai_chance = {
+		factor = 100
+		}
+
+		#Riga
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 12 } }
+				NOT = { has_idea = Riga_1 }
+				NOT = { has_idea = Riga_2 }
+				NOT = { has_idea = Riga_3 }				
+			}
+			add_timed_idea = { idea = Riga_4 days = 170 }
+		}
+		#Minsk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 206 } }
+				NOT = { has_idea = Minsk_1 }
+				NOT = { has_idea = Minsk_2 }	
+				NOT = { has_idea = Minsk_3 }				
+			}
+			add_timed_idea = { idea = Minsk_4 days = 170 }
+		}
+		#Vitebsk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 207 } }
+				NOT = { has_idea = Vitebsk_1 }
+				NOT = { has_idea = Vitebsk_2 }
+				NOT = { has_idea = Vitebsk_3 }				
+			}
+			add_timed_idea = { idea = Vitebsk_4 days = 170 }
+		}		
+		#Gomel
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 241 } }
+				NOT = { has_idea = Gomel_1 }
+				NOT = { has_idea = Gomel_2 }
+				NOT = { has_idea = Gomel_3 }				
+			}
+			add_timed_idea = { idea = Gomel_4 days = 170 }
+		}
+		#Kiev
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 202 } }
+				NOT = { has_idea = Kiev_1 }
+				NOT = { has_idea = Kiev_2 }
+				NOT = { has_idea = Kiev_3 }								
+			}
+			add_timed_idea = { idea = Kiev_4 days = 170 }
+		}
+		#Odessa
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 192 } }
+				NOT = { has_idea = Odessa_1 }
+				NOT = { has_idea = Odessa_2 }
+				NOT = { has_idea = Odessa_3 }				
+			}
+			add_timed_idea = { idea = Odessa_4 days = 170 }
+		}
+		#Cherkasy
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 203 } }
+				NOT = { has_idea = Cherkasy_1 }
+				NOT = { has_idea = Cherkasy_2 }
+				NOT = { has_idea = Cherkasy_3 }				
+			}
+			add_timed_idea = { idea = Cherkasy_4 days = 170 }
+		}		
+		#Bobruysk
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 192 } }
+				NOT = { has_idea = Bobruysk_1 }
+				NOT = { has_idea = Bobruysk_2 }
+				NOT = { has_idea = Bobruysk_3 }				
+			}
+			add_timed_idea = { idea = Bobruysk_4 days = 170 }
+		}
+		#Zhytomyr
+		if = {
+			limit = {
+				NOT = { SOV = { controls_state = 203 } }
+				NOT = { has_idea = Zhytomyr_1 }
+				NOT = { has_idea = Zhytomyr_2 }
+				NOT = { has_idea = Zhytomyr_3 }				
+			}
+			add_timed_idea = { idea = Zhytomyr_4 days = 170 }
+		}
+
+		
+	}
+}

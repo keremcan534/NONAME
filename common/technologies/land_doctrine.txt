@@ -179,10 +179,7 @@ technologies = {
 		category_tanks = {
 			max_organisation = 3
 		}
-		support_heavy_armor = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
+		
 		light_sp_artillery_brigade = {
 			soft_attack = 0.05
 			hard_attack = 0.05
@@ -195,10 +192,7 @@ technologies = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
+		
 		light_tank_destroyer_brigade = {
 			soft_attack = 0.05
 			hard_attack = 0.05
@@ -211,10 +205,7 @@ technologies = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
-		super_heavy_tank_destroyer_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
+		
 		light_sp_anti_air_brigade = {
 			soft_attack = 0.05
 			hard_attack = 0.05
@@ -227,10 +218,7 @@ technologies = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
-		super_heavy_sp_anti_air_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
+	
 		enable_tactic = tactic_blitz
 		path = {
 			leads_to_tech = kampfgruppe
@@ -285,10 +273,7 @@ technologies = {
 		category_all_armor = {
 			default_morale = 0.1
 		}
-		support_heavy_armor = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
+		
 		
 		path = {
 			leads_to_tech = blitzkrieg
@@ -417,9 +402,7 @@ technologies = {
 		heavy_sp_artillery_brigade = {
 			maximum_speed = 0.1
 		}
-		super_heavy_sp_artillery_brigade = {
-			maximum_speed = 0.1
-		}
+		
 		light_tank_destroyer_brigade = {
 			maximum_speed = 0.1
 		}
@@ -429,9 +412,7 @@ technologies = {
 		heavy_tank_destroyer_brigade = {
 			maximum_speed = 0.1
 		}
-		super_heavy_tank_destroyer_brigade = {
-			maximum_speed = 0.1
-		}
+		
 		light_sp_anti_air_brigade = {
 			maximum_speed = 0.1
 		}
@@ -441,9 +422,7 @@ technologies = {
 		heavy_sp_anti_air_brigade = {
 			maximum_speed = 0.1
 		}
-		super_heavy_sp_anti_air_brigade = {
-			maximum_speed = 0.1
-		}
+		
 		path = {
 			leads_to_tech = backhand_blow
 		}
@@ -497,10 +476,7 @@ technologies = {
 		category_all_armor = {
 			default_morale = 0.2
 		}
-		support_heavy_armor = {
-			soft_attack = 0.15
-			hard_attack = 0.15
-		}
+		
 		category_light_infantry = {
 			max_organisation = 10
 			default_morale = 0.1
@@ -538,9 +514,7 @@ technologies = {
 		heavy_sp_artillery_brigade = {
 			maximum_speed = 0.1
 		}
-		super_heavy_sp_artillery_brigade = {
-			maximum_speed = 0.1
-		}
+		
 		light_tank_destroyer_brigade = {
 			maximum_speed = 0.1
 		}
@@ -550,9 +524,7 @@ technologies = {
 		heavy_tank_destroyer_brigade = {
 			maximum_speed = 0.1
 		}
-		super_heavy_tank_destroyer_brigade = {
-			maximum_speed = 0.1
-		}
+		
 		light_sp_anti_air_brigade = {
 			maximum_speed = 0.1
 		}
@@ -562,9 +534,7 @@ technologies = {
 		heavy_sp_anti_air_brigade = {
 			maximum_speed = 0.1
 		}
-		super_heavy_sp_anti_air_brigade = {
-			maximum_speed = 0.1
-		}
+		
 		conscription = 0.01
 		path = {
 			leads_to_tech = nd_conscription
@@ -622,13 +592,7 @@ technologies = {
 		category_all_armor = {
 			default_morale = 0.2
 		}
-		support_heavy_armor = {
-			soft_attack = 0.15
-			hard_attack = 0.15
-		}
-		category_assault_guns = {
-			breakthrough = 0.2
-		}
+		
 		category_light_infantry = {
 			max_organisation = 10
 			default_morale = 0.1
@@ -750,14 +714,6 @@ technologies = {
 			max_organisation = 10
 			soft_attack = 0.25
 		}
-		support_heavy_armor = {
-			max_organisation = 10
-			soft_attack = 0.05
-		}
-		category_assault_guns = {
-			max_organisation = 10
-			soft_attack = 0.25
-		}
 		path = {
 			leads_to_tech = regimental_combat_teams
 		}
@@ -781,14 +737,7 @@ technologies = {
 			max_organisation = 10
 			soft_attack = 0.25
 		}
-		support_heavy_armor = {
-			max_organisation = 10
-			soft_attack = 0.05
-		}
-		category_assault_guns = {
-			max_organisation = 10
-			soft_attack = 0.25
-		}
+		
 		enable_tactic = tactic_overwhelming_fire
 		path = {
 			leads_to_tech = sup_mechanized_offensive
@@ -816,12 +765,7 @@ technologies = {
 		category_line_artillery = {
 			default_morale = 0.3
 		}
-		support_heavy_armor = {
-			default_morale = 0.3
-		}
-		category_assault_guns = {
-			default_morale = 0.3
-		}
+		
 		path = {
 			leads_to_tech = overwhelming_firepower
 		}
@@ -844,12 +788,7 @@ technologies = {
 		category_line_artillery = {
 			soft_attack = 0.15
 		}
-		support_heavy_armor = {
-			soft_attack = 0.1
-		}
-		category_assault_guns = {
-			soft_attack = 0.5
-		}
+
 		enable_tactic = tactic_overwhelming_fire
 		path = {
 			leads_to_tech = sup_mechanized_offensive
@@ -1219,42 +1158,32 @@ technologies = {
 			desert = {
 				movement = 0.3
 			}
-			desert_africa = {
-				movement = 0.3
-			}
+			
 		}
 		category_light_infantry = {
 			supply_consumption_factor = -0.005
 			desert = {
 				movement = 0.4
 			}
-			desert_africa = {
-				movement = 0.4
-			}
+			
 		}
 		anti_tank_brigade = {
 			desert = {
 				movement = 0.35
 			}
-			desert_africa = {
-				movement = 0.35
-			}
+			
 		}
 		artillery_brigade = {
 			desert = {
 				movement = 0.35
 			}
-			desert_africa = {
-				movement = 0.35
-			}
+			
 		}
 		anti_air_brigade = {
 			desert = {
 				movement = 0.35
 			}
-			desert_africa = {
-				movement = 0.35
-			}
+			
 		}
 		category_non_support = {
 			desert = {
@@ -1399,10 +1328,7 @@ technologies = {
 	central_planning = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		support_heavy_armor = {
-			max_organisation = 20
-			soft_attack = 0.5
-		}
+		
 		category_all_infantry = {
 			max_organisation = 7
 		}
@@ -1615,15 +1541,7 @@ technologies = {
 	attritional_containment = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		support_heavy_armor = {
-			max_organisation = 20
-			soft_attack = 0.5
-		}
-		category_assault_guns = {
-			max_organisation = 40
-			soft_attack = 1
-			breakthrough = 0.15
-		}
+		
 		out_of_supply_factor = -0.3
 		category_special_forces={
 			default_morale = 0.07

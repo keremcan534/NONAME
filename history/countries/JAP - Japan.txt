@@ -26,7 +26,6 @@ add_ideas = {
 	JAP_duplicate_research_efforts
 	JAP_militarism
 	JAP_defense_of_homeland
-	JAP_special_air_landing_force #hidden buff
 }
 set_country_flag=fuel_system_enabled
 set_fuel_ratio = 1.0

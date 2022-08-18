@@ -2108,6 +2108,15 @@ experience_gain_army = 0.08
 		experience_gain_army = 0.08
 		command_cap = @tier1	
 	}
+	army_infantry_4 = { # +20 infantry efficiency
+		sprite = 5
+		army_infantry_attack_factor = 0.2
+		army_infantry_defence_factor = 0.2
+
+		ai_will_do = {
+			factor = 4
+		}
+	}
 	yorgun_demokrat={
 		sprite = 5
 		army_infantry_attack_factor = 0.12

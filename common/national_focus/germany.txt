@@ -2009,12 +2009,10 @@
 				type = annex_everything
 				target = SOV
 			}
-			hidden_effect={
-			SOV={declare_on_axis=yes}}
 				SOV = {
 					add_timed_idea = {
 						idea = SOV_debuff_1
-						days = 60
+						days = 90
 					}
 				}
 				GER = {
