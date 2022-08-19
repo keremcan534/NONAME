@@ -65,7 +65,7 @@ set_technology = {
 }
 add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 20260 producer = SOV }  
 add_equipment_to_stockpile = { type = support_equipment amount = 7651 producer = SOV } 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 229000 producer = SOV } 
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 329000 producer = SOV } 
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 7900 producer = SOV } 
 add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 12400 producer = SOV } 
 add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 19160 producer = SOV }
