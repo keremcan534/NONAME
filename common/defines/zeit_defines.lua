@@ -53,11 +53,11 @@ NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35            -- vanilla is 0.
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0	    --vanilla 0.4  | eventually armor will be reworked when paradox finally releases their armor rework
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.1		--vanilla 0.4
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.07
-NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.038
 
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.7 | defend combat penalty for attacker if out of supply
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.20 |  attack combat penalty for attacker if out of supply
-NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.6 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 1 -- damage reduction if armor outclassing enemy
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.35                   -- speed bonus when retreating
 NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25                -- speed bonus when withdrawing
@@ -150,6 +150,7 @@ NDefines.NAir.NON_CORE_STRATEGIC_IMPACT = 0.1                             -- mul
 ---------------------------------------------------------------
 NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 0                     
 ---------------------------------------------------------------
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0125                   -- basic speed control
 
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.05 --vanilla 0.1, controls onmap movement speed of navies, not in battle (?); affects naval invasions
 NDefines.NNavy.CARRIER_STACK_PENALTY = 2    -- The most efficient is 2 carriers in combat. 3+ brings the penalty to the amount of wings in battle.
