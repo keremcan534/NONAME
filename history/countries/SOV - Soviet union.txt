@@ -90,6 +90,7 @@ add_ideas = {
 	home_of_revolution
 	closed_economy
 	SOV_home_fleet
+	SOV_red_army
 }
 recruit_character = SOV_iosif_stalin
 
@@ -101,7 +102,6 @@ recruit_character = SOV_hazi_aslanov
 
 
 
-recruit_character = SOV_patriarch_sergy
 recruit_character = SOV_konstantin_rodzayevsky
 
 
@@ -145,7 +145,6 @@ recruit_character = SOV_nikolay_vatutin
 
 recruit_character = SOV_nikolay_kuznetsov
 
-recruit_character = SOV_pavel_rychagov
 recruit_character = SOV_pavel_zhigarev
 recruit_character = SOV_pyotr_smirnov
 recruit_character = SOV_rodion_malinovsky
@@ -161,7 +160,7 @@ recruit_character = SOV_vladimir_kasatonov
 recruit_character = SOV_vladimir_tributs
 
 recruit_character = SOV_yakov_cherevichenko
-recruit_character = SOV_yakov_smushkevich
+#recruit_character = SOV_yakov_smushkevich /air acc chance
 
 recruit_character = SOV_vitaly_primakov
 #Not available at game start

@@ -350,7 +350,7 @@ characters = {
 			}
 			
 			traits = {
-				army_infantry_3
+				army_infantry_2
 			}
 				cost = 75
 			ai_will_do = {
@@ -670,7 +670,7 @@ characters = {
 			}
 			
 			traits = {
-				army_CombinedArms_3
+				army_CombinedArms_1
 			}
 				cost = 75
 			ai_will_do = {
@@ -1016,7 +1016,7 @@ characters = {
 			}
 			
 			traits = {
-				army_commando_3
+				army_commando_2
 			}
 				cost = 75
 			ai_will_do = {

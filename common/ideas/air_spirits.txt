@@ -36,9 +36,7 @@ ideas = {
 		effective_training_programs_spirit = {
 			ledger = air
 			modifier = {
-				experience_gain_air_factor = 1
 				experience_gain_air = 0.5
-				air_doctrine_cost_factor = -0.1
 			}
 			cost =0
 			

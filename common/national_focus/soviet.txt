@@ -583,7 +583,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			army_experience = 20
 			195={
 				set_building_level = {
 					type = air_base
@@ -619,7 +618,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			
-			army_experience = 20
+
 			829={set_building_level = {
 					type = air_base
 					level = 10
@@ -668,7 +667,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			army_experience = 20
+
 			253={set_building_level = {
 					type = air_base
 					level = 10
@@ -1298,19 +1297,13 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 2
-				category = land_doctrine
-			}
 			add_tech_bonus = {
 				name = artillery
 				bonus = 1
 				uses = 1
 				category = artillery
 			}
-			army_experience = 50
+
 		}
 	}
 	focus = {
@@ -1347,7 +1340,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = SOV_nkvd_upgrade_tooltip
-			army_experience = 20
+
 			swap_ideas = {
 				remove_idea = nkvd
 				add_idea = nkvd_2
@@ -1402,17 +1395,8 @@ focus_tree = {
 					progress = 0.1
 					efficiency = 50
 				}   
-			army_experience = 100
-			swap_ideas ={
-				remove_idea =SOV_inf_eq
-				add_idea = SOV_one_gun
-			}
-			add_tech_bonus = {
-				name = land_doctrine_bonus
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 200
+			remove_ideas={SOV_red_army}
 		}
 	}
 	focus = {
@@ -1524,47 +1508,47 @@ focus_tree = {
 		    add_timed_idea={idea=SOV_heavy_tonk days=120}
 		}
 	}
-	focus = {
-		id = SOV_doctrine
-		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = SOV_heavy_tonk}
-		available = {
-		date > 1942.06.01
-		has_tech = mobile_warfare
-		}
-		cancel_if_invalid = yes
-		x = 0
-		y = 1
-		relative_position_id = SOV_heavy_tonk
-		cost = 0
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-		custom_effect_tooltip = SOV_doc_tt
-		  set_technology = {
-		   mobile_warfare = 1 popup=no
-		   delay = 1 popup=no
-		   elastic_defence = 1 popup=no
-		   mobile_infantry = 1 popup=no
-		   mass_motorization = 1 popup=no
-		   mechanised_offensive = 1 popup=no
-		   armored_spearhead  = 1 popup=no
-		   schwerpunk = 1 popup=no
-		   blitzkrieg = 1 popup=no
-		   kampfgruppe  = 1 popup=no
-		   firebrigades = 1 popup=no
-           backhand_blow = 1 popup=no
-           modern_blitzkrieg = 1 popup=no
-		   volkssturm = 1 popup=no
-		   nd_conscription = 1 popup=no
-		   werwolf_guerillas = 1 popup=no
-
-		}
-		custom_effect_tooltip = SOV_doc_tt
-		}
-	}
+	#focus = {
+	#	id = SOV_doctrine
+	#	icon = GFX_focus_generic_license_production
+	#	prerequisite = { focus = SOV_heavy_tonk}
+	#	available = {
+	#	date > 1942.06.01
+	#	has_tech = mobile_warfare
+	#	}
+	#	cancel_if_invalid = yes
+	#	x = 0
+	#	y = 1
+	#	relative_position_id = SOV_heavy_tonk
+	#	cost = 0
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	available_if_capitulated = yes
+	#	completion_reward = {
+	#	custom_effect_tooltip = SOV_doc_tt
+	#	  set_technology = {
+	#	   mobile_warfare = 1 popup=no
+	#	   delay = 1 popup=no
+	#	   elastic_defence = 1 popup=no
+	#	   mobile_infantry = 1 popup=no
+	#	   mass_motorization = 1 popup=no
+	#	   mechanised_offensive = 1 popup=no
+	#	   armored_spearhead  = 1 popup=no
+	#	   schwerpunk = 1 popup=no
+	#	   blitzkrieg = 1 popup=no
+	#	   kampfgruppe  = 1 popup=no
+	#	   firebrigades = 1 popup=no
+  #         backhand_blow = 1 popup=no
+ #          modern_blitzkrieg = 1 popup=no
+#		   volkssturm = 1 popup=no
+#		   nd_conscription = 1 popup=no
+#		   werwolf_guerillas = 1 popup=no
+#
+	#	}
+	#	custom_effect_tooltip = SOV_doc_tt
+	#	}
+	#}
 	focus = {
 		id = SOV_barb_1
 		icon = GFX_SOV_soviet_women
