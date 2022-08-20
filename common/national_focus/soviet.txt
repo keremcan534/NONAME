@@ -372,11 +372,12 @@ focus_tree = {
 			custom_effect_tooltip="RThis will start the industry relocation. Every 5 days two civilian factories and two military factories will be moved from states at the front to the Ural.!"
 			custom_effect_tooltip="YYou need atleast 2 division to relocate factories. !"
 			add_offsite_building = { type = industrial_complex level = 15 }
+			add_offsite_building = { type = arms_factory level = 15 }
 			add_ideas=Fast_Training
 			add_ideas = SOV_the_great_war
-			add_offsite_building = { type = arms_factory level = 15 }
-				
-		
+			
+			remove_ideas={SOV_red_army}
+	
 		}
 	}
 	focus = {
@@ -386,8 +387,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		prerequisite = { focus = SOV_move_industry_to_urals }
-		cost = 10
+		cost = 0
 		completion_reward = {
+			army_experience = 500
 			add_ideas = order_227
 			hidden_effect={
 			add_timed_idea={idea=SOV_snakemodding days=30}
@@ -1395,8 +1397,7 @@ focus_tree = {
 					progress = 0.1
 					efficiency = 50
 				}   
-			army_experience = 200
-			remove_ideas={SOV_red_army}
+			
 		}
 	}
 	focus = {
@@ -1508,47 +1509,7 @@ focus_tree = {
 		    add_timed_idea={idea=SOV_heavy_tonk days=120}
 		}
 	}
-	#focus = {
-	#	id = SOV_doctrine
-	#	icon = GFX_focus_generic_license_production
-	#	prerequisite = { focus = SOV_heavy_tonk}
-	#	available = {
-	#	date > 1942.06.01
-	#	has_tech = mobile_warfare
-	#	}
-	#	cancel_if_invalid = yes
-	#	x = 0
-	#	y = 1
-	#	relative_position_id = SOV_heavy_tonk
-	#	cost = 0
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#	available_if_capitulated = yes
-	#	completion_reward = {
-	#	custom_effect_tooltip = SOV_doc_tt
-	#	  set_technology = {
-	#	   mobile_warfare = 1 popup=no
-	#	   delay = 1 popup=no
-	#	   elastic_defence = 1 popup=no
-	#	   mobile_infantry = 1 popup=no
-	#	   mass_motorization = 1 popup=no
-	#	   mechanised_offensive = 1 popup=no
-	#	   armored_spearhead  = 1 popup=no
-	#	   schwerpunk = 1 popup=no
-	#	   blitzkrieg = 1 popup=no
-	#	   kampfgruppe  = 1 popup=no
-	#	   firebrigades = 1 popup=no
-  #         backhand_blow = 1 popup=no
- #          modern_blitzkrieg = 1 popup=no
-#		   volkssturm = 1 popup=no
-#		   nd_conscription = 1 popup=no
-#		   werwolf_guerillas = 1 popup=no
-#
-	#	}
-	#	custom_effect_tooltip = SOV_doc_tt
-	#	}
-	#}
+	
 	focus = {
 		id = SOV_barb_1
 		icon = GFX_SOV_soviet_women

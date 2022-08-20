@@ -223,7 +223,7 @@ ideas = {
 			visible = { NOT={ original_tag=SOV
 		 }}
 			modifier = {
-				experience_gain_army = 0.30
+				experience_gain_army = 0.20
 				command_power_gain = 0.2
 			}
 			cost = 0
@@ -238,8 +238,7 @@ ideas = {
 				has_war=yes
 			}
 			modifier = {
-				experience_gain_army = 8
-				command_power_gain = 0.2
+				experience_gain_army = 10
 			}
 			cost = 0
 			
@@ -288,7 +287,6 @@ ideas = {
 			visible = { has_tech = mobile_warfare }
 			modifier = {
 				breakthrough_factor = 0.075
-				army_speed_factor = 0.05
 				coordination_bonus = 0.03
 			}
 			cost = 50.0

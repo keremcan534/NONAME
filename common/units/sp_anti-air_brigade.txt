@@ -107,39 +107,43 @@ sub_units = {
 		breakthrough=-0.5
 		defense = -0.4
 
-
-		desert = { movement = -0.2 }
+		desert = {
+			movement = -0.3
+		}
 		forest = {
-		    attack = -0.3
+			attack = -0.3
 			movement = -0.4
 		}
 		hills = {
-		    attack = -0.1
+			attack = -0.1
+			movement = -0.2
 		}
 		mountain = {
-		    attack = -0.4
-			defence = -0.65
+			attack = -0.35
+			defence = -0.55
+			movement = -0.3
 		}
 		jungle = {
-		    attack = -0.4
-			defence = -0.15
-			movement = -0.4
+			attack = -0.5
+			defence = -0.5
+			movement = -0.5
 		}
 		marsh = {
-		    attack = -0.1 
-			defence = -0.05
-			movement = -0.1
+			attack = -0.1
+			defence = -0.15
+			movement = -0.3
 		}
 		urban = {
 			attack = -0.4
 			defence = -0.1
 		}
-		river = { 
-			attack = -0.2 
+		river = {
+			attack = -0.2
 			movement = -0.2
 		}
-		amphibious = { 
-			attack = -0.7
+		amphibious = {
+			attack = -0.8
+			movement = -0.2
 		}
 
 	}

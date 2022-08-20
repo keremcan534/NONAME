@@ -2012,7 +2012,7 @@
 				SOV = {
 					add_timed_idea = {
 						idea = SOV_debuff_1
-						days = 90
+						days = 60
 					}
 				}
 				GER = {
@@ -2023,7 +2023,7 @@
 					}
 					add_timed_idea = {
 						idea = GER_barb_line
-						days = 10
+						days = 20
 					}
 					add_timed_idea = {
 						idea = GER_barb_railways

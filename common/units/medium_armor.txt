@@ -29,7 +29,7 @@ sub_units = {
 		supply_consumption = 0.25
 		#Tanks are awesome
 		desert = {
-			movement = -0.2
+			movement = -0.3
 		}
 		forest = {
 			attack = -0.3
@@ -37,10 +37,12 @@ sub_units = {
 		}
 		hills = {
 			attack = -0.1
+			movement = -0.2
 		}
 		mountain = {
 			attack = -0.35
 			defence = -0.55
+			movement = -0.3
 		}
 		jungle = {
 			attack = -0.5
@@ -50,7 +52,7 @@ sub_units = {
 		marsh = {
 			attack = -0.1
 			defence = -0.15
-			movement = -0.1
+			movement = -0.3
 		}
 		urban = {
 			attack = -0.4
@@ -62,6 +64,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = -0.8
+			movement = -0.2
 		}
 	}
 }

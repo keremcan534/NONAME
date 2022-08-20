@@ -48,7 +48,7 @@ operations = {
 		}
 
 		cost = 0
-		days_remove = 14
+		days_remove = 3
 		ai_will_do = {
 			factor = 0
 

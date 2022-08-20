@@ -26,7 +26,7 @@ upgrades = {
 		reliability = -0.02
 		add_stats = {
 			fuel_consumption = 0.04
-			build_cost_ic = 0.15
+			build_cost_ic = 0.2
 		}
 	}
 
