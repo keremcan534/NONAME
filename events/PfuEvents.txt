@@ -67,9 +67,7 @@ country_event = {
 			ideology = fascism
 			popularity = 0.20
 		}
-		hidden_effect = {
-			sound_effect = sp_ger_totalwar 
-		}
+	
 		ITA = {
 			add_ideas = GER_totaler_krieg		
 		}
@@ -109,26 +107,3 @@ news_event = {
 
 # This event forces Italy into the war if they haven't already joined and fires 20 days after the Fall of France. Please see: GDU_vichy in on actions.
 
-country_event = {
-	id = pfu.35
-	title = pfu.35.t
-	desc = pfu.35.d
-	picture = GFX_report_event_plan_vert
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = pfu.35.a
-		GER = { add_to_faction = ITA }		
-		ITA = {
-				add_to_war = {
-					targeted_alliance = GER
-					enemy = ENG
-				}
-				set_global_flag = ITA_in_the_war
-		}
-	}
-
-}

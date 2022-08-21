@@ -208,9 +208,9 @@ compliance_effect_base = {
 }
 
 compliance_effect = {
-	local_factories = 0.8
+	local_factories = 0.7
 	local_non_core_manpower = 0.02
-	local_resources = 0.8
+
 }
 
 # On States that are owned by a non-core country

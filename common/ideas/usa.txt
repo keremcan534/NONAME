@@ -193,7 +193,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_infrastructure_factor = 0.25
+				production_speed_infrastructure_factor = 0.125
 			}
 		}
 		USA_nation_of_wheels = {
@@ -727,6 +727,19 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		war_bonds_usa = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor=-0.2
 			}
 		}
 		bureau_of_ships_focus = {

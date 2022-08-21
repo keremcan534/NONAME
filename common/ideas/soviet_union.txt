@@ -58,7 +58,7 @@ ideas = {
 			picture = officers_purged
 			modifier = {
 				army_morale_factor = 0.025
-				army_org_factor = 0.1
+				army_org_factor = 0.05
 
 				air_cas_present_factor = 0.025
 			}
@@ -83,7 +83,7 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.025
 				army_defence_factor = 0.07
-				army_org_factor = 0.1
+				army_org_factor = 0.05
 				army_morale_factor = 0.05
 
 				air_cas_present_factor = 0.05

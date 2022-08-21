@@ -178,27 +178,26 @@ GER_defeat_dday = {
 		custom_trigger_tooltip = {
 			tooltip = GER_defeat_dday_tt
 		}
-		833 = {
-			is_controlled_by_allied_country = no
-		}
-		834 = {
-			is_controlled_by_allied_country = no
-		}
 		735 = {
 			is_controlled_by_allied_country = no
 		}
 		21 = {
 			is_controlled_by_allied_country = no
 		}
-		18 = {
+		22 = {
 			is_controlled_by_allied_country = no
 		}
 		31 = {
 			is_controlled_by_allied_country = no
 		}
+
+		806 = {
+			is_controlled_by_allied_country = no
+		}
 		19 = {
 			is_controlled_by_allied_country = no
 		}
+		
 		23 = {
 			is_controlled_by_allied_country = no
 		}
@@ -220,6 +219,10 @@ GER_defeat_dday = {
 		6 = {
 			is_controlled_by_allied_country = no
 		}
+		35 = {
+			is_controlled_by_allied_country = no
+		}
+
 		7 = {
 			is_controlled_by_allied_country = no
 		}
@@ -238,6 +241,10 @@ GER_defeat_dday = {
 		99 = {
 			is_controlled_by_allied_country = no
 		}
+		37 = {
+			is_controlled_by_allied_country = no
+		}
+
 		61 = {
 			is_controlled_by_allied_country = no
 		}
@@ -247,13 +254,19 @@ GER_defeat_dday = {
 		63 = {
 			is_controlled_by_allied_country = no
 		}
+		807 = {
+			is_controlled_by_allied_country = no
+		}
 		85 = {
 			is_controlled_by_allied_country = no
 		}
-		788 = {
+		5 = {
 			is_controlled_by_allied_country = no
 		}
-		763 = {
+		807 = {
+			is_controlled_by_allied_country = no
+		}
+		188 = {
 			is_controlled_by_allied_country = no
 		}
 	}
