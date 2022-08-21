@@ -16,15 +16,15 @@ NDefines.NProduction.CONVERSION_SPEED_BONUS = -2.2 -- ADDED TO COUNTER CHEATERS 
 -----------------------------IMPORTANT LAND COMBAT DEFINES--------------------------------------
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.8    -- vanilla 0.68  | 10% more equipment losses than vanilla  % of equipment lost to strength ratio in combat, so some % is returned if below 1
 NDefines.NMilitary.PLANNING_MAX = 0.10 -- Vanilla is 0.30 ; nerfed along with entrenchment so both build up faster resulting in more dynamic gameplay with opportunities for faster recovery
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.25                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.2                         -- vanilla 0.25 |  CAS bonus factor for air support modifier for land unit in combat
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.015  -- vanilla 0.04 | 75% of vanilla CAS ORG damage 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.02 	--air global damage modifier
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT =	-0.1 	--effect on speed due to enemy air superiority
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.3 	--effect on defense due to enemy air superiority
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.3	--more AA attack will approach this amount of help (diminishing returns)
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT =	-0.05 	--effect on speed due to enemy air superiority
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.2 	--effect on defense due to enemy air superiority
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.2	--more AA attack will approach this amount of help (diminishing returns)
 NDefines.NAir.FUEL_COST_MULT = 0.05 -- (0.35) fuel multiplier for all air missions 
 NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 130
-NDefines.NAir.DISRUPTION_FACTOR = 7  -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
+NDefines.NAir.DISRUPTION_FACTOR = 7 -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2  -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
@@ -67,6 +67,7 @@ NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = 0		-- speed impact at 0 org.
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.15       -- vanilla 0.05 -- Each level of navalbase building repairs X strength and can repair as many ships as its level
 NDefines.NBuildings.DESTRUCTION_COOLDOWN_IN_WAR = 9999 --anti-exploit
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 9999					-- pp cost to scorch a state
+NDefines.NAir.DISRUPTION_DETECTION_FACTOR = 1.0
 
 NDefines.NBuildings.RADAR_INTEL_EFFECT = 160			-- Province covered by radar increases intel by 10 (where 255 is max). Province may be covered by multiple radars, then the value sums up.
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_CAS = 24			-- How much efficiency to regain per day. Gain applied hourly.
@@ -81,7 +82,7 @@ NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.6                  -- VANILLA 3; GDU 1.6
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.055				-- Vanilla 0,10
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 3                 -- same as above but used inside naval combat for carrier battles
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 14.0            -- vanilla 5 damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
-NDefines.NAir.ESCORT_FACTOR = 4.6 -- VANILLA 2.0 | to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
+NDefines.NAir.ESCORT_FACTOR = 2.5 -- VANILLA 2.0 | to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
 
 
 ------------------------------------------------------------------------------------------------
