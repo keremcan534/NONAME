@@ -690,15 +690,9 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-			equipment_bonus = {
-				category_army = {
-					breakthrough = 0.1
-				}
-			}
+
 			modifier = {
-				#army_defence_factor = -0.05
-				max_dig_in = -3
-				air_attack_factor = -0.1
+				air_attack_factor = -0.01
 			}
 		}
 		officers_purged_2 = {
