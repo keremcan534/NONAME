@@ -56,11 +56,15 @@ ideas = {
 		SOV_Danger_To_Heartland = {
 			removal_cost = -1
 			picture = officers_purged
-			modifier = {
+			modifier = {			
 				army_morale_factor = 0.025
-				army_org_factor = 0.05
-
-				air_cas_present_factor = 0.025
+				army_org_factor = 0.075
+				air_superiority_efficiency = 0.03
+				army_bonus_air_superiority_factor = 0.05
+				air_escort_efficiency = 0.04
+				air_intercept_efficiency = 0.03
+				air_cas_efficiency = 0.03
+				air_cas_present_factor = 0.05
 			}
 			
 			equipment_bonus = {
@@ -80,12 +84,16 @@ ideas = {
 		SOV_Heartland_Falling = {
 			removal_cost = -1
 			picture = officers_purged
-			modifier = {
+			modifier = {			
 				army_attack_factor = 0.025
 				army_defence_factor = 0.07
-				army_org_factor = 0.05
+				army_org_factor = 0.075            
 				army_morale_factor = 0.05
-
+				air_superiority_efficiency = 0.03
+				army_bonus_air_superiority_factor = 0.05
+				air_escort_efficiency = 0.04
+				air_intercept_efficiency = 0.03
+				air_cas_efficiency = 0.03
 				air_cas_present_factor = 0.05
 			}
 			equipment_bonus = {
@@ -117,14 +125,16 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
-				max_dig_in = -9
-				army_org_factor = -0.3
+				max_dig_in = -7
+				army_org_factor = -0.275
 				planning_speed = -0.5
-				max_planning = -0.15
-				air_defence_factor=-0.2
-				army_speed_factor = 0.1
-				air_cas_present_factor = -0.1
-				pocket_penalty = -0.15
+				max_planning = -0.05
+				air_superiority_efficiency = -0.275
+				army_bonus_air_superiority_factor = -0.35
+				air_intercept_efficiency = -0.2
+				army_armor_speed_factor = 0.1
+				enemy_army_bonus_air_superiority_factor = 0.45
+				pocket_penalty = -0.1
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -150,17 +160,22 @@ ideas = {
 					idea = SOV_debuff_3
 					days = 400
 				}
+				remove_ideas = {
+					SOV_Danger_To_Heartland
+				}
 			}
 			allowed_civil_war = {
 				has_government = communism
 			}
 			modifier = {
-				max_dig_in = -7
-				army_org_factor = -0.2
+				max_dig_in = -9
+				army_org_factor = -0.35
 				planning_speed = -0.5
-				max_planning = -0.05
-				air_defence_factor=-0.15
-				air_cas_present_factor = -0.05
+				max_planning = -0.1
+				air_superiority_efficiency = -0.275
+				army_bonus_air_superiority_factor = -0.3
+				air_intercept_efficiency = -0.225
+				enemy_army_bonus_air_superiority_factor = 0.45
 				pocket_penalty = -0.1
 			}
 			equipment_bonus = {
@@ -184,7 +199,7 @@ ideas = {
 			}
 			on_remove = {
 				remove_ideas = {
-					SOV_Heartland_Falling
+					
 					SOV_Danger_To_Heartland
 				}
 			}
@@ -192,11 +207,13 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
-				max_dig_in = -3
+				max_dig_in = -5
 				army_org_factor = -0.1
 				planning_speed = -0.4
-				air_defence_factor=-0.05
-				air_cas_present_factor = -0.025
+				air_superiority_efficiency = -0.12
+				army_bonus_air_superiority_factor = -0.25
+				air_intercept_efficiency = -0.1
+				enemy_army_bonus_air_superiority_factor = 0.3
 				pocket_penalty = -0.05
 			}
 			equipment_bonus = {

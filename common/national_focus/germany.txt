@@ -2012,7 +2012,7 @@
 				SOV = {
 					add_timed_idea = {
 						idea = SOV_debuff_1
-						days = 60
+						days = 90
 					}
 				}
 				GER = {
