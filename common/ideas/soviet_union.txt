@@ -1062,13 +1062,11 @@ ideas = {
 			modifier = {
 				aircraft_manufacturer_cost_factor = -1
 			}
-			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.1
-					air_agility = 0.125
-					maximum_speed = 0.1
-				}
+		equipment_bonus = {
+			CAS_equipment = {
+				air_ground_attack = 0.1 reliability = 0.1 
 			}
+		}
 		}
 		tupolev_design_bureau = {
 			allowed = {
@@ -1083,14 +1081,11 @@ ideas = {
 			}
 			traits = {
 			}
-			equipment_bonus = {
-				CAS_equipment = {
-					build_cost_ic = -0.1
-					air_agility = 0.125
-					air_ground_attack = 0.1 
-
-				}
+		equipment_bonus = {
+			fighter_equipment = {
+				reliability = 0.1 air_agility = 0.10 maximum_speed = 0.10 
 			}
+		}
 		}
 	}
 	industrial_concern = {
