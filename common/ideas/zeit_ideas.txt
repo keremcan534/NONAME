@@ -1556,6 +1556,192 @@ ideas = {
 	#axis
 	tank_manufacturer = {
 		designer = yes
+
+
+		daimler_benz31 = {
+
+			cost = 75
+			allowed = {
+				or = { 
+					original_TAG = GER
+					original_TAG = HUN 
+					original_TAG = BUL 
+					original_TAG = SPR
+					original_TAG = ROM
+				}
+			}
+
+			research_bonus = {
+				armor = 0.15
+			}
+
+			equipment_bonus = {
+				armor = {
+					reliability = 0.1
+					maximum_speed = 0.1
+					hard_attack = 0.15
+				}
+
+			}
+
+		}
+
+
+
+		henschel31 = {
+
+			cost = 75
+			allowed = {
+				or = { 
+					original_TAG = GER
+					original_TAG = HUN 
+					original_TAG = BUL 
+					original_TAG = SPR
+					original_TAG = ROM	
+				}			
+			}
+			available = {
+				date > 1941.1.1
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			equipment_bonus = {
+				armor = {
+					reliability = 0.05				
+					hard_attack = 0.20
+					soft_attack = 0.20
+					defense = 0.15
+					build_cost_ic = 0.35
+					armor_value = 0.05
+				}
+
+			}
+		}
+
+		krupp_tank31 = {
+
+			cost = 75
+			allowed = {
+				or = { 
+					original_TAG = GER
+					original_TAG = HUN 
+					original_TAG = BUL 
+					original_TAG = SPR
+					original_TAG = ROM
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+
+			equipment_bonus = {
+				armor = {
+					reliability = 0.1
+					soft_attack = 0.15
+				}
+
+
+		}
+		}
+
+		GER_MAN31 = {
+			cost = 75
+			picture = GER_MAN
+
+			allowed = {
+				or = { 
+					original_TAG = GER
+					original_TAG = HUN 
+					original_TAG = BUL 
+					original_TAG = SPR
+					original_TAG = ROM
+					original_TAG = ITA					
+				}
+			}
+			available = {
+				date > 1941.1.1
+			}
+
+			research_bonus = {
+				armor = 0.15
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			equipment_bonus = {
+				armor = {
+					hard_attack = 0.15
+					soft_attack = 0.15
+					maximum_speed = 0.10 
+					build_cost_ic = 0.05
+				}
+			}
+		}
+
+		porsche31 = {
+
+			cost = 75
+			allowed = {
+				or = { 
+					original_TAG = GER
+					original_TAG = HUN 
+					original_TAG = BUL 
+					original_TAG = SPR
+					original_TAG = ROM
+				}
+			}
+
+			research_bonus = {
+				armor = 0.15
+			}
+
+			equipment_bonus = {
+				armor = {
+					reliability = 0.05								
+					hard_attack = 0.10 
+					soft_attack = 0.10
+					reliability = 0.05
+					armor_value = 0.05
+					build_cost_ic = 0.35
+				}
+			}
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		porsche = {
 			cost=150
 
