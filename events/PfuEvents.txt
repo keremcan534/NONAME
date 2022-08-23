@@ -70,18 +70,23 @@ country_event = {
 	
 		ITA = {
 			add_ideas = GER_totaler_krieg		
+			add_ideas = tot_economic_mobilisation
 		}
 		SPR = {
 			add_ideas = GER_totaler_krieg		
+			add_ideas = tot_economic_mobilisation
 		}
 		HUN = {
 			add_ideas = GER_totaler_krieg		
+			add_ideas = tot_economic_mobilisation
 		}
 		ROM = {
 			add_ideas = GER_totaler_krieg		
+			add_ideas = tot_economic_mobilisation
 		}
 		BUL = {
 			add_ideas = GER_totaler_krieg		
+			add_ideas = tot_economic_mobilisation
 		}
 	}
 	mean_time_to_happen = { days = 2 }
