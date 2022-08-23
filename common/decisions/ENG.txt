@@ -126,7 +126,7 @@ foreign_politics = {
 		remove_effect = {
 			EMP = {
 				remove_resource_rights = 666
-				give_resource_rights = { receiver = ENG state = 585 }
+				give_resource_rights = { receiver = ENG state = 666 }
 			}
 			clr_global_flag=GER_resource_rights_swe
 		}

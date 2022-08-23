@@ -442,26 +442,6 @@ GER_defeat_dday = {
 				popularity = 0.05
 			}
 		}
-		NZL = {
-			add_timed_idea = {
-				idea = ALLIES_fail_dday_idea
-				days = 180
-			}
-			add_war_support = -0.2
-			add_political_power = -100
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-		}
 		RAJ = {
 			add_timed_idea = {
 				idea = ALLIES_fail_dday_idea
@@ -482,7 +462,7 @@ GER_defeat_dday = {
 				popularity = 0.05
 			}
 		}
-		FRF = {
+		FRA = {
 			add_timed_idea = {
 				idea = ALLIES_fail_dday_idea
 				days = 180
