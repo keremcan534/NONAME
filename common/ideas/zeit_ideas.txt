@@ -1569,9 +1569,11 @@ ideas = {
 			}
 			equipment_bonus={
 				armor = {
-					soft_attack=0.05
-					hard_attack=0.05
+					soft_attack=0.125
+					hard_attack=0.125
 					armor_value = 0.05
+					breakthrough=0.1
+					speed=0.10
 				}
 				
 				
