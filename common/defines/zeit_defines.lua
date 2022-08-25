@@ -59,9 +59,8 @@ NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.7 
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.20 |  attack combat penalty for attacker if out of supply
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 1 -- damage reduction if armor outclassing enemy
-NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.25                   -- speed bonus when retreating vanilla 0.25
-NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.15                -- speed bonus when withdrawing vanilla 0.15
-NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = 0		-- speed impact at 0 org.
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.15                   -- speed bonus when retreating vanilla 0.25
+NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.05                -- speed bonus when withdrawing vanilla 0.15
 
 
 ------------------------end of defines relevant to land combat

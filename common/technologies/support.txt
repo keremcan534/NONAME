@@ -704,7 +704,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			max_strength = 3.5
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company3
@@ -747,8 +747,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
-		}
+			max_strength = 3.5		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
 			research_cost_coeff = 1
@@ -789,8 +788,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
-		}
+			max_strength = 3.5		}
 
 		research_cost = 1
 		start_year = 1945
@@ -876,6 +874,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
+			max_strength = 5
 		}
 		
 		path = {
@@ -921,6 +920,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
+			max_strength = 5
 		}
 		path = {
 			leads_to_tech = tech_field_hospital4
@@ -964,6 +964,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
+			max_strength = 5
 		}
 
 		research_cost = 1
@@ -1054,7 +1055,7 @@ technologies = {
 	tech_logistics_company2 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
+			supply_consumption_factor = -0.08
 			fuel_consumption_factor = -0.05
 		}
 		
@@ -1105,7 +1106,7 @@ technologies = {
 	tech_logistics_company3 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
+			supply_consumption_factor = -0.08
 			fuel_consumption_factor = -0.05
 		}
 		path = {
@@ -1148,7 +1149,7 @@ technologies = {
 	tech_logistics_company4 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
+			supply_consumption_factor = -0.08
 			fuel_consumption_factor = -0.05
 		}
 

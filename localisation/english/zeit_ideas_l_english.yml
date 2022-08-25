@@ -33,3 +33,4 @@
  SOV_railway:0 "Railways"
  SOV_five_year_plan:0 "Five Year Plan"
  GER_mineraloelsicherungsplan:0 "Mineraloelsicherungsplan"
+ HMP_soviet_ll_visible_to_all_allies_tt:0 "Click the decision to toggle the visibility of this scripted GUI for Allied minors and France."

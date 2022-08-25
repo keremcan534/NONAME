@@ -1217,8 +1217,15 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				blitzkrieg_tank_manufacturer
+			equipment_bonus={
+				armor = {
+					soft_attack=0.1
+					hard_attack=0.1
+					maximum_speed = 0.05
+					reliability = 0.1
+					build_cost_ic=0.05
+				}
+				
 				
 			}
 			modifier = {
@@ -1556,30 +1563,20 @@ ideas = {
 	#axis
 	tank_manufacturer = {
 		designer = yes
-		porsche = {
-			cost=150
-
+		krupp_tank = {
+			picture=idea_krupp
+			cost = 150
 			allowed = {
-				original_tag=GER
+				the_axis=yes
 			}
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-			}
-			equipment_bonus={
+			equipment_bonus = {
 				armor = {
-					soft_attack=0.125
-					hard_attack=0.125
-					armor_value = 0.05
-					breakthrough=0.1
-					speed=0.10
+					reliability = 0.1
+					soft_attack = 0.15
 				}
-				
-				
-			}
-			modifier = {
-				tank_manufacturer_cost_factor = -1
 			}
 		}
 		henschel = {
@@ -1591,13 +1588,44 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+			equipment_bonus = {
+				armor = {
+					reliability = 0.1
+					hard_attack = 0.15
+				}
+			}
+			
+			modifier = {
+				tank_manufacturer_cost_factor = -1
+			}
+		}
+		porsche = {
+			cost=150
+			available={date>1941.1.1}
+			allowed = {
+				the_axis=yes
+			}
+			research_bonus = {
+				armor = 0.15
+			}
 			traits = {
-				cruiser_tank_manufacturer
+			}
+			equipment_bonus={
+				armor = {
+					soft_attack=0.15
+					hard_attack=0.15
+					maximum_speed = 0.1
+					reliability = 0.1
+					build_cost_ic=0.05
+				}
+				
+				
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
 			}
 		}
+
 		GER_MAN = {
 			cost=150
 
@@ -1608,8 +1636,16 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				blitzkrieg_tank_manufacturer
+			equipment_bonus={
+				armor = {
+					soft_attack=0.1
+					hard_attack=0.1
+					maximum_speed = 0.05
+					reliability = 0.1
+					build_cost_ic=0.05
+				}
+				
+				
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -1631,25 +1667,26 @@ ideas = {
 				tank_manufacturer_cost_factor = -1
 			}
 		}
-		CZE_ckd = {
-			cost=150
 
-			allowed = {
-				the_axis = yes
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-			traits = {
-				cavalry_tank_manufacturer
-			}
-			modifier = {
-				tank_manufacturer_cost_factor = -1
-			}
-			equipment_bonus = {
-				# made light/medium tanks panzerkampfwagen 38
-			}
-		}
+		#		CZE_ckd = {
+		#			cost=150
+		#	allowed = {
+		#		the_axis = yes
+		#	}
+		#	research_bonus = {
+		#		armor = 0.15
+		#	}
+		#	traits = {
+		#		cavalry_tank_manufacturer
+		#	}
+		#	modifier = {
+		#		tank_manufacturer_cost_factor = -1
+		#	}
+		#	equipment_bonus = {
+		#		# made light/medium tanks panzerkampfwagen 38
+		#	}
+		#}
+
 		CZE_tatra = {
 			cost=150
 

@@ -50,8 +50,8 @@ settings = {
     temperature_change_neighbor_smoothing = 0.15  # [0-1] make temperature change be like province neighbors
 
     # Temperature range when should apply static modifiers
-    weather_extreme_cold = { -100.0 -20.0 }
-    weather_very_cold = { -20.0 -10.0 }
+    weather_extreme_cold = { -100.0 -15.0 }
+    weather_very_cold = { -15.0 -7.0 }
     weather_very_hot = { 30.0 40.0 }
     weather_extreme_hot = { 40.0 100.0 }
   }

@@ -58,7 +58,7 @@ ideas = {
 			picture = officers_purged
 			modifier = {			
 				army_morale_factor = 0.025
-				army_org_factor = 0.075
+				army_org_factor = 0.05
 				air_superiority_efficiency = 0.03
 				army_bonus_air_superiority_factor = 0.05
 				air_escort_efficiency = 0.04
@@ -87,7 +87,7 @@ ideas = {
 			modifier = {			
 				army_attack_factor = 0.025
 				army_defence_factor = 0.07
-				army_org_factor = 0.075            
+				army_org_factor = 0.05
 				army_morale_factor = 0.05
 				air_superiority_efficiency = 0.03
 				army_bonus_air_superiority_factor = 0.05
@@ -456,7 +456,7 @@ ideas = {
 			}
 			picture = generic_manpower_bonus
 			modifier = {
-				supply_consumption_factor = -0.2
+				supply_consumption_factor = -0.15
 				no_supply_grace = 24
 			}
 		}
@@ -514,7 +514,7 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
-				land_reinforce_rate = 0.09
+				land_reinforce_rate = 0.05
 			}
 		}
 		nkvd_2 = {
@@ -526,8 +526,7 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
-				supply_consumption_factor = -0.1
-				land_reinforce_rate = 0.18
+				land_reinforce_rate = 0.1
 			}
 		}
 		comintern_influence = {
@@ -608,7 +607,7 @@ ideas = {
 			picture = generic_morale_bonus
 			equipment_bonus = {
 				medium_tank_chassis = {
-					build_cost_ic = -0.075
+					build_cost_ic = -0.05
 					instant = yes
 				}
 			}
@@ -1008,7 +1007,10 @@ ideas = {
 			}
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.075
+					soft_attack=0.05
+					hard_attack=0.05
+					maximum_speed = 0.05
 					reliability = 0.05
 				}
 			}
@@ -1022,11 +1024,38 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			equipment_bonus = {
+			equipment_bonus={
 				armor = {
+					soft_attack=0.1
+					hard_attack=0.1
+					maximum_speed = 0.05
 					reliability = 0.1
-					hard_attack = 0.125
-					soft_attack = 0.125
+					build_cost_ic=0.05
+				}
+				
+				
+			}
+			modifier = {
+				tank_manufacturer_cost_factor = -1
+			}
+		}
+		astrov_design_bureau_2 = {
+			cost = 150
+			allowed = {
+				original_tag = SOV
+			}
+			available={date>1941.1.1}
+			picture=idea_astrov_design_bureau
+			research_bonus = {
+				armor = 0.15
+			}
+			equipment_bonus={
+				armor = {
+					soft_attack=0.15
+					hard_attack=0.15
+					maximum_speed = 0.1
+					reliability = 0.1
+					build_cost_ic=0.05
 				}
 			}
 			modifier = {
@@ -1044,9 +1073,9 @@ ideas = {
 			}
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = 0.05
-					soft_attack = 0.1
-					hard_attack = 0.1
+					build_cost_ic = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
 					armor_value = 0.1
 					hardness = 0.075
 				}
@@ -1059,6 +1088,25 @@ ideas = {
 	aircraft_manufacturer = {
 		use_list_view = yes
 		designer = yes
+		tupolev_design_bureau = {
+			allowed = {
+				original_tag = SOV
+			}
+			cost = 100
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			modifier = {
+				aircraft_manufacturer_cost_factor = -1
+			}
+			traits = {
+			}
+		equipment_bonus = {
+			fighter_equipment = {
+				reliability = 0.1 air_agility = 0.10 maximum_speed = 0.10 
+			}
+		}
+		}
 		mig_design_bureau = {
 			allowed = {
 				original_tag = SOV
@@ -1079,25 +1127,7 @@ ideas = {
 			}
 		}
 		}
-		tupolev_design_bureau = {
-			allowed = {
-				original_tag = SOV
-			}
-			cost = 100
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			modifier = {
-				aircraft_manufacturer_cost_factor = -1
-			}
-			traits = {
-			}
-		equipment_bonus = {
-			fighter_equipment = {
-				reliability = 0.1 air_agility = 0.10 maximum_speed = 0.10 
-			}
-		}
-		}
+		
 	}
 	industrial_concern = {
 		stalingrad_tractor_factory = {

@@ -1,3 +1,4 @@
+
 playable_countries = {
 	OR = {
 		original_tag = USA
@@ -49,3 +50,29 @@ the_allies = {
 	}
 }
 
+SOV_ll_check_trigger = {
+	custom_trigger_tooltip = { tooltip = SOV_below_monthly_cap_tt
+		date > 1941.11.1 
+			ENG ={  
+		check_variable = { 
+			var = SOV_ll_this_month 
+			value = SOV_ll_monthly_cap  
+			compare = less_than 
+		} 
+			check_variable = { 
+			var = SOV_barb_ll_token 
+			value = 4 
+			compare = greater_than 
+		} 
+		}
+		}
+		}
+		
+		suppy_route_secure = {
+			OR = { 
+			OR = { AND = { USA = { controls_state = 463 } SOV = { controls_state = 408 } } has_start_date > 1936.1.1.13 }
+			AND = { OR= { ENG = { controls_state = 412 } SOV = { controls_state = 412 }  }SOV = { controls_state = 229 } }
+			SOV = { controls_state = 213 }
+			AND = { ENG = { controls_state = 116 } SOV = { controls_state = 137 } }
+			}
+			}

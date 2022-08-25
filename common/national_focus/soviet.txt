@@ -391,9 +391,6 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 500
 			add_ideas = order_227
-			hidden_effect={
-			add_timed_idea={idea=SOV_snakemodding days=30}
-			}
 		}
 	}
 	focus = {
@@ -1388,16 +1385,6 @@ focus_tree = {
  					}
 			icon = "gfx/interface/equipmentdesigner/tanks/designer/sov/sov_heavy_AAB_camo.dds"
 				}
-				add_equipment_production = {
-					equipment = {
-						type = heavy_tank_chassis_2
-						creator = "SOV"
-						version_name = "KV-1/1"		}
-					requested_factories = 15
-					progress = 0.1
-					efficiency = 50
-				}   
-			
 		}
 	}
 	focus = {

@@ -1,0 +1,2072 @@
+defined_text = { # Country
+	name = GetSovSingapore
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start } date > 1941.11.1 ENG = { controls_state = 336 } 
+		}
+		localization_key = GFX_singapore_green
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GFX_singapore_gray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start } date > 1941.11.1	NOT = { ENG = { controls_state = 336 } } 
+		}
+		localization_key = GFX_singapore_red
+	}
+}
+defined_text = { # Country
+	name = GetAtlantisFocusName
+	text = {
+		trigger = {
+		 NOT ={  GRE = { has_country_flag = gre_island_spotted }}
+		}
+		localization_key = AtlantisHidden
+	}
+	text = {
+		trigger = {	
+			GRE = { has_country_flag = gre_island_spotted }
+		}
+		localization_key = AtlantisSpotted
+	}
+}
+
+defined_text = { # Country
+	name = GetAtlantisFocusDesc
+	text = {
+		trigger = {
+		 NOT ={  GRE = { has_country_flag = gre_island_spotted }}
+		}
+		localization_key = AtlantisHiddenDesc
+	}
+	text = {
+		trigger = {	
+			GRE = { has_country_flag = gre_island_spotted }
+		}
+		localization_key = AtlantisSpottedDesc
+	}
+}
+defined_text = { # Country
+	name = GetSingaporeNameColor
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start } date > 1941.11.1 ENG = { controls_state = 336 } 
+		}
+		localization_key = GetSovSingaporeGreen
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GetSovSingaporegray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start } date > 1941.11.1	NOT = { ENG = { controls_state = 336 } } 
+		}
+		localization_key = GetSovSingaporeRed
+	}
+}
+
+
+defined_text = { # Country
+	name = GetSovHK
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 ENG = { controls_state = 326 } 
+		}
+		localization_key = GFX_HK_green
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GFX_HK_gray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1	NOT = { ENG = { controls_state = 326 } } 
+		}
+		localization_key = GFX_HK_red
+	}
+}
+defined_text = { # Country
+	name = GetHKNameColor
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 ENG = { controls_state = 326 } 
+		}
+		localization_key = GetSovHKGreen
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GetSovHKgray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1	NOT = { ENG = { controls_state = 326 } } 
+		}
+		localization_key = GetSovHKRed
+	}
+}
+
+defined_text = { # Country
+	name = GetSovPalau
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 NOT = { JAP = { controls_state = 647 }  } 
+		}
+		localization_key = GFX_palau_green
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GFX_palau_gray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 JAP = { controls_state = 647 }
+		}
+		localization_key = GFX_palau_red
+	}
+}
+defined_text = { # Country
+	name = GetPalauNameColor
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 NOT = { JAP = { controls_state = 647 }  } 
+		}
+		localization_key = GetSovPalauGreen
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GetSovPalaugray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 JAP = { controls_state = 647 }
+		}
+		localization_key = GetSovPalauRed
+	}
+}
+defined_text = { # Country
+	name = GetSovOkinawa
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 NOT = { JAP = { controls_state = 526 }  } 
+		}
+		localization_key = GFX_okinawa_green
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GFX_okinawa_gray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 JAP = { controls_state = 526 }
+		}
+		localization_key = GFX_okinawa_red
+	}
+}
+defined_text = { # Country
+	name = GetOkinawaNameColor
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 NOT = { JAP = { controls_state = 526 }  } 
+		}
+		localization_key = GetSovOkinawaGreen
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GetSovOkinawagray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 JAP = { controls_state = 526 }
+		}
+		localization_key = GetSovOkinawaRed
+	}
+}
+defined_text = { # Country
+	name = GetSovIwoJima
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 NOT = { JAP = { controls_state = 645 }  } 
+		}
+		localization_key = GFX_iwo_jima_green
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GFX_iwo_jima_gray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 JAP = { controls_state = 645 }
+		}
+		localization_key = GFX_iwo_jima_red
+	}
+}
+defined_text = { # Country
+	name = GetIwoJimaNameColor
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 NOT = { JAP = { controls_state = 645 }  } 
+		}
+		localization_key = GetSovIwoJimaGreen
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GetSovIwoJimagray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 JAP = { controls_state = 645 }
+		}
+		localization_key = GetSovIwoJimaRed
+	}
+}
+defined_text = { # Country
+	name = GetSovMarcus
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 NOT = { JAP = { controls_state = 648 }  } 
+		}
+		localization_key = GFX_marcus_green
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GFX_marcus_gray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start } date > 1941.11.1 JAP = { controls_state = 648 }
+		}
+		localization_key = GFX_marcus_red
+	}
+}
+defined_text = { # Country
+	name = GetMarcusNameColor
+	text = {
+		trigger = {
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 NOT = { JAP = { controls_state = 648 }  } 
+		}
+		localization_key = GetSovMarcusGreen
+	}
+	text = {
+		trigger = {	
+			OR ={  date < 1941.11.1 has_global_flag = war_in_the_west_start  }
+		}
+		localization_key = GetSovMarcusgray
+	}
+		text = {
+		trigger = {	
+		NOT = { has_global_flag = war_in_the_west_start }  date > 1941.11.1 JAP = { controls_state = 648 }
+		}
+		localization_key = GetSovMarcusRed
+	}
+}
+
+
+
+ defined_text = { 
+	name = GetLLVisibility
+	text = { trigger = { has_global_flag = HMP_soviet_ll_visible_to_all_allies } 
+		localization_key = GetLLVisibilityOn
+	}
+	text = { trigger = { NOT = { has_global_flag = HMP_soviet_ll_visible_to_all_allies }}
+		localization_key = GetLLVisibilityOff
+	}
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+defined_text = { # Country
+	name = GetSendGuns
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendGunsFlag }  
+		}
+		localization_key = GetSendGunsSov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendGunsFlag }}
+		}
+		localization_key = GetSendGunsNormal
+	}
+}
+
+ 
+defined_text = { # Country
+	name = GetSendArty
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendArtyFlag }  
+		}
+		localization_key = GetSendArtySov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendArtyFlag }}
+		}
+		localization_key = GetSendArtyNormal
+	}
+}
+defined_text = { # Country
+	name = GetSendAT
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendATFlag }  
+		}
+		localization_key = GetSendATSov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendATFlag }}
+		}
+		localization_key = GetSendATNormal
+	}
+}
+
+ 
+defined_text = { # Country
+	name = GetSendAA
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendAAFlag }  
+		}
+		localization_key = GetSendAASov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendAAFlag }}
+		}
+		localization_key = GetSendAANormal
+	}
+}
+
+ 
+defined_text = { # Country
+	name = GetSendRarty
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendRartyFlag }  
+		}
+		localization_key = GetSendRartySov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendRartyFlag }}
+		}
+		localization_key = GetSendRartyNormal
+	}
+}
+
+ 
+defined_text = { # Country
+	name = GetSendSup
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendSupFlag }  
+		}
+		localization_key = GetSendSupSov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendSupFlag }}
+		}
+		localization_key = GetSendSupNormal
+	}
+}
+
+ 
+defined_text = { # Country
+	name = GetSendMot
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendMotFlag }  
+		}
+		localization_key = GetSendMotSov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendMotFlag }}
+		}
+		localization_key = GetSendMotNormal
+	}
+}
+
+ 
+defined_text = { # Country
+	name = GetSendMech
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendMechFlag }  
+		}
+		localization_key = GetSendMechSov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendMechFlag }}
+		}
+		localization_key = GetSendMechNormal
+	}
+}
+
+defined_text = { # Country
+	name = GetSendMed
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendMedFlag }  
+		}
+		localization_key = GetSendMedSov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendMedFlag }}
+		}
+		localization_key = GetSendMedNormal
+	}
+}
+
+ 
+defined_text = { # Country
+	name = GetSendLight
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendLightFlag }  
+		}
+		localization_key = GetSendLightSov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendLightFlag }}
+		}
+		localization_key = GetSendLightNormal
+	}
+}
+ 
+defined_text = { # Country
+	name = GetSendFighter
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendFighterFlag }  
+		}
+		localization_key = GetSendFighterSov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendFighterFlag }}
+		}
+		localization_key = GetSendFighterNormal
+	}
+}
+ 
+defined_text = { # Country
+	name = GetSendCas
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendCasFlag }  
+		}
+		localization_key = GetSendCasSov
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendCasFlag }}
+		}
+		localization_key = GetSendCasNormal
+	}
+}
+ defined_text = { # Country
+	name = ShowLLDecisionsForSov
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = SOV_show_ll_flag }  
+		}
+		localization_key = ShowLLDecisionsForSovOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = SOV_show_ll_flag }}
+		}
+		localization_key = ShowLLDecisionsForSovOff
+	}
+}
+ 
+  defined_text = { # Country
+	name = GibGuns
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendGunsFlag }  
+		}
+		localization_key = GibGunsOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendGunsFlag }}
+		}
+		localization_key = GibGunsOff
+	}
+}
+ 
+   defined_text = { # Country
+	name = GibAA
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendAAFlag }  
+		}
+		localization_key = GibAAOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendAAFlag }}
+		}
+		localization_key = GibAAOff
+	}
+}
+   defined_text = { # Country
+	name = GibArty
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendArtyFlag }  
+		}
+		localization_key = GibArtyOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendArtyFlag }}
+		}
+		localization_key = GibArtyOff
+	}
+}
+   defined_text = { # Country
+	name = GibRarty
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendRartyFlag }  
+		}
+		localization_key = GibRartyOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendRartyFlag }}
+		}
+		localization_key = GibRartyOff
+	}
+}
+
+   defined_text = { # Country
+	name = GibAT
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendATFlag }  
+		}
+		localization_key = GibATOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendATFlag }}
+		}
+		localization_key = GibATOff
+	}
+}
+   defined_text = { # Country
+	name = GibSup
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendSupFlag }  
+		}
+		localization_key = GibSupOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendSupFlag }}
+		}
+		localization_key = GibSupOff
+	}
+}
+   defined_text = { # Country
+	name = GibMot
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendMotFlag }  
+		}
+		localization_key = GibMotOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendMotFlag }}
+		}
+		localization_key = GibMotOff
+	}
+}
+   defined_text = { # Country
+	name = GibMech
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendMechFlag }  
+		}
+		localization_key = GibMechOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendMechFlag }}
+		}
+		localization_key = GibMechOff
+	}
+}
+   defined_text = { # Country
+	name = GibMed
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendMedFlag }  
+		}
+		localization_key = GibMedOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendMedFlag }}
+		}
+		localization_key = GibMedOff
+	}
+}
+   defined_text = { # Country
+	name = GibLight
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendLightFlag }  
+		}
+		localization_key = GibLightOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendLightFlag }}
+		}
+		localization_key = GibLightOff
+	}
+}
+   defined_text = { # Country
+	name = GibFighter
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendFighterFlag }  
+		}
+		localization_key = GibFighterOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendFighterFlag }}
+		}
+		localization_key = GibFighterOff
+	}
+}
+ 
+    defined_text = { # Country
+	name = GibCas
+	text = {
+		trigger = {
+		  SOV = { has_country_flag = GetSendCasFlag }  
+		}
+		localization_key = GibCasOn
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { has_country_flag = GetSendCasFlag }}
+		}
+		localization_key = GibCasOff
+	}
+}
+  
+ 
+
+defined_text = { # Country
+	name = GetSovHongKong
+	text = {
+		trigger = {
+		 date > 1941.11.1 ENG = { controls_state = 326 }   
+		}
+		localization_key = GFX_hong_kong_green
+	}
+	text = {
+		trigger = {	
+			date < 1941.11.1
+		}
+		localization_key = GFX_hong_kong_gray
+	}
+		text = {
+		trigger = {	
+		date > 1941.11.1 NOT ={  ENG = { controls_state = 326 } }
+		}
+		localization_key = GFX_hong_kong_red
+	}
+}
+
+
+defined_text = { # Country
+	name = GetSovSaipan
+	text = {
+		trigger = {
+		 date > 1941.11.1 NOT = { JAP = { controls_state = 646 }  } 
+		}
+		localization_key = GFX_saipan_green
+	}
+	text = {
+		trigger = {	
+			date < 1941.11.1
+		}
+		localization_key = GFX_saipan_gray
+	}
+		text = {
+		trigger = {	
+		 date > 1941.11.1 JAP = { controls_state = 646 }
+		}
+		localization_key = GFX_saipan_red
+	}
+}
+defined_text = { # Country
+	name = GetSaipanNameColor
+	text = {
+		trigger = {
+		 date > 1941.11.1 NOT = { JAP = { controls_state = 646 }  } 
+		}
+		localization_key = GetSovSaipanGreen
+	}
+	text = {
+		trigger = {	
+			date < 1941.11.1
+		}
+		localization_key = GetSovSaipangray
+	}
+		text = {
+		trigger = {	
+		 date > 1941.11.1 JAP = { controls_state = 646 }
+		}
+		localization_key = GetSovSaipanRed
+	}
+}
+
+defined_text = { # Corruption Brazil images
+	name = BRA_CORRUPTION
+	text = {
+		trigger = {
+			AND = { 
+			BRA = { check_variable = { prca_tokens < 20 } } 
+			NOT = { has_global_flag = bracorruption } 
+			}	
+		}
+		localization_key = GFX_corruption_bra1
+	}
+	text = {
+		trigger = {	
+			AND = { 
+			BRA = { check_variable = { prca_tokens > 19 } } 
+			BRA = { check_variable = { prca_tokens < 50 } }
+			NOT = { has_global_flag = bracorruption } 
+			}
+		}
+		localization_key = GFX_corruption_bra2
+	}
+	text = {
+		trigger = {	
+			AND = { 
+				BRA = { check_variable = { prca_tokens > 49 } } 
+				BRA = { check_variable = { prca_tokens < 80 } } 
+				NOT = { has_global_flag = bracorruption } 
+			}
+		}
+		localization_key = GFX_corruption_bra3
+	}
+
+	text = {
+		trigger = {	
+			AND = { 
+				BRA = { check_variable = { prca_tokens > 79 } } 
+				NOT = { has_global_flag = bracorruption } 
+			}
+		}
+		localization_key = GFX_corruption_bra4
+	}
+
+	text = {
+		trigger = {	
+			has_global_flag = bracorruption
+		}
+		localization_key = GFX_dot
+	}
+}
+
+defined_text = {
+	name = FocusTreeBackground
+	text = {
+		trigger = {
+			check_variable = { focustree_background = 1 }
+		}
+		localization_key = "GFX_BRA_focustree"
+	}
+}	
+
+defined_text = { # Corruption Brazil TEXT
+	name = BRA_CORRUPTION_MEASURER
+	text = {
+		trigger = {
+			AND = { 
+			BRA = { check_variable = { prca_tokens < 20 } } 
+			NOT = { has_global_flag = bracorruption } 
+			}	
+		}
+		localization_key = GFX_corruption_measurer_bra
+	}
+	text = {
+		trigger = {	
+			AND = { 
+			BRA = { check_variable = { prca_tokens > 19 } } 
+			BRA = { check_variable = { prca_tokens < 50 } }
+			NOT = { has_global_flag = bracorruption } 
+			}
+		}
+		localization_key = GFX_corruption_measurer2_bra
+	}
+	text = {
+		trigger = {	
+			AND = { 
+				BRA = { check_variable = { prca_tokens > 49 } } 
+				BRA = { check_variable = { prca_tokens < 80 } } 
+				NOT = { has_global_flag = bracorruption } 
+			}
+		}
+		localization_key = GFX_corruption_measurer3_bra
+	}
+
+	text = {
+		trigger = {	
+			AND = { 
+				BRA = { check_variable = { prca_tokens > 79 } } 
+				NOT = { has_global_flag = bracorruption } 
+			}
+		}
+		localization_key = GFX_corruption_measurer4_bra
+	}
+
+	text = {
+		trigger = {	
+			has_global_flag = bracorruption
+		}
+		localization_key = GFX_dot
+	}
+}
+
+defined_text = { # Corruption Brazil images
+	name = BRA_CORRUPTION2
+	text = {
+		trigger = {
+			has_global_flag = bracorruption
+		}
+		localization_key = GFX_corruption_bra5
+	}
+}
+
+defined_text = { # Corruption Brazil text
+	name = BRA_CORRUPTION_MEASURER2
+	text = {
+		trigger = {
+			has_global_flag = bracorruption
+		}
+		localization_key = GFX_corruption_measurer5_bra
+	}
+}
+
+
+
+defined_text = { # Country
+	name = GetSovIran
+	text = {
+		trigger = {
+		OR = { SOV = { controls_state = 412 } ENG = { controls_state = 412 } }
+		}
+		localization_key = GFX_iran_green
+	}
+	text = {
+		trigger = {	
+		OR ={  
+		date < 1941.11.1 
+		SWE = { controls_state = 412 }
+		}
+		}
+		localization_key = GFX_iran_gray
+	}
+		text = {
+		trigger = {	
+			NOT = { OR ={  SOV = { controls_state = 412 } ENG = { controls_state = 412 } PER = { controls_state = 412 }} }
+		}
+		localization_key = GFX_iran_red
+	}
+}
+defined_text = { # Country
+	name = GetSovPacific
+		text = {
+		trigger = {	
+			date < 1941.11.1
+		}
+		localization_key = GFX_hawaii_gray
+	}
+	text = {
+		trigger = {
+		 date > 1941.11.1 USA = { controls_state = 629 } 
+		}
+		localization_key = GFX_hawaii_green
+	}
+
+		text = {
+		trigger = {	
+		date > 1941.11.1 NOT =  { USA = { controls_state = 629 } }
+		}
+		localization_key = GFX_hawaii_red
+	}
+}
+defined_text = { # Country
+	name = GetSovVladivostok
+	text = {
+		trigger = {
+			date > 1941.11.1 SOV = { controls_state = 408 } 
+		}
+		localization_key = GFX_vladivostok_green
+	}
+	text = {
+		trigger = {	
+			date < 1941.11.1
+		}
+		localization_key = GFX_vladivostok_gray
+	}
+		text = {
+		trigger = {	
+			date > 1941.11.1 NOT = {  SOV = { controls_state = 408 } }
+		}
+		localization_key = GFX_vladivostok_red
+	}
+}
+defined_text = { # Country
+	name = GetSovMedMalta
+	text = {
+		trigger = {
+			date > 1941.11.1 ENG = { controls_state = 116 } 
+		}
+		localization_key = GFX_malta_green
+	}
+	text = {
+		trigger = {	
+			date < 1941.11.1
+		}
+		localization_key = GFX_malta_gray
+	}
+		text = {
+		trigger = {	
+			date > 1941.11.1 NOT = {  ENG = { controls_state = 116 } }
+		}
+		localization_key = GFX_malta_red
+	}
+}
+defined_text = { # Country
+	name = GetSovMedCrimea
+	text = {
+		trigger = {
+			date > 1941.11.1 SOV = { controls_state = 137 } 
+		}
+		localization_key = GFX_crimea_green
+	}
+	text = {
+		trigger = {	
+			NOT = { date > 1941.11.1 }
+		}
+		localization_key = GFX_crimea_gray
+	}
+		text = {
+		trigger = {	
+			date > 1941.11.1 NOT = {  SOV = { controls_state = 137 } }
+		}
+		localization_key = GFX_crimea_red
+	}
+}
+defined_text = { # Country
+	name = GetSovMedGibraltar
+	text = {
+		trigger = {
+			date > 1941.11.1 ENG = { controls_state = 118 } 
+		}
+		localization_key = GFX_gib_green
+	}
+	text = {
+		trigger = {	
+			date < 1941.11.1
+		}
+		localization_key = GFX_gib_gray
+	}
+		text = {
+		trigger = {	
+			date > 1941.11.1 NOT = {  ENG = { controls_state = 118 } }
+		}
+		localization_key = GFX_gib_red
+	}
+}
+defined_text = { # Country
+	name = GetSovArctic
+	text = {
+		trigger = {
+			date > 1941.11.1	SOV = { controls_state = 213 }
+		}
+		localization_key = GFX_murmansk_green
+	}
+	text = {
+		trigger = {	
+			date < 1941.11.1
+		}
+		localization_key = GFX_murmansk_gray
+	}
+		text = {
+		trigger = {	
+			date > 1941.11.1 NOT = {SOV = { controls_state = 213 }}
+		}
+		localization_key = GFX_murmansk_red
+	}
+}
+
+
+defined_text = { # Country
+	name = GetPersianCorridorNameColor
+	text = {
+		trigger = {
+		date > 1941.11.1 OR = { SOV = { controls_state = 412 } ENG = { controls_state = 412 } }
+		}
+		localization_key = GetPersianCorridorNameColorGreen
+	}
+	text = {
+		trigger = {	
+			date < 1941.11.1 
+		}
+		localization_key = GetPersianCorridorNameColorgray
+	}
+		text = {
+		trigger = {	
+		date > 1941.11.1 	NOT = { OR ={SOV = { controls_state = 412 } ENG = { controls_state = 412 } PER = { controls_state = 412 }} }
+		}
+		localization_key = GetPersianCorridorNameColorRed
+	}
+}
+
+defined_text = { # Country 
+	name = GetMedCorridorNameColor
+	text = {
+		trigger = {
+		 ENG = { controls_state = 118 controls_state = 116 } SOV = { controls_state = 137 } date > 1941.11.1
+		}
+		localization_key = GetMedCorridorNameColorGreen
+	}
+	text = {
+		trigger = {	
+			 date < 1941.11.1 
+		}
+		localization_key = GetMedCorridorNameColorgray
+	}
+		text = {
+		trigger = {	
+		OR = {  NOT ={  ENG = { controls_state = 118} }  NOT = { ENG = { controls_state = 116 }   } NOT ={  SOV = { controls_state = 137 } }  } date > 1941.11.1
+		}
+		localization_key = GetMedCorridorNameColorRed
+	}
+}
+
+
+defined_text = { # Country
+	name = GetArcticCorridorNameColor
+	
+	text = {
+		trigger = {
+		 date > 1941.11.1   SOV = { controls_state = 213 }
+		}
+		localization_key = GetArcticCorridorNameColorGreen
+	}
+	text = {
+		trigger = {	
+			date < 1941.11.1
+		}
+		localization_key = GetArcticCorridorNameColorgray
+	}
+		text = {
+		trigger = {	
+		 date > 1941.11.1	NOT = { SOV = { controls_state = 213 } } 
+		}
+		localization_key = GetArcticCorridorNameColorRed
+	}
+}
+
+
+defined_text = { # Country
+	name = GetPacificCorridorNameColor
+	text = {
+		trigger = {
+				date > 1941.11.1	 USA = { controls_state = 629 } 
+		}
+		localization_key = GetPacificCorridorNameColorGreen
+	}
+	text = {
+		trigger = {	
+				date < 1941.11.1
+		}
+		localization_key = GetPacificCorridorNameColorgray
+	}
+		text = {
+		trigger = {	
+				date > 1941.11.1	NOT = { USA = { controls_state = 629 } } 
+		}
+		localization_key = GetPacificCorridorNameColorRed
+	}
+}
+
+
+
+
+defined_text = { # Country
+	name = Get_HMP_supply_routes
+		text = {
+		trigger = {
+		 date < 1941.11.1 
+		}
+		localization_key = Get_HMP_supply_routesUNUSED
+	}
+	text = {
+		trigger = {
+		suppy_route_secure = yes 
+		}
+		localization_key = Get_HMP_supply_routesSecure
+	}
+	text = {
+		trigger = {	
+		 NOT = { suppy_route_secure = yes }
+		}
+		localization_key = Get_HMP_supply_routesInsecure
+	}
+}
+defined_text = { # Country
+	name = GetSovSupplyRoute
+	text = {
+		trigger = {
+		suppy_route_secure = yes 
+		}
+		localization_key = GetSovSupplyRouteSecure
+	}
+	text = {
+		trigger = {	
+		 NOT = { suppy_route_secure = yes }
+		}
+		localization_key = GetSovSupplyRouteInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetCWGuns
+	text = {
+		trigger = { has_country_flag = visible_guns }
+		localization_key = GetCWGunsVisible
+	}
+	text = {
+		trigger = {	 NOT = { has_country_flag = visible_guns }	}
+		localization_key = GetCWGunsNotVisible
+	}
+}
+
+defined_text = { # Country
+	name = GetCWSupp
+	text = {
+		trigger = { has_country_flag = visible_supp }
+		localization_key = GetCWSuppVisible
+	}
+	text = {
+		trigger = {	 NOT = { has_country_flag = visible_supp }	}
+		localization_key = GetCWSuppNotVisible
+	}
+}
+
+defined_text = { # Country
+	name = GetCWArty
+	text = {
+		trigger = { has_country_flag = visible_arty }
+		localization_key = GetCWArtyVisible
+	}
+	text = {
+		trigger = {	 NOT = { has_country_flag = visible_arty }	}
+		localization_key = GetCWArtyNotVisible
+	}
+}
+
+
+defined_text = { # Country
+	name = GetCWRarty
+	text = {
+		trigger = { has_country_flag = visible_rarty }
+		localization_key = GetCWRartyVisible
+	}
+	text = {
+		trigger = {	 NOT = { has_country_flag = visible_rarty }	}
+		localization_key = GetCWRartyNotVisible
+	}
+}
+
+defined_text = { # Country
+	name = GetCWAA
+	text = {
+		trigger = { has_country_flag = visible_aa }
+		localization_key = GetCWAAVisible
+	}
+	text = {
+		trigger = {	 NOT = { has_country_flag = visible_aa }	}
+		localization_key = GetCWAANotVisible
+	}
+}
+
+defined_text = { # Country
+	name = GetCWAT
+	text = {
+		trigger = { has_country_flag = visible_at }
+		localization_key = GetCWATVisible
+	}
+	text = {
+		trigger = {	 NOT = { has_country_flag = visible_at }	}
+		localization_key = GetCWATNotVisible
+	}
+}
+
+defined_text = { # Country
+	name = GetCWMoto
+	text = {
+		trigger = { has_country_flag = visible_moto }
+		localization_key = GetCWMotoVisible
+	}
+	text = {
+		trigger = {	 NOT = { has_country_flag = visible_moto }	}
+		localization_key = GetCWMotoNotVisible
+	}
+}
+
+defined_text = { # Country
+	name = GetLLName
+	text = {
+		trigger = {
+		  original_tag = GER
+		}
+		localization_key = GetLLNameGer
+	}
+	text = {
+		trigger = {	
+		 original_tag = ITA
+		}
+		localization_key = GetLLNameIta
+	}
+}
+
+defined_text = { # Country
+	name = GetMANChina
+	text = {
+		trigger = {
+		  JAP = { has_country_flag = MAN_GETS_CHINA } 
+		}
+		localization_key = GetMANChinaNO
+	}
+	text = {
+		trigger = {	
+		 NOT = { JAP = { has_country_flag = MAN_GETS_CHINA } }
+		}
+		localization_key = GetMANChinaYES
+	}
+}
+
+defined_text = { # Country
+	name = GetSovSupplyRouteIran
+	text = {
+		trigger = {
+			AND = { ENG = { controls_state = 412 } SOV = { controls_state = 229 } }
+		}
+		localization_key = GetSovSupplyRouteIranSecure
+	}
+	text = {
+		trigger = {	
+		 NOT = { AND = { ENG = { controls_state = 412 } SOV = { controls_state = 229 } } }
+		}
+		localization_key = GetSovSupplyRouteIranInsecure
+	}
+}
+defined_text = { # Country
+	name = GetSovSupplyRouteMurmansk
+	text = {
+		trigger = {
+				SOV = { controls_state = 213 }
+		}
+		localization_key = GetSovSupplyRouteMurmanskSecure
+	}
+	text = {
+		trigger = {	
+			NOT = { SOV = { controls_state = 213 } }
+		}
+		localization_key = GetSovSupplyRouteMurmanskInsecure
+	}
+}
+defined_text = { # Country
+	name = GetSovSupplyRouteVladivostok
+	text = {
+		trigger = {
+		  OR = { AND = { USA = { controls_state = 463 } SOV = { controls_state = 408 } } has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetSovSupplyRouteVladivostokSecure
+	}
+	text = {
+		trigger = {	
+		  NOT = { OR = { AND = { USA = { controls_state = 463 } SOV = { controls_state = 408 } } has_start_date > 1936.1.2 } }
+		}
+		localization_key = GetSovSupplyRouteVladivostokInsecure
+	}
+}
+defined_text = { # Country
+	name = GetSovSupplyRouteMalta
+	text = {
+		trigger = {
+			ENG = { controls_state = 116 }  
+		}
+		localization_key = GetSovSupplyRouteMaltaSecure
+	}
+	text = {
+		trigger = {	
+		  NOT = {  ENG = { controls_state = 116 }  }
+		}
+		localization_key = GetSovSupplyRouteMaltaInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetSovSupplyRouteGibraltar
+	text = {
+		trigger = {
+			ENG = { controls_state = 118 }  
+		}
+		localization_key = GetSovSupplyRouteGibraltarSecure
+	}
+	text = {
+		trigger = {	
+		  NOT = {  ENG = { controls_state = 118 }  }
+		}
+		localization_key = GetSovSupplyRouteGibraltarInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetSovSupplyRouteCrimea
+	text = {
+		trigger = {
+			SOV = { controls_state = 137 }  
+		}
+		localization_key = GetSovSupplyRouteCrimeaSecure
+	}
+	text = {
+		trigger = {	
+		  NOT = {  SOV = { controls_state = 137 }  }
+		}
+		localization_key = GetSovSupplyRouteCrimeaInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetSovSupplyRouteHawaii
+	text = {
+		trigger = {
+			USA = { controls_state = 629 }  
+		}
+		localization_key = GetSovSupplyRouteHawaiiSecure
+	}
+	text = {
+		trigger = {	
+		  NOT = {  USA = { controls_state = 629 }  }
+		}
+		localization_key = GetSovSupplyRouteHawaiiInsecure
+	}
+}
+
+
+
+
+
+
+
+defined_text = { # Country
+	name = GetObjOkinawa
+	text = {
+		trigger = {
+			NOT = { JAP = { controls_state = 526 } has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetOkinawaSecure
+	}
+	text = {
+		trigger = {	
+			JAP = { controls_state = 526 } NOT = {  has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetOkinawaInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetObjIwoJima
+	text = {
+		trigger = {
+			NOT = { JAP = { controls_state = 645 } has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetIwoJimaSecure
+	}
+	text = {
+		trigger = {	
+			JAP = { controls_state = 645 } NOT = {  has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetIwoJimaInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetObjMarcusIsland
+	text = {
+		trigger = {
+			NOT = { JAP = { controls_state = 648 } has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetMarcusIslandSecure
+	}
+	text = {
+		trigger = {	
+			JAP = { controls_state = 648 } NOT = {  has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetMarcusIslandInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetObjPalau
+	text = {
+		trigger = {
+			NOT = { JAP = { controls_state = 647 } has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetPalauSecure
+	}
+	text = {
+		trigger = {	
+			JAP = { controls_state = 647 } NOT = {  has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetPalauInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetObjSingapore
+	text = {
+		trigger = {
+		   ENG = { controls_state = 336 } NOT = { has_start_date > 1936.1.2 }
+		}
+		localization_key = GetSingaporeSecure
+	}
+	text = {
+		trigger = {	
+		OR = {  NOT = {  ENG = { controls_state = 336 } }   NOT = {  has_start_date > 1936.1.2 } }
+		}
+		localization_key = GetSingaporeInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjHongKong
+	text = {
+		trigger = {
+		    NOT = { has_start_date > 1936.1.2 } ENG = { controls_state = 326 } 
+		}
+		localization_key = GetHongKongSecure
+	}
+	text = {
+		trigger = {	
+		  NOT = { has_start_date > 1936.1.2 ENG = { controls_state = 326 }  }  
+		}
+		localization_key = GetHongKongInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetObjSaipan
+	text = {
+		trigger = {
+			NOT = { JAP = { controls_state = 646 } has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetSaipanSecure
+	}
+	text = {
+		trigger = {	
+			JAP = { controls_state = 646 } NOT = {  has_start_date > 1936.1.2 } 
+		}
+		localization_key = GetSaipanInsecure
+	}
+}
+
+
+defined_text = { # Country
+	name = GetObjTripoli
+	text = {
+		trigger = {
+			 ITA = { controls_state = 448 } 
+		}
+		localization_key = GetTripoliSecure
+	}
+	text = {
+		trigger = {	
+			NOT = {ITA = { controls_state = 448 }  } 
+		}
+		localization_key = GetTripoliInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjBenghasi
+	text = {
+		trigger = {
+		 ITA = { controls_state = 450 } 
+		}
+		localization_key = GetBenghasiSecure
+	}
+	text = {
+		trigger = {	
+			NOT = { ITA = { controls_state = 450 } } 
+		}
+		localization_key = GetBenghasiInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjCyrenaica
+	text = {
+		trigger = {
+			 ITA = { controls_state = 579 }  
+		}
+		localization_key = GetCyrenaicaSecure
+	}
+	text = {
+		trigger = {	
+			NOT = {ITA = { controls_state = 579 }  } 
+		}
+		localization_key = GetCyrenaicaInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjMarsa
+	text = {
+		trigger = {
+		 ITA = { controls_state = 452 } 
+		}
+		localization_key = GetMarsaSecure
+	}
+	text = {
+		trigger = {	
+				NOT = {ITA = { controls_state = 452 } } 
+		}
+		localization_key = GetMarsaInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjAlexandria
+	text = {
+		trigger = {
+			 ITA = {  controls_state = 447 }
+		}
+		localization_key = GetAlexandriaSecure
+	}
+	text = {
+		trigger = {	
+			NOT = {ITA = {  controls_state = 447 } } 
+		}
+		localization_key = GetAlexandriaInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjCairo
+	text = {
+		trigger = {
+			 ITA = { controls_state = 305 } 
+		}
+		localization_key = GetCairoSecure
+	}
+	text = {
+		trigger = {	
+			NOT = {ITA = { controls_state = 305 }  } 
+		}
+		localization_key = GetCairoInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjAsyut
+	text = {
+		trigger = {
+		ITA = { controls_state = 456 } 
+		}
+		localization_key = GetAsyutSecure
+	}
+	text = {
+		trigger = {	
+			NOT = { ITA = { controls_state = 456 }  } 
+		}
+		localization_key = GetAsyutInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjLuxor
+	text = {
+		trigger = {
+		ITA = { controls_state = 436 } 
+		}
+		localization_key = GetLuxorSecure
+	}
+	text = {
+		trigger = {	
+			NOT = { ITA = { controls_state = 436 }  } 
+		}
+		localization_key = GetLuxorInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjIraq
+	text = {
+		trigger = {
+			ITA = { controls_state = 291 }
+		}
+		localization_key = GetIraqSecure
+	}
+	text = {
+		trigger = {	
+			NOT = { ITA = { controls_state = 291 } } 
+		}
+		localization_key = GetIraqInsecure
+	}
+}
+defined_text = { # Country
+	name = GetObjHejaz
+	text = {
+		trigger = {
+			ITA = { controls_state = 506 }  
+		}
+		localization_key = GetHejazSecure
+	}
+	text = {
+		trigger = {	
+			NOT = { ITA = { controls_state = 506 }  } 
+		}
+		localization_key = GetHejazInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetObjIran
+	text = {
+		trigger = {
+			 ITA = { controls_state = 412  } 
+		}
+		localization_key = GetIranSecure
+	}
+	text = {
+		trigger = {	
+			NOT = {ITA = { controls_state = 412 }  } 
+		}
+		localization_key = GetIranInsecure
+	}
+}
+
+defined_text = { # Country
+	name = GetObjItalianRails
+	text = {
+		trigger = {
+			 186 = { has_dynamic_modifier = { modifier = ITA_italian_railways_modifier } }
+		}
+		localization_key = GetItalianRailsSecure
+	}
+	text = { 
+		trigger = {	
+			NOT= { 186 = { has_dynamic_modifier = { modifier = ITA_italian_railways_modifier } } }
+		}
+		localization_key = GetItalianRailsInsecure
+	}
+}
+
+
+###TOP BAR RESOURCES###
+
+defined_text = { # global
+	name = steel_text
+	text = {
+		trigger = {
+		check_variable = {resource_imported@steel>0}
+		check_variable = {resource@steel>resource_imported@steel}
+		}
+		localization_key = "[?resource@steel|0Y]"
+	}
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@steel|0+]"
+	}
+	
+	
+}
+defined_text = { # global
+	name = rubber_text
+	text = {
+		trigger = {
+		check_variable = {resource_imported@rubber>0}
+		check_variable = {resource@rubber>resource_imported@rubber}
+		}
+		localization_key = "[?resource@rubber|0Y]"
+	}
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@rubber|0+]"
+	}
+	
+	
+}
+defined_text = { # global
+	name = aluminium_text
+	text = {
+		trigger = {
+		check_variable = {resource_imported@aluminium>0}
+		check_variable = {resource@aluminium>resource_imported@aluminium}
+		}
+		localization_key = "[?resource@aluminium|0Y]"
+	}
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@aluminium|0+]"
+	}
+	
+	
+}
+defined_text = { # global
+	name = tungsten_text
+	text = {
+		trigger = {
+		check_variable = {resource_imported@tungsten>0}
+		check_variable = {resource@tungsten>resource_imported@tungsten}
+		}
+		localization_key = "[?resource@tungsten|0Y]"
+	}
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@tungsten|0+]"
+	}
+	
+	
+}
+defined_text = { # global
+	name = chromium_text
+	text = {
+		trigger = {
+		check_variable = {resource_imported@chromium>0}
+		check_variable = {resource@chromium>resource_imported@chromium}
+		}
+		localization_key = "[?resource@chromium|0Y]"
+	}
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@chromium|0+]"
+	}
+}
+
+#####VANILLA STUFF####
+
+defined_text = { # Country
+	name = GetKdfWagenName
+	text = {
+		localization_key = GER_KDF_WAGEN_NAME
+	}
+}
+
+defined_text = { # Country
+	name = GetHermannGoringWerkeName
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = fascism
+		}
+		localization_key = GER_HERMANN_GORING_WERKE_NAME_FASCIST
+	}
+	text = {
+		localization_key = GER_HERMANN_GORING_WERKE_NAME
+	}
+}
+
+defined_text = {
+	name = GetSenateElectionOutcome
+	text = {
+		trigger = {
+			check_variable = { senators_for_reelection < 0 }
+		}
+		localization_key = SenateElectionLost
+	}
+	text = {
+		trigger = {
+			check_variable = { var = senators_for_reelection value = 0 compare = greater_than_or_equals }
+		}
+		localization_key = SenateElectionGained
+	}
+}
+defined_text = {
+	name = GetHouseElectionOutcome
+	text = {
+		trigger = {
+			check_variable = { representatives_for_reelection < 0 }
+		}
+		localization_key = HouseElectionLost
+	}
+	text = {
+		trigger = {
+			check_variable = { var = representatives_for_reelection value = 0 compare = greater_than_or_equals }
+		}
+		localization_key = HouseElectionGained
+	}
+}
+
+defined_text = {
+	name = GETUSASTATE
+	text = {
+		random_list = {
+			10 = { localization_key = STATE_382 }
+			10 = { localization_key = STATE_383 }
+			10 = { localization_key = STATE_384 }
+			10 = { localization_key = STATE_389 }
+			10 = { localization_key = STATE_390 }
+			10 = { localization_key = STATE_391 }
+			10 = { localization_key = STATE_386 }
+		}
+	}
+}
+
+
+
+
+
+####HORST TOOL####
+
+defined_text = { # state
+	name = mark_state_tooltip
+
+	text = {
+		trigger = {
+			has_state_flag = marked_for_transfer
+		}
+		localization_key = mark_state_no
+	}
+	text = {
+		localization_key = mark_state_yes
+	}
+}
+defined_text = { # Country
+	name = GetLeftDesc
+	text = {
+		localization_key = POL_san_left_desc
+	}
+}
+
+defined_text = { # Country
+	name = GetRightDesc
+	text = {
+		localization_key = POL_san_right_desc
+	}
+}
+defined_text = { # global
+	name = transfer_states_tooltip
+
+	text = {
+		trigger = {
+			has_country_flag = transfer_enabled
+		}
+		localization_key = transfer_states_off
+	}
+	text = {
+		localization_key = transfer_states_on
+	}
+}
+
+defined_text = { # global
+	name = ST_TOOLTIP
+
+	text = {
+		trigger = {
+			has_country_flag = transfer_enabled
+		}
+		localization_key = ST_TOOLTIP_off
+	}
+	text = {
+		localization_key = ST_TOOLTIP_on
+	}
+}
+
+defined_text = { # global
+	name = mark_status
+
+	text = {
+		trigger = {
+			has_state_flag = marked_for_transfer
+		}
+		localization_key = mark_status_marked
+	}
+	text = {
+		localization_key = mark_status_unmarked
+	}
+}
+defined_text = { # global
+	name = cheat_selected
+	text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=0}
+			NOT={Root={has_country_flag=cheating}}
+		}
+		localization_key = CHEAT_SELECT
+	}
+	text = {
+		trigger = {
+			OR={check_variable = {Root.selected_cheat=1}
+			Root={has_country_flag=cheating}}
+		}
+		localization_key = CHEAT1
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=2}
+		}
+		localization_key = CHEAT2
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=3}
+		}
+		localization_key = CHEAT3
+	}
+		text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=4}
+		}
+		localization_key = CHEAT4
+	}
+			text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=5}
+		}
+		localization_key = CHEAT5
+	}
+}
+
+defined_text = { # global
+	name = GetCountenance
+	text = {
+		trigger = {
+			TAG = GER NOT = { any_country = { is_in_faction_with = JAP   controls_state = 444 } }
+		}
+		localization_key = GetCountenanceGER1
+	}
+	text = {
+		trigger = {
+			TAG = GER any_country = { is_in_faction_with = JAP   controls_state = 444 } 
+		}
+		localization_key = GetCountenanceGER2
+	}	
+	text = {
+		trigger = {
+			TAG = ENG  NOT = { any_country = { is_in_faction_with = JAP   controls_state = 444 } }
+		}
+		localization_key = GetCountenanceENG1
+	}
+		text = {
+		trigger = {
+			TAG = ENG any_country = { is_in_faction_with = JAP   controls_state = 444 }
+		}
+		localization_key = GetCountenanceENG2
+	}
+	text = {
+		trigger = {
+			TAG = JAP  NOT = { any_country = { is_in_faction_with = GER   controls_state = 291 } }
+		}
+		localization_key = GetCountenanceJAP1
+	}
+	text = {
+		trigger = {
+			TAG = JAP any_country = { is_in_faction_with = GER   controls_state = 291 } 
+		}
+		localization_key = GetCountenanceJAP2
+	}
+}
+defined_text = { # global
+	name = GetCountenanceDesc
+	text = {
+		trigger = {
+			TAG = GER NOT = { JAP = { controls_state = 444 } }
+		}
+		localization_key = GetCountenanceDescGER1
+	}
+		text = {
+		trigger = {
+			TAG = GER  JAP = { controls_state = 444 } 
+		}
+		localization_key = GetCountenanceDescGER2
+	}
+	text = {
+		trigger = {
+			TAG = ENG NOT = { any_country = { is_in_faction_with = GER   controls_state = 291 } }
+		}
+		localization_key = GetCountenanceDescENG1
+	}
+		text = {
+		trigger = {
+			TAG = ENG  any_country = { is_in_faction_with = GER   controls_state = 291 } 
+		}
+		localization_key = GetCountenanceDescENG2
+	}
+			text = {
+		trigger = {
+			TAG = ENG any_country = { is_in_faction_with = JAP   controls_state = 444 }
+		}
+		localization_key = GetCountenanceDescENG3
+	}
+	text = {
+		trigger = {
+			TAG = JAP NOT = { any_country = { is_in_faction_with = GER   controls_state = 291 } }
+		}
+		localization_key = GetCountenanceDescJAP1
+	}
+	text = {
+		trigger = {
+			TAG = JAP any_country = {  is_in_faction_with = GER   controls_state = 291 }
+		}
+		localization_key = GetCountenanceDescJAP2
+	}
+}

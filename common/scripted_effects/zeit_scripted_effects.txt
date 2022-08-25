@@ -524,3 +524,176 @@ SOV_relocate_mil = {
 		}
 	}
 }
+
+HMP_sov_LL_monthly_effect = {
+	ENG = {  
+	clear_variable = SOV_ll_monthly_generation
+	clear_variable = SOV_ll_this_month
+	clear_variable = SOV_ll_monthly_cap
+	if = { limit = { GER = { has_war_with = SOV } }
+	if = { limit = { OR = { AND = { USA = { controls_state = 629 } SOV = { controls_state = 408 } } has_global_flag = war_in_the_west_start }  } add_to_variable = {  var = SOV_ll_monthly_generation value = 1  } add_to_variable = { var = SOV_ll_monthly_cap value = 5 }  }
+	if = { limit = { AND = { OR = { ENG = { controls_state = 412 }SOV = { controls_state = 412 } }SOV = { controls_state = 229 } } } add_to_variable = { var = SOV_ll_monthly_generation value = 10 }  add_to_variable = { var = SOV_ll_monthly_cap value = 25 }    } 
+	if = { limit = { SOV = { controls_state = 213 } } 	 add_to_variable = {  var = SOV_ll_monthly_generation value = 3 }  add_to_variable = { var = SOV_ll_monthly_cap value = 5 }     } 
+	if = { limit = { AND = {  ENG = { controls_state = 116 } SOV = { controls_state = 137 } } }   add_to_variable = {  var = SOV_ll_monthly_generation   value = 1 } add_to_variable = { var = SOV_ll_monthly_cap value = 3 }   }
+	if = { limit = { NOT = { JAP = { controls_state = 526 } has_global_flag = war_in_the_west_start } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 } } 
+	if = { limit = { NOT = { JAP = { controls_state = 645 } has_global_flag = war_in_the_west_start } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }  } 
+	if = { limit = { NOT = { JAP = { controls_state = 647 } has_global_flag = war_in_the_west_start } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { NOT = { JAP = { controls_state = 648 } has_global_flag = war_in_the_west_start } } add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { ENG = { controls_state = 336 } NOT = { has_global_flag = war_in_the_west_start }  }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { NOT = { has_global_flag = war_in_the_west_start } ENG = { controls_state = 326 } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { NOT = { JAP = { controls_state = 646 } has_global_flag = war_in_the_west_start } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { OR ={  USA ={ has_completed_focus = USA_support_sov } has_global_flag = war_in_the_west_start date > 1942.12.15    }    }    add_to_variable = {  var = SOV_ll_monthly_generation value = 10 }          }
+	}
+	add_to_variable ={ var = SOV_barb_ll_token value = SOV_ll_monthly_generation } 
+	set_variable = { var = SOV_total_IC_sent value = SOV_barb_ll_token2 }
+	multiply_variable = { var = SOV_total_IC_sent value = 1000 }
+	}
+EMP = { 
+send_equipment = {  equipment = infantry_equipment  amount = 1000000  target = SOV  }#1
+send_equipment = {  equipment = artillery_equipment  amount = 1000000  target = SOV  }#2
+send_equipment = {  equipment = anti_tank_equipment  amount = 1000000  target = SOV  }#3	
+send_equipment = {  equipment = support_equipment  amount = 1000000  target = SOV  }#4
+send_equipment = {  equipment = rocket_artillery_equipment  amount = 1000000  target = SOV  }#5
+send_equipment = {  equipment = anti_air_equipment  amount = 1000000  target = SOV  } #6
+#####
+send_equipment = {  equipment = fighter_equipment  amount = 1000000  target = SOV  } #7 
+send_equipment = {  equipment = CAS_equipment  amount = 1000000  target = SOV  } #8
+send_equipment = {  equipment = mech_chassis  amount = 1000000  target = SOV  } #9
+send_equipment = {  equipment = medium_tank_chassis  amount = 1000000  target = SOV  } #10
+send_equipment = {  equipment = light_tank_chassis  amount = 1000000  target = SOV  } #11
+send_equipment = {  equipment = motorized_equipment  amount = 1000000  target = SOV  } #12
+###
+}
+}
+
+HMP_guns_to_swe = { 
+	ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_GunsSent value =  50000 }	
+	   }
+	   send_equipment = {  equipment = infantry_equipment  amount = 50000  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_at_to_swe = { 
+	ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_ATSent value =  2500 }	
+	   }
+	   send_equipment = {  equipment = anti_tank_equipment  amount = 2500  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_arty_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 }
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_ArtySent value =  2500 }	
+	   }
+	   send_equipment = {  equipment = artillery_equipment  amount = 2500  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_aa_to_swe = { 
+	ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_AASent value =  2500 }
+	   }
+	   send_equipment = {  equipment = anti_air_equipment  amount = 2500  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_rarty_to_swe = { 
+   ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_RartySent value =  2000 }
+	   }
+	   send_equipment = {  equipment = rocket_artillery_equipment  amount = 2000  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_sup_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 }
+   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }	
+	   add_to_variable = {  var = SOV_SupSent value = 3000 }
+	   } 
+	   send_equipment = {  equipment = support_equipment  amount = 3000  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_mot_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_MotSent value = 4000 }
+	   }
+	   send_equipment = {  equipment = motorized_equipment  amount = 4000  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_mech_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_MechSent value = 800 }
+	   }
+	   send_equipment = {  equipment = mech_chassis  amount = 800  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_med_to_swe = { 
+	ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_MedSent value = 300 }
+	   } 
+	   send_equipment = {  equipment = medium_tank_chassis  amount = 300  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_light_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_LightSent value = 400 }
+	   }
+	   send_equipment = {  equipment = light_tank_chassis  amount = 400  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_fighter_to_swe = { 
+	 ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_FighterSent value = 120 }
+	   }
+	   send_equipment = {  equipment = fighter_equipment  amount = 120  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_cas_to_swe = { 
+	 ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable = {  var = SOV_CasSent value = 120 }
+	   }
+	   send_equipment = {  equipment = CAS_equipment  amount = 120  target = EMP  }
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }

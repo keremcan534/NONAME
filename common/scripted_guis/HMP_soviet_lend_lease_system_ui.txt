@@ -1,0 +1,92 @@
+scripted_gui = {
+HMP_soviet_lend_lease_system_ui = {
+	context_type = decision_category
+	visible = {   	}		 
+	effects = {
+		increase_ll_gun_click = { if = { limit = {  has_equipment = { convoy > 1 infantry_equipment > 25000 } SOV_ll_check_trigger = yes }   hidden_effect= { HMP_guns_to_swe = yes } }	  }
+		increase_ll_arty_click = {	 if = { limit = {  has_equipment = { convoy > 1 artillery_equipment > 2000 } SOV_ll_check_trigger = yes }  hidden_effect= { HMP_arty_to_swe = yes }   }	 }			
+		increase_ll_rarty_click = {	 if = { limit = {  has_equipment = { convoy > 1 rocket_artillery_equipment > 1250 } SOV_ll_check_trigger = yes }   hidden_effect= { HMP_rarty_to_swe = yes }  }	 }
+		increase_ll_at_click = {	 if = { limit = {  has_equipment = { convoy > 1 anti_tank_equipment > 2000 } SOV_ll_check_trigger = yes }   hidden_effect= { HMP_at_to_swe = yes } }	  }
+		increase_ll_aa_click = {	 if = { limit = {  has_equipment = {  convoy > 1 anti_air_equipment > 1250 } SOV_ll_check_trigger = yes }  hidden_effect= { HMP_aa_to_swe = yes } }	   }
+		increase_ll_sup_click = {	 if = { limit = {  has_equipment = { convoy > 1 support_equipment > 1250 } SOV_ll_check_trigger = yes }  hidden_effect= { HMP_sup_to_swe = yes }  }	  }
+		
+		increase_ll_fighter_click = {	 if = { limit = {  has_equipment = { convoy > 1 fighter_equipment > 125 } SOV_ll_check_trigger = yes }  	 hidden_effect= { HMP_fighter_to_swe = yes }  } }
+		increase_ll_cas_click = {	 if = { limit = {  has_equipment = { convoy > 1 CAS_equipment > 250 } SOV_ll_check_trigger = yes }  hidden_effect= { HMP_cas_to_swe = yes }  }	  }
+		increase_ll_mot_click = {	 if = { limit = {  has_equipment = { convoy > 1 motorized_equipment > 500 } SOV_ll_check_trigger = yes }  hidden_effect= { HMP_mot_to_swe = yes }   }	 }
+		increase_ll_mech_click = {	 if = { limit = {  has_equipment = { convoy > 1 mechanized_equipment > 500 } SOV_ll_check_trigger = yes }   hidden_effect= { HMP_mech_to_swe = yes } }	  }			
+		increase_ll_light_click = {	 if = { limit = {  has_equipment = { convoy > 1 light_tank_chassis > 300 } SOV_ll_check_trigger = yes } hidden_effect= { HMP_light_to_swe = yes }  }	   }			
+		increase_ll_med_click = {	 if = { limit = {  has_equipment = { convoy > 1 medium_tank_chassis > 250 } SOV_ll_check_trigger = yes }  hidden_effect= { HMP_med_to_swe = yes }   }	 }		
+
+		iran_go_to_click = { goto_state = 412 }
+		murmansk_go_to_click = { goto_state = 213 }
+		gib_go_to_click = { goto_state = 118 }
+		malta_go_to_click = { goto_state = 116 }
+		crimea_go_to_click = { goto_state = 137 }
+		hawaii_go_to_click = { goto_state = 629 } # 416
+		vladivostok_go_to_click = { goto_state = 408 }
+		
+		okinawa_go_to_click = { goto_state = 526 }
+		iwo_jima_go_to_click = { goto_state = 645 } # 560
+		marcus_go_to_click = { goto_state = 648 } # 180
+		palau_go_to_click = { goto_state = 647 }  # 488
+		singapore_go_to_click = { goto_state = 336 }
+		hong_kong_go_to_click = { goto_state = 326 }			
+		saipan_go_to_click = { goto_state = 646 } # 409
+	}
+
+	
+	
+	window_name = "HMP_soviet_lend_lease_system_ui_window"
+	properties = {
+		HMP_soviet_lend_lease_system_iran  = {
+			image = "[GetSovIran]"
+		}
+			HMP_soviet_lend_lease_system_murmansk  = {
+			image = "[GetSovArctic]"
+		}		   
+		HMP_soviet_lend_lease_system_gib  = {
+			image = "[GetSovMedGibraltar]"
+		}		
+		HMP_soviet_lend_lease_system_malta  = {
+			image = "[GetSovMedMalta]"
+		}					
+		HMP_soviet_lend_lease_system_crimea  = {
+			image = "[GetSovMedCrimea]"
+		}			
+		HMP_soviet_lend_lease_system_vladivostok  = {
+			image = "[GetSovVladivostok]"
+		}			
+		HMP_soviet_lend_lease_system_hawaii  = {
+			image = "[GetSovPacific]"
+		}		
+		HMP_soviet_lend_lease_system_okinawa  = {
+			image = "[GetSovOkinawa]"
+		}		
+		HMP_soviet_lend_lease_system_iwo_jima  = {
+			image = "[GetSovIwoJima]"
+		}		
+		HMP_soviet_lend_lease_system_marcus  = {
+			image = "[GetSovMarcus]"
+		}					
+		HMP_soviet_lend_lease_system_palau  = {
+			image = "[GetSovPalau]"
+		}				
+			HMP_soviet_lend_lease_system_singapore  = {
+			image = "[GetSovSingapore]"
+		}						  
+		HMP_soviet_lend_lease_system_hong_kong  = {
+			image = "[GetSovHongKong]"
+		}						  
+		HMP_soviet_lend_lease_system_saipan  = {
+			image = "[GetSovSaipan]"
+		}						  
+							
+		
+		
+		
+		
+		
+		
+
+		}
+		} }

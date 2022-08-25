@@ -17,6 +17,79 @@ add_intel = {
 	airforce_intel = 200
 }
 
+set_variable = {
+    var = SOV_barb_ll_token
+    value = 0
+}
+set_variable = {
+    var = SOV_barb_ll_token2
+    value = 0
+}
+set_variable = {
+    var = SOV_total_IC_sent
+    value = 0
+}
+set_variable = {
+    var = SOV_ll_this_month
+    value = 0
+}
+set_variable = {
+    var = SOV_ll_monthly_generation
+    value = 0
+}
+set_variable = {
+    var = SOV_ll_monthly_cap
+    value = 0
+}
+
+set_variable = {
+    var = SOV_GunsSent
+    value = 0
+}
+set_variable = {
+    var = SOV_ArtySent
+    value = 0
+}
+set_variable = {
+    var = SOV_RartySent
+    value = 0
+}
+set_variable = {
+    var = SOV_ATSent
+    value = 0
+}
+set_variable = {
+    var = SOV_AASent
+    value = 0
+}
+set_variable = {
+    var = SOV_SupSent
+    value = 0
+}
+set_variable = {
+    var = SOV_MotSent
+    value = 0
+}
+set_variable = {
+    var = SOV_MechSent
+    value = 0
+}
+set_variable = {
+    var = SOV_MedSent
+    value = 0
+}
+set_variable = {
+    var = SOV_LightSent
+    value = 0
+}
+set_variable = {
+    var = SOV_CasSent
+    value = 0
+}
+set_variable = {
+    var = SOV_FighterSent
+    value = 0
+}
 load_oob = "ENG_Motorized"
 set_research_slots = 5
 set_stability = 0.65

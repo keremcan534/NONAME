@@ -26,6 +26,12 @@ operations = {
 	}
 }
 
+HMP_soviet_lend_lease_system = {
+	icon = usa_congress
+	 allowed = {	OR = { original_tag = EMP the_allies = yes	}  }
+	scripted_gui = HMP_soviet_lend_lease_system_ui	
+	visible = { OR = { tag = ENG tag = USA has_global_flag = HMP_soviet_ll_visible_to_all_allies   } }
+}
 political_actions = {
 	icon = generic_political_actions
 
