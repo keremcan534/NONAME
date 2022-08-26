@@ -120,52 +120,52 @@
  GetSaipanInsecure:0 "The island of §GSaipan§! is currently under the control of §O[646.CONTROLLER.GetFlag][646.CONTROLLER.GetName]§!, preventing us from preparing £convoy_texticon §Y1§! additional §CConvoy Shipment§! this month."
  
  send_guns_tt:0 "[GetSendGuns]"
- GetSendGunsNormal:0 "Send 25,000 Rifles"
- GetSendGunsSov:0 "§HSend 25,000 Rifles§!"
+ GetSendGunsNormal:0 "Send 30,000 Rifles"
+ GetSendGunsSov:0 "§HSend 30,000 Rifles§!"
  
  send_arty_tt:0 "[GetSendArty]"
- GetSendArtyNormal:0 "Send 1,250 Arty Pieces"
- GetSendArtySov:0 "§HSend 1,250 Arty Pieces§!"
+ GetSendArtyNormal:0 "Send 2,500 Arty Pieces"
+ GetSendArtySov:0 "§HSend 2,500 Arty Pieces§!"
  
  send_aa_tt:0 "[GetSendAA]"
- GetSendAANormal:0 "Send 1,250 AA Guns" 
- GetSendAASov:0 "§HSend 1,250 AA Guns§!"
+ GetSendAANormal:0 "Send 2,500 AA Guns" 
+ GetSendAASov:0 "§HSend 2,500 AA Guns§!"
  
  send_at_tt:0 "[GetSendAT]"
- GetSendATNormal:0 "Send 1,250 AT Guns" 
- GetSendATSov:0 "§HSend 1,250 AT Guns§!"
+ GetSendATNormal:0 "Send 2,500 AT Guns" 
+ GetSendATSov:0 "§HSend 2,500 AT Guns§!"
  
  send_rarty_tt:0 "[GetSendRarty]"
- GetSendRartyNormal:0 "Send 1,000 R. Artillery"
- GetSendRartySov:0 "§HSend 1,000 R. Artillery§!"
+ GetSendRartyNormal:0 "Send 2,000 R. Artillery"
+ GetSendRartySov:0 "§HSend 2,000 R. Artillery§!"
  
  send_sup_tt:0 "[GetSendSup]"
- GetSendSupNormal:0 "Send 1,500 Support Eq."
- GetSendSupSov:0 "§HSend 1,500 Support Eq.§!"
+ GetSendSupNormal:0 "Send 3,000 Support Eq."
+ GetSendSupSov:0 "§HSend 3,000 Support Eq.§!"
  
  send_mot_tt:0 "[GetSendMot]"
- GetSendMotNormal:0 "Send 2,000 Trucks"
- GetSendMotSov:0 "§HSend 2,000 Trucks§!"
+ GetSendMotNormal:0 "Send 4,000 Trucks"
+ GetSendMotSov:0 "§HSend 4,000 Trucks§!"
  
  send_mech_tt:0 "[GetSendMech]"
- GetSendMechNormal:0 "Send 500 Half-Tracks"
- GetSendMechSov:0 "§HSend 500 Half-Tracks§!"
+ GetSendMechNormal:0 "Send 800 Half-Tracks"
+ GetSendMechSov:0 "§HSend 800 Half-Tracks§!"
  
  send_med_tt:0 "[GetSendMed]"
- GetSendMedNormal:0 "Send 200 Medium Tanks"
- GetSendMedSov:0 "§HSend 200 Medium Tanks§!"
+ GetSendMedNormal:0 "Send 300 Medium Tanks"
+ GetSendMedSov:0 "§HSend 300 Medium Tanks§!"
  
  send_light_tt:0 "[GetSendLight]"
- GetSendLightNormal:0 "Send 250 Light Tanks"
- GetSendLightSov:0 "§HSend 250 Light Tanks§!"
+ GetSendLightNormal:0 "Send 400 Light Tanks"
+ GetSendLightSov:0 "§HSend 400 Light Tanks§!"
  
  send_fighter_tt:0 "[GetSendFighter]"
- GetSendFighterNormal:0 "Send 100 Fighters"
- GetSendFighterSov:0 "§HSend 100 Fighters§!"
+ GetSendFighterNormal:0 "Send 120 Fighters"
+ GetSendFighterSov:0 "§HSend 120 Fighters§!"
  
  send_cas_tt:0 "[GetSendCas]"
- GetSendCasNormal:0 "Send 150 CAS"
- GetSendCasSov:0 "§HSend 150 CAS§!"
+ GetSendCasNormal:0 "Send 120 CAS"
+ GetSendCasSov:0 "§HSend 120 CAS§!"
  
  SOV_gib_guns:0 "[GibGuns]"
  

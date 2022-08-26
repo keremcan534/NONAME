@@ -15,9 +15,27 @@ news_event = {
 trigger={
 	date>1941.6.1
 }	
+immediate={
+set_global_flag=allies_nerf_post_41
+}
 mean_time_to_happen={days=0}
-	option = {
+	trigger = {
+		NOT={
+			tag=ENG
+		}
 		name ="All eqiupment 3 unlocked. "
+	}
+	option={
+		name="All eqiupment 3 unlockedq. "
+		tag=ENG
+		hidden_effect={
+		ENG={add_ideas=nerf_aliied_production}
+		AST={add_ideas=nerf_aliied_production}
+		USA={add_ideas=nerf_aliied_production}
+		RAJ={add_ideas=nerf_aliied_production}
+		SAF={add_ideas=nerf_aliied_production}
+		CAN={add_ideas=nerf_aliied_production}
+		FRA={add_ideas=nerf_aliied_production}}
 	}
 }
 

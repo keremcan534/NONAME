@@ -8,17 +8,30 @@ political_actions = {
 			always = yes
 		}
 		fire_only_once = no
+		days_remove = -1
+		cost = 0
 		modifier = {
-			stability_weekly = 0.005
-			consumer_goods_factor = 0.05
+			stability = 0.1
 			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
 		}
-		days_remove = 180
-		days_re_enable = 540
-		cost = 100
 		complete_effect = {
 		}
 	}
+	
+	improved_worker_conditions_cancel = {
+		icon = generic_industry
+		
+		visible = {
+			has_decision = improved_worker_conditions
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_decision = improved_worker_conditions
+		}
+	}
+
 	promises_of_peace = {
 		icon = generic_political_discourse
 		available = {
@@ -66,9 +79,7 @@ HMP_soviet_lend_lease_system = {
 propaganda_efforts = {
 	war_propaganda = {
 		icon = generic_prepare_civil_war
-		allowed = {
-			normally_played_country = yes
-		}
+		
 		available = {
 			threat > 0.1
 		}
@@ -86,9 +97,7 @@ propaganda_efforts = {
 	}
 	war_propaganda_cancel = {
 		icon = generic_industry
-		allowed = {
-			normally_played_country = yes
-		}
+		
 		visible = {
 			has_decision = war_propaganda
 		}
@@ -257,16 +266,14 @@ war_measures = {
 		}
 		modifier = {
 			conscription = 0.03
-			stability_factor = -0.05
+			stability_factor = -0.1
 		}
 		complete_effect = {
 		}
 	}
 	war_bonds = {
 		icon = generic_industry
-		allowed = {
-			normally_played_country = yes
-		}
+		
 		available = {
 			has_war = yes
 		}
@@ -277,8 +284,8 @@ war_measures = {
 		cost = 0
 		modifier = {
 			political_power_gain = -0.5
-			industrial_capacity_dockyard = 0.1
-			industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.15
+			industrial_capacity_factory = 0.05
 		}
 		remove_effect = {
 		}
@@ -287,9 +294,7 @@ war_measures = {
 	}
 	war_bonds_cancel = {
 		icon = generic_industry
-		allowed = {
-			normally_played_country = yes
-		}
+		
 		available = {
 			has_war = yes
 		}
@@ -306,44 +311,16 @@ war_measures = {
 }
 
 economy_decisions = {
-	restructure_supply_system = {
-		#one time boost to get a few cheap supply hubs
-		visible = {
-			OR = {
-				is_major = no
-				AND = {
-					is_faction_leader = yes
-					num_of_factories < 51					#would be a minor if it wasn't for faction leader status
-				}
-			}
-		}
-		fire_only_once = yes
-		days_remove = 120
-		modifier = {
-			production_speed_supply_node_factor = 3
-		}
-		complete_effect = {
-			set_variable = {
-				node_goal = num_of_supply_nodes
-			}
-			add_to_variable = {
-				node_goal = 3
-			}			#maximum 3 additional nodes
-		}
-		cancel_trigger = {
-			check_variable = {
-				node_goal < num_of_supply_nodes
-			}			#if the number of supply nodes exceeds the old number by +3, immediately cancel
-		}
-	}
 	seize_some_trains_woo = {
 		#repeating train seize
 		visible = {
-			num_of_factories < 60
+			has_equipment = {
+				train_equipment < 51
+			}
 		}
 		available = {
 			has_equipment = {
-				train_equipment < 101
+				train_equipment < 51
 			}
 			has_tech = basic_train
 		}

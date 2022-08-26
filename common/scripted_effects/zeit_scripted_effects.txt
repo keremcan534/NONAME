@@ -542,8 +542,9 @@ HMP_sov_LL_monthly_effect = {
 	if = { limit = { ENG = { controls_state = 336 } NOT = { has_global_flag = war_in_the_west_start }  }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
 	if = { limit = { NOT = { has_global_flag = war_in_the_west_start } ENG = { controls_state = 326 } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
 	if = { limit = { NOT = { JAP = { controls_state = 646 } has_global_flag = war_in_the_west_start } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
-	if = { limit = { OR ={  USA ={ has_completed_focus = USA_support_sov } has_global_flag = war_in_the_west_start date > 1942.12.15    }    }    add_to_variable = {  var = SOV_ll_monthly_generation value = 10 }          }
-	}
+	if = { limit = { date > 1942.10.15 } add_to_variable = {  var = SOV_ll_monthly_generation value = 10 }          }
+	if = {limit = { date > 1943.3.1 } add_to_variable = {  var = SOV_ll_monthly_generation value = 10 }}
+}
 	add_to_variable ={ var = SOV_barb_ll_token value = SOV_ll_monthly_generation } 
 	set_variable = { var = SOV_total_IC_sent value = SOV_barb_ll_token2 }
 	multiply_variable = { var = SOV_total_IC_sent value = 1000 }
@@ -558,7 +559,7 @@ send_equipment = {  equipment = anti_air_equipment  amount = 1000000  target = S
 #####
 send_equipment = {  equipment = fighter_equipment  amount = 1000000  target = SOV  } #7 
 send_equipment = {  equipment = CAS_equipment  amount = 1000000  target = SOV  } #8
-send_equipment = {  equipment = mech_chassis  amount = 1000000  target = SOV  } #9
+send_equipment = {  equipment = mechanized_equipment  amount = 1000000  target = SOV  } #9
 send_equipment = {  equipment = medium_tank_chassis  amount = 1000000  target = SOV  } #10
 send_equipment = {  equipment = light_tank_chassis  amount = 1000000  target = SOV  } #11
 send_equipment = {  equipment = motorized_equipment  amount = 1000000  target = SOV  } #12
@@ -571,9 +572,9 @@ HMP_guns_to_swe = {
 	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
 	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
 	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
-	   add_to_variable = {  var = SOV_GunsSent value =  50000 }	
+	   add_to_variable = {  var = SOV_GunsSent value =  30000 }	
 	   }
-	   send_equipment = {  equipment = infantry_equipment  amount = 50000  target = EMP  } 
+	   send_equipment = {  equipment = infantry_equipment  amount = 30000  target = EMP  } 
 	   send_equipment = { equipment = convoy amount = 1 target = EMP }
    }
    
@@ -650,7 +651,7 @@ HMP_guns_to_swe = {
 	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
 	   add_to_variable = {  var = SOV_MechSent value = 800 }
 	   }
-	   send_equipment = {  equipment = mech_chassis  amount = 800  target = EMP  } 
+	   send_equipment = {  equipment = mechanized_equipment  amount = 800  target = EMP  } 
 	   send_equipment = { equipment = convoy amount = 1 target = EMP }
    }
    
