@@ -57,31 +57,31 @@ ideas = {
 			picture = jap_co_prosper
 			targeted_modifier = {
 				tag = USA
-				defense_bonus_against = 0.05
+				defense_bonus_against = 0.1
 			}
 			targeted_modifier = {
 				tag = FRA
-				defense_bonus_against = 0.05
+				defense_bonus_against = 0.1
 			}
 			targeted_modifier = {
 				tag = ENG
-				defense_bonus_against = 0.05
+				defense_bonus_against = 0.1
 			}
 			targeted_modifier = {
 				tag = SAF
-				defense_bonus_against = 0.05
+				defense_bonus_against = 0.1
 			}
 			targeted_modifier = {
 				tag = AST
-				defense_bonus_against = 0.05
+				defense_bonus_against = 0.1
 			}
 			targeted_modifier = {
 				tag = RAJ
-				defense_bonus_against = 0.05
+				defense_bonus_against = 0.1
 			}
 			targeted_modifier = {
 				tag = CAN
-				defense_bonus_against = 0.05
+				defense_bonus_against = 0.1
 			}
 		}
 		ger_infantry_expert = {
@@ -92,7 +92,7 @@ ideas = {
 				army_infantry_defence_factor = 0.1
 			}
 			modifier = {
-				army_speed_factor = 0.1
+				army_speed_factor = 0.15
 			}
 		}
 		GER_triumph_in_france = {
@@ -493,6 +493,7 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				air_cas_present_factor = 0.1
+				army_morale_factor=0.1
 			}
 			targeted_modifier = {
 				tag = SOV
@@ -511,6 +512,7 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				air_cas_present_factor = 0.1
+				army_morale_factor=0.1
 			}
 			targeted_modifier = {
 				tag = SOV
