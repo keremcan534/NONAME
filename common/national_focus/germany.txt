@@ -876,6 +876,11 @@
 				resource = rubber
 				amount = 2
 			}
+			ITA = {			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
+			} }
 		}
 	}
 	focus = {

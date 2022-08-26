@@ -1955,9 +1955,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_timed_idea = {
-				idea=USA_dockyard
-				days = 180
+			add_ideas ={ USA_dockyard 
 			}
 		}
 	}

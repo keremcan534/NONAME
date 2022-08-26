@@ -283,7 +283,6 @@ add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = SAF
 add_to_faction = RAJ
-add_to_faction = USA
 
 recruit_character = ENG_stanley_baldwin
 recruit_character = ENG_neville_chamberlain
