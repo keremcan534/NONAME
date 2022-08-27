@@ -10,7 +10,7 @@ state={
 		add_core_of = PNG
 		owner = AST
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			air_base = 4
 
 			4329 = {
@@ -29,6 +29,14 @@ state={
 				naval_base = 1
 
 			}
+			10423 = {
+				naval_base = 2
+
+			}	
+			12400 = {
+				naval_base = 1
+
+			}			
 
 		}
 		victory_points = {
