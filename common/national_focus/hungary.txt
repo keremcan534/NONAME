@@ -34,7 +34,7 @@
 		prerequisite = {
 			focus = HUN_balanced_budget
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = HUN_balanced_budget
 		cost = 5
@@ -261,7 +261,7 @@
 		mutually_exclusive = {
 			focus = HUN_industrial_revitalization
 		}
-		cost = 10
+		cost = 5
 		relative_position_id = HUN_balanced_budget
 		prerequisite = {
 			focus = HUN_balanced_budget
@@ -278,7 +278,7 @@
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = HUN_civilian_industry_IC
@@ -290,7 +290,7 @@
 		icon = GFX_goal_generic_construction
 		x = 4
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = HUN_balanced_budget
 		}
@@ -333,16 +333,7 @@
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = {
-					155
-				}
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
+			155 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -350,16 +341,8 @@
 				}
 				set_state_flag = HUN_reintegrate_the_railroads_Inf
 			}
-			random_owned_controlled_state = {
-				prioritize = {
-					43
-				}
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
+			154 = {
+
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -367,40 +350,13 @@
 				}
 				set_state_flag = HUN_reintegrate_the_railroads_Inf_2
 			}
-			random_owned_controlled_state = {
-				prioritize = {
-					664
-				}
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
+			43 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = HUN_reintegrate_the_railroads_Inf_3
-			}
-			if = {
-				limit = {
-					country_exists = AUS
-				}
-				reverse_add_opinion_modifier = {
-					target = AUS
-					modifier = HUN_reintegrate_the_railroads
-				}
-			}
-			if = {
-				limit = {
-					country_exists = CZE
-				}
-				reverse_add_opinion_modifier = {
-					target = CZE
-					modifier = HUN_reintegrate_the_railroads
-				}
 			}
 		}
 	}
@@ -425,6 +381,22 @@
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_support_domestic_industry_IC
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -476,8 +448,6 @@
 		icon = GFX_focus_research
 		prerequisite = {
 			focus = HUN_support_urbanization
-		}
-		prerequisite = {
 			focus = HUN_support_domestic_industry
 		}
 		x = 1
@@ -541,11 +511,11 @@
 		id = HUN_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = {
-			focus = HUN_announce_the_gyor_program
+			focus = HUN_kickstart_the_economy
 		}
 		x = -1
 		y = 1
-		relative_position_id = HUN_announce_the_gyor_program
+		relative_position_id = HUN_kickstart_the_economy
 		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -589,12 +559,12 @@
 		id = HUN_invite_foreign_investors
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = {
-			focus = HUN_civilian_industry
+			focus = HUN_industrial_revitalization
 		}
-		x = -1
+		x = 1
 		y = 1
-		relative_position_id = HUN_civilian_industry
-		cost = 10
+		relative_position_id = HUN_industrial_revitalization
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -609,11 +579,11 @@
 		id = HUN_expand_the_manfred_weiss_steel_works
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = {
-			focus = HUN_invite_foreign_investors
+			focus = HUN_joint_aluminum_mining_company
 		}
-		x = -3
-		y = 2
-		relative_position_id = HUN_civilian_industry
+		x = 1
+		y = 1
+		relative_position_id = HUN_joint_aluminum_mining_company
 		cost = 10
 		ai_will_do = {
 			factor = 70
@@ -678,11 +648,11 @@
 		id = HUN_expand_the_aluminum_industry
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = {
-			focus = HUN_invite_foreign_investors
+			focus = HUN_joint_aluminum_mining_company
 		}
 		x = -1
-		y = 2
-		relative_position_id = HUN_civilian_industry
+		y = 1
+		relative_position_id = HUN_joint_aluminum_mining_company
 		cost = 10
 		ai_will_do = {
 			factor = 70
@@ -712,15 +682,14 @@
 	focus = {
 		id = HUN_expand_the_technical_university_of_budapest
 		icon = GFX_focus_research
-		prerequisite = {
-			focus = HUN_civilian_industry
-		}
+		
 		prerequisite = {
 			focus = HUN_domestic_arms_industry
+			focus = HUN_boost_hungarian_military_industry
 		}
-		x = 1
+		x = -1
 		y = 1
-		relative_position_id = HUN_civilian_industry
+		relative_position_id = HUN_domestic_arms_industry
 		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -796,11 +765,11 @@
 		id = HUN_boost_hungarian_military_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {
-			focus = HUN_domestic_arms_industry
+			focus = HUN_announce_the_gyor_program
 		}
-		x = 1
+		x = -1
 		y = 1
-		relative_position_id = HUN_domestic_arms_industry
+		relative_position_id = HUN_announce_the_gyor_program
 		text = "Boost Hungarian Military İndustry"
 		cost = 10
 		cancel_if_invalid = yes
@@ -863,17 +832,16 @@
 		icon = GFX_focus_secret_rearmament
 		x = 10
 		y = 0
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
 		available = {
-		}
-		bypass = {
 			NOT = {
 				has_idea = HUN_treaty_of_triannon
 			}
 		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -884,6 +852,12 @@
 		completion_reward = {
 			add_ideas = HUN_secret_rearmament
 			custom_effect_tooltip = HUN_secret_rearmament_tt
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				technology = basic_medium_tank_chassis
+			}
 		}
 	}
 
@@ -902,6 +876,14 @@
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 50
+			add_tech_bonus = {
+				name = HUN_develop_tanks
+				bonus = 1
+				uses = 1
+				technology = improved_medium_tank_chassis
+				technology = improved_light_tank_chassis
+
+			}
 			add_doctrine_cost_reduction = {
 				name = HUN_army_maneuvers
 				cost_reduction = 0.5
@@ -961,6 +943,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -990,6 +973,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			add_ideas = FRA_motorized_focus
 			add_tech_bonus = {
 				name = HUN_the_botond
 				bonus = 1
@@ -1050,27 +1034,14 @@
 		available_if_capitulated = no
 		completion_reward = {
 			army_experience = 100
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 0.5
-				uses = 1
-				technology = basic_medium_tank_chassis
-			}
-			add_tech_bonus = {
-				name = HUN_develop_tanks
-				ahead_reduction = 0.25
-				bonus = 1
-				uses = 1
-				technology = improved_medium_tank_chassis
-				technology = improved_light_tank_chassis
-
-			}
+			
+		
 			add_tech_bonus = {
 				name = HUN_develop_tanks
 				bonus = 1
 				uses = 2
-				technology = advanced_medium_tank_chassis
-				technology = advanced_light_tank_chassis
+				category = armor
+				
 			}
 		}
 	}
@@ -1113,7 +1084,6 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = HUN_assault_gun_focus
 			add_tech_bonus = {
 				name = HUN_assault_gun
 				bonus = 2
@@ -1177,11 +1147,13 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			add_ideas = HUN_assault_gun_focus
+
 			add_tech_bonus = {
 				name = HUN_form_parachute_battalions
-				bonus = 2
+				bonus = 1
 				uses = 1
-				category = cat_heavy_armor
+				category = armor
 			}
 		}
 	}
@@ -1400,6 +1372,33 @@
 				category = land_doctrine
 			}
 			
+		}
+	}
+	focus = {
+		id = HUN_license_german_equipment
+		icon = GFX_focus_generic_license_production
+		text="License German Equipment"
+		prerequisite = { 
+			focus = HUN_motorized_logistics
+			focus = HUN_artillery_effort
+		 }
+		x = 1
+		y = 1 
+		relative_position_id = HUN_motorized_logistics
+		cost = 10
+		available = {
+			GER = { has_completed_focus = GER_integrate_war_economies }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_relation_modifier = {
+				target = GER
+				modifier = ROM_license_german_equipment
+			}
 		}
 	}
 }

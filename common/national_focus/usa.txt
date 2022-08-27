@@ -32,10 +32,6 @@ focus_tree = {
 				USA_highway_program_idea
 			}
 			add_stability=0.20
-			add_offsite_building = {
-				type = industrial_complex
-				level = 6
-			}
 		}
 	}
 	#	#   # ## #  
@@ -92,7 +88,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 10
+				level = 8
 			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
@@ -148,7 +144,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 10
+				level = 8
 			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
@@ -193,7 +189,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 10
+				level = 8
 			}
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
@@ -961,7 +957,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_war_plans_division
 		}
-		available={date>1942.1.1}
+		available={date>1942.6.1}
 		relative_position_id = USA_war_plans_division
 		cost = 2
 		cancel_if_invalid = yes

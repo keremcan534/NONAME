@@ -1336,13 +1336,14 @@
 				name = special_bonus
 				bonus = 1
 				uses = 1
-				technology = tech_mountaineers
+				technology = tech_mountaineers2
 			}
 			add_tech_bonus = {
 				name = special_bonus
 				ahead_reduction = 2
+				bonus=0.5
 				uses = 1
-				technology = tech_mountaineers2
+				technology = tech_mountaineers3
 			}
 		}
 	}
@@ -2060,6 +2061,10 @@
 		}
 		completion_reward = {
 			add_ideas = ITA_german_millitary_cooperation_focus
+			add_relation_modifier = {
+				target = GER
+				modifier = ROM_license_german_equipment
+			}
 		}
 	}
 	focus = {

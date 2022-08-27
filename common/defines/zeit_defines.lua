@@ -46,8 +46,8 @@ NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.5                 -- percentage of
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0005
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.25                 -- vanilla -0.30 | small river crossing
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.30          -- vanilla -0.6 | large river crossing
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1  -- WAS 3, reduced to 0.5 so less CAS is needed in battles
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.00       -- WAS 0.25 
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1  -- WAS 3, reduced to 1 so less CAS is needed in battles
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.08       -- WAS 0.25 
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001 				-- WAS 0.005 | Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.|
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35            -- vanilla is 0.2, GDU-like change (0.25 in GDU)
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0	    --vanilla 0.4  | eventually armor will be reworked when paradox finally releases their armor rework
@@ -59,8 +59,11 @@ NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.7 
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.20 |  attack combat penalty for attacker if out of supply
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 1 -- damage reduction if armor outclassing enemy
-NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.15                   -- speed bonus when retreating vanilla 0.25
-NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.05                -- speed bonus when withdrawing vanilla 0.15
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.20                   -- speed bonus when retreating vanilla 0.25
+NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.10                -- speed bonus when withdrawing vanilla 0.15
+
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.2     -- speed impact at 0 org.
+NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.01	-- speed penalty per infrastucture below maximum.
 
 
 ------------------------end of defines relevant to land combat

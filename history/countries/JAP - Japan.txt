@@ -19,7 +19,7 @@ set_popularities = {
 add_ideas = {
 	state_shintoism
 	closed_economy
-	limited_conscription
+	extensive_conscription
 	war_economy
 	JAP_interservice_rivalry_balanced
 	JAP_zaibatsus

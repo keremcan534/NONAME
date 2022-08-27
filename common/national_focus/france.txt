@@ -741,6 +741,11 @@
 		prerequisite = {
 			focus = FRA_agricultural_protectionism
 		}
+		available={
+			FRA={
+				has_completed_focus=FRA_buy_time
+			}
+		}
 		relative_position_id = FRA_agricultural_protectionism
 		cost = 10
 		cancel_if_invalid = yes

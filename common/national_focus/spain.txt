@@ -32,7 +32,7 @@ focus_tree = {
 		icon = GFX_focus_spa_unify_the_nationalist_front
 		x = 8
 		y = 0
-		cost = 30
+		cost = 20
 
 		ai_will_do = { factor = 1 }
 
@@ -506,7 +506,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -641,7 +641,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front 
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1145,7 +1145,6 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 50
-			add_ideas = SPA_foreign_training_staff 
 	}
 	}
 
@@ -1176,6 +1175,32 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = SPA_license_german_equipment
+		icon = GFX_focus_generic_license_production
+		text="License German Equipment"
+		prerequisite = { 
+			focus = SPA_doctrinal_advancements
+		 }
+		x = 0
+		y = 1 
+		relative_position_id = SPA_doctrinal_advancements
+		cost = 10
+		available = {
+			GER = { has_completed_focus = GER_integrate_war_economies }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_relation_modifier = {
+				target = GER
+				modifier = ROM_license_german_equipment
 			}
 		}
 	}

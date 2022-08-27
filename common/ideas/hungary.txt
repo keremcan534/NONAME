@@ -118,8 +118,8 @@ ideas = {
 			allowed_civil_war = {
 			}
 			modifier = {
-				production_speed_infrastructure_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
 			}
 		}
 		HUN_assault_gun_focus = {

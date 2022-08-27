@@ -1435,14 +1435,14 @@ tank_refurbishment_plant = { #NSB
 	
 	cruiser_tank_manufacturer = { 
 		random = no
-		equipment_bonus = {	armor = {	hard_attack = 0.1 maximum_speed = 0.05 	}	}
+		equipment_bonus = {	armor = {	hard_attack = 0.08 maximum_speed = 0.05 	}	}
 		modifier = {
 			tank_manufacturer_cost_factor = -1
 		}
 	}	
 	cavalry_tank_manufacturer = { 
 		random = no
-		equipment_bonus = {	armor = {	soft_attack = 0.1 maximum_speed = 0.05 }	}
+		equipment_bonus = {	armor = {	soft_attack = 0.08 maximum_speed = 0.05 }	}
 		modifier = {
 			tank_manufacturer_cost_factor = -1
 		}
@@ -2123,10 +2123,10 @@ experience_gain_army = 0.08
 		army_infantry_defence_factor = 0.12
 		special_forces_attack_factor = 0.08
 	    special_forces_defence_factor = 0.08
-		army_artillery_defence_factor = 0.05
-		army_artillery_attack_factor = 0.05
-		army_armor_attack_factor = 0.6
-	    army_armor_defence_factor = 0.6
+		army_artillery_defence_factor = 0.06
+		army_artillery_attack_factor = 0.06
+		army_armor_attack_factor = 0.06
+	    army_armor_defence_factor = 0.06
 		experience_gain_army = 0.08
 		command_cap = @tier1	
 	}

@@ -51,7 +51,7 @@ settings = {
 
     # Temperature range when should apply static modifiers
     weather_extreme_cold = { -100.0 -15.0 }
-    weather_very_cold = { -15.0 -7.0 }
+    weather_very_cold = { -15.0 -9.0 }
     weather_very_hot = { 30.0 40.0 }
     weather_extreme_hot = { 40.0 100.0 }
   }

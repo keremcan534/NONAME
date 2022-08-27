@@ -46,7 +46,9 @@ ideas = {
 				}
 			}
 			modifier={
-				org_loss_when_moving=-0.05
+				org_loss_when_moving=-0.3
+				army_attack_factor=0.0750
+				army_morale_factor=0.1
 			}
 		}
 		GER_france_wall_buff = {
@@ -189,11 +191,13 @@ ideas = {
 			picture = generic_local_self_management
 
 			modifier = {
-				stability_factor = 0.1
+			
+				stability_factor = 0.1s
 				war_support_factor = 0.20 
 				army_morale_factor = 0.025 
 				conversion_cost_civ_to_mil_factor = 0.2
 				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 
 		}
@@ -212,6 +216,7 @@ ideas = {
 				army_morale_factor = 0.15
 				training_time_factor = -0.7
 				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
 			}
 		}
 		GER_Waffen_SS = {

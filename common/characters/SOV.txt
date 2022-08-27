@@ -161,7 +161,7 @@ characters = {
 		}
 		corps_commander={ #17/17
 
-			traits = { infantry_leader  ambusher trait_engineer  scavenger guerilla_fighter commando skirmisher    }
+			traits = { infantry_leader  ambusher trait_engineer  organizer guerilla_fighter commando skirmisher    }
 			skill=6
 			attack_skill=2
 			defense_skill=7
@@ -182,14 +182,14 @@ characters = {
 			}
 		}
 
-		corps_commander = { #18/17   as CORPS COMMANDER; 9.5 + 9  AS FM
+		field_marshal = { 
 		
 	traits = { offensive_doctrine trait_engineer fortress_buster ranger fast_planner organisational_leader thorough_planner panzer_leader panzer_expert brilliant_strategist  aggressive_assaulter   winter_specialist winter_expert   }
-	skill = 7
-	attack_skill = 6
+	skill = 6
+	attack_skill = 5
 	defense_skill = 2
-	planning_skill = 8
-	logistics_skill = 8
+	planning_skill = 7
+	logistics_skill = 4
 			visible = { SOV={
 				has_completed_focus=SOV_hero_of_the_union
 			} }
@@ -221,7 +221,7 @@ characters = {
 		}
 
 		field_marshal = { #13/13
-			traits = {  scavenger fast_planner panzer_leader panzer_expert  trait_cautious brilliant_strategist aggressive_assaulter adaptable   }
+			traits = {  organizer fast_planner panzer_leader panzer_expert  trait_cautious brilliant_strategist aggressive_assaulter adaptable   }
 	skill = 6
 	attack_skill = 4
 	defense_skill = 4
@@ -323,7 +323,7 @@ characters = {
 		}
 
 		field_marshal = { #13/13
-		traits = {   infantry_leader scavenger commando expert_delegator  organisational_leader inspirational_leader logistics_wizard expert_improviser  }
+		traits = {   infantry_leader organizer commando expert_delegator  organisational_leader inspirational_leader logistics_wizard expert_improviser  }
 		skill = 6
     attack_skill = 4
     defense_skill = 5
@@ -413,7 +413,7 @@ characters = {
 		field_marshal = { #13/13
 		traits = {  aggressive_assaulter thorough_planner panzer_leader panzer_expert harsh_leader camouflage_expert  }
 	skill = 6
-	attack_skill = 6
+	attack_skill = 5
 	defense_skill = 1
 	planning_skill = 7
 	logistics_skill = 5
@@ -772,7 +772,7 @@ characters = {
 			}
 		}
 		corps_commander = { #17/17
-			traits = { panzer_leader panzer_expert harsh_leader ranger camouflage_expert  expert_improviser trickster }
+			traits = { panzer_leader panzer_expert  ranger camouflage_expert  expert_improviser trickster }
 	skill = 6
 	attack_skill = 6
 	defense_skill = 5
@@ -792,7 +792,7 @@ characters = {
 			}
 		}
 		corps_commander = { #17/17
-			traits = { panzer_leader panzer_expert harsh_leader ranger camouflage_expert  expert_improviser trickster }
+			traits = { panzer_leader panzer_expert  ranger camouflage_expert  expert_improviser trickster }
 	skill = 6
 	attack_skill = 6
 	defense_skill = 5
@@ -812,7 +812,7 @@ characters = {
 			}
 		}
 		corps_commander = { #17/17
-			traits = { panzer_leader panzer_expert harsh_leader ranger camouflage_expert  expert_improviser trickster }
+			traits = { panzer_leader panzer_expert  ranger camouflage_expert  expert_improviser trickster }
 	skill = 6
 	attack_skill = 6
 	defense_skill = 5
@@ -928,7 +928,7 @@ characters = {
 			}
 		}
 		corps_commander = { #17/17
-		traits = { infantry_leader ambusher   trait_engineer scavenger trait_mountaineer hill_fighter  }
+		traits = { infantry_leader ambusher   trait_engineer organizer trait_mountaineer hill_fighter  }
 	skill = 6
 	attack_skill = 4
 	defense_skill = 6
@@ -1104,7 +1104,7 @@ characters = {
 			}
 		}
 		corps_commander = { #17/17
-		traits = { scavenger  trait_engineer adaptable panzer_leader panzer_expert  }
+		traits = { organizer  trait_engineer adaptable panzer_leader panzer_expert  }
 	skill = 6
     attack_skill = 5
     defense_skill = 2
@@ -1157,7 +1157,7 @@ characters = {
 			}
 		}	
 		corps_commander = { #17/17
-			traits = { panzer_leader panzer_expert harsh_leader ranger camouflage_expert  expert_improviser trickster }
+			traits = { panzer_leader panzer_expert  ranger camouflage_expert  expert_improviser trickster }
 	skill = 6
 	attack_skill = 6
 	defense_skill = 5

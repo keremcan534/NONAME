@@ -61,6 +61,7 @@ political_actions = {
 }
 HMP_soviet_lend_lease_system = {
 	HMP_ll_soviets_fighters2 = {  
+		name="Enable/Disable Allied Minors LL"
 		allowed = {	the_allies= yes    }
 		icon = generic_air
 		cost = 0

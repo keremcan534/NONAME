@@ -14,18 +14,13 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 4
-			industrial_complex = 4
+			arms_factory = 5
+			industrial_complex = 6
 			anti_air_building = 3
 			air_base = 10
 		}
 		add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 4
-				industrial_complex = 6
-			}
-		}
+
 	}
 
 	provinces={

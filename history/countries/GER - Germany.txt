@@ -152,8 +152,9 @@ add_ideas = {
 	GER_mefo_bills_1
 	GER_autarky_idea_minor
 	axis_trade_idea
-	limited_conscription
+	extensive_conscription
 	partial_economic_mobilisation
+
 }
 
 recruit_character = GER_fritz_todt

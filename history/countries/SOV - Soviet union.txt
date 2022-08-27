@@ -10,7 +10,7 @@ add_intel = { target = SAF civilian_intel = 200 army_intel = 200 navy_intel = 20
 add_intel = { target = AST civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 set_country_flag=fuel_system_enabled
 
-set_research_slots = 3
+set_research_slots = 4
 set_stability = 0.5
 set_war_support = 0.6
 # Starting tech
@@ -91,6 +91,7 @@ add_ideas = {
 	closed_economy
 	SOV_home_fleet
 	SOV_red_army
+	limited_conscription
 }
 recruit_character = SOV_iosif_stalin
 

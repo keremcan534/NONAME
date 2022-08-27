@@ -85,7 +85,6 @@ focus_tree = {
 			}
 			ITA = {
 				controls_state = 115
-				controls_state = 177
 			}
 			GER = {
 				controls_state = 24

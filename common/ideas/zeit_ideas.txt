@@ -30,17 +30,17 @@ ideas = {
 	}
 	country = {
 
-		nerf_aliied_production={
+		nerf_aliied_tank_air_production={
 			allowed = {
 				always = no
 			}
 
-			picture=idea_POL_succesful_four_year_plan
+			picture=great_depression
 			
 			removal_cost = -1
 	
 			modifier = {
-				industrial_capacity_factory = -0.3
+				industrial_capacity_factory=-0.25
 			}
 
 		}
@@ -1233,11 +1233,10 @@ ideas = {
 			}
 			equipment_bonus={
 				armor = {
-					soft_attack=0.1
-					hard_attack=0.1
-					maximum_speed = 0.05
+					soft_attack=0.08
+					hard_attack=0.08
 					reliability = 0.1
-					build_cost_ic=0.05
+					build_cost_ic=0.1
 				}
 				
 				
@@ -1331,7 +1330,7 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					soft_attack=0.1
-					hard_attack=0.05
+					build_cost_ic=-0.05
 				}
 			}
 			modifier = {
@@ -1356,10 +1355,8 @@ ideas = {
 			}
 			equipment_bonus = {
 				armor = {
-					
-				
 					hard_attack = 0.1
-					soft_attack=0.05
+					build_cost_ic=-0.05
 				}
 			}
 			modifier = {
@@ -1475,7 +1472,7 @@ ideas = {
 			}
 		equipment_bonus = {
 			fighter_equipment = {
-				air_agility = 0.15 maximum_speed = 0.20
+				air_agility = 0.1 maximum_speed = 0.20
 			}
 			jet_fighter_equipment = {
 					maximum_speed = 0.1 
@@ -1577,8 +1574,8 @@ ideas = {
 	#axis
 	tank_manufacturer = {
 		designer = yes
-		krupp_tank = {
-			picture=idea_krupp
+		krupp_t = {
+			picture = idea_krupp
 			cost = 150
 			allowed = {
 				the_axis=yes
@@ -1589,8 +1586,11 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					reliability = 0.1
-					soft_attack = 0.15
+					soft_attack = 0.16
 				}
+			}
+			modifier = {
+				tank_manufacturer_cost_factor = -1
 			}
 		}
 		henschel = {
@@ -1605,7 +1605,7 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					reliability = 0.1
-					hard_attack = 0.15
+					hard_attack = 0.16
 				}
 			}
 			
@@ -1617,7 +1617,7 @@ ideas = {
 			cost=150
 			available={date>1941.1.1}
 			allowed = {
-				the_axis=yes
+				original_tag=GER
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1626,8 +1626,8 @@ ideas = {
 			}
 			equipment_bonus={
 				armor = {
-					soft_attack=0.15
-					hard_attack=0.15
+					soft_attack=0.16
+					hard_attack=0.16
 					maximum_speed = 0.1
 					reliability = 0.1
 					build_cost_ic=0.05
@@ -1652,8 +1652,8 @@ ideas = {
 			}
 			equipment_bonus={
 				armor = {
-					soft_attack=0.1
-					hard_attack=0.1
+					soft_attack=0.11
+					hard_attack=0.11
 					maximum_speed = 0.05
 					reliability = 0.1
 					build_cost_ic=0.05

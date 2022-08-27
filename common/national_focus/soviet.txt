@@ -564,8 +564,9 @@ focus_tree = {
 				slot = high_command
 				trait =army_commando_2
 				}
-			custom_effect_tooltip = SOV_Zhukov
+			custom_effect_tooltip = "Georgy Zhukov available as Field Marshal"
 			show_ideas_tooltip = SOV_georgy_zhukov
+			
 		}
 	}
 	focus = {
@@ -955,7 +956,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_stalin_constitution
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -974,7 +975,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_positive_heroism
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1039,15 +1040,9 @@ focus_tree = {
 			air_experience = 250
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				technology= fighter2
-			}
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 0.5
-				uses = 1
-				technology= fighter3
 			}
 		}
 	}
@@ -1095,7 +1090,7 @@ focus_tree = {
 		relative_position_id = SOV_aviation_cult
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1116,6 +1111,7 @@ focus_tree = {
 		relative_position_id = SOV_transpolar_flights
 		x = 0
 		y = 1
+		cost = 1
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -1361,7 +1357,6 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-			add_research_slot=1
 		    set_technology = {improved_heavy_tank_chassis  = 1 popup=no}
 			create_equipment_variant = {
 					name = "KV-1/1"

@@ -159,27 +159,7 @@ on_actions = {
 					set_equipment_fraction = 0
 					
 				}
-				every_country={
-					limit={playable_countries=yes
-					NOT={OR={
-						original_tag=GER
-						original_tag=SOV
-						original_tag=USA
-					}
-					}
-				}
-				add_timed_idea={idea=africa_hp
-				days=200
-				}
-					}
-					GER={
-						add_timed_idea={idea=GER_blitz
-					days=200}
-						add_timed_idea={idea=GER_jaegernotprogramm
-					days=200
-						}
-
-					}
+				
 				fall_of_france=yes
 			
 			}

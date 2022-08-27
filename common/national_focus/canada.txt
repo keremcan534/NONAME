@@ -1228,15 +1228,6 @@
 		y = 6
 		relative_position_id = CAN_defence_of_canada_regulations
 		cost = 10
-		ai_will_do = {
-			factor = 25
-		}
-		available = {
-			num_of_factories > 50
-			is_subject = no
-		}
-		bypass = {
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -2485,10 +2476,9 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_the_sabre_project
-				ahead_reduction = 0.02
+				bonus = 0.5
 				uses = 2
 				category = rocketry
-				category = jet_technology
 			}
 		}
 	}

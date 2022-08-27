@@ -29,13 +29,13 @@ mean_time_to_happen={days=0}
 		name="All eqiupment 3 unlockedq. "
 		tag=ENG
 		hidden_effect={
-		ENG={add_ideas=nerf_aliied_production}
-		AST={add_ideas=nerf_aliied_production}
-		USA={add_ideas=nerf_aliied_production}
-		RAJ={add_ideas=nerf_aliied_production}
-		SAF={add_ideas=nerf_aliied_production}
-		CAN={add_ideas=nerf_aliied_production}
-		FRA={add_ideas=nerf_aliied_production}}
+		ENG={add_ideas=nerf_aliied_tank_air_production}
+		AST={add_ideas=nerf_aliied_tank_air_production}
+		USA={add_ideas=nerf_aliied_tank_air_production}
+		RAJ={add_ideas=nerf_aliied_tank_air_production}
+		SAF={add_ideas=nerf_aliied_tank_air_production}
+		CAN={add_ideas=nerf_aliied_tank_air_production}
+		FRA={add_ideas=nerf_aliied_tank_air_production}}
 	}
 }
 

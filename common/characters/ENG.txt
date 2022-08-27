@@ -157,7 +157,8 @@ characters={
 			}
 			cost = 50
 			traits = {
-				navy_screen_2
+				navy_chief_decisive_battle_3
+				
 			}
 			cost = 100
 			ai_will_do = {
@@ -276,20 +277,6 @@ characters={
 				factor = 2.000
 			}
 		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = bernard_montgomery
-			ledger = army
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = {
-				grand_battle_plan_expert
-			}
-		}
-		
 	}
 	ENG_alan_brooke={
 		name="Alan Brooke"
@@ -444,7 +431,7 @@ characters={
 			}
 		
 			traits = {
-				military_theorist
+				grand_battle_plan_expert
 			}
 		
 		}
@@ -481,7 +468,7 @@ characters={
 			}
 		}
 		field_marshal={ #
-			traits={  infantry_leader infantry_expert trait_mountaineer hill_fighter logistics_wizard offensive_doctrine   }
+			traits={ naval_liason organizer infantry_leader infantry_expert trait_mountaineer hill_fighter logistics_wizard offensive_doctrine   }
 			skill=5
 			attack_skill=4
 			defense_skill=2
@@ -811,7 +798,7 @@ characters={
 			}
 		}
 		corps_commander={ #15/15
-			traits={ old_guard infantry_leader infantry_expert  trait_mountaineer organizer   expert_improviser }
+			traits={ old_guard infantry_leader infantry_expert  trait_mountaineer organizer naval_invader invader_ii expert_improviser }
 			skill=5
 			attack_skill=6
 			defense_skill=2

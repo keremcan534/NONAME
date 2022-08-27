@@ -103,8 +103,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
 			}
 		}
 		FRA_political_violence = {

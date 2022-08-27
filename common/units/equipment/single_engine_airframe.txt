@@ -117,7 +117,7 @@ equipments = {
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
 		naval_strike_attack = 18
-		naval_strike_targetting = 7.5
+		naval_strike_targetting = 6
 		
 		build_cost_ic = 64
 		resources = {
@@ -184,7 +184,7 @@ equipments = {
 		maximum_speed = 356.4
 		air_agility = 51.7
 		air_attack = 10.8
-		air_defence = 8
+		air_defence = 10
 
 		naval_strike_attack = 2
 		naval_strike_targetting = 20
@@ -204,7 +204,7 @@ equipments = {
 		maximum_speed = 540
 		air_agility = 57.5
 		air_attack = 21.6
-		air_defence = 10
+		air_defence = 12
 		fuel_consumption = 0.15
 				
 		build_cost_ic = 120
@@ -231,7 +231,7 @@ equipments = {
 		maximum_speed = 702
 		air_agility = 74.7
 		air_attack = 32.4
-		air_defence = 12		
+		air_defence = 14		
 		fuel_consumption = 0.2
 				
 		build_cost_ic = 130
@@ -258,7 +258,7 @@ equipments = {
 		maximum_speed = 777.6
 		air_agility = 92
 		air_attack = 38.4 #was 38.4 increased by 20%
-		air_defence = 14
+		air_defence = 16
 		
 		fuel_consumption = 0.25
 		build_cost_ic = 140
@@ -409,7 +409,7 @@ equipments = {
 		air_attack = 10
 		air_defence = 14
 		naval_strike_attack = 20
-		naval_strike_targetting = 10
+		naval_strike_targetting = 9
 		
 		build_cost_ic = 70
 		resources = {
@@ -433,7 +433,7 @@ equipments = {
 		air_attack = 14
 		air_defence = 16
 		naval_strike_attack = 22.5
-		naval_strike_targetting = 12.5
+		naval_strike_targetting = 11
 	
 		build_cost_ic = 76
 		resources = {

@@ -100,6 +100,7 @@ add_ideas = {
 	george_v
 	allied_trading_idea
 	asia_matters
+	limited_conscription
 }
 set_country_flag=fuel_system_enabled
 set_variable = {
