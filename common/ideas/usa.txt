@@ -23,7 +23,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_dockyard = 0.175
+				industrial_capacity_dockyard = 0.15
 			}
 		}
 		USA_dont_invade_free_europe = {
@@ -259,7 +259,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 0.15
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.125
 			}
 		}
 		USA_limited_intervention = {

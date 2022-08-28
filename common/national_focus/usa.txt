@@ -84,10 +84,6 @@ focus_tree = {
 			FOCUS_FILTER_USA_CONGRESS
 		}
 		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 15
-			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
 				flag = USA_great_depression_cooldown
@@ -139,10 +135,6 @@ focus_tree = {
 			FOCUS_FILTER_USA_CONGRESS
 		}
 		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 12
-			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
 				flag = USA_great_depression_cooldown
@@ -183,10 +175,6 @@ focus_tree = {
 			FOCUS_FILTER_USA_CONGRESS
 		}
 		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = federal_housing_tt
@@ -704,194 +692,39 @@ focus_tree = {
 		
 		completion_reward = {
 			army_experience = 10
-			random_owned_controlled_state = {
-				limit = {
-					arms_factory > 0
-					free_building_slots = {
-						building = arms_factory
-						size > 4
-						include_locked = yes
-					}
-					OR = {
-						region = 117
-						region = 118
-						region = 119
-						region = 120
-					}
-				}
+			388 = {
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 8
 					instant_build = yes
 				}
 				set_state_flag = USA_military_construction_5MF
 			}
-			if = {
-				limit = {
-					371 = {
-						OR = {
-							NOT = {
-								is_owned_and_controlled_by = USA
-							}
-							AND = {
-								is_owned_and_controlled_by = USA
-								free_building_slots = {
-									building = infrastructure
-									size < 3
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-						OR = {
-							region = 117
-							region = 118
-							region = 119
-							region = 120
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = USA_military_construction_3Inf
+			389 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
 				}
 			}
-			371 = {
-				if = {
-					limit = {
-						is_owned_and_controlled_by = USA
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = USA_military_construction_3Inf
+			391 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					375 = {
-						OR = {
-							NOT = {
-								is_owned_and_controlled_by = USA
-							}
-							AND = {
-								is_owned_and_controlled_by = USA
-								free_building_slots = {
-									building = infrastructure
-									size < 3
-								}
-							}
-						}
-					}
+			392 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-						OR = {
-							region = 117
-							region = 118
-							region = 119
-							region = 120
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = USA_military_construction_3Inf
-				}
-			}
-			375 = {
-				if = {
-					limit = {
-						is_owned_and_controlled_by = USA
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = USA_military_construction_3Inf
-				}
-			}
-			if = {
-				limit = {
-					378 = {
-						OR = {
-							NOT = {
-								is_owned_and_controlled_by = USA
-							}
-							AND = {
-								is_owned_and_controlled_by = USA
-								free_building_slots = {
-									building = infrastructure
-									size < 3
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-						OR = {
-							region = 117
-							region = 118
-							region = 119
-							region = 120
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-					set_state_flag = USA_military_construction_3Inf
-				}
-			}
-			378 = {
-				if = {
-					limit = {
-						is_owned_and_controlled_by = USA
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = USA_military_construction_3Inf
-				}
-			}
+			}			
 		}
 	}
 	focus = {
@@ -948,10 +781,10 @@ focus_tree = {
 						region = 120
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = USA_USACE_projects_3AF
@@ -1360,16 +1193,6 @@ focus_tree = {
 		relative_position_id = USA_war_department
 		cost = 5
 		available = {
-			if = {
-				limit = {
-					threat < 0.5
-					has_war = no
-				}
-				congress_high_support_trigger = yes
-			}
-			else = {
-				congress_low_support_trigger = yes
-			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
