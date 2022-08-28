@@ -60,7 +60,6 @@ USA_aid_britain = {
 
 		available = {
 			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
-			has_country_flag = this_was_their_finest_hour_speech
 			ENG = { has_defensive_war = yes }
 		}
 
@@ -90,7 +89,7 @@ USA_aid_britain = {
 
 		complete_effect = {
 			ENG = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = USA }
+				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 20000 producer = USA }
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = USA }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
 				country_event = { id = wtt_britain.30 }
@@ -211,4 +210,8 @@ USA_war_plans = {
 			defense_bonus_against = 0.15
 		}
 	}
-}
+	}
+	
+
+	
+

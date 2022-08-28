@@ -31,7 +31,6 @@ focus_tree = {
 			add_ideas={
 				USA_highway_program_idea
 			}
-			add_stability=0.20
 		}
 	}
 	#	#   # ## #  
@@ -65,7 +64,6 @@ focus_tree = {
 		relative_position_id = USA_wpa
 		cost = 10
 		available = {
-			congress_medium_support_trigger = yes
 			has_government = democratic
 		}
 		bypass = {
@@ -88,7 +86,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 8
+				level = 15
 			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
@@ -118,7 +116,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			congress_medium_support_trigger = yes
 			has_government = democratic
 			not = {
 				has_country_flag = USA_great_depression_cooldown
@@ -144,7 +141,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 8
+				level = 12
 			}
 			USA_great_depression_level_down = yes
 			set_country_flag = {
@@ -167,7 +164,6 @@ focus_tree = {
 		relative_position_id = USA_wpa
 		cost = 10
 		available = {
-			congress_medium_support_trigger = yes
 			has_government = democratic
 			not = {
 				has_country_flag = USA_great_depression_cooldown
@@ -189,7 +185,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 8
+				level = 10
 			}
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
@@ -279,7 +275,7 @@ focus_tree = {
 			focus = USA_wpa
 		}
 		relative_position_id = USA_wpa
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -301,8 +297,89 @@ focus_tree = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 2
 			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}	
+				}
+							random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}	
+				}
+							random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}	
+				}
+							random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}	
+				}
+							random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}	
+				}
+				
 		}
 	}
 	focus = {
@@ -316,7 +393,6 @@ focus_tree = {
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
 		available = {
-			congress_low_support_trigger = yes
 			democratic > 0.95
 		}
 		cancel_if_invalid = no
@@ -334,7 +410,6 @@ focus_tree = {
 				limit = {
 					has_war_support < 0.4
 				}
-				USA_congress_small_support = yes
 			}
 			custom_effect_tooltip = USA_lend_lease_act_neutrality_tt
 			hidden_effect = {
@@ -429,10 +504,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 8
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -446,10 +521,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 8
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -463,9 +538,27 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
+					level = 8
+					instant_build = yes
+				}
+				set_state_flag = USA_arsenal_of_democracy_3AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
 					level = 4
 					instant_build = yes
 				}
@@ -481,28 +574,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -561,7 +636,7 @@ focus_tree = {
 		}
 		available = {
 			OR={
-			date > 1939.12.1 has_war=yes
+			date > 1939.5.1 has_war=yes
 			}
 		}
 		continue_if_invalid = yes
@@ -579,8 +654,9 @@ focus_tree = {
 						has_country_flag = USA_the_giant_wakes_added_civ_eco
 					}
 				}
-				add_ideas = low_economic_mobilisation
+				add_ideas = partial_economic_mobilisation
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
+				remove_ideas=economic_recovery
 			}
 		}
 	}
@@ -964,6 +1040,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			remove_ideas=USA_dont_invade_free_europe		
 			show_unit_leaders_tooltip = USA_alexander_vandegrift
 			add_ideas = USA_intervention_in_the_americas
 			add_ideas = USA_intervention_in_europe
@@ -977,7 +1054,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_intervention_in_europe
 		}
-		available={date>1942.1.1}
+		available={}
 
 	
 		relative_position_id = USA_intervention_in_europe
@@ -994,7 +1071,6 @@ focus_tree = {
 				show_effect_tooltip = yes
 				show_modifiers = yes
 			}
-			remove_ideas=USA_dont_invade_free_europe
 
 		}
 	}
@@ -1004,7 +1080,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_intervention_in_europe
 		}
-		available={date>1942.1.1}
+		available={}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		x = 0
@@ -1018,7 +1094,6 @@ focus_tree = {
 					modifier = war_plan_black
 				}
 			}
-			remove_ideas=USA_dont_invade_free_europe
 			unlock_decision_tooltip = {
 				decision = USA_execute_war_plan_black
 				show_effect_tooltip = yes
@@ -1427,7 +1502,6 @@ focus_tree = {
 		relative_position_id = USA_selective_training_act
 		cost = 10
 		available = {
-			congress_medium_support_trigger = yes
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1445,7 +1519,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_selective_training_act
 		}
@@ -1457,13 +1531,18 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = USA_support_rock_island
-				uses = 2
+
+		add_tech_bonus = {
+				name = at
 				bonus = 1
-				category = artillery
-				category = support_tech
-			}
+				uses = 6
+				technology = artillery5
+				technology = artillery4
+				technology = artillery3
+				technology = rocket_artillery2
+				technology = rocket_artillery3
+				technology = rocket_artillery4
+		}			
 		}
 	}
 	focus = {
@@ -1668,8 +1747,21 @@ focus_tree = {
 				uses = 2
 				category = air_doctrine
 			}
+			add_tech_bonus = {
+				name = CAS_effort
+				uses = 1
+				bonus = 1
+				category = light_Fighter
+			}			
 			# REVISIT May use modifier?
-			add_ideas = air_war_plans_division_focus
+
+			add_tech_bonus = {
+				name = CAS_effort
+				uses = 1
+				bonus = 1
+				category = cas_bomber
+			}	
+			add_ideas = air_war_plans_division_focus			
 		}
 	}
 	focus = {
@@ -1681,17 +1773,11 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
 			air_experience = 25
 			add_ideas = air_support_focus
-			add_tech_bonus = {
-				name = CAS_effort
-				uses = 1
-				bonus = 1
-				category = cas_bomber
-			}
 		}
 	}
 	focus = {
@@ -1703,7 +1789,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
 			air_experience = 25
@@ -1875,10 +1961,8 @@ focus_tree = {
 					threat < 0.5
 					has_war = no
 				}
-				congress_high_support_trigger = yes
 			}
 			else = {
-				congress_low_support_trigger = yes
 			}
 			controls_state = 378
 			controls_state = 358
@@ -1978,7 +2062,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}

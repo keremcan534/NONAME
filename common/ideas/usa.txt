@@ -23,7 +23,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_dockyard = 0.075
+				industrial_capacity_dockyard = 0.175
 			}
 		}
 		USA_dont_invade_free_europe = {
@@ -194,6 +194,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_infrastructure_factor = 0.125
+				stability_factor = 0.2
 			}
 		}
 		USA_nation_of_wheels = {
@@ -229,7 +230,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_cost = 1
+				political_power_cost = 0.8
 				consumer_goods_factor = 0.3
 			}
 		}
@@ -243,8 +244,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_cost = 0.65
-				consumer_goods_factor = 0.25
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.20
 			}
 		}
 		great_depression_3 = {
@@ -257,8 +258,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_cost = 0.25
-				consumer_goods_factor = 0.175
+				political_power_cost = 0.15
+				consumer_goods_factor = 0.10
 			}
 		}
 		USA_limited_intervention = {
@@ -935,7 +936,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				experience_gain_air = 0.5
+				experience_gain_air = 0.7
 			}
 		}
 		air_support_focus = {
@@ -951,13 +952,10 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				tac_bomber_equipment = {
+				fighter_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-			}
-			modifier = {
-				experience_gain_air = 0.2
 			}
 		}
 		strategic_bombing_focus = {
@@ -973,7 +971,12 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-			}
+			
+				tac_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}	
+            }				
 		}
 		escort_effort_focus = {
 			allowed = {
@@ -1000,7 +1003,8 @@ ideas = {
 			picture = USA_Land_of_the_Free
 			modifier = {
 				global_building_slots_factor = 1
-				convoy_raiding_efficiency_factor = -0.25
+				convoy_raiding_efficiency_factor = -0.125
+				production_factory_efficiency_gain_factor = 0.125
 			}
 		}
 		# idea for the protect Amercians focus - USA democratic

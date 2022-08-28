@@ -2,7 +2,7 @@
 oob = "USA_1936"
 set_naval_oob = "USA_1936_naval_mtg"
 set_research_slots = 4
-set_stability = 0.75
+set_stability = 0.95
 set_war_support = 0
 set_convoys = 1000
 add_to_tech_sharing_group = commonwealth_research
@@ -79,10 +79,7 @@ add_ideas = {
 	USA_dont_invade_free_europe
 	allied_trading_idea
 	asia_matters
-}
-add_timed_idea = {
-	idea=economic_recovery
-	days = 1220
+	economic_recovery
 }
 
 add_intel = {
