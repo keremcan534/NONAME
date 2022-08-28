@@ -10,7 +10,7 @@ state={
 		#	572 5
 		#}
 		victory_points = {
-			422 3
+			422 1
 		}
 		owner = POL
 		buildings = {

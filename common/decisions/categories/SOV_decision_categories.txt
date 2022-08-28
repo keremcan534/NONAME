@@ -1,7 +1,23 @@
 ################
 #### SOVIET ####
 ################
-
+SOV_great_patriotic_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		has_war = yes
+	}
+		
+}
+GDU_automatic_unit_deployment= {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		always=no
+	}
+}
 SOV_industry_relocation = {
 	
 	allowed = {
@@ -13,16 +29,8 @@ SOV_industry_relocation = {
 	}
 
 	visible = {
-		has_war = yes
+		has_completed_focus = SOV_move_industry_to_urals
 	}
 }
 
-SOV_great_patriotic_war = {
-	allowed = {
-		original_tag = SOV
-	}
-	visible = {
-		has_war = yes
-	}
-		
-}
+

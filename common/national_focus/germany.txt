@@ -1884,7 +1884,7 @@
 		x = -2
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1907,23 +1907,7 @@
 			LIT = {
 				set_equipment_fraction = 0
 			}
-			POL={
-				hidden_effect = {
-					load_oob = "POL_spawn"
-				}
-			}
-			SOV = {
-				transfer_state = 78
-				transfer_state = 80
-				transfer_state = 766
-				transfer_state = 146
-				transfer_state = 147
-				annex_country = {
-					target = LIT
-				}
-				add_political_power = -150
-				country_event = soviet.141
-			}
+			
 		}
 	}
 	focus = {
@@ -2242,7 +2226,7 @@
 		x = 0
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 5
+		cost = 1
 		completion_reward = {
 			188 = {
 				add_claim_by = GER
@@ -2299,23 +2283,26 @@
 			}
 			
 			every_country={
-				limit={playable_countries=yes
-				NOT={OR={
-					original_tag=GER
-					original_tag=SOV
-					original_tag=USA
+					limit={playable_countries=yes
+					NOT={OR={
+						original_tag=GER
+						original_tag=SOV
+						original_tag=USA
+						original_tag=JAP
+						original_tag=AST
+					}
+					}
 				}
+				add_timed_idea={
+					idea=africa_hp
+					days=300
 				}
 			}
-			add_timed_idea={idea=africa_hp
-			days=300
-			}
-				}
 				GER={
 					add_timed_idea={idea=GER_blitz
 				days=300}
 					add_timed_idea={idea=GER_jaegernotprogramm
-				days=300
+				days=150
 					}
 
 				}
@@ -2524,6 +2511,9 @@
 		prerequisite = {
 			focus = GER_anschluss
 		}
+		available={
+			GER={has_completed_focus=GER_demand_memel}
+		}
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
 		cancel_if_invalid = yes
@@ -2532,6 +2522,18 @@
 		relative_position_id = GER_anschluss
 		cost = 10
 		completion_reward = {
+			SOV = {
+				transfer_state = 78
+				transfer_state = 80
+				transfer_state = 766
+				transfer_state = 146
+				transfer_state = 147
+				annex_country = {
+					target = LIT
+				}
+				add_political_power = -150
+				country_event = soviet.141
+			}
 			ENG = {
 				country_event = germany.40
 			}

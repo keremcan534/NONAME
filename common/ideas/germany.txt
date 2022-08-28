@@ -47,7 +47,6 @@ ideas = {
 			}
 			modifier={
 				org_loss_when_moving=-0.3
-				army_attack_factor=0.0750
 				army_morale_factor=0.1
 			}
 		}

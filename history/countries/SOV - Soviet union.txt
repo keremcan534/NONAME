@@ -90,7 +90,7 @@ add_ideas = {
 	home_of_revolution
 	closed_economy
 	SOV_home_fleet
-	SOV_red_army
+	
 	limited_conscription
 }
 recruit_character = SOV_iosif_stalin

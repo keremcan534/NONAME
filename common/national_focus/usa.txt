@@ -866,7 +866,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_war_plans_division
 		}
-		available={date>1942.6.1}
+		available={date>1942.3.1}
 		relative_position_id = USA_war_plans_division
 		cost = 2
 		cancel_if_invalid = yes

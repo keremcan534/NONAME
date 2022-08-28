@@ -4,9 +4,6 @@ state = {
 
 	history = {
 		owner = SOV
-		victory_points = {
-			11617 1 
-		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -14,15 +11,6 @@ state = {
 
 		}
 		add_core_of = SOV
-		add_core_of = GEO
-		add_core_of = ABK
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-
-			}
-
-		}
 
 	}
 

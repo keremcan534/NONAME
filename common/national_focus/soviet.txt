@@ -368,7 +368,52 @@ focus_tree = {
 		cancel_if_invalid=no
 		completion_reward = {
 		
-				hidden_effect={activate_mission=SOV_relocation}
+				hidden_effect={
+					activate_mission=SOV_relocate_industry_from_moscow
+					activate_mission=SOV_relocate_industry_from_leningrad
+					activate_mission=SOV_relocate_industry_from_stalingrad
+					activate_mission=SOV_relocate_industry_from_yaroslavl
+					activate_mission=SOV_relocate_industry_from_kalinin
+					activate_mission=SOV_relocate_industry_from_ivanovo
+					activate_mission=SOV_relocate_industry_from_kaunas
+					activate_mission=SOV_relocate_industry_from_siauliai
+					activate_mission=SOV_relocate_industry_from_kurzeme
+					activate_mission=SOV_relocate_industry_from_vidzeme
+					activate_mission=SOV_relocate_industry_from_harju
+					activate_mission=SOV_relocate_industry_from_tartu
+					activate_mission=SOV_relocate_industry_from_lvov
+					activate_mission=SOV_relocate_industry_from_bialyostok
+					activate_mission=SOV_relocate_industry_from_nowogrodek
+					activate_mission=SOV_relocate_industry_from_wilno
+					activate_mission=SOV_relocate_industry_from_wilejka
+					activate_mission=SOV_relocate_industry_from_novgorod
+					activate_mission=SOV_relocate_industry_from_smolensk
+					activate_mission=SOV_relocate_industry_from_rzhev
+					activate_mission=SOV_relocate_industry_from_brest
+					activate_mission=SOV_relocate_industry_from_minsk
+					activate_mission=SOV_relocate_industry_from_gomel
+					activate_mission=SOV_relocate_industry_from_bryansk
+					activate_mission=SOV_relocate_industry_from_tula
+					activate_mission=SOV_relocate_industry_from_orel
+					activate_mission=SOV_relocate_industry_from_kursk
+					activate_mission=SOV_relocate_industry_from_ryazan
+					activate_mission=SOV_relocate_industry_from_voronezh
+					activate_mission=SOV_relocate_industry_from_crimea
+					activate_mission=SOV_relocate_industry_from_odessa
+					activate_mission=SOV_relocate_industry_from_dnipropetrovsk
+					activate_mission=SOV_relocate_industry_from_zaporozhe
+					activate_mission=SOV_relocate_industry_from_stalino
+					activate_mission=SOV_relocate_industry_from_voroshilovgrad
+					activate_mission=SOV_relocate_industry_from_kharkov
+					activate_mission=SOV_relocate_industry_from_rostov
+					activate_mission=SOV_relocate_industry_from_kiev
+					activate_mission=SOV_relocate_industry_from_cherkasy
+					activate_mission=SOV_relocate_industry_from_wolyn
+					activate_mission=SOV_relocate_industry_from_zhytomyr
+					activate_mission=SOV_relocate_industry_from_pinsk
+					activate_mission=SOV_relocate_industry_from_gorodskoy
+
+			}
 			custom_effect_tooltip="RThis will start the industry relocation. Every 5 days two civilian factories and two military factories will be moved from states at the front to the Ural.!"
 			custom_effect_tooltip="YYou need atleast 2 division to relocate factories. !"
 			add_offsite_building = { type = industrial_complex level = 15 }
