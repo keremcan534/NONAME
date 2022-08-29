@@ -73,11 +73,7 @@ characters = {
 		advisor={
 			slot = political_advisor
 			idea_token = POL_ignacy_moscicki
-			available = {
-				OR = {
-					has_completed_focus = POL_prepare_for_the_inevitable 
-				}
-			}
+		
 			allowed = {
 				original_tag = POL
 				OR = {

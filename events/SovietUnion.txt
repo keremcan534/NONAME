@@ -136,6 +136,7 @@ country_event = {
 			add_state_core = 190
 			add_state_core = 811
 		}
+		
 	}
 }
 
@@ -612,7 +613,6 @@ country_event = {
 	option = {
 		name = finland.141.a
 		set_country_flag = SOV_justify_finland
-		activate_decision = SOV_prepare_finland
 		FIN = {
 			country_event = finland.21
 		}

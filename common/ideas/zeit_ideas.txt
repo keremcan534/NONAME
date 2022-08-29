@@ -24,7 +24,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				air_manufacturer_cost_factor = -1
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 	}
@@ -1219,10 +1219,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				
-				cruiser_tank_manufacturer
-			}
+			equipment_bonus = {	armor = {	hard_attack = 0.1 maximum_speed = 0.05 	}	}
+
 			modifier = {
 				tank_manufacturer_cost_factor = -1
 			}
@@ -1257,9 +1255,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				mass_tank_manufactuer
-			}
+			equipment_bonus = {	armor = {	build_cost_ic = -0.1  reliability = -0.1 } }
+
 			modifier = {
 				tank_manufacturer_cost_factor = -1
 			}
@@ -1273,10 +1270,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				cavalry_tank_manufacturer
-				
-			}
+			equipment_bonus = {	armor = {	soft_attack = 0.1 maximum_speed = 0.05 }	}
+
 			modifier = {
 				tank_manufacturer_cost_factor = -1
 			}
@@ -1289,10 +1284,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				brawler_tank_manufacturer
-				
-			}
+			equipment_bonus = {	armor = { breakthrough = 0.2 reliability = 0.05 }	}
+
 			modifier = {
 				tank_manufacturer_cost_factor = -1
 			}
@@ -1306,9 +1299,6 @@ ideas = {
 			}
 			research_bonus = {
 				armor = 0.15
-			}
-			traits = {
-				
 			}
 			modifier = {
 				tank_manufacturer_cost_factor = -1
@@ -1335,8 +1325,6 @@ ideas = {
 			}
 			research_bonus = {
 				armor = 0.15
-			}
-			traits = {
 			}
 			equipment_bonus = {
 				armor = {
@@ -1490,7 +1478,9 @@ ideas = {
 					maximum_speed = 0.1 
 			}
 		}
-
+		modifier = {
+			aircraft_manufacturer_cost_factor = -1
+		}
 		}
 		Mustang = {
 			cost=100
@@ -1510,7 +1500,9 @@ ideas = {
 					maximum_speed = 0.1 
 			}
 		}
-
+		modifier = {
+			aircraft_manufacturer_cost_factor = -1
+		}
 		}		
 		hawker = {
 			cost=100
@@ -1529,9 +1521,9 @@ ideas = {
 				air_ground_attack = 0.1 reliability = 0.1 maximum_speed = 0.1
 			}
 		}
-			on_add = {
-	
-			}
+		modifier = {
+			aircraft_manufacturer_cost_factor = -1
+		}
 		}
 		de_havilland = {
 			cost=100
@@ -1551,16 +1543,16 @@ ideas = {
 				reliability = 0.2 air_agility = 0.1 maximum_speed = 0.1
 			}
 			tac_bomber_equipment = {
-				reliability = 0.2 air_range = 0.1 maximum_speed = 0.1 naval_strike_attack = 0.1 air_agility = 0.10
+				reliability = 0.2 air_range = 0.1 maximum_speed = 0.1 air_agility = 0.10
 			}
 		}
-			on_add = {
-				
-			}
+		modifier = {
+			aircraft_manufacturer_cost_factor = -1
 		}
-		CAN_fairchild_aircraft_ltd = {
-			picture = generic_air_manufacturer_2
-			cost=100
+		}
+		douglas_aircraft_company = {
+			
+			
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -1568,20 +1560,18 @@ ideas = {
 					original_tag = AST
 				}
 			}
-			available = {
-			}
+			
+
+			
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			traits = {
-				assault_naval_aircraft_manufacturer
-			}
-			# fighter/interceptors like Hurricane
-			ai_will_do = {
-				factor = 1
-			}
-			on_add = {
-				
+			
+			traits = { assault_naval_aircraft_manufacturer }
+			
+			modifier = {
+				aircraft_manufacturer_cost_factor = -1
+
 			}
 		}
 		boeing = {
@@ -1599,10 +1589,9 @@ ideas = {
 			traits = {
 				fuel_efficient_aircraft_manufacturer
 			}
-			on_add = {
-				
+			modifier = {
+				aircraft_manufacturer_cost_factor = -1
 			}
-
 		}
 	}
 	#axis
@@ -1747,9 +1736,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				brawler_tank_manufacturer
-			}
+			equipment_bonus = {	armor = { breakthrough = 0.2 reliability = 0.05 }	}
+
 			modifier = {
 				tank_manufacturer_cost_factor = -1
 			}
@@ -1766,9 +1754,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {
-				mass_tank_manufactuer
-			}
+			equipment_bonus = {	armor = {	build_cost_ic = -0.1  reliability = -0.1 } }
+
 			modifier = {
 				tank_manufacturer_cost_factor = -1
 			}

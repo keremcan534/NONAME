@@ -20,6 +20,7 @@ political_actions = {
 	}
 	
 	improved_worker_conditions_cancel = {
+		name="Cancel Improved Worker Conditions"
 		icon = generic_industry
 		
 		visible = {
@@ -97,6 +98,7 @@ propaganda_efforts = {
 		}
 	}
 	war_propaganda_cancel = {
+		name="Cancel War Propaganda"
 		icon = generic_industry
 		
 		visible = {
@@ -294,6 +296,7 @@ war_measures = {
 		}
 	}
 	war_bonds_cancel = {
+		name = "Cancel Warbonds"
 		icon = generic_industry
 		
 		available = {
@@ -313,6 +316,7 @@ war_measures = {
 
 economy_decisions = {
 	seize_some_trains_woo = {
+		name="Sieze civillian trains for army"
 		#repeating train seize
 		visible = {
 			has_equipment = {

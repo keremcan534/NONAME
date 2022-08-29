@@ -607,7 +607,7 @@ slot = high_command
 	
 	skirmisher = { 
 		type = corps_commander
-		enable_ability = probing_attack	
+			
 		trait_type = assignable_trait
 		parent = commando		
 		gui_row = 10

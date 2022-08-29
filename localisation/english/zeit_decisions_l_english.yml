@@ -281,3 +281,4 @@
  HMP_ll_remove_ht:0 "We will remove §R1000 Heavy Tanks§! from stockpile.\n\n"
  HMP_ll_remove_mech:0 "We will remove  §R310 Half-Tracks§! from stockpile.\n\n"
  HMP_ll_remove_amtrac:0 "We will remove §R250 Amphibious Tractors§! from stockpile.\n\n"
+ division_templates:0 "MP Templates"

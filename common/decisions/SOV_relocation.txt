@@ -22,7 +22,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 4
+		days_mission_timeout = 2
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -174,7 +174,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 4
+		days_mission_timeout = 2
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -320,7 +320,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 2
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -472,7 +472,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -618,7 +618,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -764,7 +764,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -1056,7 +1056,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 2
+		days_mission_timeout = 1
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -1202,7 +1202,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 19
+		days_mission_timeout = 9
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -1348,7 +1348,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 3
+		days_mission_timeout = 1
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -1494,7 +1494,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 2
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -1640,7 +1640,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 39
+		days_mission_timeout = 4
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -1932,7 +1932,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 2
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -2078,7 +2078,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 11
+		days_mission_timeout = 2
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -2224,7 +2224,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 16
+		days_mission_timeout = 10
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -2370,7 +2370,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 7
+		days_mission_timeout = 3
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -2516,7 +2516,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 130
+		days_mission_timeout = 20
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -2662,7 +2662,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 21
+		days_mission_timeout = 10
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -2808,7 +2808,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -3100,7 +3100,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 4
+		days_mission_timeout = 2
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -3246,7 +3246,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 20
+		days_mission_timeout = 10
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -3392,7 +3392,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 8
+		days_mission_timeout = 4
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -3538,7 +3538,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 31
+		days_mission_timeout = 10
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -3684,7 +3684,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 68
+		days_mission_timeout = 15
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -3830,7 +3830,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 80
+		days_mission_timeout = 15
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -4122,7 +4122,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 42
+		days_mission_timeout = 20
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -4268,7 +4268,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 60
+		days_mission_timeout = 15
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -4560,7 +4560,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 10
+		days_mission_timeout = 2
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -4706,7 +4706,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 65
+		days_mission_timeout = 30
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -4998,7 +4998,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 80
+		days_mission_timeout = 20
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -5436,7 +5436,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 3
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -5582,7 +5582,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 8
+		days_mission_timeout = 4
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -5728,7 +5728,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 7
+		days_mission_timeout = 4
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -5874,7 +5874,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 7
+		days_mission_timeout = 3
 		visible = {
 			SOV = {
 				has_war_with = GER
@@ -6020,7 +6020,7 @@ SOV_industry_relocation = {
 			#added through on_action
 		}
 		fire_only_once = no
-		days_mission_timeout = 25
+		days_mission_timeout = 12
 		visible = {
 			SOV = {
 				has_war_with = GER

@@ -2967,15 +2967,7 @@ SpriteTypes = {
 	}
 
 	## Putting this Here so a new Countrystateview.GFX doesn't have to be moved from Vanilla
-
-	SpriteType = {
-		name = "GFX_modifiers_soviet_hero_city_icon"
-		texturefile = "gfx/interface/modifiers_soviet_hero_city_icon.dds"
-	}
-
-
-
-
+	
 	SpriteType = {
 		name = "GFX_focus_GER_moscow"
 		texturefile = "gfx/interface/goals/GER_moscow.dds"

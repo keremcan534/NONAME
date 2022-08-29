@@ -157,7 +157,7 @@ scripted_gui = {
 				}
 				else={
 					var:ROOT.target={
-						pow_before_annex=yes
+
 						var:ROOT.taker={
 							annex_country={
 								target=PREV

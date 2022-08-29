@@ -411,8 +411,6 @@ focus_tree = {
 					activate_mission=SOV_relocate_industry_from_wolyn
 					activate_mission=SOV_relocate_industry_from_zhytomyr
 					activate_mission=SOV_relocate_industry_from_pinsk
-					activate_mission=SOV_relocate_industry_from_gorodskoy
-
 			}
 			custom_effect_tooltip="RThis will start the industry relocation. Every 5 days two civilian factories and two military factories will be moved from states at the front to the Ural.!"
 			custom_effect_tooltip="YYou need atleast 2 division to relocate factories. !"
@@ -525,40 +523,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_great_patriotic_general
-		icon = GFX_anti_communism
-		relative_position_id = SOV_modifiers
-		prerequisite = { focus = SOV_modifiers }
-		x = 0
-		y = 1
-		cost = 8
-		available={
-			date>1942.3.1
-		}
-		completion_reward = {
-			remove_ideas={
-				home_of_revolution
-			}
-		}
-	}
-	focus = {
-		id = SOV_Btr60
-		text="BTR-M"
-		icon = GFX_SOV_Btr60
-		relative_position_id = SOV_peoples_commissariat
-		x = 0
-		y = 1
-		prerequisite = { focus = SOV_peoples_commissariat}
-		cost =5
-		completion_reward = {
-		add_tech_bonus = {
-			bonus = 1
-			uses = 1
-			category = cat_mechanized_equipment
-		}
-		}
-	}
-	focus = {
 		id = SOV_modifiers
 		icon = GFX_Goal_Great_Purge2
 		relative_position_id = SOV_great_figher
@@ -582,6 +546,42 @@ focus_tree = {
 			remove_ideas = officers_purged
 		}
 	}
+	focus = {
+		id = SOV_great_patriotic_general
+		icon = GFX_anti_communism
+		relative_position_id = SOV_modifiers
+		prerequisite = { focus = SOV_modifiers }
+		x = 0
+		y = 1
+		cost = 8
+		available={
+			date>1942.3.1
+		}
+		completion_reward = {
+			remove_ideas={
+				home_of_revolution
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_Btr60
+		text="BTR-M"
+		icon = GFX_SOV_Btr60
+		relative_position_id = SOV_peoples_commissariat
+		x = 0
+		y = 1
+		prerequisite = { focus = SOV_peoples_commissariat}
+		cost =5
+		completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_mechanized_equipment
+		}
+		}
+	}
+	
 	focus = {
 		id = SOV_hero_of_the_union
 		text= "Heroes of Soviet Union"

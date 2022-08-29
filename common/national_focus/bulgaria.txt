@@ -1309,12 +1309,7 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1.0
-				uses = 1
-				technology = basic_submarine_snorkel
-			}
+			
 			
 			add_tech_bonus = {
 				name = ss_bonus
@@ -1322,14 +1317,6 @@ focus_tree = {
 				uses = 1
 				technology = homing_torpedo
 			}
-			
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1.0
-				uses = 1
-				technology = electric_torpedo
-			}
-
 		}
 	}
 

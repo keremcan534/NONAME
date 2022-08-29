@@ -1008,11 +1008,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = electric_torpedo
-			research_cost_coeff = 1
-		}
-
+		
 		destroyer = {
 			torpedo_attack = 0.2
 		}
@@ -1185,10 +1181,7 @@ early_ship_hull_carrier = {
 			leads_to_tech = improved_ship_hull_submarine
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = basic_submarine_snorkel
-			research_cost_coeff = 1
-		}
+		
 
 		research_cost = 1.5
 
@@ -1221,10 +1214,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = basic_submarine_snorkel
-			research_cost_coeff = 1
-		}
+		
 
 		research_cost = 2.0
 

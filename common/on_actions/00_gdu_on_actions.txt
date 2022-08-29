@@ -1,3 +1,4 @@
+on_actions={
 on_startup={
 	effect={
 #Custom Hungary, Romania, Bulgaria starting state array for later checks. Excludes Bessarabia/Bucovina and also western/central Bulgaria
@@ -328,22 +329,6 @@ on_startup={
 			}
 # This adds all owned core states of a country connected to the capital to their array
 # Usage: global.owned_state_array_GER, where GER is the tag you want the list of states from.
-every_country = {
-	# log = "Country: [THIS.GetName]"
-	every_owned_state = {
-		limit = {
-			is_core_of = PREV
-
-			#Exception for germany which owns east prussia
-			OR = {
-				is_in_home_area = yes
-				PREV = { tag = GER }
-			}
-		}
-		add_to_array = { global.owned_state_array_@PREV = THIS }
-		# log = "State ID: [THIS.GetName]"
 	}
-}
-
 }
 }

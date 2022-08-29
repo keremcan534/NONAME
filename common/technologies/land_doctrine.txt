@@ -1185,7 +1185,7 @@ technologies = {
 			}
 			
 		}
-		category_non_support = {
+		category_army = {
 			desert = {
 				attack = 0.075
 				defence = 0.075
@@ -1468,7 +1468,7 @@ technologies = {
 		xp_unlock_cost = 100
 		no_supply_grace = 24
 		############
-		category_non_support = {
+		category_army = {
 			jungle = {
 				attack = 0.1
 			
@@ -2080,7 +2080,7 @@ technologies = {
 		enable_tactic = tactic_basic_naval_invasion_attack
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = ye
+		doctrine = yes
 		categories = {
 			land_doctrine
 			cat_superior_firepower
@@ -2101,7 +2101,7 @@ technologies = {
 		enable_tactic = tactic_basic_naval_invasion_attack
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = ye
+		doctrine = yes
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
@@ -2122,7 +2122,7 @@ technologies = {
 		enable_tactic = tactic_basic_naval_invasion_attack
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = ye
+		doctrine = yes
 		categories = {
 			land_doctrine
 			cat_mass_assault

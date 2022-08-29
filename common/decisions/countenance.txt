@@ -67,16 +67,16 @@ operations = {
 			PER = {
 				exists = yes
 			}
-				452={is_controlled_by_ROOT_or_ally=yes}
-				447={is_controlled_by_ROOT_or_ally=yes}
-				446={is_controlled_by_ROOT_or_ally=yes}
-				453={is_controlled_by_ROOT_or_ally=yes}
-				454={is_controlled_by_ROOT_or_ally=yes}
-				455={is_controlled_by_ROOT_or_ally=yes}
-				675={is_controlled_by_ROOT_or_ally=yes}
-				291={is_controlled_by_ROOT_or_ally=yes}
-				676={is_controlled_by_ROOT_or_ally=yes}
-				656={is_controlled_by_ROOT_or_ally=yes}
+				452={is_controlled_by_axis_country=yes}
+				447={is_controlled_by_axis_country=yes}
+				446={is_controlled_by_axis_country=yes}
+				453={is_controlled_by_axis_country=yes}
+				454={is_controlled_by_axis_country=yes}
+				455={is_controlled_by_axis_country=yes}
+				675={is_controlled_by_axis_country=yes}
+				291={is_controlled_by_axis_country=yes}
+				676={is_controlled_by_axis_country=yes}
+				656={is_controlled_by_axis_country=yes}
 		}
 		visible = {
 			PER = {
@@ -136,17 +136,17 @@ operations = {
 		remove_effect = {
 			
 			if={
-				ITA={
-				452={is_controlled_by_ROOT_or_ally=yes}
-				447={is_controlled_by_ROOT_or_ally=yes}
-				446={is_controlled_by_ROOT_or_ally=yes}
-				453={is_controlled_by_ROOT_or_ally=yes}
-				454={is_controlled_by_ROOT_or_ally=yes}
-				455={is_controlled_by_ROOT_or_ally=yes}
-				675={is_controlled_by_ROOT_or_ally=yes}
-				291={is_controlled_by_ROOT_or_ally=yes}
-				676={is_controlled_by_ROOT_or_ally=yes}
-				656={is_controlled_by_ROOT_or_ally=yes}}
+				limit={
+				452={is_controlled_by_axis_country=yes}
+				447={is_controlled_by_axis_country=yes}
+				446={is_controlled_by_axis_country=yes}
+				453={is_controlled_by_axis_country=yes}
+				454={is_controlled_by_axis_country=yes}
+				455={is_controlled_by_axis_country=yes}
+				675={is_controlled_by_axis_country=yes}
+				291={is_controlled_by_axis_country=yes}
+				676={is_controlled_by_axis_country=yes}
+				656={is_controlled_by_axis_country=yes}}
 				ITA={
 					transfer_state=413
 					transfer_state=421
@@ -160,7 +160,6 @@ operations = {
 			ENG={
 				annex_country={
 					target=PER
-					set_equipment_fraction = 0
 				}
 				hidden_effect={
 				ENG={
@@ -205,12 +204,13 @@ operations = {
 		remove_effect = {
 			
 			if={
-				ENG={
-				658={is_controlled_by_ROOT_or_ally=yes}
-				294={is_controlled_by_ROOT_or_ally=yes}
-				765={is_controlled_by_ROOT_or_ally=yes}
-				444={is_controlled_by_ROOT_or_ally=yes}
-				443={is_controlled_by_ROOT_or_ally=yes}}
+				limit={
+				658={is_controlled_by_allied_country=yes}
+				294={is_controlled_by_allied_country=yes}
+				765={is_controlled_by_allied_country=yes}
+				444={is_controlled_by_allied_country=yes}
+				443={is_controlled_by_allied_country=yes}
+				}
 				ENG={
 					transfer_state=410
 					transfer_state=412
@@ -228,7 +228,6 @@ operations = {
 			ITA={
 				annex_country={
 					target=PER
-					set_equipment_fraction = 0
 				}
 				hidden_effect={
 				ITA={

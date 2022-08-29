@@ -2334,7 +2334,7 @@ AST = {
 				GFX_ENG_light_ACB_camo
 				GFX_ENG_light_ACC
 				GFX_ENG_light_ACC_camo
-				GFX_AST_basic_light_tank
+				
 				"gfx/interface/technologies/AST_basic_light_tank_td.dds"
 				"gfx/interface/technologies/AST_basic_light_tank_spa.dds"
 				"gfx/interface/technologies/AST_basic_light_tank_aa.dds"
@@ -2361,7 +2361,7 @@ AST = {
 				GFX_ENG_light_BCB_camo
 				GFX_ENG_light_BCC
 				GFX_ENG_light_BCC_camo
-				GFX_AST_imp_light_tank
+				
 				"gfx/interface/technologies/AST_imp_light_tank_td.dds"
 				"gfx/interface/technologies/AST_imp_light_tank_spa.dds"
 			}
@@ -2387,7 +2387,7 @@ AST = {
 				GFX_ENG_light_CCB_camo
 				GFX_ENG_light_CAA
 				GFX_ENG_light_CAA_camo
-				GFX_AST_adv_light_tank
+				
 				"gfx/interface/technologies/AST_adv_light_tank_td.dds"
 				"gfx/interface/technologies/AST_adv_light_tank_spa.dds"
 			}
@@ -2436,7 +2436,7 @@ AST = {
 				GFX_ENG_medium_ACB_camo
 				GFX_ENG_medium_ACC
 				GFX_ENG_medium_ACC_camo
-				GFX_AST_basic_main_tank
+				
 				"gfx/interface/technologies/AST_basic_main_tank_td.dds"
 				"gfx/interface/technologies/AST_basic_main_tank_spa.dds"
 				"gfx/interface/technologies/AST_basic_main_tank_aa.dds"
@@ -2463,7 +2463,7 @@ AST = {
 				GFX_ENG_medium_BCB_camo
 				GFX_ENG_medium_BCC
 				GFX_ENG_medium_BCC_camo
-				GFX_AST_imp_main_tank
+				
 				"gfx/interface/technologies/AST_imp_main_tank.dds"
 				"gfx/interface/technologies/AST_imp_main_tank_td.dds"
 				"gfx/interface/technologies/AST_imp_main_tank_spa.dds"
@@ -2491,7 +2491,7 @@ AST = {
 				GFX_ENG_medium_CCB_camo
 				GFX_ENG_medium_CAA
 				GFX_ENG_medium_CAA_camo
-				GFX_AST_adv_main_tank
+				
 				"gfx/interface/technologies/AST_adv_main_tank.dds"
 				"gfx/interface/technologies/AST_adv_main_tank_td.dds"
 				"gfx/interface/technologies/AST_adv_main_tank_spa.dds"
@@ -2542,7 +2542,7 @@ AST = {
 				GFX_ENG_heavy_ACB_camo
 				GFX_ENG_heavy_ACC
 				GFX_ENG_heavy_ACC_camo
-				GFX_AST_basic_heavy_tank
+				
 				"gfx/interface/technologies/AST_basic_heavy_tank.dds"
 				"gfx/interface/technologies/AST_basic_heavy_tank_spa.dds"
 			}
@@ -2568,7 +2568,7 @@ AST = {
 				GFX_ENG_heavy_BCB_camo
 				GFX_ENG_heavy_BCC
 				GFX_ENG_heavy_BCC_camo
-				GFX_AST_imp_heavy_tank
+				
 				"gfx/interface/technologies/AST_imp_heavy_tank_td.dds"
 				"gfx/interface/technologies/AST_imp_heavy_tank_spa.dds"
 			}
@@ -2594,7 +2594,7 @@ AST = {
 				GFX_ENG_heavy_CCB_camo
 				GFX_ENG_heavy_CAA
 				GFX_ENG_heavy_CAA_camo
-				GFX_AST_adv_heavy_tank
+				
 				"gfx/interface/technologies/AST_adv_heavy_tank_td.dds"
 				"gfx/interface/technologies/AST_adv_heavy_tank_spa.dds"
 			}
@@ -2642,7 +2642,7 @@ RAJ = {
 				GFX_ENG_light_ACB_camo
 				GFX_ENG_light_ACC
 				GFX_ENG_light_ACC_camo
-				GFX_RAJ_basic_light_tank
+				
 				"gfx/interface/technologies/RAJ_basic_light_tank_td.dds"
 				"gfx/interface/technologies/RAJ_basic_light_tank_spa.dds"
 				"gfx/interface/technologies/RAJ_basic_light_tank_aa.dds"
@@ -2669,7 +2669,7 @@ RAJ = {
 				GFX_ENG_light_BCB_camo
 				GFX_ENG_light_BCC
 				GFX_ENG_light_BCC_camo
-				GFX_RAJ_imp_light_tank
+				
 				"gfx/interface/technologies/RAJ_imp_light_tank_td.dds"
 				"gfx/interface/technologies/RAJ_imp_light_tank_spa.dds"
 			}
@@ -2695,7 +2695,7 @@ RAJ = {
 				GFX_ENG_light_CCB_camo
 				GFX_ENG_light_CAA
 				GFX_ENG_light_CAA_camo
-				GFX_RAJ_adv_light_tank
+				
 				"gfx/interface/technologies/RAJ_adv_light_tank_td.dds"
 				"gfx/interface/technologies/RAJ_adv_light_tank_spa.dds"
 			}
@@ -2744,7 +2744,7 @@ RAJ = {
 				GFX_ENG_medium_ACB_camo
 				GFX_ENG_medium_ACC
 				GFX_ENG_medium_ACC_camo
-				GFX_RAJ_basic_main_tank
+				
 				"gfx/interface/technologies/RAJ_basic_main_tank.dds"
 				"gfx/interface/technologies/RAJ_basic_main_tank_td.dds"
 				"gfx/interface/technologies/RAJ_basic_main_tank_spa.dds"
@@ -2772,7 +2772,7 @@ RAJ = {
 				GFX_ENG_medium_BCB_camo
 				GFX_ENG_medium_BCC
 				GFX_ENG_medium_BCC_camo
-				GFX_RAJ_imp_main_tank
+				
 				"gfx/interface/technologies/RAJ_imp_main_tank.dds"
 				"gfx/interface/technologies/RAJ_imp_main_tank_td.dds"
 				"gfx/interface/technologies/RAJ_imp_main_tank_spa.dds"
@@ -2800,7 +2800,7 @@ RAJ = {
 				GFX_ENG_medium_CCB_camo
 				GFX_ENG_medium_CAA
 				GFX_ENG_medium_CAA_camo
-				GFX_RAJ_adv_main_tank
+				
 				"gfx/interface/technologies/RAJ_adv_main_tank_td.dds"
 				"gfx/interface/technologies/RAJ_adv_main_tank_spa.dds"
 				"gfx/interface/technologies/RAJ_adv_main_tank_aa.dds"
@@ -2850,7 +2850,7 @@ RAJ = {
 				GFX_ENG_heavy_ACB_camo
 				GFX_ENG_heavy_ACC
 				GFX_ENG_heavy_ACC_camo
-				GFX_RAJ_basic_heavy_tank
+				
 				"gfx/interface/technologies/RAJ_basic_heavy_tank.dds"
 				"gfx/interface/technologies/RAJ_basic_heavy_tank_spa.dds"
 			}
@@ -2876,7 +2876,7 @@ RAJ = {
 				GFX_ENG_heavy_BCB_camo
 				GFX_ENG_heavy_BCC
 				GFX_ENG_heavy_BCC_camo
-				GFX_RAJ_imp_heavy_tank
+				
 				"gfx/interface/technologies/RAJ_imp_heavy_tank.dds"
 				"gfx/interface/technologies/RAJ_imp_heavy_tank_td.dds"
 				"gfx/interface/technologies/RAJ_imp_heavy_tank_spa.dds"
@@ -2903,7 +2903,7 @@ RAJ = {
 				GFX_ENG_heavy_CCB_camo
 				GFX_ENG_heavy_CAA
 				GFX_ENG_heavy_CAA_camo
-				GFX_RAJ_adv_heavy_tank
+				
 				"gfx/interface/technologies/RAJ_adv_heavy_tank_td.dds"
 				"gfx/interface/technologies/RAJ_adv_heavy_tank_spa.dds"
 			}
@@ -2951,7 +2951,7 @@ CAN = {
 				GFX_ENG_light_ACB_camo
 				GFX_ENG_light_ACC
 				GFX_ENG_light_ACC_camo
-				GFX_CAN_basic_light_tank
+				
 				"gfx/interface/technologies/CAN_basic_light_tank.dds"
 				"gfx/interface/technologies/CAN_basic_light_tank_td.dds"
 				"gfx/interface/technologies/CAN_basic_light_tank_spa.dds"
@@ -2979,7 +2979,7 @@ CAN = {
 				GFX_ENG_light_BCB_camo
 				GFX_ENG_light_BCC
 				GFX_ENG_light_BCC_camo
-				GFX_CAN_imp_light_tank
+				
 				"gfx/interface/technologies/CAN_imp_light_tank_td.dds"
 				"gfx/interface/technologies/CAN_imp_light_tank_spa.dds"
 			}
@@ -3005,7 +3005,7 @@ CAN = {
 				GFX_ENG_light_CCB_camo
 				GFX_ENG_light_CAA
 				GFX_ENG_light_CAA_camo
-				GFX_CAN_adv_light_tank
+				
 				"gfx/interface/technologies/CAN_adv_light_tank_td.dds"
 				"gfx/interface/technologies/CAN_adv_light_tank_spa.dds"
 			}
@@ -3054,7 +3054,7 @@ CAN = {
 				GFX_ENG_medium_ACB_camo
 				GFX_ENG_medium_ACC
 				GFX_ENG_medium_ACC_camo
-				GFX_CAN_basic_main_tank
+				
 				"gfx/interface/technologies/CAN_basic_main_tank_td.dds"
 				"gfx/interface/technologies/CAN_basic_main_tank_spa.dds"
 				"gfx/interface/technologies/CAN_basic_main_tank_aa.dds"
@@ -3081,7 +3081,7 @@ CAN = {
 				GFX_ENG_medium_BCB_camo
 				GFX_ENG_medium_BCC
 				GFX_ENG_medium_BCC_camo
-				GFX_CAN_imp_main_tank
+				
 				"gfx/interface/technologies/CAN_imp_main_tank.dds"
 				"gfx/interface/technologies/CAN_imp_main_tank_td.dds"
 				"gfx/interface/technologies/CAN_imp_main_tank_spa.dds"
@@ -3109,7 +3109,7 @@ CAN = {
 				GFX_ENG_medium_CCB_camo
 				GFX_ENG_medium_CAA
 				GFX_ENG_medium_CAA_camo
-				GFX_CAN_adv_main_tank
+				
 				"gfx/interface/technologies/CAN_adv_main_tank_td.dds"
 				"gfx/interface/technologies/CAN_adv_main_tank_spa.dds"
 				"gfx/interface/technologies/CAN_adv_main_tank_aa.dds"
@@ -3159,7 +3159,7 @@ CAN = {
 				GFX_ENG_heavy_ACB_camo
 				GFX_ENG_heavy_ACC
 				GFX_ENG_heavy_ACC_camo
-				GFX_CAN_basic_heavy_tank
+				
 				"gfx/interface/technologies/CAN_basic_heavy_tank.dds"
 				"gfx/interface/technologies/CAN_basic_heavy_tank_spa.dds"
 			}
@@ -3185,7 +3185,7 @@ CAN = {
 				GFX_ENG_heavy_BCB_camo
 				GFX_ENG_heavy_BCC
 				GFX_ENG_heavy_BCC_camo
-				GFX_CAN_imp_heavy_tank
+				
 				"gfx/interface/technologies/CAN_imp_heavy_tank.dds"
 				"gfx/interface/technologies/CAN_imp_heavy_tank_td.dds"
 				"gfx/interface/technologies/CAN_imp_heavy_tank_spa.dds"
@@ -3212,7 +3212,7 @@ CAN = {
 				GFX_ENG_heavy_CCB_camo
 				GFX_ENG_heavy_CAA
 				GFX_ENG_heavy_CAA_camo
-				GFX_CAN_adv_heavy_tank
+				
 				"gfx/interface/technologies/CAN_adv_heavy_tank_td.dds"
 				"gfx/interface/technologies/CAN_adv_heavy_tank_spa.dds"
 			}
@@ -3260,7 +3260,7 @@ SAF = {
 				GFX_ENG_light_ACB_camo
 				GFX_ENG_light_ACC
 				GFX_ENG_light_ACC_camo
-				GFX_SAF_basic_light_tank
+				
 				"gfx/interface/technologies/SAF_basic_light_tank_td.dds"
 				"gfx/interface/technologies/SAF_basic_light_tank_spa.dds"
 				"gfx/interface/technologies/SAF_basic_light_tank_aa.dds"
@@ -3287,7 +3287,7 @@ SAF = {
 				GFX_ENG_light_BCB_camo
 				GFX_ENG_light_BCC
 				GFX_ENG_light_BCC_camo
-				GFX_SAF_imp_light_tank
+				
 				"gfx/interface/technologies/SAF_imp_light_tank_td.dds"
 				"gfx/interface/technologies/SAF_imp_light_tank_spa.dds"
 			}
@@ -3313,7 +3313,7 @@ SAF = {
 				GFX_ENG_light_CCB_camo
 				GFX_ENG_light_CAA
 				GFX_ENG_light_CAA_camo
-				GFX_SAF_adv_light_tank
+				
 				"gfx/interface/technologies/SAF_adv_light_tank_td.dds"
 				"gfx/interface/technologies/SAF_adv_light_tank_spa.dds"
 			}
@@ -3362,7 +3362,7 @@ SAF = {
 				GFX_ENG_medium_ACB_camo
 				GFX_ENG_medium_ACC
 				GFX_ENG_medium_ACC_camo
-				GFX_SAF_basic_main_tank
+				
 				"gfx/interface/technologies/SAF_basic_main_tank.dds"
 				"gfx/interface/technologies/SAF_basic_main_tank_td.dds"
 				"gfx/interface/technologies/SAF_basic_main_tank_spa.dds"
@@ -3390,7 +3390,7 @@ SAF = {
 				GFX_ENG_medium_BCB_camo
 				GFX_ENG_medium_BCC
 				GFX_ENG_medium_BCC_camo
-				GFX_SAF_imp_main_tank
+				
 				"gfx/interface/technologies/SAF_imp_main_tank.dds"
 				"gfx/interface/technologies/SAF_imp_main_tank_td.dds"
 				"gfx/interface/technologies/SAF_imp_main_tank_spa.dds"
@@ -3418,7 +3418,7 @@ SAF = {
 				GFX_ENG_medium_CCB_camo
 				GFX_ENG_medium_CAA
 				GFX_ENG_medium_CAA_camo
-				GFX_SAF_adv_main_tank
+				
 				"gfx/interface/technologies/SAF_adv_main_tank_td.dds"
 				"gfx/interface/technologies/SAF_adv_main_tank_spa.dds"
 				"gfx/interface/technologies/SAF_adv_main_tank_aa.dds"
@@ -3468,7 +3468,7 @@ SAF = {
 				GFX_ENG_heavy_ACB_camo
 				GFX_ENG_heavy_ACC
 				GFX_ENG_heavy_ACC_camo
-				GFX_SAF_basic_heavy_tank
+				
 				"gfx/interface/technologies/SAF_basic_heavy_tank.dds"
 				"gfx/interface/technologies/SAF_basic_heavy_tank_spa.dds"
 			}
@@ -3494,7 +3494,7 @@ SAF = {
 				GFX_ENG_heavy_BCB_camo
 				GFX_ENG_heavy_BCC
 				GFX_ENG_heavy_BCC_camo
-				GFX_SAF_imp_heavy_tank
+				
 				"gfx/interface/technologies/SAF_imp_heavy_tank_td.dds"
 				"gfx/interface/technologies/SAF_imp_heavy_tank_spa.dds"
 			}
@@ -3520,7 +3520,7 @@ SAF = {
 				GFX_ENG_heavy_CCB_camo
 				GFX_ENG_heavy_CAA
 				GFX_ENG_heavy_CAA_camo
-				GFX_SAF_adv_heavy_tank
+				
 				"gfx/interface/technologies/SAF_adv_heavy_tank_td.dds"
 				"gfx/interface/technologies/SAF_adv_heavy_tank_spa.dds"
 			}
@@ -3549,9 +3549,9 @@ POL = {
 	light_tank_chassis = {
 		pool = {
 			icons = {
-				GFX_POL_basic_light_tank
-				GFX_POL_imp_light_tank
-				GFX_POL_adv_light_tank
+				
+				
+				
 				"gfx/interface/technologies/POL_gwtank.dds"
 				"gfx/interface/technologies/POL_basic_light_tank_td.dds"
 				"gfx/interface/technologies/POL_basic_light_tank_spa.dds"
@@ -3567,9 +3567,9 @@ POL = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_POL_basic_main_tank
- 				GFX_POL_imp_main_tank
- 				GFX_POL_adv_main_tank
+				
+ 				
+ 				
 				
 				"gfx/interface/technologies/POL_basic_main_tank.dds"
 				
@@ -3582,9 +3582,9 @@ POL = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_POL_basic_heavy_tank
- 				GFX_POL_imp_heavy_tank
- 				GFX_POL_adv_heavy_tank
+				
+ 				
+ 				
 				
 				"gfx/interface/technologies/POL_basic_heavy_tank.dds"
 				
@@ -3621,10 +3621,10 @@ HUN = {
 	light_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_HUN_gwtank
- 				GFX_HUN_basic_light_tank
- 				GFX_HUN_imp_light_tank
- 				GFX_HUN_adv_light_tank
+				
+ 				
+ 				
+ 				
 				
 				"gfx/interface/technologies/hun_gwtank.dds"
 				
@@ -3650,9 +3650,9 @@ HUN = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_HUN_basic_medium_tank
- 				GFX_HUN_imp_medium_tank
- 				GFX_HUN_adv_medium_tank
+				
+ 				
+ 				
 				
 				"gfx/interface/technologies/hun_basic_medium_tank.dds"
 				
@@ -3672,9 +3672,9 @@ HUN = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_HUN_basic_heavy_tank
- 				GFX_HUN_imp_heavy_tank
- 				GFX_HUN_adv_heavy_tank
+				
+ 				
+ 				
 				
 				"gfx/interface/technologies/hun_basic_heavy_tank.dds"
 				
@@ -3718,10 +3718,10 @@ ROM = {
 	light_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_ROM_gwtank
- 				GFX_ROM_basic_light_tank
- 				GFX_ROM_imp_light_tank
- 				GFX_ROM_adv_light_tank
+				
+ 				
+ 				
+ 				
 				
 				"gfx/interface/technologies/rom_gwtank.dds"
 				
@@ -3745,9 +3745,9 @@ ROM = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_ROM_basic_medium_tank
- 				GFX_ROM_imp_medium_tank
- 				GFX_ROM_adv_medium_tank
+				
+ 				
+ 				
 				
 				"gfx/interface/technologies/rom_basic_medium_tank.dds"
 				
@@ -3772,9 +3772,9 @@ ROM = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_ROM_basic_heavy_tank
- 				GFX_ROM_imp_heavy_tank
- 				GFX_ROM_adv_heavy_tank
+				
+ 				
+ 				
 				"gfx/interface/technologies/rom_basic_heavy_tank.dds"
 				"gfx/interface/technologies/rom_imp_heavy_tank.dds"
 				"gfx/interface/technologies/rom_adv_heavy_tank.dds"
@@ -3804,10 +3804,10 @@ YUG = {
 	light_tank_chassis = {
 		pool = {
 			icons = {
-				GFX_YUG_gwtank
-				GFX_YUG_basic_light_tank
-				GFX_YUG_imp_light_tank
-				GFX_YUG_adv_light_tank
+				
+				
+				
+				
 				"gfx/interface/technologies/yug_gwtank.dds"
 				"gfx/interface/technologies/yug_basic_light_tank.dds"
 				"gfx/interface/technologies/yug_basic_light_tank_spa.dds"
@@ -3822,9 +3822,9 @@ YUG = {
 	medium_tank_chassis = {
 		pool = {
 			icons = {
-				GFX_YUG_basic_main_tank
-				GFX_YUG_imp_main_tank
-				GFX_YUG_adv_main_tank
+				
+				
+				
 				"gfx/interface/technologies/yug_basic_main_tank.dds"
 				"gfx/interface/technologies/yug_basic_main_tank_td.dds"
 				"gfx/interface/technologies/yug_imp_main_tank.dds"
@@ -3837,9 +3837,9 @@ YUG = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = {
-				GFX_YUG_basic_heavy_tank
-				GFX_YUG_imp_heavy_tank
-				GFX_YUG_adv_heavy_tank
+				
+				
+				
 				"gfx/interface/technologies/yug_basic_heavy_tank.dds"
 				"gfx/interface/technologies/yug_imp_heavy_tank.dds"
 				"gfx/interface/technologies/yug_adv_heavy_tank.dds"
@@ -3959,9 +3959,9 @@ SPR = {
 	light_tank_chassis = {
 		pool = {
 			icons = {
-				GFX_SPR_basic_light_tank
-				GFX_SPR_imp_light_tank
-				GFX_SPR_adv_light_tank
+				
+				
+				
 				"gfx/interface/technologies/spr_gwtank.dds"
 				"gfx/interface/technologies/spr_basic_light_tank.dds"
 				"gfx/interface/technologies/spr_imp_light_tank.dds"
@@ -3973,9 +3973,9 @@ SPR = {
 	medium_tank_chassis = {
 		pool = {
 			icons = {
-				GFX_SPR_basic_medium_tank
-				GFX_SPR_imp_medium_tank
-				GFX_SPR_adv_medium_tank
+				
+				
+				
 				"gfx/interface/technologies/spr_basic_medium_tank.dds"
 				"gfx/interface/technologies/spr_imp_medium_tank.dds"
 				"gfx/interface/technologies/spr_adv_medium_tank.dds"
@@ -3985,9 +3985,9 @@ SPR = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = {
-				GFX_SPR_basic_heavy_tank
-				GFX_SPR_imp_heavy_tank
-				GFX_SPR_adv_heavy_tank
+				
+				
+				
 				"gfx/interface/technologies/spr_basic_heavy_tank.dds"
 				"gfx/interface/technologies/spr_imp_heavy_tank.dds"
 				"gfx/interface/technologies/spr_adv_heavy_tank.dds"

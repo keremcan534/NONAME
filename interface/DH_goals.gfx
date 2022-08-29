@@ -2743,23 +2743,6 @@ spriteTypes = {
         name = "GFX_JAP_Nakano_Cabinet"
         texturefile = "gfx/interface/goals/JAP_Nakano_Cabinet.dds"
     }
-
-	spriteType = {
-		name = "GFX_focus_JAP_no_navy_allies"
-		texturefile = "gfx/interface/goals/focus_JAP_no_navy_allies.dds"
-	}
-
-	spriteType = {
-		name = "focus_JAP_no_navy_allies"
-		texturefile = "gfx/interface/goals/focus_JAP_no_navy_allies.dds"
-	}
-
-	spriteType = {
-		name = "GFX_focus_JAP_no_navy_allies"
-		texturefile = "gfx/interface/goals/focus_JAP_no_navy_allies.dds"
-	}
-
-
     spriteType = {
         name = "GFX_JAP_Okada_Cabinet"
         texturefile = "gfx/interface/goals/JAP_Okada_Cabinet.dds"

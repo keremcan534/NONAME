@@ -6,16 +6,15 @@ state=
 	state_category = small_island
 	history= {
 		owner = ENG
-		add_core_of = MLT
 		victory_points = {
 			12003 5 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 10
 			12003 = {
-				naval_base = 3
-				coastal_bunker = 1
+				naval_base = 10
+				coastal_bunker = 2
 			}
 		}
 	}

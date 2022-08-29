@@ -31,3 +31,5 @@ RAJ = "countries/British Raj.txt"
 EMP = "countries/Empty.txt"
 MAN = "countries/Manchukou.txt"
 EFR = "countries/Vichy France.txt" 
+
+PHI = "countries/Philippines.txt"

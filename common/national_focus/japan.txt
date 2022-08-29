@@ -1864,7 +1864,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = CAN_degauss_ship_hulls
 			set_technology = {
-				advanced_sonar = 1
 				advanced_depth_charges = 1
 			}
 			create_equipment_variant = {

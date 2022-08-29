@@ -1,7 +1,7 @@
 ------------GAME----------
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 480
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 20
-NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0 , 0.3, 0.2, 0.035, 0.0 } -- vanilla is 2/0.5/0.2/0.1/0; Speed 1 is functionally a host enforced pause (100 minutes per hour), speed 2 is slightly slower in case of some extreme issues requiring it (you will almost never use this), speed 3 is unchanged as game is balanced around vanilla speed 3, speed 4 is for faster macro without slowdown, speed 5 is vanilla
+NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0 , 0.3, 0.25, 0.038, 0.0 } -- vanilla is 2/0.5/0.2/0.1/0; Speed 1 is functionally a host enforced pause (100 minutes per hour), speed 2 is slightly slower in case of some extreme issues requiring it (you will almost never use this), speed 3 is unchanged as game is balanced around vanilla speed 3, speed 4 is for faster macro without slowdown, speed 5 is vanilla
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	 -- WAS 60 	| less messages lying around at the top of your screen
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3		-- Default days before a mission is removed from the interface after having failed or completed
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12				-- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
@@ -27,11 +27,14 @@ NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 130
 NDefines.NAir.DISRUPTION_FACTOR = 7 -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2  -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
+
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
+NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 150
+NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 5000
 
 --antiair
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1 -- (1.0) Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA. 
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.6 -- (.75) Maximum damage reduction factor applied to incoming air attacks against units with AA.
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.55 -- (.75) Maximum damage reduction factor applied to incoming air attacks against units with AA.
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT =	0.0001 	-- WAS 0.005 | Lowered because vanilla CAS shootdown rates are too high | Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE =	0.01 	-- (0.07) Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 
@@ -52,13 +55,13 @@ NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001 				-- WAS 0.005 | Balancin
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35            -- vanilla is 0.2, GDU-like change (0.25 in GDU)
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0	    --vanilla 0.4  | eventually armor will be reworked when paradox finally releases their armor rework
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.1		--vanilla 0.4
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.07
-NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.038
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.06
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.035
 
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.7 | defend combat penalty for attacker if out of supply
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- vanilla -0.20 |  attack combat penalty for attacker if out of supply
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
-NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 1 -- damage reduction if armor outclassing enemy
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.9 -- damage reduction if armor outclassing enemy
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.20                   -- speed bonus when retreating vanilla 0.25
 NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.10                -- speed bonus when withdrawing vanilla 0.15
 
@@ -80,9 +83,9 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_FIGHTER = 24		-- How much effi
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.05	-- How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.CAPACITY_PENALTY=0.869
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.01				-- How much supply planes need
-NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 5000
+
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.6                  -- VANILLA 3; GDU 1.6; LW 2  
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.019				-- Vanilla 0,10
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.016				-- Vanilla 0,10
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 3                 -- same as above but used inside naval combat for carrier battles
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 14.0            -- vanilla 5 damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 NDefines.NAir.ESCORT_FACTOR = 2.5 -- VANILLA 2.0 | to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
@@ -98,7 +101,7 @@ NDefines.NProduction.BASE_LICENSE_IC_COST = 0 -- Was 1, reduced to counter early
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0				-- IC cost equipment for every year of equipment after 1936
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0        -- WAS 0.1, removed because there are really only 2 factions in game | MIC speed modifier for licensed equipment for not being in faction
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.25 -- vanilla 2.5
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- vanilla 4.75
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.9 -- vanilla 4.75
 
 NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.1 --vanilla 0.2	-- Minimum fraction of an equipment type's base industry capacity cost to use when converting a naval equipment, such as through ship refitting.
 
@@ -117,7 +120,7 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DISRUPTION_MIN_DAMAGE_FACTOR  = 0-- @0% 
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR = 0 -- @0% of vanilla 0.01  Disruption damage to supply throughput done by bombing damage, not dependant on killing trains which also causes diruption.
 
 NDefines.NAir.SECONDARY_DAMAGE_STRAT = 0.05  -- how much damage gets translated to railway guns for strat bombing
-NDefines.NAir.SECONDARY_DAMAGE_LOGISTICS = 0.25 -- how much damage gets translated to railway guns for logistic strike
+NDefines.NAir.SECONDARY_DAMAGE_LOGISTICS = 0.2 -- how much damage gets translated to railway guns for logistic strike
 
 
 --above defines are for logistic strikes; logistics strike nerfed

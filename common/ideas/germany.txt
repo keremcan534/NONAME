@@ -873,7 +873,7 @@ ideas = {
 			cost=100
 
 			modifier = {
-				air_manufacturer_cost_factor = -1
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 		junkers = {
@@ -897,7 +897,7 @@ ideas = {
 			}	
 		}
 			modifier = {
-				air_manufacturer_cost_factor = -1
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 		focke_wulf = {
@@ -918,7 +918,7 @@ ideas = {
 			}
 		}
 			modifier = {
-				air_manufacturer_cost_factor = -1
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 		heinkel = {
@@ -939,7 +939,7 @@ ideas = {
 			}
 		}
 			modifier = {
-				air_manufacturer_cost_factor = -1
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 		dornier = {
@@ -955,7 +955,7 @@ ideas = {
 				assault_naval_aircraft_manufacturer
 			}
 			modifier = {
-				air_manufacturer_cost_factor = -1
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 	}

@@ -12,22 +12,20 @@ news_event = {
 	
 	major = yes
 	fire_only_once=yes
-trigger={
-	date>1941.6.1
-}	
-immediate={
-set_global_flag=allies_nerf_post_41
-}
-mean_time_to_happen={days=0}
-	trigger = {
-		NOT={
-			tag=ENG
-		}
-		name ="All eqiupment 3 unlocked. "
+	trigger={
+		date>1941.6.1
+	}	
+	immediate={
+		set_global_flag=allies_nerf_post_41
 	}
+	mean_time_to_happen={days=0}
 	option={
-		name="All eqiupment 3 unlockedq. "
-		tag=ENG
+	name="All eqiupment 3 unlocked. "
+	trigger= {NOT={original_tag=ENG}}
+		}
+	option={
+		trigger={original_tag=ENG}
+		name="All eqiupment 3 unlocked. "
 		hidden_effect={
 		ENG={add_ideas=nerf_aliied_tank_air_production}
 		AST={add_ideas=nerf_aliied_tank_air_production}
@@ -36,7 +34,7 @@ mean_time_to_happen={days=0}
 		SAF={add_ideas=nerf_aliied_tank_air_production}
 		CAN={add_ideas=nerf_aliied_tank_air_production}
 		FRA={add_ideas=nerf_aliied_tank_air_production}}
-	}
+		}
 }
 
 # Marco Polo Bridge I
@@ -898,9 +896,7 @@ news_event = {
 				picture = "Portrait_Britain_Palme_Dutt.dds"
 				expire = "1965.1.1"
 				ideology = leninism
-				traits = {
-					comintern_workhorse
-				}
+
 			}
 		}
 	}
@@ -1914,7 +1910,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -1957,7 +1953,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 1
 	}
 	
 	option = {
@@ -2000,7 +1996,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2055,7 +2051,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2098,7 +2094,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2141,7 +2137,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2191,7 +2187,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2234,7 +2230,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2277,7 +2273,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2320,7 +2316,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2366,7 +2362,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2409,7 +2405,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 		}
 	
 	option = {
@@ -2452,7 +2448,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2495,7 +2491,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2538,7 +2534,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2581,7 +2577,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2624,7 +2620,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2648,17 +2644,16 @@ news_event = {
 
 news_event = {
 	id = news.3152
-	title = "Norway Falls!"
-	desc = "Norway falls into enemy hands."
+	title = "Allies in Norway"
+	desc = "Allied forces enters oslo"
 	picture = GFX_news_event_soldiers_marching
 	
 	major = yes
 	
 	trigger = {
-		has_global_flag = fall_of_norway
-		110 = { is_controlled_by = {the_allies = yes} }
+		110 = { is_controlled_by = ENG }
 		110 = { is_owned_by = GER }
-		GER = { has_war_with = ENG }
+		ENG = { has_war_with = GER }
 		NOT = { has_global_flag = fall_of_norway_ger }
 	}
 	
@@ -2671,12 +2666,22 @@ news_event = {
 	}
 	
 	option = {
-		name = "Norway Falls!"
+		name = "Norway Liberated"
 		trigger = {
-			TAG = GER
+			NOT = {
+				TAG = ENG
+				TAG = GER
+			}
 		}
 	}
-
+	option = {
+		name = "Norway Liberated"
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = "Norway falls"
+		trigger = { TAG = GER }
+	}
 }
 # The Fall of Berlin (Britain)
 news_event = {
@@ -2699,7 +2704,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2742,7 +2747,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2794,7 +2799,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2857,7 +2862,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2953,7 +2958,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -2986,7 +2991,10 @@ news_event = {
 	is_triggered_only = yes 
 	trigger = {
 		NOT = { has_global_flag = liberation_of_london }
-		has_global_flag = fall_of_london_ger
+		126={is_controlled_by_allied_country=yes}
+		OR={
+			has_global_flag = fall_of_london_ita
+		has_global_flag = fall_of_london_ger}
 	}
 	
 	immediate = {
@@ -3024,6 +3032,7 @@ news_event = {
 	is_triggered_only = yes
 	trigger = {
 		NOT = { has_global_flag = liberation_of_warsaw }
+		10 = { is_controlled_by = SOV }
 		has_global_flag = fall_of_warsaw_ger
 	}
 	
@@ -3071,7 +3080,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
 	
 	option = {
@@ -3252,9 +3261,7 @@ news_event = {
 				picture = "portrait_eng_harry_pollitt.dds"
 				expire = "1965.1.1"
 				ideology = leninism
-				traits = {
-					staunch_stalinist
-				}
+			
 			}
 		}
 	}

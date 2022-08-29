@@ -2131,7 +2131,7 @@
 	}
 	focus = {
 		id = GER_totaler_krieg
-		name="Albert Speer Reforms"
+		text="Albert Speer Reforms"
 		icon = GFX_GER_Totalen_Krieg
 		prerequisite = {
 			focus = GER_ussr_war_goal
@@ -2534,6 +2534,11 @@
 				add_political_power = -150
 				country_event = soviet.141
 			}
+			hidden_effect = {
+				SOV = {
+					country_event = { days = 1 id = soviet.10 }
+					}
+				}
 			ENG = {
 				country_event = germany.40
 			}
@@ -3476,23 +3481,12 @@
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1
-				uses = 1
-				technology = basic_submarine_snorkel
-			}
+
 			add_tech_bonus = {
 				name = ss_bonus
 				bonus = 1
 				uses = 1
 				technology = homing_torpedo
-			}
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1
-				uses = 1
-				technology = electric_torpedo
 			}
 		}
 	}

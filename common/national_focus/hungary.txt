@@ -679,28 +679,7 @@
 			}
 		}
 	}
-	focus = {
-		id = HUN_expand_the_technical_university_of_budapest
-		icon = GFX_focus_research
-		
-		prerequisite = {
-			focus = HUN_domestic_arms_industry
-			focus = HUN_boost_hungarian_military_industry
-		}
-		x = -1
-		y = 1
-		relative_position_id = HUN_domestic_arms_industry
-		cost = 10
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
+	
 
 	focus = {
 		id = HUN_domestic_arms_industry
@@ -761,71 +740,94 @@
 			}
 			}
 		}
-	focus = {
-		id = HUN_boost_hungarian_military_industry
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = {
-			focus = HUN_announce_the_gyor_program
-		}
-		x = -1
-		y = 1
-		relative_position_id = HUN_announce_the_gyor_program
-		text = "Boost Hungarian Military İndustry"
-		cost = 10
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = HUN_boost_hungarian_aviation_industry_AF1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+		focus = {
+			id = HUN_boost_hungarian_military_industry
+			icon = GFX_goal_generic_construct_mil_factory
+			prerequisite = {
+				focus = HUN_announce_the_gyor_program
 			}
-		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
+			x = -1
+			y = 1
+			relative_position_id = HUN_announce_the_gyor_program
+			text = "Boost Hungarian Military İndustry"
+			cost = 10
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			search_filters = {
+				FOCUS_FILTER_INDUSTRY
+			}
+			complete_tooltip = {
+				random_state = {
+					limit = {
+						has_state_flag = HUN_boost_hungarian_aviation_industry_AF1
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = HUN_boost_hungarian_aviation_industry_AF1
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
+			completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
 					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = HUN_boost_hungarian_aviation_industry_AF1
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = HUN_boost_hungarian_aviation_industry_AF1
 				}
-				set_state_flag = HUN_boost_hungarian_aviation_industry_AF1
 			}
 		}
-	}
+		focus = {
+			id = HUN_expand_the_technical_university_of_budapest
+			icon = GFX_focus_research
+			
+			prerequisite = {
+				focus = HUN_domestic_arms_industry
+				focus = HUN_boost_hungarian_military_industry
+			}
+			x = -1
+			y = 1
+			relative_position_id = HUN_domestic_arms_industry
+			cost = 10
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			search_filters = {
+				FOCUS_FILTER_RESEARCH
+			}
+			completion_reward = {
+				add_research_slot = 1
+			}
+		}
+	
 
 	focus = {
 		id = HUN_secret_rearmament

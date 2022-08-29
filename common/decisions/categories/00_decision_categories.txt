@@ -5,7 +5,6 @@ debug_decisions = {
 	}
 }
 division_templates={
-	text="Division Templates"
 	icon = generic_political_actions
 }
 propaganda_efforts = {

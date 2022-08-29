@@ -85,9 +85,7 @@ characters={
 			traits = {
 				communist_revolutionary 
 			}
-			ai_will_do = {
-				factor = 0
-			}
+			
 		}
 
 		country_leader={
@@ -125,45 +123,7 @@ characters={
 				traits = {
 					militant_minister 
 				}
-				ai_will_do = { #You really want this if you're going fascist, AI
-					base = 100
-					modifier = { #I'm a fascist AI
-						factor = 2
-						OR = {
-							AND = {
-								is_historical_focus_on = yes
-								has_game_rule = {
-									rule = LIT_ai_behavior
-									option = FASCIST
-								}
-							}
-							has_country_flag = LIT_AI_RANDOM_FASCIST
-							has_game_rule = {
-								rule = LIT_ai_behavior
-								option = FASCIST
-							}
-						}
-					}
-					modifier = { #I'm late to the fascist party 
-						factor = 10
-						OR = {
-							AND = {
-								is_historical_focus_on = yes
-								has_game_rule = {
-									rule = LIT_ai_behavior
-									option = FASCIST
-								}
-							}
-							has_country_flag = LIT_AI_RANDOM_FASCIST
-							has_game_rule = {
-								rule = LIT_ai_behavior
-								option = FASCIST
-							}
-						}
-						date > 1937.1.1
-						fascism < 0.4
-					}
-				}
+				
 			}
 
 			country_leader={
@@ -196,9 +156,7 @@ characters={
 				traits = {
 					fascist_demagogue 
 				}
-				ai_will_do = {
-					factor = 0
-				}
+				
 			}
 
 			country_leader={
@@ -235,20 +193,7 @@ characters={
 			traits = {
 				democratic_reformer
 			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 100
-					OR = {
-						has_government = democratic
-						has_country_flag = LIT_AI_RANDOM_DEMOCRATIC
-						has_game_rule = {
-							rule = LIT_ai_behavior
-							option = DEMOCRATIC
-						}
-					}
-				}
-			}
+		
 		}
 		country_leader={
 			ideology=socialism
@@ -280,9 +225,7 @@ characters={
 				army_chief_defensive_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			
 		}
 		advisor={
 			slot = political_advisor
@@ -296,9 +239,7 @@ characters={
 			traits = {
 				veteran_minister 
 			}
-			ai_will_do = {
-				factor = 10.000
-			}
+			
 		}
 
 		field_marshal={
@@ -483,9 +424,7 @@ characters={
 				army_chief_drill_3
 			}
 			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
+			
 		}
 	}
 
@@ -509,9 +448,7 @@ characters={
 				navy_chief_maneuver_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			
 		}
 	}
 
@@ -532,9 +469,7 @@ characters={
 				navy_chief_decisive_battle_1
 			}
 			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
+			
 		}
 	}
 
@@ -558,9 +493,7 @@ characters={
 				air_chief_ground_support_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			
 		}
 	}
 		
@@ -582,9 +515,7 @@ characters={
 				air_chief_reform_3
 			}
 			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
+			
 		}
 	}
 
@@ -609,9 +540,7 @@ characters={
 				army_artillery_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			
 		}
 	}
 
@@ -633,9 +562,7 @@ characters={
 				army_infantry_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			
 		}
 	}
 
@@ -657,9 +584,7 @@ characters={
 				army_concealment_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+		
 		}
 	}
 
@@ -764,9 +689,7 @@ characters={
 			traits = {
 				priestly_prime_minister 
 			}
-			ai_will_do = {
-				factor = 10.000
-			}
+			
 		}
 	}
 
@@ -809,45 +732,7 @@ characters={
 			traits = {
 				fascist_demagogue 
 			}
-			ai_will_do = { #You really want this if you're going fascist, AI
-				base = 0
-				modifier = { #I'm a fascist AI
-					add = 50
-					OR = {
-						AND = {
-							is_historical_focus_on = yes
-							has_game_rule = {
-								rule = LIT_ai_behavior
-								option = FASCIST
-							}
-						}
-						has_country_flag = LIT_AI_RANDOM_FASCIST
-						has_game_rule = {
-							rule = LIT_ai_behavior
-							option = FASCIST
-						}
-					}
-				}
-				modifier = { #I'm late to the fascist party 
-					factor = 10
-					OR = {
-						AND = {
-							is_historical_focus_on = yes
-							has_game_rule = {
-								rule = LIT_ai_behavior
-								option = FASCIST
-							}
-						}
-						has_country_flag = LIT_AI_RANDOM_FASCIST
-						has_game_rule = {
-							rule = LIT_ai_behavior
-							option = FASCIST
-						}
-					}
-					date > 1937.1.1
-					fascism < 0.4
-				}
-			}
+			
 		}
 	}
 
@@ -871,9 +756,7 @@ characters={
 			traits = {
 				anti_german_personality 
 			}
-			ai_will_do = {
-				factor = 10.000
-			}
+		
 		}
 	}
 
@@ -896,9 +779,7 @@ characters={
 			traits = {
 				agricultural_capitalist 
 			}
-			ai_will_do = {
-				factor = 10.000
-			}
+		
 		}
 	}
 
@@ -921,9 +802,7 @@ characters={
 			traits = {
 				agricultural_nationalist 
 			}
-			ai_will_do = {
-				factor = 10.000
-			}
+		
 		}
 	}
 
@@ -945,9 +824,6 @@ characters={
 			}
 			traits = {
 				backroom_backstabber 
-			}
-			ai_will_do = {
-				factor = 10.000
 			}
 		}
 	}

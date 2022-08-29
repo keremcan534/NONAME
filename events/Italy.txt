@@ -240,11 +240,7 @@ GER = { country_event = { id = italy.149 days = 21 } }
 
    GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } }
    
-   	add_tech_bonus = {
-				bonus = 3.0
-				uses = 1
-				technology = paratroopers
-			}
+ 
    }
    
    

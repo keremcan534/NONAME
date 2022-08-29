@@ -199,7 +199,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 251 = { is_controlled_by = SOV } }
-				set_capital = 251
+				set_capital = {state = 251}
 			}
 		}
 
@@ -233,7 +233,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 219 = { is_controlled_by = SOV } }
-				set_capital = 219
+				set_capital = {state = 219}
 			}
 		}
 
@@ -267,7 +267,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 252 = { is_controlled_by = SOV } }
-				set_capital = 252
+				set_capital = {state = 252}
 			}
 		}
 
@@ -301,7 +301,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 249 = { is_controlled_by = SOV } }
-				set_capital = 249
+				set_capital = {state = 249}
 			}
 		}
 
@@ -335,7 +335,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 400 = { is_controlled_by = SOV } }
-				set_capital = 400
+				set_capital = {state = 400}
 			}
 		}
 
@@ -369,7 +369,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 217 = { is_controlled_by = SOV } }
-				set_capital = 217
+				set_capital = {state = 217}
 			}
 		}
 
@@ -403,7 +403,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 229 = { is_controlled_by = SOV } }
-				set_capital = 229
+				set_capital = {state = 229}
 			}
 		}
 
@@ -437,7 +437,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 582 = { is_controlled_by = SOV } }
-				set_capital = 582
+				set_capital = {state = 582}
 			}
 		}
 
@@ -471,7 +471,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 398 = { is_controlled_by = SOV } }
-				set_capital = 398
+				set_capital = {state = 398}
 			}
 		}
 

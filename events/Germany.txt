@@ -201,11 +201,7 @@ country_event = {
 			country_event = { days = 1 id = germany.12 }
 		}
 		set_global_flag = sov_yes_pact
-		hidden_effect = {
-		SOV = {
-			country_event = { days = 1 id = soviet.10 }
-			}
-		}
+		
 	}	
 }
 

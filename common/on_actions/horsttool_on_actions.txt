@@ -23,10 +23,6 @@ on_actions = {
 				set_variable={GLOBAL.host = BUL.id}
 			}
 			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = FIN}}
-				set_variable={GLOBAL.host = FIN.id}
-			}
-			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = USA}}
 				set_variable={GLOBAL.host = USA.id}
 			}
@@ -46,10 +42,7 @@ on_actions = {
 				limit = {has_game_rule = {rule = horst_host_country option = AST}}
 				set_variable={GLOBAL.host = AST.id}
 			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = NZL}}
-				set_variable={GLOBAL.host = NZL.id}
-			}
+			
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = JAP}}
 				set_variable={GLOBAL.host = JAP.id}
@@ -66,18 +59,7 @@ on_actions = {
 				limit = {has_game_rule = {rule = horst_host_country option = FRA}}
 				set_variable={GLOBAL.host = FRA.id}
 			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = BRA}}
-				set_variable={GLOBAL.host = BRA.id}
-			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = MEX}}
-				set_variable={GLOBAL.host = MEX.id}
-			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = IRE}}
-				set_variable={GLOBAL.host = IRE.id}
-			}
+			
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = SPR}}
 				set_variable={GLOBAL.host = SPR.id}

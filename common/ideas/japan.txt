@@ -78,21 +78,6 @@ ideas = {
 				}
 			}
 		}
-		
-		JAP_special_air_landing_force = {
-			picture = generic_infantry_bonus
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				special_forces_attack_factor = 0.05
-				special_forces_defence_factor = 0.05
-			}
-		}
 		JAP_banzai = {
 			picture = generic_infantry_bonus
 			allowed = {
@@ -810,7 +795,7 @@ ideas = {
 					air_range = 0.1
 				}
 				nav_bomber_equipment = {
-					naval_strike_attack_factor = 0.1
+					naval_strike_attack = 0.1
 					air_range = 0.1
 					reliability = 0.1
 				}

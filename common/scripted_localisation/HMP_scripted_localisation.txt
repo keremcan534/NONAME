@@ -767,136 +767,6 @@ defined_text = { # Country
 	}
 }
 
-defined_text = { # Corruption Brazil images
-	name = BRA_CORRUPTION
-	text = {
-		trigger = {
-			AND = { 
-			BRA = { check_variable = { prca_tokens < 20 } } 
-			NOT = { has_global_flag = bracorruption } 
-			}	
-		}
-		localization_key = GFX_corruption_bra1
-	}
-	text = {
-		trigger = {	
-			AND = { 
-			BRA = { check_variable = { prca_tokens > 19 } } 
-			BRA = { check_variable = { prca_tokens < 50 } }
-			NOT = { has_global_flag = bracorruption } 
-			}
-		}
-		localization_key = GFX_corruption_bra2
-	}
-	text = {
-		trigger = {	
-			AND = { 
-				BRA = { check_variable = { prca_tokens > 49 } } 
-				BRA = { check_variable = { prca_tokens < 80 } } 
-				NOT = { has_global_flag = bracorruption } 
-			}
-		}
-		localization_key = GFX_corruption_bra3
-	}
-
-	text = {
-		trigger = {	
-			AND = { 
-				BRA = { check_variable = { prca_tokens > 79 } } 
-				NOT = { has_global_flag = bracorruption } 
-			}
-		}
-		localization_key = GFX_corruption_bra4
-	}
-
-	text = {
-		trigger = {	
-			has_global_flag = bracorruption
-		}
-		localization_key = GFX_dot
-	}
-}
-
-defined_text = {
-	name = FocusTreeBackground
-	text = {
-		trigger = {
-			check_variable = { focustree_background = 1 }
-		}
-		localization_key = "GFX_BRA_focustree"
-	}
-}	
-
-defined_text = { # Corruption Brazil TEXT
-	name = BRA_CORRUPTION_MEASURER
-	text = {
-		trigger = {
-			AND = { 
-			BRA = { check_variable = { prca_tokens < 20 } } 
-			NOT = { has_global_flag = bracorruption } 
-			}	
-		}
-		localization_key = GFX_corruption_measurer_bra
-	}
-	text = {
-		trigger = {	
-			AND = { 
-			BRA = { check_variable = { prca_tokens > 19 } } 
-			BRA = { check_variable = { prca_tokens < 50 } }
-			NOT = { has_global_flag = bracorruption } 
-			}
-		}
-		localization_key = GFX_corruption_measurer2_bra
-	}
-	text = {
-		trigger = {	
-			AND = { 
-				BRA = { check_variable = { prca_tokens > 49 } } 
-				BRA = { check_variable = { prca_tokens < 80 } } 
-				NOT = { has_global_flag = bracorruption } 
-			}
-		}
-		localization_key = GFX_corruption_measurer3_bra
-	}
-
-	text = {
-		trigger = {	
-			AND = { 
-				BRA = { check_variable = { prca_tokens > 79 } } 
-				NOT = { has_global_flag = bracorruption } 
-			}
-		}
-		localization_key = GFX_corruption_measurer4_bra
-	}
-
-	text = {
-		trigger = {	
-			has_global_flag = bracorruption
-		}
-		localization_key = GFX_dot
-	}
-}
-
-defined_text = { # Corruption Brazil images
-	name = BRA_CORRUPTION2
-	text = {
-		trigger = {
-			has_global_flag = bracorruption
-		}
-		localization_key = GFX_corruption_bra5
-	}
-}
-
-defined_text = { # Corruption Brazil text
-	name = BRA_CORRUPTION_MEASURER2
-	text = {
-		trigger = {
-			has_global_flag = bracorruption
-		}
-		localization_key = GFX_corruption_measurer5_bra
-	}
-}
-
 
 
 defined_text = { # Country
@@ -911,14 +781,14 @@ defined_text = { # Country
 		trigger = {	
 		OR ={  
 		date < 1941.11.1 
-		SWE = { controls_state = 412 }
+		PER = { controls_state = 412 }
 		}
 		}
 		localization_key = GFX_iran_gray
 	}
 		text = {
 		trigger = {	
-			NOT = { OR ={  SOV = { controls_state = 412 } ENG = { controls_state = 412 } PER = { controls_state = 412 }} }
+			NOT = { OR ={  SOV = { controls_state = 412 } ENG = { controls_state = 412 } } }
 		}
 		localization_key = GFX_iran_red
 	}
@@ -1694,21 +1564,6 @@ defined_text = { # Country
 	}
 }
 
-defined_text = { # Country
-	name = GetObjItalianRails
-	text = {
-		trigger = {
-			 186 = { has_dynamic_modifier = { modifier = ITA_italian_railways_modifier } }
-		}
-		localization_key = GetItalianRailsSecure
-	}
-	text = { 
-		trigger = {	
-			NOT= { 186 = { has_dynamic_modifier = { modifier = ITA_italian_railways_modifier } } }
-		}
-		localization_key = GetItalianRailsInsecure
-	}
-}
 
 
 ###TOP BAR RESOURCES###
