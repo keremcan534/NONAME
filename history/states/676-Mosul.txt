@@ -6,7 +6,7 @@ state={
 	state_category = town
 	
 	resources={
-		oil=45 # was: 10
+		oil=8 # was: 10
 	}
 
 
@@ -14,13 +14,15 @@ state={
 		owner = ENG
 		buildings = {
 			infrastructure = 2
+			air_base = 5
 		}
-
+		victory_points = {
+			5465 1 
+		}
+		add_core_of = ENG
 	}
 	
 	provinces={
-		1600 1938 3916 5014 6826 8123 10106 10793 10804 10811 12372 
+		1600 1938 3916 5014 6826 7709 5465 4589 4555 4540 2218 190
 	}
-
-	local_supplies=0.0 
 }

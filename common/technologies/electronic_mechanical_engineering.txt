@@ -24,7 +24,15 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
 		
 		categories = {
 			electronics
@@ -44,7 +52,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.75
 		
 		folder = {
 			name = electronics_folder
@@ -52,6 +60,7 @@ technologies = {
 		}
 		
 		enable_equipment_modules = { 
+			tank_radio_1
 		}
 
 		folder = {
@@ -59,7 +68,22 @@ technologies = {
 			position = { x = 11 y = 9 } # x = 12 y = 0
 		}
 		
-		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 6
+				has_war = yes
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				factor = 5
+				date > "1939.8.1"
+			}
+		}
 		
 		categories = {
 			electronics
@@ -79,14 +103,25 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.75
 		
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 4 }
 		}
 		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 4
+			}
+		}
 		
+		categories = {
+			electronics
+			radar_tech
+		}
 	}
 	
 	decimetric_radar = {
@@ -98,17 +133,31 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		coordination_bonus = 0.01
-		research_cost = 1.0
+		research_cost = 1.25
 		start_year = 1938
 		enable_equipment_modules = { 
 			ship_radar_1
+			tank_radio_2
 		}
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 6 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "1938.1.1"
+				factor = 0.5
+			}
+		}
 		
 		categories = {
 			electronics
@@ -138,7 +187,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.25
 		start_year = 1939
 		
 		folder = {
@@ -146,7 +195,20 @@ technologies = {
 			position = { x = -2 y = 8 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "1939.1.1"
+				factor = 0.5
+			}
+		}
 		
 		categories = {
 			electronics
@@ -164,6 +226,7 @@ technologies = {
 		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_3
+			tank_radio_3
 		}
 
 		static_anti_air_hit_chance_factor = 0.2
@@ -173,7 +236,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.25
 		start_year = 1940
 		
 		folder = {
@@ -181,7 +244,20 @@ technologies = {
 			position = { x = -2 y = 10 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 4
+			}
+			modifier = {
+				date < "1940.1.1"
+				factor = 0.5
+			}
+		}
 		
 		categories = {
 			electronics
@@ -206,7 +282,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.25
 		start_year = 1941
 		
 		folder = {
@@ -214,7 +290,20 @@ technologies = {
 			position = { x = -2 y = 12 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 4
+			}
+			modifier = {
+				date < "1941.1.1"
+				factor = 0.5
+			}
+		}
 		
 		categories = {
 			electronics
@@ -236,7 +325,7 @@ technologies = {
 		
 		static_anti_air_hit_chance_factor = 0.2
 		
-		research_cost = 1
+		research_cost = 1.25
 		start_year = 1942
 		
 		folder = {
@@ -244,7 +333,16 @@ technologies = {
 			position = { x = -2 y = 14 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+		}
 		
 		categories = {
 			electronics
@@ -267,14 +365,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.0
+		research_cost = 2.5
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 2 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 7
+		}
 		
 		categories = {
 			electronics
@@ -303,7 +403,7 @@ technologies = {
 			leads_to_tech = improved_fire_control_system
 			research_cost_coeff = 1
 		}
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1938
 		
 		folder = {
@@ -311,7 +411,19 @@ technologies = {
 			position = { x = 2 y = 6 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 6
+			
+			modifier = {
+				factor = 3
+				date > "1938.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1939.1.1"
+			}
+		}
 		
 		categories = {
 			electronics
@@ -326,6 +438,7 @@ technologies = {
 		# small boost to research speed
 		research_speed_factor = 0.08
 		enable_equipment_modules = {
+			stabilizer
 		}
 		path = {
 			leads_to_tech = advanced_computing_machine 
@@ -345,7 +458,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1940
 		
 		folder = {
@@ -353,7 +466,24 @@ technologies = {
 			position = { x = 2 y = 10 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+		}
 		
 		categories = {
 			electronics
@@ -377,7 +507,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.0
+		research_cost = 2.5
 		start_year = 1942
 		
 		folder = {
@@ -385,7 +515,19 @@ technologies = {
 			position = { x = 2 y = 14 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
+		}
 		
 		categories = {
 			electronics
@@ -394,6 +536,253 @@ technologies = {
 			computing_tech
 		}
 	}
+	
+	basic_encryption = {
+
+		# encryption 1
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1938
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	improved_encryption = {
+
+		# encryption 2
+		encryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1
+		start_year = 1940
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	advanced_encryption = {
+
+		# encryption 3
+		encryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1
+		start_year = 1942
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	basic_decryption = {
+
+		# decryption 1
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1.5
+		start_year = 1938
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	improved_decryption = {
+
+		# decryption 2
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1.5
+		start_year = 1940
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	advanced_decryption = {
+
+		# decryption 3
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1.5
+		start_year = 1942
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+
 	basic_fire_control_system = {
 
 		allow_branch = {
@@ -404,14 +793,31 @@ technologies = {
 			ship_fire_control_system_1
 		}
 		
-		research_cost = 0.5
+		research_cost = 1
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 4 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = improved_fire_control_system
+					has_tech = improved_fire_control_system
+				}
+				factor = 0
+			}
+		}
 		
 		categories = {
 			electronics
@@ -426,13 +832,32 @@ technologies = {
 			ship_fire_control_system_2
 		}
 		
-		research_cost = 0.5
+		research_cost = 1
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = advanced_fire_control_system
+					has_tech = advanced_fire_control_system
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -451,14 +876,25 @@ technologies = {
 			has_dlc = "Man the Guns"
 		}
 		
-		research_cost = 0.5
+		research_cost = 1
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 12 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
 		
 		categories = {
 			electronics
@@ -488,7 +924,9 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 	
-		
+		ai_will_do = {
+			factor = 1
+		}
 		
 		categories = {
 			rocketry
@@ -540,7 +978,9 @@ technologies = {
 		}
 		
 		
-		
+		ai_will_do = {
+			factor = 1
+		}
 		
 		categories = {
 			rocketry
@@ -584,6 +1024,9 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 		
+		ai_will_do = {
+			factor = 1
+		}
 		
 		categories = {
 			rocketry
@@ -622,7 +1065,9 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 1
+		}
 		
 		categories = {
 			rocketry
@@ -652,7 +1097,9 @@ technologies = {
 			custom_effect_tooltip = JET_ENGINES_RESEARCHED
 		}
 		
-		
+		ai_will_do = {
+			factor = 1
+		}
 		
 		categories = {
 			rocketry
@@ -677,7 +1124,29 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+		}
 		
 		categories = {
 			nuclear
@@ -703,7 +1172,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				tag = USA
+				factor = 2
+			}
+		}
 		
 		categories = {
 			nuclear
@@ -725,10 +1200,19 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 		
-		
+		ai_will_do = {
+			factor = 10
+		}
 		
 		nuclear_production = 1
 		on_research_complete = {
+			if = {
+				limit = {
+					tag = USA
+					has_war_with = JAP
+				}
+				play_warning_to_japan_effect = yes
+			}
 		}
 		categories = {
 			nuclear
@@ -747,7 +1231,9 @@ technologies = {
 		decryption_power = 10
 
 		
-		
+		ai_will_do = {
+			factor = 0
+		}
 		################
 	}
 }

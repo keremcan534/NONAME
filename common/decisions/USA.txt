@@ -1,17 +1,266 @@
-USA_aid_britain = {
-	USA_establish_personal_communication_with_former_naval_person = {
-		icon = generic_political_discourse
+USA_foreign_politics = {
+
+	USA_Start_The_Island_Hoping_Campaign = { 
+		
+
+		icon = GFX_decision_usa_congress
+
 		allowed = {
 			original_tag = USA
 		}
+
 		available = {
-			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
+			797 = { CONTROLLER = { is_in_faction_with_allies = yes } }
+			633 = { CONTROLLER = { is_in_faction_with_allies = yes } }
+			684 = { CONTROLLER = { is_in_faction_with_allies = yes } }
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_war_with = JAP
+		}
+
+		complete_effect = {
+			add_ideas = Lessons_From_The_Pacific_Campaign_1
+			set_global_flag = Start_The_Island_Hoping_Campaign
+		}
+	}
+	
+	
+	USA_Continue_The_Island_Hoping_Campaign = {
+		
+
+		icon = GFX_decision_usa_congress
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			798	= { CONTROLLER = { is_in_faction_with_allies = yes } }
+			647 = { CONTROLLER = { is_in_faction_with_allies = yes } }
+			646 = { CONTROLLER = { is_in_faction_with_allies = yes } }
+			648 = { CONTROLLER = { is_in_faction_with_allies = yes } }
+			has_global_flag = Start_The_Island_Hoping_Campaign
+
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_war_with = JAP
+		}
+
+		complete_effect = {
+			add_ideas = Lessons_From_The_Pacific_Campaign_2
+			remove_ideas = Lessons_From_The_Pacific_Campaign_1
+			JAP = {
+			remove_ideas = JAP_militarism
+			add_ideas = JAP_militarism_2
+			}
+			set_global_flag = Continue_The_Island_Hoping_Campaign
+		}
+	}
+	
+	USA_Final_Preperations_For_Downfall = { 
+		
+
+		icon = GFX_decision_usa_congress
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			645	= { CONTROLLER = { is_in_faction_with_allies = yes } }
+			526 = { CONTROLLER = { is_in_faction_with_allies = yes } }
+			327	= { CONTROLLER = { is_in_faction_with_allies = yes } }
+			has_global_flag = Continue_The_Island_Hoping_Campaign
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_war_with = JAP
+		}
+
+		complete_effect = {
+			add_ideas = Lessons_From_The_Pacific_Campaign_3
+			remove_ideas = Lessons_From_The_Pacific_Campaign_2
+			JAP = {
+			remove_ideas = JAP_militarism_2
+			add_ideas = JAP_militarism_3
+			}
+		}
+	}
+}
+
+USA_congress = {
+
+	USA_homeland_defense = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_civil_war = no
+			any_of = {
+				array = USA.core_states
+				var:v = { NOT = { is_controlled_by = USA } }
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_war_support < 0.9
+				}
+				set_war_support = 0.9
+			}
+			if = {
+				limit = {
+					has_idea = great_depression
+				}
+				remove_ideas = great_depression
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = extensive_conscription
+							has_idea = scraping_the_barrel
+							has_idea = service_by_requirement
+							has_idea = all_adults_serve
+						}
+					}
+				}
+				add_ideas = extensive_conscription
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = civilian_economy
+						has_idea = low_economic_mobilisation
+					}
+				}
+				add_ideas = war_economy
+			}
+			add_ideas = USA_homeland_defense
+		}
+	}
+
+
+	USA_transfer_iceland = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+
+		}
+
+		complete_effect = {
+			ENG = { transfer_state = 100 }
+		}
+	}
+	
+	USA_transfer_greenland = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+
+		}
+
+		complete_effect = {
+			ENG = { transfer_state = 101 }
+		}
+	}
+
+	USA_establish_personal_communication_with_former_naval_person = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
 			has_country_flag = blood_toil_tears_sweat_speech
 			ENG = { has_defensive_war = yes }
 		}
+
 		cost = 50
 		fire_only_once = yes
-		visible = {has_war = no}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		visible = {
+			has_war = no
+		}
+
 		complete_effect = {
 			add_war_support = 0.05
 			add_opinion_modifier = { target = ENG modifier = USA_special_relationship }
@@ -28,38 +277,7 @@ USA_aid_britain = {
 		}
 
 		available = {
-			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
 			has_country_flag = fight_on_the_beaches_speech
-			ENG = { has_defensive_war = yes }
-		}
-
-		cost = 50
-		fire_only_once = yes
-		modifier = {
-			war_support_weekly = 0.002		
-		}
-
-		days_remove = 180
-
-		visible = {
-			has_war = no
-		}
-
-		complete_effect = {
-			add_war_support = 0.05
-		}
-	}
-
-	USA_emergency_arms_deliveries = {
-
-		icon = generic_prepare_civil_war
-
-		allowed = {
-			original_tag = USA
-		}
-
-		available = {
-			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
 			ENG = { has_defensive_war = yes }
 		}
 
@@ -78,21 +296,278 @@ USA_aid_britain = {
 		}
 
 		modifier = {
-			war_support_weekly = 0.005		
+			war_support_weekly = 0.002
 		}
 
-		days_remove = 30
+		days_remove = 180
 
 		visible = {
 			has_war = no
 		}
 
 		complete_effect = {
+			add_war_support = 0.05
+		}
+	}
+	
+	USA_convoy_shipment = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				convoy > 199
+			}
+		}
+
+		cost = 20
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		days_remove = 35
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			send_equipment = {
+				equipment = convoy
+				amount = 200
+				target = ENG 
+			}	
 			ENG = {
-				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 20000 producer = USA }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = USA }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
-				country_event = { id = wtt_britain.30 }
+				country_event = { id = gduevents.6 }
+			}
+		}
+	}
+
+	USA_emergency_arms_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				infantry_equipment_1 > 19999
+			}
+			has_equipment = {
+				artillery_equipment_1 > 499
+			}
+			has_equipment = {
+				support_equipment_1 > 499
+			}
+		}
+
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		days_remove = 35
+
+		visible = {
+			has_completed_focus = USA_indirect_help
+			has_war = no
+		}
+
+		complete_effect = {
+			send_equipment = {
+				equipment = infantry_equipment_1
+				amount = 20000
+				target = ENG 
+			}
+			send_equipment = {
+				equipment = artillery_equipment_1
+				amount = 500
+				target = ENG 
+			}
+			send_equipment = {
+				equipment = support_equipment_1
+				amount = 500
+				target = ENG 
+			}
+			ENG = {
+				country_event = { id = gduevents.7 }
+			}
+
+		}
+	}
+	
+	USA_emergency_fighter_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				fighter_equipment > 649
+			}
+		}
+
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+
+		days_remove = 35
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			air_experience = 100 
+			send_equipment = {
+				equipment = fighter_equipment 
+				amount = 650
+				target = ENG 
+			}	
+			ENG = {
+				country_event = { id = gduevents.8 }
+			}
+		}
+	}
+	
+	USA_emergency_CAS_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				CAS_equipment > 299
+			}
+		}
+
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		days_remove = 35
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			air_experience = 100 
+			send_equipment = {
+				equipment = CAS_equipment 
+				amount = 300
+				target = ENG 
+			}	
+			ENG = {
+				country_event = { id = gduevents.9 }
+			}
+		}
+	}
+	
+	USA_emergency_TACB_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				tac_bomber_equipment > 199
+			}
+		}
+
+		cost = 20
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		days_remove = 35
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			air_experience = 100 
+			send_equipment = {
+				equipment = tac_bomber_equipment 
+				amount = 200
+				target = ENG 
+			}	
+			ENG = {
+				country_event = { id = gduevents.10 }
 			}
 		}
 	}
@@ -106,8 +581,8 @@ USA_aid_britain = {
 		}
 
 		available = {
-			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
-			has_country_flag = mers_el_kebir_raid
+			#has_country_flag = mers_el_kebir_raid
+			has_completed_focus = USA_indirect_help
 			ENG = { has_defensive_war = yes }
 		}
 
@@ -122,10 +597,10 @@ USA_aid_britain = {
 		}
 
 		modifier = {
-			war_support_weekly = 0.001		
-			industrial_capacity_factory = 0.02
+			war_support_weekly = 0.001
+			industrial_capacity_factory = 0.04
 			industrial_capacity_dockyard = 0.02
-			consumer_goods_factor = -0.05
+			consumer_goods_factor = -0.02
 		}
 
 		days_remove = 360
@@ -133,85 +608,6 @@ USA_aid_britain = {
 		complete_effect = {
 		}
 	}
-	}
-USA_war_plans = {
-	USA_execute_war_plan_silver = {
-		icon = generic_operation
-		available = {
-			has_war_with = ITA
-		}
-		visible = {
-			USA={has_completed_focus = USA_war_plan_silver}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		targeted_modifier = {
-			tag = ITA
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
+}
 
-
-	}
-	
-	USA_execute_war_plan_orange = {
-		icon = generic_operation
-		available = {
-			has_war_with = JAP
-		}
-		visible = {
-			has_completed_focus = USA_war_plan_orange
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		modifier = {
-			amphibious_invasion = 0.125
-			invasion_preparation = -0.25
-		}
-		targeted_modifier = {
-			tag = JAP
-			attack_bonus_against = 0.125
-			defense_bonus_against = 0.125
-		}
-		targeted_modifier = {
-			tag = MAN
-			attack_bonus_against = 0.125
-			defense_bonus_against = 0.125
-		}
-		targeted_modifier = {
-			tag = MEN
-			attack_bonus_against = 0.125
-			defense_bonus_against = 0.125
-		}
-	}
-	
-	USA_execute_war_plan_black = {
-		icon = generic_operation
-		available = {
-			has_war_with = GER
-		}
-		visible = {
-			has_completed_focus = USA_war_plan_black
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		targeted_modifier = {
-			tag = GER
-			attack_bonus_against = 0.15
-			defense_bonus_against = 0.15
-		}
-	}
-	}
-	
-
-	
 

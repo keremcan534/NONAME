@@ -1,30 +1,38 @@
 ﻿capital = 266
+
 set_research_slots = 0
-set_convoys = 0
+# Starting tech
+
+give_resource_rights = { receiver = ENG state = 412 }
+give_resource_rights = { receiver = ENG state = 413 }
+give_resource_rights = { receiver = ENG state = 411 }
+add_ideas = {
+	iran_neutrality
+	free_trade
+}
+
+set_convoys = 10
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	neutrality = 100
+    democratic = 0
+    fascism = 0
+    communism = 0
+    neutrality = 100
 }
-recruit_character = PER_reza_shah_pahlavi
-recruit_character = PER_johannes_smith
-recruit_character = PER_johannes_wilson
-recruit_character = PER_lucas_wilson
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+create_country_leader = {
+	name = "Reza Shah Pahlavi"
+	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
+	picture = "Portrait_Iran_Reza_Shah_Pahlavi.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

@@ -4,13 +4,11 @@ state={
 
 	history={
 		owner = ENG
-		add_core_of = GAM
 		victory_points = {
 			4989 1 
 		}
 		buildings = {
 			infrastructure = 2
-			air_base = 2
 			4989 = {
 				naval_base = 1
 
@@ -21,11 +19,9 @@ state={
 	}
 
 	provinces={
-		4989 13213 
+		4989 763 
 	}
-	manpower=199520
+	manpower = 199520
 	buildings_max_level_factor=1.000
 	state_category=enclave
-
-	local_supplies=0.0 
 }

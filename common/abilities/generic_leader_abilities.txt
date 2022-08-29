@@ -1,4 +1,24 @@
-ability = {
+ability = {		  
+	force_attack = {
+		name = ABILITY_FORCE_ATTACK
+		desc = ABILITY_FORCE_ATTACK_DESC
+
+		sound_effect = command_power_ability_offensive
+
+		type = army_leader
+
+		ai_will_do = {
+			factor = -1
+		}
+
+		cost = 1000.0
+		duration = 168
+
+		one_time_effect = {
+
+		}
+	}
+	
 	last_stand = {
 		name = ABILITY_LAST_STAND
 		desc = ABILITY_LAST_STAND_DESC
@@ -7,89 +27,81 @@ ability = {
 		
 		type = army_leader
 		
-		allowed = {
-			is_leading_army_group = no
-			is_border_war = no
-		}
-		
-		cost = 0.22
+		cost = 1000
 		duration = 168
 		
 		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_defense = 0.2
-				combat_entrenchment = 0.25
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.7
-				war_support_reduction_on_damage = 0.2
-				cannot_retreat_while_defending = 1.0
-				
-				days = 7
-				tooltip = ABILITY_LAST_STAND_TOOLTIP
-			}
+
+		}
+		
+		ai_will_do = {
+			factor = -1
 		}
 	}
 	
-	staff_office_plan = {
-		name = ABILITY_STAFF_OFFICE_PLAN
-		desc = ABILITY_STAFF_OFFICE_PLAN_DESC
-		
-		sound_effect = command_power_ability_defensive
+	siege_artillery = {
+		name = ABILITY_SIEGE_ARTILLERY
+		desc = ABILITY_SIEGE_ARTILLERY_DESC
 		
 		type = army_leader
 		
-		allowed = {
-			is_border_war = no
+		unit_modifiers = {
+
 		}
-		
-		cost = 0.1
+		cost = 1000
 		duration = 168
 		
-		unit_modifiers = {
-			planning_speed = 5.0
+		
+		ai_will_do = {
+			factor = -1
 		}
 	}
-	
-	faster_naval_invasion_planning = {
-		name = ABILITY_FASTER_NAVAL_PLANNING
-		desc = ABILITY_FASTER_NAVAL_PLANNING_DESC
-		
+
+	glider_planes = {
+		name = ABILITY_GLIDER_PLANES_ARTILLERY
+		desc = ABILITY_GLIDER_PLANES_ARTILLERY_DESC
+
 		type = army_leader
-		
-		allowed = {
-			has_ability = faster_naval_invasion_planning
-			is_border_war = no
-		}
-		
+
 		unit_modifiers = {
-			naval_invasion_prep_speed = 0.5
+
 		}
-		
-		cost = 0.1
+
+		cost = 1000
 		duration = 168
 	}
+
+	probing_attack = {
+		name = ABILITY_PROBING_ATTACK
+		desc = ABILITY_PROBING_ATTACK_DESC
+
+		type = army_leader
+
+
+		unit_modifiers = {
+
+		}
+
+		cancelable = yes
+		cost = 1000
+		duration = -1
+	}
+
 	extra_suplies = {
 		name = ABILITY_EXTRA_SUPLIES
 		desc = ABILITY_EXTRA_SUPLIES_DESC
-		
+
 		type = army_leader
-		
-		allowed = {
-			has_ability = extra_suplies
-			is_border_war = no
-		}
-		
+
+
 		unit_modifiers = {
-			no_supply_grace = 168
 		}
-		
-		one_time_effect = {
-			supply_units = 168
-		}
-		
-		cost = 0.2
+
+		cost = 10000
 		duration = 168
-		cooldown = 1000
+		cooldown = 8760
 	}
-	
+
+
 }
+

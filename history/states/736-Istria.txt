@@ -3,19 +3,22 @@ state={
 	name="STATE_736"
 	
 	state_category = city
-resources={
-		steel=10 
-		chromium=36
 
+	resources={
+		steel=20
 	}
+
 	history={
 		victory_points = {
 			6626 1 
 		}
 		owner = ITA
 		add_core_of = ITA
+		add_core_of = YUG
 		buildings = {
-			infrastructure = 1
+			industrial_complex = 2
+			dockyard = 2			
+			infrastructure = 3
 			6626 = {
 				naval_base = 5
 
@@ -26,10 +29,8 @@ resources={
 	}
 
 	provinces={
-		599 6626 11595 11735 
+		599 6626 2850 2715 
 	}
-	manpower=1063159
+	manpower = 1063159
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
 }

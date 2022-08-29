@@ -5,28 +5,23 @@ state={
 	manpower = 152000
 
 	resources={
-		aluminium=54 # was: 104
+		aluminium=37
 	}	
 	
-	state_category = rural
+	state_category = town
 
 	history={
-		owner = ENG
-		victory_points = {
-			10906 1
-		}
+		owner = HOL
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			12828 = {
+			infrastructure = 3
+			industrial_complex = 2
+			1529 = {
 				naval_base = 1
 			}
 		}
 	}
 
 	provinces={
-		1928 10906 12828 
+		1928 4389 1529 
 	}
-
-	local_supplies=0.0 
 }

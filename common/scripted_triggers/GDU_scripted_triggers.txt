@@ -15,8 +15,9 @@ is_in_faction_with_allies = {
 		original_tag = CAN
 		original_tag = SAF
 		original_tag = RAJ
+		original_tag = NZL
 		original_tag = AST
-		original_tag = FRA
+		original_tag = FRF
 	}
 }
 
@@ -25,6 +26,7 @@ is_in_faction_with_axis = {
 		is_in_array = { GER.allies = THIS }
 		original_tag = EFR
 		original_tag = BUL
+		original_tag = FIN
 		original_tag = SPR
 		original_tag = GER
 		original_tag = ITA
@@ -37,6 +39,7 @@ is_in_faction_with_axis_except_vichy = {
 	OR = {
 		is_in_array = { GER.allies = THIS }
 		original_tag = BUL
+		original_tag = FIN
 		original_tag = SPR
 		original_tag = GER
 		original_tag = ITA
@@ -50,7 +53,7 @@ is_in_faction_with_axis_or_japan = {
 		is_in_array = { GER.allies = THIS }
 		is_in_array = { JAP.allies = THIS }
 		original_tag = BUL
-
+		original_tag = FIN
 		original_tag = SPR
 		original_tag = GER
 		original_tag = ITA
@@ -86,7 +89,7 @@ is_playable_country = {
 		is_in_array = { JAP.allies = THIS }
 		original_tag = SOV
 		original_tag = BUL
-
+		original_tag = FIN
 		original_tag = SPR
 		original_tag = GER
 		original_tag = ITA
@@ -99,7 +102,7 @@ is_playable_country = {
 		original_tag = RAJ
 		original_tag = NZL
 		original_tag = AST
-
+		original_tag = FRF
 		original_tag = FRA
 	}
 }

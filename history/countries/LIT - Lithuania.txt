@@ -1,6 +1,17 @@
 ﻿capital = 11
+
 set_research_slots = 0
-recruit_character = LIT_antanas_smetona
+
+add_ideas = {
+	limited_conscription
+	GDU_neutrality
+}
+
+add_opinion_modifier = { target = JAP modifier = embargo }
+add_opinion_modifier = { target = JAP modifier = sanctions }
+add_opinion_modifier = { target = JAP modifier = minor_sanctions }
+
+set_convoys = 25
 
 set_politics = {
 	ruling_party = neutrality
@@ -9,6 +20,19 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	democratic = 30
+	fascism = 15
+	communism = 15
+	neutrality = 40
 }
 
+create_country_leader = {
+	name = "Antanas Smetona"
+	desc = "POLITICS_ANTANAS_SMETONA_DESC"
+	picture = "GFX_Portrait_lithuania_antanas_smetona"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}

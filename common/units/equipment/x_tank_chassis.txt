@@ -207,6 +207,14 @@ equipments = {
 		archetype = light_tank_chassis
 		priority = 5
 		visual_level = 0
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+
 		#Misc Abilities
 		maximum_speed = 6
 		reliability = 0.8
@@ -222,7 +230,7 @@ equipments = {
 		ap_attack = 15
 		air_attack = 0
 
-		build_cost_ic = 6 #gw tanks are clunky
+		build_cost_ic = 7 #gw tanks are clunky
 		fuel_consumption = 1.0
 	}
 
@@ -233,7 +241,7 @@ equipments = {
 		parent = gw_tank_equipment
 		priority = 10
 		visual_level = 0
-		
+		is_convertable = yes
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -254,7 +262,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 10
 		
-		build_cost_ic = 7
+		build_cost_ic = 8
 		resources = {
 			#oil = 1
 			steel = 2
@@ -270,11 +278,11 @@ equipments = {
 		parent = light_tank_equipment_1
 		priority = 10
 		visual_level = 1
-		
+		is_convertable = yes
 
 		#Misc Abilities
 		maximum_speed = 12
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 36
@@ -285,8 +293,8 @@ equipments = {
 		hard_attack = 6
 		ap_attack = 30
 		air_attack = 0		
-		
-		build_cost_ic = 8
+		fuel_consumption = 2.4
+		build_cost_ic = 9
 		resources = {
 			#oil = 1
 			steel = 3
@@ -300,11 +308,11 @@ equipments = {
 		parent = light_tank_equipment_2
 		priority = 10
 		visual_level = 2
-		
+		is_convertable = yes
 
 		#Misc Abilities
 		maximum_speed = 14
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 46
@@ -315,8 +323,8 @@ equipments = {
 		hard_attack = 9
 		ap_attack = 50
 		air_attack = 0	
-		
-		build_cost_ic = 9
+		fuel_consumption = 2.4
+		build_cost_ic = 10 
 		resources = {
 			#oil = 2
 			steel = 4
@@ -330,9 +338,16 @@ equipments = {
 #		family = light_tank_equipment_1
 		priority = 20
 		visual_level = 0
-	
+		can_convert_from = { 
+			light_tank_equipment_1 
+		}
 
-		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -350,7 +365,7 @@ equipments = {
 		ap_attack = 4
 		air_attack = 0		
 		
-		build_cost_ic = 7
+		build_cost_ic = 8
 		resources = {
 			#oil = 1
 			steel = 2
@@ -367,11 +382,14 @@ equipments = {
 #		family = light_tank_equipment_2
 		priority = 20
 		visual_level = 1
-	
+		can_convert_from = { 
+			light_tank_equipment_1 
+			light_tank_equipment_2
+		}
 		
 		#Misc Abilities
 		maximum_speed = 12
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 2.5
@@ -380,8 +398,8 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 42
 		hard_attack = 1
-		
-		build_cost_ic = 8
+		fuel_consumption = 1.2
+		build_cost_ic = 9
 		resources = {
 			steel = 3
 			#oil = 1
@@ -397,11 +415,14 @@ equipments = {
 #		family = light_tank_equipment_3
 		priority = 20
 		visual_level = 2
-	
+		can_convert_from = { 
+			light_tank_equipment_2
+			light_tank_equipment_3
+		}
 		
 		#Misc Abilities
 		maximum_speed = 14
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 3.5
@@ -410,8 +431,8 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 46
 		hard_attack = 1.5
-		
-		build_cost_ic = 9
+		fuel_consumption = 1.2
+		build_cost_ic = 10
 		resources = {
 			steel = 4
 			#oil = 2
@@ -426,8 +447,15 @@ equipments = {
 #		family = light_tank_equipment_1
 		priority = 40
 		visual_level = 0
-		
-		
+		can_convert_from = { 
+			light_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_at_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -444,7 +472,7 @@ equipments = {
 		ap_attack = 50
 		air_attack = 0
 		
-		build_cost_ic = 7
+		build_cost_ic = 8
 		resources = {
 			#oil = 1
 			steel = 2
@@ -461,11 +489,14 @@ equipments = {
 #		family = light_tank_equipment_2
 		priority = 40
 		visual_level = 1
-		
+		can_convert_from = { 
+			light_tank_equipment_1 
+			light_tank_equipment_2
+		}
 		
 		#Misc Abilities
 		maximum_speed = 12
-
+		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 5
@@ -476,8 +507,8 @@ equipments = {
 		soft_attack = 6
 		hard_attack = 16
 		ap_attack = 77
-		
-		build_cost_ic = 8
+		fuel_consumption = 1.2
+		build_cost_ic = 9
 		resources = {
 			#oil = 1
 			steel = 3
@@ -493,11 +524,14 @@ equipments = {
 #		family = light_tank_equipment_3
 		priority = 40
 		visual_level = 2
-		
+		can_convert_from = { 
+			light_tank_equipment_2
+			light_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 14
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
@@ -507,8 +541,8 @@ equipments = {
 		soft_attack = 8
 		hard_attack = 24
 		ap_attack = 99
-		
-		build_cost_ic = 9
+		fuel_consumption = 1.2
+		build_cost_ic = 10
 		resources = {
 			#oil = 2
 			steel = 4
@@ -523,8 +557,15 @@ equipments = {
 #		family = light_tank_equipment_1
 		priority = 30
 		visual_level = 0
-	
-		
+		can_convert_from = { 
+			light_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_aa_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -541,7 +582,7 @@ equipments = {
 		ap_attack = 5
 		air_attack = 15
 		
-		build_cost_ic = 9
+		build_cost_ic = 10
 		resources = {
 			#oil = 1
 			steel = 2
@@ -557,11 +598,14 @@ equipments = {
 #		family = light_tank_equipment_2
 		priority = 30
 		visual_level = 1
-	
+		can_convert_from = { 
+			light_tank_equipment_1 
+			light_tank_equipment_2
+		}
 		
 		#Misc Abilities
 		maximum_speed = 12
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 2.5
 		breakthrough = 2.5
@@ -572,8 +616,8 @@ equipments = {
 		hard_attack = 1.5
 		ap_attack = 20
 		air_attack = 17	
-		
-		build_cost_ic = 10
+		fuel_consumption = 0.6
+		build_cost_ic = 11
 		resources = {
 			#oil = 1
 			steel = 3
@@ -582,12 +626,16 @@ equipments = {
 
 	light_tank_aa_equipment_3 = {
 		year = 1941
-
+		reliability = 0.8
 		archetype = light_tank_aa_chassis
 		parent = light_tank_aa_equipment_2
 #		family = light_tank_equipment_3
 		priority = 30
 		visual_level = 2
+		can_convert_from = { 
+			light_tank_equipment_2
+			light_tank_equipment_3
+		}
 		
 		#Misc Abilities
 		maximum_speed = 14
@@ -602,8 +650,8 @@ equipments = {
 		hard_attack = 4
 		ap_attack = 35
 		air_attack = 32
-		
-		build_cost_ic = 11
+		fuel_consumption = 0.6
+		build_cost_ic = 12
 		resources = {
 			#oil = 2
 			steel = 4
@@ -616,8 +664,13 @@ equipments = {
 		archetype = medium_tank_chassis
 		priority = 50
 		visual_level = 0
-		
-		
+		is_convertable = yes
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 8
 		reliability = 0.8
@@ -635,7 +688,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 11
+		lend_lease_cost = 12
 		
 		build_cost_ic = 12 
 		resources = {
@@ -655,11 +708,11 @@ equipments = {
 		parent = medium_tank_equipment_1
 		priority = 50
 		visual_level = 1
-		
+		is_convertable = yes
 						
 		#Misc Abilities
 		maximum_speed = 9
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 51
@@ -670,8 +723,8 @@ equipments = {
 		hard_attack = 19
 		ap_attack = 81
 		air_attack = 0
-
-		build_cost_ic = 12
+		fuel_consumption = 3.6
+		build_cost_ic = 13
 		resources = {
 			#oil = 1
 			tungsten = 2
@@ -687,11 +740,11 @@ equipments = {
 		parent = medium_tank_equipment_2
 		priority = 50
 		visual_level = 2
-		
+		is_convertable = yes
 		
 		#Misc Abilities
 		maximum_speed = 10
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 66
@@ -702,8 +755,8 @@ equipments = {
 		hard_attack = 24
 		ap_attack = 91
 		air_attack = 0
-		
-		build_cost_ic = 13
+		fuel_consumption = 3.6
+		build_cost_ic = 14
 		resources = {
 			#oil = 2
 			tungsten = 2
@@ -718,8 +771,15 @@ equipments = {
 #		family = medium_tank_equipment_1
 		priority = 60
 		visual_level = 0
-	
-		
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 8
 		reliability = 0.8
@@ -736,7 +796,7 @@ equipments = {
 		ap_attack = 5
 		air_attack = 0
 
-		build_cost_ic = 11
+		build_cost_ic = 12
 		
 		resources = {
 			#oil = 1
@@ -754,11 +814,14 @@ equipments = {
 #		family = medium_tank_equipment_2
 		priority = 60
 		visual_level = 1
-		
+		can_convert_from = { 
+			medium_tank_equipment_1 
+			medium_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 9
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 3
@@ -768,8 +831,8 @@ equipments = {
 		soft_attack = 50
 		hard_attack = 1.5
 		
-		build_cost_ic = 12
-		
+		build_cost_ic = 13
+		fuel_consumption = 1.8
 		resources = {
 			steel = 3
 			tungsten = 3
@@ -785,11 +848,14 @@ equipments = {
 #		family = medium_tank_equipment_3
 		priority = 60
 		visual_level = 2
-		
+		can_convert_from = { 
+			medium_tank_equipment_2
+			medium_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 10
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 4
@@ -799,8 +865,8 @@ equipments = {
 		soft_attack = 55
 		hard_attack = 2
 		
-		build_cost_ic = 13
-		
+		build_cost_ic = 14
+		fuel_consumption = 1.8
 		resources = {
 			steel = 4
 			tungsten = 3
@@ -815,8 +881,15 @@ equipments = {
 #		family = medium_tank_equipment_1
 		priority = 80
 		visual_level = 0
-	
-		
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_at_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 8
 		reliability = 0.8
@@ -833,7 +906,7 @@ equipments = {
 		ap_attack = 88
 		air_attack = 0
 		
-		build_cost_ic = 11
+		build_cost_ic = 12
 		
 		resources = {
 			#oil = 1
@@ -852,11 +925,14 @@ equipments = {
 #		family = medium_tank_equipment_2
 		priority = 80
 		visual_level = 1
-		
+		can_convert_from = { 
+			medium_tank_equipment_1 
+			medium_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 9
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 1.5
@@ -867,8 +943,8 @@ equipments = {
 		hard_attack = 26
 		ap_attack = 110
 		
-		build_cost_ic = 12
-		
+		build_cost_ic = 13
+		fuel_consumption = 1.8
 		resources = {
 			#oil = 1
 			tungsten = 4
@@ -885,11 +961,14 @@ equipments = {
 #		family = medium_tank_equipment_3
 		priority = 80
 		visual_level = 2
-	
+		can_convert_from = { 
+			medium_tank_equipment_2
+			medium_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 10
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
@@ -900,8 +979,8 @@ equipments = {
 		hard_attack = 32
 		ap_attack = 120
 		
-		build_cost_ic = 13
-		
+		build_cost_ic = 14
+		fuel_consumption = 1.8
 		resources = {
 			#oil = 2
 			tungsten = 4
@@ -916,8 +995,15 @@ equipments = {
 #		family = medium_tank_equipment_1
 		priority = 70
 		visual_level = 0
-		
-		
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_aa_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 8
 		reliability = 0.8
@@ -934,7 +1020,7 @@ equipments = {
 		ap_attack = 40
 		air_attack = 22
 
-		build_cost_ic = 11
+		build_cost_ic = 12
 		
 		resources = {
 			#oil = 1
@@ -952,11 +1038,14 @@ equipments = {
 #		family = medium_tank_equipment_2
 		priority = 70
 		visual_level = 1
-		
+		can_convert_from = { 
+			medium_tank_equipment_1 
+			medium_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 9
-		
+		reliability = 0.8		
 		#Defensive Abilities
 		defense = 3
 		breakthrough = 3
@@ -968,8 +1057,8 @@ equipments = {
 		ap_attack = 60
 		air_attack = 32
 		
-		build_cost_ic = 12
-		
+		build_cost_ic = 13
+		fuel_consumption = 0.9
 		resources = {
 			#oil = 1
 			tungsten = 2
@@ -985,11 +1074,14 @@ equipments = {
 #		family = medium_tank_equipment_3
 		priority = 70
 		visual_level = 2
-		
+		can_convert_from = { 
+			medium_tank_equipment_2
+			medium_tank_equipment_3
+		}
 		
 		#Misc Abilities
 		maximum_speed = 10
-		
+		reliability = 0.8		
 		#Defensive Abilities
 		defense = 3.5
 		breakthrough = 3.5
@@ -1001,8 +1093,8 @@ equipments = {
 		ap_attack = 70
 		air_attack = 43
 		
-		build_cost_ic = 13
-		
+		build_cost_ic = 14
+		fuel_consumption = 0.9
 		resources = {
 			#oil = 2
 			tungsten = 2
@@ -1017,7 +1109,7 @@ equipments = {
 		archetype = heavy_tank_chassis
 		priority = 90
 		visual_level = 0
-		
+		is_convertable = yes
 
 		#Misc Abilities
 		maximum_speed = 5
@@ -1038,7 +1130,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 23
+		build_cost_ic = 25 
 		resources = {
 			#oil = 1
 			steel = 3
@@ -1047,7 +1139,12 @@ equipments = {
 		
 		fuel_consumption = 4.4
 
-		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
 	}
 
 	# 1941
@@ -1058,11 +1155,11 @@ equipments = {
 		parent = heavy_tank_equipment_1
 		priority = 90
 		visual_level = 1
-		
+		is_convertable = yes
 		
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 52
@@ -1072,8 +1169,8 @@ equipments = {
 		soft_attack = 27
 		hard_attack = 30
 		ap_attack = 111
-		
-		build_cost_ic = 25
+		fuel_consumption = 4.4
+		build_cost_ic = 27 
 		resources = {
 #			oil = 1
 			steel = 3
@@ -1089,11 +1186,11 @@ equipments = {
 		parent = heavy_tank_equipment_2
 		priority = 90
 		visual_level = 2
-		
+		is_convertable = yes
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 67
@@ -1103,8 +1200,8 @@ equipments = {
 		soft_attack = 35
 		hard_attack = 40
 		ap_attack = 131
-		
-		build_cost_ic = 28
+		fuel_consumption = 4.4
+		build_cost_ic = 30
 		resources = {
 			#oil = 1
 			steel = 4
@@ -1117,14 +1214,21 @@ equipments = {
 
 		archetype = heavy_tank_artillery_chassis
 		family = heavy_tank_equipment_1
-		
+		can_convert_from = { 
+			heavy_tank_equipment_1 
+		}
 		priority = 100
 		visual_level = 0
 
 		#Misc Abilities
 		maximum_speed = 5
 		reliability = 0.8
-		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 2
@@ -1137,7 +1241,7 @@ equipments = {
 		ap_attack = 8
 		air_attack = 0
 		
-		build_cost_ic = 23
+		build_cost_ic = 25
 		resources = {
 			#oil = 1
 			steel = 3
@@ -1152,13 +1256,16 @@ equipments = {
 		archetype = heavy_tank_artillery_chassis
 		parent = heavy_tank_artillery_equipment_1
 		family = heavy_tank_equipment_2
-		
+		can_convert_from = { 
+			heavy_tank_equipment_1 
+			heavy_tank_equipment_2
+		}
 		priority = 100
 		visual_level = 1
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 3
@@ -1167,8 +1274,8 @@ equipments = {
 		#Offensive Abilities 
 		soft_attack = 74
 		hard_attack = 2
-		
-		build_cost_ic = 25
+		fuel_consumption = 2.2
+		build_cost_ic = 27
 		resources = {
 			#oil = 1
 			steel = 4
@@ -1182,13 +1289,16 @@ equipments = {
 		archetype = heavy_tank_artillery_chassis
 		parent = heavy_tank_artillery_equipment_2
 		family = heavy_tank_equipment_3
-		
+		can_convert_from = { 
+			heavy_tank_equipment_2
+			heavy_tank_equipment_3
+		}
 		priority = 100
 		visual_level = 2
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 3.5
@@ -1197,8 +1307,8 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 80
 		hard_attack = 2.5
-		
-		build_cost_ic = 28
+		fuel_consumption = 2.2
+		build_cost_ic = 30
 		resources = {
 			#oil = 1
 			steel = 5
@@ -1210,10 +1320,17 @@ equipments = {
 
 		archetype = heavy_tank_destroyer_chassis
 		family = heavy_tank_equipment_1
-		
+		can_convert_from = { 
+			heavy_tank_equipment_1 
+		}
 		priority = 120
 		visual_level = 0
-	
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_at_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 5
 		reliability = 0.8
@@ -1230,7 +1347,7 @@ equipments = {
 		ap_attack = 96
 		air_attack = 0
 		
-		build_cost_ic = 23
+		build_cost_ic = 25
 		resources = {
 			#oil = 1
 			steel = 3
@@ -1245,13 +1362,16 @@ equipments = {
 		archetype = heavy_tank_destroyer_chassis
 		parent = heavy_tank_destroyer_equipment_1
 		family = heavy_tank_equipment_2
-		
+		can_convert_from = { 
+			heavy_tank_equipment_1
+			heavy_tank_equipment_2
+		}
 		priority = 120
 		visual_level = 1
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 1.5
@@ -1262,8 +1382,8 @@ equipments = {
 		hard_attack = 42
 		ap_attack = 140
 		air_attack = 0
-		
-		build_cost_ic = 25
+		fuel_consumption = 2.2
+		build_cost_ic = 27
 		resources = {
 			#oil = 1
 			steel = 4
@@ -1277,13 +1397,16 @@ equipments = {
 		archetype = heavy_tank_destroyer_chassis
 		parent = heavy_tank_destroyer_equipment_2
 		family = heavy_tank_equipment_3
-		
+		can_convert_from = { 
+			heavy_tank_equipment_2
+			heavy_tank_equipment_3
+		}
 		priority = 120
 		visual_level = 2
 		
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
@@ -1294,8 +1417,8 @@ equipments = {
 		hard_attack = 60
 		ap_attack = 160
 		air_attack = 0
-		
-		build_cost_ic = 28
+		fuel_consumption = 2.2
+		build_cost_ic = 30
 		resources = {
 			#oil = 2
 			steel = 4
@@ -1308,10 +1431,17 @@ equipments = {
 
 		archetype = heavy_tank_aa_chassis
 		family = heavy_tank_equipment_1
-		
+		can_convert_from = { 
+			heavy_tank_equipment_1
+		}
 		priority = 110
 		visual_level = 0
-		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_aa_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 5
 		reliability = 0.8
@@ -1328,7 +1458,7 @@ equipments = {
 		ap_attack = 25
 		air_attack = 17
 		
-		build_cost_ic = 23
+		build_cost_ic = 25
 		resources = {
 			#oil = 1
 			steel = 3
@@ -1343,13 +1473,16 @@ equipments = {
 		archetype = heavy_tank_aa_chassis
 		parent = heavy_tank_aa_equipment_1
 		family = heavy_tank_equipment_2
-		
+		can_convert_from = { 
+			heavy_tank_equipment_1
+			heavy_tank_equipment_2
+		}
 		priority = 110
 		visual_level = 1
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 3
 		breakthrough = 3
@@ -1360,8 +1493,8 @@ equipments = {
 		hard_attack = 4.5
 		ap_attack = 60
 		air_attack = 33
-		
-		build_cost_ic = 25
+		fuel_consumption = 1.1
+		build_cost_ic = 27
 		resources = {
 			#oil = 1
 			steel = 3
@@ -1375,7 +1508,10 @@ equipments = {
 		archetype = heavy_tank_aa_chassis
 		parent = heavy_tank_aa_equipment_2
 		family = heavy_tank_equipment_3
-		
+		can_convert_from = { 
+			heavy_tank_equipment_2
+			heavy_tank_equipment_3
+		}
 		priority = 110
 		visual_level = 2
 		
@@ -1394,8 +1530,8 @@ equipments = {
 		hard_attack = 6
 		ap_attack = 88
 		air_attack = 44
-		
-		build_cost_ic = 28
+		fuel_consumption = 1.1
+		build_cost_ic = 30
 		resources = {
 			#oil = 1
 			steel = 4
@@ -1410,7 +1546,7 @@ equipments = {
 		archetype = modern_tank_chassis
 		priority = 170
 		visual_level = 0
-		
+		is_convertable = yes
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -1430,7 +1566,12 @@ equipments = {
 
 		#Space taken in convoy
 		lend_lease_cost = 14
-		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
 		build_cost_ic = 28
 		resources = {
 			#oil = 1
@@ -1447,8 +1588,15 @@ equipments = {
 		archetype = modern_tank_artillery_chassis
 		priority = 180
 		visual_level = 0
-		
-		
+		can_convert_from = { 
+			modern_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -1481,8 +1629,15 @@ equipments = {
 		archetype = modern_tank_destroyer_chassis
 		priority = 200
 		visual_level = 0
-	
-	
+		can_convert_from = { 
+			modern_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_at_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -1516,8 +1671,15 @@ equipments = {
 		archetype = modern_tank_aa_chassis
 		priority = 190
 		visual_level = 0
-		
-		
+		can_convert_from = { 
+			modern_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_aa_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 10
 		reliability = 0.8
@@ -1550,7 +1712,7 @@ equipments = {
 		archetype = super_heavy_tank_chassis
 		priority = 130
 		visual_level = 0
-		
+		is_convertable = yes
 
 		#Misc Abilities
 		maximum_speed = 4
@@ -1570,7 +1732,12 @@ equipments = {
 
 		#Space taken in convoy
 		lend_lease_cost = 15
-		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
 		build_cost_ic = 100
 		resources = {
 			#oil = 2
@@ -1587,8 +1754,15 @@ equipments = {
 		archetype = super_heavy_tank_artillery_chassis
 		priority = 140
 		visual_level = 0
-	
-	
+		can_convert_from = { 
+			super_heavy_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 4
 		reliability = 0.8
@@ -1620,8 +1794,15 @@ equipments = {
 		archetype = super_heavy_tank_destroyer_chassis
 		priority = 160
 		visual_level = 0
-		
-	
+		can_convert_from = { 
+			super_heavy_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_at_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 4
 		reliability = 0.8
@@ -1653,8 +1834,15 @@ equipments = {
 		archetype = super_heavy_tank_aa_chassis
 		priority = 150
 		visual_level = 0
-		
-	
+		can_convert_from = { 
+			super_heavy_tank_equipment_1 
+		}
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_aa_upgrade
+		}
 		#Misc Abilities
 		maximum_speed = 4
 		reliability = 0.8
@@ -1686,10 +1874,17 @@ equipments = {
 		archetype = amphibious_tank_chassis
 		priority = 10
 		visual_level = 0
-		
-	
+		is_convertable = yes
+		can_convert_from = { 
+			light_tank_equipment_2
+		}
 
-	
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
 
 		#Misc Abilities
 		maximum_speed = 7
@@ -1725,9 +1920,14 @@ equipments = {
 		parent = amphibious_tank_equipment_1
 		priority = 10
 		visual_level = 1
+		is_convertable = yes
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
+
 		#Misc Abilities
 		maximum_speed = 8
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 36
@@ -1739,7 +1939,7 @@ equipments = {
 		hard_attack = 14
 		ap_attack = 61
 		air_attack = 0	
-		
+		fuel_consumption = 4
 		build_cost_ic = 13
 		resources = {
 			steel = 2

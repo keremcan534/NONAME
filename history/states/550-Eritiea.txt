@@ -9,21 +9,18 @@ state=
 	history=
 	{
 		owner = ITA
-		add_core_of = ERI
 		victory_points = {
-			12766 1
+			1682 1
 		}
 		buildings = {
 			infrastructure = 2
-			air_base = 4
-			12766 = {
+			air_base = 3
+			1682 = {
 				naval_base = 3
 			}
 		}
 	}
 	provinces={
-		5017 5047 5091 8043 12723 12766
+		5017 5047 5091 7813 1729 1682
 	}
-
-	local_supplies=0.0 
 }

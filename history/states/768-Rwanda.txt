@@ -6,9 +6,8 @@ state={
 
 	history={
 		owner = BEL
-		add_core_of = RWA
 		victory_points = {
-			9962 1
+			5598 1
 		}
 		buildings = {
 			infrastructure = 1
@@ -17,10 +16,8 @@ state={
 	}
 
 	provinces={
-		9962
+		5598
 	}
 	manpower=1716564
 	buildings_max_level_factor=1.000
-
-	local_supplies=1.0 
 }

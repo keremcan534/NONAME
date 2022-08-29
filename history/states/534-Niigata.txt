@@ -4,7 +4,7 @@ state={
 	name="STATE_534" # Hokuriku
 	manpower = 1933000
 	
-	state_category = large_city
+	state_category = city
 
 	history={
 		owner = JAP
@@ -12,7 +12,6 @@ state={
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
-			industrial_complex = 5
 			fuel_silo = 1
 		}
 		
@@ -24,8 +23,6 @@ state={
 	}
 
 	provinces={
-		1117 9952 10128 11930 11989 12007 
+		1117 5603 5447 2610 2566 2546 
 	}
-
-	local_supplies=0.0 
 }

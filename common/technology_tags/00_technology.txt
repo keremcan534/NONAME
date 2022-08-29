@@ -81,10 +81,12 @@ technology_categories = {
 	logistics_tech
 	signal_company_tech
 	maintenance_company_tech
+	naval_mines
 	concentrated_industry_category
 	dispersed_industry_category
 	asw_tech
-	
+	naval_minesweeping
+	naval_minelaying
 	cat_scout_plane
 	train_tech
 	cat_production

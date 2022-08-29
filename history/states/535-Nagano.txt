@@ -6,8 +6,8 @@ state={
 	state_category = large_city
 	
 	resources={
-		steel=27 # was: 35
-		tungsten=8 # was: 10
+		steel=38
+		tungsten=10
 	}
 
 	history={
@@ -15,23 +15,20 @@ state={
 		add_core_of = JAP
 		buildings = {
 		
-			arms_factory = 2
-			industrial_complex = 4
-			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 3
 			dockyard = 1
-			fuel_silo = 1
 
 		}
 		
 		victory_points = {
-			10032 15
+			5524 15
 		}
 
 	}
 
 	provinces={
-		998 7102 7217 10015 10032 
+		998 7102 7217 5543 5524 
 	}
-
-	local_supplies=0.0 
 }

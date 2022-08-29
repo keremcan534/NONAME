@@ -24,8 +24,8 @@ sub_units = {
 		combat_width = 0
 	
 		#Size Definitions
-		max_strength = 15
-		max_organisation = 45
+		max_strength = 2
+		max_organisation = 20
 		default_morale = 0.3
 		manpower = 500
 		training_time = 120
@@ -36,8 +36,8 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Important Ability
-		casualty_trickleback = 0.25
-		experience_loss_factor = -0.20
+		casualty_trickleback = 0.20
+		experience_loss_factor = -0.10
 
 		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
 
@@ -48,7 +48,7 @@ sub_units = {
 		
 		need = {
 			support_equipment = 30
-			motorized_equipment = 10
+			motorized_equipment = 20
 		}
 	}
 }

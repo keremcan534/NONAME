@@ -10,10 +10,6 @@
 
 opinion_modifiers = {
 
-	chinese_united_front = {
-	value = 200
-	}
-
 	falangist_veterans_opinion = {
 		value = 50
 	}

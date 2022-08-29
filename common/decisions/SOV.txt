@@ -165,6 +165,87 @@ GDU_automatic_unit_deployment = {
 			}
 		}
 	}
+<<<<<<< Updated upstream
+=======
+
+	SOV_fund_iranian_islamist = {
+
+		icon = generic_ignite_civil_war
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			has_defensive_war = yes
+			229={
+				OR= {
+					is_controlled_by = ITA
+					is_controlled_by = ROM
+					is_controlled_by = HUN
+					is_controlled_by = BUL
+					is_controlled_by = GER
+					is_controlled_by = SPR
+					is_controlled_by = JAP
+				}
+			}
+		}
+
+
+		cost = 0
+
+		fire_only_once = yes
+
+		allowed = { original_tag = SOV }
+
+		complete_effect = {
+
+			add_timed_idea = { idea = soviet_fund_iranian_islamist days = 45 }
+			420 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+			417 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+			421 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+			413 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+			411 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+            412 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+			419 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+	    }
+	}
+>>>>>>> Stashed changes
 }
 
 

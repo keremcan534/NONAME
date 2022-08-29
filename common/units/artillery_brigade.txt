@@ -25,15 +25,15 @@ sub_units = {
 
 		manpower = 500
 		need = {
-			artillery_equipment = 40
+			artillery_equipment = 36
 		}
 		
-		max_strength = 2
+		max_strength = 0.6
 		max_organisation = 0
 		default_morale = 0.1
-		training_time = 60
-		weight = 0.2
-		supply_consumption = 0.11
+		training_time = 120
+		weight = 0.5
+		supply_consumption = 0.21
 
 		#Line artillery bonuses
 		# soft_attack = 0.25
@@ -52,8 +52,7 @@ sub_units = {
 		}
 
 		jungle = {
-			attack = -0.3
-			defence = -0.2
+			attack = -0.25
 			movement = -0.2
 		}
 
@@ -100,19 +99,22 @@ sub_units = {
 		combat_width = 3
 		transport = motorized_equipment
 		manpower = 500
+
+		essential = {
+			motorized_equipment
+		}
+
 		need = {
-			artillery_equipment = 40
-			motorized_equipment = 40
+			artillery_equipment = 36
+			motorized_equipment = 36
 		}
 		
-		soft_attack = 0.1
-		max_strength = 3
+		max_strength = 0.6
 		max_organisation = 0
 		default_morale = 0.1
-		training_time = 60
+		training_time = 120
 		weight = 0.5
-		supply_consumption = 0.14
-		breakthrough = 0.2
+		supply_consumption = 0.25
 		
 		forest = {
 			attack = -0.2
@@ -125,13 +127,10 @@ sub_units = {
 
 		mountain = {
 			movement = -0.2
-			attack = -0.2 
-			defence = -0.3
 		}
 
 		jungle = {
-			attack = -0.3
-			defence = -0.2
+			attack = -0.25
 			movement = -0.5
 		}
 
@@ -184,11 +183,11 @@ sub_units = {
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 2
-		training_time = 60
+		max_strength = 0.6
+		training_time = 120
 		weight = 0.5
 
-		supply_consumption = 0.11
+		supply_consumption = 0.22
 		
 		forest = {
 			attack = -0.2
@@ -204,8 +203,7 @@ sub_units = {
 		}
 
 		jungle = {
-			attack = -0.3
-			defence = -0.2
+			attack = -0.25
 			movement = -0.2
 		}
 
@@ -253,17 +251,17 @@ sub_units = {
 		transport = motorized_equipment
 		need = {
 			rocket_artillery_equipment = 36
-			motorized_equipment = 35
+			motorized_equipment = 36
 		}
 		
-		soft_attack = 0.1
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 6
-		training_time = 60
+		max_strength = 0.6
+		training_time = 120
 		weight = 0.5
-		supply_consumption = 0.15
+
+		supply_consumption = 0.25
 		
 		forest = {
 			attack = -0.2
@@ -276,13 +274,10 @@ sub_units = {
 
 		mountain = {
 			movement = -0.2
-			attack = -0.2 
-			defence = -0.3
 		}
 
 		jungle = {
-			attack = -0.3
-			defence = -0.2
+			attack = -0.25
 			movement = -0.5
 		}
 
@@ -337,7 +332,7 @@ sub_units = {
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 2
+		max_strength = 0.6
 		training_time = 120
 		weight = 0.5
 
@@ -355,13 +350,10 @@ sub_units = {
 
 		mountain = {
 			movement = -0.2
-						attack = -0.2 
-			defence = -0.3
 		}
 
 		jungle = {
-			attack = -0.3
-			defence = -0.2
+			attack = -0.25
 			movement = -0.5
 		}
 

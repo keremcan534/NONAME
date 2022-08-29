@@ -3,14 +3,13 @@ state={
 	name="STATE_738"
 
 	history={
-		owner = HOL
-		add_core_of = HOL
+		owner = INS
+		add_core_of = INS
 		buildings = {
 			infrastructure = 1
-			air_base = 10
+
 			4579 = {
 				naval_base = 1
-				
 
 			}
 
@@ -25,6 +24,4 @@ state={
 	manpower=36146
 	buildings_max_level_factor=1	
 	state_category="small_island"
-
-	local_supplies=0.0 
 }

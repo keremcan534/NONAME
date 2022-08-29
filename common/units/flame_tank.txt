@@ -6,7 +6,6 @@ sub_units = {
 		priority = 0
 		ai_priority = 0
 		active = no
-		affects_speed = no
 
 		type = {
 			armor
@@ -26,11 +25,11 @@ sub_units = {
 
 		combat_width = 0
 
-		#Size Definition
-		max_strength = 4
+		#Size Definitions
+		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 500
+		manpower = 300
 		training_time = 120
 
 		#Misc Abilities
@@ -38,19 +37,20 @@ sub_units = {
 		supply_consumption = 0.02
 		can_be_parachuted = yes
 
-		soft_attack = -0.5
-		hard_attack = -0.5
-		defense = -0.5
+		soft_attack = -0.75
+		hard_attack = -0.75
+		defense = -0.75
+		breakthrough = -0.75
 
 		# Support nerfs to combat abilities
-		armor_value = -1
+		armor_value = -0.75
 
 		need = {
-			light_tank_flame_chassis = 26
+			light_tank_flame_chassis = 15
 		}
 
 		forest = {
-			attack = 0.15
+			attack = 0.05
 		}
 		mountain = {
 			attack = 0.05
@@ -68,14 +68,14 @@ sub_units = {
 			attack = 0.1
 		}
 		fort = {
-			attack = 0.25
+			attack = 0.1
 			movement = 0.1
 		}
 		river = {
 			attack = 0.1
 		}
 		amphibious = {
-			attack = 0.25
+			attack = 0.1
 		}
 
 		same_support_type = flame
@@ -88,7 +88,6 @@ sub_units = {
 		priority = 0
 		ai_priority = 0
 		active = no
-		affects_speed = no
 
 		type = {
 			armor
@@ -109,10 +108,10 @@ sub_units = {
 		combat_width = 0
 
 		#Size Definitions
-		max_strength = 4
+		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 500
+		manpower = 300
 		training_time = 120
 
 		#Misc Abilities
@@ -120,18 +119,20 @@ sub_units = {
 		supply_consumption = 0.025
 		can_be_parachuted = yes
 
-		soft_attack = -0.5
-		hard_attack = -0.5
-		defense = -0.5
+		soft_attack = -0.7
+		hard_attack = -0.7
+		defense = -0.7
+		breakthrough = -0.7
 
 		# Support nerfs to combat abilities
-		armor_value = -1
+		armor_value = -0.7
+
 		need = {
-			medium_tank_flame_chassis = 26
+			medium_tank_flame_chassis = 15
 		}
 
 		forest = {
-			attack = 0.15
+			attack = 0.1
 		}
 		mountain = {
 			attack = 0.05
@@ -140,23 +141,23 @@ sub_units = {
 			attack = 0.05
 		}
 		jungle = {
-			attack = 0.1
+			attack = 0.15
 		}
 		marsh = {
 			attack = 0.05
 		}
 		urban = {
-			attack = 0.1
+			attack = 0.15
 		}
 		fort = {
-			attack = 0.25
+			attack = 0.2
 			movement = 0.1
 		}
 		river = {
 			attack = 0.1
 		}
 		amphibious = {
-			attack = 0.25
+			attack = 0.1
 		}
 
 		same_support_type = flame
@@ -169,7 +170,6 @@ sub_units = {
 		priority = 0
 		ai_priority = 0
 		active = no
-		affects_speed = no
 
 		type = {
 			armor
@@ -190,10 +190,10 @@ sub_units = {
 		combat_width = 0
 
 		#Size Definitions
-		max_strength = 4
+		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 500
+		manpower = 300
 		training_time = 120
 
 		#Misc Abilities
@@ -201,22 +201,20 @@ sub_units = {
 		supply_consumption = 0.03
 		can_be_parachuted = yes
 
-		soft_attack = -0.5
-		hard_attack = -0.5
-		defense = -0.5
+		soft_attack = -0.625
+		hard_attack = -0.625
+		defense = -0.625
+		breakthrough = -0.625
 
 		# Support nerfs to combat abilities
-		armor_value = -1
+		armor_value = -0.625
 
 		need = {
-			heavy_tank_flame_chassis = 26
+			heavy_tank_flame_chassis = 15
 		}
 
 		forest = {
-			attack = 0.15
-		}
-		mountain = {
-			attack = 0.05
+			attack = 0.1
 		}
 		hills = {
 			attack = 0.05
@@ -235,10 +233,10 @@ sub_units = {
 			movement = 0.1
 		}
 		river = {
-			attack = 0.1
+			attack = 0.05
 		}
 		amphibious = {
-			attack = 0.25
+			attack = 0.05
 		}
 
 		same_support_type = flame

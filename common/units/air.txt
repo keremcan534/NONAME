@@ -17,7 +17,14 @@ sub_units = {
 		categories = { category_scout_plane }
 	}
 
-
+	cv_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { cv_fighter_equipment = 1 }
+		categories = { category_fighter }
+	}
 	
 	heavy_fighter = {
 		sprite = medium_plane
@@ -47,7 +54,14 @@ sub_units = {
 		categories = { category_cas }
 	}
 
-
+	cv_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = { cas }
+		need = { cv_CAS_equipment = 1 }
+		categories = { category_cas }
+	}
 	
 	
 	nav_bomber = {
@@ -59,7 +73,14 @@ sub_units = {
 		categories = { category_nav_bomber }
 	}
 
-
+	cv_nav_bomber = {
+		sprite = light_plane
+		priority = 3
+		active = yes
+		type = { naval_bomber }
+		need = { cv_nav_bomber_equipment = 1 }
+		categories = { category_nav_bomber }
+	}
 	
 	
 	tac_bomber = {
@@ -89,6 +110,17 @@ sub_units = {
 		need = { strat_bomber_equipment = 1 }
 		categories = { category_strat_bomber }
 	}
+
+	jet_strat_bomber = {
+		sprite = heavy_plane
+		priority = 5
+		active = yes
+		type = { strategic_bomber }
+		need = { jet_strat_bomber_equipment = 1 }
+		categories = { category_strat_bomber }
+	}
+	
+	
 	transport_plane = {
 		sprite = heavy_plane
 		priority = 6

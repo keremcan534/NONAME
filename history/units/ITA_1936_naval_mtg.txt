@@ -4,39 +4,10 @@ units= {
 	### ITALY ###
 	fleet = {
 		name = "Comando Navale Ionio e Basso Adriatico"			
-		naval_base = 11837 # Taranto, Italy
-		task_force = { 
-			name = "Hochseeflotte"
-			location = 11837 # Taranto, Italy
-				ship = { name = "Admiral Scheer" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CA1" } } }
-				ship = { name = "Graf Spee" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CA1" } } }
-				ship = { name = "Admiral Hipper" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CA1" } } }
-				ship = { name = "Nürnberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CL1" } } } 		
-				ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CL1" } } } 	
-				ship = { name = "Königsberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CL1" } } } 			
-				ship = { name = "Karlsruhe" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CL1" } } } 	
-				ship = { name = "Köln" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CL1" } } } 			
-				ship = { name = "Emden" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CL1" } } } 	
-				ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Leopard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Luchs" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Tiger" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Schleswig-Holstein" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "BB1"  } } } 
-				ship = { name = "Schlesien" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "BB1"  } } } 	
-				ship = { name = "Möwe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Albatros" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Seeadler" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Greif" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Falke" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Kondor" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Wolf" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Iltis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Torp DD1" } } }
-				ship = { name = "Brummer" definition = light_cruiser equipment ={ ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CL1" } } } 			
-				ship = { name = "Bremse" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "CL1" } } } 	
-			}
+		naval_base = 2663 # Taranto, Italy
 		task_force = { 
 			name = "I Squadra Navale" # Dipartimento Militare Marittimo 'Ionio e Basso Adriatico' / I Squadra
-			location = 11837 # Taranto, Italy
+			location = 2663 # Taranto, Italy
 			
 			# V Divisione Corazzate
 			ship = { name = "RN Caio Duilio" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "BB1"  } } } 

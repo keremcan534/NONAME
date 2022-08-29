@@ -3,26 +3,23 @@ state={
 	id=115
 	name="STATE_115"
 	manpower = 3836571
-	resources={
-
-		tungsten=130
-		steel=70
-	}
+	
 	state_category = city
 	history={
 		owner = ITA
 		victory_points = {
-			10074 20 
+			5490 20 
 		}
 		victory_points = {
 			4159 10 
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 1
 			air_base = 10
-			dockyard = 5
-			10074 = {
+			dockyard = 1
+fuel_silo = 1
+			5490 = {
 				naval_base = 2
 			}
 			7059 = {
@@ -39,8 +36,6 @@ state={
 	}
 
 	provinces={
-		1009 1156 3857 4014 4159 7059 7147 10074 12047 
+		1009 1156 3857 4014 4159 7059 7147 5490 2518 
 	}
-
-	local_supplies=0.0 
 }

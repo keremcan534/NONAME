@@ -7,6 +7,7 @@ sub_units = {
 		ai_priority = 0
 		active = no
 		affects_speed = no
+
 		type = {
 			infantry
 			support
@@ -23,8 +24,8 @@ sub_units = {
 		combat_width = 0
 	
 		#Size Definitions
-		max_strength = 2
-		max_organisation = 40
+		max_strength = 1
+		max_organisation = 20
 		default_morale = 0.3
 		manpower = 500
 		training_time = 120

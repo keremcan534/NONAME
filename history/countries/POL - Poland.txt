@@ -1,8 +1,32 @@
 ﻿capital = 10
-oob = "POL_1936"
+
 set_research_slots = 0
-set_stability = 0
+# Starting tech
+
+add_opinion_modifier = { target = JAP modifier = embargo }
+add_opinion_modifier = { target = JAP modifier = sanctions }
+add_opinion_modifier = { target = JAP modifier = minor_sanctions }
+
+add_ideas = GDU_neutrality
+add_ideas = GDU_price_of_playable_poland
+
 set_convoys = 0
+
+add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 5034
+         producer = GER
+}  
+add_equipment_to_stockpile = {
+         type = support_equipment
+         amount = 606
+         producer = GER
+} 
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 71483
+         producer = GER
+}	
 
 set_politics = {
 	ruling_party = neutrality
@@ -11,64 +35,16 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 0
-	fascism = 0
-	communism = 0
-	neutrality = 100
+	democratic = 18
+	fascism = 15
+	communism = 2
+	neutrality = 65
 }
-recruit_character = POL_ignacy_moscicki
-recruit_character = POL_wladyslaw_sikorski
-recruit_character = POL_boleslaw_wieniawa_glugoszowski
-recruit_character = POL_wladyslaw_gomulka
-recruit_character = POL_maria_koszutska
-recruit_character = POL_stanislaw_mikolajczyk
-recruit_character = POL_wincenty_witos
-recruit_character = POL_wladyslaw_raczkiewicz
-recruit_character = POL_boleslaw_piasecki
-recruit_character = POL_edward_rydzsmigly
-recruit_character = POL_wincenty_kowalski
-recruit_character = POL_jozef_unrug
-recruit_character = POL_xawery_czernicki
-recruit_character = POL_ludomil_rayski
-recruit_character = POL_roman_abraham
-recruit_character = POL_stanislav_maczek
-recruit_character = POL_kazimierz_switalski
-recruit_character = POL_tomislaw_lupaszko
-recruit_character = POL_zygmunt_buhusz_szysko
-recruit_character = POL_witold_pilecki
-recruit_character = POL_irena_anders
-recruit_character = POL_jozef_beck
-recruit_character = POL_jan_kowalewski
-recruit_character = POL_eugeniusz_kwiatkowiski
-recruit_character = POL_marian_rejewski
-recruit_character = POL_wojtek
-recruit_character = POL_harold_farncomb
-recruit_character = POL_victor_crutchley
-recruit_character = POL_władysław_bortnowski
-recruit_character = POL_jayanto_nath_chaudhuri
-recruit_character = POL_jan_smuts
-recruit_character = POL_charles_foulkes
-recruit_character = POL_robert_row
-recruit_character = POL_frank_messervy
-recruit_character = POL_horace_robertson
-recruit_character = POL_leslie_morshead
-recruit_character = POL_thomas_blamey
-recruit_character = POL_bert_hoffmeister
-recruit_character = POL_noel_beresfordpeirse
-recruit_character = POL_george_edwin_brink
-recruit_character = POL_henry_wynter
-recruit_character = POL_kodandera_subayya_thimayya
-recruit_character = POL_william_stevens
-recruit_character = POL_kodandera_madappa_cariappa
-recruit_character = POL_władysław_anders
-recruit_character = POL_orde_wingate
-recruit_character = POL_bernard_freyberg
-recruit_character = POL_douglas_gracey
-recruit_character = POL_stanisław_kopański
-recruit_character = POL_john_northcott
-recruit_character = POL_iven_mackay
-recruit_character = POL_alan_vasey
-recruit_character = POL_stanislaw_wojciechowski
-recruit_character = POL_joachim_stefan_bartoszewicz
-recruit_character = POL_wanda_wasilewska
-recruit_character = POL_jerzy_rutkowski
+
+create_country_leader = {
+	name = "Władysław Sikorski"
+	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+}

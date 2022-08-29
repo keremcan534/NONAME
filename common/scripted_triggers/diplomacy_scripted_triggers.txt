@@ -1,32 +1,137 @@
-DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {	
-		NOT = {FROM = { original_tag = SOV } }
-		NOT = {FROM = { original_tag = JAP } }
+#	Triggers to control if diplomatic actions are enabled:
+#		Format:
+#
+#		<diplomatic action tag>_enabled_trigger = {
+#			<trigger contents>
+#		}
+#
+#		ROOT is the country initiating the diplomatic action.
+#		FROM is the recipient or target of the diplomatic action.
+#
+#		Note:  For cleaner tooltips, it is recommended that you use
+#			if triggers within the enable triggers, and a single
+#			custom_trigger_tooltip trigger within each if trigger.
+#
+#		Example: (Germany is prevented from declaring war on the Soviet Union.)
+#
+#		DIPLOMACY_WAR_ENABLE_TRIGGER = {
+#			if = {
+#				limit = {
+#					tag = GER
+#				}
+#				custom_trigger_tooltip = {
+#					tooltip = PREVENT_GER_WAR_ON_SOV
+#					FROM = {
+#						NOT = {
+#							tag = SOV
+#						}
+#					}
+#				}
+#			}
+#		}
+
+DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {
+		NOT = { tag = JAP }
+		NOT = { FROM = { tag = JAP } }
+		NOT = { tag = GRE }
+		NOT = { FROM = { tag = GRE } }
+		NOT = { tag = POL }
+		NOT = { FROM = { tag = POL } }
+		NOT = { tag = CHI }
+		NOT = { FROM = { tag = CHI } }
+		NOT = { tag = SOV }
+		NOT = { FROM = { tag = SOV } }
+		NOT = { tag = YUG }
+		NOT = { FROM = { tag = YUG } }			
 }
-DIPLOMACY_WAR_ENABLE_TRIGGER = {always = no }
-DIPLOMACY_GIVESTATECONTROL_ENABLE_TRIGGER = { NOT = { FROM = { tag = FIN } } }
-DIPLOMACY_ASKSTATECONTROL_ENABLE_TRIGGER = { always = no }
-DIPLOMACY_SEND_ATTACHE_ENABLE_TRIGGER = { 
-	if = { limit = { ROOT = { OR = { the_allies = yes tag = SOV }}} NOT = { FROM = { OR = { the_axis = yes tag = JAP tag = MAN }}}  }
-	if = { limit = { ROOT = { OR = { the_axis = yes tag = JAP tag = MAN }}} NOT = { FROM = { OR = { the_allies = yes tag = SOV }}}  }
+DIPLOMACY_RETURN_EXP_FORCE_ENABLE_TRIGGER = {
+		NOT = { tag = JAP }
+		NOT = { FROM = { tag = JAP } }
+		NOT = { tag = GRE }
+		NOT = { FROM = { tag = GRE } }
+		NOT = { tag = POL }
+		NOT = { FROM = { tag = POL } }
+		NOT = { tag = CHI }
+		NOT = { FROM = { tag = CHI } }
+		NOT = { tag = SOV }
+		NOT = { FROM = { tag = SOV } }
+		NOT = { tag = YUG }
+		NOT = { FROM = { tag = YUG } }
 }
-DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { always = no }
-DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {}
-DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = { always = no }
-DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {always = no }
-DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {if={ limit = { ROOT = { OR = { the_axis = yes}}}}
-NOT={ ROOT = {  the_allies = yes}}
-} 
-DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {if={ limit = { ROOT = { OR = { the_axis = yes}}}} 
-NOT={ ROOT = {  the_allies = yes}}
+
+DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = { 
+		NOT = {
+		OR = { 
+			NOT = { is_in_faction_with = FROM }		
+			tag = FRA		
+			FROM = { tag = FRA }
+			tag = GRE		
+			FROM = { tag = GRE }			
+			}
+		}
+}
+
+DIPLOMACY_MILACC_ENABLE_TRIGGER = {
+		always = no
+}
+DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
+		always = no
+}
+
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
+		NOT = { tag = SOV }
+		NOT = { tag = FRA }
+		NOT = { tag = GRE }		
+		NOT = {
+			AND = {
+			FROM = { tag = ENG }
+			ENG = { controls_state = 126 }
+			ENG = { controls_state = 447 }
+			ENG = { controls_state = 446 }
+			ENG = { controls_state = 118 }
+			FRA = { controls_state = 16 }
+			FRA = { controls_state = 15 }
+			FRA = { controls_state = 27 }
+			FRA = { controls_state = 22 }
+			}
+		}
+		NOT = {
+			tag = JAP
+		}
+		NOT = { tag = YUG }
+
+			NOT = {
+				AND = {
+					FROM = { tag = SOV }
+					has_idea = USA_LL_to_Soviets_Blocked
+				}
+			}
+			
+								
+}
+	
+
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
+		NOT = { FROM = { tag = GRE } }	
+		NOT = { FROM = { tag = SOV } }	
+		NOT = { FROM = { tag = FRA } }
+		NOT = {	FROM = { tag = JAP } }
+		NOT = {	FROM = { tag = ENG } }
+		NOT = {	FROM = { tag = USA } }
+		NOT = {	FROM = { tag = GER } }
+		NOT = {	FROM = { tag = ITA } }
+		NOT = {	FROM = { tag = YUG } }		
 }
 DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
-	NOT = {FROM = { original_tag = SOV } }
+		NOT = {
+		OR = { 
+			NOT = { is_in_faction_with = FROM }		
+			tag = FRA		
+			FROM = { tag = FRA }
+			tag = GRE		
+			FROM = { tag = GRE }
+			tag = YUG		
+			FROM = { tag = YUG }			
+			}
+		}
 }
-DIPLOMACY_MANAGE_LICENSED_PRODUCTION_EXISTING_ENABLE_TRIGGER = { 
-	NOT = {FROM = { original_tag = SOV } }
-}
-DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = { 
-	NOT = {FROM = { original_tag = SOV } }
-}
-DIPLOMACY_RETURN_EXP_FORCE_ENABLE_TRIGGER = {}
-DIPLOMACY_REQUEST_EXP_FORCE_ENABLE_TRIGGER = {}	

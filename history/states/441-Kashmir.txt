@@ -2,21 +2,20 @@
 state={
 	id=441
 	name="STATE_441"
-	manpower = 2123700
+	manpower = 3539500
 	
-state_category = rural
-	history= {
+	state_category = rural
+
+	history={
 		owner = RAJ
-		controller = RAJ
 		buildings = {
-				infrastructure = 2
-
-			}
+			infrastructure = 1
+			industrial_complex = 1
 		}
-
-	provinces={
-		5042 7273 7316 8005 10905 12754 12884 
+		add_core_of = RAJ
 	}
 
-	local_supplies=0.0 
+	provinces={
+		5042 1698 1441 
+	}
 }
