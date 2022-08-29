@@ -5,28 +5,20 @@ state=
 	manpower = 83041
 	
 	state_category = rural
-
-	resources={
-		chromium=2
-		oil=2
-	}
 	
-	history= {
-
-		#PuertoPrincesa
-		victory_points = {
-			4429 1 
-		}
-
+	history=
+	{
 		owner = USA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			4429 = {
 				naval_base = 1
 			}
 		}
 	}
 	provinces={
-		4429 7419 5423 
+		4429 7419 10145 
 	}
+
+	local_supplies=0.0 
 }

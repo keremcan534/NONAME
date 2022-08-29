@@ -16,8 +16,8 @@ state={
 			512 15
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 4
+			industrial_complex = 2
 
 		}
 		add_core_of = FRA
@@ -29,6 +29,8 @@ state={
 	}
 
 	provinces={
-		512 3493 3671 6518 6533 6688 5997 2834 2814 
+		512 3493 3671 6518 6533 6688 9492 11611 11631 
 	}
+
+	local_supplies=15.0 
 }

@@ -4,10 +4,6 @@ state={
 	name="STATE_153"
 	manpower = 1655340
 	
-	resources = {
-		tungsten = 40
-	}
-	
 	state_category = town
 
 	history={
@@ -16,15 +12,23 @@ state={
 			673 5 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
-			air_base = 3
-			fuel_silo = 1
+arms_factory = 3
+			air_base = 4
 		}
 		add_core_of = AUS
+
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
+		}
 	}
 
 	provinces={
-		668 671 673 3675 6673 6678 5837 2823 2811 
+		668 671 673 3675 6673 6678 6680 9633 9636 11618 11634 
 	}
+
+	local_supplies=12.0 
 }

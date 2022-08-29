@@ -1,0 +1,803 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_startup = {
+		effect = {
+			
+			
+
+			every_country={
+				limit={	has_country_flag=fuel_system_enabled}
+				add_to_array={GLOBAL.fuel_system_manager=THIS.id}
+			}
+			every_country={
+				limit={original_tag=JAP}
+				add_timed_idea={
+					idea=trade_blocked
+					days=1825
+				}
+			}
+			every_country = {
+				limit={
+					original_tag=FRA
+				}
+				add_timed_idea = {
+					idea=trade_blocked
+					days=1122
+				}
+			}
+			every_country = {
+				limit={
+
+					the_axis=yes
+				}
+				add_timed_idea = {
+					idea=trade_blocked
+					days=1340
+				}
+			}
+			every_country = {
+				limit={NOT={OR={original_tag=SOV
+					playable_countries=yes}}
+				}
+				add_ideas = {
+					trade_blocked_ai
+				}
+			}
+			every_country = {
+				limit = {
+					playable_countries = yes
+				}
+				add_ideas = {
+					peace_training
+					anti_strat_eff
+				}
+				add_timed_idea={
+					idea= fix_production_idea
+					days = 5
+				}
+			}
+			every_country = {
+				limit = {
+					not = {OR={
+						playable_countries = yes
+						original_tag = EMP
+					}
+					}
+					is_ai = yes
+				}
+				add_ideas = {
+					ai_limiter
+				}
+			}
+		}
+	}
+	on_weekly = {
+	}
+	on_declare_war={
+		effect={
+			#### Ensure that HOL gets added to Allies when it is attacked ####
+			if = {
+				limit = {
+					FROM = {
+						OR={
+							tag = HOL
+							tag = BEL
+							tag = NOR
+							tag = DEN
+							tag = GRE
+							tag = YUG
+						}
+					}
+				}
+				hidden_effect = {
+					ENG = { add_to_faction = FROM }
+					ROOT = {
+						if = {
+							limit = { NOT = { has_war_with = ENG } }
+							declare_war_on = { target = ENG type = annex_everything }
+						}
+					}
+
+					if = {
+						limit = { original_tag = GER }
+						ROOT_call_allies_both_sides = yes
+					}
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				#HOL
+				limit = {
+					original_tag = HOL
+				}
+				HOL = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					transfer_state = 35
+					transfer_state = 36
+					transfer_state = 7
+				}
+				GER = {
+					36 = {
+						set_compliance = 45
+					}
+					7 = {
+						set_compliance = 45
+					}
+					35 = {
+						set_compliance = 45
+					}
+				}
+				ENG = {
+					remove_from_faction = HOL
+					annex_country = {
+						target = HOL
+						transfer_troops = no
+					}
+				}
+				every_country = {
+					limit = {
+						the_axis = yes
+					}
+					white_peace = HOL
+					set_truce = {
+						target = HOL
+						days = 9999
+					}
+				}
+			}
+			if = {
+				#FRA
+				limit = {
+					original_tag = FRA
+				}
+				FRA = {
+					set_equipment_fraction = 0
+					
+				}
+				
+				fall_of_france=yes
+			
+			}
+			if = {
+				#JAP
+				limit = {
+					original_tag = JAP
+				}
+				every_state = {
+					limit = {
+						is_owned_by = JAP
+					}
+					set_compliance = 0
+				}
+				every_state = {
+					limit = {
+						is_core_of = JAP
+					}
+				}
+				JAP = {
+					set_equipment_fraction = 0
+				}
+				USA = {
+					annex_country = {
+						target = JAP
+						transfer_troops = no
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SIA
+					}
+					USA = {
+						annex_country = {
+							target = SIA
+							transfer_troops = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MAN
+					}
+					USA = {
+						annex_country = {
+							target = MAN
+							transfer_troops = no
+						}
+					}
+				}
+			}
+			if = {
+				#SOV
+				limit = {
+					original_tag = SOV
+				}
+				if = {
+					limit = {
+						country_exists = ROM
+					}
+					ROM = {
+						transfer_state = 766
+						transfer_state = 78
+						transfer_state = 192
+						transfer_state = 80
+						transfer_state = 198
+					}
+				}
+				FIN = {
+					transfer_state = 147
+					transfer_state = 146
+					transfer_state = 213
+					transfer_state = 215
+					transfer_state = 216
+				}
+				if = {
+					limit = {
+						country_exists = JAP
+					}
+					JAP = {
+						transfer_state = 655
+						transfer_state = 408
+						transfer_state = 560
+						transfer_state = 409
+						transfer_state = 657
+						transfer_state = 561
+						transfer_state = 562
+						transfer_state = 637
+					}
+				}
+				GER = {
+					annex_country = {
+						target = SOV
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				#FIN
+				limit = {
+					original_tag = FIN
+				}
+				SOV = {
+					transfer_state = 147
+					add_state_core = 147
+					transfer_state = 146
+					add_state_core = 146
+					white_peace = FIN
+				}
+			}
+			if = {
+				#BEL
+				limit = {
+					original_tag = BEL
+				}
+				BEL = {
+					set_equipment_fraction = 1
+				}
+				FRA = {
+					transfer_state = 538
+					transfer_state = 718
+					transfer_state = 295
+					every_state = {
+						limit = {
+							is_core_of = BEL
+						}
+						set_compliance = 100
+					}
+				}
+				GER = {
+					annex_country = {
+						target = BEL
+					}
+					every_state = {
+						limit = {
+							is_core_of = BEL
+						}
+						set_compliance = 100
+					}
+				}
+				
+			}
+			if = {
+				#GER
+				limit = {
+					original_tag = GER
+				}
+				ENG = {
+					annex_country = {
+						target = GER
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				#ITA
+				limit = {
+					original_tag = ITA
+				}
+				USA = {
+					annex_country = {
+						target = ITA
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				#POL
+				set_global_flag=fall_of_poland
+				limit = {
+					original_tag = POL
+				}
+				POL = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					transfer_state = 85
+					transfer_state = 86
+					transfer_state = 87
+					transfer_state = 98
+					transfer_state = 10
+					transfer_state = 90
+					transfer_state = 88
+					transfer_state = 762
+					transfer_state = 72
+					transfer_state = 92
+					transfer_state = 807
+					86 = {
+						set_compliance = 60
+					}
+					762 = {
+						set_compliance = 60
+					}
+					807 = {
+						set_compliance = 60
+					}
+				}
+				#Larp
+				set_province_name = {
+					id = 6558
+					name = "Posen"
+				}
+				86 = {
+					set_state_name = "Posen"
+				}
+				set_province_name = {
+					id = 6464
+					name = "Kattowitz"
+				}
+				762 = {
+					set_state_name = "Kattowitz"
+				}
+				set_province_name = {
+					id = 279
+					name = "Bromberg"
+				}
+				set_province_name = {
+					id = 3295
+					name = "Thorn"
+				}
+			}
+			if = {
+				#DEN
+				limit = {
+					original_tag = DEN
+				}
+				GER = {
+					transfer_state = 99
+					transfer_state = 37
+					99 = {
+						set_compliance = 60
+					}
+					37 = {
+						set_compliance = 60
+					}
+				}
+			}
+			if = {
+				#NOR
+				limit = {
+					original_tag = NOR
+				}
+				GER = {
+					annex_country = {
+						target = NOR
+						transfer_troops = no
+					}
+					hidden_effect={
+						set_global_flag = fall_of_norway
+					}
+				}
+				
+			}
+			if = {
+				#ast
+				limit = {
+					original_tag = AST
+				}
+				
+				every_country={
+					limit={the_allies=yes
+					}
+					add_ideas=ALLIES_AST_capitulated_idea
+					}
+					
+				set_global_flag=AST_capt
+			}
+			if = {
+				#ENG
+				limit = {
+					original_tag = ENG
+				}
+				
+				every_country={
+					limit={the_allies=yes
+					}
+					add_ideas=ALLIES_ENG_capitulated_idea
+					}
+					add_to_war={
+						targeted_alliance=USA
+						enemy=GER
+					}
+					USA={
+						add_ideas=war_economy
+						
+					}
+					set_global_flag=ENG_capt
+			}
+			if = {
+				#raj
+				limit = {
+					original_tag = RAJ
+				}
+				
+				every_country={
+					limit={the_allies=yes
+					}
+					add_ideas=ALLIES_RAJ_capitulated_idea
+					}
+					
+					set_global_flag=RAJ_capt
+			}
+			if = {
+				#can
+				limit = {
+					original_tag = CAN
+				}
+				
+				every_country={
+					limit={the_allies=yes
+					}
+					add_ideas=ALLIES_CAN_capitulated_idea
+					}
+					
+					set_global_flag=CAN_capt
+			}
+			if = {
+				#USA
+				limit = {
+					original_tag =USA
+				}
+				JAP={
+					annex_country={
+						target=USA
+						transfer_troops = no
+					}
+				}
+				every_country={
+					limit={the_allies=yes
+					}
+					add_ideas=ALLIES_USA_capitulated_idea
+					}
+					
+					set_global_flag=USA_capt
+			}
+
+		}
+	}
+	on_state_control_changed={
+	
+	}
+	on_monthly_GER={
+		effect = {
+			
+			HMP_sov_LL_monthly_effect = yes 
+						#### If Soviets start advancing beyond the pre-Barbarossa boundaries into Poland/East Prussia after 1942 but before 1943, that is sufficient to trigger Totaler Krieg for Germany to give it one last gasping breath of life ####
+		if = {
+			limit = {
+				NOT = { has_global_flag = total_war }
+				NOT = { has_global_flag = GDU_eastern_front_Axis_danger }
+				original_tag = SOV
+				date > 1942.1.1
+				OR = {
+					any_of_scopes = {
+						array = global.owned_state_array_GER
+						is_controlled_by = SOV
+					}
+					controls_state = 188 # Memel
+					controls_state = 98 # Plock
+					controls_state = 10 # Warsazawa
+					controls_state = 92 # Lublin
+					controls_state = 88 # Krakow
+
+					# Also adding more states in Northern Germany/Denmark. Soviet meme naval invasions of Northern Germany can trigger this
+
+					controls_state = 85 # Danzig
+					controls_state = 37 # Sjaelland DK
+					controls_state = 99 # Jutland DK
+
+					controls_state = 58 # s-holstein
+					controls_state = 61 # mecklenbuurg
+					controls_state = 62 # vorpommern
+					controls_state = 63 # hinterpommern
+
+
+				}
+			}
+			hidden_effect = {
+				set_global_flag = GDU_eastern_front_Axis_danger
+				if = {
+					limit = {
+						NOT = { has_global_flag = total_war }
+					}
+					GER = { country_event = { id = pfu.21 } }
+				}
+			}
+		}
+		##### If Allies are advancing into Northern Italy (anything from Bologna to the north, i.e. of the Gothic Line) AND if Germany has also bothered to do the Gothic Line Focus, then that is enough to trigger Totaler Krieg for Germany ####
+		if = {
+			limit = {
+				NOT = { has_global_flag = total_war }						
+				NOT = { has_global_flag = GDU_gothic_line_breached }
+				date > 1941.1.1							
+				any_country={
+					is_in_faction_with_allies = yes
+					OR = {
+						controls_state = 158 # Piedmont
+						controls_state = 159 # Lombardy
+						controls_state = 39 # South Tyrol
+						controls_state = 160 # Veneto
+						controls_state = 736 # Istria
+						controls_state = 161 # Emilia Romagna
+						controls_state = 138 # Liguria
+						controls_state = 140 # Parmas
+					}
+				}
+			}
+			hidden_effect = {
+				set_global_flag = GDU_gothic_line_breached
+				if = {
+					limit = {
+						NOT = { has_global_flag = total_war }
+					}
+					GER = { country_event = { id = pfu.21 } }
+				}
+			}
+		}
+
+		# If Hungary, Romania, or Bulgaria capitulate prior to 1943 (but after 1941), that is sufficient to trigger Totaler Krieg for Germany to give Axis one last shot to recover.
+		if = {
+			limit = {
+				date > 1941.1.1
+				any_of_scopes = {
+					array = global.HUNROMBUL_array
+					is_controlled_by_allied_country = yes
+				}				
+			}
+			set_global_flag = GDU_eastern_front_Axis_danger
+			if = {
+				limit = { NOT = { has_global_flag = total_war } }
+				GER = { country_event = { id = pfu.21 } }
+			}
+		}
+
+		#### Check for DDay. If a DDay occurs, Axis gets a mission to defeat the DDay within 1 year; if they defeat it, Axis gets some buffs and Allies lose stability/war support because of the failed DDay. Germany's Totaler Krieg event also gets triggered upon DDay, if it has not already been triggered. The idea is that this gives Allies realistic incentives for DDay; they shouldn't want to launch one until they are sure that they will succeed, because in reality a failed DDay would have been a disaster and would have resulted in large amounts of lost/captured equipment (like Dunkirk) and would have been a PR disaster for the Democracies that relied on popular support for continuing the war. ####
+		if = {
+			limit = {
+				NOT = { has_global_flag = GDU_dday_started }
+				date > 1941.1.1
+
+				#For states look in on startup
+				any_of_scopes = {
+					array = global.dday_state_array
+
+					is_controlled_by_allied_country = yes
+				}
+			}
+				set_global_flag = GDU_dday_started
+				GER = {
+					activate_mission = GER_defeat_dday
+					annex_country = { target = EFR transfer_troops = no }
+					
+				}
+				ENG = { country_event = { id = gduevents.35 } }
+				USA = { country_event = { id = gduevents.35 } }
+				SOV = { country_event = { id = gduevents.35 } }
+				CAN = { country_event = { id = gduevents.35 } }
+				SAF = { country_event = { id = gduevents.35 } }
+				FRA = { country_event = { id = gduevents.35 } }
+				RAJ = { country_event = { id = gduevents.35 } }
+				AST = { country_event = { id = gduevents.35 } }
+				GER = { country_event = { id = gduevents.35 } }
+				ITA = { country_event = { id = gduevents.35 } }
+				ROM = { country_event = { id = gduevents.35 } }
+				HUN = { country_event = { id = gduevents.35 } }
+				BUL = { country_event = { id = gduevents.35 } }
+				SPR = { country_event = { id = gduevents.35 } }
+				JAP = { country_event = { id = gduevents.35 } }
+				if = {
+					limit = {
+						NOT = { has_global_flag = total_war }
+					}
+					GER = { country_event = { id = pfu.21 } }
+				}
+			
+		}
+		#### Check for Sealion. If a Sealion occurs, Allies get a mission to defeat the Sealion within 1 year; if they defeat it, Allies gets some buffs and Axis lose stability/war support because of the failed Sealion. UK also gets total mob upon Sealion, if it does not already have it. The idea is that this gives Axis realistic incentives for Sealion; they shouldn't want to launch one until they are sure that they will succeed, because in reality a failed Sealion would have been a disaster and would have resulted in large amounts of lost/captured equipment (like Dunkirk). ####
+
+
+		if = {
+			limit = {
+				ENG = { has_war_with = GER }
+				NOT = { has_global_flag = GDU_sealion_started }
+				any_of_scopes = {
+					array = global.sealion_state_array
+
+					is_controlled_by_axis_or_japan = yes
+				}
+			}
+
+			
+				set_global_flag = GDU_sealion_started
+				ENG = {
+					activate_mission = GER_defeat_sealion
+				}
+			
+			ENG = { country_event = { id = gduevents.34 } }
+			USA = { country_event = { id = gduevents.34 } }
+			SOV = { country_event = { id = gduevents.34 } }
+			CAN = { country_event = { id = gduevents.34 } }
+			SAF = { country_event = { id = gduevents.34 } }
+			FRA = { country_event = { id = gduevents.34 } }
+			RAJ = { country_event = { id = gduevents.34 } }
+			AST = { country_event = { id = gduevents.34 } }
+			GER = { country_event = { id = gduevents.34 } }
+			ITA = { country_event = { id = gduevents.34 } }
+			ROM = { country_event = { id = gduevents.34 } }
+			HUN = { country_event = { id = gduevents.34 } }
+			BUL = { country_event = { id = gduevents.34 } }
+			SPR = { country_event = { id = gduevents.34 } }
+			JAP = { country_event = { id = gduevents.34 } }
+		}
+
+}
+	}
+	on_daily_EMP={
+		effect={
+			for_each_scope_loop={
+				array=GLOBAL.fuel_system_manager
+				set_variable={GLOBAL.controllerscope=THIS.id}
+				for_each_scope_loop={
+					array = THIS.faction_members_array
+					set_variable={GLOBAL.currentscope=THIS.id}
+					if={
+						limit={check_variable={send_fuel_enabled >1}}
+						set_variable={fuelbedarf=min_fuel}
+						subtract_from_variable={fuelbedarf=fuel_ratio}
+						set_variable={fuelbedarfanteil=fuelbedarf}
+						multiply_variable={fuelbedarf=max_fuel_k}
+						set_variable={fuelbedarfvorzeichen=fuelbedarf}
+						multiply_variable={fuelbedarfvorzeichen=-1}
+						set_variable={fuelbedarf_k=fuelbedarf}
+						set_variable={fuelbedarfvorzeichen_k=fuelbedarfvorzeichen}
+						multiply_variable={fuelbedarfvorzeichen=1000}
+						multiply_variable={fuelbedarf=1000}
+						set_variable={PREV.fuelbedarf=PREV.min_fuel}
+						subtract_from_variable={PREV.fuelbedarf=PREV.fuel_ratio}
+						set_variable={PREV.fuelbedarfanteil=PREV.fuelbedarf}
+						multiply_variable={PREV.fuelbedarf=PREV.max_fuel_k}
+						set_variable={PREV.fuelbedarfvorzeichen=PREV.fuelbedarf}
+						multiply_variable={PREV.fuelbedarfvorzeichen=-1}
+						multiply_variable={PREV.fuelbedarfvorzeichen=1000}
+						multiply_variable={PREV.fuelbedarf=1000}
+						set_variable={PREV.free_stockpile=PREV.max_fuel_k}
+						subtract_from_variable={PREV.free_stockpile=PREV.fuel_k}
+						multiply_variable={PREV.free_stockpile=1000}
+						set_variable={PREV.free_stockpilenegativ=PREV.free_stockpile}
+						multiply_variable={PREV.free_stockpilenegativ=-1}
+						set_variable={countryfuelplus5=fuel_ratio}
+						add_to_variable={countryfuelplus5=0.05}
+						if={limit={
+								check_variable={PREV.fuelbedarf <0}
+								check_variable={min_fuel > countryfuelplus5}
+							}
+							if={
+								limit={
+									check_variable={fuelbedarf >0}
+									check_variable={PREV.fuelbedarfvorzeichen >fuelbedarf}
+								}
+								set_temp_variable={PREV.mastergain=fuelbedarfvorzeichen}
+								set_temp_variable={subjectgain=fuelbedarf}
+								PREV={
+									add_fuel=mastergain
+								}
+								add_fuel=subjectgain
+							}
+							else={
+								set_temp_variable={PREV.mastergain=fuelbedarfvorzeichen}
+								set_temp_variable={subjectgain=fuelbedarf}
+								PREV={
+									add_fuel=mastergain
+								}
+								add_fuel=subjectgain
+								set_temp_variable={PREV.test2=PREV.fuelbedarfvorzeichen}
+							}
+						}
+						else_if={
+							limit={
+								check_variable={fuelbedarf <0}
+								check_variable={PREV.fuel_ratio <0.95}
+							}
+							if={
+								limit={
+									check_variable={fuelbedarfvorzeichen <PREV.free_stockpile}
+								}
+								set_temp_variable={PREV.mastergain=fuelbedarfvorzeichen}
+								set_temp_variable={subjectgain=fuelbedarf}
+								PREV={
+									add_fuel=mastergain
+								}
+								add_fuel=subjectgain
+							}
+							else_if={limit={check_variable={PREV.free_stockpile>1000}}
+								set_temp_variable={PREV.mastergain=PREV.free_stockpile}
+								set_temp_variable={subjectgain=PREV.free_stockpilenegativ}
+								PREV={
+									add_fuel=mastergain
+								}
+								add_fuel=subjectgain
+							}
+						}
+						else_if={
+							limit={
+								check_variable={fuel_ratio <0.95}
+								check_variable={PREV.fuel_ratio >0.95}
+							}
+							set_variable={free_stockpile=max_fuel_k}
+							subtract_from_variable={free_stockpile=fuel_k}
+							multiply_variable={free_stockpile=1000}
+							set_variable={free_stockpilenegativ=free_stockpile}
+							multiply_variable={free_stockpilenegativ=-1}
+							set_variable={master_spare_fuel=PREV.max_fuel_k}
+							multiply_variable={master_spare_fuel=0.03}
+							multiply_variable={master_spare_fuel=1000}
+							set_variable={master_spare_fuelnegativ=master_spare_fuel}
+							multiply_variable={master_spare_fuelnegativ=-1}
+							if={limit={check_variable={free_stockpile<mastersparefuel}}
+								set_temp_variable={PREV.mastergain=free_stockpilenegativ}
+								set_temp_variable={subjectgain=free_stockpile}}
+							else={
+								set_temp_variable={PREV.mastergain=master_spare_fuelnegativ}
+								set_temp_variable={subjectgain=master_spare_fuel}
+							}
+							PREV={
+								add_fuel=mastergain
+							}
+							add_fuel=subjectgain
+						}
+					}
+				}
+			}
+			for_each_scope_loop={
+				array=GLOBAL.fuel_countries
+				set_temp_variable={currentfuel=fuel_ratio}
+				subtract_from_temp_variable={currentfuel=1}
+				multiply_temp_variable={currentfuel = 88}
+				set_variable={fuel_bar_fuel=currentfuel}
+			}
+		}
+	}
+}

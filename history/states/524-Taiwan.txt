@@ -5,19 +5,16 @@ state=
 	manpower = 4592537
 	
 	state_category = large_town
-		resources={
-		aluminium=12
-	}
 	history=
 	{
 		owner = JAP
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3 #was: 5
 			arms_factory = 1
-			air_base = 6
-			2500 = {
+			air_base = 10
+			12068 = {
 				naval_base = 10
 			}
 		}
@@ -25,11 +22,13 @@ state=
 			7186 5 
 		}
 		victory_points = {
-			2500 1 
+			12068 1 
 		}
 
 	}
 	provinces={
-		1091 1175 4096 7186 2588 2534 2500
+		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
 		}
+
+	local_supplies=0.0 
 }

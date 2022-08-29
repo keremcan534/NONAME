@@ -4,24 +4,24 @@ state=
 	name="STATE_631"
 	manpower=2159	
 	state_category = tiny_island
-		resources={
-		oil=1
-	}
+
 	history={
 		owner = USA
-		add_core_of = USA
+		add_core_of = HAW
 		buildings = {
-		infrastructure = 1
-			962 = {
+			infrastructure = 2
+			13052 = {
 				naval_base = 1
 			}
 		}
 		victory_points = {
-			962 10
+			13052 1
 		 }
 	}
 	
 	provinces={
-		962 	
+		13052 	
 	}
+
+	local_supplies=0.0 
 }

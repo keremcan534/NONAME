@@ -1,0 +1,676 @@
+characters={
+	GRE_alexandros_papagos={
+		name="Alexandros Papagos"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_GRE_alexandros_papagos.dds"
+			}
+			army={
+				large="gfx/leaders/GRE/portrait_gre_alexandros_papagos.dds"
+			}
+		}
+		field_marshal={ #12/12
+			traits={ old_guard inflexible_strategist infantry_leader ambusher logistics_wizard unyielding_defender   }
+			skill=5
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	GRE_ioannis_metaxas={
+		name="Ioannis Metaxas"
+		portraits={
+			civilian={
+				large="gfx/leaders/GRE/Portrait_Greece_Ioannis_Metaxas.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ devoted_corporatist  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GRE_konstantinos_tsaldaris={
+		name="Konstantinos Tsaldaris"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GRE_alexander_brown={
+		name="Alexander Brown"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits={ reichs_minister appeaser }
+			expire="1953.1.1.12"
+			id=-1
+		}
+	}
+	GRE_johannes_williams={
+		name="Johannes Williams"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1941.1.1.12"
+			id=-1
+		}
+	}
+	GRE_nelson_mello={
+		name="Nelson Mello"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/BRA/Nelson_Mello.tga"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector superior_tactician ironside destroyer_leader concealment_expert ground_pounder }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	GRE_françois_darlan={
+		name="François Darlan"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_francois_darlan.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Francois_Darlan.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold blockade_runner superior_tactician spotter concealment_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	GRE_joão_baptista_de_mattos={
+		name="João Baptista de Mattos"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/BRA/portrait_BRA_João_Baptista_de_Mattos.dds"
+			}
+		}
+		field_marshal={ #12/12
+			traits={ adaptable organizer cavalry_leader combined_arms_expert cavalry_expert naval_invader thorough_planner organisational_leader  }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	GRE_markos_drakos={
+		name="Markos Drakos"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/GRE/portrait_gre_markos_drakos.dds"
+			}
+		}
+		field_marshal={ #12/12
+			traits={ infantry_leader infantry_expert trait_mountaineer hill_fighter jungle_rat fast_planner inspirational_leader organisational_leader  }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	GRE_charles_de_gaulle={
+		name="Charles De Gaulle"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_charles_de_gaulle.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
+			}
+		}
+		field_marshal={ #12.5/12
+			traits={ brilliant_strategist harsh_leader panzer_leader panzer_expert desert_fox logistics_wizard aggressive_assaulter   }
+			skill=5
+			attack_skill=6
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	GRE_king_haakon_vii={
+		name="King Haakon VII"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/NOR/portrait_norway_haakon_vii.tga"
+			}
+		}
+		field_marshal={ #12.5/12
+			traits={ brilliant_strategist infantry_leader infantry_expert  thorough_planner aggressive_assaulter  }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	GRE_alphonse_juin={
+		name="Alphonse Juin"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_alphonse_juin.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Alphonse_Juin.dds"
+			}
+		}
+		field_marshal={ #12/12
+			traits={ combined_arms_expert cavalry_expert  cavalry_leader  bearer_of_artillery trait_cautious logistics_wizard defensive_doctrine   }
+			skill=5
+			attack_skill=4
+			defense_skill=6
+			planning_skill=1
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	GRE_izaak_reijnders={
+		name="Izaak Reijnders"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_HOL_izaak_reijnders.dds"
+			}
+			army={
+				large="gfx/leaders/HOL/portrait_hol_izaak_reijnders.dds"
+			}
+		}
+		field_marshal={ #12.5/12
+			traits={ old_guard inflexible_strategist trait_reckless infantry_leader infantry_expert inspirational_leader   offensive_doctrine unyielding_defender  }
+			skill=5
+			attack_skill=2
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	GRE_henri_winkelman={
+		name="Henri Winkelman"
+		portraits={
+			army={
+				small="GFX_portrait_hol_henri_winkelman_small"
+			}
+			army={
+				large="GFX_portrait_hol_henri_winkelman"
+			}
+		}
+		field_marshal={ #12/12
+			traits={ trait_cautious infantry_leader ambusher scavenger organisational_leader defensive_doctrine  guerilla_fighter }
+			skill=5
+			attack_skill=1
+			defense_skill=7
+			planning_skill=2
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	GRE_jean_de_lattre_de_tassigny={
+		name="Jean de Lattre de Tassigny"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_jean_de_lattre_de_tassigny.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ panzer_leader desert_fox panzer_expert hill_fighter expert_improviser }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	GRE_philippe_leclerc={
+		name="Philippe Leclerc"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_philippe_leclerc.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_france_philippe_leclerc.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ infantry_leader ambusher  fake_skilled_staffer trait_reckless  desert_fox  hill_fighter }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	GRE_petrus_wilhelmus_best={
+		name="Petrus Wilhelmus Best"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_HOL_petrus_wilhelmus_best.dds"
+			}
+			army={
+				large="gfx/leaders/HOL/portrait_hol_petrus_wilhelmus_best.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ fake_skilled_staffer organizer infantry_leader ambusher jungle_rat  skirmisher }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	GRE_eurico_gaspar_dutra={
+		name="Eurico Gaspar Dutra"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/BRA/Eurico_Gaspar_Dutra.tga"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ bearer_of_artillery cavalry_leader combined_arms_expert cavalry_expert swamp_fox trait_mountaineer jungle_rat  expert_improviser }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	GRE_mariepierre_koenig={
+		name="Marie-Pierre Koenig"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_marie_pierre_koenig.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_fra_marie_pierre_koenig.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ adaptable panzer_expert trait_engineer panzer_leader }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=9
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	GRE_antoinemariebenoît_besson={
+		name="Antoine-Marie-Benoît Besson"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ inflexible_strategist cavalry_leader combined_arms_expert cavalry_expert desert_fox urban_assault_specialist  ambusher }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	GRE_godfried_van_voorst_tot_voorst={
+		name="Godfried van Voorst tot Voorst"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_HOL_godfried_van_voorst_tot_voorst.dds"
+			}
+			army={
+				large="gfx/leaders/HOL/portrait_hol_godfried_van_voorst_tot_voorst.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ brilliant_strategist trait_engineer panzer_leader panzer_expert trait_mountaineer jungle_rat  }
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	GRE_euclides_zenobio_da_costa={
+		name="Euclides Zenobio Da Costa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/BRA/portrait_BRA_Euclides_Zenobio_Da_Costa.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ adaptable infantry_leader desert_fox infantry_expert }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	GRE_mascarenhas_de_morais={
+		name="Mascarenhas de Morais"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/BRA/Mascarenhas_de_Morais.tga"
+			}
+		}
+		corps_commander={ #15/15
+			traits={  panzer_expert panzer_leader trait_engineer urban_assault_specialist  fortress_buster }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	GRE_carl_gustav_fleischer={
+		name="Carl Gustav Fleischer"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/NOR/portrait_norway_carl_gustav_flesicher.tga"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ infantry_leader infantry_expert trait_mountaineer hill_fighter naval_invader invader_ii naval_liason }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	GRE_otto_ruge={
+		name="Otto Ruge"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/NOR/portrait_norway_ruge.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ infantry_leader infantry_expert fortress_buster   trait_engineer   bearer_of_artillery organizer     }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	GRE_charalambos_katsimitros={
+		name="Charalambos Katsimitros"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/GRE/portrait_gre_charalambos_katsimitros.dds"
+			}
+		}
+		corps_commander={  #15/15
+			traits={ infantry_leader infantry_expert swamp_fox trait_mountaineer jungle_rat  organizer }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	GRE_kristian_laake={
+		name="Kristian Laake"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/NOR/portrait_norway_Kristian_Laake.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ panzer_leader panzer_expert trait_mountaineer adaptable   }
+			skill=5
+			attack_skill=2
+			defense_skill=5
+			planning_skill=7
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	GRE_henri_giraud={
+		name="Henri Giraud"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_henri_giraud.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_france_henri_giraud.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ trait_cautious infantry_leader ambusher  trait_mountaineer hill_fighter scavenger guerilla_fighter }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	GRE_georges_catroux={
+		name="Georges Catroux"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_alphonse_joseph_georges.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Alphonse_Joseph_Georges.dds"
+			}
+		}
+		corps_commander={ #15/15
+			traits={ fake_skilled_staffer trait_reckless desert_fox infantry_leader trait_mountaineer  infantry_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	GRE_konstantinos_tsaldaris1={
+		name="Konstantinos Tsaldaris"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GRE_konstantinos_tsaldaris1
+            allowed = {
+			original_tag = GRE
+			has_dlc = "Battle for the Bosporus"
+		    }
+			traits  = {
+				silent_workhorse 
+			}
+		}	
+	}
+	GRE_aristeidis_dimitrato={
+		name="Aristeidis Dimitrato"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GRE_aristeidis_dimitrato
+		    allowed = {
+			original_tag = GRE
+			has_dlc = "Battle for the Bosporus"
+			}
+			traits  = {
+				war_industrialist  
+			}
+		}	
+	}
+	GRE_emmanouil_tsouderos={
+		name="Emmanouil Tsouderos"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GRE_emmanouil_tsouderos
+		
+		allowed = {
+			original_tag = GRE
+			has_dlc = "Battle for the Bosporus"
+		}
+			traits  = {
+				financial_expert  
+			}
+		}	
+	}
+	GRE_aristotle_onassis={
+		name="Aristotle Onassis"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GRE_aristotle_onassis
+			
+		allowed = {
+			original_tag = GRE
+			has_dlc = "Battle for the Bosporus"
+		}
+			traits  = {
+				economist   
+			}
+		}	
+	}
+	GRE_father_dimistrios={
+		name="Father Dimistrios"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GRE_father_dimistrios
+			allowed = {
+				original_tag = GRE
+				AND = {
+					has_dlc = "La Resistance"
+					has_dlc = "Battle for the Bosporus"
+				}
+			}
+			traits  = {
+				head_of_intelligence 
+			}
+		}	
+	}
+	GRE_nikolaos_plastiras={
+		advisor={
+			slot = theorist
+			idea_token = GRE_nikolaos_plastiras
+			ledger  = army 
+				allowed  = {
+					original_tag = GRE
+				}
+				traits  = {
+					military_theorist 
+				}
+				cost = 100
+		}
+		name="Nikolaos Plastiras"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+}

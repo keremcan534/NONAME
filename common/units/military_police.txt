@@ -7,7 +7,6 @@ sub_units = {
 		ai_priority = 0
 		active = no
 		affects_speed = no
-
 		type = {
 			infantry
 			support
@@ -24,20 +23,16 @@ sub_units = {
 		combat_width = 0
 	
 		#Size Definitions
-		max_strength = 1
-		max_organisation = 0	
+		max_strength = 2
+		max_organisation = 20
 		default_morale = 0.3
 		manpower = 500
-		training_time = 180
+		training_time = 120
 
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
 		can_be_parachuted = yes
-		
-		# Important Ability
-		suppression_factor = 0.20
-
 		essential = {
 			infantry_equipment
 			support_equipment
@@ -45,7 +40,7 @@ sub_units = {
 		
 		need = {
 			support_equipment = 10
-			infantry_equipment = 40
+			infantry_equipment = 25
 		}
 
 	}

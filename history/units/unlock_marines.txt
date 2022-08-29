@@ -1,32 +1,38 @@
 ﻿division_template = {
-	name = "Marine Division"
+					name = "Marine 14/4"
+					regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+						marine = { x = 0 y = 3 }
 
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-        marine = { x = 0 y = 2 }
-		marine = { x = 0 y = 3 }
-		marine = { x = 0 y = 4 }
-        marine = { x = 1 y = 0 }
-		marine = { x = 1 y = 1 }
-		marine = { x = 1 y = 2 }
-		marine = { x = 1 y = 3 }
-		marine = { x = 1 y = 4 }
-	    marine = { x = 2 y = 0 }
-		marine = { x = 2 y = 1 }
-		marine = { x = 2 y = 2 }
-		anti_air_brigade = { x = 2 y = 3 }
-		anti_air_brigade = { x = 2 y = 4 }
-	    artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
-	}
-			
-	support = {
-       	engineer = { x = 0 y = 0 }
-       	recon = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }					
-	}
-}
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+						marine = { x = 1 y = 3 }
+
+						marine = { x = 2 y = 0 }
+						marine = { x = 2 y = 1 }
+						marine = { x = 2 y = 2 }
+						marine = { x = 2 y = 3 }
+
+						marine = { x = 3 y = 0 }
+						marine = { x = 3 y = 1 }
+					
+
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 4 y = 2 }
+						artillery_brigade = { x = 4 y = 3 }
+
+
+							}
+					support = {
+						recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						signal_company = { x = 1 y = 0 }
+						anti_tank = {x = 1 y = 1}
+					}
+				}

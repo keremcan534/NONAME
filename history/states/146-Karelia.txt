@@ -1,31 +1,40 @@
-
 state={
 	id=146
 	name="STATE_146"
 
+	state_category = town
+
 	history={
 		owner = FIN
 		add_core_of = FIN
+		add_core_of = KAR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3 #was: 5
 			industrial_complex = 2
-			6969 = {
+
+			#Mannerheim Line
+			9100 = {
 				bunker = 2
-
 			}
-			6960 = {
+			9105 = {
 				bunker = 2
-
 			}
-
+			9206 = {
+				coastal_bunker = 1
+			}
 		}
+		victory_points = {
+			9206 3 
+		}
+		
 
 	}
 
 	provinces={
-		3050 3060 3133 3187 3909 3920 4074 6052 6150 6153 6852 6884 6914 6960 6969 
+		2332 3050 3060 3133 3187 6052 6150 6153 9100 9105 9150 9176 9206 11046 11156 11162 
 	}
 	manpower=418635
 	buildings_max_level_factor=1.000
-	state_category=town
+
+	local_supplies=0.0 
 }

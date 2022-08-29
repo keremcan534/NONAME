@@ -1,27 +1,25 @@
-
 state={
 	id=621
 	name="STATE_621"
 
-	history={
-		owner = CHI
-		#add_core_of = SHX
-		#add_core_of = CHI
-		#add_core_of = PRC
-		buildings = {
-		
-			infrastructure = 3
-	
+	state_category = wasteland
+	impassable = yes
 
+	history= {
+		owner = EMP
+		controller = EMP
+		buildings = {
+				infrastructure = 1
+
+			}
 		}
 
-
-	}
-
 	provinces={
-		7158
+		2087 4525 7048 7158 7631 10424 10629 12331 12403 12609 12880 
 	}
-	manpower=2083700
+	manpower=1583700
 	buildings_max_level_factor=1.000
-	state_category=town
+
+
+	local_supplies=4.0 
 }

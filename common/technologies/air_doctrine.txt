@@ -8,10 +8,11 @@ technologies = {
 
 	### Dogfighting/Fighters 
 	air_superiority = {
+		xp_research_type = air
 		# EFFECT ########
 		air_superiority_detect_factor = 0.15
 		###########
-
+		xp_unlock_cost = 1
 	
 
 		path = {
@@ -33,9 +34,9 @@ technologies = {
 		research_cost = 0.01
 		
 		categories = {
-			air_doctrine
-			strategic_destruction_tree
-			cat_strategic_destruction
+			# air_doctrine
+			# strategic_destruction_tree
+			# cat_strategic_destruction
 		}
 		
 		folder = {
@@ -45,12 +46,14 @@ technologies = {
 	}
 	
 	forward_interception = {
+		xp_research_type = air
 
 		# EFFECT ########
 		air_interception_detect_factor = 0.15
 		###########		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -67,9 +70,12 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 9 y = 2 }
 		}
+		
+	
 	}
 	
 	fighter_ace_initiative = {
+		xp_research_type = air
 
 		# EFFECT ########
 		air_ace_generation_chance_factor = 0.25
@@ -89,7 +95,8 @@ technologies = {
 		
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -101,10 +108,12 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 9 y = 4 }
 		}
+		
+		
 	}
 	
 	fighter_sweeps = {
-
+		xp_research_type = air
 		# EFFECT ########
 		air_intercept_efficiency = 0.2
 		air_mission_xp_gain_factor = 0.05
@@ -116,7 +125,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -128,11 +138,12 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 7 y = 6 }
 		}
+		
 	}	
 	
 		
 	dogfighting_experience = {
-
+		xp_research_type = air
 		# EFFECT ########
 		air_superiority_efficiency = 0.2
 		air_mission_xp_gain_factor = 0.05
@@ -144,7 +155,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -156,10 +168,12 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 11 y = 6 }
 		}
+		
+		
 	}
 	
 	multialtitude_flying = {
-
+		xp_research_type = air
 		# EFFECT ########
 		#equipment_bonus = {
 			category_fighter = {
@@ -178,7 +192,8 @@ technologies = {
 		
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -195,8 +210,8 @@ technologies = {
 	
 	### CAS tree 
 	dive_bombing = {
-
 		xp_research_type = air
+		#xp_research_type = air
 		
 		# EFFECT ########
 		air_cas_efficiency = 0.20
@@ -207,7 +222,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -219,13 +235,14 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 18 y = 2 }
 		}
+
 	}
 	
 	
 	direct_ground_support = {
-
+		xp_research_type = air
 		# EFFECT ########
-		air_cas_present_factor = 0.20
+		air_cas_present_factor = 0.1
 		###########
 		
 		path = {
@@ -234,7 +251,8 @@ technologies = {
 		}
 
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -246,10 +264,12 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 18 y = 4 }
 		}
+		
+
 	}
 	
 	hunt_and_destroy = {
-
+		xp_research_type = air
 		# EFFECT ########
 		air_cas_efficiency = 0.20
 		###########
@@ -260,7 +280,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -272,10 +293,11 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 18 y = 6 }
 		}
+	
 	}
 
 	combat_unit_destruction = {
-
+		xp_research_type = air
 		# EFFECT ########
 		category_cas = {
 			air_agility = 0.2
@@ -294,7 +316,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -306,17 +329,20 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 18 y = 8 }
 		}
+		
+	
 	}
 	
 
 	battlefield_support = {
-
+		xp_research_type = air
 		# EFFECT ########
-		army_bonus_air_superiority_factor = 0.4
+		army_bonus_air_superiority_factor = 0.2
 		###########
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -328,16 +354,19 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 16 y = 10 }
 		}
+		
+	
 	}	
 
 	ground_support_integration = {
-
+		xp_research_type = air
 		# EFFECT ########
-		air_cas_present_factor = 0.2
+		air_cas_present_factor = 0.1
 		###########
 	
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -349,19 +378,21 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 20 y = 10 }
 		}
+	
 	}
 	
 	### This tech is its own thing. Not enough naval modifiers in the game... ### 
 	
 	naval_strike_tactics = {
-
+		xp_research_type = air
 		# EFFECT ########
 		air_nav_efficiency = 0.15 
 		
 		###########
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -373,12 +404,14 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 9 y = 10 }
 		}
+		
+		
 	}
 	
 	### Strat Destruction tree 
 	
 	flying_fortress = {
-
+		xp_research_type = air
 		# EFFECT ########
 		air_strategic_bomber_defence_factor = 0.10
 		###########
@@ -393,12 +426,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		dependencies = {
-			multialtitude_flying = 1 
-		}
+		# dependencies = {
+		# 	multialtitude_flying = 1 
+		# }
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -410,11 +444,12 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 0 y = 2 }
 		}
+	
 	}
 	
 		
 	night_bombing = {
-	
+		xp_research_type = air
 		# EFFECT ########
 		air_strategic_bomber_night_penalty = -0.5
 		###########		
@@ -429,7 +464,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -441,10 +477,11 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = -2 y = 4 }
 		}
+	
 	}
 
 	day_bombing = {
-	
+		xp_research_type = air
 		# EFFECT ########
 		air_strategic_bomber_bombing_factor = 0.3
 		###########
@@ -458,7 +495,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -473,7 +511,7 @@ technologies = {
 	}	
 
 	massed_bomber_formations = {
-
+		xp_research_type = air
 		# EFFECT ########
 		air_strategic_bomber_bombing_factor = 0.2
 		###########
@@ -485,7 +523,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -497,12 +536,12 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = -2 y = 6 }
 		}
+
 	}
 
 	air_offense = {
-
+		xp_research_type = air
 		# EFFECT ########
-		army_bonus_air_superiority_factor = 0.40
 		category_fighter = {
 				air_range = 0.10
 			}
@@ -519,7 +558,8 @@ technologies = {
 		
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -531,10 +571,11 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 2 y = 6 }
 		}
+
 	}
 	
 	high_level_bombing = {
-
+		xp_research_type = air
 		# EFFECT ########
 		air_strategic_bomber_defence_factor = 0.15
 		###########
@@ -545,7 +586,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -557,16 +599,18 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 0 y = 8 }
 		}
+
 	}
 	
 	
 	mass_destruction = {
-
+		xp_research_type = air
 		# EFFECT ########
 		air_strategic_bomber_bombing_factor = 0.2
 		###########	
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine

@@ -6,31 +6,25 @@ state= {
 	state_category = city
 	
 	resources={
-		rubber = 70
-		chromium = 12
+		rubber=1 # was: 2
 	}
 
 	history= {
 		owner = USA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
-			2366 = {
+			12213 = {
 				naval_base = 1
 			}
 			1415 = {
 				naval_base = 1
 			}
 		}
-		
-		victory_points = {
-			1415 1 
-		}
-		victory_points = {
-			2366 1 
-		}
 	}
 	provinces={
-		1388 1415 4101 4214 4233 4350 4368 4423 7325 7439 5398 5325 5309 5278 5257 2366 2327 
+		1388 1415 4101 4214 4233 4350 4368 4423 7325 7439 10167 10241 10252 10280 10298 12213 12253 
 	}
+
+	local_supplies=0.0 
 }

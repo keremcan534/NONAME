@@ -1,45 +1,18 @@
 ################
 ##### USA ######
 ################
-
-USA_war_measures = {
-	
-	allowed = {
-		original_tag = USA
-	}
-}
-
-#USA_foreign_politics = {
-#	icon = ger_reichskommissariats
-#	picture = GFX_decision_cat_picture_ger_OKW
-#
-#	visible = {
-#		original_tag = USA
-#	}
-#}
-
-USA_The_Pacific_Campaign = {
-	
-	allowed = {
-		original_tag = USA
-	}
-	
-	visible = {
-		has_war_with = JAP
-	}
-		
-	priority = 100
-}
-
 USA_aid_britain = {
-
 	allowed = {
 		original_tag = USA
 	}
 	visible = {
-		has_completed_focus = USA_indirect_help
+		ENG = {
+			has_war = yes
+			has_government = ROOT
+		}
 	}
 }
+
 USA_congress = {
 	icon = usa_congress
 	allowed = {
@@ -50,3 +23,14 @@ USA_congress = {
 
 	priority = 85
 }
+
+USA_war_plans = {
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		has_completed_focus = USA_war_plans_division
+	}
+}
+
+

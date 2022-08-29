@@ -4,7 +4,7 @@ state={
 	name="STATE_370"
 	manpower = 2009820
 	
-	state_category = large_city
+	state_category = city
 
 	history={
 		owner = USA
@@ -13,9 +13,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 5
-			dockyard = 6
-			air_base = 3
+			industrial_complex = 1
+			air_base = 4
 			4464 = {
 				naval_base = 4
 			}
@@ -24,7 +23,9 @@ state={
 	}
 
 	provinces={
-		1615 4464 4510 4565 4650 7464 7668 7722 5132 5094 4645 2738 2254 2153 
+		1615 4464 4510 4565 4650 7464 7668 8110 10410 10449 10753 11717 12328 12429 
 	}
 	
+
+	local_supplies=0.0 
 }

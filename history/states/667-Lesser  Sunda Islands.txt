@@ -6,19 +6,20 @@ state={
 	}
 
 	history={
-		owner = INS
-		add_core_of = INS
+		owner = HOL
+		add_core_of = HOL
 		buildings = {
+			air_base = 10
 			infrastructure = 2
 			1355 = {
 				naval_base = 1
 
 			}
-			5394 = {
+			10175 = {
 				naval_base = 1
 
 			}
-			2346 = {
+			12234 = {
 				naval_base = 1
 
 			}
@@ -28,9 +29,11 @@ state={
 	}
 
 	provinces={
-		1298 1339 1355 4273 4301 7293 7321 5394 5376 5348 2432 2422 2346 
+		1298 1339 1355 4273 4301 4358 7293 7321 10175 10191 10219 12151 12162 12219 12234 
 	}
 	manpower=3460200
 	buildings_max_level_factor=1
 	state_category="town"
+
+	local_supplies=3.0 
 }

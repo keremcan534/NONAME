@@ -10,9 +10,20 @@
 
 opinion_modifiers = {
 
-	cheat_opinion_modifier_good = {
-		value = 200
+	anti_cross_faction_trade = {
+		trade = yes
+		value = -500
 	}
+	reset_cross_faction_trade = {
+		trade = yes
+		value = 500
+	}
+
+	german_trade_monopoly = {
+		trade = yes
+		value = 500
+	}
+	
 
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100
@@ -50,12 +61,9 @@ opinion_modifiers = {
 		value = -50
 	}
 
-	anti_soviet_pact_call_refused = {
-		value = -50
-	}
 
 	tripartite_pact_opinion = {
-		value = 35
+		value = 200
 	}
 
 	refused_tripartite_pact_opinion = {
@@ -120,14 +128,6 @@ opinion_modifiers = {
 		value = 10
 	}
 
-	SOV_FRA_join_comintern_reject = {		
-		value = -30
-	}
-
-	SOV_ultimatum_to_greece_thrace = {
-		value = 25
-	}
-
 	MR_pact = {
 		value = 20
 	}
@@ -180,26 +180,6 @@ opinion_modifiers = {
 	
 	in_faction = {
 		value = 50
-	}
-	
-	jap_trade = {
-		trade = yes
-		value = 100
-	}
-	
-	jap_trade_2 = {
-		trade = yes
-		value = 100
-	}
-	
-	jap_trade_3 = {
-		trade = yes
-		value = 100
-	}
-	
-	jap_trade_4 = {
-		trade = yes
-		value = 100
 	}
 	
 	military_access = {
@@ -274,21 +254,7 @@ opinion_modifiers = {
 		value = 25
 	}
 
-	ger_cze_diplomatic_focus = {
-		value = 30
-	}
 
-	ger_ita_alliance_focus = {
-		value = 25
-	}
-
-	ger_spa_alliance_focus = {
-		value = 25
-	}
-
-	ger_pol_diplomacy_focus = {
-		value = 25
-	}
 
 	ger_naval_intimidation_focus = {
 		value = 25
@@ -298,9 +264,6 @@ opinion_modifiers = {
 		value = -30
 	}
 
-	befriended_the_dutch = {
-		value = -40
-	}
 
 	claimed_western_yugoslavia = {
 		value = -40
@@ -310,13 +273,6 @@ opinion_modifiers = {
 		value = 15
 	}
 
-	ita_diplomacy_focus = {
-		value = 20
-	}
-
-	ITA_FRA_woo_italy_reject = {
-		value = -20
-	}
 
 	pact_of_steel_opinion = {
 		value = 30
@@ -337,17 +293,6 @@ opinion_modifiers = {
 		value = -40
 	}
 
-	operation_zet_chi = {
-		value = 20
-	}
-
-	operation_zet_jap = {
-		value = -40
-	}
-
-	middle_east_expansionism = {
-		value = -30
-	}
 
 	border_conflict_reconciled = {
 		value = 20
@@ -437,19 +382,7 @@ opinion_modifiers = {
 		months = 36
 		decay = 1
 	}
-	scandinavian_intervention = {
-		value = -20
-		months = 24
-		decay = 1
-	}
 
-	balkan_strategy_good = {
-		value = 15
-	}
-
-	balkan_strategy_bad = {
-		value = -30
-	}
 
 	aided_industry = {
 		value = 15
@@ -535,9 +468,7 @@ opinion_modifiers = {
 	FRA_scw_intervention_republicans_SPA = {
 		value = -50
 	}
-	FRA_confirm_eastern_commitments = {
-		value = 50
-	}
+
 	FRA_right_wing_rhetoric_fascism = {
 		value = 15
 	}
@@ -548,30 +479,12 @@ opinion_modifiers = {
 		value = -50
 	}
 
-	FRA_scw_intervention_nationalists_SPA = {
-		value = 25
-	}
-	FRA_scw_intervention_nationalists_SPR = {
-		value = -50
-	}
 
 
 	FRA_go_with_britain_reject = {
 		value = -50
 	}
 
-
-	FRA_alpine_forts = {
-		value = -50
-	}
-
-	FRA_extend_the_maginot_line_focus_neg = {
-		value = -50
-	}
-
-	FRA_extend_the_maginot_line_focus_pos = {
-		value = 25
-	}
 
 	### END FRENCH FOCUS TREE ###
 
@@ -614,11 +527,11 @@ opinion_modifiers = {
 	}
 	sanctions = {
 		trade = yes
-		value = -100
+		value = -50
 	}
 	minor_sanctions = {
 		trade = yes
-		value = -100
+		value = -20
 	}
 
 	unholy_alliance_opinion = {
@@ -638,16 +551,9 @@ opinion_modifiers = {
 		trade = yes
 		value = 50
 	}
-	
 
 	### UK/BRITAIN/ENG FOCUS TREE ###
 	
-	ENG_benelux_intervention_USA = {
-		value = -20
-	}
-	ENG_benelux_intervention_BEL_HOL = {
-		value = -50
-	}
 
 	USA_special_relationship = {
 		value = 10
@@ -670,15 +576,7 @@ opinion_modifiers = {
 	ENG_maintaining_the_balance_of_power_good = {
 		value = 15
 	}
-	ENG_reassessed_continental_committments_bad = {
-		value = -50
-	}
-	ENG_reassessed_continental_committments_good = {
-		value = 15
-	}
-	ENG_the_british_path_to_fascism = {
-		value = -75
-	}
+	
 	ENG_broke_french_relations = {
 		value = 15
 	}
@@ -693,10 +591,6 @@ opinion_modifiers = {
 	}
 	ENG_imperial_conference_opinion = {
 		value = -100
-	}
-
-	ENG_imperial_loyalist = {
-		value = 50
 	}
 
 	ENG_imperial_conference_approved_resolution = {
@@ -790,22 +684,12 @@ opinion_modifiers = {
 	AST_commitment_to_the_cause = { value = 25 }
 
 	CAN_permanent_joint_defense_board = { value = 25 }
-	CAN_patriation_mod = { value = -40 }
-
-	CAN_supply_the_red_army = { value = 25 }
-	CAN_supply_the_red_army_trade = { trade = yes value = -50 }
 
 	CAN_strengthen_the_commonwealth_ties = { value = 25 }
-
-	SAF_anti_british_sentiment = { value = -20 }
-
-	SAF_anti_colonialist_crusaders = { value = -100 }
 
 	NZL_strengthen_ties = { value = 25 }
 
 	RAJ_indian_national_congress = { value = 25 }	
-	
-	RAJ_swaraj = { value = -50 }
 
 	#Hungarian focus
 	HUN_reintegrate_the_railroads = { value = 15 }
@@ -819,8 +703,6 @@ opinion_modifiers = {
 	HUN_refused_alliance = { value = -50 }
 
 	HUN_renegade = { value = -50 }
-
-	HUN_SOV_betrayal = { value = -50 }
 
 	HUN_split_CZE = { value = 25 }
 	
@@ -836,8 +718,6 @@ opinion_modifiers = {
 	ROM_trade_treaty_with_germany = { trade = yes value = 25 }
 	
 	ROM_appoint_german_friendly_government = { value = 20 }
-	
-	ROM_appoint_soviet_friendly_government = { value = 20 }
 	
 	ROM_appoint_allied_friendly_government = { value = 20 }
 
@@ -873,15 +753,6 @@ opinion_modifiers = {
 	CHI_collaboration_with_the_japanese = { value = 25 }
 	CHI_xian_refused = { value = -50 }
 	CHI_refused_support = { value = -50 months = 24 decay = 1}
-
-	#Warlords focus
-	CHI_cooperation_with_the_communists_positive = { value = 35 }
-	CHI_cooperation_with_the_communists_negative = { value = -100 }
-	CHI_opposition = { value = -50 }
-	CHI_cooperation_with_the_nationalists_positive = { value = 25 }
-	CHI_cooperation_with_the_nationalists_negative = { value = -50 }
-	
-	CHI_join_the_chinese_soviet = { value = 25 }
 
 	JAP_anti_communist_bulwark = { value = -100 }
 	JAP_join_the_london_naval_treaty = { value = 50 }
@@ -1001,113 +872,5 @@ opinion_modifiers = {
 	HOL_wilhelminism = {
 		value = -75
 	}
-
-	### Spanish Focus Tree ###
-
-	SPA_spanish_civil_war_commitments = {
-		value = 25
-	}
-
-	SPR_hinder_nkvd_interference = {
-		value = -50
-	}
 	
-	SPR_the_stalinist_doctrine = {
-		value = 25
-	}
-
-	SPR_subvert_soviet_control = {
-		value = -50
-	}
-
-	### Portugal
-
-	POR_sold_guns = {
-		value = 25
-		decay = 1
-	}
-
-	POR_arms_trade = {
-		value = 25
-		trade = yes
-	}
-
-	POR_bought_guns = {
-		value = 25
-		decay = 1
-	}
-
-	POR_ships_trade = {
-		value = 25
-		trade = yes
-	}
-
-	POR_bought_ships = {
-		value = 30
-		decay = 1
-	}
-
-	POR_sold_ships = {
-		value = 30
-		decay = 1
-	}
-
-	POR_helped_in_civil_war = {
-		value = 25
-	}
-
-	POR_neutrality_opinion_trade = {
-		value = 25
-		trade = yes	
-	}
-
-	POR_neutrality_opinion_democratic = {
-		value = 25
-	}
-
-	POR_neutrality_opinion_communism = {
-		value = 25
-	}
-
-	POR_election_opinion_democratic = {
-		value = 20
-	}
-
-	POR_iberian_summit_diplomatic_approach = {
-		value = 20
-		decay = 1
-	}
-
-	POR_iberian_summit_working_together = {
-		value = 20
-		decay = 1
-	}
-
-	POR_anglo_portuguese_alliance = {
-		value = 30
-	}
-
-	POR_rejected_the_iberian_unification = {
-		value = -30
-	}
-
-	POR_portuguese_trade = {
-		value = 50
-	}
-
-	POR_portuguese_trade_minor = {
-		value = 15
-	}
-
-	POR_rejected_the_royal_iberian_alliance = {
-		value = -30
-	}
-
-	POR_the_fifth_empire_has_threatening_ambitions = {
-		value = -100
-	}
-
-	POR_iberian_communism = {
-		value = 30
-	}
-}
+}	

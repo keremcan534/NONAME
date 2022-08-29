@@ -3,19 +3,21 @@ state={
 	name="STATE_702"
 	manpower = 150600
 	
-	state_category = small_island
+		state_category = wasteland
+	impassable = yes
 
-	history={
-		owner = ENG
+	history= {
+		owner = EMP
+		controller = EMP
 		buildings = {
-			infrastructure = 2
-			1093 ={
-				naval_base = 1
+				infrastructure = 1
+
 			}
 		}
-	}
 
 	provinces={
-		1093 
+		13014 
 	}
+
+	local_supplies=0.0 
 }

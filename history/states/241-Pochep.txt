@@ -1,34 +1,26 @@
 
 state={
 	id=241
-	name="STATE_241"
+	name="STATE_241" # Gomel
+	manpower = 943422
+	
+	state_category = rural
 
 	history={
 		owner = SOV
 		victory_points = {
-<<<<<<< Updated upstream
 			9288 20
-=======
-			6649 10 
->>>>>>> Stashed changes
 		}
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 3
-			air_base = 3
-
+			infrastructure = 3 #was: 5
+			air_base = 4
 		}
 		add_core_of = SOV
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 	}
 
 	provinces={
-		6344 6649 6421 6239 6172 3822 3625 3446 3299 3189 
+		289 6233 6344 6354 9247 9288 9342 9371 9396 11230 11271 11355 11383 
 	}
-	manpower = 943422
-	buildings_max_level_factor=1.000
-	state_category=rural
+
+	local_supplies=0.0 
 }

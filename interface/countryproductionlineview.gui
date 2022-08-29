@@ -13,7 +13,7 @@ guiTypes = {
 		show_position = { x=-6 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 300
+		animation_time = 000	
 		size = { width=550 height=100%% }
 
 		#hide_sound = menu_close_window
@@ -786,7 +786,7 @@ guiTypes = {
 		show_position = { x=542 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 300
+		animation_time = 000
 		size = { width=444 height=600 }
 		click_to_front = yes
 
@@ -1131,7 +1131,7 @@ guiTypes = {
 		show_position = { x=539 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 300
+		animation_time = 000
 		size = { width=375 height=100%% }
 		click_to_front = yes
 
@@ -1320,7 +1320,7 @@ guiTypes = {
 		show_position = { x=539 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 300
+		animation_time = 000
 		size = { width=495 height=100%% }
 		click_to_front = yes
 		clipping = no
@@ -1439,7 +1439,7 @@ guiTypes = {
 		show_position = { x=540 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 300
+		animation_time = 000
 		size = { width=375 height=70%% }
 
 		background = {
@@ -1717,12 +1717,12 @@ guiTypes = {
 			#alwaystransparent = yes
 		}
 
-		# buttonType = {
-		# 	name = "convert"
-		# 	position = { x=10 y=75 }
-		# 	quadTextureSprite = "GFX_production_line_convert"
-		# 	clicksound = click_default
-		# }
+		buttonType = {
+			name = "convert"
+			position = { x=1110 y=75 }
+			quadTextureSprite = "GFX_production_line_convert"
+			clicksound = click_default
+		}
 
 		buttonType = {
 			name = "expand"
@@ -2020,12 +2020,12 @@ guiTypes = {
 			#alwaystransparent = yes
 		}
 
-		# buttonType = {
-		# 	name = "convert"
-		# 	position = { x=7 y=30 }
-		# 	quadTextureSprite = "GFX_production_line_convert"
-		# 	clicksound = click_default
-		# }
+		buttonType = {
+			name = "convert"
+			position = { x=7 y=30 }
+			quadTextureSprite = "GFX_production_line_convert"
+			clicksound = click_default
+		}
 
 		buttonType = {
 			name = "expand"
@@ -2232,7 +2232,7 @@ guiTypes = {
 		show_position = { x=544 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 300
+		animation_time = 000
 		size = { width=375 height=70%% }
 
 
@@ -4208,7 +4208,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "variant"
+			name = "variant" 
 			position = { x=297 y=37 }
 			spriteType = "GFX_create_variants_button"
 			clicksound = click_default

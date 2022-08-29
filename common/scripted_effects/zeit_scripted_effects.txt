@@ -1,0 +1,700 @@
+Declare_on_allies = {
+	declare_war_on = {
+		target = POL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ENG
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = RAJ
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = CAN
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = AST
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = SAF
+		type = annex_everything
+	}
+}
+
+declare_on_axis = {
+	declare_war_on = {
+		target = GER
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ITA
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = SPR
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ROM
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = BUL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = HUN
+		type = annex_everything
+	}
+}
+
+##france
+tp_france_divs = {
+	every_country = {
+		limit = {
+			original_tag = FRA
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = FRA
+					is_core_of = GER
+					is_core_of = ITA
+				}
+			}
+			teleport_armies = {
+				to_state = 5139
+			}
+		}
+	}
+}
+
+fall_of_france = {
+	FRA = {
+		news_event = {
+			id = news.34
+			days = 0
+		}
+		set_country_flag = france_de_gaulle
+		create_country_leader = {
+			name = "Charles de Gaulle"
+			desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+			picture = "Portrait_France_Charles_De_Gaulle.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			}
+		}
+		set_cosmetic_tag = FRA_FREE
+		add_ideas = FRA_defeatism
+		country_event = france.20
+		remove_ideas = {
+			FRA_victors_of_wwi
+			FRA_protected_by_the_maginot_line
+		}
+		add_state_core = 539
+		set_capital = {
+			state = 539
+		}
+		set_global_flag = fall_of_france
+	}
+	ENG = {
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Winston Churchill"
+			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "Portrait_Britain_Winston_Churchill.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				british_bulldog
+			}
+		}
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+	EFR = {
+		#syria
+		transfer_state = 553
+		transfer_state = 677
+		transfer_state = 680
+		transfer_state = 554
+		#france
+		transfer_state = 26
+		transfer_state = 22
+		transfer_state = 25
+		transfer_state = 20
+		transfer_state = 33
+		transfer_state = 31
+		transfer_state = 32
+		transfer_state = 21
+		#africa
+		transfer_state = 777
+		transfer_state = 776
+		transfer_state = 781
+		transfer_state = 778
+		transfer_state = 556
+		transfer_state = 779
+		transfer_state = 780
+		transfer_state = 272
+		transfer_state = 557
+		#madagascar
+		transfer_state = 543
+		transfer_state = 708
+		transfer_state = 706
+		transfer_state = 713
+		#tunis
+		transfer_state = 460
+		transfer_state = 513
+		transfer_state = 459
+		transfer_state = 461
+		transfer_state = 462
+		every_owned_state = {
+			set_demilitarized_zone = yes
+		}
+		26 = {
+			set_demilitarized_zone = no
+		}
+	}
+	GER = {
+		transfer_state = 28
+		transfer_state = 17
+		transfer_state = 27
+		transfer_state = 18
+		transfer_state = 29
+		transfer_state = 785
+		transfer_state = 15
+		transfer_state = 16
+		transfer_state = 24
+		transfer_state = 30
+		transfer_state = 14
+		transfer_state = 23
+		transfer_state = 19
+		transfer_state = 806
+		country_event = {
+			id = france.14
+		}
+	}
+	ITA = {
+		transfer_state = 735
+		transfer_state = 1
+		transfer_state = 458
+		transfer_state = 665
+	}
+	JAP = {
+		transfer_state = 671
+		transfer_state = 670
+		transfer_state = 286
+		transfer_state = 741
+	}
+	RAJ = {
+		transfer_state = 320
+	}
+}
+
+declare_war_on_enemy_faction = {
+	if = {
+		limit = {
+			NOT = {
+				ROOT = {
+					has_war_with = THIS.faction_leader
+				}
+			}
+		}
+		set_variable = {
+			GER.test1 = 15
+		}
+		ROOT = {
+			declare_war_on = {
+				target = PREV.faction_leader
+				type = annex_everything
+			}
+		}
+		ROOT_call_all_allies_against_THIS = yes
+		THIS_call_all_allies_against_ROOT = yes
+	}
+}
+
+ROOT_call_allies_both_sides = {
+	ROOT_call_all_allies_against_THIS = yes
+	THIS_call_all_allies_against_ROOT = yes
+}
+
+ROOT_call_all_allies_against_THIS = {
+	set_variable = {
+		GER.test2 = THIS
+	}
+	set_variable = {
+		GER.test3 = PREV
+	}
+	set_variable = {
+		GER.test4 = ROOT
+	}
+	for_each_scope_loop = {
+		array = ROOT.faction_members
+		if = {
+			limit = {
+				NOT = {
+					original_tag = ROOT
+				}
+			}
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = PREV
+			}
+		}
+	}
+}
+
+THIS_call_all_allies_against_ROOT = {
+	for_each_scope_loop = {
+		array = THIS.faction_members
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						AND = {
+							original_tag = USA
+							has_war = no
+						}
+						AND = {
+							original_tag = FRA
+							NOT = {
+								has_global_flag = fall_of_france
+							}
+						}
+						original_tag = PREV
+					}
+				}
+			}
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = ROOT
+			}
+		}
+	}
+}
+
+SOV_relocate_civ = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = SOV
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					is_core_of = SOV
+					NOT = {
+						is_controlled_by = SOV
+					}
+				}
+				industrial_complex>0
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					is_core_of = SOV
+					NOT = {
+						is_controlled_by = SOV
+					}
+				}
+				industrial_complex>0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			SOV = {
+				add_to_variable = {
+					relocatedciv = 1
+				}
+			}
+			SOV = {
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							state = 583
+							state = 571
+							state = 653
+							state = 402
+							state = 404
+							state = 582
+							state = 588
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	else = {
+		random_owned_controlled_state = {
+			limit = {
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					any_neighbor_state = {
+						is_core_of = SOV
+						NOT = {
+							is_controlled_by = SOV
+						}
+					}
+				}
+				industrial_complex>0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			SOV = {
+				add_to_variable = {
+					relocatedciv = 1
+				}
+			}
+			SOV = {
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							state = 583
+							state = 571
+							state = 653
+							state = 402
+							state = 404
+							state = 582
+							state = 588
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+SOV_relocate_mil = {
+	if = {
+		limit = {
+			any_owned_state = {
+				is_controlled_by = SOV
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					is_core_of = SOV
+					NOT = {
+						is_controlled_by = SOV
+					}
+				}
+				arms_factory>0
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					is_core_of = SOV
+					NOT = {
+						is_controlled_by = SOV
+					}
+				}
+				arms_factory>0
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+			SOV = {
+				add_to_variable = {
+					relocatedmil = 1
+				}
+			}
+			SOV = {
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							state = 583
+							state = 571
+							state = 653
+							state = 402
+							state = 404
+							state = 582
+							state = 588
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	else = {
+		random_owned_controlled_state = {
+			limit = {
+				SOV = {
+					divisions_in_state = {
+						size > 2
+						state = PREV
+					}
+				}
+				any_neighbor_state = {
+					any_neighbor_state = {
+						is_core_of = SOV
+						NOT = {
+							is_controlled_by = SOV
+						}
+					}
+				}
+				arms_factory>0
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+			SOV = {
+				add_to_variable = {
+					relocatedmil = 1
+				}
+			}
+			SOV = {
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							state = 583
+							state = 571
+							state = 653
+							state = 402
+							state = 404
+							state = 582
+							state = 588
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+HMP_sov_LL_monthly_effect = {
+	ENG = {  
+	clear_variable = SOV_ll_monthly_generation
+	clear_variable = SOV_ll_this_month
+	clear_variable = SOV_ll_monthly_cap
+	if = { limit = { GER = { has_war_with = SOV } }
+	if = { limit = { OR = { AND = { USA = { controls_state = 629 } SOV = { controls_state = 408 } } has_global_flag = war_in_the_west_start }  } add_to_variable = {  var = SOV_ll_monthly_generation value = 1  } add_to_variable = { var = SOV_ll_monthly_cap value = 5 }  }
+	if = { limit = { AND = { OR = { ENG = { controls_state = 412 }SOV = { controls_state = 412 } }SOV = { controls_state = 229 } } } add_to_variable = { var = SOV_ll_monthly_generation value = 10 }  add_to_variable = { var = SOV_ll_monthly_cap value = 25 }    } 
+	if = { limit = { SOV = { controls_state = 213 } } 	 add_to_variable = {  var = SOV_ll_monthly_generation value = 3 }  add_to_variable = { var = SOV_ll_monthly_cap value = 5 }     } 
+	if = { limit = { AND = {  ENG = { controls_state = 116 } SOV = { controls_state = 137 } } }   add_to_variable = {  var = SOV_ll_monthly_generation   value = 1 } add_to_variable = { var = SOV_ll_monthly_cap value = 3 }   }
+	if = { limit = { NOT = { JAP = { controls_state = 526 } has_global_flag = war_in_the_west_start } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 } } 
+	if = { limit = { NOT = { JAP = { controls_state = 645 } has_global_flag = war_in_the_west_start } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }  } 
+	if = { limit = { NOT = { JAP = { controls_state = 647 } has_global_flag = war_in_the_west_start } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { NOT = { JAP = { controls_state = 648 } has_global_flag = war_in_the_west_start } } add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { ENG = { controls_state = 336 } NOT = { has_global_flag = war_in_the_west_start }  }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { NOT = { has_global_flag = war_in_the_west_start } ENG = { controls_state = 326 } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { NOT = { JAP = { controls_state = 646 } has_global_flag = war_in_the_west_start } }  add_to_variable = {  var = SOV_ll_monthly_generation value = 1 }   } 
+	if = { limit = { date > 1942.10.15 } add_to_variable = {  var = SOV_ll_monthly_generation value = 10 }          }
+	if = {limit = { date > 1943.3.1 } add_to_variable = {  var = SOV_ll_monthly_generation value = 10 }}
+}
+	add_to_variable ={ var = SOV_barb_ll_token value = SOV_ll_monthly_generation } 
+	set_variable = { var = SOV_total_IC_sent value = SOV_barb_ll_token2 }
+	multiply_variable = { var = SOV_total_IC_sent value = 1000 }
+	}
+EMP = { 
+send_equipment = {  equipment = infantry_equipment  amount = 1000000  target = SOV  }#1
+send_equipment = {  equipment = artillery_equipment  amount = 1000000  target = SOV  }#2
+send_equipment = {  equipment = anti_tank_equipment  amount = 1000000  target = SOV  }#3	
+send_equipment = {  equipment = support_equipment  amount = 1000000  target = SOV  }#4
+send_equipment = {  equipment = rocket_artillery_equipment  amount = 1000000  target = SOV  }#5
+send_equipment = {  equipment = anti_air_equipment  amount = 1000000  target = SOV  } #6
+#####
+send_equipment = {  equipment = fighter_equipment  amount = 1000000  target = SOV  } #7 
+send_equipment = {  equipment = CAS_equipment  amount = 1000000  target = SOV  } #8
+send_equipment = {  equipment = mechanized_equipment  amount = 1000000  target = SOV  } #9
+send_equipment = {  equipment = medium_tank_chassis  amount = 1000000  target = SOV  } #10
+send_equipment = {  equipment = light_tank_chassis  amount = 1000000  target = SOV  } #11
+send_equipment = {  equipment = motorized_equipment  amount = 1000000  target = SOV  } #12
+###
+}
+}
+
+HMP_guns_to_swe = { 
+	ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_GunsSent value =  30000 }	
+	   }
+	   send_equipment = {  equipment = infantry_equipment  amount = 30000  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_at_to_swe = { 
+	ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_ATSent value =  2500 }	
+	   }
+	   send_equipment = {  equipment = anti_tank_equipment  amount = 2500  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_arty_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 }
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_ArtySent value =  2500 }	
+	   }
+	   send_equipment = {  equipment = artillery_equipment  amount = 2500  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_aa_to_swe = { 
+	ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_AASent value =  2500 }
+	   }
+	   send_equipment = {  equipment = anti_air_equipment  amount = 2500  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_rarty_to_swe = { 
+   ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_RartySent value =  2000 }
+	   }
+	   send_equipment = {  equipment = rocket_artillery_equipment  amount = 2000  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_sup_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 }
+   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }	
+	   add_to_variable = {  var = SOV_SupSent value = 3000 }
+	   } 
+	   send_equipment = {  equipment = support_equipment  amount = 3000  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_mot_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_MotSent value = 4000 }
+	   }
+	   send_equipment = {  equipment = motorized_equipment  amount = 4000  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_mech_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_MechSent value = 800 }
+	   }
+	   send_equipment = {  equipment = mechanized_equipment  amount = 800  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_med_to_swe = { 
+	ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_MedSent value = 300 }
+	   } 
+	   send_equipment = {  equipment = medium_tank_chassis  amount = 300  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_light_to_swe = { 
+		ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_LightSent value = 400 }
+	   }
+	   send_equipment = {  equipment = light_tank_chassis  amount = 400  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_fighter_to_swe = { 
+	 ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_FighterSent value = 120 }
+	   }
+	   send_equipment = {  equipment = fighter_equipment  amount = 120  target = EMP  } 
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }
+   
+   HMP_cas_to_swe = { 
+	 ENG = { 
+	   add_to_variable = {  var = SOV_barb_ll_token value = -5 } 
+	   add_to_variable ={ var = SOV_barb_ll_token2 value = 5 }
+	   add_to_variable = {  var = SOV_ll_this_month value = 5 } 
+	   add_to_variable = {  var = SOV_CasSent value = 120 }
+	   }
+	   send_equipment = {  equipment = CAS_equipment  amount = 120  target = EMP  }
+	   send_equipment = { equipment = convoy amount = 1 target = EMP }
+   }

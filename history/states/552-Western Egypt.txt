@@ -2,19 +2,23 @@
 state={
 	id=552
 	name="STATE_552"
-	manpower = 26539
-
+	manpower = 18539
+	
 	state_category = wasteland
+	impassable = yes
 
-
-	history={
-		owner = ENG
+	history= {
+		owner = EMP
+		controller = EMP
 		buildings = {
-			infrastructure = 0
+				infrastructure = 1
+
+			}
 		}
-	}
 
 	provinces={
-		7216
+		10869 10907 12733 12816
 	}
+
+	local_supplies=0.0 
 }

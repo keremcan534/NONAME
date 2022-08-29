@@ -1,259 +1,374 @@
 USA_congress = {
-	USA_research_grants = {
-		icon = ger_mefo_bills
-		allowed = {
-			tag = USA
-		}		
+	USA_small_lobby_effort = {
+		icon = generic_political_discourse
 		available = {
-			has_political_power > 1
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+			not = {
+				has_decision = USA_medium_lobby_effort
+			}
+			OR = {
+				political_power_daily > 0.3
+				has_political_power > 10
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				congress_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_high_support_trigger = yes
+				factor = 0
+			}
+		}
+		modifier = {
+			political_power_gain = -0.3
+		}
+		days_remove = 30
+		remove_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	USA_medium_lobby_effort = {
+		icon = generic_political_discourse
+		available = {
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+			not = {
+				has_decision = USA_small_lobby_effort
+			}
+			OR = {
+				political_power_daily > 0.75
+				has_political_power > 35
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				congress_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_high_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_remove = 45
+		modifier = {
+			political_power_gain = -0.75
+		}
+		remove_effect = {
+			USA_congress_medium_support = yes
+		}
+	}
+	USA_special_measures = {
+		icon = ger_mefo_bills
+		available = {
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_re_enable = 90
+		complete_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	USA_pay_farm_subsidies = {
+		icon = ger_mefo_bills
+		available = {
+			has_government = democratic
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+		}
+		visible = { has_completed_focus = USA_agricultural_adjustment_act }
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_remove = 90
+		modifier = { consumer_goods_factor = 0.03 }
+		remove_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	
+	USA_amend_the_budget = {
+		icon = ger_mefo_bills
+		available = {
+			congress_medium_support_trigger = yes
 		}
 		visible = {has_government = democratic }
-		cost = 40
+		cost = 25
 		days_remove = 90
 		days_re_enable = 275
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_political_power > -23.43
+				congress_low_support_trigger = yes
 				factor = 0
 			}
 		}
-		modifier = { research_speed_factor = 0.04 }
+		modifier = { consumer_goods_factor = -0.05 }
 		remove_effect = {
+			USA_congress_medium_opposition = yes
 		}
 	}
-
-	USA_improved_worker_conditions = {
-
-		icon = GFX_decision_hol_exchange_intelligence_data
-		allowed = {
-			tag = USA
-		}
+	USA_research_grants = {
+		icon = ger_mefo_bills
 		available = {
-			NOT = { has_country_flag = worker_conditions_running }
+			congress_medium_support_trigger = yes
 		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-
-		modifier = {
-			stability_weekly = 0.005
-			consumer_goods_factor = 0.025
-			industrial_capacity_factory = -0.1
-		}
-
-		days_remove = 180
-		days_re_enable = 360
-
-		cost = 100
-
-		complete_effect = {
-			set_country_flag = worker_conditions_running
-		}
-		remove_effect = {
-			clr_country_flag = worker_conditions_running
-		}
-
+		visible = {has_government = democratic }
+		cost = 25
+		days_remove = 90
+		days_re_enable = 275
 		ai_will_do = {
-			base = 0
+			factor = 1
 			modifier = {
-				add = 1
-				has_stability < 0.6
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		modifier = { research_speed_factor = 0.08 }
+		remove_effect = {
+			USA_congress_medium_opposition = yes
+		}
+	}
+	USA_invest_in_state_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_state_factory_tt
+				any_owned_state = {
+					has_state_flag = USA_congress_build_factory
+					check_variable = { factory_goal = industrial_complex_level }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_factory
+			}
+		}
+
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_factory
+				}
+				clr_state_flag = USA_congress_build_factory
+				clear_variable = factory_goal
+			}
+			
+			USA_congress_small_opposition = yes 
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_factory
+				}
+				clr_state_flag = USA_congress_build_factory
+				clear_variable = factory_goal
+			}
+			ROOT = {
+				USA_congress_medium_support = yes 
+				clr_country_flag = USA_congress_investment
+			}
+			
+		}
+	}
+	USA_invest_in_state_arms_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_state_arms_factory_tt
+				any_owned_state = {
+					has_state_flag = USA_congress_build_arms_factory
+					check_variable = { arms_factory_goal = arms_factory_level }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_arms_factory
+			}
+		}
+
+
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_arms_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_arms_factory
+				}
+				clr_state_flag = USA_congress_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			
+			USA_congress_small_opposition = yes 
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_arms_factory
+				}
+				clr_state_flag = USA_congress_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			ROOT = {
+				USA_congress_medium_support = yes 
+				clr_country_flag = USA_congress_investment
+			}
+			
+		}
+	}
+	USA_invest_in_state_dockyard = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_dockyard_tooltip
+				any_owned_state = {
+					has_state_flag = USA_congress_build_dockyard
+					check_variable = { dockyard_goal = building_level@dockyard }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_dockyard
+			}
+		}
+
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_dockyard
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_dockyard
+				}
+				clr_state_flag = USA_congress_build_dockyard
+				clear_variable = dockyard_goal
+			}
+			USA_congress_small_opposition = yes 
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_dockyard
+				}
+				clr_state_flag = USA_congress_build_dockyard
+				clear_variable = dockyard_goal
+			}
+			ROOT = {
+				USA_congress_medium_support = yes 
+				clr_country_flag = USA_congress_investment
 			}
 		}
 	}
-
-
-#	USA_give_refuge_ger = {
-#
-#		icon = generic_research
-#
-#        allowed = {
-#            original_tag = USA
-#        }
-#
-#		visible = {
-#            NOT = { has_government = fascism }
-#            NOT = { has_government = communism }
-#		}
-#
-#        cost = 125
-#        fire_only_once = yes
-#        
-#        days_remove = -1
-#
-#        available = {
-#            GER = { NOT = { has_government = ROOT } }
-#			NOT = { 
-#				tag = GER 
-#				tag = ITA 
-#			}
-#
-#            original_tag = USA
-#		}
-#
-#        modifier = {
-#            research_speed_factor = 0.1
-#            stability_factor = -0.075
-#        }
-#
-#        remove_trigger = {
-#
-#        }
-#
-#        ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				tag = ENG
-#				has_War = no
-#				date < 1937.3.1
-#				factor = 0
-#			}
-#		}
-#    }
-
-	USA_promises_of_peace = {
-
-	icon = GFX_decision_eng_puppet_usa
-
-        allowed = {
-            original_tag = USA
-        }
-
-	available = {
-		NOT = { has_country_flag = pop_running }
-		has_war = no
-		has_war_support > 0.2
-	}
-
-	visible = {
-	  NOT = { tag = GER }
-	}
-
-	remove_trigger = {
-		has_war = yes
-		has_war_support < 0.05
-	}
-
-	fire_only_once = no
-	modifier = {
-		stability_weekly = 0.010
-		war_support_weekly = -0.010
-		political_power_gain = -0.50
-	}
-
-	days_remove = 90
-	days_re_enable = 360
-	cost = 50
-	complete_effect = {
-		set_country_flag = pop_running
-	}
-
-	remove_effect = {
-		clr_country_flag = pop_running
-	}
-
-	ai_will_do = {
-		base = 0
-		modifier = {
-			add = 1
-			has_stability < 0.4
+	USA_invest_in_state_infrastructure = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_state_infrastructure_tt
+				any_owned_state = {
+					has_state_flag = USA_congress_build_infrastructure
+					check_variable = { infrastructure_goal = infrastructure_level }
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_infrastructure
+			}
+		}
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_infrastructure
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_infrastructure
+				}
+				clr_state_flag = USA_congress_build_infrastructure
+				clear_variable = infrastructure_goal
+			}
+			
+			USA_congress_small_opposition = yes 
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_infrastructure
+				}
+				clr_state_flag = USA_congress_build_infrastructure
+				clear_variable = infrastructure_goal
+			}
+			ROOT = {
+				USA_congress_medium_support = yes 
+				clr_country_flag = USA_congress_investment
+			}
+			
 		}
 	}
 	}
-
-
-#    USA_anti_fascist_raids = {
-#
-#    	icon = generic_civil_support
-#
-#    	visible = {
-#			NOT = { has_government = fascism }
-#		}
-#
-#        allowed = {
-#            original_tag = USA
-#        }
-#
-#		available = {
-#            fascism > 0.1
-#        }
-#	
-#		modifier = {
-#			fascism_drift = -0.05
-#			stability_weekly = 0.007
-#		}
-#	
-#		days_remove = 120
-#		cost = 75
-#
-#		complete_effect = {
-#			add_stability = -0.07
-#		}
-#		
-#		remove_effect = {
-#		}
-#		
-#		ai_will_do = {
-#			base = 0
-#			modifier = {
-#				add = 1
-#				tag = AUS
-#				fascism > 0.45
-#				is_historical_focus_on = no
-#			}
-#			modifier = {
-#				add = 10
-#				tag = AUS
-#				fascism > 0.45
-#				GER = { has_completed_focus = #GER_reestablish_free_elections }
-#			}
-#			modifier = {
-#				add = 10
-#				tag = AUS
-#				fascism > 0.45
-#				has_completed_focus = liberty_ethos
-#			}
-#		}
-#    }
-
-#    USA_anti_communist_raids = {
-#
-#    	icon = generic_civil_support
-#
-#        allowed = {
-#            original_tag = USA
-#        }
-#
-#    	visible = {
-#			NOT = { has_government = communism }
-#		}
-#
-#		available = {
-#            communism > 0.1
-#        }
-#	
-#		modifier = {
-#			communism_drift = -0.05
-#			stability_weekly = 0.007
-#		}
-#	
-#		days_remove = 120
-#		cost = 50
-#
-#		complete_effect = {
-#			add_stability = -0.07
-#		}
-#		
-#		remove_effect = {
-#		}
-#		
-#		ai_will_do = {
-#			factor = 0
-#		}
-#    }
 	
-}

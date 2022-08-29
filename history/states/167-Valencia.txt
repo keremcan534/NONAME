@@ -9,16 +9,20 @@ state={
 	history={
 		owner = SPR
 		victory_points = {
-			6906 20
+			6906 10
+		}
+		victory_points = {
+			4098 3
 		}
 		buildings = {
-			infrastructure = 3
-			anti_air_building = 5			
+			infrastructure = 3 #was: 6
 		}
 		add_core_of = SPR
 	}
 
 	provinces={
-		6906
+		962 3799 3873 4098 6817 6856 6906 6959 9889 9896 
 	}
+
+	local_supplies=6.0 
 }

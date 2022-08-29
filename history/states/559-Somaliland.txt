@@ -8,18 +8,24 @@ state=
 	
 	history={
 		owner = ITA
+		add_core_of = SOM
 		victory_points = {
-			1180 3 
+			12991 3 
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			air_base = 1
-			1250 = {
+			12941 = {
+				naval_base = 2
+			}
+			12991 = {
 				naval_base = 2
 			}
 		}
 	}
 	provinces=
 	{
-1964 1966 2020 2063 4909 5065 7681 4526 4431 4281 4155 1495 1250 1180 	}
+1964 1966 2020 2063 4909 5065 8164 10818 10891 10928 11014 12840 12941 12991 	}
+
+	local_supplies=0.0 
 }

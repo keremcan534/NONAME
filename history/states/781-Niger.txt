@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = FRA
+		add_core_of = NGR
 		victory_points = {
 			2056 1
 		}
@@ -17,6 +18,8 @@ state={
 	}
 
 	provinces={
-		1975 2056 1791
+		1975 2056 12707
 	}
+
+	local_supplies=1.0 
 }

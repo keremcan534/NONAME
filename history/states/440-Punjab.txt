@@ -7,16 +7,20 @@ state={
 	state_category = town
 
 	history={
+		victory_points = {
+			10887 1
+		}
 		owner = RAJ
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 2
+			infrastructure = 3 #was: 5
 		}
 		add_core_of = RAJ
+		
 	}
 
 	provinces={
-		7858 7837 7727 6992 5497 5432 4617 4488 4437 4407 2548 1647 1550 
+		4979 8007 8022 8106 9084 10066 10139 10173 10772 10843 10887 10898 12005 12792 12822 
 	}
+
+	local_supplies=0.0 
 }

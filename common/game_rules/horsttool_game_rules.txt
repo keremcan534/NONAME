@@ -64,11 +64,6 @@ horst_host_country = {
 		desc = ""
 	}
 	option = {
-		name = NZL
-		text = "New Zealand"
-		desc = ""
-	}
-	option = {
 		name = JAP
 		text = "Japan"
 		desc = ""
@@ -86,21 +81,6 @@ horst_host_country = {
 	option = {
 		name = FRA
 		text = "France"
-		desc = ""
-	}
-	option = {
-		name = BRA
-		text = "Brazil"
-		desc = ""
-	}
-	option = {
-		name = MEX
-		text = "Mexico"
-		desc = ""
-	}
-	option = {
-		name = IRE
-		text = "Ireland"
 		desc = ""
 	}
 	option = {

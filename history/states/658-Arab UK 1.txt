@@ -11,16 +11,15 @@ state={
 
 
 	history={
+		add_core_of = UAE
 		owner = ENG
-		buildings = { 
-			air_base = 5
-		}
 		victory_points = {
-			7911 1 
+			7960 1 
 		}
 		buildings = {
+			air_base = 1
 			infrastructure = 1
-			7911 = {
+			7960 = {
 				naval_base = 3
 			}
 		}
@@ -28,6 +27,8 @@ state={
 	}
 
 	provinces={
-		2048 4391 7911
+		2048 7960 8108 10904 
 	}
+
+	local_supplies=4.0 
 }

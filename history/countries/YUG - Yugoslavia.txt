@@ -1,84 +1,6 @@
 ﻿capital = 107
-
 set_research_slots = 0
-
-add_ideas = {
-	GDU_neutrality
-}
-
-add_opinion_modifier = { target = JAP modifier = embargo }
-add_opinion_modifier = { target = JAP modifier = sanctions }
-add_opinion_modifier = { target = JAP modifier = minor_sanctions }
-
-set_technology = {
-	forgotgwtank = 1
-	forgotearly_fighter = 1
-	forgotearly_bomber = 1
-	forgotearly_ship_hull_light = 1
-	forgotearly_ship_hull_cruiser = 1
-	forgotearly_ship_hull_heavy = 1
-	forgotearly_ship_hull_submarine = 1
-	airfield_construction = 1
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_recon = 1
-	improved_light_tank = 1
-	basic_heavy_tank = 1
-	tech_support = 1
-	tech_engineers = 1
-	tech_military_police = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	paratroopers = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	interwar_antitank = 1
-	gwtank = 1
-	basic_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
-	CAS1 = 1
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
-	mass_assault = 1
-	fleet_in_being = 1
-	fuel_silos = 1
-	fuel_refining = 1
-	air_superiority = 1
-	forward_interception = 1
-	motorized_rocket_unit = 1
-	basic_light_td = 1
-	basic_light_art = 1
-	basic_light_spaa = 1
-	improved_light_td = 1
-	improved_light_art = 1
-	improved_light_spaa = 1	
-	basic_heavy_td = 1
-	basic_heavy_art = 1
-	basic_heavy_spaa = 1	
-}
-
-add_equipment_to_stockpile = {
-         type = artillery_equipment_1
-         amount = 1342
-         producer = GER
-}  
-add_equipment_to_stockpile = {
-         type = support_equipment
-         amount = 1036
-         producer = GER
-} 
-
-add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 23847
-         producer = GER
-} 
-
-set_convoys = 10
+set_convoys = 0
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.5.3"
@@ -86,21 +8,55 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 15
-	fascism = 10
-	communism = 15
-	neutrality = 60
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
 }
+set_stability = 0
 
-set_stability = 0.6
+recruit_character = YUG_prince_paul
+recruit_character = YUG_ante_pavelic
+recruit_character = YUG_milan_grol
+recruit_character = YUG_josip_broz_tito
+recruit_character = YUG_atanas_shalapatov
+recruit_character = YUG_lajos_veress
+recruit_character = YUG_jure_francetic
+recruit_character = YUG_nikola_stoychev
+recruit_character = YUG_georgi_markov
+recruit_character = YUG_ivan_markov
+recruit_character = YUG_ivan_babic
+recruit_character = YUG_konstantin_lukash
+recruit_character = YUG_franjo_simic
+recruit_character = YUG_nikola_mihailov_mihov
+recruit_character = YUG_asen_nikolov
+recruit_character = YUG_károly_beregfy
+recruit_character = YUG_ferenc_feketehalmyczeydner
+recruit_character = YUG_slavko_stancer
+recruit_character = YUG_damian_velchev
+recruit_character = YUG_augustin_malar
+recruit_character = YUG_rafael_boban
+recruit_character = YUG_stefan_jurech
+recruit_character = YUG_anton_pulanish
+recruit_character = YUG_géza_lakatos
+recruit_character = YUG_georgi_popov
+recruit_character = YUG_iván_hindy
+recruit_character = YUG_stjepan_sarkotic
+recruit_character = YUG_angel_dotsev
+recruit_character = YUG_junuz_ajanovic
+recruit_character = YUG_franza_karmasin
+recruit_character = YUG_jozef_turanec
 
-create_country_leader = {
-	name = "Josip Broz Tito"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
+recruit_character = YUG_danilo_kalafatovic
+recruit_character = YUG_milutin_nedic
+recruit_character = YUG_petar_kosic
+recruit_character = YUG_draza_mihailovic
+recruit_character = YUG_mihajlo_lukic
+recruit_character = YUG_bogoljub_ilic
+recruit_character = YUG_petar_vukcevic
+recruit_character = YUG_ljubomir_maric
+recruit_character = YUG_arso_jovanovic
+recruit_character = YUG_slobodan_jovanovic
+recruit_character = YUG_milan_nedic
+recruit_character = YUG_ivan_ribar
+recruit_character = YUG_dimitrije_ljotic

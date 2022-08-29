@@ -1,25 +1,26 @@
 
-state={
-	id=256
-	name="STATE_256"
+state = {
+	id = 256
+	name = "STATE_256"
+	manpower = 786030 #Was 1572061 but was divided by 2 due to the state being split in half
+	
+	state_category = town
 
-	history={
+	history = {
+		victory_points = {
+			9259 1 
+		}
 		owner = SOV
 		buildings = {
 			infrastructure = 2
-
-		}
-		victory_points = {
-			6749 5
 		}
 		add_core_of = SOV
-
+		add_core_of = CHU
 	}
 
-	provinces={
-		325 3282 3315 6253 6307 6312 6357 6403 6809 6749 6586 6234 3286 
+	provinces = {
+		 3282 6253 6312 6357 9244 9259 9307 9373 11356 
 	}
-	manpower=1572061
-	buildings_max_level_factor=1.000
-	state_category=large_town
+
+	local_supplies = 0.0 
 }

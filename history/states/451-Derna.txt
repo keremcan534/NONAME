@@ -3,25 +3,28 @@ state={
 	id=451
 	name="STATE_451"
 	manpower = 45628
-
-	state_category = rural
+	
+	state_category = wasteland
 
 	history={
 		owner = ITA
-
+		
 		victory_points = {
-			1130 175
+			1130 5 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			air_base = 4
 			1130 = {
-				naval_base = 1
+				naval_base = 6
 			}
 		}
+		add_core_of = ITA
 	}
 
 	provinces={
-		1130 1204 4136 7082 7206 5560 5510 2535 632 631 604 461 
+		1130 1204 4136 4151 7082 9992 10120 12094 
 	}
+
+	local_supplies=4.0 
 }

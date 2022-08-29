@@ -4,10 +4,10 @@ state={
 	name="STATE_542"
 	manpower = 234000
 	
-	state_category = wasteland
+	state_category = rural
 	
 	resources={
-		chromium=268
+		chromium=90 # was: 168
 	}
 
 	history={
@@ -15,10 +15,16 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		add_core_of = BOT
+		victory_points = {
+			8214 1
+		}
 
 	}
 
 	provinces={
-		1580 7607 4980 1251 1230 
+		1580 8214 10525 12940 12963 
 	}
+
+	local_supplies=2.0 
 }

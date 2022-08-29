@@ -3,7 +3,7 @@ state={
 	id=528
 	name="STATE_528" # Kyushu
 	manpower = 9069000
-	state_category = metropolis
+	state_category = large_city
 	resources={
 		chromium=52 # was: 88
 	}
@@ -12,13 +12,12 @@ state={
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-			infrastructure = 4
-			air_base = 3
+			infrastructure = 4 #was: 7
+			air_base = 4
 			dockyard = 4
-			arms_factory = 2
-			industrial_complex = 1
-			fuel_silo = 1
-			5606 = {
+			arms_factory = 1
+			industrial_complex = 5
+			9950 = {
 				naval_base = 6
 
 			}
@@ -31,11 +30,20 @@ state={
 			4102 15 
 		}
 		victory_points = {
-			5606 30
+			9950 30
 		}
+		1939.1.1 = {
+			buildings = {
+				dockyard = 4
+				industrial_complex = 3
+			}
+		}
+
 	}
 
 	provinces={
-		1020 1025 1158 1183 4027 4102 4164 4198 7110 7178 5606 5545 5536 5474 2614 2597 2547 2529 
+		1020 1025 1158 1183 4027 4102 4164 4198 7110 7178 9950 10011 10020 10092 11925 11949 12006 12032 
 	}
+
+	local_supplies=10.0 
 }

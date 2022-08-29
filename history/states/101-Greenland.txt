@@ -5,18 +5,19 @@ state=
 	manpower = 18000
 	
 	state_category = wasteland
-	
-	history=
-	{
-		owner = USA
+	impassable = yes
+
+	history= {
+		owner = EMP
+		controller = EMP
 		buildings = {
-			2068 ={
-				naval_base = 1
+				infrastructure = 1
+
 			}
 		}
-		add_core_of = DEN
-	}
 	provinces=
 	{
-5320 4849 2068 942 939 	}
+10245 10636 12512 13058 13066 	}
+
+	local_supplies=0.0 
 }

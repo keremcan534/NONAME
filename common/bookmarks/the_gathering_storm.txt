@@ -10,98 +10,53 @@ bookmarks = {
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				FRA_victors_of_wwi
-				FRA_political_violence
-				FRA_protected_by_the_maginot_line
-			}
-			focuses = {
-				FRA_army_reform
-				FRA_heavy_armor_focus
-				FRA_devalue_the_franc
-			}
+			ideas = {}
+			focuses = {}
 		}
+		
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
-			}
-			focuses = {
-				USA_two_ocean_navy_act 
-				USA_lend_lease_act
-				USA_the_giant_wakes 
-			}
+			ideas = {}
+			focuses = {}
 		}
+		
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
-				general_rearmament_focus 
-				fighter_command_focus 
-				tizard_mission_focus
-			}
+			ideas = {}
+			focuses = {}
 		}
-
+		
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			ideas = {
-				GER_mefo_bills_1 
-				sour_loser
-				general_staff
-			}
-			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
-			}
+			ideas = {}
+			focuses = {}
 		}
+		
+		
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
-			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
-			}
-			focuses = {
-				ITA_mare_nostrum
-				ITA_slovenia_dalmatia_claims 
-				ITA_pact_of_steel
-			}
+			ideas = {}	
+			focuses = {}		
 		}
+		
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
-			ideas = {
-				JAP_zaibatsus
-				JAP_militarism
-			}
-			focuses = {
-				JAP_strike_on_the_southern_resource_area
-				JAP_intervene_in_china
-				JAP_the_zero
-			}
+			ideas = {}	
+			focuses = {}			
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
-			ideas = {
-				trotskyite_plot
-			}
-			focuses = {
-				SOV_great_purge
-				SOV_defense_of_stalingrad
-				SOV_proclaim_victory_over_fascism 
-			}
+			available = { has_dlc = "No Step Back" }
+			ideas = {}
+			focuses = {}	
 		}
+
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
@@ -113,91 +68,72 @@ bookmarks = {
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				CAN_great_depression_1
-				CAN_conscription_crisis
-			}
-			focuses = {
-			}
+			ideas = {}
+			focuses = {}
 		}
+		
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				AST_great_depression_1
-			}
-			focuses = {
-			}
+			ideas = {}
+			focuses = {}
 		}
-		"NZL"={
-			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				NZL_maori_conscription
-				NZL_the_manpower_act
-				ENG_guided_by_britain_1
-			}
-			focuses = {
-				NZL_bob_semple_tank
-				NZL_strengthen_the_commonwealth
-				NZL_expand_the_university_of_auckland
-			}
-		}
+		
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				SAF_ossewabrandwag
-				SAF_history_of_segregation
-			}
-			focuses = {
-				SAF_secure_interests_in_africa
-			}
+			ideas = {}
+			focuses = {}
 		}
 		"RAJ"={
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
 			ideology = neutrality
-			ideas = {
-				RAJ_agrarian_society
-				RAJ_princely_states
-			}
-			focuses = {
-				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
-			}
+			ideas = {}
+			focuses = {}
+		}
+		"CZE"={
+			minor = yes
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {}
+			focuses = {}
 		}
 
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
 			ideology = neutrality
-			ideas = {
-				HUN_treaty_of_triannon
-			}
-			focuses = {
-				HUN_secret_rearmament
-				HUN_renounce_the_treaty_of_trianon
-			}
+			ideas = {}
+			focuses = {}
 		}
 
 		"ROM"={
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
 			ideology = neutrality
-			ideas = {
-				ROM_king_carol_ii_hedonist
-				neutrality_idea
-			}
-			focuses = {
-				ROM_institute_royal_dictatorship
-				ROM_preserve_greater_romania
-			}
+			ideas = {}
+			focuses = {}
 		}
-
+		
+		"MAN"={
+			minor = yes
+			history = "MAN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {}
+			focuses = {}
+		}
+		
+		"SPR"={
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {}
+			focuses = {}
+		}
+		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

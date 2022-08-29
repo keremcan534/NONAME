@@ -1,36 +1,33 @@
-
 state={
 	id=430
 	name="STATE_430"
-	
-	resources={
-		steel=25
-		tungsten=40
-		oil=20		
-	}
-	
+
 	history={
+		add_core_of = BAN
 		owner = RAJ
 		victory_points = {
-			2611 1 
+			11929 10
 		}
 		buildings = {
-			infrastructure = 2
-			air_base = 5
-			2577 = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			11968 = {
 				naval_base = 3
 
 			}
 
 		}
+		add_core_of = PAK
 		add_core_of = RAJ
 
 	}
 
 	provinces={
-		997 1075 2843 4162 4616 7078 7124 7179 7634 5618 5561 5559 5522 5126 5103 2623 2611 2577 2543 2161 790 1497 1525 1553 1581 7455 5476 5194 5004 2227 2185 
+		2843 4162 4616 7078 7124 7179 7662 9935 9991 9993 10035 10389 10416 10443 11911 11929 11968 12010 12423 13208
 	}
-	manpower = 40950400
+	manpower=31973300
 	buildings_max_level_factor=1.000
 	state_category=town
+
+	local_supplies=0.0 
 }

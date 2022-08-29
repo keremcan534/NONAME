@@ -1,47 +1,10 @@
 ﻿capital = 110
-
 oob = "NOR_1936"
-set_rule = { can_join_factions = no }
-set_research_slots = 4
-set_rule = { can_be_spymaster = no }
-add_ideas = {
-	limited_conscription
-	GDU_neutrality
-	nor_bad_debuffs
-	nor_bad_debuffs2
-	GDU_refinery_prebuild_disincentive
-}
-
+set_research_slots = 0
 set_stability = 0.9
-set_war_support = 0
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	tech_support = 1		
-	tech_engineers = 1
-		gwtank = 1
-	basic_light_tank = 1
-	basic_heavy_tank = 1 
-	improved_light_tank = 1
-	early_fighter = 1
-	early_bomber = 1
-	motorised_infantry = 1
-	tech_recon = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		basic_battery = 1
-		basic_secondary_battery = 1
-		basic_torpedo = 1
-		coastal_defense_ships = 1
-	}
-
-set_convoys = 200		# biggest merchant marine in the world
-set_stability = 0.7
-
+set_war_support = 0.1
+set_convoys = 0
+set_stability = 0
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.10.16"
@@ -49,16 +12,52 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 96
-	fascism = 2
-	communism = 2
+	democratic = 100
+	fascism = 0
+	communism = 0
 }
-
-create_country_leader = {
-	name = "Johan Nygaardsvold"
-	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
-	picture = "Portrait_Norway_Johan_Nygaardsvold.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {		}
-}
+recruit_character = NOR_elias_corneliussen
+recruit_character = NOR_otto_ruge
+recruit_character = NOR_kristian_laake
+recruit_character = NOR_johan_nygaardsvold
+recruit_character = NOR_odd_prytz
+recruit_character = NOR_wilhelm_teige
+recruit_character = NOR_sverre_eriksen
+recruit_character = NOR_nelson_mello
+recruit_character = NOR_françois_darlan
+recruit_character = NOR_joão_baptista_de_mattos
+recruit_character = NOR_markos_drakos
+recruit_character = NOR_alexandros_papagos
+recruit_character = NOR_charles_de_gaulle
+recruit_character = NOR_king_haakon_vii
+recruit_character = NOR_alphonse_juin
+recruit_character = NOR_izaak_reijnders
+recruit_character = NOR_henri_winkelman
+recruit_character = NOR_jean_de_lattre_de_tassigny
+recruit_character = NOR_philippe_leclerc
+recruit_character = NOR_petrus_wilhelmus_best
+recruit_character = NOR_eurico_gaspar_dutra
+recruit_character = NOR_mariepierre_koenig
+recruit_character = NOR_antoinemariebenoît_besson
+recruit_character = NOR_godfried_van_voorst_tot_voorst
+recruit_character = NOR_euclides_zenobio_da_costa
+recruit_character = NOR_mascarenhas_de_morais
+recruit_character = NOR_carl_gustav_fleischer
+recruit_character = NOR_charalambos_katsimitros
+recruit_character = NOR_henri_giraud
+recruit_character = NOR_georges_catroux
+recruit_character = NOR_adolf_indrebo
+recruit_character = NOR_trygve_halvdan_lie
+recruit_character = NOR_armaments_nor
+recruit_character = NOR_birger_ljungberg
+recruit_character = NOR_wilhelm_von_tangen-hansteen
+recruit_character = NOR_alfred_roscher-lund
+recruit_character = NOR_konrad_sundlo
+recruit_character = NOR_stabber_nor
+recruit_character = NOR_jacob_von_der_lippe
+recruit_character = NOR_smooth_nor
+recruit_character = NOR_nor_air_tacticalbombing
+recruit_character = NOR_crusader_nor
+recruit_character = NOR_willhelm_von_tangen_hansteen
+recruit_character = NOR_gentlemen_nor
+recruit_character = NOR_halavdan_koht

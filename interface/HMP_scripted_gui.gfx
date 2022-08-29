@@ -1,0 +1,203 @@
+spriteTypes = {	
+		SpriteType = {
+		name = "GFX_iran_gray"
+		textureFile = "gfx/horst_gui/iran_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_iran_red"
+		textureFile = "gfx/horst_gui/iran_red.dds"
+	}
+		SpriteType = {
+		name = "GFX_iran_green"
+		textureFile = "gfx/horst_gui/iran_green.dds"
+	}
+		SpriteType = {
+		name = "GFX_murmansk_gray"
+		textureFile = "gfx/horst_gui/murmansk_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_murmansk_red"
+		textureFile = "gfx/horst_gui/murmansk_red.dds"
+	}
+		SpriteType = {
+		name = "GFX_murmansk_green"
+		textureFile = "gfx/horst_gui/murmansk_green.dds"
+	}
+			SpriteType = {
+		name = "GFX_gib_gray"
+		textureFile = "gfx/horst_gui/gib_gray.dds"
+	}
+			SpriteType = {  
+		name = "GFX_gib_red"  
+		textureFile = "gfx/horst_gui/gib_red.dds"
+	}
+		SpriteType = {
+		name = "GFX_gib_green"
+		textureFile = "gfx/horst_gui/gib_green.dds"
+	}
+				SpriteType = {
+		name = "GFX_malta_gray"
+		textureFile = "gfx/horst_gui/malta_gray.dds"
+	}
+			SpriteType = {  
+		name = "GFX_malta_red"  
+		textureFile = "gfx/horst_gui/malta_red.dds"
+	}
+		SpriteType = {
+		name = "GFX_malta_green"
+		textureFile = "gfx/horst_gui/malta_green.dds"
+	}
+		
+					SpriteType = {
+		name = "GFX_hong_kong_gray"
+		textureFile = "gfx/horst_gui/hong_kong_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_hong_kong_red"    
+		textureFile = "gfx/horst_gui/hong_kong_red.dds"
+	}
+		SpriteType = {
+		name = "GFX_hong_kong_green"
+		textureFile = "gfx/horst_gui/hong_kong_green.dds"
+	}
+	
+					SpriteType = {
+		name = "GFX_crimea_gray"
+		textureFile = "gfx/horst_gui/crimea_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_crimea_red"    
+		textureFile = "gfx/horst_gui/crimea_red.dds"
+	}
+		SpriteType = {
+		name = "GFX_crimea_green"
+		textureFile = "gfx/horst_gui/crimea_green.dds"
+	}
+	
+						SpriteType = {
+		name = "GFX_vladivostok_gray"
+		textureFile = "gfx/horst_gui/vladivostok_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_vladivostok_red"  
+		textureFile = "gfx/horst_gui/vladivostok_red.dds"
+	}
+		SpriteType = {
+		name = "GFX_vladivostok_green"
+		textureFile = "gfx/horst_gui/vladivostok_green.dds"
+	}
+	
+			SpriteType = {    
+		name = "GFX_marcus_gray"
+		textureFile = "gfx/horst_gui/marcus_gray.dds"
+	}
+	SpriteType = {
+		name = "GFX_marcus_red"  
+		textureFile = "gfx/horst_gui/marcus_red.dds"
+	}
+		SpriteType = {     
+		name = "GFX_marcus_green"
+		textureFile = "gfx/horst_gui/marcus_green.dds"
+	}		
+	   
+	SpriteType = {    
+		name = "GFX_iwo_jima_gray"
+		textureFile = "gfx/horst_gui/iwo_jima_gray.dds"
+	}
+	SpriteType = {
+		name = "GFX_iwo_jima_red"  
+		textureFile = "gfx/horst_gui/iwo_jima_red.dds"
+	}
+		SpriteType = {   
+		name = "GFX_iwo_jima_green"
+		textureFile = "gfx/horst_gui/iwo_jima_green.dds"
+	}
+	
+						SpriteType = {    
+		name = "GFX_okinawa_gray"
+		textureFile = "gfx/horst_gui/okinawa_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_okinawa_red"  
+		textureFile = "gfx/horst_gui/okinawa_red.dds"
+	}
+		SpriteType = {   
+		name = "GFX_okinawa_green"
+		textureFile = "gfx/horst_gui/okinawa_green.dds"
+	}
+	
+						SpriteType = {
+		name = "GFX_hawaii_gray"
+		textureFile = "gfx/horst_gui/hawaii_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_hawaii_red"  
+		textureFile = "gfx/horst_gui/hawaii_red.dds"
+	}
+		SpriteType = {   
+		name = "GFX_hawaii_green"
+		textureFile = "gfx/horst_gui/hawaii_green.dds"
+	}
+							SpriteType = {  
+		name = "GFX_palau_gray"
+		textureFile = "gfx/horst_gui/palau_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_palau_red"  
+		textureFile = "gfx/horst_gui/palau_red.dds"
+	}
+		SpriteType = {         
+		name = "GFX_palau_green"
+		textureFile = "gfx/horst_gui/palau_green.dds"
+	}
+	
+								SpriteType = {
+		name = "GFX_singapore_gray"
+		textureFile = "gfx/horst_gui/singapore_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_singapore_red"  
+		textureFile = "gfx/horst_gui/singapore_red.dds"
+	}
+		SpriteType = {       
+		name = "GFX_singapore_green"
+		textureFile = "gfx/horst_gui/singapore_green.dds"
+	}
+	
+	
+	 
+ 	SpriteType = {
+		name = "GFX_saipan_gray"
+		textureFile = "gfx/horst_gui/saipan_gray.dds"
+	}
+			SpriteType = {
+		name = "GFX_saipan_red"  
+		textureFile = "gfx/horst_gui/saipan_red.dds"
+	}
+		SpriteType = {       
+		name = "GFX_saipan_green"
+		textureFile = "gfx/horst_gui/saipan_green.dds"
+	}
+	
+	
+	
+	
+			SpriteType = {
+		name = "GFX_button_transparent"
+		textureFile = "gfx/button_transparent.dds"
+	}
+	
+	
+	
+			spriteType = {
+		name = "GFX_change_host_nation"
+		texturefile = "gfx/interface/lobby_country_mapmode_button.dds"
+	}	 
+	
+		spriteType = {
+		name = "GFX_topbar_production_horst_tool"
+		texturefile = "gfx/interface/topbar/toolbar/production_button.dds"
+		noOfFrames = 2		
+	}	
+	
+}

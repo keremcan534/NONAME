@@ -14,10 +14,8 @@ state={
 		}
 
 		buildings = {
-			infrastructure = 3
+			infrastructure = 3 #was: 6
 			industrial_complex = 2
-			dockyard = 1
-			fuel_silo = 1
 			6332 = {
 				bunker = 1
 
@@ -27,7 +25,7 @@ state={
 				naval_base = 5
 
 			}
-			air_base = 6
+			air_base = 10
 		}
 		add_core_of = GER
 		1939.1.1 = {
@@ -38,6 +36,8 @@ state={
 	}
 
 	provinces={
-		6332 3736
+		281 348 395 3384 6332 11265
 	}
+
+	local_supplies=0.0 
 }

@@ -1,17 +1,14 @@
 sub_units = {
 	engineer = {
-		abbreviation = "ENG"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
 		active = no
 		affects_speed = no
-
 		type = {
 			infantry
 			support
-			flame
 		}
 		
 		group = support
@@ -27,7 +24,7 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = 20
+		max_organisation = 45
 		default_morale = 0.3
 		manpower = 300
 		training_time = 120
@@ -36,7 +33,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		
-		entrenchment  = 5
+		entrenchment = 2
 
 				
 		defense = 0.1
@@ -55,8 +52,9 @@ sub_units = {
 		}
 
 		can_be_parachuted = yes
+
 		forest = {
-			defence = 0.25
+			defence = 0.1
 			movement = 0.05
 		}
 
@@ -65,11 +63,11 @@ sub_units = {
 		}
 
 		jungle = {
-			defence = 0.25
+			defence = 0.1
 		}
 
 		marsh = {
-			defence = 0.25
+			defence = 0.1
 			movement = 0.2
 		}
 

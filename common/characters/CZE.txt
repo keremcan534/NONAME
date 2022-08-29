@@ -1,0 +1,720 @@
+characters={
+	CZE_edvard_beneš={
+		name="Edvard Beneš"
+		portraits={
+			civilian={
+				large="gfx/leaders/CZE/Portrait_Czech_Edvard_Benes.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ smooth_talking_charmer2 }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CZE_jozef_tiso={
+		name="Jozef Tiso"
+		portraits={
+			civilian={
+				large="gfx/leaders/SLO/Portrait_Slovakia_Jozef_Tiso.dds"
+				small="gfx/interface/ideas/idea_SLO_jozef_tiso.dds"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ anti_communist_crusader }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = { 
+			slot = political_advisor 
+			idea_token = SLO_jozef_tiso 
+			traits = { popular_figurehead }
+			available = { }
+			cost = 0 
+			ledger = civilian 
+		}
+	}
+	CZE_klement_gottwald={
+		name="Klement Gottwald"
+		portraits={
+			civilian={
+				large="gfx/leaders/CZE/Portrait_Czech_Klement_Gottwald.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CZE_bob_roberts={
+		name="Bob Roberts"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_8"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	CZE_atanas_shalapatov={
+		name="Atanas Shalapatov"
+		portraits={
+			army={
+				small="GFX_Portrait_Europe_Generic_navy_1_small"
+			}
+			army={
+				large="GFX_Portrait_Europe_Generic_navy_1"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector superior_tactician spotter fly_swatter ironside air_controller green_water_expert concealment_expert big_guns_expert ground_pounder }
+			skill=5
+			attack_skill=4
+			defense_skill=6
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	CZE_lajos_veress={
+		name="Lajos Veress"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_lajos_veress.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={   panzer_leader panzer_expert thorough_planner logistics_wizard  }
+			skill=6
+			attack_skill=7
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_jure_francetic={
+		name="Jure Francetic"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/Portrait_Jure_Francetic.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ trait_cautious panzer_leader panzer_expert organisational_leader desert_fox trait_mountaineer hill_fighter thorough_planner }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CZE_nikola_stoychev={
+		name="Nikola Stoychev"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_7_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_7"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ trait_cautious panzer_leader panzer_expert logistics_wizard defensive_doctrine  }
+			skill=6
+			attack_skill=4
+			defense_skill=7
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_georgi_markov={
+		name="Georgi Markov"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_15_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_15"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ adaptable old_guard cavalry_leader combined_arms_expert cavalry_expert offensive_doctrine fast_planner inspirational_leader  expert_improviser }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	CZE_ivan_markov={
+		name="Ivan Markov"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_10_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_10"
+			}
+		}
+		corps_commander={ #17/17
+			traits={cavalry_leader cavalry_expert combined_arms_expert adaptable trait_reckless  trait_engineer   scavenger ranger }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	CZE_ivan_babic={
+		name="Ivan Babic"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/Portrait_Ivan_Babic.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ bearer_of_artillery old_guard cavalry_leader combined_arms_expert cavalry_expert desert_fox swamp_fox hill_fighter urban_assault_specialist defensive_doctrine  guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=9
+			legacy_id=-1
+		}
+	}
+	CZE_konstantin_lukash={
+		name="Konstantin Lukash"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_10_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_10"
+			}
+		}
+		field_marshal={ #13/13
+			traits={  infantry_leader infantry_expert organizer brilliant_strategist thorough_planner aggressive_assaulter   }
+			skill=6
+			attack_skill=4
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+		SLO_juraj_mesko = {
+			name = "Juraj Mesko"
+			
+		portraits = { 
+		army={
+				small="GFX_idea_SLO_juraj_mesko"
+			}
+			}
+		
+			advisor = {
+				allowed = {
+				original_tag = CZE
+			}
+			slot  = high_command 
+			idea_token = SLO_juraj_mesko
+			cost = 0
+			available = { }
+			traits = { army_commando_2 }
+			ledger = army
+			}
+		}
+
+	CZE_franjo_simic={
+		name="Franjo Simic"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/r56_portrait_CRO_Franjo_Simic.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ infantry_leader ambusher ranger trickster urban_assault_specialist defensive_doctrine scavenger  }
+			skill=6
+			attack_skill=4
+			defense_skill=8
+			planning_skill=1
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CZE_nikola_mihailov_mihov={
+		name="Nikola Mihailov Mihov"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_7_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_7"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ harsh_leader organizer infantry_expert infantry_leader  ranger offensive_doctrine thorough_planner organizer  }
+			skill=6
+			attack_skill=6
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	CZE_asen_nikolov={
+		name="Asen Nikolov"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_15_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_15"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ bearer_of_artillery infantry_leader ambusher ranger urban_assault_specialist defensive_doctrine  camouflage_expert guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CZE_károly_beregfy={
+		name="Károly Beregfy"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_karoly_beregfy.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={  infantry_leader infantry_expert  ranger urban_assault_specialist logistics_wizard inspirational_leader organisational_leader  }
+			skill=6
+			attack_skill=4
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_ferenc_feketehalmyczeydner={
+		name="Ferenc Feketehalmy-Czeydner"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_ferenc_feketehalmy_czeydner.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ inflexible_strategist infantry_leader infantry_expert logistics_wizard unyielding_defender inspirational_leader organizer  guerilla_fighter }
+			skill=6
+			attack_skill=2
+			defense_skill=7
+			planning_skill=1
+			logistics_skill=9
+			legacy_id=-1
+		}
+	}
+	CZE_slavko_stancer={
+		name="Slavko Stancer"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/r56_portrait_CRO_slavko_stancer.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ brilliant_strategist panzer_leader panzer_expert desert_fox hill_fighter urban_assault_specialist trait_engineer }
+			skill=6
+			attack_skill=7
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_damian_velchev={
+		name="Damian Velchev"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_7_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_7"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ bearer_of_artillery panzer_leader ranger panzer_expert trait_reckless harsh_leader expert_improviser  camouflage_expert  }
+			skill=6
+			attack_skill=3
+			defense_skill=3
+			planning_skill=7
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CZE_augustin_malar={
+		name="Augustin Malar"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/Portrait_Slovakia_Augustin_Malar.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={  panzer_expert ambusher panzer_leader trait_cautious ranger winter_specialist  guerilla_fighter }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CZE_rafael_boban={
+		name="Rafael Boban"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/r56_portrait_CRO_Rafael_Boban.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ adaptable trait_engineer panzer_leader winter_specialist panzer_expert guerilla_fighter }
+			skill=6
+			attack_skill=6
+			defense_skill=6
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_stefan_jurech={
+		name="Stefan Jurech"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/Portrait_Stefan_Jurech.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ bearer_of_artillery organizer trait_mountaineer hill_fighter cavalry_leader combined_arms_expert cavalry_expert ambusher guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CZE_anton_pulanish={
+		name="Anton Pulanish"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/Anton_Pulanish_Portrait.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ adaptable harsh_leader infantry_leader skilled_staffer infantry_expert expert_improviser }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_géza_lakatos={
+		name="Géza Lakatos"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_geza_lakatos.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ infantry_leader commando ranger ambusher camouflage_expert expert_improviser }
+			skill=6
+			attack_skill=7
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_georgi_popov={
+		name="Georgi Popov"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_16_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_16"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ organizer infantry_leader infantry_expert  desert_fox trait_mountaineer hill_fighter  camouflage_expert }
+			skill=6
+			attack_skill=6
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CZE_iván_hindy={
+		name="Iván Hindy"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/HUN/portrait_ivan_hindy.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={  panzer_leader swamp_fox ranger urban_assault_specialist panzer_expert expert_improviser }
+			skill=6
+			attack_skill=6
+			defense_skill=6
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_stjepan_sarkotic={
+		name="Stjepan Sarkotic"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/Portrait_Stjepan_Sarkotic.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ infantry_leader ambusher commando desert_fox hill_fighter  skirmisher paratrooper guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	CZE_angel_dotsev={
+		name="Angel Dotsev"
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_13_small"
+			}
+			army={
+				large="GFX_portrait_europe_generic_land_13"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ bearer_of_artillery old_guard organizer infantry_leader infantry_expert trait_engineer ranger urban_assault_specialist  }
+			skill=6
+			attack_skill=3
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CZE_junuz_ajanovic={
+		name="Junuz Ajanovic"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/YUG/r56_portrait_CRO_junuz_ajanovic.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ adaptable infantry_leader infantry_expert commando jungle_rat  }
+			skill=6
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_franza_karmasin={
+		name="Franza Karmasin"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/portrait_SLO_Franza_Karmasin.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ infantry_leader infantry_expert trait_engineer fortress_buster naval_invader invader_ii  hill_fighter   }
+			skill=6
+			attack_skill=4
+			defense_skill=7
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_jozef_turanec={
+		name="Jozef Turanec"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/CZE/Portrait_SLO_jozef_turanec.dds"
+			}
+		}
+		corps_commander={ #17/17
+			traits={ fake_skilled_staffer old_guard infantry_leader ambusher winter_specialist ranger urban_assault_specialist guerilla_fighter }
+			skill=6
+			attack_skill=2
+			defense_skill=7
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CZE_stefan_tiso={
+		name="Stefan Tiso"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CZE_stefan_tiso
+			allowed  = {
+				original_tag  = CZE
+			}
+			traits  = {
+				war_industrialist 
+			}
+		}	
+	}
+	CZE_jaroslav_kratochvil={
+		name="Jaroslav Kratochvil"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CZE_jaroslav_kratochvil
+			allowed  = {
+				original_tag  = CZE
+			}
+			traits  = {
+				armaments_organizer  
+			}
+		}	
+	}
+	CZE_karol_sidor={
+		name="Karol Sidor"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CZE_karol_sidor
+			allowed  = {
+				original_tag  = CZE
+			}
+			traits  = {
+				silent_workhorse  
+			}
+		}	
+	}
+	CZE_peter_zatko={
+		name="Peter Zatko"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CZE_peter_zatko
+			available = {}
+			allowed  = {
+				original_tag  = CZE
+			}
+			traits  = {
+				economist 
+			}
+		}	
+	}
+	CZE_emil_lendvay={
+		advisor={
+			slot = theorist
+			idea_token = CZE_emil_lendvay
+			ledger  = army 
+				allowed  = {
+					original_tag  = CZE
+				}
+	            cost = 100
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="Emil Lendvay"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+}

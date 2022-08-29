@@ -7,7 +7,8 @@ state={
 	state_category = city
 	
 	resources={
-		steel=36
+		tungsten=116
+		chromium=45
 	}
 
 	history={
@@ -15,14 +16,16 @@ state={
 		victory_points = {
 			3273 15
 		}
+		victory_points = {
+			11218 1 #Dumfries
+		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			infrastructure = 4 #was: 7
+			industrial_complex = 1
 			dockyard = 4
-			arms_factory = 1
-			fuel_silo = 1
+			arms_factory = 4
 			anti_air_building = 2
-			air_base = 10
+			air_base = 4
 			6395 = {
 				naval_base = 2
 			}
@@ -38,6 +41,8 @@ state={
 	}
 
 	provinces={
-		3273 6320 6350 6385 6395 6821 6313 3842 
+		3273 6320 6350 6385 6395 9237 9350 11218 
 	}
+
+	local_supplies=0.0 
 }

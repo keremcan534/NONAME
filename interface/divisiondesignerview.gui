@@ -225,17 +225,17 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "support_grid"
-				position = { x = 23 y = 52 }
-				size = { width = 85 height = 100%% }
-				slotsize = { width = 82 height = 32 }
+				position = { x = 15 y = 57 }
+				size = { width = 160 height = 100%% }
+				slotsize = { width = 64 height = 51 }
 				format = "UPPER_LEFT"
 			}
 			
 			gridboxtype = {
 				name = "regiments_grid"
-				position = { x = 115 y = 57 }
-				size = { width = 445 height = 100%% }
-				slotsize = { width = 82 height = 51 }
+				position = { x = 144 y = 57 }
+				size = { width = 410 height = 100%% }
+				slotsize = { width = 76 height = 51 }
 				format = "UPPER_LEFT"
 			}
 		}
@@ -316,7 +316,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "equipment_stats"
 				position = { x = 353 y = 55 }
-				size = { width = 192 height = 244 }
+				size = { width = 197 height = 239 }
 				clipping = yes
 				
 				background = {
@@ -377,7 +377,6 @@ guiTypes = {
 					size = { width = 100%% height = 100%% }
 					slotsize = { width = 83 height = 62 }
 					max_slots_horizontal = 6
-					max_slots_vertical = 2
 					format = "UPPER_LEFT"
 				}
 			}
@@ -782,7 +781,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "designerregimentswindow"
-			position = { x=0 y=40}	
+			position = { x=-10 y=40}	
 			size = { width=549 height=459 }
 			margin = { top = 14 bottom = 11 }
 			verticalScrollbar = "right_vertical_slider"
@@ -1054,8 +1053,6 @@ guiTypes = {
 				position = { x=5 y=235}	
 				size = { width=533 height=176 }
 				verticalScrollbar = "right_vertical_slider"
-				scroll_wheel_factor = 42
-				smooth_scrolling = yes
 				
 				background = {
 					name = "Background"
@@ -1140,12 +1137,12 @@ guiTypes = {
 	containerWindowType = {
 		name = "designer_division_support_slot_entry"
 		position = { x=0 y=0}	
-		size = { width=64 height=44 }
+		size = { width=64 height=53 }
 		clipping = no
 
 		background = {
 			name = "Background"		
-			spriteType ="GFX_ssc_div_subunit_item_bg"
+			spriteType ="GFX_div_subunit_item_bg"
 		}
 		
 		instantTextboxType = {
@@ -1163,7 +1160,7 @@ guiTypes = {
 		buttonType = {
 			name = "unit_icon"
 			spriteType = "GFX_locked_icon"
-			position = {x=2 y=11}
+			position = {x=2 y=20}
 			Orientation = CENTER_LOWER
 			scale = 0.8
 			clicksound = click_default
@@ -1171,7 +1168,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "invisible_icon"
-			position = { x = 2 y = 12 }
+			position = { x = 2 y = 21 }
 			spriteType = "GFX_cost_textbox_inv"
 			Orientation = CENTER_LOWER
 			scale = 0.8
@@ -1375,7 +1372,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "designer_adjuster_entry"	
-		size = { width = 50 height = 50 }
+		size = { width = 50 height = 70 }
 		clipping = no
 
 		iconType = {
@@ -1416,7 +1413,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "designer_adjuster_entry_with_modifier"	
-		size = { width = 50 height = 50 }
+		size = { width = 84 height = 75 }
 		clipping = no
 
 		#background = {

@@ -4,21 +4,23 @@ state={
 	name="STATE_779" # Ivory Coast
 	manpower = 3850734
 	
-	state_category = rural
+	state_category = town
 	history={
 		owner = FRA
 		victory_points = {
-			4558 1
+			10803 1
 		}
 		buildings = {
 			infrastructure = 2
-			4558 = {
+			10803 = {
 				naval_base = 1
 			}
 		}
 	}
 
 	provinces={
-		5013 5070 7790 7710 4633 4558
+		5013 5070 8065 8122 10762 10803
 	}
+
+	local_supplies=1.0 
 }

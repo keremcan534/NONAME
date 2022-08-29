@@ -23,6 +23,7 @@ sub_units = {
 		}
 
 
+		desert = { movement = -0.2 }
 		forest = {
 		    attack = -0.40
 			movement = -0.40
@@ -31,14 +32,17 @@ sub_units = {
 		    attack = -0.20
 		}
 		mountain = 	{
-		    attack = -0.3
+		    attack = -0.45
+			defence = -0.6
 		}
 		jungle = {
-		    attack = -0.6
+		    attack = -0.7
+			defence = -0.7
 			movement = -0.4
 		}
 		marsh = {
 		    attack = -0.4 
+			defence = -0.3
 			movement = -0.2
 		}
 		urban = {
@@ -55,7 +59,6 @@ sub_units = {
 		fort = {
 			attack = 0.1
 		}
-
 		combat_width = 2
 
 		need = {
@@ -64,18 +67,11 @@ sub_units = {
 
 		manpower = 500
 		max_organisation = 10
-		default_morale = 0.3
 		max_strength = 2
+		default_morale = 0.3
+		training_time = 180
 		weight = 1.5
-		
-		supply_consumption = 0.32
-
-		breakthrough = 0.15
-
-		#Tanks are awesome
-		# soft_attack = 0.5
-		
-		suppression = 2.5		
+		supply_consumption = 0.4
 	}
 
 	

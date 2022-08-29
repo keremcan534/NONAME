@@ -9,18 +9,20 @@ state = {
 	history = {
 		owner = HUN
 		buildings = {
-			infrastructure = 2
-			arms_factory = 3
-			air_base = 8
-			fuel_silo = 1
+			infrastructure = 3 #was: 6
+			industrial_complex = 3
+			arms_factory = 1
+			
 		}
 		victory_points = {
-			2791 1 
+			11659 1 
 		}
 		add_core_of = HUN
 	}
 
 	provinces={
-		699 3730 6735 2803 2791 
+		679 699 730 3730 6670 6700 6735 9656 9706 11625 11644 11646 11659 
 	}
+
+	local_supplies=12.0 
 }

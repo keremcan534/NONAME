@@ -2,56 +2,54 @@
 state={
 	id=633
 	name="STATE_633"
-	manpower=32517
+	manpower=52517
 	
 	state_category = small_island
-	resources={
-		oil=1
-		aluminium=1
-		rubber=5 
-	}
+
 	history={
 		owner = JAP
+		add_core_of = FSM
 		buildings = {
-			infrastructure = 1
-			air_base = 1
-			999 = {
+			infrastructure = 2
+			
+			13040 = {
 				naval_base = 1
 
 			}
-			995 = {
-				naval_base = 1
-
-			}
-			991 = {
+			13041 = {
 				naval_base = 3
 
 			}
-			990 = {
+			13043 = {
 				naval_base = 1
 
 			}
-			980 = {
+			13046 = {
 				naval_base = 1
 
 			}
 			1002 = {
 				naval_base = 1
 			}
-			981 = {
+			13039 = {
+				naval_base = 1
+			}
+			13045 = {
 				naval_base = 1
 			}
 		}
 		victory_points = {
-			991 15 
+			13041 3 
 		}
 		victory_points = {
-			980 10 
+			13046 1 
 		}
 
 	}
 
 	provinces={
-		1002 999 995 991 990 987 985 981 980 
+		1002 13039 13040 13041 13042 13043 13044 13045 13046 
 	}
+
+	local_supplies=0.0 
 }

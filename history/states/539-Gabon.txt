@@ -1,28 +1,38 @@
-
 state={
 	id=539
 	name="STATE_539"
-
+	resources={
+		steel=140 
+		tungsten=120
+		chromium=52
+	}
 	history={
 		owner = FRA
 		add_core_of = FRA
-		add_core_of = FRF
-		
+
+		victory_points = {
+			5139 1 
+		}
 		buildings = {
-			infrastructure = 3
-			air_base = 1
+			dockyard = 2
+			industrial_complex= 2
+			arms_factory=1
+			infrastructure = 2
 			5139 = {
-				naval_base = 15
-				coastal_bunker = 5				
-			}		
+				naval_base = 1
+
+			}
+
 		}
 
 	}
 
 	provinces={
-		5139 7620 4257 787 
+		5139 8207 10948 13210 
 	}
-	manpower=2564000
+	manpower=409752
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=metropolis
+
+	local_supplies=1.0 
 }

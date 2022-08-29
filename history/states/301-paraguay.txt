@@ -1,12 +1,25 @@
+
 state={
-id=301
-name="STATE_301"
-manpower = 1
+	id=301
+	name="STATE_301"
+	manpower = 890100
+	
 state_category = wasteland
-	history={
-		owner = ITA
-}
-provinces={
-2152 2209
-}
+	impassable = yes
+
+	history= {
+		owner = EMP
+		controller = EMP
+		buildings = {
+				infrastructure = 1
+
+			}
+		}
+
+	provinces={
+		2152 2173 2194 11023 12901 
+	}
+	
+
+	local_supplies=0.0 
 }

@@ -4,22 +4,25 @@ state={
 	name="STATE_641"
 	manpower=105786
 	state_category = small_island
-						resources={
-		oil=1
-	}
 
 	history={
 		owner = FRA
+		add_core_of = TAH
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			air_base = 1
-			2436 = {
+			12148 = {
 				naval_base = 1
 			}
+		}
+		victory_points = {
+			12148 1
 		}
 	}
 
 	provinces={
-		5378 2436 
+		10188 12148 
 	}
+
+	local_supplies=0.0 
 }

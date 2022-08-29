@@ -3,25 +3,28 @@ state={
 	id=450
 	name="STATE_450"
 	manpower = 82535
-
-	state_category = rural
+	
+	state_category = enclave
 
 	history={
 		owner = ITA
-
+		
 		victory_points = {
-			2591 225
+			11954 3 
 		}
 		buildings = {
 			infrastructure = 2
-			air_base = 1
-			2591 = {
-				naval_base = 3
+			air_base = 10
+			11954 = {
+				naval_base = 10
 			}
 		}
+		add_core_of = LBA
 	}
 
 	provinces={
-		1062 1186 4063 4120 4151 7139 5453 2591 2484
+		1127 4120 10123 11954 
 	}
+
+	local_supplies=0.0 
 }

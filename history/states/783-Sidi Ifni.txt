@@ -5,18 +5,22 @@ state={
 	manpower = 11043
 	
 	state_category = pastoral
-	impassable = yes
+
 	history={
-		owner = SPR
+		victory_points = {
+			12857 1
+		}
+
+		owner = EMP
+
 		buildings = {
 			infrastructure = 1
-			1470 = {
-	
-			}
 		}
 	}
 
 	provinces={
-		1470
+		12857
 	}
+
+	local_supplies=0.0 
 }

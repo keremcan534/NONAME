@@ -6,21 +6,24 @@ state={
 
 	history={
 		owner = USA
+		add_core_of = HAW
 		buildings = {
 			infrastructure = 1
-			978 = {
+			13048 = {
 				naval_base = 1
 			}
-			977 = {
+			13049 = {
 				naval_base = 1
 			}
-			961 = {
+			13053 = {
 				naval_base = 1
 			}
 		}
 	}
 	
 	provinces={
-		978 977 961 
+		13048 13049 13053 
 	}
+
+	local_supplies=0.0 
 }

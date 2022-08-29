@@ -4,14 +4,14 @@ state={
 	name="STATE_366"
 	manpower = 1468210
 	
-	state_category = large_city
+	state_category = city
 
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 7
-			air_base = 8
+			industrial_complex = 3
+			air_base = 10
 			1572 = {
 				naval_base = 2
 			}
@@ -21,7 +21,7 @@ state={
 			7388 = {
 				naval_base = 3
 			}
-			5191 = {
+			10352 = {
 				naval_base = 1
 			}
 		}
@@ -33,7 +33,9 @@ state={
 	}
 
 	provinces={
-		866 1556 1572 1584 1843 1913 7388 5682 5191 5164 5136 5037 2238 2208 2144 1699 
+		866 1556 1572 1584 1843 1913 7388 9834 10352 10380 10407 10489 12353 12381 12439 12752 
 	}
 	
+
+	local_supplies=10.0 
 }

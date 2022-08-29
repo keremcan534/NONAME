@@ -12,23 +12,29 @@ state={
 	history={
 		owner = PER
 		victory_points = {
-			7715 1 
+			8117 3 
 		}
 		victory_points = {
-			7890 3 
+			7982 3 
+		}
+		victory_points = {
+			12832 1
 		}
 		buildings = {
 			infrastructure = 1
-			air_base = 4
-			7890 = {
+			7982 = {
+				naval_base = 4
+			}
+			12832 = {
 				naval_base = 2
 			}
-
 		}
 		add_core_of = PER
 	}
 
 	provinces={
-		4959 4966 5089 7715 4575 4442 1668 1519 1458 7890
+		4959 4966 7982 8117 10797 10881 12780 12832 12863 
 	}
+
+	local_supplies=0.0 
 }

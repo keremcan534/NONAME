@@ -9,13 +9,15 @@ state={
 	history={
 		owner = RAJ
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			air_base = 4
 		}
 		add_core_of = RAJ
 	}
 
 	provinces={
-		1107 4990 5105 7903 7812 7732 4533 
+		1107 4990 5105 7847 7903 7975 8044 8098 10813 
 	}
+
+	local_supplies=0.0 
 }

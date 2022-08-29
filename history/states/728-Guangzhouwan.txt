@@ -6,17 +6,18 @@ state={
 	state_category = enclave
 	
 	history={
-		owner = FRA
-		
+		owner = CHI
 		buildings = {
 			infrastructure = 2
-			2570 = {
+			11981 = {
 				naval_base = 1
 			}
 		}
 	}
 	
 	provinces={
-		2570 
+		11981 
 	}
+
+	local_supplies=0.0 
 }

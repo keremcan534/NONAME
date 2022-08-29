@@ -7,20 +7,23 @@ state=
 	history=
 	{
 		owner = ENG
-
+		add_core_of = CHI
+		add_core_of = PRC
 		victory_points = {
-			5499 3 
+			10062 3 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 3 #was: 5
 			air_base = 1
-			5499 = {
+			10062 = {
 				naval_base = 6
 				coastal_bunker = 1
 			}
 		}
 	}
 	provinces={
-		5499
+		10062
 	}
+
+	local_supplies=0.0 
 }

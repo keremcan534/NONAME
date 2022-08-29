@@ -7,22 +7,26 @@ state={
 	state_category = metropolis
 	
 	resources={
-		steel=100
+		steel=120 # was: 120
 	}
 
 	history={
 		owner = ENG
 		victory_points = {
-			6209 15 
+			9379 10 
 		}
 		victory_points = {
-			3628 10 
+			11297 5 
+		}
+		victory_points = {
+			9315 15
 		}
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 3
-			air_base = 10
-			3628 = {
+			infrastructure = 4 #was: 7
+			arms_factory = 2
+			industrial_complex = 8
+			air_base = 4
+			11297 = {
 				naval_base = 5
 			}
 		}
@@ -36,6 +40,8 @@ state={
 	}
 
 	provinces={
-		6268 6705 6448 6209 6170 3628 3545 
+		6268 9269 9315 9332 9379 9397 11297 11317 11382 
 	}
+
+	local_supplies=0.0 
 }

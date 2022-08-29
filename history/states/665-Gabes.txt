@@ -1,24 +1,26 @@
-
 state={
 	id=665
 	name="STATE_665"
 
 	history={
-		owner = FRA
+		owner = ITA
+		add_core_of = TUN
 		victory_points = {
-			7005 1			
+			7005 1 
 		}
 		buildings = {
 			infrastructure = 2
 
 		}
-
 	}
+	
+	state_category = pastoral
 
 	provinces={
-		1105 3987 4992 7005 5570 5481 2589 2553 836 804 729 263 259 258 
+		1105 3987 4992 7005 9983 10026 10082 11935 11957 12000 13145 13179 
 	}
 	manpower=427824
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+
+	local_supplies=0.0 
 }

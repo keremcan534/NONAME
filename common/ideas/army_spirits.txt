@@ -1,0 +1,328 @@
+ideas = {
+	academy_spirit = {
+		
+		bold_attack_spirit = {
+			ledger = army
+			modifier = {
+				# custom_modifier_tooltip = bold_attack_spirit_tt
+				army_attack_factor = 0.03
+			}
+			cost = 50.0
+			
+		}
+		tenacious_defense_spirit = {
+			ledger = army
+			modifier = {
+				# custom_modifier_tooltip = tenacious_defense_spirit_tt
+				army_defence_factor = 0.02
+			}
+			cost = 50.0
+			
+		}
+		meticulous_preparation_spirit = {
+			ledger = army
+			modifier = {
+				# custom_modifier_tooltip = meticulous_preparation_spirit_tt
+				max_planning = 0.03
+			}
+			cost = 50.0
+			
+		}
+		best_of_the_best_spirit = {
+			ledger = army
+			visible = { 
+				has_government = democratic
+			}
+			modifier = {
+				training_time_factor = -0.15
+				custom_modifier_tooltip = "Your units gain experience faster (Gain Veterancy more quickly)"
+			}
+			cost = 50.0
+			
+
+		}
+		academy_scholarships_spirit = {
+			ledger = army
+			visible = { 
+				has_government = communism
+			}
+			modifier = {
+				army_morale_factor = 0.1
+			}
+			cost = 50.0
+			
+		}
+		political_loyalty_spirit = {
+			ledger = army
+			visible = { 
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			modifier = {
+				# military_leader_cost_factor = -0.5
+				party_popularity_stability_factor = 0.1
+			}
+			cost = 50.0
+			
+		}
+		inventive_leadership_spirit = {
+			ledger = army
+			modifier = {
+				air_cas_present_factor = 0.05
+			}
+			cost = 50.0
+			
+		}
+		mobile_warfare_academy_spirit = {
+			ledger = army
+			visible = { has_tech = mobile_warfare }
+			modifier = {
+				breakthrough_factor = 0.025
+			}
+			cost = 50.0
+			
+		}
+		superior_firepower_academy_spirit = {
+			ledger = army
+			visible = { has_tech = superior_firepower }
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_artillery_attack_factor = 0.05
+			}
+			cost = 50.0
+			
+		}
+		theatre_training_spirit = {
+			ledger = army
+			visible = { has_tech = trench_warfare }
+			modifier = {
+				# custom_modifier_tooltip = theatre_training_academy_spirit_tt
+				# terrain_trait_xp_gain_factor = 0.2
+				dig_in_speed_factor = 0.15
+				planning_speed = 0.15
+				max_planning = 0.1
+				land_night_attack = 0.03
+			}
+			cost = 50.0
+			
+		}
+		mass_assault_academy_spirit = {
+			ledger = army
+			visible = { has_tech = mass_assault }
+			modifier = {
+				# custom_modifier_tooltip = mass_assault_academy_spirit_tt
+				# trait_infantry_leader_xp_gain_factor = 0.2
+				pocket_penalty = -0.15
+				out_of_supply_factor = -0.1
+				supply_consumption_factor = -0.05
+			}
+			cost = 50.0
+			
+		}
+	}
+
+	army_spirit = {
+		
+
+		elevated_engineering_corps_spirit = {
+			ledger = army
+			modifier = {
+				railway_gun_bombardment_factor = 0.075
+			}
+			cost = 50.0
+			
+		}
+
+		proper_heritage_spirit = {
+			ledger = army
+			modifier = {
+				cavalry_attack_factor = 0.05
+				supply_combat_penalties_on_core_factor = -0.2
+			}
+			cost = 50.0
+			
+		}
+
+		quick_improvisation_spirit = {
+			ledger = army
+			modifier = {
+				command_abilities_cost_factor = -0.5
+				command_power_gain = 0.25
+				planning_speed = 0.1
+			}
+			cost = 50.0
+			
+		}
+		ideological_loyalty_spirit = {
+			ledger = army
+			visible = { has_government = communism }
+			modifier = {
+				pocket_penalty = -0.2
+				weekly_manpower = 7500
+			}
+			cost = 50.0
+			
+		}
+
+		
+
+		mobile_warfare_army_spirit = {
+			visible = { has_tech = mobile_warfare }
+			ledger = army
+			modifier = {
+				army_armor_attack_factor = 0.03
+				army_armor_defence_factor = 0.01
+				
+			}
+			cost = 50.0
+			
+		}
+
+		superior_firepower_army_spirit = {
+			visible = { has_tech = superior_firepower  }
+			ledger = army
+			modifier = {
+				army_attack_factor=0.05
+				
+			}
+			cost = 50.0
+			
+		}
+
+		grand_battleplan_army_spirit = {
+			visible = { has_tech = trench_warfare }
+			ledger = army
+			modifier = {
+				special_forces_training_time_factor = -0.25
+				naval_invasion_capacity = 25
+				naval_invasion_planning_bonus_speed = 0.2
+			}
+			cost = 50.0
+			
+		}
+
+		mass_assault_army_spirit = {
+			ledger = army
+			visible = { has_tech = mass_assault }
+			modifier = {
+				no_supply_grace = 24
+				org_loss_when_moving = -0.05
+				supply_consumption_factor=-0.1
+				experience_gain_infantry_combat_factor = 0.1
+			}
+			cost = 50.0
+			
+		}
+	}
+
+	division_command_spirit = {
+		professional_officer_corps_spirit = {
+			ledger = army
+			visible = { NOT={ original_tag=SOV
+		 }}
+			modifier = {
+				experience_gain_army = 0.20
+				command_power_gain = 0.2
+			}
+			cost = 0
+			
+		}
+		state_serves_the_military_spirit = {
+			ledger = army
+			visible = { original_tag=SOV }
+			available={
+				original_tag=SOV
+				has_war_with=GER
+				has_war=yes
+			}
+			modifier = {
+				experience_gain_army = 10
+			}
+			cost = 0
+			
+		}
+		static_warfare_spirit = {
+			ledger = army
+			modifier = {
+
+				max_dig_in_factor = 0.03
+				dig_in_speed_factor = 0.1
+			}
+			cost = 50.0
+			
+		}
+
+		flexible_organization_spirit = {
+			ledger = army
+			modifier = {
+				org_loss_when_moving = -0.2
+			}
+			cost = 50.0
+			
+		}
+
+		reserve_officers_spirit = {
+			ledger = army
+			modifier = {
+				max_planning = 0.03
+				planning_speed = 0.075
+			}
+			cost = 50.0
+			
+		}
+
+		victory_or_death_spirit = {
+			ledger = army
+			modifier = {
+
+				army_morale_factor = 0.06
+			}
+			cost = 50.0
+			
+		}
+
+		maneuver_warfare_spirit = {
+			visible = { has_tech = mobile_warfare }
+			modifier = {
+				breakthrough_factor = 0.075
+				coordination_bonus = 0.03
+			}
+			cost = 50.0
+			
+		}
+
+		smoke_and_fire_spirit = {
+			ledger = army
+			visible = { has_tech = superior_firepower }
+			modifier = {
+				breakthrough_factor = 0.075
+			}
+			cost = 50.0
+			
+		}
+
+		logistical_focus_spirit = {
+			ledger = army
+			visible = { has_tech = trench_warfare }
+			modifier = {
+				supply_consumption_factor = -0.05
+				air_fuel_consumption_factor = -0.05
+				navy_fuel_consumption_factor = -0.05
+			}
+			cost = 50.0
+			
+		}
+
+		operational_reserve_spirit = {
+			ledger = army
+			visible = { has_tech = mass_assault }
+			modifier = {
+				breakthrough_factor = 0.075
+			}
+			cost = 50.0
+			
+		}
+	}
+}

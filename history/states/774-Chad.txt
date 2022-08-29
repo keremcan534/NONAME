@@ -4,20 +4,24 @@ state={
 
 	history={
 		owner = FRA
+		add_core_of = CHA
 		victory_points = {
 			2081 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
+			air_base = 10
 
 		}
 
 	}
 
 	provinces={
-		1473 1883 1993 2081 3123 3181 4897 4978 7919 6912 839 785 
+		1473 1883 1993 2081 3123 3181 4897 4978 7919 9152 13138 13211 
 	}
 	manpower=1442456
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
+
+	local_supplies=3.0 
 }

@@ -1,49 +1,111 @@
 ﻿division_template = {
-	name = "Pekhotna Divizija"			# Infantry Division
+	name = "Supression Template"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+	    cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+        cavalry = { x = 1 y = 0 }
+        cavalry = { x = 1 y = 1 }
+	    cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+		cavalry = { x = 2 y = 0 }
+        cavalry = { x = 2 y = 1 }
+	    cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+		cavalry = { x = 3 y = 0 }
+        cavalry = { x = 3 y = 1 }
+	    cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+		cavalry = { x = 3 y = 4 }
+		cavalry = { x = 4 y = 0 }
+        cavalry = { x = 4 y = 1 }
+	    cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+		cavalry = { x = 4 y = 4 }
+	}
+	support = { military_police = { x = 0 y = 0 } }
+}
+division_template = {
+	name = "2W Convert"
+
+	division_names_group = BUL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "40W Convert"
+
+	division_names_group = BUL_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
+		
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
+		
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		anti_air_brigade = { x = 2 y = 3 }
-		anti_air_brigade = { x = 2 y = 4 }		
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
+		infantry = { x = 2 y = 3 }
 
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
 
 	}
 	support = {
-		engineer = { x = 0 y = 0 } 	
-		recon = { x = 0 y = 1 } 		
-		artillery = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }			
+	}
+}
+division_template = {
+	name = "20W Convert"
 
+	division_names_group = BUL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
 	}
 }
 
 
 units = {
-	division= {
-		name = "Use this division to select generals' traits"
-		location = 949
-		division_template = "Pekhotna Divizija"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949 # sofia
+		division_template = "40W Convert"
+		start_experience_factor = 0
+		start_equipment_factor = 1
 	}
-}
 
+	
+}
 
 ### Starting Production ###
 instant_effect = {
@@ -52,53 +114,8 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "BUL"
 		}
-		requested_factories = 1
+		requested_factories = 100
 		progress = 0.49
 		efficiency = 100
 	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "BUL"
-		}
-		requested_factories = 1
-		progress = 0.73
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "BUL"
-		}
-		requested_factories = 1
-		progress = 0.24
-		efficiency = 100
-	}	
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "BUL" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = anti_air_equipment_1
-			creator = "BUL"
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = gw_armored_car_equipment
-			creator = "BUL" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}		
 }

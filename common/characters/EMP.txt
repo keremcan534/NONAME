@@ -1,0 +1,16 @@
+characters={
+	EMP_efe_aydal={
+		name="Efe Aydal"
+		portraits={
+			civilian={
+				large="gfx/leaders/EMP/HOHO.dds"
+			}
+		}
+		country_leader={
+			ideology= socialism
+			traits = { sigma_male }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

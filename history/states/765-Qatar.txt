@@ -6,19 +6,23 @@ state={
 	state_category = pastoral
 
 	history={
+		add_core_of = QAT
 		owner = ENG
 		victory_points = {
-			7803 1
+			8051 1
 		}
 		buildings = {
+			air_base = 1
 			infrastructure = 1
-			7803 = {
+			8051 = {
 				naval_base = 2
 			}
 		}
 	}
 
 	provinces={
-		7803
+		8051
 	}
+
+	local_supplies=0.0 
 }

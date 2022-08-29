@@ -11,15 +11,17 @@ state={
 			3320 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
-			air_base = 5
+			air_base = 10
 		}
 		add_core_of = POL
-		add_core_of = SOV
+		add_core_of = LIT
 	}
 
 	provinces={
-		3320 6683 6636 3419
+		3320 9274 9295 11342
 	}
+
+	local_supplies=0.0 
 }

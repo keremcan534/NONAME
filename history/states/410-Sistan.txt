@@ -8,14 +8,18 @@ state={
 
 	history={
 		owner = PER
-		buildings = {
-			air_base = 4
-			infrastructure = 2
+		victory_points = {
+			10782 1 
 		}
-		add_core_of = PER
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = PER 
 	}
 
 	provinces={
-		1889 2039 2070 4891 4600 904 
+		1889 2039 2070 4891 10782 13082 
 	}
+
+	local_supplies=6.0 
 }

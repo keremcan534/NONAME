@@ -7,6 +7,7 @@ guiTypes = {
 			width = 1920 
 			height = 1440 
 			min = { width = 100% height = 100% }
+			max = { width = 100% height = 10000 }
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -16,6 +17,7 @@ guiTypes = {
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_frontend_bg"
+			alwaystransparent = yes
 		}
 		
 	}
@@ -37,6 +39,22 @@ guiTypes = {
 		}
 		
 	}
+
+	#containerWindowType = {
+	#	name  ="frontend_alpha_stamp"
+	#	position = { x=100 y =-100  }
+	#	size = { width = 131 height = 132}
+	#	orientation = lower_left
+	#	origo = lower_left
+	#	
+	#	iconType =
+	#	{
+	#		name ="frontend_alpha_stamp"
+	#		spriteType = "GFX_alpha_stamp"
+	#		position = { x= 0 y = 20 }
+	#	}		
+	#	
+	#}	
 	
 	### MAIN MENU PANEL (upperright)
 	containerWindowType = {
@@ -47,6 +65,7 @@ guiTypes = {
 		animation_time = 1000					
 		size = { width = 256 height = 768}
 		Orientation = upper_right
+
 		ButtonType = {
 			name = "achievements_button"
 			position = { x = -50 y = 25 }
@@ -174,6 +193,11 @@ guiTypes = {
 		size = { width = 320 height = 395}
 		Orientation = CENTER
 		Origo = center		
+
+		positionType = {
+			name = "subscription_size"
+			position = { x = 320 y = 523 }
+		}
 				
 		background = {
 			name = "Background"		
@@ -189,7 +213,7 @@ guiTypes = {
 			clicksound = click_default			
 			oversound = ui_menu_over
 		}
-		
+
 		ButtonType = {
 			name = "multi_player_button"
 			position = { x = 16 y = 58}
@@ -199,14 +223,14 @@ guiTypes = {
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
-		@warn_icon_x = 280
 
+		@warn_icon_x = 280
 		iconType = {
 			name = "single_player_button_warn"
 			position = { x = @warn_icon_x y = 22 }
 			spriteType = "GFX_missing_dlc_warning_sign"
 		}
-		
+
 		instantTextBoxType = {
 
 			name ="version_label"
@@ -218,6 +242,11 @@ guiTypes = {
 			format = centre
 			maxWidth = 250
 			maxHeight = 20	
+		}
+
+		positionType = {
+			name = "version_label_subscription_position"
+			position = { x = 35 y = 484 }
 		}
 		
 		
@@ -231,10 +260,19 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
+		buttonType = {
+			name = "career_profile_button"
+			position = { x = 16 y = 138 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "MENU_BAR_CAREER_PROFILE"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
 
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = 16 y = 138 }
+			position = {  x = 16 y = 178 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CREDITS"
 			buttonFont = "hoi_24header"
@@ -244,12 +282,11 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 178 }
+			position = { x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
 		}
-		
 
 		ButtonType = {
 			name = "exit_button"
@@ -261,8 +298,44 @@ guiTypes = {
 			oversound = ui_menu_over
 			
 		}
+
+		iconType = {
+			name = "subscription_divider"
+			position = { x = 4 y = 296}
+			spriteType = "GFX_main_lobby_divider"
 		}
-		
+
+		containerWindowType = {
+			name = "subscription_widget"
+			position = { x = 1600 y = 312 }
+			size = { width = 288 height = 108 }
+
+			ButtonType = {
+				name = "show_subscription"
+				position = { x = 0 y = 0 }
+				quadTextureSprite ="GFX_subscription_widget"
+				buttonText = "SUBSCRIPTION_WIDGET"
+				buttonFont = "hoi_24header"
+				multiline = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "subscription_widget_subscribed"
+			position = { x = 16 y = 312 }
+			size = { width = 288 height = 108 }
+
+			ButtonType = {
+				name = "show_subscription"
+				position = { x = 0 y = 0 }
+				quadTextureSprite ="GFX_subscription_widget_active"
+				frame = 1
+				buttonText = "SUBSCRIPTION_WIDGET_SUBSCRIBED"
+				buttonFont = "hoi_24header"
+				multiline = yes
+			}
+		}
+	}
 	
 	containerWindowType = {
 		name = "mainmenu_social_buttons"
@@ -274,6 +347,16 @@ guiTypes = {
 		positionType = {
 			name = "position_without_social_gui"
 			position = { x = 0 y = 155 }
+		}
+
+		positionType = {
+			name = "subscription_position"
+			position = { x = -50 y = 89 }
+		}
+
+		positionType = {
+			name = "subscription_position_without_social_gui"
+			position = { x = 0 y = 219 }
 		}
 		
 		containerWindowType = {
