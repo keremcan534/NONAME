@@ -1805,39 +1805,14 @@
 				}
 				#custom_effect_tooltip = anschluss_mefo_bills_tt
 			}
-			4 = {
-				add_core_of = GER
-			}
-			152 = {
-				add_core_of = GER
-			}
-			153 = {
-				add_core_of = GER
-			}
-			AUS = {
-				every_unit_leader = {
-					set_nationality = GER
-				}
-			}
-			annex_country = {
-				target = AUS
-				transfer_troops = yes
-			}
-			set_country_flag = AUS_annexed
+			
+
 			USA = {
 				set_country_flag = {
 					flag = USA_anschluss_window
 					days = 60
 					value = 1
 				}
-			}
-
-			hidden_effect = {
-				news_event = {
-					hours = 6
-					id = news.36
-				}
-				sound_effect = anscluss
 			}
 			HUN = {
 				add_timed_idea = {
@@ -2410,13 +2385,6 @@
 				target = NOR
 				type = annex_everything
 			}
-			hidden_effect={
-			DEN={
-				declare_on_axis=yes
-			}
-			NOR={
-				declare_on_axis=yes
-			}}
 			hidden_effect = {
 				news_event = {
 					hours = 6
@@ -2487,16 +2455,6 @@
 				target = HOL
 				type = annex_everything
 			}
-
-			hidden_effect={
-				HOL={
-					declare_on_axis=yes
-				}
-				BEL={
-					declare_on_axis=yes
-				}
-		
-		}
 			hidden_effect = {
 				news_event = {
 					hours = 6

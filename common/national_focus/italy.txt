@@ -728,7 +728,7 @@
 			}
 			add_resource = {
 				type = rubber
-				amount = 28
+				amount = 8
 				state = 449
 			}
 		}
@@ -902,7 +902,7 @@
 			focus = ITA_libyan_refineries
 		}
 		available = {
-			date>1941.4.1
+			date>1941.10.1
 			ITA = {
 				AND = {
 					controls_state = 449
@@ -943,12 +943,12 @@
 			}
 			add_resource = {
 				type = rubber
-				amount = -28
+				amount = -8
 				state = 449
 			}
 			add_resource = {
 				type = rubber
-				amount = 28
+				amount = 8
 				state = 159
 			}
 		}
@@ -963,7 +963,7 @@
 			focus = ITA_libyan_refineries
 		}
 		available = {
-			date>1941.6.1
+			date>1942.8.1
 			ITA = {
 				AND = {
 					controls_state = 291
@@ -1055,7 +1055,7 @@
 			focus = ITA_libyan_refineries
 		}
 		available = {
-			date>1941.6.1
+			date>1942.1.1
 			ITA = {
 				AND = {
 					controls_state = 661
@@ -1086,12 +1086,12 @@
 			}
 			add_resource = {
 				type = rubber
-				amount = 15
+				amount = 10
 				state = 161
 			}
 			add_resource = {
 				type = rubber
-				amount = -15
+				amount = -10
 				state = 661
 			}
 		}
@@ -1103,7 +1103,7 @@
 			focus = ITA_transport_resc3
 		}
 		available = {
-			date>1941.6.1
+			date>1942.5.1
 			ITA = {
 				AND = {
 					controls_state = 661
@@ -1124,22 +1124,22 @@
 		completion_reward = {
 			add_resource = {
 				type = rubber
-				amount = 10
+				amount = 5
 				state = 161
 			}
 			add_resource = {
 				type = rubber
-				amount = -10
+				amount = -5
 				state = 661
 			}
 			add_resource = {
 				type = rubber
-				amount = 10
+				amount = 5
 				state = 161
 			}
 			add_resource = {
 				type = rubber
-				amount = -10
+				amount = -5
 				state = 661
 			}
 		}

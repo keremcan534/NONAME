@@ -29,6 +29,16 @@ ideas = {
 		}
 	}
 	country = {
+		scuffed_acclim={
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture=PER_Corrupted_Army
+			modifier={
+			acclimatization_cold_climate_gain_factor = -0.85
+			}
+		}
 
 		nerf_aliied_tank_air_production={
 			allowed = {
@@ -1068,7 +1078,7 @@ ideas = {
 			removal_cost = -1
 			picture = GER_Work_Ethics
 			modifier = {
-				production_factory_start_efficiency_factor = 1
+				production_factory_start_efficiency_factor = 0.5005
 			}
 		}
 		no_training = {

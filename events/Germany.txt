@@ -21,25 +21,16 @@ country_event = {
 
 	option = {
 		name = germany.4.a
+		annex_country = { target = AUS transfer_troops = yes }
 		4 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
+			add_core_of = GER
 		}
 		152 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
+			add_core_of = GER
 		}
 		153 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
+			add_core_of = GER
 		}
-		annex_country = { target = AUS transfer_troops = no }
 		add_political_power = 100
 		set_country_flag = AUS_annexed
 		add_war_support = 0.1
@@ -865,27 +856,7 @@ country_event = {
 	}
 }
 
-# Austria refuses Anschluss
-country_event = {
-	id = germany.29
-	title = germany.29.t
-	desc = germany.29.d
-	picture = GFX_report_event_german_troops
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.29.a
-		add_state_claim = 4
-		add_state_claim = 152
-		add_state_claim = 153
-		create_wargoal = {
-			type = take_state_focus
-			target = AUS
-			generator = { 4 152 153 }
-		}
-	}
-}
+
 
 ### Munich Conference
 

@@ -90,7 +90,7 @@ ideas = {
 			picture = german_advisors
 			targeted_modifier = {
 				tag = SOV
-				army_infantry_defence_factor = 0.1
+				army_infantry_defence_factor = 0.15
 			}
 			modifier = {
 				army_speed_factor = 0.15
@@ -191,12 +191,12 @@ ideas = {
 
 			modifier = {
 			
-				stability_factor = 0.1s
+				stability_factor = 0.1
 				war_support_factor = 0.20 
 				army_morale_factor = 0.025 
 				conversion_cost_civ_to_mil_factor = 0.2
 				production_factory_efficiency_gain_factor = 0.05
-				consumer_goods_factor = -0.05
+
 			}
 
 		}
@@ -215,7 +215,7 @@ ideas = {
 				army_morale_factor = 0.15
 				training_time_factor = -0.7
 				industrial_capacity_factory = 0.1
-				consumer_goods_factor = -0.05
+
 			}
 		}
 		GER_Waffen_SS = {

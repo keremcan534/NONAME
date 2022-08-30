@@ -12,7 +12,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 3
 
 		}
 		add_core_of = SPR

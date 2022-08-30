@@ -35,3 +35,6 @@
  SOV_five_year_plan:0 "Five Year Plan"
  GER_mineraloelsicherungsplan:0 "Mineraloelsicherungsplan"
  HMP_soviet_ll_visible_to_all_allies_tt:0 "Click the decision to toggle the visibility of this scripted GUI for Allied minors and France."
+ scuffed_acclim:0 "Lack of Winterized Equipment"
+ scuffed_acclim_desc:0 "A lack of foresight, poor logistics, and questionable priorities has led to a situation where we're critically short on winterized equipment for most of our army. Going to war with a certain superpower in a cold climate might just make the General Staff wake up." 
+	

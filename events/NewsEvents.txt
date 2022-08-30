@@ -5797,35 +5797,16 @@ news_event = {
 	option = {
 		name = news.234.a
 		trigger = {
-				tag = GER
-		}
-	}
-
-	option = {
-		name = news.234.b
-		trigger = {
-			OR = {
-				tag = HOL
-				is_in_faction_with = BEL
-				is_in_faction_with = HOL
+			NOT = {tag=GER
 			}
-			has_war_with = GER
+		}
+				
 		}
 	}
-
 	option = {
 		name = news.234.c
 		trigger = {
-			NOT = {
-				OR = {
-
-					tag = HOL
-					tag = BEL
-					is_in_faction_with = HOL
-					is_in_faction_with = BEL
-				}
-			}
-		}
+			tag = GER
 	}
 }
 

@@ -7,9 +7,10 @@ state={
 state_category = wasteland
 	impassable = yes
 	resources={
-		tungsten = 140 
-		chromium = 110
+		tungsten = 339 
+		chromium = 276
 	}
+	
 	history= {
 		owner = EMP
 		controller = EMP

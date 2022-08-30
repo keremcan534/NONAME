@@ -135,7 +135,7 @@ weather_very_cold = {
 	# on Province
 	winter_attrition = 0.325
 	army_attack_factor = -0.95
-	breakthrough_factor = -0.7
+	breakthrough_factor = -0.85
 	naval_detection = -0.2
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
@@ -242,9 +242,7 @@ ROM_license_german_equipment = {
 		}
 	}
 	license_purchase_cost = 0	#base cost reduction
-	ai_license_acceptance = 20	#more to AI acceptance value.
-	license_production_speed = 0.25	#speed  increase for being a license
-	license_tech_difference_speed = 0.25	#less cost increase for each tech level between the license and own tech level
+	license_production_speed = 0.15	#speed  increase for being a license
 }
 
 ROM_foreign_motor_company = {

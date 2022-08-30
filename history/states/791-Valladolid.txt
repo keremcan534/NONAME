@@ -2,7 +2,7 @@ state={
 	id=791
 	name="STATE_791"
 	resources={
-		tungsten=10.000 #added due to Portugal Setup
+		steel=45
 	}
 	history={
 		owner = SPR
