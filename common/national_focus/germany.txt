@@ -2264,20 +2264,19 @@
 						original_tag=SOV
 						original_tag=USA
 						original_tag=JAP
-						original_tag=AST
 					}
 					}
 				}
 				add_timed_idea={
 					idea=africa_hp
-					days=300
+					days=330
 				}
 			}
 				GER={
 					add_timed_idea={idea=GER_blitz
-				days=300}
+				days=330}
 					add_timed_idea={idea=GER_jaegernotprogramm
-				days=150
+				days=170
 					}
 
 				}
