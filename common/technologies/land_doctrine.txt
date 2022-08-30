@@ -1433,13 +1433,11 @@ technologies = {
 		armored_car = {
 			combat_width = -1
 		}
-		category_army
-		{
+		category_army={
 			soft_attack = 0.25
 			hard_attack = 0.05
 		}
-		category_artillery
-		{
+		category_artillery={
 			soft_attack = -0.2
 		}
 		category_tanks = {
@@ -1471,7 +1469,6 @@ technologies = {
 		category_army = {
 			jungle = {
 				attack = 0.1
-			
 				movement = 0.05
 			}
 			mountain = {
@@ -1480,16 +1477,13 @@ technologies = {
 			}
 			hills = {
 				attack = 0.05
-			
 				movement = 0.025
 			}
 			marsh = {
 				attack = 0.05
-			
 			}
 			river = {
 				attack = 0.075
-			
 				movement = 0.025
 			}
 		}
