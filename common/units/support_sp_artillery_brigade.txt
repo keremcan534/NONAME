@@ -81,8 +81,10 @@ sub_units = {
 		training_time = 180
 		weight = 0.75
 		supply_consumption = 0.22
-		armor_value = -1
-		ap_attack = -1
+
+
+
+		
 		#support unit nerf
 		defense = -0.4
 		breakthrough = -0.8
@@ -125,8 +127,9 @@ sub_units = {
 		max_strength = 0.3
 		weight = 1.0
 		supply_consumption = 0.3
-		armor_value = -1
-		ap_attack = -1
+
+
+
 		#support unit nerf
 		defense = -0.4
 		breakthrough = -0.8

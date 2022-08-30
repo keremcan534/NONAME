@@ -17,7 +17,7 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_support_battalions
+			category_armor_support_battalions
 			category_all_armor
 			category_army
 		}
@@ -63,7 +63,7 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_support_battalions
+			category_armor_support_battalions
 			category_all_armor
 			category_army
 		}
@@ -109,7 +109,7 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_support_battalions
+			category_armor_support_battalions
 			category_all_armor
 			category_army
 		}

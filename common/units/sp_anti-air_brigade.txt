@@ -30,16 +30,14 @@ sub_units = {
 		max_strength = 6
 		training_time = 180
 		weight = 0.2
-
-		ap_attack = -1
 		supply_consumption = 0.22
-		breakthrough = -0.55
+
+
+		breakthrough = -0.5
 		defense = -0.4
 
-		air_attack=-0.15
+
 		#Tanks are awesome
-
-
 		desert = { movement = -0.2 }
 		forest = {
 		    attack = -0.2
@@ -103,9 +101,11 @@ sub_units = {
 		supply_consumption = 0.26
 		
 		#Tanks are awesome
-		ap_attack = -1
-		breakthrough=-0.5
+		
+
+		breakthrough = -0.5
 		defense = -0.4
+
 
 		desert = {
 			movement = -0.3
@@ -181,10 +181,10 @@ sub_units = {
 		supply_consumption = 0.28
 		
 		#Tanks are awesome
-		breakthrough = -0.35
-		ap_attack = -1
+
+		
+		breakthrough = -0.5
 		defense = -0.4
-		air_attack=0.1
 
 
 		desert = { movement = -0.2 }
