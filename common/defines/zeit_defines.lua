@@ -12,7 +12,8 @@ NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 40.0 -- Vanilla 30, reduced to
 
 --------------------
 NDefines.NProduction.CONVERSION_SPEED_BONUS = -2.2 -- ADDED TO COUNTER CHEATERS WHO USE THE CONVERSION EXPLOIT W/ GFX MODS	
-	
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.25 -- vanilla 2.5
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.75 -- vanilla 4.75
 -----------------------------IMPORTANT LAND COMBAT DEFINES--------------------------------------
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.8    -- vanilla 0.68  | 10% more equipment losses than vanilla  % of equipment lost to strength ratio in combat, so some % is returned if below 1
 NDefines.NMilitary.PLANNING_MAX = 0.10 -- Vanilla is 0.30 ; nerfed along with entrenchment so both build up faster resulting in more dynamic gameplay with opportunities for faster recovery
@@ -126,8 +127,7 @@ NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0 					--Factor on coun
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0 -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgarias to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0				-- IC cost equipment for every year of equipment after 1936
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0        -- WAS 0.1, removed because there are really only 2 factions in game | MIC speed modifier for licensed equipment for not being in faction
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.25 -- vanilla 2.5
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.9 -- vanilla 4.75
+
 
 NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.1 --vanilla 0.2	-- Minimum fraction of an equipment type's base industry capacity cost to use when converting a naval equipment, such as through ship refitting.
 
