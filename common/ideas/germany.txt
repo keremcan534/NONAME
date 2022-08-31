@@ -92,9 +92,6 @@ ideas = {
 				tag = SOV
 				army_infantry_defence_factor = 0.15
 			}
-			modifier = {
-				army_speed_factor = 0.15
-			}
 		}
 		GER_triumph_in_france = {
 			allowed = {

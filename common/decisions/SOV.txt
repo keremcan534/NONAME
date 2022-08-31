@@ -412,7 +412,7 @@ SOV_great_patriotic_war = {
 		}
 	}
 
-	SOV_Capital_Magnitogorsk = {
+	SOV_Capital_Chelyabinsk = {
 
 		icon = generic_political_actions
 
@@ -437,7 +437,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 			if = {
 				limit = { 582 = { is_controlled_by = SOV } }
-				set_capital = {state = 582}
+				set_capital = {state = 572}
 			}
 		}
 

@@ -990,7 +990,7 @@ technologies = {
 		}
 	}
 	grand_battle_plan_mp = {
-		max_planning = 0.3
+		max_planning = 0.2
 		allow = {
 			NOT = {
 				was_sent_expeditionaries = yes
