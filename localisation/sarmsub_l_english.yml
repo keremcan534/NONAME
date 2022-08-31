@@ -17,3 +17,5 @@
  support_modern_sp_anti_air:0 "Support Modern SP Anti-Air"
  support_super_heavy_sp_anti_air:0 "Support Super Heavy SP Anti-Air"
  motorized_rocket_sup:0 "Support Motorized Rocket Artillery"
+ 
+ category_armor_support_battalions:0 "Armor Support Companies"

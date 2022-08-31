@@ -29,15 +29,15 @@ sub_units = {
 			anti_tank_equipment = 24
 		}
 		manpower = 300
-		max_organisation = 10
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 2
 		training_time = 120
 		weight = 0.025
-		hard_attack = -0.2
+		hard_attack = -0.2 
 		can_be_parachuted = yes
 		
-		supply_consumption = 0.08
+		supply_consumption = 0.04
 
 		# Support nerfs to combat abilities
 	}

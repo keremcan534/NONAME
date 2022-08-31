@@ -28,17 +28,17 @@ sub_units = {
 		# supply_consumption_factor = -0.005
 		
 		combat_width = 2
-		
+		initiative = 0.02
 		#Size Definitions
-		max_strength = 24.5
+		max_strength = 23.5
 		max_organisation = 60
-		default_morale = 0.35
+		default_morale = 0.3
 		manpower = 1000
 
 		#Misc Abilities
-		training_time = 90
-		suppression = 1
-		weight = 0.5
+		training_time = 45
+		suppression = 1.5
+		weight = 0.125
 		supply_consumption = 0.07
 		need = {
 			infantry_equipment = 100
@@ -54,7 +54,7 @@ sub_units = {
 		priority = 601
 		ai_priority = 200
 		active = no
-
+		initiative = 0.02
 		type = {
 			infantry
 		}
@@ -132,13 +132,13 @@ sub_units = {
 		manpower = 1000
 
 		#Misc Abilities
-		training_time = 120
+		training_time = 60
 		suppression = 1
-		weight = 0.2
-		
+		weight = 0.125
 		supply_consumption = 0.07
-		breakthrough = 0.32
-	
+		breakthrough = 0.3
+		initiative = 0.02
+
 		need = {
 			infantry_equipment = 200
 		}
@@ -187,7 +187,7 @@ sub_units = {
 		}
 		
 		combat_width = 2
-		
+
 		#Size Definitions
 		max_strength = 25
 		max_organisation = 70
@@ -195,11 +195,12 @@ sub_units = {
 		manpower = 1000
 
 		#Misc Abilities
-		training_time = 150
+		training_time = 60
 		suppression = 1
-		weight = 0.2
+		weight = 0.125
 		supply_consumption = 0.07
-		breakthrough = 0.32
+		breakthrough = 0.3
+		initiative = 0.02
 	
 		need = {
 			infantry_equipment = 200
@@ -247,11 +248,12 @@ sub_units = {
 		manpower = 1000
 
 		#Misc Abilities
-		training_time = 120
+		training_time = 60
 		suppression = 1
-		weight = 0.5
-		supply_consumption = 0.06
-		breakthrough = 0.32
+		weight = 0.125
+		supply_consumption = 0.07
+		breakthrough = 0.3
+		initiative = 0.02
 	
 		need = {
 			infantry_equipment = 200
@@ -286,8 +288,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 30
-		max_organisation = 40
+		max_strength = 28
+		max_organisation = 60
 		default_morale = 0.30
 		manpower = 1200
 
@@ -296,7 +298,8 @@ sub_units = {
 		suppression = 1
 		weight = 0.75
 		supply_consumption = 0.08
-	
+		initiative = 0.02
+
 		# this is what moves us and sets speed
 		transport = motorized_equipment
 	
@@ -307,16 +310,14 @@ sub_units = {
 
 		desert = { movement = -0.2 }
 		forest = {
-			attack = -0.1
+			attack = -0.05
 			movement = -0.5
 		}
 		mountain = {
 			attack = -0.05
-			defence = -0.4
 		}
 		jungle = {
-			attack = -0.3
-			defence = -0.2
+			attack = -0.2
 			movement = -0.5
 		}
 		marsh = {
@@ -324,7 +325,7 @@ sub_units = {
 			movement = -0.3
 		}
 		urban = {
-			attack = -0.1
+			attack = -0.05
 		}
 		river = {
 			attack = -0.1
@@ -333,7 +334,6 @@ sub_units = {
 		amphibious = {
 			attack = -0.2
 		}
-
 	}
 
 	mechanized = {
@@ -363,16 +363,17 @@ sub_units = {
 		hard_attack = 4
 		
 		#Size Definitions
-		max_strength = 34
-		max_organisation = 45
+		max_strength = 31
+		max_organisation = 60
 		default_morale = 0.31
 		manpower = 1200
 
 		#Misc Abilities
-		training_time = 120
-		suppression = 1
-		weight = 1
-		
+		training_time = 60
+		suppression = 2
+		weight = 0.25
+		initiative = 0.02
+
 		supply_consumption = 0.11
 		
 		# needed since we give so much bonus to infantry even with no mech equipment
