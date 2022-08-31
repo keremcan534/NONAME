@@ -448,7 +448,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.6
+		research_cost = 0.5
 		
 		# XOR = {
 		# 	concentrated_industry
@@ -521,7 +521,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.6
+		research_cost = 0.5
 		start_year = 1937
 		
 		folder = {
@@ -561,7 +561,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.6
+		research_cost = 0.5
 		start_year = 1939
 		
 		folder = {
@@ -601,7 +601,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.6
+		research_cost = 0.5
 		start_year = 1941
 		
 		folder = {
@@ -638,7 +638,7 @@ technologies = {
 		# global_building_slots_factor = 0.2
 		
 		
-		research_cost = 0.6
+		research_cost = 0.5
 		start_year = 1943
 		
 		folder = {

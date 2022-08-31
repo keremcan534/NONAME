@@ -1,3 +1,6 @@
 ﻿l_english:
  human_wave_offensive_guns_tt:0 "Our Infantry Battalions will now require 20 less Infantry Equipment\n"
  semi_motorized_desert_warfare_details:0 "\nInfantry Brigade:\n  Defense: §R-15%§!\n  Plains 	Defense: §G+10%§!\n\nAnti-Tank Brigade:\n  Plains Defense: §G+10%§!\n\nArtillery Brigade:\n  Plains Defense: §G+10%§!\n\nRocket Artillery Brigade:\n  Plains Defense: §G+10%§!\n\nAnti-Air Brigade:\n  Plains Defense: §G+10%§!\n"
+ tank_medium_cannon_3:0 "Advanced Medium Cannon"
+ tank_medium_cannon_3_desc:0 "A general-purpose weapon well suited to a wide variety of tasks. It excells at neither anti-infantry nor anti-tank work, but it provides a vehicle with a lot of flexibility."
+ 

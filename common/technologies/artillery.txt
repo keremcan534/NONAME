@@ -54,22 +54,7 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
-		light_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		medium_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		heavy_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		light_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
+	
 		
 		enable_equipment_modules = {
 			# tank_medium_howitzer
@@ -186,22 +171,7 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
-		light_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		medium_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		heavy_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		light_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
+		
 		
 		path = {
 			leads_to_tech = artillery3
@@ -260,22 +230,7 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
-		light_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		medium_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		heavy_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		light_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
+	
 	
 		
 		enable_equipment_modules = {
@@ -315,9 +270,7 @@ technologies = {
 	}
 	
 	artillery4 = {
-		allow={
-			date>1941.6.1
-		}
+
 		enable_equipments = {
 			artillery_equipment_3
 		}
@@ -337,7 +290,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 2
 
 		start_year = 1942
 		
@@ -384,22 +337,7 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
-		light_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		medium_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		heavy_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
-		light_sp_artillery_brigade ={
-			soft_attack = 0.08
-			breakthrough = 0.08
-		}
+		
 		
 		enable_equipment_modules = {
 			# auto_loader
@@ -500,14 +438,14 @@ technologies = {
 
 		
 		enable_equipment_modules = {
-			# tank_rocket_launcher
+			tank_rocket_launcher
 		}
 		path = {
 			leads_to_tech = rocket_artillery2
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 
 		start_year = 1940
 		
@@ -624,9 +562,7 @@ technologies = {
 	}
 	
 	rocket_artillery4 = {
-		allow={
-			date>1941.6.1
-		}
+
 		enable_equipments = {
 			rocket_artillery_equipment_2
 		}
@@ -636,7 +572,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			# tank_rocket_launcher_2
+			tank_rocket_launcher_2
 		}
 		#rocket_artillery = {
 		#	soft_attack = 0.15
@@ -654,14 +590,7 @@ technologies = {
 			position = { x = 3 y = 12 }
 		}
 		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
+	
 		
 		categories = {
 			rocketry
@@ -729,7 +658,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -809,7 +738,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -849,7 +778,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.25
+		research_cost = 1
 
 		start_year = 1941
 		
@@ -891,7 +820,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.25
+		research_cost = 1
 
 		start_year = 1942
 		
@@ -910,9 +839,6 @@ technologies = {
 	}
 	
 	antiair5 = {
-		allow={
-			date>1941.6.1
-		}
 		enable_equipments = {
 			anti_air_equipment_3
 		}
@@ -926,7 +852,7 @@ technologies = {
 			# auto_loader
 		}
 		
-		research_cost = 2.0
+		research_cost = 1.5
 
 		start_year = 1943
 		
@@ -958,7 +884,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -992,18 +918,8 @@ technologies = {
 			ap_attack = 0.08
 			breakthrough = 0.08
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
+		
+		
 	
 		enable_equipment_modules = {
 			# tank_medium_cannon
@@ -1014,7 +930,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -1093,18 +1009,7 @@ technologies = {
 			ap_attack = 0.08
 			breakthrough = 0.08
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
+	
 
 		
 		path = {
@@ -1146,18 +1051,7 @@ technologies = {
 			ap_attack = 0.08
 			breakthrough = 0.08
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
+		
 		
 		
 		path = {
@@ -1165,7 +1059,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.25
+		research_cost = 1
 
 		start_year = 1941
 		
@@ -1199,18 +1093,7 @@ technologies = {
 			ap_attack = 0.08
 			breakthrough = 0.08
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.08
-			ap_attack = 0.08
-		}
+		
 	
 	
 		path = {
@@ -1218,7 +1101,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.25
+		research_cost = 1
 
 		start_year = 1942
 		
@@ -1248,7 +1131,7 @@ technologies = {
 			hard_attack = 0.1
 		}
 		
-		research_cost = 1.7
+		research_cost = 1.5
 
 		start_year = 1943
 		

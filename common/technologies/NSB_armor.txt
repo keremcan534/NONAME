@@ -177,10 +177,14 @@ technologies = {
 
 		enable_equipment_modules={
 			flamethrower
-			tank_auto_cannon
 			tank_anti_air_cannon
+			tank_auto_cannon
 			tank_small_cannon
 			tank_close_support_gun
+			tank_medium_cannon
+			tank_medium_howitzer
+			tank_high_velocity_cannon
+			tank_heavy_cannon
 		}
 
 		on_research_complete_limit = {
@@ -265,10 +269,18 @@ technologies = {
 			light_tank_aa_chassis_2
 		}
 		enable_equipment_modules={
-			
-			tank_auto_cannon_2
 			tank_anti_air_cannon_2
+			tank_auto_cannon_2
 			tank_small_cannon_2
+
+			tank_medium_cannon_2
+			tank_medium_howitzer_2
+			tank_high_velocity_cannon_2
+			tank_heavy_cannon_2
+			tank_heavy_howitzer
+			
+			tank_radio_2
+			
 		}
 		path = {
 			leads_to_tech = advanced_light_tank_chassis
@@ -291,10 +303,8 @@ technologies = {
 		}
 	}
 	amphibious_tank_chassis = { #SchwimmPanzer II
-		allow={
-		always=no
-		}
-		enable_equipments = {
+	allow={always=no}	
+	enable_equipments = {
 			amphibious_tank_chassis_1
 			light_tank_amphibious_chassis_0
 			medium_tank_amphibious_chassis_0
@@ -306,7 +316,6 @@ technologies = {
 		enable_equipment_modules={amphibious_drive}
 		enable_subunits = {
 			amphibious_armor
-			
 		}
 
 		path = {
@@ -314,9 +323,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
+		
 
 		research_cost = 2
 		start_year = 1938
@@ -345,18 +352,19 @@ technologies = {
 		}
 		enable_equipment_modules={
 			tank_anti_air_cannon_3
-			tank_rocket_launcher_2
-			auto_loader
-			tank_radio_2
+			tank_auto_cannon_3
+			tank_medium_cannon_3
+			tank_high_velocity_cannon_3
+			tank_heavy_cannon_3
 			tank_radio_3
-
+			auto_loader
 		}
 		research_cost = 2
 		start_year = 1941
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = @1944 }
+			position = { x = -4 y = @1943 }
 		}
 
 		
@@ -378,12 +386,16 @@ technologies = {
 
 		enable_equipment_modules={
 		flamethrower
-		tank_auto_cannon
+
 		tank_anti_air_cannon
+		tank_auto_cannon
 		tank_small_cannon
 		tank_close_support_gun
 		tank_medium_cannon
+		tank_medium_howitzer
 		tank_high_velocity_cannon
+		tank_heavy_cannon
+
 			}
 		enable_subunits = {
 			medium_armor
@@ -445,15 +457,16 @@ technologies = {
 			medium_tank_aa_chassis_2
 		}
 		enable_equipment_modules={
-			tank_auto_cannon_2
 			tank_anti_air_cannon_2
+			tank_auto_cannon_2
 			tank_small_cannon_2
+
 			tank_medium_cannon_2
-			tank_medium_howitzer
-			tank_heavy_howitzer
-			tank_rocket_launcher
+			tank_medium_howitzer_2
 			tank_high_velocity_cannon_2
-			
+			tank_heavy_cannon_2
+			tank_heavy_howitzer
+
 			tank_radio_2
 			}
 		path = {
@@ -490,17 +503,12 @@ technologies = {
 		
 		enable_equipment_modules={
 			tank_anti_air_cannon_3
+			tank_auto_cannon_3
 			tank_medium_cannon_3
-			tank_medium_howitzer_2
-			tank_rocket_launcher_2
 			tank_high_velocity_cannon_3
-			tank_heavy_cannon
-			tank_heavy_cannon_2
 			tank_heavy_cannon_3
-			tank_heavy_howitzer
-			tank_super_heavy_cannon
-			auto_loader
 			tank_radio_3
+			auto_loader
 			}
 		path = {
 			leads_to_tech = main_battle_tank_chassis
@@ -565,12 +573,15 @@ technologies = {
 		}
 		enable_equipment_modules={
 			flamethrower
-			tank_auto_cannon
 			tank_anti_air_cannon
+			tank_auto_cannon
 			tank_small_cannon
 			tank_close_support_gun
+			tank_medium_cannon
+			tank_medium_howitzer
 			tank_high_velocity_cannon
 			tank_heavy_cannon
+			
 		}
 		on_research_complete_limit = {
 			NOT = {	has_template_containing_unit = light_armor }
@@ -654,16 +665,16 @@ technologies = {
 			heavy_tank_aa_chassis_2
 		}
 		enable_equipment_modules={
-			tank_auto_cannon_2
 			tank_anti_air_cannon_2
+			tank_auto_cannon_2
 			tank_small_cannon_2
-			tank_medium_cannon
-			tank_medium_howitzer
-			tank_rocket_launcher
+
+			tank_medium_cannon_2
+			tank_medium_howitzer_2
 			tank_high_velocity_cannon_2
-			tank_high_velocity_cannon_3
 			tank_heavy_cannon_2
 			tank_heavy_howitzer
+			
 			tank_radio_2
 		}
 		path = {
@@ -734,12 +745,12 @@ technologies = {
 		start_year = 1943
 		enable_equipment_modules={
 			tank_anti_air_cannon_3
-			tank_medium_howitzer_2
-			tank_rocket_launcher_2
+			tank_auto_cannon_3
+			tank_medium_cannon_3
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
-			auto_loader
 			tank_radio_3
+			auto_loader
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -771,14 +782,13 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_anti_air_cannon_3
-			tank_medium_cannon_2
-			tank_medium_howitzer_2
-			tank_rocket_launcher_2
+			tank_auto_cannon_3
+			tank_medium_cannon_3
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
-			tank_super_heavy_cannon
-			auto_loader
 			tank_radio_3
+			auto_loader
+			tank_super_heavy_cannon
 		}
 
 		research_cost = 2.5

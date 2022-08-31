@@ -20,24 +20,59 @@ NDefines.NMilitary.AIR_SUPPORT_BASE = 0.2                         -- vanilla 0.2
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.02  -- vanilla 0.04 | 75% of vanilla CAS ORG damage 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.01 	--air global damage modifier
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT =	-0.05 	--effect on speed due to enemy air superiority
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.2 	--effect on defense due to enemy air superiority
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.2	--more AA attack will approach this amount of help (diminishing returns)
 NDefines.NAir.FUEL_COST_MULT = 0.05 -- (0.35) fuel multiplier for all air missions 
 
-NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 130
-NDefines.NAir.DISRUPTION_FACTOR = 7 -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
-NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1
-NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2  -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
+----------------------------------air 
+NDefines.NAir.SUPPLY_NEED_FACTOR=0.01
+NDefines.NAir.CAPACITY_PENALTY=0.869
+NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
+NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2.1                          --vanilla 3
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.04			--0.11 prev			-- Vanilla 0,10
+NDefines.NAir.DISRUPTION_FACTOR = 4
+NDefines.NAir.ESCORT_FACTOR = 5  --2.5		
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002 --0.001 in vanilla
+NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 3 --2 in vanilla
+NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0.75  --0.001 in vanilla
 
-NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
-NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 150
-NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 5000
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.144	-- How much efficiency to regain per day. Gain applied hourly. 
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.15
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
+NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 25 --vanilla 5 there are no planes in vanilla :D                    
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.00875 --linear NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR*air_attack*thisdefine=casreduction
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0
+NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
+		0.0, -- AIR_SUPERIORITY
+		0.0, -- CAS
+		0.0, -- INTERCEPTION
+		0.0, -- STRATEGIC_BOMBER
+		0.0, -- NAVAL_BOMBER
+		0.0, -- DROP_NUKE
+		0.0, -- PARADROP
+		0.0, -- NAVAL_KAMIKAZE
+        0.0, -- PORT_STRIKE
+		10.0, -- ATTACK_LOGISTICS
+		0.0, -- AIR_SUPPLY
+		0.0, -- TRAINING
+		0.0, -- NAVAL_MINES_PLANTING
+		0.0, -- NAVAL_MINES_SWEEPING
+		0.0, -- MISSION_RECON
+	}
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.25          --Vanilla -0.35 
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 50 --see plot in mod/resources
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.25
+NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 400.0
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.000 
 
---antiair
-NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1 -- (1.0) Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA. 
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.55 -- (.75) Maximum damage reduction factor applied to incoming air attacks against units with AA.
-NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT =	0.0001 	-- WAS 0.005 | Lowered because vanilla CAS shootdown rates are too high | Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE =	0.01 	-- (0.07) Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.5                --Vanilla 0.8	
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.70	-- Vanilla 0,75
+
+
+
+
+-----------------
 
 
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.55 -- (0.50) fuel cost multiplier for all army related stuff
@@ -53,11 +88,10 @@ NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.25                 -- vanilla -0.
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.30          -- vanilla -0.6 | large river crossing
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5  -- WAS 3, reduced to 1 so less CAS is needed in battles
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.08       -- WAS 0.25 
-NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001 				-- WAS 0.005 | Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.|
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35            -- vanilla is 0.2, GDU-like change (0.25 in GDU)
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0	    --vanilla 0.4  | eventually armor will be reworked when paradox finally releases their armor rework
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.1		--vanilla 0.4
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.05
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.04
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
 
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.5    -- vanilla -0.7 | defend combat penalty for attacker if out of supply
@@ -83,18 +117,8 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 0.12		-- How mu
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.05	-- How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_FIGHTER = 24		-- How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.05	-- How much efficiency to regain per day. Gain applied hourly.
-NDefines.NAir.CAPACITY_PENALTY=0.869
-NDefines.NAir.SUPPLY_NEED_FACTOR = 0.01				-- How much supply planes need
-
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.6                  -- VANILLA 3; GDU 1.6; LW 2  
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.016				-- Vanilla 0,10
-NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 3                 -- same as above but used inside naval combat for carrier battles
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 14.0            -- vanilla 5 damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
-NDefines.NAir.ESCORT_FACTOR = 2.5 -- VANILLA 2.0 | to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
 
 
-------------------------------------------------------------------------------------------------
-NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 17.0
 NDefines.NNavy.ENEMY_AIR_SUPERIORITY_IMPACT = -0.85           		-- effect on ship efficiency due to enemy air superiorty
 
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0 					--Factor on country Air XP gained from wing training
@@ -229,7 +253,6 @@ NDefines.NNavy.BASE_ESCAPE_SPEED = 0.135                                   -- da
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0	-- WAS 0.2 | LICENSES ARE FREE SO TECH BONUS IS TOO MUCH | License production tech bonus
 ---------------------------------------------------------------          
 ---------------------------------------------------------------
---------------HORST SPY AGENCY AND INTEL CHANGES---------------
 ---------------------------------------------------------------
 NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 0
 NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 1
