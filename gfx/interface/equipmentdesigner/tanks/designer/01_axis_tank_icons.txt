@@ -381,14 +381,7 @@ GER = {
 		}
 	}
 
-	modern_tank_aa_chassis_1 = {
-		pool = {
-			icons = {  }
-			models = {
-				"GER_modern_sp_anti_air_brigade_0_entity"
-			}
-		}
-	}
+	
 }
 
 ITA = {

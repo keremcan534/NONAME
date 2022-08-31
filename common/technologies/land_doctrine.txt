@@ -109,18 +109,6 @@ technologies = {
 		mechanized = {
 			maximum_speed = 0.1
 		}
-		mech_anti_air = {
-			maximum_speed = 0.1
-		}
-		mech_arty = {
-			maximum_speed = 0.1
-		}
-		mech_rarty = {
-			maximum_speed = 0.1
-		}
-		mech_at = {
-			maximum_speed = 0.1
-		}
 		amphibious_mechanized = {
 			maximum_speed = 0.1
 		}
@@ -396,18 +384,6 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_superior_firepower
-		}
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = armored_spearhead_tech
-					}
-					set_technology = {
-						armored_spearhead_tech_removal = 1
-					}
-				}
-			}
 		}
 		folder = {
 			name = land_doctrine_folder
@@ -761,18 +737,6 @@ technologies = {
 			maximum_speed = 0.1
 		}
 		mechanized = {
-			maximum_speed = 0.1
-		}
-		mech_anti_air = {
-			maximum_speed = 0.1
-		}
-		mech_arty = {
-			maximum_speed = 0.1
-		}
-		mech_rarty = {
-			maximum_speed = 0.1
-		}
-		mech_at = {
 			maximum_speed = 0.1
 		}
 		amphibious_mechanized = {
@@ -1330,18 +1294,7 @@ technologies = {
 			land_doctrine
 			cat_mass_assault
 		}
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = armored_spearhead_tech
-					}
-					set_technology = {
-						armored_spearhead_tech_removal = 1
-					}
-				}
-			}
-		}
+	
 		folder = {
 			name = land_doctrine_folder
 			position = {

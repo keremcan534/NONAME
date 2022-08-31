@@ -2003,24 +2003,6 @@ focus_tree = {
 				set_technology = {
 					improved_heavy_tank_chassis = 1
 				}
-				create_equipment_variant = {
-					name = "Iwakuro A"
-					type = heavy_tank_equipment_2
-					upgrades = {
-						tank_gun_upgrade = 5
-						tank_reliability_upgrade = 5
-					}
-				}
-				add_equipment_production = {
-					equipment = {
-						type = heavy_tank_equipment_2
-						creator = "JAP"
-						version_name = "Iwakuro A"
-					}
-					requested_factories = 10
-					progress = 0.1
-					efficiency = 50
-				}
 				division_template = {
 					name = "Sensha Dai-ichi Shidan"
 					regiments = {

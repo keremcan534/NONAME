@@ -201,7 +201,7 @@ equipments = {
 		can_license = no
 		air_range = 850
 		maximum_speed = 550
-		ir_agility = 60
+		air_agility = 60
 		air_attack = 24
 		air_defence = 10
 		fuel_consumption = 0.15
@@ -405,7 +405,7 @@ equipments = {
 		priority = 60
 		carrier_capable = yes
 
-		aair_range = 930
+		air_range = 930
 		maximum_speed = 300
 		air_agility = 35
 		air_attack = 10

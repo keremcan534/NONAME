@@ -2599,19 +2599,15 @@
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
-				amount = 3000
+				amount = 4000
 				producer = CZE
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment_1
-				amount = 2000
+				amount = 2500
 				producer = CZE
 			}
-			add_equipment_to_stockpile = {
-				type = light_tank_equipment_2
-				amount = 800
-				producer = CZE
-			}
+			
 			add_war_support = 0.1
 			add_political_power = -20
 			if = {

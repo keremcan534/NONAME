@@ -118,21 +118,7 @@ GER_defeat_sealion = {
 			amount = 1000
 			producer = GER
 		}
-		add_equipment_to_stockpile = {
-			type = heavy_tank_equipment_2
-			amount = 200
-			producer = GER
-		}
-		add_equipment_to_stockpile = {
-			type = light_tank_equipment_2
-			amount = 200
-			producer = GER
-		}
-		add_equipment_to_stockpile = {
-			type = medium_tank_equipment_2
-			amount = 1000
-			producer = GER
-		}
+		
 		add_timed_idea = {
 			idea = ENG_triumph_sealion_idea
 			days = 30
@@ -320,21 +306,6 @@ GER_defeat_dday = {
 		}
 		add_equipment_to_stockpile = {
 			type = support_equipment_1
-			amount = 1000
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-			type = heavy_tank_equipment_2
-			amount = 200
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-			type = light_tank_equipment_2
-			amount = 200
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-			type = medium_tank_equipment_2
 			amount = 1000
 			producer = USA
 		}
